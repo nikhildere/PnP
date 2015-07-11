@@ -115,11 +115,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzTeamSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\Utilities\LocalizationUtility.cs" />
     <Compile Include="MdlzComponents\Utilities\WebPartUtility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzTeamSiteExtensibilityProvider.cs" />
     <Compile Include="SiteProvisioningJob.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -167,11 +167,9 @@
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\DocumentCenter\TeamSiteTemplate.xml">
       <SubType>Designer</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.TeamSite\TeamSiteTemplate.xml">
       <SubType>Designer</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\TeamSiteTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
