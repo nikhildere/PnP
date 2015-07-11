@@ -207,6 +207,17 @@ namespace Provisioning.Common.Data.SiteRequests
                  SiteRequestFields.DEFAULT_FIELD_GROUP,
                  SiteRequestFields.EXTERNALSHARING_ATTRIB));
 
+            fieldsXml.Add(SiteRequestFields.ISCONFIDENTIAL_NAME,
+                 FormatField(
+                 SiteRequestFields.ISCONFIDENTIAL_ID,
+                 SiteRequestFields.ISCONFIDENTIAL_NAME,
+                 SiteRequestFields.ISCONFIDENTIAL_TYPE,
+                 SiteRequestFields.ISCONFIDENTIAL_DISPLAYNAME,
+                 SiteRequestFields.ISCONFIDENTIAL_DESC,
+                 SiteRequestFields.DEFAULT_FIELD_GROUP,
+                 SiteRequestFields.ISCONFIDENTIAL_ATTRIB));
+
+
             TryCreateFields(web, fields, fieldsXml);
             return fields;
         }

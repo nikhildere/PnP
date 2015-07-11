@@ -53,7 +53,7 @@ namespace Provisioning.Common.Data.Templates
            {
                User _user = new User();
                _user.Name = _Admin.Name;
-               provisioningTemplate.Security.AdditionalAdministrators.Add(_user);
+               provisioningTemplate.Security.AdditionalOwners.Add(_user);
            }
         }
         private void HandlePropertyBagEntries(ProvisioningTemplate provisioningTemplate, SiteRequestInformation siteRequest)

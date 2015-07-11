@@ -6,6 +6,7 @@ using Provisioning.Common.Data;
 using Provisioning.Common.Data.SiteRequests;
 using Provisioning.Common.Data.Templates;
 using Provisioning.Common.Mail;
+using Provisioning.Common.MdlzComponents;
 using Provisioning.Common.Utilities;
 using System;
 using System.Collections.Generic;
@@ -73,8 +74,12 @@ namespace Provisioning.Job
                     _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Processing);
                     SiteProvisioningManager _siteProvisioningManager = new SiteProvisioningManager(siteRequest, _template);
                     Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Provisioning Site Request for Site Url {0}.", siteRequest.Url);
-                    _siteProvisioningManager.CreateSiteCollection(siteRequest, _template);
-                    _siteProvisioningManager.ApplyProvisioningTemplates(_provisioningTemplate, siteRequest);
+
+                    MdlzCommonCustomizations customizations = new MdlzCommonCustomizations(siteRequest, _provisioningTemplate, _template);
+                    
+                    customizations.Apply(()=>_siteProvisioningManager.CreateSiteCollection(siteRequest, _template), 
+                                         ()=>_siteProvisioningManager.ApplyProvisioningTemplates(_provisioningTemplate, siteRequest));
+                    
                     this.SendSuccessEmail(siteRequest);
                     _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Complete);
                 }

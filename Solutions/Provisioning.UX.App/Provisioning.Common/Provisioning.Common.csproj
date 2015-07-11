@@ -120,6 +120,7 @@
     <Compile Include="Mail\FailureEmailMessage.cs" />
     <Compile Include="Mail\SuccessEmailMessage.cs" />
     <Compile Include="Mail\FileSizeFormatProvider.cs" />
+    <Compile Include="MdlzComponents\MdlzCommonCustomizations.cs" />
     <Compile Include="Office365SiteProvisioningService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PCResources.Designer.cs">

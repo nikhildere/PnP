@@ -138,7 +138,9 @@ namespace Provisioning.Common.Data.Templates
         [JsonProperty(PropertyName = "provisioningTemplate")]
         public string ProvisioningTemplate { get; set; }
 
-  
+        [XmlAttribute]
+        [JsonProperty(PropertyName = "autoApprove")]
+        public bool AutoApprove { get; set; }
         #endregion
     }
 }

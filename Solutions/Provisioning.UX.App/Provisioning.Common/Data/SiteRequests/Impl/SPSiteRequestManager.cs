@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Provisioning.Common.Utilities;
 using Provisioning.Common.Data.SiteRequests;
+using Provisioning.Common.Data.Templates;
 
 namespace Provisioning.Common.Data.SiteRequests.Impl
 {
@@ -216,7 +217,8 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                      item => item[SiteRequestFields.TIMEZONE_NAME],
                      item => item[SiteRequestFields.BC_NAME],
                      item => item[SiteRequestFields.PROPS_NAME],
-                     item => item[SiteRequestFields.STATUSMESSAGE_NAME]));
+                     item => item[SiteRequestFields.STATUSMESSAGE_NAME],
+                     item => item[SiteRequestFields.ISCONFIDENTIAL_NAME]));
                 ctx.ExecuteQuery();
 
                 foreach (ListItem _item in _listItemCollection)
@@ -237,7 +239,8 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                         SharePointOnPremises = this.BaseGet<bool>(_item, SiteRequestFields.ONPREM_REQUEST_NAME),
                         BusinessCase = this.BaseSet(_item, SiteRequestFields.BC_NAME),
                         PropertiesJSON = this.BaseSet(_item, SiteRequestFields.PROPS_NAME),
-                        RequestStatusMessage = this.BaseSet(_item, SiteRequestFields.STATUSMESSAGE_NAME)
+                        RequestStatusMessage = this.BaseSet(_item, SiteRequestFields.STATUSMESSAGE_NAME),
+                        IsConfidential = this.BaseGet<bool>(_item, SiteRequestFields.ISCONFIDENTIAL_NAME)
                     };
                     _siteRequests.Add(_site);
                 }
@@ -400,8 +403,14 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                 _record[SiteRequestFields.ONPREM_REQUEST_NAME] = siteRequest.SharePointOnPremises;
                 _record[SiteRequestFields.BC_NAME] = siteRequest.BusinessCase;
                 _record[SiteRequestFields.PROPS_NAME] = siteRequest.PropertiesJSON;
+                _record[SiteRequestFields.ISCONFIDENTIAL_NAME] = siteRequest.IsConfidential;
                 //If Settings are set to autoapprove then automatically approve the requests
-                if(_manager.GetAppSettings().AutoApprove) {
+
+                ISiteTemplateFactory _siteTemplateFactory = SiteTemplateFactory.GetInstance();
+                Template selSiteTemplate = _siteTemplateFactory.GetManager().GetTemplateByName(siteRequest.Template);
+                
+                //if(_manager.GetAppSettings().AutoApprove) {
+                if(selSiteTemplate != null &&  selSiteTemplate.AutoApprove)  {
                     _record[SiteRequestFields.PROVISIONING_STATUS_NAME] = SiteRequestStatus.Approved.ToString();
                     _record[SiteRequestFields.APPROVEDDATE_NAME] = DateTime.Now;
                 }

@@ -139,6 +139,15 @@ namespace Provisioning.Common.Data.SiteRequests
         public const string BC_ATTRIB = "";
         public const string BC_DESC = "Business Case";
 
+        //MDLZ - Is Confidential
+        public const string
+            ISCONFIDENTIAL_NAME = "Mdlz_IsConfidential",
+            ISCONFIDENTIAL_DISPLAYNAME = "Is Confidential",
+            ISCONFIDENTIAL_ATTRIB = "",
+            ISCONFIDENTIAL_DESC = "IsConfidential";
+        public const FieldType ISCONFIDENTIAL_TYPE = FieldType.Boolean;
+        public static readonly Guid ISCONFIDENTIAL_ID = new Guid("{86424773-59B8-48DF-98BC-9A75DB00BE77}");
+
 
         #endregion
     }

@@ -64,5 +64,8 @@ namespace Provisioning.UX.AppWeb.Models
 
         [DataMember(Name = "errorMessage")]
         public string ErrorMessage { get; set; }
+
+        [DataMember(Name = "isConfidential")]
+        public bool IsConfidential { get; set; }
     }
 }

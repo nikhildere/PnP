@@ -30,6 +30,9 @@ namespace Provisioning.Common.Configuration.Application
         const string TENANTADMINACCOUNTPWD_KEY = "TenantAdminAccountPWD";
         const string MYSITETENANTADMINURL_KEY = "MysiteTenantAdminUrl";
         const string RESOURCECONNECTIONSTRING_KEY = "ResourceConnectionString";
+        const string HOSTEDAPPHOSTNAMEOVERRIDE_KEY = "HostedAppHostNameOverride";
+        const string DEFAULTSCADMINLOGINNAME_KEY = "DefaultScAdminLoginName";
+
         #endregion
         
         #region Constructors
@@ -65,6 +68,8 @@ namespace Provisioning.Common.Configuration.Application
                 ClientID = ConfigurationHelper.Get(CLIENTID_KEY),
                 ClientSecret = ConfigurationHelper.Get(CLIENTSECRET_KEY),
                 SupportEmailNotification = ConfigurationHelper.Get(SUPPORTTEAMNOTIFICATION_KEY),
+                HostedAppHostNameOverride = ConfigurationHelper.Get(HOSTEDAPPHOSTNAMEOVERRIDE_KEY),
+                DefaultScAdminLoginName = ConfigurationHelper.Get(DEFAULTSCADMINLOGINNAME_KEY)
             };
 
             ////TODO ENCRYPTION

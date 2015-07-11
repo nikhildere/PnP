@@ -48,7 +48,8 @@
             siteRequest.template = $scope.siteConfiguration.template.title;
             siteRequest.sitePolicy = $scope.siteConfiguration.privacy.classification;
             siteRequest.businessCase = $scope.siteConfiguration.purpose.description;
-            siteRequest.enableExternalSharing = $scope.siteConfiguration.externalSharing
+            siteRequest.enableExternalSharing = $scope.siteConfiguration.externalSharing;
+            siteRequest.isConfidential = $scope.siteConfiguration.isConfidential;
     
             //property bag entries will enumerate all properties defined in siteConfiguration.properties
             var props = {};
@@ -81,6 +82,10 @@
             var externalSharingRequest = new Object();
             externalSharingRequest.tenantAdminUrl = template.tenantAdminUrl;
             isExternalSharingEnabled(externalSharingRequest);
+        }
+
+        $scope.filterSiteTemplates = function (template) {
+            return (template.rootTemplate != 'BLOG' && template.rootTemplate != 'ENTERWIKI');
         }
 
         function activate() {

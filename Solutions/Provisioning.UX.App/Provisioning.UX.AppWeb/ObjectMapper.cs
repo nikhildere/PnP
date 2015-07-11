@@ -41,6 +41,7 @@ namespace Provisioning.UX.AppWeb
             _newRequest.SharePointOnPremises = request.SharePointOnPremises;
             _newRequest.BusinessCase = request.BusinessCase;
             _newRequest.EnableExternalSharing = request.EnableExternalSharing;
+            _newRequest.IsConfidential = request.IsConfidential;
 
             if(request.Properties != null)
             {

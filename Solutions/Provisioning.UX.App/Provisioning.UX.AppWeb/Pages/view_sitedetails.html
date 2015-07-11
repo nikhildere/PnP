@@ -70,7 +70,19 @@
             </div>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="has-feedback">
+                <label class="control-label">Access Level</label>
+                <div>
+                    <input type="radio" ng-model="siteConfiguration.isConfidential" ng-value="1" />Confidential (recommended): Site will be created with access only to primary and secondary owner. Site owners can then go and provide access to others as needed.
+                </div>
+                <div>
+                    <input type="radio" ng-model="siteConfiguration.isConfidential" ng-value="0" />Open to all: Site will be created with read access to all employees /contractors with a lan id.
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-sm-6">
             <div class="form-group has-feedback" ng-hide="!siteConfiguration.externalSharingEnabled">
@@ -79,7 +91,7 @@
                         <input type="checkbox" name="enableExternalSharing" ng-model="siteConfiguration.externalSharing" /> Enable External Sharing
                     </label>
                 </div>
-                
+
             </div>
         </div>
     </div>

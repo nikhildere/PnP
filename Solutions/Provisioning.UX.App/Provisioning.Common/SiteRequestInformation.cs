@@ -222,6 +222,13 @@ namespace Provisioning.Common
         [DataMember]
         [JsonProperty(PropertyName = "properties")]
         public string PropertiesJSON { get; set; }
+
+        /// <summary>
+        /// Determines whether 'Everyone except external' group should be given read access to the site.
+        /// </summary>
+        [DataMember]
+        [JsonProperty(PropertyName = "isConfidential")]
+        public bool IsConfidential { get; set; }
         #endregion
     }
 }

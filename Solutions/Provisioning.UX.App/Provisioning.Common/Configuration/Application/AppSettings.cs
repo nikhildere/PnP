@@ -46,6 +46,16 @@ namespace Provisioning.Common.Configuration
         public string TenantAdminAccountPwd { get; internal set; }
 
         public string MysiteTenantAdminUrl { get; set; }
+
+        /// <summary>
+        /// Host name of the remote web application
+        /// </summary>
+        public string HostedAppHostNameOverride { get; set; }
+
+        /// <summary>
+        /// Login name of the user to be assigned as site collection administrator whenever a new site is created.
+        /// </summary>
+        public string DefaultScAdminLoginName { get; set; }
       
     }
 }
