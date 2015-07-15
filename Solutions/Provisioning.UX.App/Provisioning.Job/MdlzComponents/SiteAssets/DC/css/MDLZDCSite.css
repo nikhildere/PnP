@@ -1,0 +1,199 @@
+﻿#s4-titlerow {
+    background-image: url("/SiteAssets/DC/Images/DocCenterBanner.png");
+}
+
+.ms-core-brandingText {
+    display: none;
+}
+
+.ms-srch-sb {
+    background-color: white;
+}
+
+.ms-webpart-titleText.ms-webpart-titleText, .ms-webpart-titleText > a {
+    color: black;
+    padding-left: 5px;
+}
+.menu-item-text{
+	color:black;
+}
+.ms-promlink-parttitle {
+    color: #4f2170 !important;
+}
+
+/*
+.mondoleze-team-site-title {
+    font-family:Arial;
+    font-size:2.77em;
+    position:absolute;
+    top:45px;
+    left:245px;
+left:210px;
+    color:#E5E2E2;
+}*/
+
+.ms-dialogHidden noindex #suiteBar{
+	background-color:white!important;
+}
+.ms-core-overlay{
+	background-color:#5eacff  !important;
+
+}
+.ms-core-needIEFilter{
+	
+	background-color:#efefef  !important;
+}
+.s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth  .ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth {
+	
+	background-color:#4f2170 !important;
+	border:1px green solid !important ;
+}
+
+.ms-webpart-chrome-title .ms-webpart-titleText{
+	color:rgb(79,33,112)!important;
+	/*color:#0036A3	!important;*/
+	font-weight:bold;
+	font-family:Arial;
+}
+#s4-workspace {background:transparent;}
+
+.ms-navresizeractive-contentbox{
+	margin-left:10px;
+}
+.ms-notif-box{
+	
+	margin-left:10px!important;
+}
+#contentBox{
+	
+	/*margin-left:0px;*/
+}
+.ms-dialogHidden ms-forceWrap ms-noList
+{
+	width:237px!important;
+	margin-right:0px;
+	background-image: url('/sites/DocumentCenter/PublishingImages/bg_repeat01.png');
+	 background-repeat:repeat-x;
+	  height: 411px;
+}
+
+/*
+.ms-core-suiteLinkList{
+	
+	display:none;
+}*/
+
+
+.ms-rtestate-field h1{
+	color:rgb(79,33,112)!important;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#sideNavBox {
+    width:197px;
+}
+
+#RibbonContainer-TabRowRight {
+    display:none !important;
+}
+
+
+
+
+
+div[id*='DeltaTopNavigation'] .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link{
+color:white !important;
+}
+
+div[id*='DeltaTopNavigation'] > .ms-core-listMenu-item:link{
+color:white !important;
+}
+
+/*
+
+div[id$='DeltaTopNavigation'] > .ms-core-listMenu-horizontalBox > .ms-core-listMenu-root > .ms-listMenu-editLink
+{
+display:none;
+}
+*/
+
+
+div[id*='TopNavigationMenu'] > ul > li
+{
+color:white !important;
+} 
+
+
+div[id*='TopNavigationMenu']  ms-navedit-editLinksText > span > .ms-metadata,div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
+{
+
+color:white !important;
+}
+
+a[id*='TopNavigationMenu_NavMenu_AddLink']
+{
+color:white !important;
+}
+
+
+div[id*='TopNavigationMenu'] .ms-core-listMenu-item,div[id*='TopNavigationMenu'] .ms-core-listMenu-item:link,div[id*='TopNavigationMenu'] .ms-core-listMenu-item:visited,div[id*='TopNavigationMenu'] .ms-tv-item:link,div[id*='TopNavigationMenu'] .ms-tv-item:visited,div[id*='TopNavigationMenu'] .ms-tv-header:link,div[id*='TopNavigationMenu'] .ms-tv-header:visited
+{
+color:white !important;
+}
+
+
+div[id*='TopNavigationMenu'] .ms-navedit-editLinksText > span > .ms-metadata,div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
+{
+color:white !important;
+}
+
+
+.mondoleze-team-site-title{
+    color:#E5E2E2 !important;
+    font-family:Arial;
+}
+
+
+#siteIcon {
+
+max-height:64px;
+
+width:180px;
+
+}
+
+#DeltaPlaceHolderPageTitleInTitleArea{
+display:none;
+}
+
+/*Hiding OneDrive*/
+a[id*='ShellDocuments'] {
+    display: none !important;
+}
+
+/*Added for vnext mods*/
+body, #s4-workspace, #s4-bodyContainer{
+	background-color:white  !important
+}
+#suiteBar{
+	background-color:#f7f3f7!important;
+}
+#sideNavBox{
+    background-color: #5EACFF;
+    background-image: url("/SiteAssets/DC/images/bg_repeat01.png");
+    background-repeat: repeat-x;
+    min-height: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;	
+}
+#contentRow{
+	padding-top:0 !important;
+}
+ #contentBox {
+    margin-left: 247px !important;}
+.ms-core-sideNavBox-removeLeftMargin {
+    margin-right: -20px;
+}

@@ -1,0 +1,200 @@
+﻿#s4-titlerow {
+    background-image: url("/SiteAssets/Team/Images/TeamSitebanner.png");
+}
+
+.ms-core-brandingText {
+    display: none;
+}
+
+.ms-srch-sb {
+    background-color: white;
+}
+
+.ms-webpart-titleText.ms-webpart-titleText, .ms-webpart-titleText > a {
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+
+.ms-promlink-parttitle {
+    color: #4f2170 !important;
+}
+/*.mondoleze-team-site-title {
+    font-family:Arial;
+   font-size:2.77em;
+    position:absolute;
+    top:45px;
+    left:245px;
+left:210px;
+    color:#E5E2E2;
+}
+    
+    .ms-core-suiteLinkList {
+    display:none;
+}
+    */
+
+
+
+/*Change for Site Collection upgrade*/
+.ms-wpContentDivSpace
+{
+padding:10px;
+}
+
+/*Change for Site Collection upgrade*/
+#layoutsTable tr td:first-child + td h2.ms-rteElement-H2
+{
+background-color:#52247b;
+color:white;
+padding-left:5px;
+}
+
+
+/*Change for Site Collection upgrade*/
+#layoutsTable tr td:first-child + td span table{
+border:1px solid #52247b;
+
+}
+
+/*Change for Site Collection upgrade*/
+#layoutsTable tr td:first-child + td div.ms-rte-wpbox{
+/*margin-top:15px;*/
+
+}
+
+
+.headerbckground {
+    background-image: url("/SiteAssets/Team/Images/purple_header_mdl.png");
+    background-repeat:repeat-x;
+    height:37px;
+   color:#f7f3f7;
+   font-family:"Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+   text-align:left;
+   padding-left:5px;
+   font-size:1.46em;
+}
+
+
+/*
+div[id$='QuickLaunchNavigationManager'] a[href$='Reports.aspx']
+{
+  display:none !important;
+}
+
+.ms-core-suiteLinkList {
+    display:none;
+}
+
+#suiteBarLeft {
+background-color:#f7f3f7;
+}
+    
+    
+    
+    */
+
+#RibbonContainer-TabRowRight {
+    display:none !important;
+}
+
+
+
+
+div[id*='DeltaTopNavigation'] .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link{
+color:white !important;
+}
+
+div[id*='DeltaTopNavigation'] > .ms-core-listMenu-item:link{
+color:white !important;
+}
+
+#DeltaPlaceHolderPageTitleInTitleArea{
+display:none;
+}
+/*
+
+div[id$='DeltaTopNavigation'] > .ms-core-listMenu-horizontalBox > .ms-core-listMenu-root > .ms-listMenu-editLink
+{
+display:none;
+}
+*/
+
+
+div[id*='TopNavigationMenu'] > ul > li
+{
+color:white !important;
+} 
+
+
+div[id*='TopNavigationMenu']  ms-navedit-editLinksText > span > .ms-metadata,div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
+{
+
+color:white !important;
+}
+
+a[id*='TopNavigationMenu_NavMenu_AddLink']
+{
+color:white !important;
+}
+
+
+div[id*='TopNavigationMenu'] .ms-core-listMenu-item,div[id*='TopNavigationMenu'] .ms-core-listMenu-item:link,div[id*='TopNavigationMenu'] .ms-core-listMenu-item:visited,div[id*='TopNavigationMenu'] .ms-tv-item:link,div[id*='TopNavigationMenu'] .ms-tv-item:visited,div[id*='TopNavigationMenu'] .ms-tv-header:link,div[id*='TopNavigationMenu'] .ms-tv-header:visited
+{
+color:white !important;
+}
+
+
+div[id*='TopNavigationMenu'] .ms-navedit-editLinksText > span > .ms-metadata,div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
+{
+color:white !important;
+}
+
+
+.mondoleze-team-site-title{
+    color:#E5E2E2 !important;
+    font-family:Arial;
+}
+
+
+#siteIcon {
+
+max-height:64px;
+
+width:180px;
+
+}
+
+
+/*Hiding OneDrive*/
+a[id*='ShellDocuments'] {
+    display: none !important;
+}
+
+.ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(odd) .ms-webpart-chrome-title,
+.ms-webpart-zone .ms-webpart-chrome:nth-child(odd) .ms-webpart-chrome-title{
+margin-bottom:0px;
+	background-image:url(/SiteAssets/Team/Images/orange_header_mdl.png);
+	background-repeat:repeat-x;
+	
+}
+
+.ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(odd) .ms-webpart-chrome,
+.ms-webpart-zone .ms-webpart-chrome:nth-child(odd) .ms-wpContentDivSpace{
+		border:#ff6d21 1px solid;
+}
+
+.ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(even) .ms-webpart-chrome-title,
+.ms-webpart-zone .ms-webpart-chrome:nth-child(even) .ms-webpart-chrome-title{
+	margin-bottom:0px;
+	background-image:url(/SiteAssets/Team/Images/purple_header_mdl.png);
+	background-repeat:repeat-x;
+}
+
+.ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(even) .ms-webpart-chrome, 
+.ms-webpart-zone .ms-webpart-chrome:nth-child(even) .ms-wpContentDivSpace{
+		border:#732c84 1px solid;	
+}
+
+body{
+	visibility:visible !important;
+}
