@@ -15,7 +15,7 @@
                     var headID = document.getElementsByTagName('head')[0]; 
                     var subsiteScriptTag = document.createElement('script');
                     subsiteScriptTag.type = 'text/javascript';
-                    subsiteScriptTag.src = 'https://[RemoteWebHostNameToken]/scripts/SubSiteOverride.js';
+                    subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
                     headID.appendChild(subsiteScriptTag);"/>
     </pnp:SiteCustomActions>
     <pnp:WebCustomActions>
@@ -48,8 +48,8 @@
                              var scr_elem = document.createElement('script');
                              scr_elem.type = 'text/javascript';
                              scr_elem.src = '/SiteAssets/Team/scripts/MDLZTeamsite.Init.js' + '?rev=' + verStr;
-                             headElem.appendChild(scr_elem);"
-                Rights="31"/>
+                             var headElem = document.getElementsByTagName('head')[0];
+                             headElem.appendChild(scr_elem);"/>
     </pnp:WebCustomActions>
   </pnp:CustomActions>
   <pnp:Lists>
@@ -98,15 +98,71 @@
                       RemoveExistingContentTypes="true">
     </pnp:ListInstance>
   </pnp:Lists>
-  <pnp:PropertyBagEntries>
-    <pnp:PropertyBagEntry Key="allowdesigner" Value="0" />
-  </pnp:PropertyBagEntries>
   <pnp:ComposedLook Name="Office"
                     AlternateCSS="/SiteAssets/Team/Css/MDLZTeamsite.css"
-                    SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png" ColorFile="" FontFile="" BackgroundFile=""/>
+                    SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png" 
+                    ColorFile="" FontFile="" BackgroundFile=""/>
   <pnp:Pages>
-    <pnp:Page Layout ="TwoColumns" WelcomePage ="true" Url ="{site}/SitePages/Welcome.aspx">
-      <pnp:WebParts>  
+    <pnp:Page Layout ="OneColumnSidebar" WelcomePage ="true" Url ="{site}/SitePages/Welcome.aspx">
+      <pnp:WebParts>
+        <!--Left column webparts-->
+        <pnp:WebPart Column="1" Row="1" Title="Announcements">
+          <pnp:Contents>
+            <![CDATA[<webParts>
+                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                                                        <metaData>
+                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                                                        </metaData>
+                                                        <data>
+                                                          <properties>
+                                                            <property name="ListUrl" type="string">Lists/Announcements</property>
+                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                                                          </properties>
+                                                        </data>
+                                                      </webPart>
+                                                    </webParts>]]>
+          </pnp:Contents>
+        </pnp:WebPart>
+        <pnp:WebPart Column="1" Row="1" Title="Calendar">
+          <pnp:Contents>
+            <![CDATA[
+                                                    <webParts>
+                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                                                        <metaData>
+                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                                                        </metaData>
+                                                        <data>
+                                                          <properties>
+                                                            <property name="ListUrl" type="string">Lists/Calendar</property>
+                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                                                          </properties>
+                                                        </data>
+                                                      </webPart>
+                                                    </webParts>]]>
+          </pnp:Contents>
+        </pnp:WebPart>
+        <pnp:WebPart Column="1" Row="1" Title="Documents">
+          <pnp:Contents>
+            <![CDATA[
+                                                    <webParts>
+                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                                                        <metaData>
+                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                                                        </metaData>
+                                                        <data>
+                                                          <properties>
+                                                            <property name="ListUrl" type="string">SharedDocuments1</property>
+                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                                                          </properties>
+                                                        </data>
+                                                      </webPart>
+                                                    </webParts>]]>
+          </pnp:Contents>
+        </pnp:WebPart>
+        <!--Sidebar webparts-->
         <pnp:WebPart Column="2" Row="1" Title="Getting Started">
           <pnp:Contents>
             <![CDATA[<webParts>
@@ -125,10 +181,10 @@
         <property name="BaseViewID" type="string">1</property>
         <property name="AllowHide" type="bool">True</property>
         <property name="AllowMinimize" type="bool">True</property>
-        <property name="Title" type="string">{REPLACETHIS}</property>
+        <property name="Title" type="string">Getting Started</property>
         <property name="TitleUrl" type="string" />
         <property name="ExportMode" type="exportmode">All</property>
-        <property name="ChromeType" type="chrometype">None</property>
+        <property name="ChromeType" type="chrometype">TitleAndBorder</property>
         <property name="AllowConnect" type="bool">True</property>
         <property name="Width" type="string" />
         <property name="Height" type="string" />
@@ -143,6 +199,25 @@
     </data>
   </webPart>
 </webParts>]]>
+          </pnp:Contents>
+        </pnp:WebPart>
+        <pnp:WebPart Column="2" Row="1" Title="Team Discussion">
+          <pnp:Contents>
+            <![CDATA[
+                                                    <webParts>
+                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                                                        <metaData>
+                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                                                        </metaData>
+                                                        <data>
+                                                          <properties>
+                                                            <property name="ListUrl" type="string">Lists/Team Discussion</property>
+                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                                                          </properties>
+                                                        </data>
+                                                      </webPart>
+                                                    </webParts>]]>
           </pnp:Contents>
         </pnp:WebPart>
         <pnp:WebPart Column="2" Row="1" Title="Tag Cloud">
@@ -184,81 +259,6 @@
     </data>
   </webPart>
 </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Column="1" Row="1" Title="Announcements">
-          <pnp:Contents>
-            <![CDATA[<webParts>
-                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-                                                        <metaData>
-                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
-                                                        </metaData>
-                                                        <data>
-                                                          <properties>
-                                                            <property name="ListUrl" type="string">Lists/Announcements</property>
-                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
-                                                          </properties>
-                                                        </data>
-                                                      </webPart>
-                                                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Column="1" Row="1" Title="Documents">
-          <pnp:Contents>
-            <![CDATA[
-                                                    <webParts>
-                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-                                                        <metaData>
-                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
-                                                        </metaData>
-                                                        <data>
-                                                          <properties>
-                                                            <property name="ListUrl" type="string">SharedDocuments1</property>
-                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
-                                                          </properties>
-                                                        </data>
-                                                      </webPart>
-                                                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Column="2" Row="1" Title="Calendar">
-          <pnp:Contents>
-            <![CDATA[
-                                                    <webParts>
-                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-                                                        <metaData>
-                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
-                                                        </metaData>
-                                                        <data>
-                                                          <properties>
-                                                            <property name="ListUrl" type="string">Lists/Calendar</property>
-                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
-                                                          </properties>
-                                                        </data>
-                                                      </webPart>
-                                                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Column="2" Row="1" Title="Team Discussion">
-          <pnp:Contents>
-            <![CDATA[
-                                                    <webParts>
-                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-                                                        <metaData>
-                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
-                                                        </metaData>
-                                                        <data>
-                                                          <properties>
-                                                            <property name="ListUrl" type="string">Lists/Team Discussion</property>
-                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
-                                                          </properties>
-                                                        </data>
-                                                      </webPart>
-                                                    </webParts>]]>
           </pnp:Contents>
         </pnp:WebPart>
       </pnp:WebParts>

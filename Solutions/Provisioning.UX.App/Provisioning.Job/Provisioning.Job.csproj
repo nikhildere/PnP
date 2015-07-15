@@ -115,6 +115,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBPSiteExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzDCSiteExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzProjectSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzTeamSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\Utilities\LocalizationUtility.cs" />
     <Compile Include="MdlzComponents\Utilities\WebPartUtility.cs" />
@@ -159,17 +162,132 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MdlzComponents\SiteAssets\Blog\css\MDLZBlogSite.css" />
+    <Content Include="MdlzComponents\SiteAssets\Blog\images\BlogSiteBanner.png" />
+    <Content Include="MdlzComponents\SiteAssets\Blog\images\red_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\Blog\scripts\MDLZblogsite.Init.js" />
+    <Content Include="MdlzComponents\SiteAssets\Blog\scripts\MDLZblogsite.Init.Legacy.js" />
+    <Content Include="MdlzComponents\SiteAssets\Blog\scripts\mdlzblogsite.js" />
+    <Content Include="MdlzComponents\SiteAssets\BP\css\BPdefaultcss.css" />
+    <Content Include="MdlzComponents\SiteAssets\BP\css\MDLZBPsite.css" />
+    <Content Include="MdlzComponents\SiteAssets\BP\images\aqua_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\BP\images\blue_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\BP\images\BPSiteTopbanner.png" />
+    <Content Include="MdlzComponents\SiteAssets\BP\images\BPSiteTopbannerOld.png" />
+    <Content Include="MdlzComponents\SiteAssets\BP\scripts\MDLZBPsite.Init.js" />
+    <Content Include="MdlzComponents\SiteAssets\BP\scripts\MDLZBPsite.Init.Legacy.js" />
+    <Content Include="MdlzComponents\SiteAssets\BP\scripts\MDLZBPsite.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\images\MDLZSiteIcon.png" />
+    <Content Include="MdlzComponents\SiteAssets\Common\ProvApp\scripts\SubSiteOverride.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\jquery-1.11.0.min.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\MDLZ.SiteLifeCycle.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\WebTrendsMDLZ\Mondelez_Customs.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\WebTrendsMDLZ\Preserve.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\WebTrendsMDLZ\sp_O365_Plugin.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\WebTrendsMDLZ\webtrends.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\WebTrendsMDLZ\webtrends.load.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\WebTrendsMDLZ\webtrends.sp.js" />
+    <Content Include="MdlzComponents\SiteAssets\DC\css\MDLZDCSite.css" />
+    <Content Include="MdlzComponents\SiteAssets\DC\images\bg_repeat01.png" />
+    <Content Include="MdlzComponents\SiteAssets\DC\images\DocCenterBanner.png" />
+    <Content Include="MdlzComponents\SiteAssets\DC\scripts\MDLZDocCenter.Init.js" />
+    <Content Include="MdlzComponents\SiteAssets\DC\scripts\MDLZDocCenter.Init.Legacy.js" />
+    <Content Include="MdlzComponents\SiteAssets\DC\scripts\MDLZDocCenter.js" />
+    <Content Include="MdlzComponents\SiteAssets\PS\css\MDLZProjectSite.css" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\01.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\02.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\03.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\04.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\05.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\06.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\07.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\aqua_bg.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\blue_bg.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\grey_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\ProjectSitebanner.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\images\red_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\PS\scripts\mdlzprojectsite.js" />
+    <Content Include="MdlzComponents\SiteAssets\PS\scripts\MDLZProjectSite.Init.js" />
+    <Content Include="MdlzComponents\SiteAssets\PS\scripts\MDLZProjectSite.Init.Legacy.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\css\MDLZTeamsite.css" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\aqua_btm.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\aqua_header_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\aqua_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\aqua_header_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\aqua_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\aqua_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\banner.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\blue_btm.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\blue_header_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\blue_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\blue_header_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\blue_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\blue_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\box01.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\box02.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\box03.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\box04.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\box05.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\green_btm.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\green_header_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\green_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\green_header_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\green_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\green_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\orange_btm.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\orange_header_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\orange_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\orange_header_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\orange_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\orange_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\purple_btm.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\purple_header_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\purple_header_mdl.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\purple_header_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\purple_lt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\purple_rt.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\images\TeamSitebanner.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\scripts\MDLZTeamsite.Init.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\scripts\MDLZTeamsite.Init.Legacy.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\scripts\MDLZTeamsite.js" />
+    <Content Include="MdlzComponents\SiteAssets\Wiki\css\MDLZWikiSite.css" />
+    <Content Include="MdlzComponents\SiteAssets\Wiki\images\WikiSiteBanner.png" />
+    <Content Include="MdlzComponents\SiteAssets\Wiki\scripts\MDLZWikisite.Init.js" />
+    <Content Include="MdlzComponents\SiteAssets\Wiki\scripts\MDLZWikisite.Init.Legacy.js" />
+    <Content Include="MdlzComponents\SiteAssets\Wiki\scripts\MDLZWikisite.js" />
     <Content Include="Resources\EmailContent\FailEmail.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\EmailContent\NewSiteEmail.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\DocumentCenter\TeamSiteTemplate.xml">
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.Blog\BlogTemplate.xml">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.BusinessPartner\BusinessPartnerTemplate.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.DocumentCenter\DocumentCenterTemplate.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.EnterpriseWiki\EnterpriseWikiTemplate.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\default.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\ProjectSiteTemplate.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.TeamSite\TeamSiteTemplate.xml">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\TeamSiteTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

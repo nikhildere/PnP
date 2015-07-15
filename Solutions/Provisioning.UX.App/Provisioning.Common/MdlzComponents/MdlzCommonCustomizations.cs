@@ -129,8 +129,9 @@ namespace Provisioning.Common.MdlzComponents
                 if (!isSubSite)
                 {
                     EnsureDefaultAssociatedGroups(_web);
-                    DisableSPD(_web);
+                    DisableSPD(ctx.Site);
                     AddHostnameToCustomActionUrls();
+                    DisableMDS(_web);
                 }
             });
         }
@@ -205,11 +206,29 @@ namespace Provisioning.Common.MdlzComponents
             }
         }
 
-        public static void DisableSPD(Web web)
+        public static void DisableSPD(Site site)
         {
             try
             {
-                web.SetPropertyBagValue("allowdesigner", 0);
+                site.AllowDesigner = site.AllowMasterPageEditing = site.AllowRevertFromTemplate = false;
+                site.Context.Load(site);
+                site.Context.ExecuteQuery();
+            }
+            catch (Exception ex)
+            {
+                Log.Error("Provisioning.Common.MdlzComponents.MdlzCommonCustomizations.DisableSPD", ex.Message);
+                throw;
+            }
+        }
+
+        public static void DisableMDS(Web web)
+        {
+            try
+            {
+                web.EnableMinimalDownload = false;
+                web.Update();
+                web.Context.Load(web);
+                web.Context.ExecuteQuery();
             }
             catch (Exception ex)
             {

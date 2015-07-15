@@ -44,8 +44,9 @@ namespace OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers
 
                 Microsoft.SharePoint.Client.File targetFile = null;
                 var checkedOut = false;
+                string filenameWithExtension = file.Src.Substring(file.Src.LastIndexOf("\\") + 1);
 
-                targetFile = folder.GetFile(file.Src);
+                targetFile = folder.GetFile(filenameWithExtension);
 
                 if (targetFile != null)
                 {
@@ -55,7 +56,7 @@ namespace OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers
 
                         using (var stream = template.Connector.GetFileStream(file.Src))
                         {
-                            targetFile = folder.UploadFile(file.Src, stream, file.Overwrite);
+                            targetFile = folder.UploadFile(filenameWithExtension, stream, file.Overwrite);
                         }
                     }
                     else
@@ -67,7 +68,7 @@ namespace OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers
                 {
                     using (var stream = template.Connector.GetFileStream(file.Src))
                     {
-                        targetFile = folder.UploadFile(file.Src, stream, file.Overwrite);
+                        targetFile = folder.UploadFile(filenameWithExtension, stream, file.Overwrite);
                     }
 
                     checkedOut = CheckOutIfNeeded(web, targetFile);
