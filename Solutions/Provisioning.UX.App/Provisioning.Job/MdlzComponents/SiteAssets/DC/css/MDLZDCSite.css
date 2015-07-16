@@ -197,3 +197,11 @@ body, #s4-workspace, #s4-bodyContainer{
 .ms-core-sideNavBox-removeLeftMargin {
     margin-right: -20px;
 }
+
+#O365_MainLink_Help {
+    visibility: hidden;
+}
+
+    #O365_MainLink_Help > span {
+        visibility: visible;
+    }

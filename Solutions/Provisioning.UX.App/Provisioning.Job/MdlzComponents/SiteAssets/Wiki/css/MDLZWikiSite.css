@@ -135,3 +135,11 @@ display:none;
 a[id*='ShellDocuments'] {
     display: none !important;
 }
+
+#O365_MainLink_Help {
+    visibility: hidden;
+}
+
+    #O365_MainLink_Help > span {
+        visibility: visible;
+    }

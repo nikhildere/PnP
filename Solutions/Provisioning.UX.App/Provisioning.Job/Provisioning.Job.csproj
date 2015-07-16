@@ -115,9 +115,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzWikiSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBPSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzDCSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzProjectSiteExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBlogSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzTeamSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\Utilities\LocalizationUtility.cs" />
     <Compile Include="MdlzComponents\Utilities\WebPartUtility.cs" />

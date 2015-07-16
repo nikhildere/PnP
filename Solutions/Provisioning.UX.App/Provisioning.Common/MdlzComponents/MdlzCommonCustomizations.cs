@@ -56,6 +56,7 @@ namespace Provisioning.Common.MdlzComponents
         {
             try
             {
+                string emailAddresses = "";
 
             }
             catch (Exception ex)
@@ -130,9 +131,9 @@ namespace Provisioning.Common.MdlzComponents
                 {
                     EnsureDefaultAssociatedGroups(_web);
                     DisableSPD(ctx.Site);
-                    AddHostnameToCustomActionUrls();
-                    DisableMDS(_web);
                 }
+                AddHostnameToCustomActionUrls();
+                DisableMDS(_web);
             });
         }
 
@@ -158,12 +159,7 @@ namespace Provisioning.Common.MdlzComponents
 
         private void PostCreationApply()
         {
-            UsingContext(ctx =>
-            {
-                var owner = ctx.Web.EnsureUser(actualRequestOwner);
-                ctx.Load(owner, x => x.Email);
-                request.SiteOwner = new SiteUser { Name = owner.Email };
-            });
+            request.SiteOwner.Name = actualRequestOwner;
         }
         #endregion
 
@@ -174,6 +170,8 @@ namespace Provisioning.Common.MdlzComponents
         {
             PreCreationApply();
             siteCreation();
+            PostCreationApply();
+
             PreProvisionApply();
             siteProvision();
             PostProvisioningApply();

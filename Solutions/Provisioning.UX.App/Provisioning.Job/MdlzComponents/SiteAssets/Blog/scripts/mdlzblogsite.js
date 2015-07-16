@@ -56,9 +56,13 @@ function runScriptAfterJqueryLoad() {
 		
 		    applyWebPartStyles();
 		    addSiteTitle();
-		    ExecuteOrDelayUntilScriptLoaded(GetHelpData, "sp.js");
+
+		    $('#O365_MainLink_Help').closest('div').on('click', function () {
+		        window.open("https://collaboration.kraft.com/sites/productivityhub/sharepoint/Pages/Home.aspx", null,
+                'top=1,left=1,center=yes,resizable=yes,Width=500px,Height= 400px,status=yes,titlebar=yes;toolbar=no,menubar=no,location=yes,scrollbars=no');
+		    });
 		
-		});
+        }).addClass('o365cs-nav-button');
 
     } else {
         // wait 50 milliseconds and try again.
@@ -66,46 +70,6 @@ function runScriptAfterJqueryLoad() {
     }
 }
 
-
-
-
-
-
-function GetHelpData() {
-    clientContext = new SP.ClientContext.get_current();
-    oList = clientContext.get_web().get_lists().getByTitle('HelpLinkConfig');
-
-    var camlQuery = new SP.CamlQuery();
-    camlQuery.set_viewXml('<View><Query><Where><Eq><FieldRef Name=\'Title\'/>' +
-        '<Value Type=\'Text\'>HelpLink</Value></Eq></Where></Query><RowLimit>1</RowLimit></View>');
-    this.collListItem = oList.getItems(camlQuery);
-
-    clientContext.load(collListItem);
-
-    clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceeded), Function.createDelegate(this, this.onQueryFailed));
-
-}
-
-function onQuerySucceeded(sender, args) {
-
-    var listItemInfo = '';
-
-    var listItemEnumerator = collListItem.getEnumerator();
-
-    while (listItemEnumerator.moveNext()) {
-        var oListItem = listItemEnumerator.get_current();
-        listItemInfo = oListItem.get_item('Value');
-    }
-
-    $("#ctl00_TopHelpLink").attr("onclick", "window.open ('" + listItemInfo.toString() + "', null,'top=1,left=1,center=yes,resizable=yes,Width=500px,Height= 400px,status=yes,titlebar=yes;toolbar=no,menubar=no,location=yes,scrollbars=no'); return false;");
-
-}
-
-
-function onQueryFailed(sender, args) {
-
-    alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
-}
 
 function Reinit() {
     //verify we have finished loading init.js  

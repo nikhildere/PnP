@@ -113,8 +113,10 @@ function runScriptAfterJqueryLoad() {
 		    applyWebPartStyles();
 		    addSiteTitle();
 		
-		    //ExecuteOrDelayUntilScriptLoaded(GetHelpData, "sp.js");
-		    $('#ctl00_TopHelpLink').attr('href', 'javascript:;').attr('onclick', '').click(GetHelpData);
+		    $('#O365_MainLink_Help').closest('div').on('click', function () {
+		        window.open("https://collaboration.kraft.com/sites/productivityhub/sharepoint/Pages/Home.aspx", null,
+                'top=1,left=1,center=yes,resizable=yes,Width=500px,Height= 400px,status=yes,titlebar=yes;toolbar=no,menubar=no,location=yes,scrollbars=no');
+		    }).addClass('o365cs-nav-button');
         });
     } else {
         // wait 50 milliseconds and try again.

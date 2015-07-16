@@ -85,7 +85,8 @@
         }
 
         $scope.filterSiteTemplates = function (template) {
-            return (template.rootTemplate != 'BLOG#0' && template.rootTemplate != 'ENTERWIKI#0');
+            return true;
+            //return (template.rootTemplate != 'BLOG#0' && template.rootTemplate != 'ENTERWIKI#0');
         }
 
         function activate() {

@@ -200,3 +200,11 @@ margin-bottom:0px;
 body{
 	visibility:visible !important;
 }
+
+#O365_MainLink_Help {
+    visibility: hidden;
+}
+
+    #O365_MainLink_Help > span {
+        visibility: visible;
+    }
