@@ -8,6 +8,7 @@ using OfficeDevPnP.Core.Framework.ObjectHandlers;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using OfficeDevPnP.Core.Utilities;
 using File = Microsoft.SharePoint.Client.File;
+using System.IO;
 
 namespace OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers
 {
@@ -44,8 +45,7 @@ namespace OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers
 
                 Microsoft.SharePoint.Client.File targetFile = null;
                 var checkedOut = false;
-                string filenameWithExtension = file.Src.Substring(file.Src.LastIndexOf("\\") + 1);
-
+                string filenameWithExtension = Path.GetFileName(file.Src);
                 targetFile = folder.GetFile(filenameWithExtension);
 
                 if (targetFile != null)
