@@ -75,6 +75,7 @@
     <script src="../scripts/data/metadata.factory.js"></script>
     <script src="../scripts/data/appsettings.factory.js"></script>
     <script src="../scripts/wizard/services/provisioningServices.js"></script>
+    <script src="../Scripts/sp.peoplepicker.js"></script>
     <script src="../scripts/app.js"></script>    
 
     <script type="text/javascript">

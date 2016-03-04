@@ -102,6 +102,7 @@
   <ItemGroup>
     <Content Include="Pages\Shell.html" />
     <Content Include="Scripts\bootstrap.dialog.js" />
+    <Content Include="Scripts\sp.peoplepicker.js" />
     <Content Include="Scripts\wizard\controllers\shell.js" />
     <Content Include="Styles\toastr.css" />
     <Content Include="Styles\toastr.min.css" />
