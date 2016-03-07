@@ -20,11 +20,11 @@
                 var _ownersEmail = [];
                 for (var i = 0; i < _resolvedOwners.length; i++) {
                     _ownersEmail.push(_resolvedOwners[i].email);
-                }
+        }
                 $scope.siteConfiguration.secondaryOwners = _ownersEmail;
                 var owners = $('#ppSecondaryOwners').spSecondaryOwnersPicker('get');
                 $scope.siteConfiguration._resolvedOwners = owners;
-            }
+        }
         }
 
         var context;
@@ -67,17 +67,7 @@
         }
 
         function initSiteOwnersPeoplePickers(context) {
-            //Make a people picker control
-            //1. context = SharePoint Client Context object
-            //2. $('#spanAdministrators') = SPAN that will 'host' the people picker control
-            //3. $('#inputAdministrators') = INPUT that will be used to capture user input
-            //4. $('#divAdministratorsSearch') = DIV that will show the 'dropdown' of the people picker
-            //5. $('#hdnAdministrators') = INPUT hidden control that will host a JSON string of the resolved users
-
-            //additionalOwnersPicker = $peoplepickerfactory.getPeoplePickerInstance(context, $('#spanAdditionalOwnersPrimary'), $('#inputAdditionalOwnersPrimary'), $('#divAdditionalOwnersPrimarySearch'), $('#hdnAdditionalOwnersPrimary'), "additionalOwnersPicker", spLanguage, $scope.resolvedAdditionalOwners);
-            //membersPicker = $peoplepickerfactory.getPeoplePickerInstance(context, $('#spanMembers'), $('#inputMembers'), $('#divMembersSearch'), $('#hdnMembers'), "membersPicker", spLanguage, $scope.resolvedMembers);
-            //visitorsPicker = $peoplepickerfactory.getPeoplePickerInstance(context, $('#spanVisitors'), $('#inputVisitors'), $('#divVisitorsSearch'), $('#hdnVisitors'), "visitorsPicker", spLanguage, $scope.resolvedVisitors);
-
+            
             // setup people pickers
             $('#ppSecondaryOwners').spSecondaryOwnersPicker({
                 onLoaded: function () {

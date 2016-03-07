@@ -3,223 +3,126 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <script src="//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js" type="text/javascript"></script>
-    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="../../Scripts/chromeloader.js?rev=1" type="text/javascript"></script>
+    <title>Sub Site Creation</title>
+     <link href="../../Styles/site.css" rel="stylesheet" type="text/css" />
+     <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js" type="text/javascript" ></script>      
+     <script src="../../Scripts/chromeloader.js?rev=1" type="text/javascript"></script>
 </head>
-<body>
-    <div id="divSPChrome"></div>
-    <div class="page">
-        <section id="main">
+<body style="display: none; overflow: auto;">
+    <form id="form1" runat="server">
+    <div id="divSPChrome"></div>    
+        <div class="page">
             <script type="text/javascript">
                 $(function () {
-                    $('#edit_button').click(function () {
-                        $.ajax({
-                            success: function () {
-                            }
-                        });
-                    });
                     $('#cancel_button').click(function () {
                         window.location = $('#Url').val();
                     });
                 });
             </script>
-            <div id="loading_dialog" title="Saving..." style="display: none;">
-                <p>
-                    <img src="../../images/spinningwheel.gif" width='20' height='20' alt="" style="position: relative; top: 5px; right: 5px;" />
-                    <span style="color: #696969;">Please wait while your changes are processed. </span>
-                </p>
-            </div>
-            <form id="form" runat="server">
-                <fieldset>
-                    <legend>Site Information</legend>
-                    <script type="text/javascript">
-                        $(function () {
-                            $('input[name=AudienceScope]').click(function () {
-                                var selected = $(this).val();
-                                Hide('.AS_group');
-                                Show('#AS_' + selected);
-                            });
-                            $('#TargetedAudienceTable').addClass('TargetedAudienceTable');
-                        });
-                        function RevertAudienceScope() {
-                            Check('#AudienceScope_' + 'Team');
-                            $('#AudienceScope_' + 'Team').click();
-                        }
-                    </script>
-                    <table id="SitePropertiesTable" width="100%">
-                        <tbody>
+        <asp:ScriptManager ID="scriptManager" runat="server" EnableCdn="True" />
+        <asp:UpdateProgress ID="progress" runat="server" AssociatedUpdatePanelID="mainPanel" DynamicLayout="true">
+            <ProgressTemplate>
+                <div id="divWaitingPanel" style="position: absolute; z-index: 3; background: rgb(255, 255, 255); width: 100%; bottom: 0px; top: 0px;">
+                    <div style="top: 40%; position: absolute; left: 50%; margin-left: -150px;">
+                        <img alt="Working on it" src="data:image/gif;base64,R0lGODlhEAAQAIAAAFLOQv///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgABACwJAAIAAgACAAACAoRRACH5BAUKAAEALAwABQACAAIAAAIChFEAIfkEBQoAAQAsDAAJAAIAAgAAAgKEUQAh+QQFCgABACwJAAwAAgACAAACAoRRACH5BAUKAAEALAUADAACAAIAAAIChFEAIfkEBQoAAQAsAgAJAAIAAgAAAgKEUQAh+QQFCgABACwCAAUAAgACAAACAoRRACH5BAkKAAEALAIAAgAMAAwAAAINjAFne8kPo5y02ouzLQAh+QQJCgABACwCAAIADAAMAAACF4wBphvID1uCyNEZM7Ov4v1p0hGOZlAAACH5BAkKAAEALAIAAgAMAAwAAAIUjAGmG8gPW4qS2rscRPp1rH3H1BUAIfkECQoAAQAsAgACAAkADAAAAhGMAaaX64peiLJa6rCVFHdQAAAh+QQJCgABACwCAAIABQAMAAACDYwBFqiX3mJjUM63QAEAIfkECQoAAQAsAgACAAUACQAAAgqMARaol95iY9AUACH5BAkKAAEALAIAAgAFAAUAAAIHjAEWqJeuCgAh+QQJCgABACwFAAIAAgACAAACAoRRADs=" style="width: 32px; height: 32px;" />
+                        <span class="ms-accentText" style="font-size: 36px;">&nbsp;Working on it...</span>
+                    </div>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress> 
+        <asp:UpdatePanel ID="mainPanel" runat="server" ChildrenAsTriggers="true">
+            <ContentTemplate>
+                    <fieldset>
+                    <legend>New SharePoint Site</legend>
+                    <br />
+                    <br />
+                    <table id="SiteInfoTable" width="15%">
+                        <tbody>                           
                             <tr>
-                                <td valign="top">
-                                    <div class="editor-label">
-                                        <div class='O15_editor_label_head'>
-                                            <p>Site Properties</p>
-                                        </div>
-                                        <div class="O15_editor_label_body">
-                                            <p>Learn more about <a href="http://INSERTYOURPOLICY" target="_blank">site classification</a>.</p>
-                                            <p>All Sites must have the following Site metadata applied.</p>
-                                        </div>
-                                    </div>
+                                <!-- Title and Description -->
+                                <td class="ms-sectionheader" style="padding-top: 4px;" height="22"  valign="top">
+                                    <h3 class="ms-standardheader ms-inputformheader">
+                                        Title and Description
+                                    </h3>                                
                                 </td>
-                                <td valign="top" class="right-column">
-                                    <div class="editor-field O15_editor_field_head">
-                                        <p>Current Site Division:</p>
-                                        <b>&nbsp&nbsp&nbsp<asp:Label ID="lblDivision" runat="server" Visible="true"></asp:Label></b>
-                                        <p>
-                                            <span>Division</span>
-                                        </p>
-                                        <script type="text/javascript" charset="utf-8">
-                                            $(document).ready(function () {
-                                                $.ajax({
-                                                    url: "../../Scripts/data/json/divisions.json",
-                                                    data: {},
-                                                    dataType: "json",
-                                                    contentType: "application/json; charset=utf-8",
-                                                    success: function (data) {
-                                                        var jsdata = data.divisions;
-                                                        $.each(jsdata, function (key, value) {
-                                                            $('#<%=selectDivision.ClientID%>').append($("<option></option>").val(value.key).html(value.value));
-                                                        });
-                                                    },
-                                                    error: function (data) {
-                                                        alert("../../Scripts/data/json/divisions.json not found!");
-                                                    }
-                                                });
-                                            });
-                                        </script>
-                                        <select id="selectDivision" runat="server" style="width: 230px; margin-left: 13px;"></select>
+                           </tr>
+                            <tr>                                
+                                <td valign="top" style="padding-left: 150px;">
+                                
+                                    <h3 class="ms-standardheader ms-inputformheader">Title:</h3>
+                                    <div class="ms-input">
+                                        <asp:TextBox ID="txtTitle" runat="server" CssClass="ms-fullWidth" onkeyup="javascript:txtTitleChanged();"></asp:TextBox>
+                                    </div>
+                                    <br />
+                                    <h3 class="ms-standardheader ms-inputformheader">Description:</h3>
+                                    <div class="ms-input">
+                                        <asp:TextBox ID="txtDescription" runat="server" CssClass="ms-fullWidth" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                                    </div>
+                                <br />
+                                <br />
+                                </td>
+                             </tr>
+                            <tr>
+                                <!-- Web Site Address -->
+                                <td class="ms-sectionheader" style="padding-top: 4px;" height="22"  valign="top">
+                                    <h3 class="ms-standardheader ms-inputformheader">
+                                        Web Site Address
+                                    </h3>                                
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 150px;" valign="top">
+                                    <h3 class="ms-standardheader ms-inputformheader">URL name:</h3>
+                                        <div style="float: left; white-space: nowrap; padding-bottom: 10px; padding-left: 15px; width: 450px;">
+                                            <div style="width: 320px; font-size: 13px; float: left; padding-top: 2px;" id="divBasePath">
+                                               <asp:Label ID="lblBasePath" runat="server"></asp:Label>
+                                            </div>
+                                            <div class="ms-input" style="width: 130px; float: left;">
+                                                <asp:TextBox ID="txtUrl" runat="server" CssClass="ms-fullWidth"></asp:TextBox>
+                                            </div>
+                                       </div>
+                                        <br />
+                                    </div>
+                                <br />
+                                <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Template -->
+                                <td class="ms-sectionheader" style="padding-top: 4px;" height="22"  valign="top">
+                                    <h3 class="ms-standardheader ms-inputformheader">
+                                        Template Selection
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 150px;" valign="top">
+                                    <h3 class="ms-standardheader ms-inputformheader">Select Template:</h3>
+                                    <div class="ms-input" style="padding-left: 15px;">
+                                        <asp:ListBox ID="listSites" runat="server" CssClass="ms-fullWidth"></asp:ListBox>                                 
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td valign="top">
-                                    <div class="editor-label">
-                                        <div class='O15_editor_label_head'></div>
-                                        <div class="O15_editor_label_body"></div>
-                                    </div>
-                                </td>
-                                <td valign="top" class="right-column">
-                                    <div class="editor-field O15_editor_field_head">
-                                        <p>Current Site Function:</p>
-                                        <b>&nbsp&nbsp&nbsp<asp:Label ID="lblFunction" runat="server" Visible="true"></asp:Label></b>
-                                        <p>
-                                            <span>Function</span>
-                                        </p>
-                                        <script type="text/javascript" charset="utf-8">
-                                            $(document).ready(function () {
-                                                $.ajax({
-                                                    url: "../../Scripts/data/json/functions.json",
-                                                    data: {},
-                                                    dataType: "json",
-                                                    contentType: "application/json; charset=utf-8",
-                                                    success: function (data) {
-                                                        var jsdata = data.functions;
-                                                        $.each(jsdata, function (key, value) {
-                                                            $('#<%=selectFunction.ClientID%>').append($("<option></option>").val(value.key).html(value.value));
-                                                        });
-                                                    },
-                                                    error: function (data) {
-                                                        alert("../../Scripts/data/json/functions.json not found!");
-                                                    }
-                                                });
-                                            });
-                                        </script>
-                                        <select id="selectFunction" runat="server" style="width: 230px; margin-left: 13px;"></select>
-                                    </div>
+                                <td>
+                                    <input id="Url" name="Url" type="hidden" value="" runat="server"/>
+                        <br />
+                        <br />
+                    <div id="divButtons"  style="float: right;">
+                        <asp:Button ID="btnCreate" runat="server" Text="Create" CssClass="ms-ButtonHeightWidth" OnClick="btnCreate_Click" />
+                        <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="ms-ButtonHeightWidth" OnClick="btnCancel_Click" />
+                    </div>
+                    <div class="clear"></div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td valign="top">
-                                    <div class="editor-label">
-                                        <div class='O15_editor_label_head'></div>
-                                        <div class="O15_editor_label_body"></div>
-                                    </div>
-                                </td>
-                                <td valign="top" class="right-column">
-                                    <div class="editor-field O15_editor_field_head">
-                                        <p>Current Site Region:</p>
-                                        <b>&nbsp&nbsp&nbsp<asp:Label ID="lblRegion" runat="server" Visible="true"></asp:Label></b>
-                                        <p>
-                                            <span>Region</span>
-                                        </p>
-                                        <script type="text/javascript" charset="utf-8">
-                                            $(document).ready(function () {
-                                                $.ajax({
-                                                    url: "../../Scripts/data/json/regions.json",
-                                                    data: {},
-                                                    dataType: "json",
-                                                    contentType: "application/json; charset=utf-8",
-                                                    success: function (data) {
-                                                        var jsdata = data.regions;
-                                                        $.each(jsdata, function (key, value) {
-                                                            $('#<%=selectRegions.ClientID%>').append($("<option></option>").val(value.key).html(value.value));
-                                                            });
-                                                    },
-                                                    error: function (data) {
-                                                        alert("../../Scripts/data/json/regions.json not found!");
-                                                    }
-                                                });
-                                            });
-                                        </script>
-                                        <select id="selectRegions" runat="server" style="width: 230px; margin-left: 13px;"></select>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
+                    </tbody>                  
+
                     </table>
-                    <table id="RiskClassificationTable" width="100%">
-                        <tbody>
-                            <tr>
-                                <td valign="top">
-                                    <div class="editor-label">
-                                        <div class='O15_editor_label_head'>
-                                            <p>Security Classification</p>
-                                        </div>
-                                        <div class="O15_editor_label_body">
-                                            <p>Learn more about <a href="http://INSERTYOURPOLICY" target="_blank">protecting your documents</a>.</p>
-                                            <p>
-                                                <div class="ms-status-yellow" id="pageStatusBar" aria-live="polite" aria-relevant="all" style="display: block;">
-                                                    All sites must have a security classification
-                                                </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td valign="top" class="right-column">
-                                    <div class="editor-field O15_editor_field_head">
-                                        <p>Current Site Classification:</p>
-                                        <b>&nbsp&nbsp&nbsp<asp:Label ID="lblSitePolicy" runat="server" Visible="true"></asp:Label></b>
-                                        <p>
-                                            <span>How sensitive is your site?</span>
-                                        </p>
-                                        <select name="BusinessImpact" id="BusinessImpact" runat="server" style="width: 230px; margin-left: 13px;" data-val-required="The BusinessImpact field is required." data-val-length-max="128" data-val-length="Security Classification must be a string with a maximum length of 128." data-val="true">
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table id="ExpirationDateTable" width="100%">
-                        <tbody>
-                            <tr>
-                                <td valign="Top">
-                                    <div class="editor-label">
-                                        <div class="O15_editor_label_head">
-                                            <p>Expiration Date</p>
-                                        </div>
-                                        <div class="O15_editor_label_body">
-                                            <p>If your site reaches the expiration date in one month or less than one month, you may extend your site deletion.</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="right-column">
-                                    <div class="editor-field O15_editor_field_head">
-                                        <p>Current Expiration Date:</p>
-                                        <div class="ExpirationDateFilterClass" id="expirationDateOneYear" style="display: block;">
-                                            &nbsp;&nbsp; <b>
-                                                <asp:Label ID="lblExpirationDate" runat="server" Visible="true"></asp:Label></b>
-                                        </div>
-                                    </div>
+                   
+                    </fieldset>
+                </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -231,19 +134,17 @@
                     </p>
                     <div class="clear"></div>
                 </fieldset>
-            </form>
-        </section>
-    </div>
-    <div id="MicrosoftOnlineRequired">
-        <div style="float: left">
-            <img style="position: relative; top: 4px;" src="../../images/MicrosoftLogo.png" alt="©2015 Microsoft Corporation" />
+    </form>
+   <div id="MicrosoftOnlineRequired">
+        <div style="float:left">
+            <img style="position:relative;top:4px;"  src="../../images/MicrosoftLogo.png" alt="©2015 Microsoft Corporation"/>
             <span id="copyright">©2015 Contoso Corporation</span>&nbsp;&nbsp;&nbsp;
-            <a id="legalUrl" href="https://officeams.codeplex.com/license" target="_blank">Legal</a> |
-            <a id="privacyUrl" href="https://www.codeplex.com/site/legal/privacy" target="_blank">Privacy</a>
+            <a id="legalUrl" href="https://yoururl/license" target="_blank">Legal</a> |
+            <a id="privacyUrl" href="https://yoururl/site/legal/privacy" target="_blank">Privacy</a>
         </div>
-        <div style="float: right">
-            <a id="supportUrl" href="https://officeams.codeplex.com/" target="_blank">Community</a> |
-            <a id="feedbackUrl" href="https://officeams.codeplex.com/discussions" target="_blank">Feedback</a>
+        <div style="float:right">
+            <a id="supportUrl" href="https://yoururl/" target="_blank">Community</a> |
+            <a id="feedbackUrl" href="https://yoururl" target="_blank">Feedback</a>
         </div>
         <div class="clear"></div>
     </div>

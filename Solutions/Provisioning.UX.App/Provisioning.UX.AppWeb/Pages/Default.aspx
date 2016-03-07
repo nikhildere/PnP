@@ -7,7 +7,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Site Provisioning</title>
+    <title>Dashboard</title>
 
     <!-- CSS -->
     <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css"/>--%>
@@ -17,12 +17,6 @@
     <link rel="stylesheet" href="../styles/toastr.css" />
     <link rel="stylesheet" href="../styles/app.css" /> 
     <link rel="stylesheet" href="../styles/peoplepickercontrol.css" />    
-    
-           
-
-    
-
-    
 </head>
 <body>    
     <div id="divSPChrome"></div>            
@@ -40,19 +34,20 @@
     <script src="../scripts/vendor/angular-ui/ui-bootstrap-tpls-0.12.1.min.js"></script>  
     <script src="../scripts/toastr.js"></script>
     <script src="../scripts/spin.js"></script>
-    
+    <script src="../scripts/angular-sanitize.min.js"></script>
+    <script src="../scripts/angular-translate.min.js"></script>
+    <script src="../scripts/angular-translate-loader-static-files.min.js"></script> 
         
 
     <!-- common Modules -->
     <script src="../scripts/wizard/modules/common.js"></script>
     <script src="../scripts/wizard/modules/logger.js"></script>
     <script src="../scripts/wizard/modules/spinner.js"></script>
+    <script src="../scripts/wizard/modules/filter.js"></script>
 
     <!-- common.bootstrap Modules -->
     <script src="../scripts/bootstrap.dialog.js"></script>
 
-    <!-- People Picker from PnP -->
-    <script src="../scripts/peoplepickercontrol.js?rev=2" type="text/javascript"></script>   
     <!-- Chrome Loader -->
     <script src="../scripts/chromeloader.js?rev=1" type="text/javascript"></script>
 
@@ -77,6 +72,7 @@
     <script src="../scripts/wizard/services/provisioningServices.js"></script>
     <script src="../Scripts/sp.peoplepicker.js"></script>
     <script src="../scripts/app.js"></script>    
+    <script type="text/javascript" src="../scripts/sp.peoplepicker.js"></script>    
 
     <script type="text/javascript">
         $(document).on('click', '.panel-heading span.clickable', function (e) {

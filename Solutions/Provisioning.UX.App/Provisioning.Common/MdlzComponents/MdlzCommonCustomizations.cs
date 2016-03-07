@@ -25,14 +25,14 @@ namespace Provisioning.Common.MdlzComponents
         #region Fields
         private bool isSubSite;
         private ProvisioningTemplate provTemplate;
-        private SiteRequestInformation request;
+        private SiteInformation request;
         private string actualRequestOwner;
         private static AppSettings appSettings;
         IAuthentication Authentication;
         #endregion
 
         #region Constructor
-        public MdlzCommonCustomizations(SiteRequestInformation _request, ProvisioningTemplate _provTemplate, Template template)
+        public MdlzCommonCustomizations(SiteInformation _request, ProvisioningTemplate _provTemplate, Template template)
         {
             request = _request;
             provTemplate = _provTemplate;
@@ -88,7 +88,7 @@ namespace Provisioning.Common.MdlzComponents
             AddHostnameToCustomActionUrls(provTemplate.CustomActions.WebCustomActions);
         }
 
-        private void AddHostnameToCustomActionUrls(List<CustomAction> actions)
+        private void AddHostnameToCustomActionUrls(CustomActionCollection actions)
         {
             try
             {

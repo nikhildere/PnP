@@ -1,8 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<pnp:SharePointProvisioningTemplate ID="TEMPLATE1" Version="1.0"
-  xmlns:pnp="http://schemas.dev.office.com/PnP/2015/03/ProvisioningSchema"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+﻿<pnp:ProvisioningTemplate ID="TeamSite" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/05/ProvisioningSchema">
   <pnp:Files>
     <pnp:File Src="siteLogo.png" Folder="SiteAssets" Overwrite="true"/>
     <pnp:File Src="custombg.jpg" Folder="~themecatalog/15" Overwrite="true" />
@@ -24,7 +20,9 @@
                     var siteClassifciationTag = document.createElement('script');
                     siteClassifciationTag.type = 'text/javascript';
                     siteClassifciationTag.src = 'https://localhost:44311/scripts/siteClassification.js';
-                    headID.appendChild(siteClassifciationTag);"/>
+                    headID.appendChild(siteClassifciationTag);">
+            <pnp:CommandUIExtension />
+          </pnp:CustomAction>
       <pnp:CustomAction Name="CA_SITE_EXTERNALSHARING"
                 Description="External Sharing Banner"
                 Location="ScriptLink"
@@ -35,7 +33,9 @@
                     var externalSharingTag = document.createElement('script');
                     externalSharingTag.type = 'text/javascript';
                     externalSharingTag.src = 'https://localhost:44311/scripts/externalSharing.js';
-                    headID.appendChild(externalSharingTag);"/>
+                    headID.appendChild(externalSharingTag);">
+          <pnp:CommandUIExtension />
+        </pnp:CustomAction>
       <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE"
                 Description="Override new sub-site link"
                 Location="ScriptLink"
@@ -47,7 +47,9 @@
                     var subsiteScriptTag = document.createElement('script');
                     subsiteScriptTag.type = 'text/javascript';
                     subsiteScriptTag.src = 'https://localhost:44311/scripts/SubSiteOverride.js';
-                    headID.appendChild(subsiteScriptTag);"/> 
+                    headID.appendChild(subsiteScriptTag);">
+          <pnp:CommandUIExtension />
+        </pnp:CustomAction>
     </pnp:SiteCustomActions>
     <pnp:WebCustomActions>
       <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
@@ -57,7 +59,9 @@
                 Title="Site Classification"
                 Sequence="1000"
                 Url="https://localhost:44311/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                Rights="31"/>
+                Rights="31">
+          <pnp:CommandUIExtension />
+        </pnp:CustomAction>
       <pnp:CustomAction Name="CA_SITE_STDMENU_SITECLASSIFICATION"
                 Description="Site Classification Module"
                 Group="SiteActions"
@@ -65,7 +69,9 @@
                 Title="Site Classification"
                 Sequence="1000"
                 Url="https://localhost:44311/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                Rights="31"/>
+                Rights="31">
+          <pnp:CommandUIExtension />
+        </pnp:CustomAction>
     </pnp:WebCustomActions>
   </pnp:CustomActions>
   <pnp:ComposedLook Name="Contoso" Version="1"
@@ -75,4 +81,4 @@
                 MasterPage="~masterpagecatalog/seattle.master"
                 AlternateCSS=""
                 SiteLogo="~site/SiteAssets/siteLogo.png" />
-</pnp:SharePointProvisioningTemplate>
+</pnp:ProvisioningTemplate>

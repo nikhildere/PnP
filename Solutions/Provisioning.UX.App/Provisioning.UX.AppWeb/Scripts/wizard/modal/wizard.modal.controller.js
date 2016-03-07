@@ -22,23 +22,98 @@
 
         activate();
 
+        //Form validation object
+        $scope.allFormsValid = {
+            readAndAccept: function () { return $scope.siteConfiguration.responsibilities.read; },
+            siteIntendedUse: false,
+            siteDetails: false,
+            sitePrivacy: false,
+            siteTemplate: function () { return $scope.siteConfiguration.template == null; }
+        };
+
         // Set language and time zone defaults
-        $scope.siteConfiguration.language = $scope.appSettings[0].value;
-        $scope.siteConfiguration.timezone = $scope.appSettings[1].value;
+        for (var i = 0; i < $scope.appSettings.length; i++) {
+            var setting = $scope.appSettings[i]
+            switch (setting.Key) {
+                case 'DefaultLanguage':
+                    $scope.siteConfiguration.language = setting.Value
+                    break;
+                case 'DefaultTimeZone':
+                    $scope.siteConfiguration.timezone = setting.Value
+                    break;
+                case 'DefaultRegion':
+                    $scope.siteConfiguration.properties.region= setting.Value
+                    break;
+                case 'DefaultDivision':
+                    $scope.siteConfiguration.properties.division = setting.Value
+                    break;
+                case 'DefaultFunction':
+                    $scope.siteConfiguration.properties.function = setting.Value
+                    break;
+                case 'DefaultSiteClassification':
+                    $scope.siteConfiguration.privacy.classification = setting.Value
+                    $scope.allFormsValid.sitePrivacy = true
+                    break;
+            }
+        
+        }
+        
+        
         
         $scope.siteConfiguration.spHostWebUrl = spHostWebUrl;
-        $scope.siteConfiguration.spRootHostName = "Https://" + $utilservice.spRootHostName(spHostWebUrl); // still need to capture proto
+        $scope.siteConfiguration.spRootHostName = "https://" + $utilservice.spRootHostName(spHostWebUrl); // still need to capture proto
+        $scope.siteConfiguration.responsibilities = { read: false };
+        $scope.siteConfiguration.allowCustomUrl = true;
       
         $scope.cancel = function () {
             $modalInstance.dismiss('cancel');
         };
 
+        
+
+        //Watching the forms of the specific views
+        $scope.$watch('formWizard.$valid', function () {
+            switch ($scope.getCurrentStep()) {
+                case 3:
+                    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
+                    break;
+                case 5:
+                    $scope.allFormsValid.siteDetails = $scope.formWizard.sitedetailsform == null ? false : $scope.formWizard.sitedetailsform.$valid;
+                    break;
+                case 7:
+                    $scope.allFormsValid.sitePrivacy = $scope.formWizard.siteprivacyform == null ? false : $scope.formWizard.siteprivacyform.$valid;
+                    break;
+            }
+        });
+
+        //submitcheck
+        $scope.submitDenied = false;
+
+
         $scope.finished = function () {
+
+            //checks if all mandatory forms are valid before submit
+            if (!$scope.allFormsValid.readAndAccept() ||
+                !$scope.allFormsValid.siteIntendedUse ||
+                !$scope.allFormsValid.siteDetails ||
+                !$scope.allFormsValid.sitePrivacy ||
+                $scope.allFormsValid.siteTemplate()) {
+
+                $scope.submitDenied = true;
+            }
+            else {
+
             //  save the site request when the wizard is complete
 
             var siteRequest = new Object();
             siteRequest.title = $scope.siteConfiguration.details.title;
+                if ($scope.siteConfiguration.allowCustomUrl) {
+                    siteRequest.url = null
+                }
+                else 
+                {
             siteRequest.url = $scope.siteConfiguration.spNewSitePrefix + $scope.siteConfiguration.details.url;
+                }
             siteRequest.description = $scope.siteConfiguration.details.description;
             siteRequest.lcid = $scope.siteConfiguration.language;
             siteRequest.timeZoneId = $scope.siteConfiguration.timezone;
@@ -54,15 +129,38 @@
             //property bag entries will enumerate all properties defined in siteConfiguration.properties
             var props = {};
             angular.forEach($scope.siteConfiguration.properties, function (value, key) {
-                props["_site_props_" + key] = value;
+                    var data = value;
+                    var propData = "";
+                    if ($.isArray(data)) {
+                        angular.forEach(data, function (value, key) {
+                            if (propData == "") {
+                                propData = value;
+                            }
+                            else {
+                                propData = propData + "," + value;
+                            }
+                        });
+
+                        props["_site_props_" + key] = propData;
+                    }
+                    else {
+                        props["_site_props_" + key] = data;
+                    }
             });
-            //set the properties object
+
+                //add properties to javaScript object
             siteRequest.properties = props;
 
+                //process the siterequest
+                if ($scope.siteConfiguration.allowCustomUrl) {
+                    saveNewSiteRequest(siteRequest);
+                } else {
             processNewSiteRequest(siteRequest);
+                }
+                
             
-          //  $modalInstance.close($scope.siteConfiguration);
           
+            }
         };
 
         $scope.interacted = function (field) {
@@ -74,7 +172,7 @@
             // Add the selected template to the configuration object
             $scope.siteConfiguration.template = template;
             // Add the Path to the configuration object to store the url
-            $scope.siteConfiguration.spNewSitePrefix = template.hostPath;
+            $scope.siteConfiguration.spNewSitePrefix = template.hostPath; // + template.managedPath + "/";
             $scope.siteConfiguration.spOnPrem = template.sharePointOnPremises;
             $scope.siteConfiguration.tenantAdminUrl = template.tenantAdminUrl;
 
@@ -82,6 +180,8 @@
             var externalSharingRequest = new Object();
             externalSharingRequest.tenantAdminUrl = template.tenantAdminUrl;
             isExternalSharingEnabled(externalSharingRequest);
+            var siteUrlRequest = new Object();
+            isSiteUrlProviderUsed(siteUrlRequest)
         }
 
         $scope.filterSiteTemplates = function (template) {
@@ -93,6 +193,8 @@
 
             $log.info($scope.title + ' Activated');
             $scope.siteConfiguration = {};
+            $scope.siteConfiguration.properties = {};
+            $scope.siteConfiguration.privacy = {};
 
             // Initialize modal dialog box information
             initModal();
@@ -149,10 +251,10 @@
 
         function getTemplates() {
             //get the site templates
-            $.when($SharePointProvisioningService.getSiteTemplates($scope)).done(function (jsonObject) {
-                if (jsonObject != null) {
+            $.when($SharePointProvisioningService.getSiteTemplates($scope)).done(function (data, status) {
+                if (data != null) {
                     // Store returned templates 
-                    $scope.templates = jsonObject;
+                    $scope.templates = data;
                 }
 
             }).fail(function (err) {
@@ -169,6 +271,22 @@
                     }
                     else { $scope.siteConfiguration.externalSharingEnabled = false; }
                 }
+            }).fail(function (err) {
+                console.info(JSON.stringify(err));
+            });
+        }
+
+        function isSiteUrlProviderUsed(request) {
+            //get if external sharing is enabled for the tenant
+            $.when($SharePointProvisioningService.isSiteUrlProviderUsed(request)).done(function (data) {
+
+                if (data != null) {
+                    if (data.UsesCustomProvider == true) {
+                        $scope.siteConfiguration.allowCustomUrl = false
+                        return
+                    }
+                }
+                $scope.siteConfiguration.allowCustomUrl = true
             }).fail(function (err) {
                 console.info(JSON.stringify(err));
             });
@@ -220,35 +338,38 @@
         }
 
         function saveNewSiteRequest(request) {
-            $.when($SharePointProvisioningService.saveNewSiteRequest(request)).done(function (data) {
+            $.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
                 if (data != null) {
-                    if(data.success != true) {
                         logSuccess("Sweet!, Site Request has been submitted");
                         $modalInstance.close($scope.siteConfiguration);
                     }
-                    else {
-                        logError("Oops, something bad has occured.")
-                    }
-
-                }
-            }).fail(function (err) {
+            }).fail(function (data, status) {
                 console.log(err);
             });
             console.log(request);
         }
 
         function processNewSiteRequest(request) {
-            $.when($SharePointProvisioningService.doesSiteRequestExist(request)).done(function (data) {
+
+            $.when($SharePointProvisioningService.getSiteRequestByUrl(request)).done(function (data, status) {
                 if (data != null) {
-                    if (data.doesExist != true) {
-                        saveNewSiteRequest(request);
-                    }
-                    else {
+                    if (status == 200) {
+                        //there is results dont save  the new site request
                         logError("There is an existing site request with this url. Please choose a new url for your site.");
                     }
+                    else if (status == 404) {
+
+                        $.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
+                            if (data != null) {
+                                logSuccess("Sweet!, Site Request has been submitted");
+                                $modalInstance.close($scope.siteConfiguration);
                 }
-            }).fail(function (err) {
+                        }).fail(function (data, status) {
                 console.log(err);
+            });
+            console.log(request);
+        }
+                }
             });
             console.log(request);
         }

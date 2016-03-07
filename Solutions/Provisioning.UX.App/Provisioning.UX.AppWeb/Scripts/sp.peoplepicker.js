@@ -1,6 +1,10 @@
 ﻿(function ($) {
     "use strict";
 
+    // This class allows for options to be set for each people picker used such as max users, etc. 
+    // This peoplepicker implementation allows for repopulation of the picker from previously selected users if the user has navigated away from the users view and back.
+
+    // Create a peoplke picker objcet for each peoplepickert used in the UI. 
     $.fn.spSecondaryOwnersPicker = function (options) {
 
         var methods = {
@@ -261,7 +265,7 @@
             searchPrefix: '',
             searchSuffix: '',
             displayResultCount: 4,
-            maxSelectedUsers: 1
+            maxSelectedUsers: 5
         }, options);
 
 
