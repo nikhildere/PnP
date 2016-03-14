@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4454.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Stav blokování</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>Výjimka ze zásady</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Stav blokování</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Aktivní</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Čeká se na uvolnění</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>Blokováno</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Rezervovány nebo změněny mnou</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Tato webová část slouží k zobrazení dokumentů, které byly upraveny aktuálním uživatelem a rezervovány pro něj.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Změněny mnou</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Tuto webovou část použijte k zobrazení dokumentů, které byly upraveny aktuálním uživatelem.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Tato webová část slouží k zobrazení úkolů přiřazených aktuálnímu uživateli.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Mé úkoly</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>Dokumenty s nejvyšším hodnocením</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Tato webová část slouží k zobrazení dokumentů s nejvyšším hodnocením na tomto webu.</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>Nejnovější dokumenty</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Tato webová část slouží k zobrazení 10 nejnovějších dokumentů na tomto webu.</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Dokumenty</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Dokumenty</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Centrum dokumentů</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Vylepšení centra dokumentů</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Zajišťuje navigaci stromovou strukturou pro web.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Vítá vás Centrum dokumentů</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Tento web umožňuje vytváření, zpracování a ukládání dokumentů. Může sloužit jako úložiště pro spolupráci při vytváření dokumentů v rámci týmu nebo jako znalostní báze pro dokumenty v rámci několika týmů.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Přispěvatelé a návštěvníci</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Správci webu</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Odeslat dokument</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Zásady kolekce webů</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>Šablony zásad typu obsahu</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Nastavení auditování kolekce webů</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Konfigurovat zásady správy informací</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Zkontrolovat sestavy použití zásad správy informací</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Nastavení zásad správy informací</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>Uchovávání informací</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>Automatické plánování obsahu pro zpracování a provedení akce uchovávání informací obsahu, u kterého bylo dosaženo termínu splnění</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Naplánujte způsob správy obsahu a jeho dispozic určením posloupnosti fází uchovávání informací. Pokud určíte více fází, dojde k jednotlivým fázím postupně v pořadí, v jakém se zobrazují na této stránce. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Poznámka:&lt;/b&gt; Pokud je aktivní funkce Uchovávání informací založené na knihovně a na složce, mohou správci seznamů přepsat zásady typu obsahu vlastními plány pro uchování informací. Chcete-li tomu zabránit, deaktivujte funkci v kolekci webů.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>Auditování</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Audituje akce uživatele u dokumentů a zaznamenává položky v protokolu auditování.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Zadejte události, které mají být auditovány u dokumentů a položek, na něž se vztahuje tato zásada.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>Čárové kódy</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Generuje jedinečné identifikátory, které lze vložit do dokumentů sady Microsoft Office. Čárové kódy lze také používat při hledání dokumentů.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Přiřadí čárový kód každému dokumentu nebo položce. V aplikacích Microsoft Office může být vyžadováno, aby uživatelé vložili tyto čárové kódy do dokumentů.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Čárový kód</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Hodnota čárového kódu</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>Čárový kód přiřazený této položce</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>Hodnota čárového kódu přiřazeného této položce</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>Popisky</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Generuje popisky, které lze vložit do dokumentů aplikací sady Microsoft Office, aby bylo zajištěno, že vlastnosti dokumentů či jiné důležité informace byly zahrnuty při tisku. Popisky lze také používat při hledání dokumentů.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>K dokumentu můžete přidat popisek a zajistit tak, aby byly důležité informace o dokumentu k dispozici při tisku. Chcete-li použít popisek, zadejte požadovaný text do pole Formát popisku. Je možné použít libovolnou kombinaci pevného textu nebo vlastností dokumentu (s výjimkou počítaných nebo předdefinovaných vlastností, například GUID nebo CreatedBy). Jestliže chcete vytvořit nový řádek, zadejte následující znaky: \n.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Popisek</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Slouží k uložení aktuální hodnoty popisku.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (kód 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>Generuje čárové kódy kódované pomocí standardu ANSI/AIM BC1-1995 (kód 39).</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Akce při vypršení platnosti centra záznamů</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Ukončí platnost zrušených souborů odeslaných na server centra záznamů.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Odstranit informace o záznamech a odeslání</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Odstraní záznamy odeslané do centra záznamů a všechny příslušné vlastnosti a historii auditování zahrnuté při původním odeslání záznamu.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Dokument překladu</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Zdrojový dokument</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Verze zdrojového dokumentu</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Stav překladu</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Pokud je tento dokument překladem, uveďte, kterou verzi zdrojového dokumentu reprezentuje. Pokud ke správě překladu použijete pracovní postup správy překladu, bude tato informace nastavena automaticky po dokončení pracovního postupu.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Pokud je tento dokument překladem, uveďte stav překladu. Pokud ke správě překladu použijete pracovní postup správy překladu, bude tato informace nastavena automaticky po dokončení pracovního postupu.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Nezahájeno</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>Probíhá</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Dokončeno</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>Zrušeno</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Vyžaduje aktualizace</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Zdrojové dokumenty</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Jazyky a překladatelé</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Překlad z jazyka</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Překlad do jazyka</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Překladatel</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Jazyky</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Blokování a eDiscovery</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Blokování a eDiscovery</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Blokování</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Blokování</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Tato funkce je používána ke sledování externích akcí, jako jsou soudní pře, vyšetřování nebo audity, které vyžadují pozastavení dispozic dokumentů.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Spravovat blokování</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(úkol) Spravovat blokování</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>Vyhledat a blokovat obsah</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>Vyhledat a blokovat obsah</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Sestavy blokování</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Sestavy blokování</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Blokování</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Blokování</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Blokování</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Pomocí tohoto seznamu je možné sledovat externí akce, jako jsou například spory, šetření nebo auditování, vyžadující pozastavení dispozice položek. Nastavením jednoho či více blokování u položky zachováte danou položku a pozastavíte dispozici do doby, než přestane být jakýmkoli blokováním spravována.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Sestavy blokování</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Tato knihovna obsahuje sestavy pro všechna blokování na tomto webu. Každá sestava obsahuje informace, jako jsou položky, jež jsou blokovány, a vyhledávací dotazy, jež byly pro blokování provedeny.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Blokovat zjišťovací dotazy</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Správa</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Popis</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Stav blokování</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>Adresa URL webu</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Blokování</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>Blokovat adresu URL</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Seskupit podle blokování</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Vytváření zprávy</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Vytvoří sestavy informací v úložišti služby Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Sestavy protokolu auditování</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>Zobrazit sestavy pracovních postupů</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Trendy oblíbenosti</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Trendy oblíbenosti</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Sestavy oblíbenosti a vyhledávání</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>Nejoblíbenější položky</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Metadata pro generování sestav</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>Galerie sestav obsahuje typy sestav dostupné pro tento web a všechny jeho podřízené weby.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Šablony pro generování sestav</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Pomocí knihovny souborů šablony sestavy lze ukládat soubory používané galerií šablon sestav.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Uchovávání informací založené na knihovně a na složce</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Umožňuje správcům seznamu přepsat plány uchování typu obsahu a nastavit plány pro knihovny a složky.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Správa záznamů</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Přidá funkce zásad správy záznamů a správy informací do služby Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Seznam pro uchovávání</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Šablona seznamu používaná k vytvoření seznamu pro uchovávání dokumentů</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>Šablona seznamu uchovávání eDiscovery</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Šablona seznamu používaná k vytvoření seznamu pro uchovávání dokumentů</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Vyhledat a zpracovat</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Zřizuje úlohy časovače hledání a zpracování.</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Web centra záznamů</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Vítá vás centrum záznamů</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Tento web slouží k odesílání a vyhledávání důležitých dokumentů, jež by měly být dlouhodobě archivovány.  Odeslané záznamy jsou automaticky umístěny do správné knihovny a složky na základě vlastností, jež vyplníte.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Odeslat záznam</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Záznamy čekající na odeslání</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Tato webová část slouží k tomu, aby návštěvníky centra záznamů seznámila se správou záznamů a dodržováním předpisů v organizaci.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Přidejte informace o tématech týkajících se správy záznamů, například:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Přidejte odkazy na jiné weby týkající se dodržování předpisů v organizaci, například:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>Definice záznamu v organizaci</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>Co se stane se záznamem po jeho odeslání do centra záznamů?</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Kroky, jež uživatelé mohou provést, aby bylo dosaženo shody s organizačními zásadami</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Web školení o dodržování předpisů v organizaci</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> Web týkající se zásad uchovávání informací v organizaci</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> Seznam kontaktů správy záznamů pro každé oddělení</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Odeslat záznamy</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Vítá vás Centrum dokumentů.</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Vítejte v novém centru dokumentů. Pomocí tohoto webu lze centrálně spravovat dokumenty v organizaci.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Správa plánů pro uchovávání informací</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Vstupní bod všech složek pro správu plánu vypršení platnosti</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Podrobnosti o dodržování předpisů</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Vstupní bod panelu nástrojů pro zobrazení podrobností o uchovávání informací a dalších údajů o dodržování předpisů během životnosti položky</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Generování sestavy plánu souborů</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Služba ID dokumentu</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>K dokumentům v kolekci webů přiřadí ID, pomocí nichž lze načítat položky nezávisle na jejich aktuálním umístění.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Nastavení ID dokumentu</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Spravovat nastavení ID dokumentu této kolekce webů</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Najít podle ID dokumentu</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Vyhledá dokument pomocí jeho ID dokumentu.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Hodnota ID dokumentu</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>Hodnota ID dokumentu přiřazená této položce</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>ID dokumentu</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Trvalý odkaz na tento dokument</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Odkládací knihovna</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>Jakmile budou vyplněny jejich vlastnosti, budou soubory uložené do této knihovny automaticky přesunuty do správné knihovny nebo složky podle pravidel vytvořených vlastníkem tohoto webu.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>Pravidla organizátora obsahu</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Tento seznam vám pomůže vytvořit plán pro uspořádání obsahu na tomto webu. Vytvořte pravidla, která zajistí, aby dokumenty odeslané na tento web byly odesílány do správného umístění a měly správné vlastnosti.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Pravidlo</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Vytvořte pravidlo, které přesune obsah odeslaný na tento web do správné knihovny nebo složky.</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>Organizátor obsahu</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Umožňuje vytvořit pravidla založená na metadatech, která přesunou obsah odeslaný na tento web do správné knihovny nebo složky.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Prostředky směrování dokumentu</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Zřizuje prostředky potřebné pro směrování dokumentů na webech v této kolekci webů.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Zdroje záznamu</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Zřizuje prostředky potřebné pro vytváření záznamů nebo blokování na webech v této kolekci webů.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Správa místních záznamů</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Povolit definici a deklaraci záznamů na místě</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Sloupce správy dokumentů a záznamů</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>Typy obsahu organizátora obsahu</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Priorita</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Aktivní</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Název pravidla</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Popis</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Typ obsahu odeslané položky</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Typ obsahu odeslání (interní)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>Podmínka XML</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Vlastnosti používané v podmínkách</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Aliasy</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Cílová knihovna</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Cílová složka</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Cílová cesta</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>Adresa URL cílového webu</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Vlastnost pro automatické vytvoření složky</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Data automatické konfigurace složek</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Vlastní směrovač</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Trasa k externímu umístění</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Původní vlastnosti</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>Předmět</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Odesílatel</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Komu</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>Od</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>Kopie</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>Skrytá</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Datum odeslání</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Datum přijetí</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>Sloupce pro odeslání e-mailu</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>Odeslání e-mailu</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Záznamy odeslaných e-mailů</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Tento seznam je používán směrovačem k dočasnému uložení záznamů přijatých e-mailů.</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Tento typ obsahu obsahuje sloupce, které odpovídají společným vlastnostem odesílaným při odeslání e-mailu organizátorovi obsahu.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>Je uzamčen pro úpravy</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Blokování a stav záznamu</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Deklarovaný záznam</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>Výjimka ze zásady</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Datum ukončení platnosti</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Původní datum ukončení platnosti</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Sloupce hlavní sady dokumentů</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Popis</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>Popis sady dokumentů</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Sady dokumentů</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Obsahuje typy obsahu požadované k vytvoření a používání sad dokumentů. Pokud chcete spravovat více dokumentů jako jeden pracovní produkt, vytvořte sadu dokumentů.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Synchronizace metadat sad dokumentů</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Poskytuje infrastrukturu k synchronizaci metadat pro sady dokumentů.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Sada dokumentů</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Typy obsahu sady dokumentů</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Sadu dokumentů vytvořte v případě, že chcete více dokumentů spravovat jako jediný pracovní produkt.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Zobrazit úvodní stránku</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Zobrazte úvodní stránku pro tuto sadu dokumentů.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Nastavení sady dokumentů</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Stáhnout kopii</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Stáhnout kopii sady dokumentů a její aktuální obsah</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Odeslat do jiného umístění</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Odešle tuto sadu dokumentů a její aktuální obsah do jiného umístění.</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Zachytit verzi</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Zachytit verzi aktuálního obsahu sady dokumentů</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Historie verzí sady dokumentů</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Zobrazí historii verzí sady dokumentů.</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Vlastnosti sady dokumentů</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Zobrazí vlastnosti sady dokumentů.</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Obsah sady dokumentů</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Zobrazí obsah sady dokumentů.</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Zásady webu</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Umožňuje správcům kolekce webů definovat plány uchovávání informací platné pro web a celý jeho obsah.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Zásady projektu</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Typ obsahu kontejneru pro definice zásad projektu</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Zásady webu</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Zásady webu definují způsob správy a vyřazování webu a jeho obsahu. Prostřednictvím mechanismu Publikování typu obsahu je můžete sdílet mezi více kolekcemi webů.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Zásady uzavření a odstranění webu</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Umožňuje zobrazit nebo změnit zásady správy informací používané na tomto webu a konfigurovat data, která řídí akce cyklu životnosti webu.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Seznam položek zásad projektu</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>Seznam vytvořený v rámci uchovávání na základě projektu, který se používá k uložení položek zásad projektu</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Video a multimédia</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Poskytuje knihovny, typy obsahu a webové části pro ukládání, správu a zobrazování multimediálních materiálů, jako jsou obrázky, zvukové klipy a videa.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Nastavení zpracování a přehrávání videa</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Video</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Umožňuje nahrát video na web nebo na něj vytvořit odkaz.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Popis</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>Souhrn videa</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Vlastník</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>Vlastník videa</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Časový index náhledového obrázku</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Výchozí kódování</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Výchozí kódování přepsané uživatelem</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Externí odkaz</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Kód pro vložení</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>Zobrazit odkaz ke stažení</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Určuje, jestli se na stránce přehrávače videa zobrazí tlačítko umožňující uživateli stáhnout přehrávané video.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Zobrazit odkaz pro vložení</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Určuje, jestli se na stránce přehrávače videa zobrazí tlačítko umožňující uživateli získat kód pro vložení přehrávaného videa.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Informace o verzích</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Lidé na videu</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>Lidé, kteří se objevují na videu</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Navigace pomocí metadat a filtrování</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Pro každý seznam na daném webu poskytne stránky pro nastavení konfigurace daného seznamu, jež umožní používání hierarchií stromových zobrazení metadat a ovládacích prvků filtru, které zdokonalují navigaci a filtrování obsažených položek.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Nastavení navigace pomocí metadat</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Nastavení zobrazení pro umístění</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>Ovládací prvky Připojit k Office na pásu karet</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Pokud je nainstalovaná nejnovější verze Office, přidá do uživatelského rozhraní pásu karet vstupní body pro vytváření zástupců knihoven v seznamu webů služby SharePoint daného uživatele. Office bude šablony dostupné v těchto knihovnách pravidelně ukládat do mezipaměti místního počítače uživatele.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Vloží tlačítko na kartu Knihovna/akce.</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Připojit k Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Připojit k Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Připojit k Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Umožňuje přidat položku do zástupců, kteří se zobrazují při vytváření, otevírání a ukládání dokumentů v aplikacích Microsoft Office (třeba ve Wordu, Excelu a PowerPointu).</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>Přidat k webům služby SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>Přidat k webům služby SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Přidá zástupce této knihovny do Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>Odebrat z webů služby SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>Odebrat z webů služby SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Odebere tuto knihovnu ze seznamu zástupců v Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>Spravovat weby služby SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>Spravovat weby služby SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Upraví seznam zástupců Microsoft Office.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>Integrace e-mailu s organizátorem obsahu</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Umožňuje, aby směrovač obsahu daného webu přijímal a uspořádával e-mailové zprávy. Tato funkce by měla být používána pouze v úložišti s vysokou úrovní správy, jako je centrum záznamů.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>Nastavení organizátora obsahu</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>Pravidla organizátora obsahu</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Nastavení deklarace záznamů</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Knihovna záznamů</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Vytvoří knihovnu dokumentů pro uchovávání důležitých obchodních záznamů.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Uložte dokončené dokumenty do této knihovny. Dokumenty přidané do této knihovny budou automaticky deklarovány jako záznamy.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Konfigurace centra záznamů</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Nakonfiguruje web jako centrum záznamů.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Spravovat centrum záznamů</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Správa nastavení pro uchovávání záznamů na tomto webu</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Nastavení úkolů a vytvoření plánu souborů</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Pomocí těchto pokynů dokončete konfiguraci webu centra záznamů.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>Abyste tento web připravili pro příjem záznamů, nakonfigurujte jej tak, aby odpovídal plánu souborů vaší organizace:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Poznámka:&lt;/b&gt; Toto centrum záznamů nelze plně nakonfigurovat, protože některé funkce kolekce webů nejsou povoleny. Pokud dané problémy nemůžete odstranit, obraťte se na správce kolekce webů:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Příchozí dokumenty nelze označit jako záznamy. Aktivujte funkci Místní záznamy v galerii funkcí kolekce webů.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Příchozím dokumentům nelze přiřadit ID dokumentu. Aktivujte službu ID dokumentu v galerii funkcí kolekce webů.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Krok 1:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Krok 2:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Krok 3:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>Krok 4:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>Vytvořit typy obsahu</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Definujte typy záznamů a pro každý typ vlastnosti.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Vytvořit knihovny záznamů</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Vytvořte hierarchii knihoven a složek záznamů a každé z nich přiřaďte plán uchovávání informací.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>Vytvořit pravidla organizátora obsahu</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Definujte pravidla, která směrují odeslané záznamy do správné složky.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Návrh úvodní stránky webu</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Vysvětlete plán souborů a zásady správy záznamů uživatelům.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>Jakmile akci dokončíte, můžete tuto webovou část odebrat.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Běžné úkoly správy záznamů</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Vytvořit novou knihovnu záznamů</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Vytvoří novou knihovnu pro uchovávání záznamů.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>Spravovat obsah a strukturu</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Pomocí nástroje pro správu hierarchie uspořádejte strukturu složek daného webu.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>Vytvořit pravidla organizátora obsahu</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Slouží ke správě úložiště odeslaných záznamů.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Vyhledat a blokovat záznamy</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Vyhledá záznamy, jež by měly být zachovány kvůli sporům.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Generování sestavy plánu souborů</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Zobrazí tabulku obsahující strukturu knihovny záznamů a plány uchovávání informací.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Generovat sestavu auditování</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Přístup k historii událostí, jež u záznamů nastaly (vyžaduje oprávnění správce kolekce webů)</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>Prohlédněte si dostupné sestavy protokolu auditování, které poskytují komplexní sledování událostí týkajících se činností u obsahu, zabezpečení, zásad nebo dalších filtrů.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Umožňuje zobrazit sestavy trendů oblíbenosti. Díky nim budete mít přehled o tom, na co a jak se lidé na vašem webu dívali.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Nakonfiguruje auditování, jež sleduje akce uživatelů na všech webech v této kolekci webů.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Slouží ke správě zásad správy informací, jež poskytují prohlášení o zásadách, popisky, auditování, vypršení platnosti a čárové kódy pro všechny weby v této kolekci webů.</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Nastavení deklarace záznamů</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Nastavení výchozích hodnot sloupců</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Změnit výchozí hodnoty pro sloupce</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Změní pro tuto složku výchozí hodnoty sloupců.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Deklarovat záznam</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Deklaruje položku jako záznam, což umožňuje na základě nastavení systému přidat omezení a zásady vztahující se k záznamům.</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Zrušit deklaraci záznamu</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Zruší deklaraci položky záznamu, aby bylo možné odebrat omezení a zásady záznamu.</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Konfigurovat zobrazení pro toto umístění</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Změňte dostupná zobrazení pro tuto složku.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Sada dokumentů</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Správa</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Akce</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Upravit vlastnosti</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Upraví vlastnosti této sady dokumentů.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Stáhnout kopii</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Stáhne kopii této sady dokumentů.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>Oprávnění</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Přejděte na stránku Oprávnění, na které můžete přidat, odebrat nebo změnit oprávnění pro tuto sadu dokumentů.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Odstranit</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Správa dotazu</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Nový</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Spravovat</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Dotaz</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Kopírovat dotaz</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Kopírovat dotaz</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Umožňuje vytvořit kopii vybrané položky.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>Aktualizovat statistiky</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>Aktualizovat statistiky</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>Umožňuje spustit vybraný dotaz nebo dotazy a aktualizovat jejich statistiky.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Exportovat</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Exportovat</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Umožňuje exportovat výsledky vybraného dotazu nebo dotazů.</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Odstranit tuto sadu dokumentů. Budou odstraněny všechny dokumenty v této sadě dokumentů.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Sdílet</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>Odeslat odkaz e-mailem</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Odešle e-mail s odkazem na tuto sadu dokumentů.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Odeslat</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Přejděte na stránku Odeslat do jiného umístění a přesuňte nebo zkopírujte tuto sadu dokumentů do jiného umístění.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Správa</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Zachytit verzi</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Uloží verzi aktuálních vlastností a dokumenty v této sadě dokumentů.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Historie verzí</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Umožňuje zobrazit a spravovat historii verzí této sady dokumentů.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>Pracovní postupy</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Přejděte na stránku Pracovní postupy, na které můžete spustit nebo spravovat pracovní postupy přidružené k této sadě dokumentů.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Spravovat verze videa</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Umožňuje spravovat verze tohoto videa.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Vlastní akce pásu karet navigace metadat</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Aktualizovat</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Aktualizovat stav zdroje</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Umožňuje aktualizovat stav vybraných zdrojů.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Chyba exportu</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Umožňuje generovat pro export seznam všech položek s chybami, aby se daly zahrnout do sestavy nebo stáhnout.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Zdrojové akce</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Vyhledávání</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Asi to bude chvilku trvat...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>Relevance</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Datum (nejstarší)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Datum (nejnovější)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Hledat</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Dotaz je uložený.</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>Portál eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>Umožňuje vytvářet a spravovat případy eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>Funkce Případ eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>Umožňuje zřizovat potřebné prostředky pro případ eDiscovery.</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Název</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Stav místního archivu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Uchovávání po použití filtru</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Nelokalizovaný stav místního archivu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Místní archiv</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Historie místního archivu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Čas posledního indexování</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Chyby indexování – položky</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Chyby indexování – umístění služby SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Procento chyb procházení</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Zdroje</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Umožňuje přidat nový zdroj.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Export</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Umožňuje přidat nový export.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Dotaz</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Umožňuje vytvořit nové uložené hledání.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Uschovatel</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Umožňuje přidat nového uschovatele.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Poštovní schránka</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Umožňuje přidat novou poštovní schránku.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Umístění</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Umožňuje přidat nové umístění.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>Sada eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Umožňuje vytvořit novou sadu eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Uchovaná položka</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Umožňuje přidat novou uchovanou položku.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>Typy obsahu eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Položky</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Velikost (MB)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Dotazy</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>ID webu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Typ zdroje</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Nezpracovaný typ zdroje</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>ID webu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>ID federace</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>ID externí federace</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Odstranění duplicit</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Umožňuje odebrat duplicitní obsah Exchange.</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Odebrat ochranu formou správy přístupových práv</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Umožňuje odebrat ochranu službou pro správu přístupových práv (RMS) a šifrování dat Exchange.</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Zahrnout verze</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>Umožňuje zahrnout verze dokumentů SharePointu.</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Položky, které nejde prohledávat</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Umožňuje zahrnout položky, které jsou zašifrované nebo mají nerozpoznaný formát.</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Stav</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>Vlastnosti eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Dotaz</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Autor</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Počáteční datum</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Koncové datum</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Filtr domén (jenom Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>Zpřesnění hledání SharePointu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Zpřesnění hledání na Exchangi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Typ správy zdrojů</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>ID blokování</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>ID akce</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Typ akce</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>ID zdroje</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>ID zobrazení</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Zdroje</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Skupiny zdrojů</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Uschovatelé</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Uživatel</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Poznámky</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Zdroj</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Číslo verze pro uchování</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Původní umístění pro uchování</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>Původní ID seznamu pro uchování</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Původní metadata pro uchování</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Datum uchování</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Typ seznamu uschovatelů</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>Typ seznamu pro uschovatele používané v případu eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Typ seznamu zdrojů</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>Typ seznamu pro zdroje v případu eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Typ seznamu dotazů</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>Typ seznamu pro uložená hledání v případu eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Typ seznamu exportů</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>Typ seznamu pro exporty v případu eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>Typ seznamu sad eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>Typ seznamu pro sady zjišťování v případu eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Typ seznamu zdrojových instancí</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>Typ seznamu pro zdrojové instance v případu eDiscovery</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>Šablona portálového webu eDiscovery</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Dotazy</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Pomocí dotazů můžete snížit počet výsledků hledání a analyzovat je.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Zdroje</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Slouží ke sledování stavu poštovních schránek a umístění, kterých se případ týká.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>Sady eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Vytvořte a spravujte skupiny obsahu, který jde filtrovat a archivovat.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Export: Nová položka</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Exporty</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Pomocí seznamu Exporty můžete spravovat stahování exportovaného obsahu eDiscovery.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Zdrojové instance</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Slouží ke sledování stavu případů.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Uschovatelé</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Přidejte k případu uživatele, kteří můžou mít nějaký vztah ke zdrojům, jako jsou poštovní schránky a umístění.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Stav místního archivu</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Stav exportu</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>Stahování nezahájeno</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>Stahování zahájeno</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>Stahování dokončeno</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>Export se nepovedl.</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>Blokováno</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>Blokováno s filtrem</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Vypršel časový limit.</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Nejde blokovat.</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Neblokováno</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>Zpracovává se.</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Částečné</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Chyba</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>Vítejte v centru eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>Na tomto webu můžete vytvářet a spravovat případy eDiscovery a pracovat s nimi. Pomocí případů eDiscovery můžete spravovat identifikaci a místní archivaci poštovních schránek Exchange, webů SharePointu a dalších zdrojů obsahu. Můžete taky vytvořit a spravovat vyhledávací dotazy pro identifikaci relevantního obsahu a potom exportovat výsledky hledání.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Začínáme</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Udělte svým uživatelům z právního oddělení přístupová oprávnění k obsahu v celém vašem nasazení SharePointu. Doporučujeme vytvořit skupinu zabezpečení, která bude obsahovat členy právního týmu.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>Pokud chcete zjišťovat poštovní schránky Exchange, zajistěte, aby váš správce nainstaloval spravovaného klienta webových služeb Exchange na všechny servery SharePoint a nakonfiguroval ověřování mezi Exchangí a SharePointem. </value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Pomocí zásad pro uživatele udělte skupině zabezpečení, která představuje váš právní tým, oprávnění ke všem příslušným webovým aplikacím SharePointu s obsahem, u kterého potřebujete provádět zjišťování eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Udělte svým uživatelům z právního oddělení oprávnění k použití eDiscovery u poštovních schránek Exchange, u kterých potřebujete provádět akce eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Místní archiv, vyhledávání a export</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>Pomocí místních archivů můžete určit SharePoint weby a poštovní schránky, které chcete blokovat. Pokud se obsah změní nebo odstraní, uloží se místně, dokud ho nebudete potřebovat exportovat.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>Pomocí místního vyhledávání eDiscovery můžete prohledávat různé weby SharePointu, sdílené složky a poštovní schránky Exchange. Výsledky hledání můžete zúžit a potřebný obsah najít pomocí vyhledávání blízkých výrazů, zástupných znaků, logických operátorů a zpřesnění. Vyhledávání je místní, takže výsledky jsou dynamické a aktuální jako při běžném vyhledávání v Outlook Web Accessu nebo na webu SharePointu.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>Jakmile identifikujete potřebný obsah, můžete ho stáhnout na místní pevný disk nebo do sdílené složky v přenosném nativním formátu. Můžete snadno stáhnout stránky SharePointu, dokumenty, seznamy a data z poštovních schránek Exchange.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Vítá vás váš případ.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>Pomocí případu můžete identifikovat zdroje obsahu, jako jsou poštovní schránky nebo SharePoint weby, a uchovat tento obsah v místním archivu. Po identifikaci zdrojů obsahu můžete tento obsah prohledávat s cílem identifikovat relevantní položky a exportovat je.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Vytvořit nový případ</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Přidat další umístění</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Přidat další poštovní schránku</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Zkontrolovat umístění</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Zkontrolovat poštovní schránku</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Procházet</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Přidat a spravovat zdroje)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Změnit obor dotazu)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Zdroje: Upravit položku</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Zdroje: Nová položka</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Přidat a spravovat zdroje</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Umístění</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Zadáním adres URL určete SharePoint weby a sdílené složky, které mají být indexované vyhledávací službou. Zdroje typu SharePoint web zahrnují všechny podřízené weby. Zdroje typu sdílená složka zahrnují všechny podsložky.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Poštovní schránky</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Zadejte poštovní schránky Exchange pomocí jmen nebo e-mailových adres.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>OK</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>Spolupracující uživatelé</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Poštovní schránka Exchange</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Sdílená složka</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Obsah případu</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Celkový obsah případu</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Obsah místního archivu</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Položky: </value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Velikost: </value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Ověřeno</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Připojení k aplikaci vyhledávací služby se nepovedlo.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>Při pokusu o ověření zdroje došlo k chybě.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>Zadaný zdroj už v případu existuje.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Nenašli jsme žádnou přesnou shodu. Adresa URL je možná neplatná, nemáte oprávnění k přístupu k tomuto umístění nebo umístění není indexované vyhledávací službou.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Poštovní schránku nejde ověřit. Poštovní schránka možná neexistuje nebo nemáte správnou úroveň oprávnění.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>Typ obsahu</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Upřesnit možnosti dotazu</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>V tomto dotazu nejsou žádné zdroje. Pokud chcete přidat zdroje, vraťte se na stránku dotazu a klikněte na {0}.</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Místní archiv založený na dotazech</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>Pokud se povoluje uchovávání na základě dotazů, bude obsah uložený v knihovně uchovávání, který neodpovídá žádnému filtru blokování pro tento web, označený jako prošlý. Tato funkce by se obecně měla používat pro archivní weby s více souběžnými blokováními.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} Sada eDiscovery {1} naplánovala blokování veškerého obsahu.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} Pro sadu eDiscovery {1} je teď blokovaný veškerý obsah.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} Byla naplánovaná aktualizace blokování pro sadu eDiscovery {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} Byla inicializovaná aktualizace místního archivu pro sadu eDiscovery {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} Byla naplánovaná aktualizace blokování sadou eDiscovery  {1} s filtrem {2}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} Byla inicializovaná aktualizace blokování pro sadu eDiscovery {1} s filtrem {2}.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} Bylo naplánované blokování filtrované dílčí sady sadou eDiscovery {1} s filtrem {2}.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} Filtrovaná dílčí sada obsahu je teď blokovaná pro sadu eDiscovery {1} s filtrem {2}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} Uvolnilo se blokování pro sadu eDiscovery {1}. Tento zdroj je stále blokovaný pro jiné sady eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} Sada eDiscovery {1} naplánovala uvolnění blokování veškerého obsahu.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} Uvolnilo se blokování veškerého obsahu pro sadu eDiscovery {1}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} Byla zrušená místní archivace veškerého obsahu ze sady eDiscovery, která už neexistuje.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} Nepovedlo se zablokovat zdroj pro sadu eDiscovery {1}. Chybová zpráva: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} Nepovedlo se uvolnit blokování tohohle zdroje pro sadu eDiscovery {1}. Chybová zpráva: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>Událost auditování eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Obsah případu</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Zobrazí obsah případu.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Webová část Obsah případu se může používat jenom na webech případů eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Musíte zadat hodnotu pro toto povinné pole.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">Tento zdroj je v současné době blokovaný. Pokud ho chcete odstranit, uvolněte všechna blokování. </value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Pro tuhle sadu eDiscovery je v současné době povolená místní archivace. Pokud sadu eDiscovery chcete odstranit, zrušte místní archivaci. </value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>Web neexistuje.</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>ID oddílu webu neodpovídá ID oddílu akce blokování.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Velikost</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Položky</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Celkem:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Odebrat duplikáty</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>Odebrat ochranu službou RMS</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Zahrnout verze</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Zahrnout položky, které nejde prohledávat</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>Stáhnout</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Sestava výsledků</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>V odhadovaném počtu a velikosti položek se nepočítá s verzemi ani s odstraněním duplicit. Pokud vyberete tyto možnosti, celková velikost exportu se může změnit.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Uzavřít tento případ</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Otevřít tento případ</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Uzavření případu</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Nenašli jsme žádné výsledky odpovídající vaší adrese. Zadejte prosím novou nebo míň specifickou adresu.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Zobrazované jméno</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>E-mailová adresa</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Celkem (odhad)</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Počet položek</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Velikost položek</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Dotazy</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Místní archiv</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Zrušit místní archivaci</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Aktualizovat místní archiv</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Stav exportu</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Stav zdroje</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Tento případ byl uzavřený: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>Sady eDiscovery jsou pořád blokované. Pokud je chcete odstranit, uvolněte všechna blokování nebo uzavřete případ.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>Zásady případů eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Zásady pro zpracování uzavření případů</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Nová: Sada eDiscovery</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Nastavení archivu dokumentů</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Seznam pro uložení nastavení místních archivů</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>Nejde získat zdroj pro typ zdroje {0} a filtr {1}.</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Správa klienta správy záznamů</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Správa klienta správy záznamů</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Připojování funkcí správy klienta správy záznamů</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Připojování funkcí správy klienta správy záznamů</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Konfigurovat připojení pro odesílání</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Chyba při načítání</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>Není k dispozici</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>Chyby případu {0}</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>V této sadě eDiscovery nejsou žádné zdroje. Pokud chcete přidat zdroje, klikněte na {0}.</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>Tento dotaz neobsahuje žádné zdroje tohoto typu. Pokud chcete přidat zdroje, klikněte na {0}.</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Povolené</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Zakázané</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Export: Stáhnout</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Zavřít</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Aktualizovat statistiky</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Možnosti</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Umožňuje zvolit název a možnosti pro export. Exporty zahrnují načítací soubor modelu EDRM (Electronic Data Reference Model).</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Stáhnout výsledky</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Stáhnout sestavu</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>Stažení exportu</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Chcete teď stáhnout všechny výsledky hledání, sestavu se seznamem výsledků hledání nebo zavřít okno a vrátit se ke stažení později?</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Vybrat dotazy</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Umožňuje vybrat dotazy, které chcete exportovat.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Chyba</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Hledat</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Zkusit blokovat znovu</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Aktualizovat zdroj</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>Adresa URL nebo adresa pro tento zdroj se změnila. Kliknutím sem můžete aktualizovat na novou adresu URL nebo adresu.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>Toto pole je povinné.</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} – kopie</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} – kopie ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Toto umístění je kořenem webové aplikace nebo spravované cesty a obsahuje víc kolekcí webů. Uchová se jenom kořenová kolekce webů, ale výsledky hledání a exporty budou zahrnovat všechny kolekce webů pod touto cestou.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>Umístění je kořenem webové aplikace nebo spravované cesty a obsahuje víc kolekcí webů. Uchová se jenom kořenová kolekce webů, ale výsledky hledání a exporty budou zahrnovat všechny kolekce webů pod touto cestou. Umístění můžete přijmout kliknutím na OK nebo změnit kliknutím na Storno.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>Kliknutím sem {0}vytvoříte{1} nový případ.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Změněno: {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Případy</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>Tato sada eDiscovery obsahuje víc zdrojů, než je limit (100 zdrojů SharePointu nebo 1 000 poštovních schránek). Pokud chcete získat statistiky a výsledky, klikněte na Přidat a spravovat zdroje a snižte počet zdrojů.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Tento dotaz obsahuje víc zdrojů, než je limit (100 zdrojů SharePointu a 1 000 poštovních schránek). Pokud chcete získat výsledky, klikněte na Změnit obor dotazu a zužte vyhledávací dotaz.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Tento export obsahuje víc zdrojů, než je limit (100 zdrojů SharePointu a 1 000 poštovních schránek). Pokud chcete provést export, snižte počet zdrojů v souvisejících dotazech nebo vyberte míň dotazů.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Rozklad slov</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Odstranění duplicit</value>
+  </data>
+</root>

@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4442.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Sperrestatus</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>Utenfor policy</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Sperrestatus</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Aktiv</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Venter på frigivelse</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>Sperret</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Sjekket ut eller endret av meg</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Bruk denne webdelen til å vise dokumenter som er endret og sjekket ut av gjeldende bruker.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Endret av meg</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Bruk webdelen til å vise dokumenter som er endret av gjeldende bruker.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Bruk denne webdelen til å vise oppdager som er tilordnet til gjeldende bruker.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Mine oppgaver</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>Høyest vurderte dokumenter</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Bruk denne webdelen til å vise dokumenter med de høyeste vurderingene på webområdet</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>Nyeste dokumenter</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Bruk denne webdelen til å vise de nyeste ti på topp dokumentene på området</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Dokumenter</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Dokumenter</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Dokumentsenter</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Dokumentsenterforbedringer</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Gir trevisningsnavigering for et område.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Velkommen til dokumentsenteret</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Bruk dette området til å opprette, arbeide med og lagre dokumenter. Området kan bli et felles repositorium for godkjenning av dokumenter i en gruppe, eller det kan bli en kunnskapsbase for dokumenter på tvers av flere grupper.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Bidragsytere og besøkende</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Områdeansvarlige</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Last opp et dokument</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Policyer for områdesamling</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>Policymaler for innholdstype</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Overvåkingsinnstillinger for områdesamling</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Konfigurer policy for informasjonsbehandling</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Gå gjennom bruksrapporter for policy for informasjonsbehandling</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Innstillinger for policy for informasjonsbehandling</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>Oppbevaring</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>Automatisk planlegging av innhold for behandling, og utføre en oppbevaringshandling for innhold som har nådd forfallsdatoen.</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Planlegg hvordan innhold behandles og fjernes ved å angi en sekvens av oppbevaringsfaser. Hvis du angir flere faser, vil hver fase forekomme en etter en i rekkefølgen de vises i på denne siden. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Obs!&lt;/b&gt;  Hvis funksjonen for biblioteks- og mappebaserte tidsplaner for oppbevaring er aktiv, kan listeadministratorer overstyre policyer for innholdstype med sine egne tidsplaner for oppbevaring. Hvis du vil hindre dette, deaktiverer du funksjonen for områdesamlingen.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>Overvåking</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Overvåker brukerhandlinger i dokumenter, og viser elementer i overvåkingsloggen.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Angi hendelsene som skal overvåkes for dokumenter og elementer som er underlagt denne policyen.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>Strekkoder</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Genererer unike identifikatorer som kan settes inn i Microsoft Office-dokumenter. Strekkoder kan også brukes til å søke etter dokumenter.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Tilordner en strekkode til hvert enkelt dokument eller element. Det kan hende at Microsoft Office-programmer krever at brukerne setter inn disse strekkodene i dokumenter.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Strekkode</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Strekkodeverdi</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>Strekkoden som er tilordnet til dette elementet.</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>Verdien av strekkoden som er tilordnet til dette elementet.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>Etiketter</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Genererer etiketter som kan settes inn i Microsoft Office-dokumenter for å sikre at dokumentegenskaper eller annen viktig informasjon blir inkludert på utskrifter. Etiketter kan også brukes til å søke etter dokumenter.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>Du kan legge til en etikett i et dokument for å sikre at viktig informasjon om dokumentet inkluderes på utskrifter. Du angir etiketten ved å skrive inn teksten du vil bruke, i Etikettformat-boksen. Du kan bruke en hvilken som helst kombinasjon av fast tekst eller dokumentegenskaper, med unntak av beregnede eller innebygde egenskaper som GUID eller CreatedBy. Du starter en ny linje ved hjelp av tegnsekvensen \n.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Etikett</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Lagrer gjeldende verdi for etiketten.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (kode 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>Genererer strekkoder som er kodet ved hjelp av standarden ANSI/AIM BC1-1995 (kode 39).</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Utløpshandling for arkivsenter</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Utløper forlatte filer som er sendt til serveren med arkivsenteret.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Slett post og informasjon om innsending</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Sletter poster som er sendt inn til arkivsenteret, samt alle tilknyttede egenskaper og overvåkingsloggen som var inkludert i den opprinnelige postinnsendingen.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Oversettelsesdokument</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Kildedokument</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Kildedokumentversjon</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Oversettelsesstatus</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Hvis dette dokumentet er en oversettelse, angir du hvilken versjon av kildedokumentet det representerer. Denne informasjonen vil bli angitt automatisk ved fullføring av arbeidsflyten hvis du bruker arbeidsflyten Oversettelsesbehandling til å behandle oversettelsen.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Hvis dette dokumentet er en oversettelse, angir du oversettelsesstatusen. Denne informasjonen vil bli angitt automatisk ved fullføring av arbeidsflyten hvis du bruker arbeidsflyten Oversettelsesbehandling til å behandle oversettelsen.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Ikke startet</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>Pågår</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Fullført</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>Avbrutt</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Krever oppdateringer</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Kildedokumenter</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Språk og oversettere</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Oversetter fra</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Oversetter til</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Oversetter</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Språk</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Sperring og eDiscovery</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Sperring og eDiscovery</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Sperre</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Sperre</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Denne funksjonen brukes til å spore eksterne handlinger, for eksempel søksmål, undersøkelser eller revisjoner, som krever at du stopper fjerningen av dokumenter.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Behandle sperringer</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(GJØREMÅL) Behandle sperringer</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>Søke- og sperreinnhold</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>Søke- og sperreinnhold</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Sperrerapporter</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Sperrerapporter</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Sperringer</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Sperringer</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Sperringer</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Bruk denne listen til å spore eksterne handlinger som søksmål, undersøkelser eller revisjoner, som krever at du må stoppe fjerning av elementer. Plassering av et element i én eller flere sperringer, vil beholde elementet og stoppe fjerningen til elementet ikke lenger styres av sperringer.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Sperrerapporter</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Dette biblioteket inneholder rapporter om alle sperringene på området. Hver rapport inneholder informasjon, for eksempel elementene som er sperret og søkespørringer som er utført for sperringen.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Sperre søkespørringer</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Behandles av</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Sperrestatus</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>URL-adresse for område</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Sperringer</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>URL-adresse for sperring</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Grupper etter sperringer</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Rapportering</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Oppretter rapporter om informasjon i Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Rapporter for overvåkingslogg</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>Vis arbeidsflytrapporter</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Popularitetstrender</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Popularitetstrender</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Popularitets- og søkerapporter</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>Mest populære elementer</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Metadata for rapportering</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>Rapportgalleriet inneholder rapporttypene som er tilgjengelige for området og alle områder under.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Rapporteringsmaler</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Bruk biblioteket med rapportmalfiler til å lagre filer som brukes av rapportmalgalleriet.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Biblioteks- og mappebasert oppbevaring</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Gjør det mulig for listeadministratorer å overstyre tidsplaner for oppbevaring for innholdstype, og angi tidsplaner for bibliotek og mapper.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Postbehandling</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Legger til funksjoner for policy for postbehandling og informasjonsbehandling i Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Bevaringsliste</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Listemal som brukes til å opprette listen for bevaringssperring.</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>Mal for bevaringsliste for eDiscovery</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Listemal som brukes til å opprette listen for bevaringssperring.</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Søk etter og behandle</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Klargjør tidtakerjobbene for søk og behandling.</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Område for arkivsenter</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Velkommen til arkivsenteret</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Bruk dette området til å sende og søke etter viktige dokumenter som skal lagres for langsiktige arkivering. Sendte poster plasseres automatisk i riktig biblioteket og mappe basert på egenskapene du fyller ut.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Sende en post</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Mine poster som venter på innsending</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Bruk denne webdelen til å lære besøkende i arkivsenteret om postbehandling og organisasjonssamsvar.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Legg til informasjon om emner for postbehandling, for eksempel:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Legg til koblinger til andre områder for organisasjonssamsvar, for eksempel:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>Definisjonen av en post i organisasjonen</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>Hva skjer med en post når den sendes til arkivsenteret</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Trinnene som brukeren kan utføre for å overholde organisasjonspolicyen</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Organisasjonens område for samsvarsopplæring</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> Et område om oppbevaringspolicyen for organisasjonen</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> En liste over kontakter for postbehandling for hver avdeling</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Send poster</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Velkommen til Dokumentsenter.</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Velkommen til det nye dokumentsenteret. Bruk dette området til sentral håndtering av dokumenter i organisasjonen.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Administrer tidsplan for oppbevaring</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Inngangspunkt for alle mapper for å behandle utløpstidsplan</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Detaljer om samsvar</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Inngangspunkt for verktøylinjen for å vise oppbevaring og andre samsvarsdetaljer under livssyklusen for elementet</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Generer filplanrapport</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Dokument-ID-tjeneste</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>Tilordner IDer til dokumenter i områdesamling, som kan brukes til å hente elementer uavhengig av gjeldende plassering.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Innstillinger for dokument-ID</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Behandle innstillinger for områdesamlingens dokument-ID</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Finn etter dokument-ID</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Søker etter et dokument etter dokument-ID.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Dokument-ID-verdi</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>Verdien for dokument-IDen som er tilordnet elementet.</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>Dokument-ID</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Fast kobling til dokumentet.</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Leveringsbibliotek</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>Når egenskapene er fylt ut, blir filer som er lastet opp til biblioteket, automatisk flyttet til riktig bibliotek eller mappe i henhold til reglene som er opprettet av eieren av området.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>Regler for innholdsarrangør</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Denne listen hjelper deg med å opprette en plan for hvordan innhold bør ordnes på området. Opprett regler som sikrer at dokumenter som sendes til området, blir sendt til riktig plassering og har riktige egenskaper.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Regel</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Opprett en regel som flytter innhold som er sendt til området, til riktig bibliotek eller mappe.</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>Innholdsarrangør</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Opprett metadatabaserte regler som flytter innhold som er sendt til området, til riktig bibliotek eller mappe.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Ressurser for dokumentdistribusjon</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Klargjør ressursene som kreves for distribusjon av dokumenter på områder i områdesamlingen.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Postressurser</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Klargjør ressursene som kreves for oppretting av poster eller sperringer i områdesamlingen.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Postbehandling på stedet</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Aktiver definisjon og deklarasjon av poster på stedet.</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Kolonner for dokument- og postbehandling</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>Innholdstyper for innholdsarrangør</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Prioritet</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Aktiv</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Regelnavn</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Innholdstype for innsending</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Innholdstype for innsending (intern)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>XML-betingelse</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Egenskaper som brukes i betingelser</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Alias</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Målbibliotek</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Målmappe</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Målbane</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>URL-adresse for målområde</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Egenskap for automatisk mappeoppretting</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Data for automatisk mappekonfigurasjon</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Egendefinert distribusjon</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Distribuer til ekstern plassering</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Opprinnelige egenskaper</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>emne</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Avsender</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Til</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>Fra</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>Kopi</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>Blindkopi</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Dato sendt</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Dato mottatt</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>Kolonner for e-posinntsending</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>E-postsending</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Sendte e-postposter</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Denne listen brukes av ruteren til å midlertidig lagre mottatte e-postposter</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Innholdstypen har kolonner som samsvarer med fellesegenskaper som sendes når e-postmeldinger sendes til innholdsarrangøren.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>Er låst for Rediger</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Status for sperring og post</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Deklarert post</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>Unntak fra policy</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Utløpsdato</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Opprinnelig utløpsdato</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Kjernedokumentkolonner</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>En beskrivelse av dokumentsettet</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Dokumentsett</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Inneholder innholdstypene som kreves for å opprette og bruke dokumentsett. Opprett et dokumentsett når du vil behandle flere dokumenter som ett enkelt arbeidsprodukt.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Metadatasynkronisering for dokumentsett</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Inneholder infrastrukturen for å synkronisere metadata for dokumentsett.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Dokumentsett</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Innholdstyper for dokumentsettet</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Opprette et dokumentsett når du vil behandle flere dokumenter som ett enkelt arbeidsprodukt.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Vis velkomstside</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Vis velkomstsiden for dokumentsettet.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Innstillinger for dokumentsett</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Last ned en kopi</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Last ned en kopi av dokumentsettet og gjeldende innhold</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Send til annet sted</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Send dokumentsettet og gjeldende innhold til en annen plassering</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Fang opp versjon</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Fang opp en versjon av gjeldende innhold i dokumentsettet</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Versjonslogg for dokumentsett</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Vise versjonslogg for dokumentsettet</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Egenskaper for dokumentsett</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Viser egenskapene for dokumentsettet.</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Dokumensettinnhold</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Viser innholdet i dokumentsettet.</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Områdepolicy</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Tillater at administratorer kan angi oppbevaringstidsplaner som gjelder for et område og alt innholdet.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Prosjektpolicy</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Beholderinnholdstype for prosjektpolicydefinisjoner</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Områdepolicyer</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Områdpolicyer angir hvordan et område og innholdet behandles og fjernes. De kan deles på tvers av områdesamlinger via mekanismen for innholdstypepublisering.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Avslutning og sletting av område</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Vis eller endre policyen for informasjonsbehandling som brukes på dette området, og konfigurer datoene som gjelder for handlinger for livssyklusen for området.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Elementliste for prosjektpolicy</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>En liste som er opprettet av prosjektbasert bevaring, som brukes til lagring av elementer for prosjektpolicy.</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Video og rike medier</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Klargjør biblioteker, innholdstyper og webdeler for å lagre, behandle og vise rike medieressurser, for eksempel bilder, lydklipp og videoer.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Innstillinger for behandling og avspilling av video</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Video</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Last opp eller koble til en video.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>Et sammendrag for videoen</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Eier</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>Eieren av videoen</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Miniatyrbilde for tidsindeks</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Standardkoding</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Overstyring av brukeren for standardkoding</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Ekstern kobling</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Bygg inn kode</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>Vis nedlastingskobling</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Angir om det vises en knapp på videospillersiden som tillater at brukeren kan laste ned videoen som spilles av.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Vis innbyggingskobling</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Angir om det vises en knapp på videospilleren som tillater at brukeren kan få en innbyggingskode som videoen som spilles av.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Informasjon for gjengivelser</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Personer i videoen</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>Personene som vises i videoen.</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Metadatanavigasjon- og filtrering</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Leverer en side med innstillinger til listene på området for å konfigurere listene til å bruke trevisningshierarkier og filterkontroller for metadata til å forbedre navigering og filtrering av elementene i listene.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Innstillinger for metadatanavigasjon</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Visningsinnstillinger per plassering</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>Kontroller på båndet Koble til Office</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Legger til inngangspunkt i båndets brukergrensesnitt for oppretting av biblioteksnarveier i brukerens SharePoint-områdeliste hvis brukerne har en ny versjon av Office installert. Maler som er tilgjengelige i de bibliotekene, bufres regelmessig på brukerens lokale maskin.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Setter inn en knapp i kategorien Bibliotek/handlinger.</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Koble til Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Koble til Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Koble til Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Legger til snarveiene som vises når du oppretter, åpner og lagrer dokumenter i Microsoft Office-programmer, for eksempel Word, Excel og PowerPoint.</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>Legg til SharePoint-områder</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>Legg til SharePoint-områder</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Legg til en snarvei i dette biblioteket i Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>Fjern fra SharePoint-områder</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>Fjern fra SharePoint-områder</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Fjern dette biblioteket fra listen over snarveier i Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>Behandle SharePoint-områder</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>Behandle SharePoint-områder</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Endre listen over Microsoft Office-snarveier.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>E-postintegrasjon med innholdsarrangør</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Aktiverer et områdes innholdsarrangør for å godta og ordne e-postmeldinger. Funksjonen bør bare brukes for et lager som behandles svært ofte, for eksempel et arkivsenter.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>Innstillinger for innholdsarrangør</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>Regler for innholdsarrangør</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Innstillinger for postdeklarasjon</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Postbibliotek</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Opprett et dokumentbibliotek for lagring av viktige forretningsposter.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Last opp ferdige dokumenter til dette biblioteket. Dokumenter som er lagt til i dette biblioteket, blir automatisk deklarert som poster.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Konfigurasjon av postsenter</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Konfigurerer et område som et postsenter.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Behandle arkivsenter</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Behandle innstillinger for lagring av poster på området.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Konfigurer oppretting av oppgaver og filplan</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Bruk disse instruksjonene til å fullføre konfigurasjonen av arkivsenterområdet.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>Hvis du vil klargjøre området til å godta poster, konfigurerer du det slik at det samsvarer med filplanen for organisasjonen:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Obs!&lt;/b&gt;  Kan ikke konfigurere arkivsenteret fullstendig fordi noen funksjoner for områdesamlingen ikke er aktivert. Kontakt administrator for områdesamlingen hvis du ikke har tilgang til å løse problemene:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Innkommende dokumenter kan ikke merkes som poster. Aktiver funksjonen for poster på stedet i funksjonsgalleriet for områdesamlingen.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Innkommende dokumenter kan ikke tilordnes en dokument-ID. Aktiver dokument-ID-tjenesten i funksjonsgalleriet for områdesamlingen.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Trinn 1:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Trinn 2:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Trinn 3:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>Trinn 4:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>Opprett innholdstyper</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Definer posttyper og egenskapene for hver type.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Opprett postbiblioteker</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Bygg opp et hierarki av postbibliotek og -mapper, og tilordne hver av dem en tidsplan for oppbevaring.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>Opprett regler for innholdsarrangør</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Definer regler som distribuerer sendte poster til riktig mappe.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Utforme velkomstsiden for området</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Forklar policyene for filplan- og postbehandling for brukerne.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>Når du er ferdig, kan du fjerne webdelen.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Vanlige oppgaver for postbehandling</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Opprett et nytt postbibliotek</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Opprett et nytt bibliotek for lagring av poster.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>Behandle innhold og struktur</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Bruke et verktøy for hierarkibehandling for å ordne mappestrukturen for området.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>Opprett regler for innholdsarrangør</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Behandle hvor sendte poster lagres.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Søke- og sperreinnhold</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Søk etter poster som skal beholdes på grunn av søksmål.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Generer filplanrapport</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Vis et regneark med struktur og tidsplaner for oppbevaring for postbiblioteket.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Generer overvåkingsrapport</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Tilgang til en logg over hendelser som har oppstått for poster (krever administratorrettigheter for områdesamlingen).</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>Gå gjennom tilgjengelige rapporter for overvåkingslogg, som inneholder omfattende hendelsessporing for innholdsaktivitet, sikkerhet, policy eller andre filtre.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Gå gjennom rapporter for popularitetstrender, som inneholder informasjon om hvordan innhold brukes og hvilket innhold som brukes.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Konfigurer overvåking som sporer brukerhandlinger på alle områder i områdesamlingen.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Behandle policyer for informasjonsbehandling, som inneholder policyerklæringer, etiketter, overvåking, utløpsdato og strekkoder for alle områder i områdesamlingen.</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Innstillinger for postdeklarasjon</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Innstillinger for standardverdi for kolonne</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Endre standardverdier for kolonner</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Endre standard kolonneverdier for mappen.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Deklarer post</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Deklarer element som en post som kan legge til begrensninger og postspesifikke policyer, som er basert på systeminnstillinger.</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Opphev deklarasjon av post</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Postelement som ikke er deklarert, som postbegrensninger og policyer skal fjernes for.</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Konfigurer visninger for plasseringen</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Endre tilgjengelige visninger for mappen.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Dokumentsett</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Behandle</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Handlinger</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Rediger egenskaper</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Rediger egenskapene for dokumentsettet.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Last ned en kopi</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Last ned en kopi av dokumentsettet.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>Tillatelser</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Gå til siden for tillatelser for å legge til, endre eller fjerne tillatelser for dokumentsettet.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Slett</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Behandle spørring</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Ny</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Behandle</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Spørring</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Kopier spørring</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Kopier spørring</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Opprett en kopi av det valgte elementet.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>Oppdater statistikk</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>Oppdater statistikk</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>Kjør valgt spørring eller spørringer for å oppdatere statistikken.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Eksporter</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Eksporter</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Eksporter resultatene av spørringen eller spørringene.</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Slett dokumentsettet. Alle dokumentene i dokumentsettet blir slettet.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Del</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>Send en kobling via e-post</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Send en kobling til dokumentsettet via e-post.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Send til</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Gå til siden for sending til andre plasseringer for å flytte eller kopiere dokumentsettet til en annen plassering.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Behandle</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Fang opp versjon</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Lagre en versjon av gjeldende egenskaper og dokumenter i dokumentsettet.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Versjonslogg</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Vise og behandle versjonsloggen for dokumentsettet.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>Arbeidsflyter</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Gå til siden for arbeidsflyter for å starte eller behandle arbeidsflyter som er tilknyttet dokumentsettet.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Behandle videogjengivelser</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Behandle gjengivelsene av denne videoen.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Egendefinert handling for navigasjonsbåndet for metadata.</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Oppdater</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Oppdater kildestatus</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Oppdaterer statusen for de valgte kildene.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Feil under eksport</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Generer en eksportliste over alle elementer med feil for å få en rapport eller laste dem ned.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Kildehandling:</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Søker</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Dette kan ta litt tid...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>Relevans</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Dato (eldste)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Dato (nyeste)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Søk</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Spørringen er lagret</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>eDiscovery-portal</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>Opprett og behandle eDiscovery-saker.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>Saksfunksjon for eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>Klargjør de nødvendige ressursene for en eDiscovery-sak.</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Navn</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Status for lokal sperring</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Bevaring filtrert</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Ikke-lokalisert status for lokal sperring</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Lokal sperring</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Logg for lokal sperring</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Klokkeslett for sist indeksert</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Indekseringsfeil - elementer</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Indekseringsfeil - SharePoint-plasseringer</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Feilprosent for kravlesøk</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Kilder</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Legg til en ny kilde.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Eksporter</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Legg til en ny eksport.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Spørring</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Opprett et nytt, lagret søk.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Forvalter</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Legg til en ny forvalter.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Postboks</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Legg til en ny postboks.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Plassering</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Legg til en ny plassering.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>eDiscovery-sett</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Opprett et nytt eDiscovery-sett.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Bevart element</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Legg til et nytt fast element.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>Innholdstyper for eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Elementer</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Størrelse (MB)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Spørringer</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>Område-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Kildetype</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Rå kildetype</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>Nett-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>Forbunds-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>Ekstern forbunds-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Duplikatfjerning</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Fjern duplisert Exchange-innhold</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Fjern Rights Management-beskyttelse</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Fjern RMS-beskyttelse (Rights Management Services) og kryptering fra Exchange-data</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Inkluder versjoner</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>Inkluder versjoner i SharePoint-dokumenter</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Elementer som ikke kan søkes</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Inkluder elementer som er kryptert eller har et ukjent format</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Status</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>Egenskaper for eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Spørring</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Forfatter</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Startdato</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Sluttdato</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Domenefilter (bare Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>SharePoint-presiseringer</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Exchange-presiseringer</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Kildebehandlingstype</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>Sperre-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>Handlings-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Handlingstype</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>Kilde-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>Visnings-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Kilder</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Kildegrupper</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Forvaltere</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Bruker</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Notater</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Kilde</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Versjonsnummer for bevaring</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Opprinnelig plassering for bevaring</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>Opprinnelig liste-ID for bevaring</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Opprinnelige metadata for bevaring</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Dato bevart</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Listetype for forvaltere</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>Listetype for forvaltere som brukes i en eDiscovery-sak.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Listetype for kilder</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>Listetype for kilder i en eDiscovery-sak.</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Listetype for spørringer</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>Listetype for lagrede søk i en eDiscovery-sak.</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Listetype for eksporter</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>Listetype for eksporter i en eDiscovery-sak.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>Listetype for eDiscovery-sett</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>Listetype for identifiseringssett i en eDiscovery-sak.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Listetype for kildeforekomst</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>Listetype for kildeforekomster i en eDiscovery-sak.</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>Områdemal for eDiscovery-portal</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Spørringer</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Bruk spørringer for å redusere og analysere resultater.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Kilder</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Spore statusen for postbokser og steder som er involvert i saken.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>eDiscovery-sett</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Opprett og behandle innholdsgrupper som kan filtreres og sperres.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Eksport: Nytt element</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Eksporter</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Bruk eksportlisten for å behandle nedlastingen av eksportert eDiscovery-innhold.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Kildeforekomster</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Spore status for saker.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Forvaltere</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Legg til brukere i tilfellet som kan være relatert til kilder, for eksempel postbokser og plasseringer.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Status for lokal sperring</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Eksportstatus</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>Nedlastingen er ikke startet</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>Nedlasting startet</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>Nedlastingen er fullført</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>Eksporten mislyktes</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>Sperret</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>Sperret med filter</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Tidsavbrutt</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Kan ikke sperre</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Ikke sperret</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>Behandler</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Delvis</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Mislyktes</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>Velkommen til eDiscovery-sentralen</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>Bruk dette området til å opprette, behandle og arbeide med eDiscovery-saker. Med eDiscovery-saker kan du behandle identifikasjon av og lokal sperring av Exchange-postbokser, SharePoint-områder og andre innholdskilder. Du kan også opprette og behandle søkespørringer for å identifisere relevant innhold og deretter eksportere søkeresultatene.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Kom i gang</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Gi juridiske brukere tilgangstillatelser til innhold på tvers av SharePoint-distribusjonen. Vi anbefaler at du oppretter en sikkerhetsgruppe som inneholder medlemmene i den juridiske gruppen.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>Hvis du vil identifisere Exchange-postbokser, sikrer du at systemansvarlig har installert administrert klient for Exchange-webtjenester på alle SharePoint-servere og konfigurert godkjenning mellom Exchange og SharePoint. </value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Gi sikkerhetsgruppen for den juridiske gruppen, tillatelser for brukerpolicy til alle aktuelle SharePoint-nettprogrammer som inneholder innholdet du må utføre eDiscovery på.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Gi juridiske brukere eDiscovery-tillatelser for Exchange-postboksene som du må utføre eDiscovery-handlinger på.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Lokal sperring, søk og eksport</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>Med lokale sperringer kan du angi SharePoint-områder og postbokser som skal sperres. Når innholdet endres eller slettes, blir det lagret lokalt til du må eksportere det.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>Lokale eDiscovery-søk gjør det mulig å søke på tvers av SharePoint-områder, delte filressurser og Exchange-postbokser. Bruk nærhet, jokertegn, boolsk logikk og presiseringer til å begrense resultatene til innholdet du trenger. Siden søket er lokalt, er resultatene dynamiske og oppdaterte på samme måte som når du utfører et vanlig Outlook Web Access- eller SharePoint-områdesøk.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>Når du har funnet innholdet du trenger, kan du laste det ned til din lokale harddiskstasjon eller delte filressurs, i et portabelt, opprinnelig format. Last enkelt ned SharePoint-sider, dokumenter, lister og Exchange-postboksdata.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Velkommen til saken din.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>Bruk saken din til å identifisere innholdskilder, for eksempel postbokser eller SharePoint-områder, og bevare innholdet med lokal sperring. Når du har identifisert innholdskilder, kan du søke på tvers av dette innholdet for å identifisere og eksporter relevante elementer.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Opprett ny sak</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Legg til en tilleggsplassering</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Legg til en tilleggspostboks</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Kontroller plassering</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Kontroller postboks</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Bla gjennom</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Legg til og behandle kilder)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Endre spørringsomfang)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Kilder: Rediger element</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Kilder: Nytt element</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Legg til og behandle kilder</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Plasseringer</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Skriv inn URL-adresser for å angi SharePoint-områder og delte filressurser som indekseres av søk. SharePoint-områdekilder omfatter alle sekundære områder. Delte filressurser omfatter alle undermapper i den angitte mappen.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Postbokser</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Angi Exchange-postbokser ved hjelp av navn eller e-postadresser.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>OK</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>Personer som samarbeider</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Exchange-postboks</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Delt filressurs</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Saksinnhold</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Totalt saksinnhold</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Lokalt sperret innhold</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Elementer:</value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Størrelse: </value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Validert</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Tilkoblingen til programmet for søketjenesten mislyktes.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>Det oppstod en feil under forsøk på å validere kilden.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>Den angitte kilden finnes allerede i saken.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Finner ingen nøyaktige treff. URL-adressen kan være ugyldig, du har ikke tilgang til plasseringen eller plasseringen ikke er indeksert av søk.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Postboksen kan ikke valideres. Postboksen finnes kanskje ikke, eller du har kanskje ikke riktig tillatelsesnivå.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>Innholdstype</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Alternativer for avansert spørring</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>Det finnes ingen kilder i denne spørringen. Hvis du vil legge til kilder, går du tilbake til spørringssiden og klikker {0}.</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Spørringsbasert lokal sperring</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>Når spørringsbasert bevaring er aktivert, utløper innhold som er lagret i bevaringsbiblioteket, som ikke samsvarer med noen av sperrefiltrene for området. Denne funksjonen skal vanligvis brukes for arkivområder som har flere samtidige sperringer.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} En sperring av alt innhold ble planlagt av eDiscovery-settet {1}.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} Alt innhold er nå sperret for eDiscovery-settet {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} Planlagt oppdatering av sperring for eDiscovery-settet {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} Startet oppdatering av lokal sperring for eDiscovery-settet {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} En oppdatering av sperringen ble planlagt av eDiscovery-settet {1} med filteret {2}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} Startet oppdatering av sperringen for eDiscovery-settet {1} med filteret {2}.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} Planlagt sperring av et filtrert undersett av eDiscovery-settet {1} med filteret {2}.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} Et filtrert undersett med innhold er nå sperret for eDiscovery-settet{1} med filteret {2}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} Friga sperring for eDiscovery-settet {1}. Denne kilden er fremdeles sperret for andre eDiscovery-sett.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} Frigivelse av sperringen for alt innhold ble planlagt av eDiscovery-settet {1}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} Friga sperring av alt innhold for eDiscovery-settet {1}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} Friga lokal sperring av alt innhold fra et eDiscovery-sett som ikke lenger finnes.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} Kan ikke sperre kilden for eDiscovery-settet {1}. Feilmelding: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} Kan ikke frigi sperringen for denne kilden for eDiscovery-settet {1}. Feilmelding: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>Overvåkingshendelse for eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Saksinnhold</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Viser innholdet i saken.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Webdelen for saksinnhold kan bare brukes på eDiscovery-saksområder.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Du må angi en verdi for dette obligatoriske feltet.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">Kilden er sperret. Hvis du vil slette kilden, må alle sperringer fjernes. </value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Det er aktivert lokal sperring for eDiscovery-settet. Hvis du vil slette eDiscovery-settet, må den lokal sperringen frigis. </value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>Området finnes ikke</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>Partisjons-IDen for området samsvarer ikke med partisjons-IDen for sperrehandlingen.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Størrelse</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Elementer</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Totalt:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Fjern duplikater</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>Fjern RMS-beskyttelse</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Inkluder versjoner</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Inkluder elementer som ikke kan søkes</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>Last ned</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Resultatrapport</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>Beregnet elementantall og -størrelse inneholder ikke versjoner eller duplikatfjerning. Hvis du velger disse alternativene, vil det påvirke den totale eksportstørrelsen.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Lukk denne saken</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Åpne denne saken</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Lukk sak</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Finner ingen resultater som samsvarer med adressen din. Vennligst skriv inn en ny adresse eller en mindre spesifikk adresse.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Visningsnavn</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>E-postadresse</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Beregnet total</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Antall elementer</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Elementstørrelse</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Spørringer</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Lokal sperring</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Frigi lokal sperring</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Oppdater lokal sperring</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Eksportstatus</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Kildestatus</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Denne saken ble lukket: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>eDiscovery-sett er fremdeles sperret. Opphev alle sperringer eller lukk saken for å slette.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>Sakspolicy for eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Policy for håndtering av lukking av sak.</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Nytt: eDiscovery-sett</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Innstillinger for bevaringssperring</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Liste for lagring av innstillinger for lokale sperringer.</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>Kan ikke hente en kilde for SourceType {0} og filteret {1}</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Leieradministrasjon for postbehandling</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Leieradministrasjon for postbehandling</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Stifting av leieradministrasjon for postbehandling</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Stifting av leieradministrasjon for postbehandling.</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Konfigurer Send til-tilkoblinger</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Feil under henting</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>I/T</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>Feil for {0}</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>Det finnes ingen kilder i dette eDiscovery-settet. Hvis du vil legge til kilder, klikker du {0}.</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>Det finnes ingen kilder av denne typen i spørringen. Hvis du vil legge til kilder, klikker du {0}.</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Aktivert</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Deaktivert</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Eksport: Last ned</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Lukk</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Oppdater statistikk</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Alternativer</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Velg navnet på og alternativene for eksporten. Eksporterer inkluderer en innlastingsfil for elektronisk datareferansemodell (EDRM=Electronic Data Reference Model).</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Nedlastingsresultat:</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Last ned rapport</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>Eksportnedlasting</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Vil du laste ned alle søkeresultatene nå, laste ned en rapport med liste over søkeresultatene eller lukke og laste ned senere?</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Velg spørringer</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Velg spørringene du vil eksportere.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Feil</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Søk</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Prøv sperring på nytt</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Løs kilde</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>URL-adressen eller adressen for kilden er endret. Klikk her for å oppdatere til den nye URL-adressen eller adressen.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>Dette er et obligatorisk felt.</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} - Kopi</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} - Kopi ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Denne plasseringen er roten for en nett-app eller en administrert bane, og den inneholder flere områdesamlinger. Bare rotområdesamlingen bevares, men søkeresultater og eksporterer inkluderer alle områdesamlinger under denne banen.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>En plassering er roten til et webprogram eller en administrert bane, og den inneholder flere områdesamlinger. Bare rotområdesamlingen bevares, men søkeresultater og eksporterer inkluderer alle områdesamlinger under denne banen. Velg OK for å godta plasseringen, eller avbryt for å endre plasseringen.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>Klikk for å {0}opprette{1} ny sak</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Endret {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Saker</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>eDiscovery-settet inneholder mer enn kildegrensen. (100 SharePoint-kilder eller 1 000 postbokser). Vennligst klikk Legg til og behandle kilder, og reduser antall kilder for å hente statistikk og resultater.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Spørringen inneholder mer enn kildegrensen (100 SharePoint-kilder eller 1 000 postbokser). Vennligst klikk Endre spørringsomfang, og begrens søket for å få resultater.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Eksporten inneholder mer enn kildegrensen (100 SharePoint-kilder eller 1 000 postbokser). Hvis du vil utføre eksporten, reduserer du antall kilder i de tilknyttede spørringene eller velger færre spørringer.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Reduser til ordstamme</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Duplikatfjerning</value>
+  </data>
+</root>

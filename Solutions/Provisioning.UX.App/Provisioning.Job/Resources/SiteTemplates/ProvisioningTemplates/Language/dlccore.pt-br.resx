@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4420.1017" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Status de Suspensão</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>Fora de Política</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Status de Suspensão</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Ativo</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Cancelamento Pendente</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>Isento</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Modificado por Mim ou Com Check-out Feito para Mim</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Use esta Web Part para exibir documentos modificados pelo usuário atual e com check-out para ele.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Modificado por Mim</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Use esta web part para exibir documentos modificados pelo usuário atual.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Use esta Web Part para exibir tarefas atribuídas ao usuário atual.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Minhas Tarefas</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>Documentos Melhor Classificados</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Use esta web part para exibir os documentos com as classificações mais altas neste site</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>Documentos Mais Recentes</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Use esta web part para exibir os 10 documentos mais recentes neste site</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Documentos</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Documentos</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Central de Documentos</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Aprimoramentos da Central de Documentos</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Fornece a navegação no modo de exibição de árvore em um site.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Bem-vindo à Central de Documentos</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Use este site para criar documentos, trabalhar com eles e armazená-los. Este site pode se tornar um repositório de colaboração para a criação de documentos em uma equipe ou uma base de dados de conhecimento para documentos de várias equipes.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Colaboradores e Visitantes</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Gerenciadores de Sites</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Carregar um Documento</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Políticas de conjunto de sites</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>Modelos de Política de Tipo de Conteúdo</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Configurações de auditoria de conjuntos de sites</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Configurar Política de Gerenciamento de Informações</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Examinar Relatórios de Uso de Política de Gerenciamento de Informações</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Configurações de política de gerenciamento de informações</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>Retenção</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>Agendamento automático de conteúdo para processamento, além de execução de uma ação de retenção em conteúdo cuja data de conclusão tenha chegado.</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Agende o gerenciamento e a disposição do conteúdo especificando uma sequência de estágios de retenção. Caso você especifique vários estágios, eles ocorrerão um após o outro, na ordem de exibição nesta página. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Observação:&lt;/b&gt; se o recurso Retenção Baseada em Pasta e Biblioteca estiver ativo, os administradores de lista poderão substituir as políticas de tipo de conteúdo por seus próprios agendamentos de retenção. Para impedir isso, desative o recurso no conjunto de sites.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>Auditoria</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Audita ações do usuário em documentos e itens de lista para gravá-las no Log de Auditoria.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Especifique os eventos que deverão ser auditados para documentos e itens sujeitos a essa política.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>Códigos de barras</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Gera identificadores exclusivos que podem ser inseridos em documentos do Microsoft Office. Os códigos de barras também podem ser usados para procurar documentos.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Atribui um código de barras a cada documento ou item. Opcionalmente, os aplicativos do Microsoft Office podem requerer que os usuários insiram esses códigos nos documentos.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Código de Barras</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Valor do Código de Barras</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>O código de barras atribuído a este item.</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>O valor do código de barras atribuído a este item.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>Rótulos</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Gera rótulos que podem ser inseridos em documentos do Microsoft Office para assegurar que as propriedades do documento ou outras informações importantes sejam incluídas nas cópias impressas. Os rótulos também podem ser usados para procurar documentos.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>Você pode adicionar um rótulo a um documento para assegurar que informações importantes sobre ele sejam incluídas nas cópias impressas. Para especificar o rótulo, digite o texto que deseja usar na caixa "Formato do rótulo". Você pode usar qualquer combinação de texto fixo ou propriedades de documento, exceto propriedades calculadas ou internas como a GUID ou CreatedBy, por exemplo. Para iniciar uma nova linha, use a sequência de caracteres \n.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Rótulo</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Armazena o valor atual do rótulo.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (Código 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>Gera códigos de barras codificados usando o padrão ANSI/AIM BC1-1995 (Código 39).</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Ação de Expiração da Central de Registros</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Expira arquivos abandonados enviados ao servidor da Central de Registros.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Excluir informações de registros e envio</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Exclui os registros enviados à Central de Registros, bem como todas as propriedades e os dados do histórico de auditoria associados que foram incluídos no envio original dos registros.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Documento Traduzido</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Documento de Origem</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Versão do Documento de Origem</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Status da Tradução</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Caso este documento seja uma tradução, indique a versão do documento de origem que ele representa. Essa informação será definida automaticamente na conclusão do fluxo de trabalho se você usar o fluxo de trabalho Gerenciamento de Tradução para gerenciar a tradução.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Caso este documento seja uma tradução, indique o status da tradução. Essa informação será definida automaticamente na conclusão do fluxo de trabalho se você usar o fluxo de trabalho Gerenciamento de Tradução para gerenciar a tradução.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Não Iniciada</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>Em Andamento</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Concluída</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>Cancelada</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Requer Atualizações</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Documentos de Origem</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Idiomas e Tradutores</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Traduzir de</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Traduzir para</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Tradutor</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Idiomas</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Retenção e Descoberta Automática</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Retenção e Descoberta Automática</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Em Espera</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Em Espera</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Este recurso é usado para acompanhar ações externas, como litígios, investigações ou auditorias, que exigem a suspensão da disposição de documentos.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Gerenciar Isenções</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(A FAZER) Gerenciar Isenções</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>Descobrir e isentar conteúdo</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>Descobrir e isentar conteúdo</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Relatórios de Isenção</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Relatórios de Isenção</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Isenções</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Isenções</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Isenções</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Use esta lista para acompanhar ações externas como litígios, investigações ou auditorias que exijam a suspensão da disposição de itens. Se colocar um item em uma ou mais isenções, você vai preservá-lo e suspender sua disposição até que ele não seja mais gerenciado por nenhuma isenção.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Relatórios de Isenção</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Esta biblioteca contém relatórios sobre cada isenção existente neste site. Cada relatório contém informações como, por exemplo, os itens que estão em uma isenção e as consultas de pesquisa que foram realizadas para a isenção.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Consultas de Descoberta de Isenção</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Gerenciado por</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Descrição</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Status de Suspensão</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>URL do Site</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Isenções</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>URL da Isenção</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Agrupar por Isenções</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Relatórios</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Cria relatórios sobre informações no Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Relatórios do log de auditoria</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>Exibir relatórios de fluxo de trabalho</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Tendências de Popularidade</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Tendências de Popularidade</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Popularidade e Relatórios de Pesquisa</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>Itens Mais Populares</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Metadados de Relatório</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>A Galeria de Relatórios armazena os tipos de relatório disponíveis para este site e para todos os sites abaixo dele.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Modelos de Relatório</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Use a biblioteca Arquivos de Modelo de Relatório para armazenar os arquivos usados pela Galeria de Modelos de Relatório.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Retenção Baseada em Pasta e Biblioteca</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Permite que os administradores de lista substituam agendamentos de retenção de tipo de conteúdo e definam agendamentos em bibliotecas e pastas.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Gerenciamento de Registros</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Adiciona recursos de política de gerenciamento de informações e gerenciamento de registros ao Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Lista de Preservação</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Modelo de lista usado para criar a Lista de Retenção para Preservação.</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>Modelo de Lista de Preservação para Descoberta Automática</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Modelo de lista usado para criar a Lista de Retenção para Preservação.</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Pesquisar e Processar</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Provisiona os trabalhos de timer Pesquisar e Processar.</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Site da Central de Registros</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Bem-vindo à Central de Registros</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Use este site para enviar e localizar documentos importantes que devam ser armazenados para arquivamento de longo prazo. Os registros enviados são colocados automaticamente na pasta e na biblioteca corretas com base nas propriedades preenchidas por você.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Enviar um Registro</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Meus Registros Aguardando Envio</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Use esta web part para instruir os visitantes da Central de Registros sobre a conformidade organizacional e o gerenciamento de registros.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Adicione informações sobre tópicos de gerenciamento de registros, como:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Adicione links a outros sites de conformidade organizacional, como:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>A definição de um registro na sua organização</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>O que acontece a um registro depois que ele é enviado para a Central de Registros</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Etapas que os usuários podem seguir para estar em conformidade com a política organizacional</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Site de treinamento de conformidade da sua organização</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> Um site sobre políticas de retenção organizacionais</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> Uma lista de contatos de gerenciamento de registros para cada departamento</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Enviar Registros</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Bem-vindo à Central de Documentos.</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Bem-vindo à nova Central de Documentos. Utilize este site para centralizar o gerenciamento dos documentos em sua empresa.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Gerenciar Agendamento de Retenção</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Ponto de entrada de todas as pastas para gerenciar cronograma de expiração</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Detalhes da Conformidade</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Ponto de entrada da barra de ferramentas para exibir retenção e outros detalhes da conformidade, durante o ciclo de vida do item</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Gerar relatório de planejamento de arquivos</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Serviço de ID do Documento</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>Atribui IDs a documentos no Conjunto de Sites, que podem ser usadas para recuperar itens independentemente do local atual.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Configurações de ID do Documento</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Gerenciar as configurações de IDs de documentos deste conjunto de sites</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Localizar por ID de Documento</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Localiza um documento pela ID do Documento.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Valor da ID do Documento</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>O valor da ID do documento atribuída a este item.</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>ID do Documento</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Link permanente para este documento.</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Biblioteca de Redistribuição</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>Depois de preenchidas as propriedades, os arquivos carregados nesta biblioteca são movidos automaticamente para a pasta ou biblioteca correta de acordo com as regras criadas pelo proprietário deste site.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>Regras do Organizador de Conteúdo</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Esta lista ajuda a criar um planejamento sobre como o conteúdo deste site deve ser organizado. Crie regras que garantam que os documentos enviados a este site sejam remetidos para o local certo e tenham as propriedades corretas.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Regra</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Crie uma regra que mova o conteúdo enviado a este site para a pasta ou biblioteca correta.</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>Organizador de Conteúdo</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Crie regras baseadas em metadados que movam o conteúdo enviado a este site para a pasta ou biblioteca correta.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Recursos de Circulação de Documentos</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Provisione recursos necessários à circulação de documentos em sites dentro deste conjunto de sites.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Recursos de Registro</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Provisione recursos necessários à criação de registros ou isenções em sites dentro deste conjunto de sites.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Gerenciamento de Registros In-loco</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Habilite a definição e a declaração de registros in-loco.</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Colunas de Gerenciamento de Documentos e Registros</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>Tipos de Conteúdo do Organizador de Conteúdo</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Prioridade</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Ativo</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Nome da Regra</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Descrição</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Tipo de Conteúdo de Envio</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Tipo de Conteúdo de Envio (Interno)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>XML da Condição</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Propriedades usadas em Condições</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Aliases</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Biblioteca de Destino</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Pasta de Destino</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Caminho de Destino</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>URL do Site de Destino</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Propriedade para Criação Automática de Pastas</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Dados de configuração automática de pastas</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Roteador Personalizado</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Circulação para Local Externo</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Propriedades Originais</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>Assunto</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Remetente</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Para</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>De</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>CC</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>CCO</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Data de Envio</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Data de Recebimento</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>Colunas de Envio de Email</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>Envio de Email</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Registros de Email Enviados</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Esta lista é usada pelo circulador para armazenar temporariamente os registros de email recebidos</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Este tipo de conteúdo tem colunas que correspondem às propriedades comuns remetidas durante o envio de email para o organizador de conteúdo.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>Está Bloqueado para Edição</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Status de Registro e Isenção</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Registro Declarado</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>Isentar de Política</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Data de Validade</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Data de Validade Original</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Principais Colunas do Conjunto de Documentos</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Descrição</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>Uma descrição do Conjunto de Documentos</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Conjuntos de Documentos</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Fornece os tipos de conteúdo necessários para criar e usar conjuntos de documentos. Crie um conjunto de documentos quando quiser gerenciar vários documentos como um único produto de trabalho.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Sincronização de metadados de Conjuntos de Documentos</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Fornece a infraestrutura necessária para sincronizar metadados de Conjuntos de Documentos.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Conjunto de Documentos</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Tipos de Conteúdo do Conjunto de Documentos</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Crie um conjunto de documentos quando quiser gerenciar vários documentos como um único produto de trabalho.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Exibir Página de Boas-vindas</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Exiba a página de boas-vindas deste conjunto de documentos.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Configurações do Conjunto de Documentos</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Baixar uma cópia</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Baixe uma cópia do Conjunto de Documentos e de seu conteúdo atual</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Enviar para outro local</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Envie para outro local este Conjunto de Documentos e seu conteúdo atual</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Capturar Versão</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Capture uma versão do conteúdo atual do conjunto de documentos</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Histórico de Versão do Conjunto de Documentos</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Exiba o histórico de versão do conjunto de documentos</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Propriedades do Conjunto de Documentos</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Exibe as propriedades do Conjunto de Documentos.</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Conteúdo do Conjunto de Documentos</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Exibe o conteúdo do Conjunto de Documentos.</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Política de Site</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Permite que os administradores de conjuntos de sites definam cronogramas de retenção que se aplicam a um site e a todo seu conteúdo.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Política de Projeto</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Tipo de conteúdo de contêiner para definições de Políticas de Projeto</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Políticas de Site</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Políticas de site definem como um site e seu conteúdo são gerenciados e dispostos. Eles podem ser compartilhados entre Conjuntos de Sites por meio do mecanismo de Publicação de Tipo de Conteúdo.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Exclusão e Fechamento de Site</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Visualize ou altere a política de gerenciamento de informações usada neste site e configure datas que determinam ações de ciclo de vida do site.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Lista de Itens de Política de Projeto</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>Uma lista criada pela Retenção Baseada em Projeto que é usada para armazenar Itens de Política de Projeto.</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Vídeo e Mídia Avançada</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Fornece bibliotecas, tipos de conteúdo e Web Parts para armazenar, gerenciar e visualizar ativos de mídia avançada, como imagens, clipes de som e vídeos.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Configurações de Processamento de Vídeo e Reprodução</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Vídeo</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Carregue ou crie um link para um vídeo.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Descrição</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>Um resumo do Vídeo</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Proprietário</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>O proprietário do Vídeo</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Índice de Tempo de Miniaturas</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Codificação Padrão</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Substituição do Usuário da Codificação Padrão</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Link Externo</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Código de Inserção</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>Mostrar Link de Download</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Especifica se um botão aparece na página do player de vídeo que permite ao usuário baixar o vídeo que está sendo reproduzido.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Mostrar Link Inserido</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Especifica se um botão aparece no player de vídeo que permite ao usuário obter um código inserido do vídeo que está sendo reproduzido.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Informações de Representações</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Pessoas no Vídeo</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>As pessoas que aparecem no vídeo.</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Filtragem e Navegação de Metadados</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Fornece a cada lista do site uma página de definições para configurar essa lista para usar controles de filtro e hierarquias de modo de exibição de árvore de metadados, visando melhorar a filtragem e a navegação dos itens contidos.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Configurações de navegação de metadados</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Definições de modos de exibição por local</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>Controles da Faixa de Opções "Conectar ao Office"</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Adiciona pontos de entrada à interface do usuário da faixa de opções para a criação de atalhos de bibliotecas na lista de Sites do SharePoint, se ele tiver uma versão recente do Office instalada. Periodicamente, o Office armazenará em cache modelos disponíveis nessas bibliotecas no computador local do usuário.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Insere um botão na guia Biblioteca/Ações.</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Conectar ao Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Conectar ao Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Conectar ao Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Adicione aos atalhos que aparecem durante a criação, a abertura e o salvamento de documentos em aplicativos do Microsoft Office, como o Word, o Excel e o PowerPoint.</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>Adicionar a Sites do SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>Adicionar a Sites do SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Adicione um atalho a esta biblioteca no Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>Remover de Sites do SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>Remover de Sites do SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Remova esta biblioteca da sua lista de atalhos do Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>Gerenciar Sites do SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>Gerenciar Sites do SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Modifique sua lista de atalhos do Microsoft Office.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>Integração de Email com Organizador de Conteúdo</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Habilita o organizador de conteúdo de um site a aceitar e organizar mensagens de email. Esse recurso só deve ser usado em um repositório altamente gerenciado, como uma Central de Registros.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>Definições do Organizador de Conteúdo</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>Regras do Organizador de Conteúdo</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Configurações da declaração de registros</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Biblioteca de Registros</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Crie uma biblioteca de documentos para armazenar registros comerciais importantes.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Carregue documentos concluídos para esta biblioteca. Os documentos adicionados a ela serão automaticamente declarados como registros.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Configuração da Central de Registros</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Configura um site como uma Central de Registros.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Gerenciar Central de Registros</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Gerencie as definições de manutenção de registros neste site.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Criação de Planejamento de Arquivos e Tarefas de Configuração</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Use estas instruções para concluir a configuração do site da Central de Registros.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>De modo a preparar este site para aceitar registros, configure-o para corresponder ao planejamento de arquivos da sua organização:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Observação:&lt;/b&gt; esta Central de Registros não foi totalmente configurada porque alguns recursos do conjunto de sites não estão habilitados. Contate o administrador do conjunto de sites caso você não tenha acesso para resolver estes problemas:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Não é possível marcar documentos de entrada como registros. Ative o recurso Registros In-loco na Galeria de Recursos do Conjunto de Sites.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Não é possível atribuir documentos de entrada a uma ID do Documento. Ative o Serviço de ID do Documento na Galeria de Recursos do Conjunto de Sites.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Etapa 1:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Etapa 2:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Etapa 3:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>Etapa 4:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>Criar tipos de conteúdo</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Defina os tipos de registros e as propriedades de cada tipo.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Criar bibliotecas de registros</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Crie uma hierarquia de pastas e bibliotecas de registros e atribua a cada uma um agendamento de retenção.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>Criar regras do organizador de conteúdo</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Defina regras que circulem os registros enviados para a pasta correta.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Criar a Página de Boas-vindas do Site</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Explique aos usuários o planejamento de arquivos e as políticas de gerenciamento de registros.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>Quando terminar, remova esta web part.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Tarefas Comuns de Gerenciamento de Registros</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Criar uma nova Biblioteca de Registros</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Crie uma nova biblioteca para armazenar registros.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>Gerenciar Conteúdo e Estrutura</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Use uma ferramenta de gerenciamento de hierarquias para reorganizar a estrutura de pastas do site.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>Criar Regras do Organizador de Conteúdo</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Gerencie onde os registros enviados serão armazenados.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Registros de Isenção e Descoberta</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Procure registros que devam ser preservados por motivo de litígio.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Gerar um Relatório de Planejamento de Arquivos</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Exiba uma planilha sobre os agendamentos de retenção e a estrutura da biblioteca de Registros.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Gerar um Relatório de Auditoria</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Acesse um histórico de eventos que tenham ocorrido em registros (exige privilégios de Administrador do Conjunto de Sites).</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>Examine relatórios de log de auditoria disponíveis, que fornecem um abrangente controle de eventos para atividades de conteúdo, segurança, política ou outros filtros.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Examine relatórios de tendências de popularidade, que fornecem uma visão de qual conteúdo está sendo acessado e de como isso está sendo feito.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Configure a auditoria, que acompanha ações do usuário em todos os sites deste conjunto de sites.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Administre políticas de gerenciamento de informações, que fornecem declarações de política, rótulos, auditoria, expiração e códigos de barras para todos os sites deste conjunto de sites.</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Configurações da declaração de registros</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Configurações de valor padrão de coluna</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Alterar Valores Padrão de Colunas</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Altere os valores de coluna padrão desta pasta.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Declarar Registro</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Declarar o item como um registro que pode adicionar restrições e registrar políticas específicas com base nas configurações do sistema.</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Não Declarar Registro</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Cancelar declaração do item de registro para remover políticas e restrições de registro.</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Configurar Modos de Exibição para este Local</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Altere os modos de exibição disponíveis para esta pasta.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Conjunto de Documentos</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Gerenciar</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Ações</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Editar Propriedades</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Editar as propriedades deste Conjunto de Documentos.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Baixar uma Cópia</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Baixar uma cópia deste Conjunto de Documentos.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>Permissões</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Ir para a página de Permissões para adicionar, alterar ou remover as permissões deste Conjunto de Documentos.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Exclusão</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Gerenciar Consulta</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Novo</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Gerenciar</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Consulta</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Copiar Consulta</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Copiar Consulta</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Crie uma cópia do item selecionado.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>Atualizar Estatísticas</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>Atualizar Estatísticas</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>Execute a(s) consulta(s) selecionada(s) para atualizar suas estatísticas.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Exportar</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Exportar</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Exporte os resultados da(s) consulta(s) selecionada(s).</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Excluir este Conjunto de Documentos. Todos os documentos desse Conjunto serão excluídos.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Compartilhar</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>Enviar um Link por Email</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Enviar por email um link para este Conjunto de Documentos.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Enviar para</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Ir para a página Enviar para Outro Local para mover ou copiar este Conjunto de Documentos em outro local.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Gerenciar</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Capturar Versão</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Salvar uma versão das propriedades e dos documentos atuais neste Conjunto de Documentos.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Histórico de Versão</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Exibir e gerenciar o histórico de versão deste Conjunto de Documentos.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>Fluxos de Trabalho</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Ir para a página de Fluxos de Trabalho para iniciar ou gerenciar fluxos de trabalho associados a este Conjunto de Documentos.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Gerenciar Representações de Vídeo</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Gerencie as representações deste Vídeo.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Ação Personalizada da Faixa de Opções de Navegação de Metadados.</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Atualizar</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Atualizar Status das Origens</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Atualiza o status das origens selecionadas.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Exportação de Erros</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Gere uma lista de exportação de todos os itens com erros para obter um relatório ou baixá-los.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Ações de Origem</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Pesquisando</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Isso pode levar um minuto...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>Relevância</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Data (mais antiga)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Data (mais recente)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Pesquisa</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Consulta salva</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>Portal de Descoberta Eletrônica</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>Crie e gerencie ocorrências de Descoberta Eletrônica.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>Recurso de Ocorrência de Descoberta Eletrônica</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>Provisiona os recursos necessários para uma ocorrência de Descoberta Eletrônica.</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Nome</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Status de Bloqueio In-loco</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Preservação Filtrada</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Status de Bloqueio In-loco não localizado</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Bloqueio In-loco</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Histórico de Status de Bloqueio In-loco</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Hora da última indexação</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Indexação de Erros - Itens</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Erros de Indexação - Locais do SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Porcentagem de Erros de Rastreamento</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Fontes</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Adicione uma nova origem.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Exportar</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Adicione uma nova exportação.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Consulta</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Crie uma nova pesquisa salva.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Custódia</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Adicione um novo representante.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Caixa de Correio</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Adicione uma nova caixa de correio.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Local</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Adicione um novo local.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>Conjunto de Descobertas Eletrônicas</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Crie um novo conjunto de descobertas eletrônicas.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Item Preservado</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Adicione um novo Item Preservado.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>Tipos de Conteúdo de Descoberta Eletrônica</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Itens</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Tamanho (MB)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Consultas</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>Identificação do Site</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Tipo de Fonte</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Tipo de Origem Não Processado</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>Id da Web</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>ID de Federação</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>ID de Federação Externa</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Eliminação de Duplicação</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Remover conteúdo duplicado do Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Remover Proteção por Gerenciamento de Direitos</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Remover proteção por RMS (Serviços de Gerenciamento de Direitos de Informação) e criptografia de dados do Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Incluir Versões</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>Incluir todas as versões dos documentos do SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Itens que não podem ser pesquisados</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Incluir itens que estão criptografadas ou cujo formato não é reconhecido</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Status</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>Propriedades da Descoberta Eletrônica</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Consulta</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Autor</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Data de Início</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Data de Término</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Filtro de Domínio (apenas Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>Refinadores do SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Refinadores do Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Tipo de Gerenciamento de Origens</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>ID da Retenção</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>ID da Ação</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Tipo de Ação</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>ID da Origem</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>ID da Exibição</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Fontes</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Grupos de Origem</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Responsáveis</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Usuário</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Observações</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Origem</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Número da Versão de Preservação</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Local Original de Preservação</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>ID da Lista Original de Preservação</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Metadados Originais de Preservação</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Data Preservada</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Tipo de Lista de Responsáveis</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>Tipo de lista para responsáveis usada em uma ocorrência de Descoberta Eletrônica.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Tipo de Lista de Origens</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>Tipo de lista para origens em uma Ocorrência de Descoberta Eletrônica.</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Tipo de Lista de Consultas</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>Tipo de lista para pesquisas salvas em uma Ocorrência de Descoberta Eletrônica.</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Tipo de Lista de Exportações</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>Tipo de lista para exportações em uma Ocorrência de Descoberta Eletrônica.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>Tipo de Lista de Conjuntos de Descobertas Eletrônicas</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>Tipo de lista para conjuntos de descobertas em uma Ocorrência de Descoberta Eletrônica.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Tipo de Lista de Instâncias de Origem</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>Tipo de lista para instâncias de origem em uma Ocorrência de Descoberta Eletrônica.</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>Modelo de Site de Portal de Descoberta Eletrônica</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Consultas</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Use consultas para reduzir e analisar resultados de pesquisa.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Fontes</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Controle o status de caixas de correio e locais que estão envolvidos na ocorrência.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>Conjuntos de Descobertas Eletrônicas</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Criar e gerenciar grupos de conteúdo que podem ser filtrados e colocados em suspensão.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Exportação: Novo Item</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Exportações</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Use a lista Exportações para gerenciar o download do conteúdo de descoberta eletrônica exportado.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Instâncias de Origem</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Controle o status de ocorrências.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Custodiantes</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Adicione à ocorrência usuários que possam estar relacionados a origens, como caixas de correio e locais.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Status de Bloqueio In-loco</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Status da Exportação</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>Download Não Iniciado</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>Download Iniciado</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>Download Concluído</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>Falha na Exportação</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>Em suspensão</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>Em suspensão com filtro</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Tempo limite atingido</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Não é possível colocar em suspensão</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Fora de Suspensão</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>Processando</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Parcial</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Falha</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>Bem-vindo ao Centro de Descoberta Eletrônica</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>Use este site para criar, gerenciar e trabalhar em Ocorrências de Descobertas Eletrônicas. Com Ocorrências de Descobertas Eletrônicas, é possível gerenciar a identificação e a retenção no local de caixas de correio do Exchange, sites do SharePoint e outras origens de conteúdo. Também é possível criar e gerenciar consultas de pesquisa para identificar conteúdo relevante e depois exportar os resultados da pesquisa.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Introdução</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Conceda permissões para usuários jurídicos acessarem o conteúdo na sua implantação do SharePoint. Recomendamos criar um grupo de segurança que contenha os membros da sua equipe jurídica.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>Para descobrir caixas de correio do Exchange, verifique se o administrador instalou o Cliente Gerenciado de Serviços Web do Exchange em todos os servidores do SharePoint e peça para esse administrador configurar a autenticação entre o Exchange e SharePoint. </value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Conceda à sua equipe jurídica permissões de políticas de usuários de grupo de segurança para todos os Aplicativos Web do SharePoint apropriados que incluam conteúdos nos quais é necessário realizar descobertas eletrônicas.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Conceda aos seus usuários jurídicos permissões de descoberta para as caixas de correio do Exchange nas quais é necessário realizar descobertas eletrônicas.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Retenção no Local, Pesquisa e Exportação</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>Com retenções no local, você pode especificar sites do SharePoint e caixas de correio para retenção no local. Quando o conteúdo for modificado ou excluído, ele será armazenado no local até que você precise exportá-lo.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>A pesquisa de descoberta eletrônica no local permite pesquisar em sites do SharePoint, compartilhamentos de arquivos e caixas de correio do Exchange. Use o recurso de proximidade, curingas, a lógica booleana e refinadores para definir o escopo dos resultados para o conteúdo necessário. Como a pesquisa é feita no local, os resultados são dinâmicos e atualizados como se você estivesse fazendo uma pesquisa de site normal do Outlook Web Access ou do SharePoint.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>Depois de ter identificado o conteúdo necessário, você pode baixá-lo na sua unidade de disco disco local ou em um compartilhamento de arquivo em um formato nativo portátil. Baixe facilmente páginas do SharePoint, documentos, listas e dados de caixas de correio do Exchange.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Bem-vindo à sua ocorrência.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>Use seu caso para identificar fontes de conteúdo, como caixas de correio ou sites do SharePoint e preservar esse conteúdo com bloqueio in-loco. Depois de identificar fontes de conteúdo, você pode pesquisar esse conteúdo para identificar itens relevantes e exportá-los.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Criar nova ocorrência</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Adicionar outro local</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Adicionar outra caixa de correio</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Verificar Local</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Verificar Caixa de Correio</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Procurar</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Adicionar &amp; Gerenciar Fontes)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Modificar Escopo da Consulta)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Origens: Editar Item</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Origens: Novo Item</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Adicionar e Gerenciar Origens</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Locais</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Insira URLs para especificar sites do SharePoint e compartilhamentos de arquivos indexados pela Pesquisa. As origens de sites do SharePoint incluirão todos os subsites. As origens de compartilhamentos de arquivos incluirão todas as pastas abaixo da pasta especificada.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Caixas de Correio</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Especifique caixas de correio do Exchange usando nomes ou endereços de email.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>OK</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>Pessoas colaborando</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Caixa de Correio do Exchange</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Compartilhamento de Arquivos</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Conteúdo da Ocorrência</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Conteúdo Total da Ocorrência</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Conteúdo do Bloqueio In-loco</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Itens:</value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Tamanho:</value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Validado</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Falha na conexão com o aplicativo de serviço de pesquisa.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>Falha ao tentar validar a fonte.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>A origem especificada já existe na ocorrência.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Nenhuma correspondência exata foi encontrada. A URL pode ser inválida, você não tem permissão para acessar este local ou o local não está indexado pela Pesquisa.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Nenhuma caixa de correio pode ser validada. A caixa de correio pode não ser existente ou talvez você não tenha o nível de permissão apropriado.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>Tipo de Conteúdo</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Opções Avançadas de Consulta</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>Não há nenhuma origem nesta consulta. Para adicionar origens, retorne à página de consulta e clique em "{0}"</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Bloqueio In-Loco com base em Consulta</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>Quando a preservação baseada em consulta está habilitada, o conteúdo armazenado na Biblioteca de Preservação que não corresponder a nenhum filtro de retenção para este site é expirado. Esse recurso deve ser usado geralmente para sites de arquivamento que terão várias retenções simultâneas.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} Uma suspensão de todo o conteúdo foi agendada pelo conjunto de descobertas eletrônicas '{1}'.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} Todo o conteúdo está agora suspenso para o conjunto de descobertas eletrônicas '{1}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} Atualização de suspensão agendada para o conjunto de descobertas eletrônicas '{1}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} Iniciada a atualização e bloqueio in-loco para o conjunto de descobertas eletrônicas '{1}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} Uma atualização de suspensão foi agendada pelo conjunto de descobertas eletrônicas '{1}' com o filtro '{2}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} Iniciada a atualização de suspensão para o conjunto de descobertas eletrônicas '{1}' com o filtro '{2}'.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} Suspensão agendada de um subconjunto filtrado pelo conjunto de descobertas eletrônicas '{1}' com o filtro '{2}'.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} Um subconjunto filtrado de conteúdo está agora suspenso para o conjunto de descobertas eletrônicas '{1}' com o filtro '{2}'.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} Suspensão liberada para o conjunto de descobertas eletrônicas '{1}'. Essa origem ainda está em suspensão para outros conjuntos de descobertas eletrônicas.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} Liberação de suspensão agendada para todo o conteúdo foi agendada pelo conjunto de descobertas eletrônicas '{1}'.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} Suspensão liberada de todo o conteúdo para o conjunto de descobertas eletrônicas'{1}'.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} Bloqueio in-loco liberado para todo o conteúdo de um conjunto de descobertas eletrônicas que não existe mais.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} Falha ao colocar a origem em suspensão para o conjunto de descobertas eletrônicas '{1}'. Mensagem de Erro: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} Falha ao liberar a suspensão desta origem para o conjunto de descobertas eletrônicas '{1}'. Mensagem de Erro: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>Evento de Auditoria de Descoberta Eletrônica</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Conteúdo da Ocorrência</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Exibe o conteúdo da ocorrência.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>A Web Part de conteúdo da ocorrência só pode ser usada em webs de Ocorrência de Descoberta Eletrônica.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Você deve especificar um valor para este campo obrigatório.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">Esta fonte está em suspensão no momento. Para excluí-la, libere todas as suspensões. </value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Este conjunto de descobertas eletrônicas tem o bloqueio in-loco habilitado no momento. Para excluí-lo, libere o bloqueio in-loco. </value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>O site não existe.</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>A id de partição do site não corresponde à id de partição da ação de suspensão.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Tamanho</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Itens</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Total:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Remover Duplicatas</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>Remover proteção por RMS</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Incluir versões</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Incluir itens que não podem ser pesquisados</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>Download</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Relatório de Resultados</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>O número estimado e o tamanho dos itens não incluem versões ou a eliminação de duplicação. Selecionar essas opções afetará o tamanho total da exportação.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Fechar esta ocorrência</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Abrir esta ocorrência</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Fechamento da ocorrência</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Nenhum resultado encontrado para corresponder ao seu endereço. Insira um novo endereço ou um endereço menos específico.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Nome de Exibição</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>Endereço de Email</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Total Estimado</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Número de Itens</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Tamanho dos Itens</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Consultas</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Bloqueio In-loco</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Liberar Bloqueio In-loco</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Atualizar bloqueio in-loco</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Status da Exportação</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Status da Origem</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Esta ocorrência foi fechada em: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>Conjuntos de descobertas eletrônicas ainda retidos, libere todas as retenções ou feche a ocorrência para excluir.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>Política de Ocorrência de Descoberta Eletrônica</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Política para manipulação do fechamento de ocorrências.</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Novo: Conjunto de descobertas eletrônicas</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Configurações de suspensão de preservação</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Lista para armazenar configurações de bloqueios in-loco.</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>Não foi possível obter uma origem para SourceType {0} e o filtro {1}</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Administração de Locatários para Gerenciamento de Registros</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Administração de locatários para Gerenciamento de Registros.</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Grampeamento da Administração de Locatários para Gerenciamento de Registros</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Grampeamento da administração de locatários para Gerenciamento de Registros.</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Configurar Conexões Enviar para</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Erro durante a recuperação</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>N/A</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>{0} Erros</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>Não há nenhuma origem neste conjunto de descobertas eletrônicas. Para adicionar origens, clique em "{0}".</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>Não há fontes deste tipo nesta consulta. Para adicionar fontes, clique em "{0}".</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Habilitado</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Desabilitado</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Exportação: Download</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Fechar</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Atualizar Estatísticas</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Opções</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Escolha o nome e as opções de exportação.  Exportações incluem um arquivo de carga do Modelo de Referência de Dados Eletrônicos (EDRM).</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Baixar Resultados</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Baixar Relatório</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>Download de Exportação</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Deseja baixar todos os resultados de pesquisa agora, um relatório com uma lista de resultados da pesquisa ou desejar fechar e baixar mais tarde?</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Selecionar Consultas</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Selecione as consultas que você deseja exportar.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Erro</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Pesquisa</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Repetir Suspensão</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Resolver Fonte</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>A URL ou o endereço para esta fonte foi alterado. Clique aqui para atualizar para a nova URL ou endereço.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>Este é um campo obrigatório.</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} - Cópia</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} - Cópia ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Este local é a raiz de um aplicativo Web ou de um caminho gerenciado e contém vários conjuntos de sites. Apenas o conjunto de sites raiz será preservado, mas os resultados da pesquisa e as exportações incluirão todos os conjuntos de sites nesse caminho.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>Um local é a raiz de um aplicativo da Web ou caminho gerenciado e contém vários conjuntos de sites. Apenas o conjunto de sites raiz será preservado, mas os resultados da pesquisa e exportações incluirão todos os conjuntos de sites nesse caminho.  Selecione OK para aceitar o local ou Cancelar para alterar o local.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>Clique para {0}criar{1} nova ocorrência</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Modificado em {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Casos</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>Este conjunto de Descobertas Eletrônicas contém mais do que o limite de fontes (100 fontes do SharePoint ou 1000 caixas de correio). Clique em Adicionar e Gerenciar Fontes e reduza o número de fontes para obter estatísticas e resultados.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Esta consulta contém mais do que o limite de fontes (100 fontes do SharePoint ou 1000 caixas de correio). Clique em Modificar Escopo de Consulta e restrinja sua consulta de pesquisa para obter resultados.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Esta exportação contém mais do que o limite de fontes (100 fontes do SharePoint ou 1000 caixas de correio). Para realizá-la, reduza o número de fontes nas consultas associadas ou selecione menos consultas.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Lematização</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Eliminação de Duplicação</value>
+  </data>
+</root>

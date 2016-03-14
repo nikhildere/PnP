@@ -1,0 +1,3631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4569.1502" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>Домашняя</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>Новый сервер SharePoint Server</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>Поиск обсуждений</value>
+  </data>
+  <data name="SetupMySite">
+    <value>Настройка личного сайта</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>Щелкните для перехода к категориям</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>Щелкните для перехода к лучшим сайтам</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>Щелкните для перехода к карте сайта</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>Категории</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>Лучшие сайты</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>Карта сайта</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>Все сайты</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>Щелкните для перехода к результатам со всех сайтов</value>
+  </data>
+  <data name="PeopleTab">
+    <value>Люди</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>Щелкните для перехода к результатам поиска людей</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>Обсуждения</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>Составление отчетов об использовании SharePoint Server</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>Отчеты об использовании</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>Отчеты об использовании средств поиска</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>Отчеты об использовании сайта</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>Отчеты об использовании семейства сайтов</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>Библиотека документов</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>Место для хранения документов в этой области.</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>Шаблон профиля бизнес-данных</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>Верхняя панель переходов SharePoint</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>Отчеты</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>Цифровые панели</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>пример</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>Ресурсы</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>Подключения к данным</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>Календарь отчета</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>Справочная библиотека</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>Библиотека отчетов</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>Место, где можно быстро создавать веб-страницы и документы, а также управлять ими с целью отслеживания показателей, целей и деловой информации. </value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>Список состояний</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>Место для отслеживания и отображения набора целей. Цветные значки показывают степень достижения целей.</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>Библиотека документов страниц веб-частей</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>Библиотека документов с шаблоном страницы веб-части.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>Библиотека отчетов</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>Библиотека отчетов предоставляет улучшенную поддержку для управления отчетами, которые могу отображать индикаторы состояния и книги Excel.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>Справочная библиотека</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>Библиотека для сведений, описывающих порядок работы с этим сайтом.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>Календарь отчета</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>Календарь служит для размещения сообщений, относящихся к этой области.</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>Подключения к данным</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>Библиотека подключений к данным упрощает совместную работу с файлами, обеспечивающими подключение к вешним источникам данным.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>Извещения</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>Список извещений служит для размещения сообщений, относящихся к этой области.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>Вас приветствует центр отчетов</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>Новый центр отчетов позволяет создавать и распространять бизнес-данные, а также управлять ими.</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>Коллекция шаблонов сайтов</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>Примеры индикаторов</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>Примеры индикаторов состояния, отображаемые по умолчанию на домашней странице этого центра отчетов.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>Отдых</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>Производительность</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>Расходы</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>Это образец индикатора, его удаление безопасно.</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>Центр отчетов</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>Использование центра отчетов</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>Работа с форматированным текстом, таблицами и рисунками.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>Возможности центра отчетов включают:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;Ключевые показатели эффективности&amp;lt;/A&amp;gt; (KPI) предоставляют сведения о целях, тенденциях и ходе процессов.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;Цифровые панели&amp;lt;/A&amp;gt; позволяют давать более подробные пояснения сведений с помощью книг Excel и ключевых показателей эффективности. Фильтры цифровых панелей упрощают выбор диапазона сведений для просмотра. Чтобы создать собственную цифровую панель, перейдите в представление &amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;Цифровые панели&amp;lt;/A&amp;gt; библиотеки отчетов и нажмите кнопку "Создать".</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>&amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;Библиотека отчетов&amp;lt;/A&amp;gt; предназначена для хранения файлов, содержащих отчеты и цифровые панели, и обеспечивает быстрый доступ к сведениям за предыдущие периоды времени.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>Для подготовки этого центра отчетов к использованию рекомендуется выполнить следующие действия:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>Просмотрите образцы &amp;lt;A &amp;gt;цифровой панели&amp;lt;/A&amp;gt; и &amp;lt;A&amp;gt;книги&amp;lt;/A&amp;gt;, чтобы получить представление о возможностях этого центра отчетов</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>Если образцы работают неправильно, попросите администратора включить Службы Excel и добавить данный центр отчетов в список доверенных расположений</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>Если планируется использовать Excel для анализа сведений с существующих серверов данных, создайте файлы подключений к данным (ODC) и отправьте их в &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;библиотеку подключений к данным&amp;lt;/A&amp;gt;. Чтобы пользователи могли создавать новые списки ключевых показателей эффективности, добавьте их в группу "Владельцы". Пользователи, включенные в группу "Участники", могут изменять страницы, но не имеют прав на создание списков ключевых показателей эффективности.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>Обновить или удалить образец контента</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>Важные</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>Дополнительные сведения</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>Краткий справочник</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>Сведения о контакте</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>Отображение сведений о контакте для данной страницы или сайта.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>Будущие события</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>Страница центра отчетов</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>Индикаторы состояния</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>Отчеты</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>Описание</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>Описание предоставляет сведения о назначении цели.</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>Примечания индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>Примечания описывают текущее состояние индикатора и могут предоставлять сведения о причинах неполадок.</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>Значение индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>Порог цели индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>Порог предупреждения индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>Ссылка на подробности</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>Ссылка для перехода к странице подробностей </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>Более низкие значения лучше</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>Какие значения лучше: более низкие или более высокие</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>Автоматическое обновление</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>Следует ли каждый раз загружать данные с сервера</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>Ошибка обновления</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>Содержит сообщение об ошибке последнего обновления, если таковая имела место</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>Источник данных</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>URL-адрес источника данных</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>GUID представления</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>GUID представления</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>Имя представления</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>Имя представления</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>Выражение для значения</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>Выражение, используемое для определения значения индикатора.</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>Процентное выражение</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>Указывает, используется ли выражение для расчета процента</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>Лист значения</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>Имя листа для данного значения</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>Ячейка значения</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>Адрес или имя ячейки для данного значения</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>Лист цели</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>Имя листа для данной цели</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>Ячейка цели</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>Адрес или имя ячейки для данной цели</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>Лист предупреждения</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>Имя листа для данного предупреждения</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>Ячейка предупреждения</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>Адрес или имя ячейки для данного предупреждения</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>Цель из книги</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>Является ли источником цели книга или определение индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>Предупреждение из книги</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>Является ли источником предупреждения книга или определение индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>Автоматическое определение шага</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>Тренд изменения индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>Состояние индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>Состояние индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>Папка отображения</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>Папка отображения индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>Индикатор</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Имя ключевого показателя эффективности службы Microsoft SQL Server 2005 Analysis Services</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>Включить дочерние индикаторы</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>Следует ли включать дочерние показатели</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>Форматированное значение индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>Значение индикатора, отформатированное его поставщиком источников данных</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>Форматированная цель индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>Цель индикатора, отформатированная его поставщиком источников данных</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>Форматированное предупреждение индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>Значение предупреждения индикатора, отформатированное его поставщиком источников данных</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>Самое последнее обновление данных индикатора</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>Последнее обновление индикатора из его поставщика источников данных</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>Описание отчета</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>Описание контента отчета</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>Сохранить в журнале отчета</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>При каждом сохранении этого документа его копия будет добавляться в журнал отчета.</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>Идентификатор родительского элемента</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>Идентификатор родительского элемента данного отчета</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>Владелец</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>Владелец этого документа</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>Категория отчета</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>Категория отчета</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>Категория 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>Категория 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>Категория 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>Состояние отчета</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>Состояние отчета</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>Окончательный</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>Предварительный</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>С начала периода</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>Журнал</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>Просмотреть журнал</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>Имя</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>Имя</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>Новый</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>Измененная ссылка на отчет</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>Отчет создан</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(отснятое значение)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>Кем создан</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>Отчет изменен</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>Автор изменений</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>Имя родительского отчета</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(имя родительского элемента снимка)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>Ссылка на отчет</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(ссылка на отчет с меню изменения)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>Управление сведениями о сотрудниках</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>Столбцы типовых индикаторов</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>Индикатор состояния, основанный на фиксированном значении</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>Создание нового индикатора состояния на основе введенных вручную данных</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>Индикатор состояния, основанный на списке SharePoint</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>Создание нового индикатора состояния на основе данных из списков SharePoint</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>Индикатор состояния, основанный на Excel</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>Создание нового индикатора состояния на основе данных из Служб Excel</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>Индикатор состояния, основанный на службах аналитики SQL Server</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>Создание нового индикатора состояния на основе данных, собранных службами аналитики SQL Server</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>Отчет</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>Страница веб-частей со списком состояний</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>Создание страницы, отображающей индикаторы состояния и книги Excel.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Отчет Excel</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>Цифровые панели</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>Текущие отчеты</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>Все отчеты и цифровые панели</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>Недавно обновленные</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Страница подробного отчета для файлов Excel.</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>Левая верхняя зона</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>Правая верхняя зона</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>Зона фильтра</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>Добавить фильтр</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>Левая нижняя зона</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>Средняя нижняя зона</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>Правая нижняя зона</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>Верхняя зона</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>Левая средняя зона</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>Правая средняя зона</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>Нижняя зона</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>Все элементы</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>Список состояний</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>Список состояний</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>Показывает список индикаторов состояния. Индикаторы состояния отображают важные показатели для организации, а также показывают производительность организации относительно целей.</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>Сведения об индикаторе состояния</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>Отображает сведения об одном показателе состояния. Показатели состояния отображают важные показатели организации и могут быть получены из других источников данных, включая списки SharePoint, книги Excel и ключевые показатели эффективности SQL Server 2005 Analysis Services.</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>Бизнес-данные</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>Да</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>Нет</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(Пусто)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(все)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(Обновить)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>Обновить</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(Пустой)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>Сортировка по возрастанию</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>Сортировка по убыванию</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>Фильтрация по </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>Сортировка по </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>Выбор целевой аудитории</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>Целевая аудитория (аудитории на основе правил; группы SharePoint; списки рассылки)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>Целевая</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>Произвольная</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>Разрешить глобальные аудитории</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>Разрешить списки рассылки</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>Разрешить группы SharePoint</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>Каталог сайтов</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>Карта сайта</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>Сайты в категории</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>Лучшие сайты</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>Сайты в каталоге сайтов могут быть сгруппированы в категории. Чтобы добавить сайт в каталог сайтов, выберите "Создать сайт" или "Добавить ссылку на сайт" в правом верхнем углу данной страницы.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>Для добавления лучших сайтов добавьте ссылку в список каталога сайтов и пометьте ее как "Лучший сайт". Начните с добавления ссылки в каталог сайтов и ее пометки в качестве лучшего сайта.</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>Параметры области дополнительных ссылок</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>Статья новостей с рисунком</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>Ссылка на статью новостей</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>Зоны веб-частей</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>Домашняя страница новостей</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>Домашняя страница каталога сайтов</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>Включение компонентов корпоративного выпуска</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>По умолчанию</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>Фильтры</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>Бизнес-данные</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>Цифровая панель</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>Веб-часть "Подписчик WSRP"</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>Текущий пользователь</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>Текущий фильтр пользователей</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>Фильтр контента веб-частей, использующий свойства текущего пользователя.</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>Фильтр текстов</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>Фильтр контента веб-частей по текстовым значениям, вводимым пользователями.</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>Фильтр списка SharePoint</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>Фильтр контента веб-частей, использующий список значений.</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>Строка запроса</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>Фильтр по строке запроса (URL-адресу)</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>Фильтр контента веб-частей, использующий значения, переданные в строке запроса.</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>Поле страницы</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>Фильтр полей страницы</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>Фильтр контента веб-частей, использующий сведения о текущей странице.</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>Фильтр служб аналитики SQL Server</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>Фильтр контента веб-частей, использующий список значений из кубов служб аналитики SQL Server.</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>Список состояний</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>Веб-часть IView</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>Сведения об индикаторе</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>Дата</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>Фильтр дат</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>Фильтр контента веб-частей по дате, введенной или выбранной пользователем.</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>Список бизнес-данных</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>Отображение списка элементов из источника данных в службе подключения к бизнес-данным.</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>Не удается импортировать эту веб-часть.</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>Фильтр подключения к бизнес-данным</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>Фильтр контента веб-частей с помощью списка значений из службы подключения к бизнес-данным.</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>Элемент бизнес-данных</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>Отображение одного элемента из источника данных в службе подключения к бизнес-данным.</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>Связанный список бизнес-данных</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>Отображение списка элементов, связанных с одним или несколькими родительскими элементами из источника данных в службе подключения к бизнес-данным.</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>Действия с бизнес-данными</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>Отображение списка действий из службы подключения к бизнес-данным.</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>Построитель элементов бизнес-данных</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>Создает элемент бизнес-данных из параметров в строке запроса и предоставляет его другим веб-частям.</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>Фильтр выбора</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>Фильтр контента веб-частей, использующий список значений, введенных автором страницы.</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>Значение 1&amp;Значение 2&amp;Значение 3=Описание 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>Кнопка применения фильтров</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>Добавьте эту кнопку на страницу, и пользователи смогут самостоятельно решать, когда применять выбранные фильтры. В противном случае каждый фильтр будет применяться при изменении его значения.</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>Лучшие сайты</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>Отображение лучших сайтов из каталога сайтов.</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>Новости</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>Последние новости</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>Подборка новостей</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>Эта неделя в картинках</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>Отображает одно изображение из библиотеки изображений и ссылки на показ слайдов, в котором пользователи могут видеть все изображения из этой библиотеки.</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>Новости</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>Образец статьи новостей</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>Эта страница намеренно оставлена пустой.</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>Архив новостей</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>Новости индустрии</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>Другие новости</value>
+  </data>
+  <data name="KPIList">
+    <value>Список индикаторов состояния</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>Список индикаторов состояния, используемый для отслеживания и отображения набора целей. Цветные значки показывают степень достижения целей.</value>
+  </data>
+  <data name="EventsList">
+    <value>События</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>Список событий служит для размещения сведений о собраниях, крайних сроках и прочих событиях, относящихся к этой области.</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>Невозможно импортировать эту веб-часть.</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>Главная</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>Изображение домашней страницы</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>Выводит изображение домашней страницы</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>Изображение домашней страницы</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>Редактор контента</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>Разрешает авторам работать с форматированным текстом.</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>Срочно требуется...</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>Поиск сотрудников</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>Поиск сотрудников</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>Оглавление</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>Параметры каталога сайтов</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>Настройка каталога сайтов</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>Проверка ссылок каталога сайтов</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>Страницы</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>Общие документы</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>Личные документы</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>Общие рисунки</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>Фотографии пользователя</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>Здесь будут храниться рисунки профилей для всех пользователей.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>Эта библиотека документов служит для хранения страниц веб-частей. К ним автоматически предоставляется общий доступ на домашней странице.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>Эта библиотека документов служит для хранения документов. Размещенные здесь документы будут отображаться на вашей общей домашней странице.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>Эта библиотека служит для хранения документов личного пользования. Они будут доступны только вам и администраторам сервера.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>Чтобы предоставить общий доступ к рисункам и фотографиям, добавьте их в эту библиотеку рисунков. Сохраненные в ней рисунки и изображения будут доступны на общей домашней странице.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>Начать работу с личным сайтом</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>Ссылки на различные советы и подсказки по использованию личного сайта.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>Сайты SharePoint</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>Сведения о сайтах, участником которых является данный пользователь</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>Главная страница личного сайта</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>Обеспечивает уникальный внешний вид личного сайта.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>Последние записи блога</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>Самые последние записи блога пользователя</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>Добавить новую запись</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>Центр общего доступа</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>Основная веб-часть, с помощью которой пользователь может предоставлять общий доступ к элементам.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>Последние действия</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>Веб-часть, отображающая мои последние действия.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>Спроси меня</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>Веб-часть со списком ключевых слов, по которым могут задавать вопросы другие пользователи.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>Мои ссылки</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>Отображает созданные вами ссылки.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>Мой календарь</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>Отображает ваш календарь с помощью Outlook Web Access для Microsoft Exchange Server 2003 или более поздней версии.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>Сведения о коллегах</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>Отображает список ваших коллег и их последние изменения.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>Мое участие в группах</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>Отображение групп, участником которых вы являетесь.</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>Профили пользователей и личные веб-сайты</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>Аудитории</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>Свойства и профили пользователей</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>Аудитории</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>Политики службы профилей</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>Параметры личных сайтов</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>Надежные расположения для узла личных сайтов</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Опубликованные ссылки на клиентские приложения Office</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>Ссылки на сайты личной настройки</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>Разрешения служб личной настройки</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>Настройка делегирования организаций</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>Элемент бизнес-данных</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>Веб-часть для подробностей об элементе бизнес-данных</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>Действия с бизнес-данными</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>Веб-часть для отображения действий с бизнес-данными</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>Подключение к бизнес-данным</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>Импорт определения приложения</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>Просмотреть приложения</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>Просмотреть сущности</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>Изменить шаблон страницы профиля</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>Разрешения службы подключения к бизнес-данным</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>Настройка параметров единого входа (SSO)</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>Имя вкладки</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>Текст подписи вкладки.</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>Страница</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>Введите имя страницы, которую следует отображать как часть данной вкладки. Если страница не создана, создайте страницу с помощью команды "Создать страницу" из списка "Действия сайта".</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>Добавить ссылку</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>Подсказка</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>Это всплывающая подсказка, которая будет отображаться при наведении указателя мыши на данную вкладку.</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>Все вкладки</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>Название</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>URL-адрес</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>Описание</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>Владелец</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>Подразделение</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>Область</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>Важный сайт</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>Лучший сайт</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>Задачи и инструменты</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>Состояние ссылки</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>ОК</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>Не работает</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>Не определена</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>Первоначальные задачи</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>Международные</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>Национальные</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>Местные</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>Информационные технологии</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>Исследования и разработки</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>Продажи</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>Финансы</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>Все сайты</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>Сводка</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>Управление сайтами</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>Представленные сайты</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>Категории</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>Отклоненные сайты</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>Категории создания сайтов</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>Неработающие сайты</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>Вас приветствует Microsoft® SharePoint® Server 2013</value>
+  </data>
+  <data name="HomePageContent2">
+    <value>Начать работу с новой версией Microsoft SharePoint Server 2013:</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>Управление сайтами и контентом</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>Создание новых &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;страниц&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;сайтов &lt;/a&gt;, и &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;списков &lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>&lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;Добавление пользователей &lt;/a&gt; в группу "Участники" для изменения страниц</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>&lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;Создание личного сайта &lt;/a&gt; с помощью ссылки "Мой сайт"</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>&lt;a href="~SiteCollection/SearchCenter"&gt;Поиск &lt;/a&gt; по сайтам, документам и пользователям</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>Бизнес-решения (требуется лицензия на корпоративный выпуск)</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>Создание индикаторов состояния и отчетов</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>Просмотр книг Excel с помощью веб-части Excel Web Access</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>Развертывание формы InfoPath в библиотеку документов</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>Выберите задачу</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>Список сайтов</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>Этот шаблон списка служит для создания списка сайтов.</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>Список вкладок</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>Этот шаблон списка служит для создания списка вкладок.</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>Нет элементов для отображения в этом представлении.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>Категории</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>Карта сайта</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>Сайты в категории</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>Домашняя</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>Домашний сайт портала</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>Темы</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>Веб-сайт тем</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>Подразделения</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>Веб-сайт подразделений</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>Продажи</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>Веб-сайт продаж</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>Исследования и разработки</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>Веб-сайт отдела разработок</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>Отдел кадров</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>Веб-сайт отдела кадров</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>Товары</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>Веб-сайт производственного отдела</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>Новости</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>Домашняя страница новостей компании</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>Сайты</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>Веб-сайт каталога сайтов</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>Поиск</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>Веб-сайт центра поиска отображает результаты поиска</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>Отчеты</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>Центр отчетов</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>Средство просмотра WSRP</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>Отображение портлетов с веб-сайтов при помощи WSRP 1.1.</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>Эта веб-часть не рекомендуется для использования.</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>Сайты</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>Список сайтов служит для хранения ссылок на сайты и категории сайтов.</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>Вкладки</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>Список вкладок служит для хранения ссылок на страницы. Список вкладок следует использовать на сайте с элементом управления "Вкладка".</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>Начать</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>Выбор целевой аудитории</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>Выбор целевой аудитории</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>Разрешить глобальную аудиторию</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>Разрешить список рассылки</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>Разрешить группу SharePoint</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>Да</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>Нет</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>Личная</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>Мой сайт</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>Навигация</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>Каталог сайтов</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>Создание центра отчетов</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>Описание центра отчетов на сайтах расширенного выпуска.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>Макеты портала</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>Компонент портала, передающий все макеты в галерею главных страниц.</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>Просмотреть архив новостей</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>Макет страницы приветствия</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>При обновлении в ферме SharePoint были установлены дополнительные компоненты. Эти компоненты будут включены на вновь создаваемых сайтах, но пока недоступны для существующих сайтов. Чтобы сделать новые компоненты доступными для всех существующих сайтов, перейдите на страницу "Включение компонентов на существующих сайтах". Если доступность новых компонентов для всех существующих сайтов не требуется, эту задачу можно удалить. Выполнить ее можно в любое время со страницы "Операции" сайта центра администрирования. Кроме того, можно сделать новые компоненты доступными для отдельных сайтов при помощи меню "Параметры сайта" на соответствующих сайтах.</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>Включение новых компонентов на существующих сайтах</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>Включение компонентов на существующих сайтах</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">Дополнительные задачи обновления</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">Включение компонентов</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">Используйте ссылку "Включение компонентов" для включения новых компонентов на существующих сайтах.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>Средство просмотра RSS</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>Отображение RSS-канала</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>Мои сайты SharePoint</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>Служит для отображения документов, созданных вами на сайтах, участником которых вы являетесь, и на выбранных вами сайтах.</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>Документы SharePoint</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>Служит для отображения документов, созданных пользователем, являющимся участником сайта.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>Объединение сайтов</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>Отображение выбранных сайтов.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>Библиотека документов области</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>Библиотеки документов областей представляют собой папки, облегчающие предоставление общего доступа к документам. Документы во всех библиотеках отображаются в списках, в которых можно выполнять фильтрацию и сортировку.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>Новые возможности</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>Отображает список ваших коллег и их последние изменения.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>Интересы</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>Отображает последние действия в интересующих вас областях.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>Сведения о контакте</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>Отображение сведений о контакте для данной страницы или сайта</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>Мои рисунки</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>Отображает рисунки из вашей библиотеки рисунков, возможен режим показа слайдов</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>Общие рисунки</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>Мои рабочие области</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>Отображает дочерние сайты, созданные на вашем личном сайте</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>Моя почтовая папка</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>Отображает вашу почтовую папку с помощью Outlook Web Access для Microsoft Exchange Server 2000.</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>Мой календарь</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>Отображает ваш календарь с помощью Outlook Web Access для Microsoft Exchange Server 2003 или более поздней версии.</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>Моя папка "Входящие"</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>Отображает вашу папку "Входящие" с помощью Outlook Web Access для Microsoft Exchange Server 2003 или более поздней версии.</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>Мои задачи</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>Отображает ваши задачи с помощью Outlook Web Access для Microsoft Exchange Server 2003 или более поздней версии.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>Мои контакты</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>Отображает ваши контакты с помощью Outlook Web Access для Microsoft Exchange Server версии 2003 или более поздней.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>Мои ссылки</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>Служит для отображения ваших ссылок</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>Группы добавления веб-частей по умолчанию</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>Добавляет группы по умолчанию в столбец QuickAddGroups коллекции веб-частей</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>Загрузка...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>Меню открытия</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>Участники</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>Веб-часть для отображения состава группы</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>Глобальные веб-части</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>Устанавливает дополнительные веб-части, общие для всех типов сайтов.</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>Мой сайт</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>Устанавливает компоненты, связанные с личными сайтами и профилями пользователей.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>Узел личных сайтов</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>Устанавливает компоненты, связанные с размещением личных сайтов.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>Эмблемы организаций</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>Общая библиотека рисунков для эмблем организаций</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>Используйте эту библиотеку рисунков для хранения эмблем организаций.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>Переходы по личному сайту</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>Устанавливает поставщиков переходов для личного сайта.</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>Настройка личного сайта пользователя</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>Настройка личного сайта пользователя.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>Ссылки администрирования профиля пользователя</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>Устанавливает ссылки, относящиеся к администрированию службы профиля пользователя.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>Основные ссылки центра администрирования профилей пользователей</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>Устанавливает ссылки, относящиеся к основным задачам администрирования службы профиля пользователя.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>Настройка целевых аудиторий для контента списка</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>Устанавливает на страницу "Параметры списка" кнопку для выбора целевой аудитории контента.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>Параметры целевой аудитории</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>Синхронизация профиля</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>Устанавливает задание для синхронизации профиля пользователя и сведений об участии в группах с сайтами рабочих групп.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>Средство переноса пользователей поставщика общих служб</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>Устанавливает компоненты, необходимые для переноса пользовательских данных при изменении учетной записи пользователя.</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>Поиск</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>Что такое сайты личной настройки...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>Сайты личной настройки предназначены для персонализации данных портала, предоставляемых пользователям. Этот сайт служит для отправки пользователям сведений с учетом их профилей и целей посещения портала. Шаблон сайта личной настройки помогает определить текущего пользователя и использовать его профиль для точного отбора и представления нужных ему сведений.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>&lt;i&gt;Например, с помощью сайта личной настройки можно разблокировать сведения из различных бизнес-систем и с помощью структуры вашего сайта обеспечить пользователю удобный доступ к сведениям, которые нужны ему для выполнения должностных обязанностей. Также можно облегчить достижение целей организации за счет использования сайта личной настройки для управления поведением пользователей при помощи индикаторов производительности и метрик, которые можно настроить для каждого отдельного пользователя с учетом его роли.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>После разработки сайта личной настройки попросите администратора зарегистрировать его, чтобы сделать сайт личной настройки постоянно доступным на панели навигации личных сайтов пользователей.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>Элементы управления ленты для тегов и доски заметок</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>Добавляет на ленту точки входа для работы с тегами и комментариями на доске заметок.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>Теги и заметки</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>Теги и заметки</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>Теги и заметки</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>Теги помогают запомнить ссылки и классифицировать выбранный элемент. Заметки - это общедоступные комментарии. Теги и заметки попадают в личный канал новостей и работают на разных сайтах.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>Мне нравится</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>Пометьте выбранные элементы тегом "Мне нравится". Теги облегчают запоминание ссылок и размещение элементов в личном канале новостей.</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>Владелец</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>Описание</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>Состояние</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>Отображение сайтов из указанной категории каталога сайтов</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>Отображает категории из каталога сайтов.</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>Разрешает пользователям делать выбор из списка вариантов и перемещает их в соответствующее расположение.</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>Архив новостей</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>Документы</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>Сведения о сайтах, участником которых является данный пользователь</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>Коллеги</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>Эта веб-часть предназначена для добавления на страницу профиля пользователя. Она содержит полный список коллег, общих для данного пользователя и других пользователей. Она является точкой входа для владельца профиля и позволяет ему управлять списком коллег.</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>Доска заметок</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>Разрешить пользователям оставлять короткие общедоступные заметки об этой странице.</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>Элементы с тегами</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>Показать людей, применивших тег к конкретному URL-адресу</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>Подключись</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>Показывает людей, которые часто используют тег, проявили интерес к нему или продемонстрировали соответствующие знания.</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>Связанные теги</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>Показывает теги, использовавшиеся вместе с определенным термином, и позволяет фильтровать содержимое веб-части "Элементы с тегами"</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>Об этом теге</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>Показывает метаданные из управляемой таксономии, относящиеся к определенным терминам</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>Последнее действие</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>Показать пользователей, связанных с конкретными терминами</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>Общее с вами</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>Показывает, что общего между вами и данным пользователем</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>Моя организационная диаграмма</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>Показывает организационную диаграмму и иерархию отчетности</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>Участие в группах</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>Отображает сведения о вашем участии на сайтах и в списках рассылки.</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>Ссылки</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>Показывает ссылки, используемые совместно с данным пользователем</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>Группа</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>Веб-часть для отображения сведений о группе</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>Участники</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>Веб-часть для отображения состава группы</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>Группы участника</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>Веб-часть для отображения групп участника</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>Образец ссылки 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>Описание образца</value>
+  </data>
+  <data name="imglibList">
+    <value>Эта неделя в библиотеке рисунков</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>Место для хранения рисунков в этой области.</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>Образец ссылки 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>Образец ссылки 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>Центр документов</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>Сайт центра документов</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(связано с URL-адресом)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(связано с меню изменения)</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>Сведение контента</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Клиентские приложения Office</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>Формы</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>Разное</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>Мой сайт: верхняя зона</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>Мой сайт: левая средняя зона</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>Мой сайт: правая средняя зона</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>Мой сайт: нижняя зона</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>Сортировать по URL-адресу</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>Сортировать по названию</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>Возможность портала DiscoPage</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>Компонент портала, задающий для свойства DiscoPage веб-службы по умолчанию значение spsdisco.aspx.</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>Страница приветствия с зонами веб-частей</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>Фильтр свойств профиля</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>Занесение в главный каталог сайтов SharePoint Portal Server</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>Занесение в главный каталог сайтов SharePoint Portal Server.</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>Эта разметка страницы содержит поле изображения (слева), поле форматированного текста и зоны веб-частей, расположенные в правом столбце, верхнем и нижнем колонтитулах и 2 столбцах.</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>Эта разметка страницы содержит зоны веб-частей, расположенные в верхнем и нижнем колонтитулах и 2 столбцах.</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>Эта разметка страницы содержит зоны веб-частей, расположенные в правом столбце, верхнем и нижнем колонтитулах и 2 столбцах.</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>Эта разметка страницы содержит элемент управления "Вкладка". Она включает зоны веб-частей, расположенные в верхнем и нижнем колонтитулах и 2 столбцах. </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>Эта разметка страницы содержит зоны веб-частей, расположенные в верхнем и нижнем колонтитулах, 2 столбцах и 3 строках.</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>Эта разметка страницы содержит элемент управления "Вкладка". Она включает зоны веб-частей, расположенные в верхнем и нижнем колонтитулах и 2 столбцах.</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>Эта разметка страницы содержит элемент управления "Вкладка" и веб-часть "Поле поиска". Она включает зоны веб-частей, расположенные в верхнем и нижнем колонтитулах.</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>Эта разметка страницы содержит элемент управления "Вкладка" и веб-части поиска. Она включает зоны веб-частей, расположенные в правом столбце, верхнем и нижнем колонтитулах, 2 столбцах и 2 строках.</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>Эта разметка страницы содержит элемент управления "Вкладка". Она включает зоны веб-частей, расположенные в правом столбце, верхнем и нижнем колонтитулах, 2 столбцах и 2 строках.</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>Эта разметка страницы содержит зоны веб-частей, расположенные в правом столбце, верхнем и нижнем колонтитулах и 2 столбцах.</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>Человек, работающий на компьютере</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>Компонент "Макеты личных сайтов"</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>Компонент личного сайта, передающий все макеты в коллекцию главных страниц.</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>Выберите задачу для выполнения</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>Компонент "Макеты личных сайтов"</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>Компонент личного сайта, передающий все макеты в коллекцию главных страниц</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>Компонент отправки файлов обновления портала</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>Компонент портала, передающий только файлы обновления.</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>Это образец записи блога. Обычно он заполняется пользователем.</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>Образец записи</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>Образец пользователя</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>Пример</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>Все теги</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>Показать теги, примененные всеми пользователями</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>Мои теги</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>Показать теги, примененные текущим пользователем</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>Облако тегов</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>Показывает наиболее популярные темы, помечаемые тегами в вашей организации.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>Теги для всех пользователей</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>Мои теги</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>Рекомендуемые ссылки (только M1)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>Отображает сведения о личных закладках</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>Обозреватель организаций</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>Эта веб-часть отображает каждого пользователя в цепочке отчета в интерактивном представлении с целью просмотра организационных диаграмм.</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>Оценки</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>Эта функция позволяет пользователям оценивать контент.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>Оценка (0-5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>Среднее значение всех отправленных оценок</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>Оценки</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>Число оценок</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>Число отправленных оценок</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>Определите расположение каталога для перечисления новых сайтов.</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>Укажите сайты, которые следует включить в область результатов поиска "Этот и родственные сайты" для данного сайта.</value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>Параметры оценок</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>Люди</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>Управление свойствами пользователей</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>Управление профилями пользователей</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>Управление подтипами пользователей</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>Управление аудиториями</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>Расписание компиляции аудиторий</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>Компиляция аудиторий</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>Управление разрешениями пользователей</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>Синхронизация</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>Настройка подключений для синхронизации</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>Настройка параметров синхронизации</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>Организации</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>Управление свойствами организаций</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>Управление профилями организаций</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>Управление подтипами организаций</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>Параметры личных сайтов</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>Настройка личных сайтов</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>Настройка надежных расположений для узла</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>Настройка сайта личной настройки</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>Публикация ссылок в клиентские приложения Office</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>Управление тегами и заметками</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>Настройка тегирования социальных данных и опыта</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>Управление политиками</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>Поставщик запросов для пользователей и организаций</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>Установка поставщика запросов для пользователей и организаций.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>Поставщик запросов для групп</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>Установка поставщика запросов для групп.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>Поставщик иерархии утверждений организаций</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>Устанавливает поставщика иерархии утверждений на основе организаций</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>Управление приложением профиля пользователя</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>Приложение профиля пользователя клиента</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>Ссылки на вложенные страницы для страницы управления приложениями профилей пользователей клиентов</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>Прикрепление приложения профиля пользователя клиента</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>Прикрепление компонента "Приложение профиля пользователя клиента" к шаблону администрирования клиентов</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>Настройка задания таймера синхронизации</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>Запуск синхронизации профилей</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>Раскрывающийся список поиска</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>Пропустить карточку контакта</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>Мой канал новостей</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>Мой контент</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>Мой профиль</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>Обзор</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>Организация</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>Контент</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>Теги и заметки</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>Коллеги</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>Участие в группах</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>Цифровая панель "Мои задачи"</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>Создание на личном сайте пользователя цифровой панели, которая позволяет управлять его задачами, собранными по всем сайтам и системам, и взаимодействовать с этими задачами.</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>Прикрепление цифровой панели "Мои задачи"</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>Этот компонент прикрепляет (подключает) компонент цифровой панели "Мои задачи" к шаблону личного сайта.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>Общие документы — СТАРЫЕ</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>Личные документы — СТАРЫЕ</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>Отслеживаемый контент</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>Отслеживание контента</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>Функция отслеживания контента позволяет пользователям подписываться на обновления для определенных документов в своих веб-каналах</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>Подписка на контент</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>Отслеживание контента</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>Содержит ссылку на отслеживаемый элемент контента</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>Идентификатор фермы</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>Идентификатор сайта</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>Веб-идентификатор</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>Идентификатор списка</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>Уникальный идентификатор</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>Идентификатор элемента</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>URL-адрес</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>URL-адрес родителя</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>Тип</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>Подтип</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>URL-адрес значка</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>Не отображается в веб-канале</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>Есть веб-канал</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>Флаги</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>Идентификатор ProgID типа файлов</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>Идентификатор ProgID URL-адреса сервера</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>Отслеживаемые документы</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>Отслеживаемые сайты</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>Подпишитесь на интересные документы, перейдя к ним и нажав "Подписаться"</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>Вы еще не подписаны ни на один сайт. Чтобы видеть информацию из этого списка, перейдите на сайт и щелкните значок "Подписаться".</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>В этой библиотеке документов ранее хранились документы, к которым вы хотели предоставить доступ другим пользователям. Теперь для этой цели рекомендуется использовать новую библиотеку "Мои документы".</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>В этой библиотеке документов ранее хранились документы, которые вы использовали в личных целях. Теперь для этой цели рекомендуется использовать новую библиотеку "Мои документы".</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>Этот список будет содержать все элементы, выбранные вами для отслеживания.</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>Подписка на контент</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>Разрешает пользователям подписаться на документы или сайты.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>Ассоциация возможности подписок на контент</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>Активация функции "Подписка на контент" во всех семействах веб-сайтов.</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>Отслеживание контента</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>Разрешает пользователям отслеживать документы или сайты.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>Список отслеживания контента</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>Компонент, который инкапсулирует список, позволяющий пользователям отслеживать контент в SharePoint.</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>Отслеживание контента</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>Список, позволяющий пользователям отслеживать контент в SharePoint.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>Компонент "Библиотека документов личного сайта"</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>Представляет собой усовершенствованную библиотеку документов SharePoint для личного сайта. В число улучшений входят новые представления, упрощенное управление версиями, расширенная контекстная информация и возможность предоставления общего доступа к отдельным элементам.</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>Документы</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>Все</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>Мне предоставлен доступ</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>Доступно всем</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>Поля общего доступа</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>Общий доступ</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>Общий доступ</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>Мои документы</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>Мои документы</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>Общий доступ для внутренних</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>Общий доступ для внутренних</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>Сохранить мои последние изменения</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>Разрешения</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>Поиск сейчас недоступен. Повторите попытку позже. Если ошибка повторится, обратитесь к администратору.</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>Поиск сейчас отключен. Обратитесь к системному администратору.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>Отслеживать</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>Подписаться на этот документ и получать обновления в своем канале новостей.</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>Управление работой</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>Оценили</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>Пользователи, оценившие элемент.</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>Оценки пользователей</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>Оценки пользователей для элемента</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>Отзывы о контенте</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Documents</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>Функциональность проекта</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>Этот компонент добавляет на сайт функции управления. Он отображает задачи, календарь и веб-части на домашней странице сайта.</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>Мои проекты</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>Люди</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>Канал новостей</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>Документы</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>Задачи</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>Люди</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>Сайты</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>Сведения обо мне</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value>О пользователе {0}</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>Мои приложения</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>Переход на личный сайт</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>Я отслеживаю</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>Мне предоставлен доступ</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>Канал новостей</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>Приложения</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>Другие приложения</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>Канал новостей</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>Отображение бесед и уведомлений о событиях, связанных с контентом и пользователями, которых вы отслеживаете на всех сайтах SharePoint, а также возможность отправки пользователями коротких общедоступных сообщений.</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>Веб-канал активности</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>Отображение последних бесед и действий пользователя.</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>Микроканал</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>Список постоянного хранения для микроканала на личном сайте</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>Список постоянного хранения для опубликованного сводного контента на личном сайте</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>Типы контента микроканала</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>Обновление личного сайта при навигации</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>Создание или обновление личного сайта пользователя после перехода на сайт узла для размещения личного сайта.</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>Интерфейс первого запуска моего сайта</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>Хэштеги тенденций</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>Эта клиентская веб-часть помогает пользователю найти новый контент из социальных сетей</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>Счетчики подписок</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>Отображает количество пользователей, на которых есть подписка, контент и теги для текущего пользователя.</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>Люди</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>Отображение людей, которых отслеживает пользователь, а также тех, кто отслеживает его</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>Настроенная вручную временная шкала</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>Отображение данных, настроенных вручную, в представлении временной шкалы</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>Сводка по проекту</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>Отображение сведений о проекте в виде удобной для чтения сводки</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>Подключенная временная шкала</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>Используйте эту временную шкалу для высокоуровневого представления данных из другой веб-части</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>Временные шкалы</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>Временная шкала сайта проекта</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>Эта временная шкала служит для создания высокоуровневого представления задач в проекте</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>Веб-части сайта проекта</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>Веб-части, предназначенные исключительно для сайта проекта</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>Центр командной работы</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>Центр командной работы обеспечивает сводное представление всех сайтов проекта в одном месте. Центр командной работы можно подключить к веб-части "Временная шкала", чтобы создать визуальное представление портфеля проектов.</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>Компонент "Связанные элементы"</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>Компонент связанных элементов служит для добавления в семейство веб-сайтов возможностей работы со связанными и рекомендованными элементами.</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>Рекомендации для формы элемента</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>Добавляет элемент управления CBS для рекомендаций во все формы просмотра элементов.</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>Рекомендации личного сайта</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>Документы и сайты автоматически рекомендуются пользователям для подписки на их личных сайтах SharePoint.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>Веб-часть рекомендаций предлагает контент, на который пользователь может захотеть подписаться в пределах фермы.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>Документы, рекомендуемые для меня</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>Сайты, рекомендуемые для меня</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>Люди, рекомендованные мне</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>Веб-часть рекомендаций предлагает контент, на который пользователь может захотеть подписаться в пределах фермы.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>Документы, предлагаемые для подписки</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>Предлагаемые сайты, которые вам будет интересно отслеживать</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>Люди, предложенные для подписки</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>Веб-часть рекомендаций предлагает контент, на который пользователь может захотеть подписаться в пределах фермы.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>Рекомендованные документы</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>Рекомендованные сайты</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>Рекомендованные люди</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>Мои рекомендации</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>Не удалось импортировать веб-часть "Мои рекомендации".</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>Не удалось импортировать веб-часть связанных элементов.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>Связанные элементы</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>Веб-часть связанных элементов.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>Предложения связанных элементов</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>Веб-часть предложений связанных элементов.</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>Связанные элементы</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>Предложения новых элементов</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>Веб-часть предложений новых элементов</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>Поставщик параметров пользователя для профиля пользователя</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>Этот компонент обеспечивает поставщика параметров пользователя для профиля пользователя.</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>Почтовый ящик сайта</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>Почтовый ящик</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>Приложение почтового ящика сайта позволяет хранить сообщения электронной почты и документы совместно, подключая сайт к почтовому ящику Exchange. После этого вы сможете просматривать электронную почту в SharePoint и документы сайта в Outlook.</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>Почтовые ящики сайта</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>Включает подготовку почтового ящика Exchange для сайтов в этой ферме и подключает документы с сайта к Outlook.</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>Храните электронную почту в контексте.</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>Предоставляйте доступ к электронной почте на своем сайте и подключайте документы к Outlook.</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>Поддержка сайта проекта</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>Позволяет создавать сайты проектов в этом семействе веб-сайтов.</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>Элемент управления тегами для сайтов проектов</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>Этот компонент обеспечивает веб-часть добавления тегов на сайты проектов.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>Не удалось импортировать веб-часть для добавления тегов.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>Веб-часть тегов</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>Веб-часть для добавления тегов позволяет участникам сайта добавлять и просматривать теги на страницах.</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>Проекты</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>Проект</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>Создать</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>Создание рабочей области проекта</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>Открыть</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>Открытие выбранного проекта.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>В рабочей области проекта</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>Открыть в рабочей области проекта</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>В Project профессиональный</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>Открытие выбранного проекта в Microsoft Project. Если проект извлечен другим пользователем, он будет открыт только для чтения. Если выбрано несколько проектов, они будут открыты в новом главном проекте.</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>Временная шкала</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>Добавить на временную шкалу</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>Добавление выбранных элементов на временную шкалу.</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>Проект</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>Владелец</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>Дата начала</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>Дата окончания</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>Обновление списка проектов...</value>
+  </data>
+  <data name="NextRefresh">
+    <value>Список проектов будет обновлен в {0}</value>
+  </data>
+  <data name="RefreshNow">
+    <value>Обновить сейчас</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>Искать в этом списке...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>Область сайта проекта</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>Сайт и его компоненты</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>Семейство веб-сайтов</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>Бизнес-аналитика</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>Отчет</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>Является ли этот элемент отчетом?</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>Данные</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>Является ли этот элемент источником данных?</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>Бизнес-аналитика</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>Документ отчета</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>Создание нового документа отчета.</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>Библиотека документов отчетов</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>Место, где вы можете создавать документы отчетов и управлять ими.</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>Библиотека документов отчетов</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>Поддержка поиска отчетов и данных</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>Предоставляет типы контента, столбцы сайта и шаблоны библиотек, необходимые для поиска отчетов и данных в центре поиска в корпоративной среде.</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>Компонент портала сообщества</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>Этот компонент добавляет функции портала сообщества. Он также обеспечивает доступ к страницам этого портала.</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>Популярные сообщества</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>Сайт сообщества</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>О нас</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>Компонент "Сайт сообщества"</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>Этот компонент добавляет возможности сообщества, такие как категории обсуждений, репутацию контента и людей и список участников. Кроме того, она предоставляет страницы сайта сообщества, которые содержат эти списки и функции.</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>Список обсуждений</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>Список обсуждений служит для организации бесед в формате форума, включая вопросы и ответы по темам, относящимся к вашей группе, проекту или сообществу.</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>Сводный счетчик оценок "нравится"</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>Сводный счетчик оценок</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>Число оценок "нравится"</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>Понравилось пользователям</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>Популярность</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>Автор последнего обновления темы</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>Оценка репутации автора</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>Число ответов автора</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>Число записей автора</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>Число лучших ответов автора</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>Дата последнего действия автора</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>Дата вступления автора в сообщество</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>Членство автора</value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>Уровень 1</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>Уровень 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>Уровень 3</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>Уровень 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>Уровень 5</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>Категория</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>Имя участника</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>Кем размещено</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>Кем обновлено</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Categories</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>Инфраструктура сайта сообщества</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>Поля, типы контента и веб-части уровня семейства веб-сайтов, необходимые для списков обсуждений, репутации, категорий и участия в сообществе.</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>Компонент "Список категорий"</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>Этот компонент содержит шаблон для списка категорий</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>Список категорий</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>Список категорий</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>Категория</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(Описание типа контента "категория")</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>Список категорий</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>Категории мозаикой</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>Представление администратора</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>Одна категория</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>Имя категории</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>Имя категории.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>Описание</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>Что следует обсуждать участникам сообщества в этой категории?</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>Картинка категории</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>Добавление изображения, представляющего эту категорию.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>Обсуждения</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>Ответов</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>Автор последней записи</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>Дата последней записи</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>Категории</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>cписок категорий позволяет определить категории для записей списка обсуждений.</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>Общие</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>Если вы не знаете, где разместить запись, начните отсюда.</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>Участник</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>Состояние</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>Состояние участника</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>Ожидает утверждения</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>Активен</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>Неактивен</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>Заблокирован</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>Ушел</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>Типы контента сообщества</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>Участие на сайте</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>Добавление нового участника</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>Участие на сайте</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>Этот компонент содержит схему списка и экземпляр списка, который используется для управления участниками на сайте сообщества, проекта, группы или на образовательном сайте.</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>Шаблон списка участников</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>Схема шаблона списка участников сайта</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>Участники сообщества</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>в этом списке фиксируются текущая активность участников и сведения об их репутации в этом сообществе.</value>
+  </data>
+  <data name="members_Folder">
+    <value>Members</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Community Discussion</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>Сообщения о нарушениях</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>Этот компонент содержит схему списка и экземпляр списка, который используется для управления оскорбительным содержимым на сайте сообщества</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>Шаблон списка сообщений</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>Схема шаблона списка сообщений</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>Список сообщений</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>В этом списке хранятся комментарии к элементу обсуждения, оставленные пользователями, которые считают этот элемент оскорбительным</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>AbuseReports</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>Автор жалобы</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>Комментарии</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>Обсуждение</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>Число жалоб</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>Просмотр сообщений</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>Просмотр авторов сообщений</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>Просмотр комментариев</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>Запись</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>URL-адрес тематической страницы</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>Сообщения о нарушениях</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>Модерирование</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>Просмотр записей с жалобами</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>Просмотреть сообщения</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>Просмотр сообщений</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>Просмотр содержимого, на которое поступили жалобы, с комментариями участников, считающих его оскорбительным</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>Редактировать запись</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>Редактирование записи</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>Редактирование элемента обсуждения, на который поступила жалоба, с целью удаления потенциально оскорбительного содержимого</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>Удалить запись</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>Удаление записи</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>Удаление элемента обсуждения, который был сочтен оскорбительным. При этом также будут удалены сопутствующие комментарии, оставленные участниками, которые пожаловались на элемент</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>Удалить сообщение</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>Удаление сообщения</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>Удаление сообщений, связанных с элементом обсуждения, если вы считаете, что он уместен в сообществе. При этом будут удалены сопутствующие комментарии, оставленные участниками, которые посчитали его оскорбительным</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>Подаренные эмблемы</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>Дать эмблему</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>Назначение эмблемы участнику</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>Назначение эмблемы участнику</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>Дата присоединения</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>Последнее действие</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>Лучшие ответы</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>Обсуждения</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>Ответов</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>Число ответов до следующего уровня</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>Оценка репутации</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>Скрыть репутацию</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>Подаренная эмблема</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>Текст подаренной эмблемы</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>Участник сообщества</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>Добавление нового участника сообщества</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Badges</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>Эмблемы</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>В этом списке хранятся эмблемы, созданные администраторами и модераторами этого сообщества.</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>Имя эмблемы</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>Эксперт</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>Специалист</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>Администрирование сообщества</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>Управление обсуждениями</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>Управление обсуждениями в сообществе.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>Управление категориями</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>Управление категориями в сообществе.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>Управление участниками</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>Управление участниками сообщества.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>Параметры сообщества</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>Параметры сообщества, такие как дата основания и включение сообщений об оскорбительном содержимом.</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>Управление помеченными публикациями</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>Управление публикациями, помеченными как оскорбительные</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>Параметры репутации</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>Параметры репутации сообщества, такие как репутация контента и пользователей.</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>Сообщество</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>Присоединиться</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>Дает возможность пользователям, не являющимся участниками сообщества, присоединиться к нему. Кнопка скрыта, если пользователь уже является участником. Эта веб-часть работает на сайтах сообщества и на других сайтах, на которых включены функции сообщества.</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>Об этом сообществе</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>Эта веб-часть отображает описание сообщества и другие свойства, такие как дата основания. Эта веб-часть работает на сайтах сообщества и на других сайтах, на которых включены функции сообщества.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>Инструменты</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>Предоставляет владельцам и администраторам сообщества быстрые ссылки на страницы общих параметров и списки контента для управления сайтом сообщества. Эта веб-часть работает на сайтах сообщества и на других сайтах, на которых включены функции сообщества.</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>Популярные обсуждения</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>Что происходит?</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>Отображает число участников, тем и ответов на сайте сообщества. Эта веб-часть работает на сайтах сообщества и на других сайтах, на которых включены функции сообщества.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>Мое участие</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>Отображает сведения о репутации и участии для текущего посетителя сайта сообщества. Эта веб-часть работает на сайтах сообщества и на других сайтах, на которых включены функции сообщества.</value>
+  </data>
+  <data name="MembersView">
+    <value>Представление участников</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>Представление администратора</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>Один участник</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>Самые активные участники</value>
+  </data>
+  <data name="NewMembersView">
+    <value>Новые участники</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>Сообщество</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>Категории</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>Участники</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>О нас</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>Домашняя страница</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>Записи с жалобами</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>Обсуждения по категориям</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>Популярные обсуждения по категориям (целиком)</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>Популярные обсуждения по категориям (предварительный просмотр)</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>Компонент "Уведомления блога"</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>Этот компонент служит для добавлений уведомлений к блогам</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>Компонент "Прикрепление уведомлений блога"</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>Этот компонент служит для прикрепления уведомлений блогов и отметок "Мне нравится" к шаблонам сайта блогов</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>{0}изменение{1} профиля</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>Электронная почта</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>Телефон</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>Расположение</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>Общие</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>Показывает, что общего между вами и данным пользователем</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>Организационная диаграмма</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>Показывает организационную диаграмму и иерархию отчетности</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>Управление отслеживанием</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>Теги и заметки</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>Показывает наиболее популярные темы, помечаемые тегами в вашей организации.</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>Сведения профиля</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>Отображение основных сведений профиля текущего пользователя</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>Переместить документы</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>Перемещение выбранных документов на другой веб-сайт или в папку в текущей библиотеке.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>Перемещение документов</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>Перемещение выбранных документов на другой веб-сайт или в папку в текущей библиотеке.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>Перемещение выбранных документов на другой веб-сайт или в папку в текущей библиотеке.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>Межферменные разрешения сайтов</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>Используйте межферменные разрешения сайтов, чтобы позволить внутренним приложениям SharePoint получать доступ к веб-сайтам в различных фермах.</value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>Только для внутреннего использования</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>Социальные</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>Свойства микроблога</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>Непрочтенные с упоминаниями</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>Последняя запись</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>Социальные свойства</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>Отслеживаемый элемент</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>Сайт</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>Отслеживаемый документ</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>Хранение социального контента</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>Обеспечивает поддержку данных для социальных функций</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>Социальные</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>Обеспечивает поддержку данных для социальных функций</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>Компонент "Главная страница личного сайта"</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>Компонент личного сайта, который загружает главную страницу в коллекцию главных страниц.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>Компонент "Универсальная навигация для личного сайта"</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>Компонент личного сайта, который обеспечивает одинаковую навигацию для сайта узла и персональных сайтов.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>Компонент личного сайта "Единая панель быстрого запуска"</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>Компонент личного сайта, позволяющий отображать одну и ту же панель быстрого запуска для узла и личных сайтов.</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>Главная страница личного сайта</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>Обеспечивает уникальный внешний вид личного сайта.</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>Повышенные сайты</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>Отображение продвигаемых сайтов в виде мозаики.</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>Новый сайт</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>Продвигаемые сайты</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>Управление продвигаемыми сайтами</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>Веб-канал сайта</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>Веб-канал сайта содержит беседы в микроблогах на сайте группы.</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>Канал новостей</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>Веб-канал сайта</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>Позволяет использовать веб-каналы сайта.</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>Канал новостей</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>Контроллер функции веб-канала сайта</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>Контролирует функцию веб-канала сайта.</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>Ассоциация возможности веб-канала сайта</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>Реализует функцию веб-канала сайта во всех новых семействах сайтов "Сайт группы".</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>Редактирование микроблога</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>Возможность просматривать, добавлять, обновлять и удалять элементы списков и документы.</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>Измените вашу фотографию</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>Только {0} может изменить эту фотографию.</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>Вы не можете изменить фотографию этого пользователя, так как она синхронизируется с сервером Microsoft Exchange.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>Мои подписки</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>люди</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>Просмотреть людей, на которых вы подписаны</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>документы</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>Просмотреть документы, на которые вы подписаны</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>сайты</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>Просмотреть сайты, на которые вы подписаны</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>теги</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>Просмотреть теги, на которые вы подписаны</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">Пользователь {Assigner} назначил вам новые задачи в {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">Вам были назначены одна или несколько задач в {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>ПРОСМОТРЕТЬ МОИ ЗАДАЧИ</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>Ваша учетная запись SkyDrive Pro готова к работе</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>Работайте со своими документами в автономном режиме</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>Станьте мобильным!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>Персонализируйте свой профиль</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>Оставайтесь на связи</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>Держите других в курсе того, над чем вы работаете</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>  &lt;a href="{0}"&gt;Обновите ваши параметры конфиденциальности&lt;/a&gt;, чтобы другие могли просматривать и комментировать ваши действия в канале новостей SharePoint.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>Ваши документы с личного сайта перенесены в учетную запись &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt; — специальное место в среде SharePoint для хранения, синхронизации данных и совместного доступа к ним.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>Вы можете перевести документы в автономный режим, нажав кнопку "Синхронизировать" в любой библиотеке. Попробуйте сделать это в &lt;a href="{0}"&gt;OneDrive для бизнеса&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2">
+    <value>Чтобы перевести документы в автономный режим, нажмите кнопку "Синхронизировать" в любой библиотеке. Воспользуйтесь этой возможностью в &lt;a href="{0}"&gt;{1} для бизнеса&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>Возьмите SharePoint с собой, загрузив {0}мобильные приложения{1}.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>Отправьте фотографию и расскажите другим пользователям о себе &lt;a href="{0}"&gt;здесь&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>Другие пользователи смогут видеть и комментировать некоторые ваши действия в среде SharePoint. Настроить соответствующие параметры можно &lt;a href="{0}"&gt;здесь&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>&lt;a href="{0}"&gt;Подпишитесь&lt;/a&gt; на новости людей, которые вам интересны.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>Ваш канал новостей SharePoint готов к работе</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>Вот варианты дальнейших действий:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>Максимально эффективная работа с SharePoint</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>Другие пользователи смогут видеть и комментировать ваши действия в среде SharePoint. Настроить соответствующие параметры можно &lt;a href="{0}"&gt;здесь&lt;/a&gt;.</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>OneDrive для бизнеса</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>Управление общими приложениями</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>Просмотр всех библиотек и списков на этом сайте.</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>Канал новостей</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>Вас приветствует &lt;span id="skyDriveText"&gt;OneDrive для бизнеса&lt;/span&gt; — место, где вы можете хранить, синхронизировать свои рабочие файлы и обмениваться ими. Все документы являются частными, пока вы не предоставили доступ к ним другим пользователям. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Узнайте больше&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText2">
+    <value>Вас приветствует &lt;span id="skyDriveText"&gt;{0} для бизнеса&lt;/span&gt; — место, где вы можете хранить, синхронизировать свои рабочие файлы и обмениваться ими. Все документы являются частными, пока вы не предоставили доступ к ним другим пользователям. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Узнайте больше&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated">
+    <value>Хорошая новость! У вас также есть {0} для бизнеса в Office 365, и вы можете обращаться к файлам, находясь где угодно. Чтобы начать, просто выберите {1} на верхней панели навигации. Не беспокойтесь, файлы, которые хранятся здесь, будут доступны по-прежнему. Сведения о перемещении файлов см. {2}здесь{3}.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated">
+    <value>Не беспокойтесь, ваши файлы в безопасности. Мы переместили их в ваше новое хранилище {0} для бизнеса в Office 365. Теперь вы сможете обращаться к ним с любого устройства, находясь где угодно. Чтобы перейти в хранилище, выберите {1} на верхней панели навигации.</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>Закрыть</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>У всех людей из &lt;span id="skyDriveFolder"&gt;вашей организации&lt;/span&gt; есть доступ к документам здесь.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>Идет подготовка вашей учетной записи OneDrive для бизнеса. Это может занять некоторое время, и эту страницу пока можно закрыть.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2">
+    <value>Идет подготовка вашей учетной записи {0} для бизнеса. Это может занять некоторое время, и эту страницу пока можно закрыть.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription">
+    <value>Перенесите свои документы из раздела "Мой сайт" в службу OneDrive для бизнеса — место, где можно хранить, синхронизировать рабочие файлы и обмениваться ими.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2">
+    <value>Перенесите свои документы из раздела "Мой сайт" в службу {0} для бизнеса — место, где можно хранить, синхронизировать рабочие файлы и обмениваться ими.</value>
+  </data>
+</root>

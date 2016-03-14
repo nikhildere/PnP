@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4442.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Состояние удержания</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>Вне политики</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Состояние удержания</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Активно</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Ожидается снятие</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>В удержании</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Извлечено или изменено мной</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Эта веб-часть служит для отображения документов, извлеченных и измененных текущим пользователем.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Я являюсь автором последнего изменения</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Эта веб-часть служит для отображения документов, измененных текущим пользователем.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Эта веб-часть служит для отображения задач, назначенных текущему пользователю.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Мои задачи</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>Документы с наиболее высоким рейтингом</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Использовать эту веб-часть для отображения документов с наиболее высоким рейтингом на этом сайте</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>Самые новые документы</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Использовать эту веб-часть для отображения 10 самых новых документов на этом сайте</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Документы</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Documents</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Центр документов</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Дополнительные средства центра документов</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Возможность перемещения по сайту в древовидном представлении.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Добро пожаловать в центр документов!</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Использовать этот сайт для создания документов, работы над документами и хранения документов. Этот сайт может стать репозиторием для создания документов в группе или базой знаний для документов, используемых несколькими группами.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Участники и посетители</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Диспетчеры сайтов</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Отправить документ</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Политики семейства сайтов</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>Шаблоны политики типов контента</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Параметры аудита семейства сайтов</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Настройка политики управления сведениями</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Просмотр отчетов об использовании политики управления сведениями</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Параметры политики управления сведениями</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>хранение</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>Автоматическое планирование обработки контента и хранения контента, дата выполнения которого истекла.</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Планирование обработки и ликвидации контента путем указания последовательности этапов хранения. Если определены несколько этапов, каждый этап будет выполняться один за другим в порядке, указанном на этой странице. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Примечание.&lt;/b&gt; Если функция расписаний хранения для библиотек и папок активна, администраторы списков могут переопределять политики типов контента, используя дополнительные расписания хранения. Чтобы этого не происходило, отключите эту функцию на уровне коллекции веб-сайтов.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>аудит</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Аудит действий пользователей, выполняемых с документами и элементами списков, и запись в журнал аудита.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Укажите события, которые следует отслеживать для документов и элементов, контролируемых этой политикой.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>штрихкоды</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Создание уникальных идентификаторов для вставки в документы Microsoft Office. Штрихкоды можно также использовать для поиска документов.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Назначение штрихкода каждому документу или элементу. При необходимости в приложениях Microsoft Office можно обязать пользователей вставлять такие штрихкоды в документы.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Штрихкод</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Значение штрихкода</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>Штрихкод, назначенный данному элементу.</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>Значение штрихкода, назначенного данному элементу.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value> метки</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Создание меток, которые можно вставлять в документы Microsoft Office, чтобы при печати документов также выводились их свойства или другие важные сведения. Метки можно также использовать для поиска документов.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>В документ можно добавить метку, чтобы при печати документа также печатались важные сведения о нем. Чтобы определить метку, введите нужный текст в поле "Формат метки". Можно использовать любое сочетание фиксированного текста и свойств документа, исключая вычисляемые или встроенные свойства, такие как GUID или CreatedBy. Для перехода на новую строку используйте последовательность знаков \n.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Метка</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Текущее значение метки.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (код 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>Создание штрихкодов на основе стандарта ANSI/AIM BC1-1995 (код 39).</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Прекращение действия в центре записей</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Прекращение действия отброшенных файлов, отправленных на сервер центра записей.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Удаление содержимого записей и отправок</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Удаление записей, отправленных в центр записей, вместе со всеми связанными свойствами и журналами аудита, передававшимися при отправке каждой записи.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Документ перевода</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Исходный документ</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Версия исходного документа</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Состояние перевода</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Если документ является переводом, укажите версию исходного документа, которой он соответствует. Если используется рабочий процесс управления переводом, эти сведения будут добавлены автоматически после завершения рабочего процесса.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Если документ является переводом, укажите состояние перевода. Если используется рабочий процесс управления переводом, эти сведения будут добавлены автоматически после завершения рабочего процесса.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Не начато</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>Выполняется</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Завершено</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>Отменено</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Требуются обновления</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Исходные документы</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Языки и переводчики</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Перевод с языка</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Перевод на язык</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Переводчик</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Языки</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Хранение и обнаружение электронных данных</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Удержание и eDiscovery</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Удержание</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Удержание</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Это средство используется для отслеживания внешних действий (судебных исков, расследований, аудиторских проверок и т. п.), для которых требуется приостановить ликвидацию документов.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Управление удержаниями</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>Управление удержаниями</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>Обнаружение и удержание контента</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>Обнаружение и удержание контента</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Отчеты об удержаниях</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Отчеты об удержаниях</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Удержания</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Удержания</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Удержания</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Используйте этот список для отслеживания внешних операций, таких как судебные разбирательства, расследования и аудиторские проверки, требующих приостановления размещения элементов. Помещение элемента в одно или более удержание сохранит элемент и приостановит его размещение до тех пор, пока элемент не будет управляться ни одним удержанием.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Отчеты об удержаниях</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Эта библиотека содержит отчеты о каждом удержании на этом сайте.  Каждый отчет содержит информацию об элементах на удержании и о поисковых запросах, выполненных для удержаний.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Запросы обнаружения удержания</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Руководитель</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Описание</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Состояние удержания</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>URL-адрес сайта</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Удержания</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>URL-адрес удержания</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Группировка по удержаниям</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Отчеты</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Создание отчетов с анализом информации, содержащейся в Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Отчеты по журналу аудита</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>Просмотр отчетов о рабочих процессах</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Тренды популярности</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Тренды популярности</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Отчеты о популярности и поиске</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>Самые популярные элементы</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Метаданные отчетов</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>Типы отчетов, хранящиеся в этой коллекции отчетов, доступны как для этого сайта, так и для всех его дочерних сайтов.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Шаблоны отчетов</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Библиотека ''Файлы шаблонов отчетов'' служит для хранения файлов, используемых коллекцией шаблонов отчетов.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Расписание хранения для библиотеки и папки</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Разрешает администраторам списков переопределять расписания хранения типа контента и устанавливать расписания для библиотек и папок.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Управление записями</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Добавление возможностей политик управления записями и управления сведениями в Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Список сохранения</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Шаблон списка, используемый для создания списка архивного хранения.</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>Шаблон списка сохранения eDiscovery</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Шаблон списка, используемый для создания списка удержаний сохранения.</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Поиск и обработка</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Подготовка заданий таймера ''Поиск и обработка''.</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Сайт центра записей</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Добро пожаловать в центр записей!</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Используйте этот сайт для отправки и поиска важных документов, которые должны быть сохранены для долгосрочной архивации.  Отправленные записи автоматически размещаются в библиотеке и папке в соответствии с определенными свойствами.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Отправить запись</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Ожидающая отправка моих записей</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Используйте эту веб-часть для обучения посетителей центра записей управлению записями и соблюдению соответствия требованиям организации.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Добавьте информацию по темам управления записями, таким как:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Добавьте ссылки на другие сайты соответствия требованиям организации, такие как:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>Определение записи в вашей организации</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>Что происходит с записью после ее отправки в центр записей</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Шаги, которые могут предпринять пользователи для обеспечения соответствия политике организации</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Сайт обучения соответствия требованиям организации</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> Сайт о политиках хранения организации</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> Список контактов управления записями для каждого отдела</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Отправить записи</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Добро пожаловать в центр документов!</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Добро пожаловать в новый центр документов! Этот сайт предназначен для централизованного управления документами организации.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Управление расписанием хранения</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Точка входа для всех папок для управления расписанием срока хранения</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Сведения о соответствии</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Точка входа панели инструментов для просмотра подробных сведений о хранении и соответствии в течение жизненного цикла элемента</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Создание отчета о плане файлов</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Служба идентификаторов документов</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>Присвоение документам в семействе веб-сайтов идентификаторов, которые будут использоваться для поиска элементов независимо от их текущего расположения.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Параметры идентификаторов документов</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Управление параметрами идентификаторов документов для данного семейства сайтов</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Найти по идентификатору документа</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Поиск документов по идентификаторам документов.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Значение идентификатора документа</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>Значение идентификатора документа, присвоенного данному элементу.</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>Идентификатор документа</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Постоянная ссылка на этот документ.</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Библиотека-распределитель</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>После определения их свойств файлы, отправленные в эту библиотеку, автоматически перемещаются в нужную библиотеку или папку в соответствии с правилами, созданными владельцем данного сайта.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>Правила организатора контента</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Этот список помогает создать план организации контента на этом сайте.  Создайте правила, обеспечивающие отправку документов, представленных на этот сайт, в нужное расположение, и наличие у этих документов соответствующих свойств.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Правило</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Создание правила, перемещающего контент, отправленный на этот сайт…</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>Организатор контента</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Создайте метаданные на основе правил, согласно которым контент, отправленный на этот сайт, перемещается в соответствующую библиотеку или папку.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Ресурсы для маршрутизации документов</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Подготовьте ресурсы, необходимые для маршрутизации документов на сайтах в этом семействе веб-сайтов.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Записи ресурсов</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Подготовьте ресурсы, необходимые для создания записей или удержаний на сайтах в этом семействе веб-сайтов.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Управление записями по месту</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Включите определение и объявление записей по месту.</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Столбцы управления документами и записями</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>Типы контента для организатора контента</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Важность</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Активно</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Имя правила</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Описание</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Тип контента отправки</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Тип контента отправки (внутренний)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>Условия в формате XML</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Свойства, используемые в условиях</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Псевдонимы</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Конечная библиотека</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Конечная папка</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Конечный путь</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>URL-адрес конечного сайта</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Свойство для автоматического создания папки</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Данные конфигурации автопапки</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Настраиваемый маршрутизатор</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Маршрут к внешнему расположению</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Исходные свойства</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>Тема</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Отправитель</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Кому</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>От</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>Копия</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>Скрытая копия</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Дата отправки</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Дата получения</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>Столбцы отправки электронной почты</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>Отправка электронной почты</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Отправленные по электронной почте записи</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Этот список используется маршрутизатором для временного размещения записей, полученных по электронной почте</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Этот тип контента имеет столбцы, соответствующие общим свойствам, которые отправляются при отправке сообщения электронной почты организатору контента.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>Заблокировано для редактирования</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Состояние записи и удержания</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Объявленная запись</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>Исключение из политики</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Срок действия</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Исходный срок действия</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Столбцы набора основных документов</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Описание</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>Описание набора документов</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Наборы документов</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Предоставление типов контента, необходимых для создания и использования наборов документов. Создайте набор документов, если требуется управлять несколькими документами как одним продуктом работы.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Синхронизация метаданных для наборов документов</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Предоставление инфраструктуры для синхронизации метаданных для наборов документов.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Набор документов</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Типы контента для набора документов</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Создайте набор документов, если необходимо управлять несколькими документами как одним продуктом работы.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Просмотр страницы приветствия</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Просмотрите страницу приветствия для этого набора документов.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Параметры набора документов</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Загрузить копию</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Загрузите копию набора документов и их текущий контент</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Отправить в другое расположение</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Отправьте этот набор документов и их текущий контент в другое расположение</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Записать версию</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Запись версии текущего контента набора документов</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Журнал версий для набора документов</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Просмотр журнала версий для набора документов</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Свойства набора документов</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Отображает свойства набора документов.</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Содержимое набора документов</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Отображает содержимое набора документов.</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Политика сайта</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Позволяет администраторам семейств сайтов определять расписания хранения, применяемые к сайту и всему его контенту.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Политика проекта</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Тип контента контейнера для определений политики проекта</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Политики сайта</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Политики сайтов определяют порядок управления и удаления сайта и его содержимого. Они могут совместно использоваться семействами сайтов с помощью механизма публикации типа контента.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Закрытие и удаление сайта</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Просмотрите или измените политику управления данными сайта и настройте даты, управляющие действиями жизненного цикла сайта.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Список элементов политики проекта</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>Список, созданный функцией расписания хранения для проекта и используемый для хранения элементов политики проекта.</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Видео и мультимедиа</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Предоставляет библиотеки, типы контента и веб-части для хранения, управления и просмотра широкого спектра мультимедийных активов, таких как графические, звуковые и видеофайлы.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Параметры обработки и воспроизведения видео</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Видеоматериалы</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Загрузка или ссылка на видео.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Описание</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>Сводка видео</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Владелец</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>Владелец видео</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Индекс времени эскиза</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Кодировка по умолчанию</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Переопределение кодировки по умолчанию пользователем</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Внешняя ссылка</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Код внедрения</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>Показать ссылку для загрузки</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Определяет, отображается ли на странице видеопроигрывателя кнопка, позволяющая пользователю загрузить воспроизводимое видео.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Показать ссылку для внедрения</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Определяет, отображается ли на странице видеопроигрывателя кнопка, позволяющая пользователю получить код внедрения воспроизводимого видео.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Сведения о представлениях</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Люди на видео</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>Люди, показанные в этом видео.</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Навигация и фильтрация метаданных</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Предоставление каждого списка на сайте со страницами параметров для настройки этого списка с целью использования иерархий представлений дерева метаданных и элементы управления фильтра для улучшения переходов и фильтрации содержащихся элементов.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Настройка навигации для метаданных</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Параметры представлений для расположений</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>Элементы управления ленты "Подключение к Office"</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Добавляет в пользовательский интерфейс ленты точки входа для создания ярлыков библиотек в списке сайтов SharePoint пользователя при наличии установленной последней версии Office. Office будет периодически кэшировать шаблоны, доступные в соответствующих библиотеках на локальном компьютере пользователя.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Вставляет кнопку на вкладку ''Библиотека/действия''.</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Подключение к Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Подключить к Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Подключение к Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Добавление к ярлыкам, отображаемым при создании, открытии и сохранении документов в таких приложениях Microsoft Office, как Word, Excel и PowerPoint.</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>Добавить на сайты SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>Добавить на сайты SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Добавление ярлыка в эту библиотеку в Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>Удалить с сайтов SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>Удалить с сайтов SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Удаление этой библиотеки из списка ярлыков Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>Управление сайтами SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>Управление сайтами SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Изменение списка ярлыков Microsoft Office.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>Интеграция электронной почты с организатором контента</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Позволяет организатору контента принимать и упорядочивать сообщения электронной почты.  Этот компонент следует использовать только в хранилище, где управление осуществляется на исключительно высоком уровне, таком как центр записей.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>Параметры организатора контента</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>Правила организатора контента</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Параметры объявления записей</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Библиотека записей</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Создайте библиотеку документов для хранения важных бизнес-записей.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Загрузите готовые документы в эту библиотеку. Документы, добавленные в библиотеку, будут автоматически объявлены записями.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Настройка центра записей</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Настраивает сайт как центр записей.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Управление центром записей</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Управление параметрами хранения записей на этом сайте.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Настройка задач и создание плана файлов</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Используйте эти инструкции для завершения настройки сайта центра записей.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>Чтобы подготовить этот сайт к принятию записей, настройте его в соответствии с планом хранения документов организации:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Примечание.&lt;/b&gt; Не удалось полностью настроить этот центр записей, поскольку некоторые возможности семейства веб-сайтов не были включены. Если у вас недостаточно прав для разрешения этих вопросов, обратитесь к администратору семейства веб-сайтов:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Входящие документы невозможно пометить как записи. Активируйте возможность записей по месту в коллекции возможностей семейства веб-сайтов.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Входящим документам невозможно назначить идентификатор документа. Активируйте службу идентификаторов документов в коллекции возможностей семейства веб-сайтов.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Шаг 1.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Шаг 2.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Шаг 3.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>Шаг 4.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>Создание типов контента</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Определите типы записей и свойства для каждого типа.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Создание библиотек записей</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Создайте иерархию библиотек и папок записей и назначьте каждой график хранения.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>Создание правил организатора контента</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Определите правила, обеспечивающие рассылку отправленных записей в соответствующую папку.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Создание страницы приветствия сайта</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Объясните пользователям план хранения документов и политики управления записями</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>После завершения работы эту веб-часть можно удалить.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Общие задачи управления записями</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Создание новой библиотеки записей</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Создайте новую библиотеку для хранения записей.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>Управление контентом и структурой</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Для преобразования структуры папок сайта используйте средство управления иерархиями.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>Создание правил организатора контента</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Управление местами хранения отправленных записей.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Обнаружение и удержание записей</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Найдите записи, которые необходимо сохранить в связи с возможным судебным разбирательством.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Создание отчета о плане файлов</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Просмотрите таблицу, касающуюся структуры библиотеки записей и графиков хранения.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Создание отчета аудита</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Получите доступ к журналу событий, произошедших в отношении записей (требуются права администратора семейства веб-сайтов).</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>Просмотрите доступные отчеты по журналу аудита, в которых предоставляется полное отслеживание событий для операций с контентом, безопасности, политики или других фильтров.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Просмотрите отчеты о трендах популярности, в которых предоставляются подробные сведения о том, как и к какому контенту обращаются пользователи.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Настройте аудит для отслеживания действий пользователей на всех сайтах в семействе веб-сайтов.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Обеспечьте управление политиками управления сведениями, которые предоставляют правила политики, метки политики, прекращение действия и штрихкоды всем сайтам в этом семействе веб-сайтов.</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Параметры объявления записей</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Параметры значений по умолчанию для столбцов</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Изменить значения по умолчанию для столбцов</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Измените значения столбцов, используемые по умолчанию для этой папки.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Объявить запись</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Объявление элемента как записи, которое может добавлять ограничения и политики для отдельных записей на основе системных параметров.</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Отменить объявление записи</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Отмена объявления элемента записи для удаления ограничений и политик записи.</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Настройка представлений для этого расположения</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Измените доступные представления для этой папки.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Набор документов</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Управление</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Действия</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Изменить свойства</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Изменение свойств набора документов.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Загрузить копию</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Загрузка копии набора документов.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>Разрешения</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Переход на страницу ''Разрешения'' для добавления, удаления или изменения разрешений для этого набора документов.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Удалить</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Запрос управления</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Новая</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Управление</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Запрос</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Запрос копирования</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Копирование запроса</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Создание копии выбранного элемента.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>Обновить статистику</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>Обновить статистику</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>Выполнение выбранного запроса или запросов для обновления их статистики.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Экспорт</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Экспорт</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Экспорт результатов выбранного запроса или запросов.</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Удаление набора документов. Все документы в этом наборе документов также будут удалены.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Общий доступ</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>Отправить ссылку</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Отправка ссылки на этот набор документов по электронной почте.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Отправить</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Переход на страницу ''Отправка в другое расположение'' для перемещения или копирования этого набора документов в другое расположение.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Управление</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Записать версию</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Сохранение версии текущих свойств и документов в наборе документов.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Журнал версий</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Просмотр журнала версий набора документов и управление им.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>Рабочие процессы</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Переход на страницу ''Рабочие процессы'' для запуска рабочих процессов, связанных с этим набором документов, или управления ими.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Управление представлениями видео</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Управление представлениями этого видео.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Настраиваемое действие ленты: навигация для метаданных</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Обновить</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Обновление состояния источника</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Обновляет состояние выбранных источников.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Ошибка экспорта</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Создайте список экспорта всех элементов с ошибками, чтобы получить отчет или загрузить их.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Действия источника</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Поиск</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Это может занять несколько минут...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>Релевантность</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Дата(самая ранняя)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Дата(последняя)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Поиск</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Запрос сохранен</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>Портал eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>Создание и управление делами eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>Компонент дела eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>Подготовка необходимых ресурсов для дела eDiscovery</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Имя</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Состояние хранения на месте</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Отфильтрованное сохранение</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Состояние нелокализованного хранения на месте</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Хранение на месте</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Журнал хранения на месте</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Время последнего индексирования</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Ошибки индексации — элементы</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Ошибки индексации — расположения SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Процент ошибок обхода</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Источники</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Добавить новый источник.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Экспорт</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Добавить новую операцию экспорта.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Запрос</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Создать новый сохраненный запрос поиска.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Депозитарий</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Добавить новый депозитарий.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Почтовый ящик</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Добавить новый почтовый ящик.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Расположение</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Добавить новое расположение.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>Набор eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Создать новый набор eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Сохраняемый элемент</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Добавить новый сохраняемый элемент.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>Типы контента eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Элементы</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Размер (МБ)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Запросы</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>Идентификатор сайта</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Тип источника</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Тип источника необработанных данных</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>ИД сайта</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>Идентификатор федерации</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>Внешний идентификатор федерации</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Дедупликация</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Удаление повторяющегося контента Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Снять защиту управления правами доступа</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Снять защиту службы управления правами (RMS) и шифрование с данных Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Включенные версии</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>Включение версий для документов SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Элементы, которые не участвуют в поиске</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Включить элементы, которые зашифрованы или имеют неизвестный формат</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Состояние</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>Свойства eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Запрос</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Автор</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Дата начала</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Дата окончания</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Фильтр домена (только Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>Уточнения SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Уточнения Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Тип управления источником</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>Идентификатор удержания</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>Идентификатор действия</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Тип действия</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>Идентификатор источника</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>Идентификатор отображения</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Источники</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Группы источников</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Хранители</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Пользователь</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Примечания</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Источник</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Номера версии сохранения</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Исходное расположение сохранения</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>Идентификатор исходного списка сохранения</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Исходные метаданные сохранения</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Дата сохранения</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Тип списка депозитариев</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>Тип списка для депозитариев, используемых в деле eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Тип списка источников</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>Тип списка для источников в деле eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Тип списка запросов</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>Тип списка для сохраненных запросов поиска в деле eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Тип списка операций экспорта</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>Тип списка для операций экспорта в деле eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>Тип списка наборов eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>Тип списка для наборов обнаружения в деле eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Тип списка экземпляров источника</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>Тип списка для экземпляров источника в деле eDiscovery.</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>Шаблон сайта портала eDiscovery</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Запросы</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Используйте запросы для ограничения и анализа результатов поиска.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Источники</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Отслеживайте состояние почтовых ящиков и расположений, которые участвуют в сценарии.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>Наборы eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Создание фильтруемых и удерживаемых групп контента  и управление ими.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Экспорт: новый элемент</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Операции экспорта</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Используйте список операций экспорта для управления загрузкой экспортированного контента eDiscovery.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Экземпляры источника</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Отслеживайте состояние сценариев.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Хранители</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Добавьте пользователей в дело, которое может быть связано с источниками, такими как почтовые ящики и расположения.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Состояние хранения на месте</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Состояние экспорта</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>Загрузка не началась</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>Загрузка началась</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>Загрузка завершена</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>Ошибка экспорта</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>На удержании</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>Удерживается фильтром</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Превышено время ожидания</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Не удается удержать</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Не на удержании</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>Обработка</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Частичный</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>Центр eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>Этот сайт используется для создания и использования дел eDiscovery, а также для управления ими. С помощью дел eDiscovery можно управлять идентификацией и хранением на месте почтовых ящиков Exchange, сайтов SharePoint и других источников контента. Можно также создавать запросы поиска для идентификации определенного контента и управлять ими, а затем экспортировать результаты.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Начало работы</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Предоставьте сотрудникам юридического отдела разрешения на доступ к контенту во всем развертывании SharePoint. Рекомендуется создать группу безопасности для сотрудников юридического отдела.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>Для обнаружения почтовых ящиков Exchange администратор должен установить управляемый веб-службами Exchange клиент на все серверы SharePoint и настроить проверку подлинности между Exchange и SharePoint. </value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Предоставьте группе безопасности юридического отдела разрешения политики пользователей для всех веб-приложений SharePoint, содержащих контент, для которого необходимо выполнять электронное обнаружение.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Предоставьте своим юристам разрешения на электронное обнаружение для почтовых ящиков Exchange, для которых необходимо выполнять действия eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Удержание на месте, поиск и экспорт</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>С помощью функции хранения на месте можно указать сайты SharePoint и почтовые ящики для удержания. При изменении или удалении контента он будет сохранен на месте, пока не возникнет необходимость в его экспорте.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>Функция поиска eDiscovery на месте позволяет выполнять поиск по сайтам SharePoint, общим файловым ресурсам и почтовым ящикам Exchange. Используйте поиск с учетом расположения, подстановочные знаки, булеву логику и уточнения, чтобы определить в качестве диапазона результатов необходимый контент. Так как поиск выполняется на месте, результаты являются такими же актуальными, как при обычном поиске по Outlook Web Access или сайту SharePoint.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>После идентификации необходимого контента его можно загрузить на локальный диск или общий файловый ресурс в собственном переносимом формате. Просто загрузите страницы, документы, списки SharePoint и данные почтовых ящиков Exchange.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Добро пожаловать в сценарий.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>С помощью своего варианта использования вы можете определять источники контента, такие как почтовые ящики или сайты SharePoint, и сохранять этот контента на месте. После определения источников контента можно выполнить поиск по контенту для идентификации определенных элементов и их экспорта.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Создать новый сценарий</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Добавить дополнительное расположение</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Добавить дополнительный почтовый ящик</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Проверить расположение</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Проверить почтовый ящик</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Обзор</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Добавление источников и управление ими)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Изменение области запроса)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Источники: изменить элемент</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Источники: создать элемент</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Добавление источников и управление ими</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Расположения</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Введите URL-адреса, чтобы указать сайты SharePoint и общие файловые ресурсы, индексируемые службой поиска. Источники сайта SharePoint будут включать в себя все дочерние сайты, а источники общих файловых ресурсов — все вложенные папки.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Почтовые ящики</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Укажите почтовые ящики Exchange, используя имена или адреса электронной почты.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>ОК</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>Совместная работа</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Почтовый ящик Exchange</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Общий файловый ресурс</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Контент сценария</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Общий контент сценария</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Контент, сохраненный на месте</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Элементы:</value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Размер:</value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Проверено</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Не удалось подключиться к приложению службы поиска.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>Произошла ошибка при попытке проверки источника.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>Указанный источник уже существует в сценарии.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Точное соответствие не найдено. Возможно, URL-адрес недопустим, у вас нет разрешения на доступ к этому расположению или оно не индексируется службой поиска.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Не удается проверить почтовый ящик. Возможно, почтовый ящик не существует или у вас нет необходимого уровня разрешений.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>Тип контента</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Дополнительные параметры запроса</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>В этом запросе отсутствуют источники. Для добавления источников вернитесь на страницу запроса и щелкните "{0}"</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Хранение на месте на основе запроса</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>Если включено сохранение на основе запроса, хранимый в архивной библиотеке контент, который не соответствует ни одному фильтру удержания для данного сайта, становится устаревшим. Эта функция обычно используется для архивных сайтов с несколькими параллельными удержаниями.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} Удержание всего контента запланировано набором eDiscovery "{1}".</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} Весь контент теперь удерживается для набора eDiscovery "{1}".</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} Обновление удержания запланировано для набора eDiscovery "{1}".</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} Обновление хранения на месте запущено для набора eDiscovery "{1}".</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} Обновление удержания запланировано набором eDiscovery "{1}" с фильтром "{2}".</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} Обновление удержания запущено для набора eDiscovery "{1}" с фильтром "{2}".</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} Удержание отфильтрованного подмножества запланировано набором eDiscovery "{1}" с фильтром "{2}".</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} Отфильтрованное подмножество теперь удерживается для набора eDiscovery "{1}" с фильтром "{2}".</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} Удержание для набора eDiscovery "{1}" отменено. Этот источник все еще находится на удержании для других наборов eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} Отмена удержания всего контента запланирована набором eDiscovery "{1}".</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} Удержание всего контента отменено для набора eDiscovery "{1}".</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} Хранение на месте отменено для всего контента из набора eDiscovery, который больше не существует.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} Не удалось поставить этот источник на удержание для набора eDiscovery "{1}". Сообщение об ошибке: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} Не удалось отменить удержание этого источника для набора eDiscovery "{1}". Сообщение об ошибке: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>Событие аудита eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Содержимое дела</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Отображает содержимое сценария.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Веб-часть контента дела может использоваться только на веб-сайтах дела обнаружения электронных данных.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Задайте значение для этого обязательного поля.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">Этот источник сейчас находится на удержании. Чтобы удалить его, нужно отменить все удержания. </value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Для этого набора eDiscovery сейчас включено хранение на месте. Для удаления набора eDiscovery нужно отменить хранение на месте. </value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>Сайт не существует</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>Идентификатор раздела этого сайта не соответствует идентификатору раздела действия удержания.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Размер</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Элементы</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Всего:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Удалить дубликаты</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>Снять защиту службы управления правами</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Включить версии</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Включить элементы, которые не участвуют в поиске</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>Загрузить</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Отчет о результатах</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>Предполагаемое количество и размер элементов не включают версии или дедупликацию. Выбор этих параметров повлияет на общий размер экспорта.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Закрыть этот сценарий</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Открыть этот сценарий</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Закрытие сценария</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Не найдены результаты, соответствующие адресу. Введите новый или менее определенный адрес.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Отображаемое имя</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Прогнозируемый итог</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Число элементов</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Размер элементов</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Запросы</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Хранение на месте</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Отменить хранение на месте</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Обновить хранение на месте</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Состояние экспорта</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Состояние источника</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Этот сценарий был закрыт: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>Наборы eDiscovery все еще удерживаются. Снимите все удержания или закройте дела, чтобы удалить их.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>Политика дел eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Политика для управления закрытием сценария.</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Создать: набор eDiscovery</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Параметры удержания сохранения</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Список параметров хранения на месте.</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>Не удалось получить источник для типа источника {0} и фильтра {1}</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Администрирование клиентов управления записями</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Администрирование клиентов управления записями.</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Прикрепление администрирования клиентов управления записями</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Прикрепление администрирования клиентов управления записями.</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Настройка подключений для отправки</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Ошибка при извлечении</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>Н/П</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>Ошибки {0}</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>В этом наборе eDiscovery отсутствуют источники. Для добавления источников щелкните "{0}".</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>В этом запросе источников. Чтобы добавить их, щелкните "{0}".</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Включено</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Отключено</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Экспорт: загрузка</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Закрыть</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Обновить статистику</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Параметры</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Выберите имя и параметры для экспорта. При этом будет экспортирован файл загрузки EDRM.</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Загрузить результаты</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Загрузить отчет</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>Загрузка экспорта</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Загрузить все результаты поиска, создать отчет со списком результатов поиска или закрыть и загрузить позднее?</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Выбрать запросы</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Выберите запросы, которые необходимо экспортировать.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Ошибка</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Поиск</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Повторить попытку удержания</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Разрешить источник</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>URL-адрес этого источника изменился. Щелкните здесь, чтобы обновить его.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>Это поле является обязательным.</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} - Копировать</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} - Копировать ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Это расположение является корнем веб-приложения или управляемого пути и содержит несколько семейств сайтов. Будет сохранено только корневое семейство сайтов, но результаты поиска и операции экспорта будут включать все семейства сайтов в этом пути.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>Это корневая папка веб-приложения или управляемого пути и содержит несколько семейств сайтов. Будут сохранены только корневые семейства сайтов, но результаты поиска и операции экспорта будут охватывать все семейства сайтов по этому пути. Нажмите кнопку "ОК", что подтвердить расположение, или "Отмена", чтобы изменить его.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>Щелкните, чтобы {0}создать{1} новый сценарий</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Изменено {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Дела</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>Этот набор обнаружения электронных данных содержит слишком много источников (более 100 источников SharePoint или 1 000 почтовых ящиков). Щелкните "Добавить" и "Управление источниками" и сократите количество источников, чтобы получить статистику и результаты.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Этот запрос содержит слишком много источников (более 100 источников SharePoint или 1 000 почтовых ящиков). Щелкните "Изменить область запроса" и ограничьте поиск, чтобы получить результаты.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Экспорт охватывает слишком много источников (более 100 источников SharePoint или 1 000 почтовых ящиков). Чтобы выполнить экспорт, сократите число запросов или источников в них.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Выделение корней</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Дедупликация</value>
+  </data>
+</root>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
+using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
 using Provisioning.Common.Authentication;
 using Provisioning.Common.Configuration;
 using Provisioning.Common.Configuration.Application;
@@ -15,13 +16,9 @@ namespace Provisioning.Common.MdlzComponents
 {
     public class MdlzCommonCustomizations
     {
-
-        #region Constants
-
-        private const string rt_Hostname = "[RemoteWebHostNameToken]";
-
-        #endregion
-
+        private const string cn_EnableExternalSharing = "EnableExternalSharing",
+            cn_RemoteWebHostNameToken = "RemoteWebHostNameToken",
+            cn_RemoteWebHostNameTokenFormat = "https://{0}";
         #region Fields
         private bool isSubSite;
         private ProvisioningTemplate provTemplate;
@@ -52,20 +49,6 @@ namespace Provisioning.Common.MdlzComponents
 
         #region Utils
 
-        private void SetRequestAccessMails(Web web)
-        {
-            try
-            {
-                string emailAddresses = "";
-
-            }
-            catch (Exception ex)
-            {
-                Log.Error("Provisioning.Common.MdlzComponents.MdlzCommonCustomizations.SetRequestAccessMails", ex.Message);
-                throw;
-            }
-        }
-
         private void SetAccessForAll(Web web)
         {
             try
@@ -82,30 +65,11 @@ namespace Provisioning.Common.MdlzComponents
             }
         }
 
-        private void AddHostnameToCustomActionUrls()
+        private void AdjustExternalSharing()
         {
-            AddHostnameToCustomActionUrls(provTemplate.CustomActions.SiteCustomActions);
-            AddHostnameToCustomActionUrls(provTemplate.CustomActions.WebCustomActions);
-        }
-
-        private void AddHostnameToCustomActionUrls(CustomActionCollection actions)
-        {
-            try
+            if (provTemplate.Properties.ContainsKey(cn_EnableExternalSharing))
             {
-                foreach (var item in actions)
-                {
-                    if (!string.IsNullOrEmpty(item.Url))
-                        item.Url = item.Url.Replace(rt_Hostname, appSettings.HostedAppHostNameOverride);
-
-                    if (!string.IsNullOrEmpty(item.ScriptBlock))
-                        item.ScriptBlock = item.ScriptBlock.Replace(rt_Hostname, appSettings.HostedAppHostNameOverride);
-                }
-            }
-            catch (Exception ex)
-            {
-                Log.Error("Provisioning.Common.MdlzComponents.MdlzCommonCustomizations.AddHostnameToCustomActionUrls", ex.Message);
-
-                throw;
+                request.EnableExternalSharing = Convert.ToBoolean(provTemplate.Properties[cn_EnableExternalSharing]);
             }
         }
 
@@ -118,23 +82,21 @@ namespace Provisioning.Common.MdlzComponents
             }
         }
 
+        private void RemoveUnrequiredLocalizations()
+        {
+            provTemplate.Localizations.RemoveAll(x => x.LCID != request.Lcid);
+        }
+
         #endregion
 
         #region Step Methods
         private void PreProvisionApply()
         {
-            UsingContext(ctx =>
-            {
-                Web _web = ctx.Web;
-                isSubSite = _web.IsSubSite();
-                if (!isSubSite)
-                {
-                    EnsureDefaultAssociatedGroups(_web);
-                    DisableSPD(ctx.Site);
-                }
-                AddHostnameToCustomActionUrls();
-                DisableMDS(_web);
-            });
+            RemoveUnrequiredLocalizations();
+
+            //Add hostname parameter for custom actions token replacement
+            provTemplate.Parameters.Add(cn_RemoteWebHostNameToken, 
+                string.Format(cn_RemoteWebHostNameTokenFormat, ConfigurationFactory.GetInstance().GetAppSetingsManager().GetAppSettings().HostedAppHostNameOverride));
         }
 
         private void PostProvisioningApply()
@@ -144,7 +106,6 @@ namespace Provisioning.Common.MdlzComponents
                 Web _web = ctx.Web;
                 if (!isSubSite)
                 {
-                    SetRequestAccessMails(_web);
                     SetAccessForAll(_web);
                 }
             });
@@ -155,17 +116,23 @@ namespace Provisioning.Common.MdlzComponents
             actualRequestOwner = request.SiteOwner.Name;
             provTemplate.Security.AdditionalOwners.Add(new OfficeDevPnP.Core.Framework.Provisioning.Model.User() { Name = actualRequestOwner });
             request.SiteOwner = new SiteUser() { Name = appSettings.DefaultScAdminLoginName };
+            AdjustExternalSharing();
         }
 
         private void PostCreationApply()
         {
             request.SiteOwner.Name = actualRequestOwner;
+
+            //Reinstantiate Authentication object as the request url might have been changed in case safe url is on
+            this.Authentication = new AppOnlyAuthenticationSite();
+            this.Authentication.SiteUrl = request.Url;
         }
         #endregion
 
         #endregion
 
         #region Public Methods
+        
         public void Apply(Action siteCreation, Action siteProvision)
         {
             PreCreationApply();
@@ -176,64 +143,35 @@ namespace Provisioning.Common.MdlzComponents
             siteProvision();
             PostProvisioningApply();
         }
+        
+        #endregion
 
-        public static void EnsureDefaultAssociatedGroups(Web w)
+        #region Public Static
+        public static void LocalizeElementsFix(string siteUrl, ProvisioningTemplate provTemplate, IAuthentication auth)
         {
-            try
+            using (ClientContext _ctx = auth.GetAuthenticatedContext())
             {
-                var ctx = w.Context;
+                _ctx.RequestTimeout = int.MaxValue;
+                var parser = new TokenParser(_ctx.Web, provTemplate);
 
-                ctx.Load(w, x => x.Title, x => x.AssociatedOwnerGroup, x => x.AssociatedMemberGroup, x => x.AssociatedVisitorGroup);
-                ctx.ExecuteQuery();
+                foreach (var item in provTemplate.Lists)
+                {
+                    item.Title = parser.ParseString(item.Title);
+                    item.Url = parser.ParseString(item.Url);
+                    item.Description = parser.ParseString(item.Description);
+                }
 
-                if (w.AssociatedOwnerGroup == null)
-                    w.AssociatedOwnerGroup = w.SiteGroups.Add(new GroupCreationInformation { Title = string.Format("{0} Owner", w.Title) });
-
-                if (w.AssociatedMemberGroup == null)
-                    w.AssociatedMemberGroup = w.SiteGroups.Add(new GroupCreationInformation { Title = string.Format("{0} Member", w.Title) });
-
-                if (w.AssociatedVisitorGroup == null)
-                    w.AssociatedVisitorGroup = w.SiteGroups.Add(new GroupCreationInformation { Title = string.Format("{0} Visitor", w.Title) });
-
-                ctx.ExecuteQuery();
-            }
-            catch (Exception ex)
-            {
-                Log.Error("Provisioning.Common.MdlzComponents.MdlzCommonCustomizations.EnsureDefaultAssociatedGroups", ex.Message);
-                throw;
+                foreach (var item in provTemplate.Pages)
+                {
+                    foreach (var webpart in item.WebParts)
+                    {
+                        webpart.Contents = parser.ParseString(webpart.Contents);
+                        webpart.Title = parser.ParseString(webpart.Title);
+                    }
+                }
             }
         }
 
-        public static void DisableSPD(Site site)
-        {
-            try
-            {
-                site.AllowDesigner = site.AllowMasterPageEditing = site.AllowRevertFromTemplate = false;
-                site.Context.Load(site);
-                site.Context.ExecuteQuery();
-            }
-            catch (Exception ex)
-            {
-                Log.Error("Provisioning.Common.MdlzComponents.MdlzCommonCustomizations.DisableSPD", ex.Message);
-                throw;
-            }
-        }
-
-        public static void DisableMDS(Web web)
-        {
-            try
-            {
-                web.EnableMinimalDownload = false;
-                web.Update();
-                web.Context.Load(web);
-                web.Context.ExecuteQuery();
-            }
-            catch (Exception ex)
-            {
-                Log.Error("Provisioning.Common.MdlzComponents.MdlzCommonCustomizations.DisableSPD", ex.Message);
-                throw;
-            }
-        }
         #endregion
     }
 }

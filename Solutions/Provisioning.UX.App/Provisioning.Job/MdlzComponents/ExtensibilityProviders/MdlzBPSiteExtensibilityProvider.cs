@@ -13,6 +13,7 @@ namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
     {
         public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, string configurationData)
         {
+
         }
     }
 }

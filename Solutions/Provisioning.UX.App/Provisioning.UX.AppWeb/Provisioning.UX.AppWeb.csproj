@@ -136,10 +136,6 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="OfficeDevPnP.Core, Version=2.2.1603.0, Culture=neutral, PublicKeyToken=3751622786b357c2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\OfficeDevPnPCore16.2.2.1603.0\lib\net45\OfficeDevPnP.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.IdentityModel.Selectors" />
     <Reference Include="System.Net.Http" />
@@ -203,6 +199,7 @@
     <Content Include="Scripts\bootstrap.dialog.js" />
     <Content Include="Pages\subsite\resources\custom.spcolor" />
     <None Include="Properties\PublishProfiles\createasite.pubxml" />
+    <None Include="Properties\PublishProfiles\PublishingProfile1.pubxml" />
     <None Include="Properties\PublishProfiles\sbspositeprovisioning - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\sbspositeprovisioning - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\wwaz-pnp-provisioning - FTP.pubxml" />
@@ -378,6 +375,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\PnP-Sites-Core-Forked\PnP-Sites-Core\Core\OfficeDevPnP.Core\OfficeDevPnP.Core.csproj">
+      <Project>{f2077977-8ebf-409d-bbf4-8efb328928a8}</Project>
+      <Name>OfficeDevPnP.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Provisioning.Common\Provisioning.Common.csproj">
       <Project>{77447711-3ab3-4390-a22c-75bb5a97bb95}</Project>
       <Name>Provisioning.Common</Name>

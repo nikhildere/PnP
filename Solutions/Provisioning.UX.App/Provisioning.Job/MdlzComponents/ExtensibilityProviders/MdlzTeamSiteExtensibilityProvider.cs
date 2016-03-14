@@ -13,26 +13,8 @@ namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
 {
     public class MdlzTeamSiteExtensibilityProvider : IProvisioningExtensibilityProvider
     {
-        const string
-            ln_announcements = "",
-            ln_sharedDocuments = "",
-            ln_calendar = "",
-            ln_teamDiscussion = "";
-
         public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, string configurationData)
-        {
-            //Web w = ctx.Web;
-
-            //List<WikiPageWebPart> listDetails = new List<WikiPageWebPart>();
-            //listDetails.Add(new WikiPageWebPart(1, 1, "Announcements", null));
-            //listDetails.Add(new WikiPageWebPart(1, 3, "Shared Documents", null));
-            //listDetails.Add(new WikiPageWebPart(1, 2, "Calendar", null));
-            //listDetails.Add(new WikiPageWebPart(2, 2, "Team Discussion", null));
-
-            //WebPartUtility.AddWikiHomePageListViewWebparts(w, listDetails);
-        }
-
-
+        { }
     }
 
 

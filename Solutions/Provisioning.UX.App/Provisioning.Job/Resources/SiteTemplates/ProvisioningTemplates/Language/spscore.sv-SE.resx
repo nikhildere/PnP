@@ -1,0 +1,3632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4569.1502" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>Startsida</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>Ny SharePoint Server!</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>Sök i diskussioner</value>
+  </data>
+  <data name="SetupMySite">
+    <value>Konfigurera Min webbplats</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>Klicka för att visa kategorier</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>Klicka för att visa de vanligaste webbplatserna</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>Klicka för att visa webbplatskarta</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>Kategorier</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>Vanligaste webbplatserna</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>Webbplatskarta</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>Alla webbplatser</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>Klicka här om du vill visa resultat från alla webbplatser</value>
+  </data>
+  <data name="PeopleTab">
+    <value>Personer</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>Klicka här för personresultat</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>Diskussioner</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>Användningsrapport för SharePoint Server</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>Användningsrapport</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>Sök användningsrapporter</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>Användningsrapporter för webbplats</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>Användningsrapporter för webbplatssamling</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>Dokumentbibliotek</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>Tillhandahåller en lagringsplats för dokument för området.</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>Profilmall för affärsdata</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>Övre navigeringsfält för SharePoint</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>Rapporter</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>Instrumentpaneler</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>Exempel</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>Resurser</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>Dataanslutningar</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>Rapportkalender</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>Referensbibliotek</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>Rapportbibliotek</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>Ett ställe där du enkelt skapar och hanterar webbsidor och dokument för att följa upp mått, målsättningar och affärsinformation. </value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>Statuslista</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>Ett ställe där du följer upp och visar mål. Färgade ikoner visar i hur stor utsträckning ett mål har uppnåtts.</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>Dokumentbibliotek med webbdelssida</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>Ett dokumentbibliotek med webbdelssidemall.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>Rapportbibliotek</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>Rapportbibliotek gör det enklare att hantera rapporter som kan användas för att visa statusindikatorer och Excel-arbetsböcker.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>Referensbibliotek</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>Ett bibliotek med information om hur den här platsen används.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>Rapportkalender</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>Använd kalendern för att publicera händelser som är relaterade till det här området.</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>Dataanslutningar</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>Med dataanslutningsbiblioteket blir det enkelt att dela filer som gör det möjligt för användare att ansluta till externa datakällor.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>Meddelanden</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>Använd listan Meddelanden om du vill publicera meddelanden med anknytning till det här området.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>Välkommen till rapportcentret</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>Med rapportcentret kan du skapa, distribuera och hantera affärsinformation.</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>Galleri över webbplatsmallar</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>Exempelindikatorer</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>Exempelstatusindikatorer som visas som standard på startsidan för det här rapportcentret.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>Moral</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>Produktivitet</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>Utgifter</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>Detta är en exempelindikator som kan tas bort utan risk.</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>Rapportcenter</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>Använda rapportcentret</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>Används för formaterad text, tabeller och bilder.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>Bland funktionerna i rapportcentret finns:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;Prestationsindikatorer&amp;lt;/A&amp;gt; (KPI-indikatorer) används för att informera om målsättningar, trender och framsteg.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;Instrumentpaneler&amp;lt;/A&amp;gt; är ett sätt att ge en mer detaljerad förklaring av informationen med hjälp av Excel-arbetsböcker och KPI-indikatorer. Instrumentpanelsfilter gör det enkelt att välja vilken information som ska visas. Om du vill skapa en egen instrumentpanel går du till vyn &amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;Instrumentpaneler&amp;lt;/A&amp;gt; i rapportbiblioteket och klickar på Nytt.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>Biblioteket &amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;Rapporter&amp;lt;/A&amp;gt; har utformats för att lagra filer som innehåller rapporter och instrumentpaneler och gör det enkelt att komma åt information från tidigare tidsperioder.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>Om du vill förbereda det här rapportcentret för användning rekommenderas följande åtgärder:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>Visa exemplet på en &amp;lt;A &amp;gt;instrumentpanel&amp;lt;/A&amp;gt; och en &amp;lt;A&amp;gt;arbetsbok&amp;lt;/A&amp;gt; för att förstå några av funktionerna i det här rapportcentret</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>Om exemplen inte fungerar korrekt ber du en administratör att kontrollera att Excel Services har aktiverats och att det här rapportcentret är en betrodd plats</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>Om du tänker använda Excel för att analysera information från befintliga dataservrar, ska du skapa och ladda upp dataanslutningsfiler (ODC) till &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;dataanslutningsbiblioteket&amp;lt;/A&amp;gt;. Om du vill att användarna ska skapa nya KPI-listor lägger du till dem i gruppen Ägare. Användare i gruppen Medlemmar kan redigera sidor, men inte skapa KPI-listor.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>Uppdatera eller ta bort exempelinnehåll</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>Fokus</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>Mer information</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>Snabbreferens</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>Kontaktinformation</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>Används för att visa upppgifter om en sidas eller webbplats kontaktperson.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>Kommande evenemang</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>Rapportcentersida</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>Statusindikatorer</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>Rapporter</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>Beskrivning</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>Beskrivningen ger information om målvärdets syfte.</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>Indikatorkommentarer</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>Kommentarer beskriver indikatorns status och kan ge information om problem eller orsaker.</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>Indikatorvärde</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>Tröskelvärde för indikatormål</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>Tröskelvärde för indikatorvarning</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>Informationslänk</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>Länk för sida för att klicka igenom detaljer </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>Lägre värden är bättre</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>Om lägre eller högre värden är bättre</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>Uppdatera automatiskt</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>Om ursprungsdata ska hämtas varje gång</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>Uppdateringsfel</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>Innehåller eventuellt felmeddelande från den senaste uppdateringen</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>Datakälla</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>URL till datakälla</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>Visa GUID</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>Vyns GUID</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>Vynamn</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>Namn på vyn</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>Värdeuttryck</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>Uttryck som används för att fastställa indikatorns värde.</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>Procentuttryck</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>Ange om uttrycket används för att beräkna en procentuell andel</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>Värdekalkylblad</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>Namnet på kalkylbladet med värdet</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>Värdecell</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>Adress eller namn på cellen med värdet</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>Målkalkylblad</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>Namnet på kalkylbladet med målet</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>Målcell</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>Adress eller namn på cellen med målet</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>Varningskalkylblad</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>Namnet på kalkylbladet med varningen</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>Varningscell</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>Adress eller namn på cellen med varningen</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>Mål från arbetsbok</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>Om målet hämtas från arbetsboken eller från indikatorns definition</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>Varning från arbetsboken</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>Om varningen hämtas från arbetsboken eller från indikatorns definition</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>Trend</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>Trenden för indikatorn</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>Indikatorstatus</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>Statusen för indikatorn</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>Visningsmapp</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>Visningsmappen för indikatorn</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>Indikator</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Namn på KPI för Microsoft SQL Server 2005 Analysis Services</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>Inkludera underordnade indikatorer</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>Om underordnade KPI-objekt ska ingå eller inte</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>Formaterat indikatorvärde</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>Värdet på indikatorn, formaterat av providern för datakällan</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>Formaterad indikatormålsättning</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>Målsättningen för indikatorn, formaterad av providern för datakällan</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>Formaterad indikatorvarning</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>Varningsvärdet på indikatorn, formaterat av providern för datakällan</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>Senaste indikatordatauppdatering</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>Senaste indikatoruppdatering från providern för datakällan</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>Rapportbeskrivning</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>En beskrivning av rapportens innehåll</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>Spara i rapporthistoriken</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>Varje gång det här dokumentet sparas läggs en kopia till i rapporthistoriken.</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>Överordnat ID</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>ID för rapportens överordnade objekt</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>Ägare</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>Detta dokuments ägare</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>Rapportkategori</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>Rapportens kategori</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>Kategori 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>Kategori 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>Kategori 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>Rapportstatus</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>Status för rapporten</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>Slutgiltigt</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>Preliminär</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>Period till datum</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>Historik</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>Visa historik</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>Namn</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>Namn</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>Nytt</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>Länken Rapporten ändrades</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>Rapporten skapades</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(ögonblicksbild av värde)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>Rapporten skapades av</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>Rapporten ändrades</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>Rapporten ändrades av</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>Rapportens överordnade namn</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(namnet på den överordnade för en ögonblicksbild)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>Länk till rapport</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(länk till rapport med redigeringsmeny)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>Business Intelligence</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>Gemensamma indikatorkolumner</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>Statusindikator baserad på fast värde</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>Skapa en ny statusindikator genom att ange information manuellt</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>Statusindikator baserad på SharePoint-lista</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>Skapa en ny statusindikator med hjälp av data från SharePoint-listor</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>Excel-baserad statusindikator</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>Skapa en ny statusindikator med hjälp av data från Excel Services</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>Statusindikator baserad på SQL Server Analysis Services</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>Skapa en ny statusindikator med hjälp av data från SQL Server Analysis Services</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>Rapport</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>Webbdelssida med statuslista</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>Skapa en sida där statusindikatorer och Excel-arbetsböcker visas.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Excel-rapport</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>Instrumentpaneler</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>Aktuella rapporter</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>Alla rapporter och instrumentpaneler</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>Nyligen uppdaterade</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Detaljerad rapportsida för Excel-filer.</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>Övre zon till vänster</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>Övre zon till höger</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>Filterzon</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>Lägg till ett filter</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>Nedre zon till vänster</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>Nedre zon i mitten</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>Nedre zon till höger</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>Övre zon</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>Mittenzon till vänster</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>Mittenzon till höger</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>Nedre zon</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>Alla objekt</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>Statuslista</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>Statuslista</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>Visar en lista över statusindikatorer. Statusindikatorer är viktiga mått på organisationens arbete, och visar hur organisationen presterar i förhållande till målsättningarna.</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>Statusindikatordetaljer</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>Visar detaljinformation för en enda statusindikator. Statusindikatorer visar viktig information om organisationen och kan hämtas från andra datakällor, till exempel SharePoint-listor, Excel-arbetsböcker och KPI-objekt i SQL Server Analysis Services 2005.</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>Affärsdata</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>Ja</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>Nej</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(Tom)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(Alla)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(Uppdatering)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>Uppdatera</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(Tom)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>Sortera stigande</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>Sortera fallande</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>Filtrera efter </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>Sortera efter </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>Anpassa för målgrupp</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>Målgrupp (rollbaserade målgrupper, SharePoint-grupper, distributionslistor)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>Riktade</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>Inte riktad</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>Tillåt globala målgrupper</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>Tillåt distributionslistor</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>Tillåt SharePoint-grupper</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>Webbplatskatalog</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>Webbplatskarta</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>Webbplatser i kategorin</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>Vanligaste webbplatserna</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>Webbplatskatalogen är en katalog med webbplatser som kan grupperas i kategorier. Om du vill lägga till en webbplats i webbplatskatalogen väljer du antingen Skapa webbplats eller Lägg till länk till webbplats i övre, högra hörnet på den här sidan.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>Lägg till vanligaste webbplatser genom att lägga till en länk till webbplatskataloglistan och markera den länken som vanligaste webbplats. Kom igång genom att lägga till en länk till webbplatskatalogen och skicka in den som vanligaste webbplats.</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>Inställningar för omfattningen Relaterade länkar</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>Nyhetsartikel med bild</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>Länk till nyhetsartikel</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>Webbdelszoner</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>startsida för nyheter</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>Platskatalogens startsida</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>Aktivera Enterprise-funktioner</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>Standard</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>Filter</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>Affärsdata</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>Instrumentpanel</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>WSRP-mottagarwebbdel</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>Aktuell användare</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>Användarfilter</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>Filtrerar innehållet i webbdelarna med hjälp av den aktuella användarens egenskaper.</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>Textfilter</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>Filtrerar innehållet i webbdelarna genom att låta användaren ange ett textvärde.</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>SharePoint-listfilter</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>Filtrerar innehållet i webbdelarna med hjälp av en lista med värden.</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>QueryString</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>Frågesträngfilter (URL)</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>Filtrerar innehållet i webbdelarna med värden som skickas via frågesträngen.</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>Sidfält</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>Sidfältsfilter</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>Filtrerar innehållet i webbdelarna med information om den aktuella sidan.</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>SQL Server Analysis Services-filter</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>Filtrerar innehållet i webbdelarna med hjälp av en lista med värden från SQL Server Analysis Services-kuber.</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>Statuslista</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>IView-webbdel</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>Detaljer om indikator</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>Datum</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>Datumfilter</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>Filtrerar innehållet i webbdelarna genom att låta användaren ange eller välja ett datum.</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>Affärsdatalista</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>Visar en lista över objekt från en datakälla i Business Data Connectivity.</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>Det går inte att importera den här webbdelen.</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>Anslutningsfilter för affärsdata</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>Filtrerar innehållet i webbdelarna med hjälp av en lista med värden från affärsdataanslutningen.</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>Affärsdataobjekt</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>Visar ett objekt från en datakälla i Business Data Connectivity.</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>Listan Relaterade affärsdata</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>Visar en lista över objekt som är relaterade till ett eller flera överordnade objekt från en datakälla i Business Data Connectivity.</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>Affärsdataåtgärder</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>Visar en lista över åtgärder från Business Data Connectivity.</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>Verktyget för affärsdataobjekt</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>Skapar ett affärsdataobjekt av parametrarna i frågesträngen och gör det tillgängligt för andra webbdelar.</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>Urvalsfilter</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>Filtrerar innehållet i webbdelarna med en hjälp av en lista med värden som har angetts av sidans skapare.</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>Värde 1&amp;Värde 2&amp;Värde 3=Beskrivning 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>Knappen Använd filter</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>Om du lägger till den här knappen på en sida så kan användare bestämma när de vill använda sina filterval. Annars används de olika filtren när deras värde ändras.</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>Vanligaste webbplatserna</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>Visar de vanligaste webbplatserna från webbplatskatalogen.</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>Nyheter</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>Senaste nytt</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>Nyhetssammanfattning</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>Denna vecka i bilder</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>Visar en bild från ett bildbibliotek och länkar till ett bildspel där användarna kan se alla bilder i bildbiblioteket.</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>Nyheter</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>Exempelnyhetsartikel</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>Denna sida har lämnats tom.</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>Nyhetsarkiv</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>Branschnytt</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>Fler nyheter</value>
+  </data>
+  <data name="KPIList">
+    <value>Statusindikatorlista</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>En statusindikatorlista används för att hålla reda på och visa mål. Färgade ikoner används för att visa i hur stor utsträckning ett mål har nåtts.</value>
+  </data>
+  <data name="EventsList">
+    <value>Händelser</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>Använd listan Händelser när du vill publicera information om möten, deadline och andra viktiga händelser för området.</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>Det går inte att importera den här webbdelen.</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>Startsida</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>Webbdelen startsidebild</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>Visar en bild på startsidan</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>Bild på startsidan</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>Innehållsredigeraren</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>Tillåter författare att ange innehåll i RTF-format.</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>Jag vill...</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>Sök efter anställda</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>Sök efter anställda</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>Innehållsförteckning</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>Inställningar för webbplatskatalog</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>Konfigurera webbplatskatalogen</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>Sök webbplatskataloglänkar</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>Pages</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>Delade dokument</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>Personliga dokument</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>Delade bilder</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>Användarfoton</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>Profilbilder för alla användare lagras här.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>Använd det här dokumentbiblioteket om du vill lagra webbdelssidorna. De delas ut automatiskt på din gemensamma startsida.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>Det här dokumentbiblioteket används för att lagra dokument. Dokument som delas här kommer att visas på den offentliga startsidan.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>Använd det här dokumentbiblioteket för dokument som du vill använda för personligt bruk. De kan endast visas av dig och administratörer på servern.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>Dela bilder och foton med andra genom att lägga till dem i det här bildbiblioteket. Bilder och foton som lagras här delas ut på din gemensamma startsida.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>Kom igång med Min webbplats</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>Länkar till olika tips och instruktioner om hur Min webbplats används.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>SharePoint-webbplatser</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>Detaljer om platser som användaren är medlem på</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>Huvudsida för Min webbplats</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>Ger din Min webbplats sitt unika utseende.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>Senaste blogginlägg</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>De senaste blogginläggen för användaren</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>Lägg till ett nytt inlägg</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>Delningscenter</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>Den centrala webbdel som användare använder för att dela objekt.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>Senaste aktiviteter</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>Den webbdel som visar mina senaste aktiviteter.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>Fråga mig om</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>Den webbdel som visar en lista med nyckelord som andra kan ställa frågor till mig om.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>Mina länkar</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>Visar de länkar som du har skapat.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>Min kalender</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>Visar din kalender med Outlook Web Access för Microsoft Exchange Server 2003 eller senare.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>Kolleger och spårning</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>Visar en lista över dina kolleger och ändringar som de nyligen har gjort.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>Mina medlemskap</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>Visar de grupper där du är medlem.</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>Användarprofiler och Min webbplats</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>Målgrupper</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>Användarprofiler och egenskaper</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>Målgrupper</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>Principer för profiltjänster</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>Inställningar för Min webbplats</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>Betrodda värdplatser för Min webbplats</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Publicerade länkar till Office-klientprogram</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>Länkar för anpassningswebbplatser</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>Tjänstbehörigheter för anpassning</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>Delegeringsinställningar för organisation</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>Affärsdataobjekt</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>Webbdel med objektdetaljer om affärsdata</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>Affärsdataåtgärder</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>Webbdel som visar affärsdataåtgärder</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>Business Data Connectivity</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>Importera programdefinition</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>Visa program</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>Visa entiteter</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>Redigera mall för profilsida</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>Behörigheter för Business Data Connectivity</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>Konfigurera SSO-inställningar</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>Fliknamn</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>Det här är texten för fliketiketten.</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>Sida</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>Ange namnet på den sida som ska visas som en del av den här fliken. Om du inte har skapat någon sida, skapar du en med hjälp av alternativet Skapa sida i Webbplatsåtgärder.</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>Lägg till ny länk</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>Knappbeskrivning</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>Det här är den knappbeskrivning som visas när en användare placerar muspekaren över den här fliken.</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>Alla flikar</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>Rubrik</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>URL</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>Beskrivning</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>Ägare</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>Avdelning</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>Region</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>Spotlightwebbplats</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>Vanligaste webbplats</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>Uppgifter och verktyg</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>Länkstatus</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>OK</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>Bruten</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>Obestämd</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>Vanligaste åtgärder</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>Internationell</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>Nationell</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>Lokal</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>Informationsteknik</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>Forskning och utveckling</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>Försäljning</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>Ekonomi</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>Alla webbplatser</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>Sammanfattning</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>Hantera webbplatser</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>Inskickade webbplatser</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>Kategorier</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>Ej godkända webbplatser</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>Kategorier för att skapa webbplatser</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>Skadade platser</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>Välkommen till Microsoft® SharePoint® Server 2013</value>
+  </data>
+  <data name="HomePageContent2">
+    <value>Komma igång med den nya versionen av Microsoft SharePoint Server 2013 :</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>Hantering av webbplatser och innehåll</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>Skapa nya &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;sidor&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;webbplatser &lt;/a&gt;, and &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;listor &lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>&lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;Lägg till användare &lt;/a&gt; i gruppen Medlemmar om du vill redigera sidor</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>&lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;Skapa en personlig webbplats &lt;/a&gt; genom att klicka på Min webbplats</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>&lt;a href="~SiteCollection/SearchCenter"&gt;Sök&lt;/a&gt; bland webbplatser, dokument och personer</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>Business Solutions (kräver en Enterprise-licens)</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>Skapa statusindikatorer och rapporter</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>Visa en Excel-arbetsbok med webbdelen Excel Web Access</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>Lägga till ett InfoPath-formulär i ett dokumentbibliotek</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>Välj uppgift</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>Lista över webbplatser</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>Använd den här listmallen när du skapar webbplatslistor.</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>Listan Flikar</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>Använd den här listmallen för att skapa listan Flikar</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>Det finns inga objekt att visa i den här vyn.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>Kategorier</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>Webbplatskarta</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>Webbplatser i kategorin</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>Startsida</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>Portalens startsida</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>Ämnen</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>Ämneswebb</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>Avdelningar</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>Avdelningswebb</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>Försäljning</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>Försäljningswebb</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>Forskning och utveckling</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>Forskningswebb</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>Personal</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>Personalwebb</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>Produkter</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>Produktwebb</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>Nyheter</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>Startsida för företagsnyheter</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>Webbplatser</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>Webbplatskatalog</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>Sök</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>Sökcentret visar sökresultat</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>Rapporter</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>Rapportcenter</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>WSRP-läsare</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>Visar portlets från webbplatser med WSRP 1.1.</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>Den här webbdelen är inaktuell.</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>Webbplatser</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>Använd listan Webbplatser om du vill spara länkar till webbplatser och webbplatskategorier.</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>Flikar</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>Använd listan Flikar om du vill spara länkar till sidor. Listan Flikar bör användas tillsammans med flikkontrollen på webbplatsen.</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>Gå till</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>Anpassa för målgrupp</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>Anpassa för målgrupp</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>Tillåt global målgrupp</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>Tillåt distributionslista</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>Tillåt SharePoint-grupp</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>Ja</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>Nej</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>Personlig</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>Min webbplats</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>Navigering</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>Webbplatskatalog</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>Skapa rapportcenter</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>Skapar rapportcentret på Premium-webbplatser.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>Layoutfunktion för portal</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>Portalfunktion som laddar upp alla layouter till galleriet för huvudsidor.</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>Bläddra i nyhetsarkiv</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>Välkomstlayout</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>Efter uppgraderingen har nya funktioner installerats i SharePoint-servergruppen. Funktionerna aktiveras automatiskt när du skapar nya webbplatser men har ännu inte aktiverats på befintliga webbplatser. Du kan göra dessa funktioner tillgängliga på alla webbplatser genom att gå till sidan Aktivera funktioner på befintliga webbplatser. Om du inte vill att funktionerna ska vara tillgängliga på de befintliga webbplatserna just nu kan du ta bort den här uppgiften och aktivera funktionerna senare från sidan Åtgärder på webbplatsen Central administration. Du kan också göra funktionerna tillgängliga på enskilda webbplatser med hjälp av menyn Webbplatsinställningar på den aktuella webbplatsen.</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>Aktivera nya funktioner på befintliga webbplatser</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>Aktivera funktioner på befintliga webbplatser</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">Ytterligare uppgraderingsåtgärder</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">Funktionsmottagning</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">Aktivera nya funktioner på befintliga webbplatser med funktionsmottagning.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>RSS-visning</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>Visar RSS-feed.</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>Mina SharePoint-webbplatser</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>Används för att visa dokument som har skapats av dig på webbplatser där du är medlem och på webbplatser som du väljer.</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>SharePoint-dokument</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>Används för att visa dokument som har skapats av användaren på webbplatser där användaren är medlem.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>Webbplatssamlare</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>Visar de webbplatser du väljer.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>Områdesdokumentbibliotek</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>Områdesdokumentbibliotek är mappar som gör det enkelt att dela dokument med andra. Varje bibliotek visar dokument i en lista som kan filtreras eller sorteras.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>Nyheter</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>Visar en lista över dina kolleger och ändringar som de nyligen har gjort.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>Intressespårare</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>Visar de senaste aktiviteterna inom dina intresseområden.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>Kontaktinformation</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>Visar information om en kontakt för den här sidan eller webbplatsen.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>Mina bilder</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>Visar bilder från bildbiblioteket, med ett alternativ för att visa som ett bildspel.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>Delade bilder</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>Mina arbetsytor</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>Visar webbplatser som har skapats under Min webbplats.</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>Min e-postmapp</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>Visar e-postmappen med Outlook Web Access för Microsoft Exchange Server 2000.</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>Min kalender</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>Visar din kalender med Outlook Web Access för Microsoft Exchange Server 2003 eller senare.</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>Min inkorg</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>Visar inkorgen med Outlook Web Access för Microsoft Exchange Server 2003 eller senare.</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>Mina uppgifter</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>Visar uppgifter med Outlook Web Access för Microsoft Exchange Server 2003 eller senare.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>Mina kontakter</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>Visar kontakter med Outlook Web Access för Microsoft Exchange Server 2003 eller senare.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>Mina länkar</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>Visar dina länkar</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>Webbdel för att lägga till standardgrupper</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>Lägger till ytterligare standardgrupper i kolumnen QuickAddGroups i webbdelsgalleriet</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>Läser in...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>Öppna meny</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>Medlemmar</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>Webbdel för att visa medlemmarna i en grupp</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>Globala webbdelar</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>Installerar ytterligare webbdelar som är gemensamma för alla typer av webbplatser.</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>Min webbplats</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>Installerar funktioner relaterade till Min webbplats och användarprofiler.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>Värd för Min webbplats</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>Installerar funktioner relaterade till värden för Min webbplats.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>Organisationslogotyper</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>Delat bildbibliotek för organisationslogotyper</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>Använd det här bildbiblioteket för att lagra organisationslogotyper.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>Navigering på Min webbplats</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>Installerar navigeringsprovidrar för Min webbplats.</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>Anpassad webbplatskonfiguration för Min webbplats</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>Konfigurerar en användares personliga webbplats.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>Länkar för användarprofilsadministration</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>Installerar länkar relaterade till administration av användarprofilstjänsten.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>Grundläggande länkar för användarprofilsadministration</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>Installerar grundläggande länkar relaterade till administration av användarprofilstjänsten.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>Innehållsanpassning för listan</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>Installerar en knapp på sidan Inställningar för lista som aktiverar innehållsanpassning med hjälp av målgrupper.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>Inställningar för målgruppsanpassning</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>Profilsynkroniseringsfunktion</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>Installerar jobb för synkronisering av profil- och medlemskapssynkronisering med gruppwebbplatser.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>Användarmigrering för provider för delade tjänster</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>Installerar funktioner för migrering av användardata när en användares kontoinformation ändras.</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>Sök</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>Vad anpassningswebbplatser är...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>Anpassningswebbplatser är utformade för att hjälpa dig att tillhandahålla en kompromisslöst individuell anpassning som ansluter din portal till Min webbplats för de olika användarna. Använd den här webbplatsen när du vill skicka anpassad och riktad information till användarna, baserat på vilka de är och varför de besöker portalen. Med hjälp av mallen för anpassningswebbplatsen kan du identifiera den aktuella användaren och använda användarens profil för att korrekt rikta och presentera information som är specifik för den användaren och hans eller hennes behov. Detta ger dig möjlighet att erbjuda portalen från  den aktuella användarens individuella perpektiv.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>&lt;i&gt;Exempelvis kan du använda en anpassningswebbplats för att göra information tillgänglig som är dold i olika affärssystem och av webbplatsens struktur, så att användarna enkelt kan visa och komma åt den information de behöver för att utföra sitt jobb eller sin uppgift. Du kan också erbjuda en upplevelse som hjälper till att få organisationen bättre i fas med dess målsättningar, genom att använda anpassningswebbplatsen för att påverka användarbeteendet via prestationsindikatorer och mått, vilka kan anges specifikt för en användare baserat på användarens roll.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>När anpassningswebbplatsen är färdigutvecklad kontaktar du administratören för att registrera den, så att anpassningswebbplatsen får en permanent plats i navigeringsfältet på Min webbplats för användarna.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>Menyflikskontroller för sociala taggar och anslagstavla</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>Lägger till kommandon för sociala taggar och anslagstavla i menyfliksgränssnittet.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>Taggar och kommentarer</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>TaggarOchKommentarer</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>Taggar och kommentarer</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>Taggar hjälper dig att komma ihåg länkar och klassificera valda objekt. Kommentarer är offentliga inlägg. Du lägger till taggar och kommentarer i din nyhetsfeed och i ditt arbete på olika webbplatser.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>Jag gillar</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>Taggar ett eller flera valda objekt med Jag gillar. Taggar gör det enkelt att minnas länkar och skapa inlägg i dina nyhetsfeed.</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>Ägare</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>Beskrivning</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>Status</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>Visar webbplatser inom en specifik kategori i webbplatskatalogen.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>Visar kategorier från webbplatskatalogen.</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>Ger användarna möjlighet att välja alternativ från en lista och navigerar dem till rätt plats.</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>Nyhetsarkiv</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>Dokument</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>Detaljer om platser som användaren är medlem på</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>Kolleger</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>Den här webbdelen är utformad för att läggas till på en persons profilsida. Då visas en lista över alla kolleger som användaren har delat med andra. Därifrån kan profilens ägare hantera listan med kolleger.</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>Anslagstavla</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>Ger användare möjlighet att lämna korta offentliga kommentarer om sidan.</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>Märkta objekt</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>Visa de personer som har märkt en specifik URL</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>Anslut</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>Visar vilka personer som ofta använder eller visar intresse för eller kunskap om en tagg.</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>Relaterade taggar</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>Visar de taggar som har använts tillsammans med en viss term och ger möjlighet att filtrera i webbdelen Taggade objekt</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>Om den här taggen</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>Visar metadata från en hanterad taxonomi om vissa termer</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>Senaste aktivitet</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>Visa personer som är relaterade till vissa termer</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>Gemensamt med dig</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>Visar vad du och användaren har gemensamt</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>Mitt organisationsschema</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>Visar ditt organisationsschema och rapporthierarki</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>Medlemskap</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>Visar dina medlemskap på webbplatser och i distributionslistor.</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>Länkar</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>Visar de länkar som användaren har delat med dig</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>Grupp</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>Webbdel som visar gruppinformation</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>Medlemmar</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>Webbdel för att visa medlemmarna i en grupp</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>Medlemsgrupper</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>Webbdel som visar medlemsgrupper</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>Exempellänk 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>Exempelbeskrivning</value>
+  </data>
+  <data name="imglibList">
+    <value>Biblioteket Veckan i bilder</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>Tillhandahåller en lagringsplats för bilder för området.</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>Exempellänk 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>Exempellänk 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>Dokumentcenter</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>Dokumentcenterwebbplats</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(länk till URL)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(länk till redigeringsmeny)</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>Samlat innehåll</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Office-klientprogram</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>Formulär</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>Diverse</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>Min webbplats: Överkant</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>Min webbplats: I mitten till vänster</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>Min webbplats: I mitten till höger</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>Min webbplats: Nederkant</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>Sortera efter URL</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>Sortera efter rubrik</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>Portalfunktionen DiscoPage</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>Portalfunktion som anger egenskapen DiscoPage för standardwebbtjänsten till spsdisco.aspx.</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>Välkomstsida med webbdelszoner</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>Profilegenskapsfilter</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>Inspelningskontroll för SharePoint Portal Server-huvudwebbplatskatalog</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>Inspelningskontroll för SharePoint Portal Server-huvudwebbplatskatalog.</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>Den här sidlayouten innehåller ett bildfält till vänster, ett fält med formaterad text och webbdelszoner i en högerspalt, sidhuvud, sidfot och 2 spalter.</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>Den här sidlayouten innehåller webbdelszoner i sidhuvud, sidfot och 2 spalter.</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>Den här sidlayouten innehåller webbdelszoner i en högerspalt, sidhuvud, sidfot och 2 spalter.</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>Den här sidlayouten innehåller en flikkontroll. Den har webbdelszoner i sidhuvud, sidfot och 2 spalter. </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>Den här sidlayouten innehåller webbdelszoner i sidhuvud, sidfot och 2 spalter och 3 rader.</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>Den här sidlayouten innehåller en flikkontroll. Den har webbdelszoner i sidhuvud, sidfot och 2 spalter.</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>Den här sidlayouten innehåller en flikkontroll och en webbdel med en sökruta. Den har webbdelszoner i sidhuvud och sidfot.</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>Den här sidlayouten innehåller en flikkontroll och webbdelar med sökrutor. Den har webbdelszoner i en högerspalt, sidhuvud, sidfot och 2 spalter och 2 rader.</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>Den här sidlayouten innehåller en flikkontroll. Den har webbdelszoner i en högerspalt, sidhuvud, sidfot och 2 spalter och 2 rader.</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>Den här sidlayouten innehåller webbdelszoner i en högerspalt, sidhuvud, sidfot och 2 spalter.</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>Person som arbetar vid datorn</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>Layoutfunktion på Min webbplats</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>Funktion på Min webbplats som laddar upp alla layouter till galleriet för huvudsidor.</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>Välj en uppgift som du behöver utföra</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>Layoutfunktion på Min webbplats</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>Funktion på Min webbplats som laddar upp alla layouter till galleriet för huvudsidor</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>Filuppladdningsfunktion för portaluppgradering</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>Portalfunktion som endast laddar upp uppgraderingsfiler.</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>Det här är ett exempel på ett blogginlägg. I normala fall innehåller detta ett inlägg från användaren.</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>Exempelinlägg</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>Exempelanvändare</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>Exempel</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>Alla taggar</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>Visa använda taggar efter alla användare</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>Mina taggar</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>Visa använda taggar efter aktuell användare</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>Taggmoln</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>Visar de ämnen som oftast märks inom organisationen.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>Allas taggar</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>Mina taggar</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>Rekommenderade länkar (endast M1)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>Visar information om Mina bokmärken</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>Organisationswebbläsare</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>Den här webbdelen visar varje person i rapporteringskedjan i en interaktiv vy som är optimerad för att bläddra organisationsscheman.</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>Klassificeringar</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>Med den här funktionen kan användare klassificera innehåll.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>Klassificering (0-5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>Medelvärde för alla klassificeringar som har angetts</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>Klassificeringar</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>Antal klassificeringar</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>Antal angivna klassificeringar</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>Definiera katalogplatsen där nya webbplatser visas på en lista.</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>Ange de webbplatser som ska ingå i sökområdet Den här och relaterade webbplatser för den här webbplatsens sökresultat.</value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>Klassificeringsinställningar</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>Personer</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>Hantera användaregenskaper</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>Hantera användarprofiler</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>Hantera användarundertyper</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>Hantera målgrupper</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>Schemalägg målgruppskompilering</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>Kompilera målgrupper</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>Hantera användarbehörigheter</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>Synkronisering</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>Konfigurera synkroniseringsanslutningar</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>Konfigurera synkroniseringsinställningar</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>Organisationer</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>Hantera organisationsegenskaper</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>Hantera organisationsprofiler</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>Hantera organisationsundertyper</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>Inställningar för Min webbplats</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>Konfigurera mina Min webbplatser</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>Konfigurera platser med betrodd värd</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>Konfigurera anpassningswebbplats</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>Publicera länkar till Office-klientprogram</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>Hantera sociala taggar och kommentarer</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>Konfigurera sociala taggar och experttaggar</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>Hantera principer</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>Anspråksprovider för personer och organisationer</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>Installerar anspråksprovider för personer och organisationer.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>Anspråksprovider för grupper</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>Installerar anspråksprovider för grupper.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>Hierarkiprovider för organisationsanspråk</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>Installera hierarkiprovider för anspråk baserat på organisationer.</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>Hantera användarprofilprogram</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>Program för användarprofilsinnehavare</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>Länkar till undersidor för hantering av program för användarprofilsinnehavare</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>Programhäftning för användarprofilsinnehavare</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>Häfta program för användarprofilsinnehavare till mallen TenantAdmin</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>Konfigurera Tidsinställt synkroniseringsjobb</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>Starta profilsynkronisering</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>Söklistrutan</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>Hoppa över kontaktkort</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>Min nyhetsfeed</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>Mitt innehåll</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>Min profil</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>Översikt</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>Organisation</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>Innehåll</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>Taggar och kommentarer</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>Kolleger</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>Medlemskap</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>Instrumentpanelen Mina uppgifter</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>Ger användaren en instrumentpanel på sin egen webbplats där han/hon kan hantera sina aktiviteter, aggregerade över webbplatser och system.</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>Instrumentpanelen Mina uppgifter, häftning</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>Den här funktionen häftar (ansluter) funktionen Mina aktiviteter-instrumentpanelen till MySite-mallen.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>Delade dokument - GAMLA</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>Personliga dokument - GAMLA</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>Innehåll som följs</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>Följa innehåll</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>Följa innehåll gör att användare kan prenumerera på uppdateringar i sina feeds för ett visst dokument</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>Innehållsprenumeration</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>Innehållsspårning</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>Innehåller en referens till ett följt innehållsobjekt</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>Servergrupp-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>Plats-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>Webb-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>List-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>Unikt ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>Objekt-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>Webbadress</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>Överordnad URL</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>Typ</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>Undertyp</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>Ikonwebbadress</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>Inte synlig i feed</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>Har feed</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>Flaggor</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>Filtypens ProgID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>Server-UTRL:ens ProgID</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>Följda dokument</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>Följda webbplatser</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>Följ intressanta dokument genom att gå till dem och klicka på följande.</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>Du har inte följt några webbplatser ännu. Om du vill visa någonting i den här listan går du till en webbplats och klickar på ikonen Följ.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>Det här dokumentbiblioteket användes tidigare för dokument som du vill dela med andra. Nu bör du använda det nya biblioteket i Mina dokument för detta ändamål.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>Det här dokumentbiblioteket användes tidigare för dokument som du vill behålla för personligt bruk. Nu bör du använda det nya biblioteket i Mina dokument för detta ändamål.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>Den här listan kommer innehålla alla objekt som du har valt att följa.</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>Följa innehåll</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>Gör så att användare kan följa dokument eller platser.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>Häftning av innehållsföljande</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>Aktivera innehållsföljande-funktionen i alla webbplatssamlingar.</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>Följa innehåll</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>Gör så att användare kan följa dokument eller platser.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>Lista över innehåll som följs</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>Funktion som kapslar in listan så att användare kan följa innehållet i SharePoint.</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>Följa innehåll</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>Listan som gör det möjligt för användarna att följa innehållet i SharePoint.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>Dokumentbiblioteksfunktionen i MySite</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>Förbättrar det befintliga SharePoint-dokumentbibliotek för min webbplats. Aktiverar nya vyer, förenklad versionshantering, förbättrad sammanhangsberoende information och delning per objekt.</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>Dokument</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>Alla</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>Delas med mig</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>Delas med alla</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>Dela fält</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>Delning</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>Delning</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>Är mina dokument</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>Är mina dokument</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>Delas med interna</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>Delas med interna</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>Behåll mina senaste ändringar</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>Behörighet</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>Sökningen är inte tillgänglig. Försök igen senare. Kontakta systemadministratören om problemet kvarstår.</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>Sökningen är för närvarande inaktiverad. Kontakta systemadministratören.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>Följ</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>Följ det här dokumentet och få uppdateringar i din nyhetsfeed.</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>Arbetsledning</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>Klassificerat av</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>Användare klassificerade artikeln.</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>Användarklassificeringar</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>Användarklassificeringar för artikeln</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>Innehållsfeedback</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Dokument</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>Projektfunktionalitet</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>Den här funktionen lägger till projekthanteringsfunktioner på en webbplats. Den innehåller aktiviteter, en kalender och webbdelar på webbplatsens startsida.</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>Mina projekt</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>Personer</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>Dokument</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>Uppgifter</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>Personer</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>Webbplatser</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>Om mig</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value>Om {0}</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>Mina program</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>Gå till min webbplats</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>Jag följer</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>Delas med mig</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>Nyhetsfeed</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>Program</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>Fler appar</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>Visar konversationer och händelsemeddelanden från innehåll och personer som du följer i SharePoint-webbplatser och låter användarna skicka korta, publika meddelanden.</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>Aktivitetsfeed</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>Visar en användares senaste konversationer och aktiviteter.</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>MicroFeed</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>Min webbplats MicroFeed, beständig lagringslista</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>Beständig lagring lista för publicerade källor för Min webbplats</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>Microfeed ContentTypes</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>Uppgradering av personlig MySite-webbplats vid navigering</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>Skapar eller uppgraderar en användares personliga webbplats vid navigering till värdplatsen för min webbplats.</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>First Run Experience för Min webbplats</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>Viktiga hash-taggar</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>Den här klientwebbdelen hjälper användaren att hitta nytt socialt innehåll</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>Följt antal</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>Visar antalet följda användare, innehåll och taggar för den aktuella användaren.</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>Personer</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>Visar de personer som någon följer samt vilka som följer dem.</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>Manuellt konfigurerad tidslinje</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>Visar manuellt konfigurerade data i en tidslinje</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>Projektsammanfattning</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>Visar information om ett projekt i en lättläst översikt</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>Ansluten tidslinje</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>Använd den här tidslinjen för att visa information på hög nivå från en annan webbdel</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>Tidslinjer</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>Projektplats Tidslinje</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>Använd den här tidslinjen för att skapa en överblick på hög nivå av aktiviteterna i ett projekt</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>Projektplats Webbdelar</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>Webbdelar är användbara och kräver projektplatsen</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>Grupparbetscenter</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>Team Work Center ger dig en övergripande vy över alla dina projektplatser på en plats. Team Work Center kan anslutas till tidslinjewebbdelen och skapa en visualisering över din projektportfölj.</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>Funktionen Relaterade artiklar</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>Funktionen Relaterade artiklar används för att lägga till relaterade artiklar och rekommenderade artiklar till en webbplatssamling.</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>Objekt formulärrekommendationer</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>Lägger till rekommendationsstyrning (CBS) till alla visningsformulär.</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>MySite-rekommendationer</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>Rekommendera automatiskt dokument och webbplatser så att andra användare kan följa från sina weebplatser i SharePoint.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>Webbdelen Rekommendationer föreslår innehåll som en användare vill följa inom en grupp.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>Dokument som rekommenderas mig</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>Platser som rekommenderas mig</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>Personer som rekommenderas för mig</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>Webbdelen rekommendationer föreslår innehåll som en användare vill följa inom en grupp.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>Dokument som du rekommenderas att följa</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>Platser som du rekommenderas att följa</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>Föreslagna personer att följa</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>Webbdelen rekommendationer föreslår innehåll som en användare vill följa inom en grupp.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>Rekommenderade dokument</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>Rekommenderade webbplatser</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>Rekommenderade personer</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>Mina rekommendationer</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>Det går inte att importera webbdelen Mina rekommendationer.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>Det går inte att importera webbdelen Relaterade artiklar.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>Relaterade objekt</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>Webbdel Relaterade artiklar.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>Förslag på relaterade artiklar</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>Webbdelen Förslag på relaterade artiklar.</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>Relaterade objekt</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>Förslag på nya artiklar</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>Webbdelen Förslag på nya artiklar</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>Provider för Användarprofilens användarinställningar</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>Den här funktionen tillhandahåller Provider för Användarprofilens användarinställningar.</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>Webbplatspostlåda</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>Postlåda</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>Programmet Webbplatspostlåda hjälper dig att hålla ihop e-post och dokument genom att koppla din webbplats till en Exchange-postlåda. Du kan sedan visa din e-post i SharePoint och visa webbplatsdokument i Outlook.</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>Webbplatspostlådor</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>Gör att en Exchange-postlåda kan visas på webbplatser i den här servergruppen och ansluter dokument från webbplatsen till Outlook.</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>Håll e-post i sammanhanget.</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>Dela e-post på din webbplats och koppla dokument till Outlook.</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>Stöd för projektwebbplats</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>Aktiverar skapande av projektwebbplatser i den här webbplatssamlingen.</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>Taggkontroll för projektwebbplatser</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>Den här funktionen tillhandahåller webbdelen Projektwebbplats Taggning.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>Det går inte att importera taggningswebbdelen.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>Webbdelen Taggar</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>Med webbdelen Taggning kan medlemmar i en webbplats tagga och visa taggar på sidor på webbplatsen.</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>Projekt</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>Projekt</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>Nytt</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>Skapa en ny projektarbetsyta.</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>Öppna</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>Öppna det markerade projektet.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>I projektarbetsytan</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>Öppna i projektarbetsytan</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>I Project Professional</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>Öppna det markerade projektet i Microsoft Project. Om projektet är utcheckat till någon annan öppnas det skrivskyddat. Om du har markerat flera projekt öppnas de i ett nytt huvudprojekt.</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>Tidslinje</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>Lägg till i tidslinjen</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>Lägg till markerade objekt i tidslinjen.</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>Projekt</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>Ägare</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>Startdatum</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>Slutdatum</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>Uppdaterar projektlistan...</value>
+  </data>
+  <data name="NextRefresh">
+    <value>Projektlistan kommer att uppdateras i {0}</value>
+  </data>
+  <data name="RefreshNow">
+    <value>Uppdatera nu</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>Sök i listan...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>Projektwebbplatsens omfattning</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>Webbplatsen och nedan</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>Webbplatssamling</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>Business Intelligence (BI)</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>Är rapport</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>Är objektet en rapport?</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>Är data</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>Är objektet en datakälla?</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>Business Intelligence (BI)</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>Rapportdokument</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>Skapa ett nytt rapportdokument.</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>Bibliotek för rapportdokument</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>En plats där du kan skapa och hantera rapportdokument.</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>Bibliotek för rapportdokument</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>Support för rapport- och datasökning</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>Innehåller de innehållstyper, webbplatskolumner och biblioteksmallar som krävs för att stödja rapport- och datasökning i Sökcenter för företag.</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>Funktionen Community-portal</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>Den här funktionen lägger till funktionalitet för Community-portalen. Den tillhandahåller också Community-portalsidor.</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>Populära communities</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>Community-webbplats</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>Det här är vi</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>Funktionen Community-webbplats</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>Den här funktionen lägger till Community-funktioner som diskussionskategorier, innehålls- och personrykte och listan medlemmar. Det tillhandahåller också communitysidor som innehåller dessa listor och funktioner.</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>Diskussionslista</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>Använd diskussionslistan för att hålla forumlika konversationer, inklusive frågor och svar om ämnen som är relevanta för din grupp, ditt projekt eller eller communityn.</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>Aggregerad Gilla-räkning</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>Aggregerad Klassificering-räkning</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>Antal som gillar</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>Gillas av</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>Popularitet</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>Avsnittet senast uppdaterad av</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>Författarens ryktespoäng</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>Författarens antal svar</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>Författarens antal inlägg</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>Författarens antal bästa svar</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>Författarens datum för senaste aktivitet</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>Författarens medlemskapsdatum</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>Författarens medlemsstatus</value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>Nivå 1</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>Nivå 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>Nivå 3</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>Nivå 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>Nivå 5</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>Kategori</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>Medlemsnamn</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>Inlagd av</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>Avsnittet senast uppdaterat</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Kategorier</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>Community-plats Infrastruktur</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>Webbplatsnivåfält, innehållstyper och webbdelar som krävs för diskussionslistor, rykte, kategorier och medlemskap i en community.</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>Funktionen Kategorierlista</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>Den här funktionen innehåller mallen för funktionen Kategorierlista</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>Kategorilista</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>Kategorilista</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>Kategori</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(Typbeskrivning för kategoriinnehåll)</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>Kategorilista</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>Kategorisammanfattningar</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>Administrationsvy</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>Enkategoriläge</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>Kategorinamn</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>Kategorins namn.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>Beskrivning</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>Vad ska communitymedlemmarna diskutera i den här kategorin?</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>Kategoribild</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>Lägg till en bild som beskriver den här kategorin.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>Diskussioner</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>Svar</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>Senaste inlägg från</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>Datum för senaste inlägg</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>Kategorier</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>Använd kategorierlistan om du vill definiera kategorierna som tillgängliga för inlägg i diskussionslistan.</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>Allmänt</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>Börja här om du inte vet var du vill göra ett inlägg.</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>Medlem</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>Status</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>Medlemsstatus</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>Väntar</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>Aktiv</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>Inaktiv</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>Blockerat</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>Vänster</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>Innehållstyper för community</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>Platsmedlemskap</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>Lägg till en ny medlem</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>Platsmedlemskap</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>Den här funktionen innehåller listschemat och listinstansen som används för att hantera de medlemmar inom en plats som Community, Projekt, Grupp, Utbildning</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>Mall för medlemskapslista</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>Mallschema för webbplatsmedlemskapslista</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>Community-medlemmar</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>Den här listan registrerar medlemmars pågående aktivitet och det rykte de samlar inom denna community.</value>
+  </data>
+  <data name="members_Folder">
+    <value>Medlemmar</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Community-diskussion</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>Rapporter</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>Den här funktionen innehåller listschemat och listinstansen som används för att hantera stötande innehåll inom en community-plats</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>Mall för rapportlista</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>Mallschema för rapportlista</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>Rapportlista</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>Den här listan lagrar kommentarer om en diskussionsartikel som skickas in av personer som rapporterade artikeln som stötande</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>AbuseReports</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>Journalist</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>Kommentarer</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>Diskussion</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>Rapporter</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>Rapportsökning</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>Rapporteraresökning</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>Kommentarsökning</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>Inlägg</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>URL för avsnittet</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>Rapporter</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>Moderering</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>Granska rapporterade inlägg</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>Granska rapporter</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>Granska rapporter</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>Granska rapporterat innehåll tillsammans med kommentarer som lämnats av medlemmar som fann det stötande</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>Redigera inlägg</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>Redigera inlägg</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>Redigera rapporterade diskussionsartiklar och ta bort eventuellt stötande innehåll</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>Ta bort inlägg</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>Ta bort inlägg</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>Ta bort det diskussionsobjekt som har rapporterats som stötande. Kommentarer som lämnats av klagande medlemmar tas också bort</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>Stäng rapporten</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>Stäng rapporten</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>Stäng rapporter som hör till diskussionsobjektet om du tror att det är lämpligt för communityn. Kommentarer som lämnats av klagande medlemmar tas bort</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>Utdelade märken</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>Ge märke</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>Ge medlem märke</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>Ge medlem märke</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>Kopplad</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>Senaste aktivitet</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>Bästa svar</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>Diskussioner</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>Svar</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>Svar för att nå nästa nivå</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>Ryktespoäng</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>Dölj rykte</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>Utdelat märke</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>Text på utdelat märke</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>Communitymedlem</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>Lägg till en ny community-medlem</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Marken</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>Märken</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>Den här listan lagrar märken som skapats av administratörer och moderatorer i denna community.</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>Märkesnamn</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>Expert</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>Yrkesmässig</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>Community-administration</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>Hantera diskussioner</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>Hantera diskussioner i en community.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>Hantera kategorier</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>Hantera kategorier i en community.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>Hantera medlemmar</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>Hantera medlemmar i en community.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>Community-inställningar</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>Community-inställningar, t. ex. fastställt datum och rapportering av stötande innehåll.</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>Hantera rapporterade inlägg</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>Hantera inlägg som har rapporterats som stötande.</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>Ryktesinställningar</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>Ryktesinställningar för community, t. ex. innehåll och personrykte.</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>Grupp</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>Koppla</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>Ger möjlighet för icke-medlemmar i en community att delta i communityn. Knappen är dold om användaren redan är medlem. Den här webbdelen fungerar på Community-webbplatser och andra webbplatser med aktiverade community-funktioner.</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>Om denna community</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>Den här webbdelen visar community-beskrivningen av gemenskapen och andra egenskaper som fastställt datum. Den här webbdelen fungerar på community-webbplatser och andra webbplatser med aktiverade community-funktioner.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>Verktyg</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>Ger ägare och administratörer av communityn snabblänkar till vanliga inställningar för sidor och innehållslistor för att hantera en community-webbplats. Den här webbdelen fungerar på community-webbplatser och andra webbplatser med aktiverade community-funktioner.</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>Aktuella diskussioner</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>Vad händer?</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>Visar antal medlemmar, ämnen och svar inom en plats i communityn. Den här webbdelen fungerar på community-webbplatser och andra webbplatser med aktiverade community-funktioner.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>Mitt medlemskap</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>Visar rykte och medlemskapsinformation för den aktuella besökaren på en plats i communityn. Den här webbdelen fungerar på community-webbplatser och andra webbplatser med aktiverade community-funktioner.</value>
+  </data>
+  <data name="MembersView">
+    <value>Medlemsvy</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>Administrationsvy</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>Enmedlemsvy</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>Vi som bidragit mest</value>
+  </data>
+  <data name="NewMembersView">
+    <value>Nya medlemmar</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>Grupp</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>Kategorier</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>Medlemmar</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>Om</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>Startsida</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>Rapporterade inlägg</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>DiskussionerEfterKategori</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>DiskussionerEfterKategoriAktuellaFullständiga</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>DiskussionerEfterKategoriAktuellaFörhandsgranskning</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>Funktion för blogg-meddelanden</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>Den här funktionen lägger till meddelanden i bloggar</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>Häftningsfunktion för bloggmeddelanden</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>Den här funktionen lägger till bloggmeddelanden och gilla-funktionen i bloggwebbplatsmallar</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>{0}redigera{1} din profil</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>E-post</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>Telefon</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>Office</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>Gemensamt</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>Visar vad du och användaren har gemensamt</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>Organisationsschema</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>Visar organisationsschema och rapporthierarki</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>Hantera följande</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>Taggar och kommentarer</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>Visar de ämnen som oftast märks inom organisationen.</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>Profilinfo</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>Visar grundläggande profilinformation för den aktuella användaren</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>Flytta dokument</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>Flytta markerade dokument till en annan webbplats eller en mapp i det aktuella biblioteket.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>Flytta dokument.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>Flytta markerade dokument till en annan webbplats eller en mapp i det aktuella biblioteket.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>Flytta markerade dokument till en annan webbplats eller en mapp i det aktuella biblioteket.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>Behörigheter genom hela serverfarmen</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>Använd funktionen Behörigheter genom hela serverfarmen så att interna SharePoint-program kan komma åt webbplatser i hela serverfarmen.</value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>Endast för intern användning</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>Social</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>Egenskaper för mikroblogg</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>Olästa vid omnämnande</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>Senaste inlägg</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>Sociala egenskaper</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>Följd artikel</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>Webbplats</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>Följt dokument</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>Lagringplats för sociala data</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>Ger datastöd för sociala funktioner</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>Social</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>Ger datastöd för sociala funktioner</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>Huvudfunktion för Min webbplats</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>Min webbplats-funktionen som laddar upp huvudsidan till huvudsidans galleri.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>Min webbplats, funktionen Enhetlig navigation</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>Min webbplats-funktion som visar samma navigering för värd och personliga webbplatser.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>Enkel snabbstartsfunktion för Min webbplats</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>En Min webbplats-funktion där samma snabbstartsfunktion visas för värden och de personliga webbplatserna.</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>Huvudsida för Min webbplats</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>Ger din Min webbplats sitt unika utseende.</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>Framhävda webbplatser</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>Återger upphöjda webbplatser sida vid sida.</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>Ny webbplats</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>Framhävda webbplatser</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>Hantera upphöjda webbplatser</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>Webbplatsfeed</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>Webbplatsens feed innehåller mikrobloggskonversationer på en gruppwebbplats.</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>Webbplatsfeed</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>Aktiverar användning av webbplatsfeeds.</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>Controller för webbplatsfeed-funktionen</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>Kontrollerar aktiveringen av webbplatsfeed-funktionen.</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>Häftning av webbplatsfeed-funktionen</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>Häftar webbplatsfeed-funktionen till alla nya teamwebbplatssamlingar.</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>Mikrobloggsredigering</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>Kan visa, lägga till, uppdatera och ta bort listobjekt och dokument.</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>Ändra foto</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>Endast {0} kan ändra detta foto.</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>Du kan inte ändra den här personens foto eftersom det synkroniseras med Microsoft Exchange.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>Jag följer</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>personer</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>Se de personer som du följer</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>dokument</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>Se de dokument som du följer</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>webbplatser</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>Se de webbplatser som du följer</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>taggar</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>Visa taggarna du följer</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">{Assigner} tilldelade dig nya uppgifter i {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">Du har tilldelats en eller flera uppgifter i {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>VISA MINA UPPGIFTER</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>Din SkyDrive Pro är redo</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>Kom åt dina dokument offline</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>Bli mobil!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>Anpassa din profil</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>Håll kontakten</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>Låt andra veta vad du arbetar med</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>&lt;a href="{0}"&gt;Uppdatera dina sekretessinställningar &lt;/a&gt; så att andra kan se och kommentera dina aktiviteter i SharePoint-nyhetsfeed.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>Alla befintliga Min webbplats-dokument har flyttats till &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;, den plats i SharePoint där du lagrar, synkroniserar och delar ditt arbete.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>Du kan ta dokument offline genom att klicka på knappen Sync i ett bibliotek. Testa det på din&lt;a href="{0}"&gt;OneDrive för företag&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2">
+    <value>Du kan ange att dokument online ska tas offline genom att klicka på knappen Sync i aktuellt bibliotek. Testa det på
+ &lt;a href="{0}"&gt;{1} för företag&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>Ta med dig SharePoint genom att ladda ned {0}mobilprogrammen{1}.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>Ladda upp ett foto och berätta mer om dig själv för andra&lt;a href="{0}"&gt;här&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>Andra kan visa och kommentera vissa av dina aktiviteter i SharePoint. Du kan ändra inställningarna &lt;a href="{0}"&gt;här&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>&lt;a href="{0}"&gt;Följ&lt;/a&gt; människor du bryr dig om.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>Din SharePoint-nyhetsfeed är redo</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>Det här kan du göra nästa gång:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>Få ut det mesta av SharePoint</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>Andra kan se och kommentera dina aktiviteter i SharePoint. Du kan ändra inställningarna &lt;a href="{0}"&gt;här&lt;/a&gt;.</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>OneDrive för företag</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>Hantera delade appar</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>Visa alla bibliotek och listor på den här webbplatsen.</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>Välkommen till &lt;span id="skyDriveText"&gt;OneDrive för företag&lt;/span&gt;, där du kan lagra, synkronisera och dela ditt arbete. Dokument är privata tills de delas. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Läs mer här&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText2">
+    <value>Välkommen till &lt;span id="skyDriveText"&gt;{0} för företag&lt;/span&gt;, där du kan lagra, synkronisera och dela ditt arbete. Dokument är privata tills de delas. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Läs mer här&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated">
+    <value>Goda nyheter! Du har också {0} för företag i Office 365 och kan komma åt filerna varsomhelst. Klicka bara på {1} i det översta navigeringsfältet för att börja. Oroa dig inte, filerna som du har här kommer också att fortsätta fungera. {2}Klicka här{3} för information om att flytta på dina filer.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated">
+    <value>Oroa dig inte, dina filer är säkra. Vi flyttade dem till din nya {0} för företag i Office 365. Där kan du komma åt dem var som helst på alla enheter. Du kan komma dit genom att klicka på {1} i det översta navigeringsfältet.</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>Stäng</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>Alla i &lt;span id="skyDriveFolder"&gt;din organisation&lt;/span&gt; kan komma åt dokumenten här.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>OneDrive för företag konfigureras för användning. Det kan ta en stund och du behöver inte vara kvar på sidan.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2">
+    <value>{0} för företag konfigureras för användning. Det kan ta en stund och du behöver inte vänta.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription">
+    <value>Flytta dina befintliga dokument på Min webbplats till din OneDrive för företag, där du lagrar, synkroniserar och delar ditt arbete.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2">
+    <value>Flytta alla dina befintliga dokument på Min webbplats till din {0} för företag där du lagrar, synkroniserar och delar ditt arbete.</value>
+  </data>
+</root>

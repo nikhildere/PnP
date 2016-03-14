@@ -1,0 +1,3610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4420.1017" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>Início</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>Novo SharePoint Server!</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>Pesquisar Discussões</value>
+  </data>
+  <data name="SetupMySite">
+    <value>Configurar Meu Site</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>Clique para obter categorias</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>Clique para obter os sites principais</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>Clique para obter o mapa do site</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>Categorias</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>Sites Principais</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>Mapa do Site</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>Todos os Sites</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>Clique para obter os resultados de Todos os Sites</value>
+  </data>
+  <data name="PeopleTab">
+    <value>Pessoas</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>Clique para obter os resultados de pessoas</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>Discussões</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>Relatório de Uso do SharePoint Server</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>Relatório de uso</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>Relatórios de uso da pesquisa</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>Relatórios de uso do site</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>Relatórios de uso do conjunto de sites</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>Biblioteca de Documentos</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>Fornece um local para armazenar documentos para esta área.</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>Modelo de Perfil de Dados Corporativos</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>Barra de Navegação Superior do SharePoint</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>Relatórios</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>Paineis</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>Amostra</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>Recursos</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>Conexões de Dados</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>Calendário de Relatórios</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>Biblioteca de Referência</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>Biblioteca de Relatórios</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>Um local onde você pode criar e gerenciar facilmente páginas da Web e documentos para acompanhar métricas, metas e informações sobre business intelligence. </value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>Lista de Status</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>Um local para acompanhar e exibir um conjunto de metas.  Ícones coloridos exibem em que grau as metas foram realizadas.</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>Biblioteca de Documentos de Página de Web Parts</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>Uma Biblioteca de Documentos com modelo de página de web parts.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>Biblioteca de Relatórios</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>Uma biblioteca de relatórios oferece suporte avançado para o gerenciamento de relatórios, que podem exibir Indicadores de Status e pastas de trabalho do Excel.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>Biblioteca de Referência</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>Uma biblioteca de informações que descreve como usar este site.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>Calendário de Relatórios</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>Use o calendário para postar eventos relacionados a esta área.</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>Conexões de Dados</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>A Biblioteca de Conexões de Dados facilita o compartilhamento de arquivos que habilitam os usuários a estabelecerem conexões com fontes de dados externas.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>Avisos</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>Use a lista de Avisos para postar mensagens relacionadas a essa área.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>Bem-vindo à Central de Relatórios</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>A Central de Relatórios habilita você a criar, distribuir e gerenciar informações de negócios.</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>Galeria de Modelos de Site</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>Indicadores de Exemplos</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>Indicadores de Status de Exemplos que são exibidos por padrão na home page da Central de Relatórios.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>Moral</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>Produtividade</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>Despesas</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>Este é um indicador de exemplo e pode ser excluído com segurança.</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>Central de Relatórios</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>Usando a Central de Relatórios</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>Use este componente para texto formatado, tabelas e imagens.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>Os recursos da Central de Relatórios incluem:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;Indicadores Chave de Desempenho&amp;lt;/A&amp;gt; (KPIs) habilitam você a comunicar metas e tendências e controlar o progresso.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;Paineis&amp;lt;/A&amp;gt; habilitam você a dar uma explicação mais detalhada de suas informações usando pastas de trabalho do Excel e KPIs. Os filtros de painel facilitam a seleção de informações para exibição. Para criar seu próprio painel, vá para o modo de exibição &amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;Paineis&amp;lt;/A&amp;gt; da Biblioteca de relatórios e clique em 'Novo'.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>A Biblioteca de &amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;relatórios&amp;lt;/A&amp;gt; é destinada a armazenar arquivos que contenham relatórios e paineis. Ela permite o fácil acesso a informações de períodos anteriores.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>Para preparar esta Central de Relatórios para uso, as seguintes ações são sugeridas:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>Exiba o &amp;lt;A &amp;gt;painel&amp;lt;/A&amp;gt; e a &amp;lt;A&amp;gt;pasta de trabalho&amp;lt;/A&amp;gt; de exemplo para entender alguns dos recursos da Central de Relatórios</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>Se os exemplos não funcionarem corretamente, peça a um administrador para verificar se os Serviços do Excel estão habilitados e se a Central de Relatórios está em um Local Confiável</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>Se você pretende usar o Excel para analisar informações de servidores de dados existentes, crie e carregue arquivos de conexão de dados (ODC) para a &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;Biblioteca de Conexões de Dados&amp;lt;/A&amp;gt;. Para que os usuários possam criar novas Listas de KPIs, adicione-os ao grupo "Proprietários". Os usuários no grupo "Membros" podem editar páginas, mas não podem criar Listas de KPIs.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>Atualizar ou remover conteúdo de exemplo</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>Destaques</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>Mais Informações</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>Guia de Referência Rápida</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>Detalhes do Contato</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>Use para exibir detalhes sobre um contato para esta página ou este site.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>Eventos Futuros</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>Página da Central de Relatórios</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>Indicadores de Status</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>Relatórios</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>Descrição</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>A descrição fornece informações sobre o objetivo da meta.</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>Comentários sobre o Indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>Os comentários descrevem o status atual do indicador, e podem fornecer informações sobre as causas dos problemas.</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>Valor do Indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>Limite de Meta do Indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>Limite de Aviso do Indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>Link de Detalhes</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>Link da página para clicar e obter detalhes </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>Os valores mais baixos são melhores</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>Se o melhor são valores mais baixos ou mais altos</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>Atualizar Automaticamente</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>Se os dados de back-end devem ser buscados a cada vez</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>Erro de Atualização</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>Contém a mensagem de erro da última atualização, se houver</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>Fonte de Dados</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>URL da fonte de dados</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>Guid do Modo de Exibição</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>Guid do modo de exibição</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>Nome do Modo de Exibição</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>Nome do modo de exibição</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>Expressão de Valor</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>Expressão usada para determinar o valor do Indicador.</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>Expressão de Porcentagem</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>Determine se a expressão é usada para cálculo de porcentagem</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>Folha de Valores</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>Nome da Folha para o valor</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>Célula de Valor</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>Endereço ou nome da célula para o valor</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>Folha de Meta</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>Nome da folha para a meta</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>Célula de Meta</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>Endereço ou nome da célula para a meta</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>Folha de Aviso</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>Nome da folha para o aviso</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>Célula de Aviso</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>Endereço ou nome da célula para o aviso</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>Meta da pasta de trabalho</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>Se a origem da meta é a pasta de trabalho ou a definição do indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>Aviso da pasta de trabalho</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>Se a origem do aviso é a pasta de trabalho ou a definição do indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>Tendência</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>A tendência do Indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>Status do Indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>O status do Indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>Pasta de Exibição</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>A Pasta de Exibição do Indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>Indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Nome do KPI do Microsoft SQL Server 2005 Analysis Services</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>Incluir indicadores filhos</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>Incluir ou não KPIs filho</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>Valor de indicador formatado</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>O valor do indicador, formatado pelo provedor de origem de dados</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>Meta do indicador formatado</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>A meta do indicador, formatada pelo provedor de origem de dados</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>Aviso do indicador formatado</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>O valor do aviso do indicador, formatado pelo provedor de origem de dados</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>Atualização dos dados mais recentes do indicador</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>A última atualização do provedor de origem de dados</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>Descrição do Relatório</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>Uma descrição do conteúdo do relatório</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>Salvar no histórico de relatórios</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>Cada vez que este documento for salvo, uma cópia será adicionada ao histórico de relatórios.</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>Identificação do Pai</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>A Identificação do Pai deste relatório</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>Proprietário</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>Proprietário deste documento</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>Categoria do Relatório</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>Categoria do relatório</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>Categoria 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>Categoria 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>Categoria 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>Status do Relatório</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>Status do relatório</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>Final</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>Preliminar</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>Período Até Esta Data</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>Histórico</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>Exibir Histórico</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>Nome</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>Nome</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>Novo</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>Link de Relatório Modificado</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>Relatório Criado</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(valor do instantâneo)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>Relatório Criado por</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>Relatório Modificado</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>Relatório Modificado por</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>Nome do Pai do Relatório</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(o nome do pai do instantâneo)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>Link para Relatório</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(link para o relatório com menu de edição)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>Inteligência Comercial</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>Colunas de Indicador Comuns</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>Indicador de Status baseado em Valor Fixo</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>Criar um novo Indicador de Status usando informações inseridas manualmente</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>Indicador de Status baseado em Lista do SharePoint</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>Criar um novo Indicador de Status usando dados de Listas do SharePoint</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>Indicador de Status baseado no Excel</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>Criar um novo Indicador de Status usando dados de Serviços do Excel</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>Indicador de Status baseado no SQL Server Analysis Services</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>Criar um novo Indicador de Status usando dados do SQL Server Analysis Services</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>Relatório</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>Página de Web Part com Lista de Status</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>Crie uma página que exiba Indicadores de Status e pastas de trabalho do Excel.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Relatório do Excel</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>Paineis</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>Relatórios atuais</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>Todos os relatórios e paineis</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>Atualizado Recentemente</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Página de relatório detalhado de arquivos do Excel.</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>Zona Superior Esquerda</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>Zona Superior Direita</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>Zona de Filtragem</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>Adicionar um filtro</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>Zona Inferior Esquerda</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>Zona Inferior Central</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>Zona Inferior Direita</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>Zona Superior</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>Zona Intermediária Esquerda</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>Zona Intermediária Direita</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>Zona Inferior</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>Todos os Itens</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>Lista de Status</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>Lista de Status</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>Mostra uma lista de Indicadores de Status. Esses indicadores exibem medidas importantes para a sua organização e mostram como ela está se saindo em relação às suas metas.</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>Detalhes do Indicador de Status</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>Exibe os detalhes de um único Indicador de Status. Os Indicadores de Status exibem uma medida importante para uma organização e podem ser obtidos de outras fontes de dados, incluindo listas do SharePoint, pastas de trabalho do Excel e KPIs do SQL Server 2005 Analysis Services.</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>Dados corporativos</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>Sim</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>Não</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(Vazio)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(Tudo)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(Atualizar)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>Atualizar</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(Vazio)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>Classificar em Ordem Crescente</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>Classificar em Ordem Decrescente</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>Filtrar por </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>Classificar por </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>Público-alvo</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>Público-alvo (Audiências baseadas em regras; Grupos do SharePoint; Listas de Distribuição)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>Direcionado</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>Não direcionado</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>Permitir Audiências Globais</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>Permitir Listas de Distribuição</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>Permitir Grupos do SharePoint</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>Diretório de Sites</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>Mapa do Site</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>Sites na Categoria</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>Sites Principais</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>O Diretório de Sites é um catálogo de sites que podem ser agrupados em categorias. Para enviar um site ao Diretório de Sites, escolha "Criar Site" ou "Adicionar Link ao Site", no canto superior direito desta página.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>Para adicionar sites principais, adicione um link para a lista de diretórios de sites e marque-o como "Site Principal". Para começar, adicione um link para o diretório do site e envie-o como um Site Principal.</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>Definições de escopo de Links Relacionados</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>Artigo de Notícias com Imagem</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>Link para Artigo de Notícias</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>Zonas de Web Part</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>Home de Notícias</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>Página inicial do diretório de sites</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>Habilitar Recursos do Enterprise</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>Padrão</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>Filtros</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>Dados Corporativos</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>Painel</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>Web Part Consumidor WSRP</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>Usuário Atual</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>Filtro de Usuário Atual</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>Filtra o conteúdo de Web Parts usando propriedades do usuário atual.</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>Filtro de Texto</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>Filtra o conteúdo de Web Parts permitindo que os usuários digitem um valor de texto.</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>Filtro de Lista do SharePoint</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>Filtra o conteúdo de Web Parts usando uma lista de valores.</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>QueryString</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>Filtro de Cadeia de Consulta (URL)</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>Filtra o conteúdo de Web Parts usando valores passados via cadeia de caracteres de consulta.</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>Campo de Página</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>Filtro de Campo da Página</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>Filtra o conteúdo de Web Parts usando informações sobre a página atual.</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>Filtro do SQL Server Analysis Services</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>Filtra o conteúdo de Web Parts usando uma lista de valores de cubos do SQL Server Analysis Services.</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>Lista de Status</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>Web Part IView</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>Detalhes do Indicador</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>Data</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>Filtro de Data</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>Filtra o conteúdo de Web Parts permitindo que os usuários insiram ou selecionem uma data.</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>Lista de Dados Corporativos</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>Exibe uma lista de itens de uma fonte de dados na Conectividade de Dados Corporativos.</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>Não é possível importar esta web part.</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>Filtro de Conectividade de Dados Corporativos</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>Filtra o conteúdo de Web Parts usando uma lista de valores da Conectividade de Dados Corporativos.</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>Item de Dados Corporativos</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>Exibe um item de uma fonte de dados na Conectividade de Dados Corporativos.</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>Lista Relacionada a Dados Corporativos</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>Exibe uma lista de itens relacionados a um ou mais itens pai de uma fonte de dados na Conectividade de Dados Corporativos.</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>Ações de Dados Corporativos</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>Exibe uma lista de ações da Conectividade  de Dados Corporativos.</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>Construtor de Item de Dados Corporativos</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>Cria um item de Dados Corporativos a partir dos parâmetros na cadeia de caracteres de consulta e fornece-o a outras Web Parts.</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>Escolher Filtro</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>Filtra o conteúdo de Web Parts usando uma lista de valores inseridos pelo autor da página.</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>Valor 1&amp;Valor 2&amp;Valor 3=Descrição 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>Botão Aplicar Filtros</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>Adicione este botão a uma página para que os usuários possam decidir quando irão aplicar suas opções de filtro. Caso contrário, cada filtro será aplicado quando o respectivo valor for alterado.</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>Sites Principais</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>Exibe os principais sites do Diretório de Sites.</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>Notícias</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>Notícias Recentes</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>Chamada de Notícias</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>Imagens Desta Semana</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>Exibe uma imagem de uma Biblioteca de Imagens e links para uma apresentação de slides em que os usuários podem ver todas as imagens na Biblioteca de Imagens.</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>Notícias</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>Artigo de Notícias da Empresa</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>Página em branco.</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>Arquivo de Notícias</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>Notícias da Indústria</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>Mais Notícias</value>
+  </data>
+  <data name="KPIList">
+    <value>Lista de Indicadores de Status</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>Uma lista de indicadores de status é usada para rastrear e exibir um conjunto de metas. Ícones coloridos são exibidos para comunicar o grau de realização das metas.</value>
+  </data>
+  <data name="EventsList">
+    <value>Eventos</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>Use a lista de Eventos para postar informações sobre reuniões, datas limite e outros eventos relacionados a essa área.</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>Não é possível importar esta web part.</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>Início</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>Web Part Imagem de Home Page</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>Exibe imagem de home page</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>Imagem de Home Page</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>Editor de Conteúdo</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>Permite que autores insiram conteúdo de rich text.</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>Preciso...</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>Pesquisa de Funcionário</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>Procure funcionários</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>Sumário</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>Definições do Diretório de Site</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>Configurar o Diretório de sites</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>Verificar Links do Diretório de Sites</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>Páginas</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>Documentos Compartilhados</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>Documentos Pessoais</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>Imagens Compartilhadas</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>Fotos do Usuário</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>As Imagens de Perfil de todos os usuários serão armazenadas aqui.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>Use esta Biblioteca de Documentos para armazenar suas Páginas de Web Parts. Elas serão compartilhadas automaticamente na home page pública.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>Use esta biblioteca de documentos para armazenar seus documentos. Aqueles que forem compartilhados neste local serão exibidos na sua home page pública.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>Use esta biblioteca de documentos para documentos que você deseja guardar par uso pessoal. Eles só ficarão visíveis para você e para os administradores do servidor.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>Compartilhe imagens e fotos com outras pessoas adicionando-as a esta biblioteca de imagens. Os itens armazenados neste local serão compartilhados na sua home page pública.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>Introdução ao Meu Site</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>Links para várias dicas sobre o uso de Meu Site.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>Sites do SharePoint</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>Detalhes sobre os sites dos quais o usuário é membro</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>Página Mestra de Meu Site</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>Apresenta a aparência exclusiva do Meu Site.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>Postagens Recentes no Blog</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>Postagens mais recentes do usuário no blog</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>Adicionar uma nova postagem</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>Central de Compartilhamento</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>A web part central que o usuário utilizará para compartilhar itens.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>Atividades Recentes</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>A web part que mostra minhas atividades recentes.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>Pergunte-me sobre</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>A web part que mostra uma lista de palavras-chave sobre as quais outras pessoas podem me perguntar.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>Meus Links</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>Exibe os links que você criou.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>Meu Calendário</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>Exibe o seu calendário usando o Outlook Web Access para o Microsoft Exchange Server 2003 ou posterior.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>Controlador de Colegas</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>Exibe a sua lista de colegas e suas alterações recentes.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>Minhas Associações</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>Exibe os grupos dos quais você é membro.</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>Perfis de Usuário e Meus Sites</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>Audiências</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>Perfis de usuário e propriedades</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>Audiências</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>Políticas de serviços de perfil</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>Definições de Meu Site</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>Locais confiáveis de host de Meu Site</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Links publicados em aplicativos cliente do Office</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>Links de sites de personalização</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>Permissões de serviços de personalização</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>Configurações de Delegação de Organização</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>Item de Dados Corporativos</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>Web part para detalhes de item de dados corporativos</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>Ações de Dados Corporativos</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>Web part para exibir Ações de Dados Corporativos</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>Conectividade de Dados Corporativos</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>Importar definição de aplicativo</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>Exibir aplicativos</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>Exibir entidades</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>Editar modelo de página de perfil</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>Permissões da Conectividade de Dados Corporativos</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>Configurar Definições de Logon Único (SSO)</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>Nome da Guia</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>Este é o texto do rótulo da guia.</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>Página</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>Digite o nome da página que deve ser exibida como parte desta guia. Se você ainda não criou uma página, faça isso usando a opção Criar Página em Ações de Site.</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>Adicionar novo link</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>Dica de Ferramenta</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>Esta é a dica de ferramenta que será exibida quando o usuário mover o ponteiro do mouse sobre esta guia.</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>Todas as Guias</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>Título</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>URL</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>Descrição</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>Proprietário</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>Divisão</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>Região</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>Site de Destaque</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>Site Principal</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>Tarefas e Ferramentas</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>Status do Link</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>OK</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>Desfeito</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>Indeterminado</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>Principais Tarefas</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>Internacional</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>Nacional</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>Local</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>Tecnologia da Informação</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>Pesquisa e Desenvolvimento</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>Vendas</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>Finanças</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>Todos os Sites</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>Resumo</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>Gerenciar Sites</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>Sites Submetidos</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>Categorias</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>Sites Recusados</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>Categorias para a Criação de Sites</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>Sites Desfeitos</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>Bem-vindo ao Microsoft® SharePoint® Server 2013 </value>
+  </data>
+  <data name="HomePageContent2">
+    <value>Introdução à nova versão do Microsoft SharePoint Server 2013:</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>Gerenciamento de Site e Conteúdo</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>Crie &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;páginas&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;sites&lt;/a&gt; e &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;listas&lt;/a&gt; novos</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>&lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;Adicione usuários &lt;/a&gt; ao grupo "Membros" para editar páginas</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>&lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;Crie um site pessoal &lt;/a&gt; clicando em "Meu Site"</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>&lt;a href="~SiteCollection/SearchCenter"&gt;Pesquise &lt;/a&gt; sites, documentos e pessoas</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>Soluções Comerciais (requer a licença Enterprise)</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>Criar indicadores de status e relatórios</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>Exiba uma pasta de trabalho do Excel por meio da Web Part Excel Web Access</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>Implantar um formulário do InfoPath em uma Biblioteca de Documentos</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>Escolher tarefa</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>Lista de Sites</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>Use este modelo de lista para criar Listas de Sites.</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>Lista de Guias</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>Use este modelo de lista para criar Lista de guias.</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>Não há itens a serem mostrados neste modo de exibição.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>Categorias</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>Mapa do Site</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>Sites da Categoria</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>Início</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>Site Inicial do Portal</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>Tópicos</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>Web de tópicos</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>Divisões</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>Web de divisões</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>Vendas</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>Web de vendas</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>Pesquisa e Desenvolvimento</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>Web de PD</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>Recursos Humanos</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>Web de Recursos Humanos</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>Produtos</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>Web de produtos</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>Notícias</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>Página Inicial de Notícias da Empresa</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>Sites</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>Web de Diretório de Sites</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>Pesquisar</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>O Centro de Pesquisa exibe resultados de pesquisas</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>Relatórios</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>Central de Relatórios</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>Visualizador WSRP</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>Exibe portlets de sites usando o WSRP 1.1.</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>Esta Web Part foi preterida.</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>Sites</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>Use a Lista de Sites para armazenar links para sites e categorias de sites.</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>Guias</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>Use a lista Guias para armazenar links para páginas. Essa lista deve ser usada com o controle de guia no site.</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>Ir</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>Público-alvo</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>Público-alvo</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>Permitir Audiência Global</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>Permitir Lista de Distribuição</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>Permitir Grupo do SharePoint</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>Sim</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>Não</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>Pessoal</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>Meu Site</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>Navegação</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>Diretório de Sites</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>Criação da Central de Relatórios</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>Cria a Central de Relatórios em sites Premium.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>Recurso de Layouts do Portal</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>Recurso do portal que carrega todos os layouts na galeria de páginas mestras.</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>Procurar Arquivo de Notícias</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>Layout de Boas-vindas</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>Como parte da atualização, agora você tem recursos adicionais instalados em seu farm do SharePoint. Esses recursos serão habilitados em sites recém-criados, mas ainda não foram disponibilizados nos sites existentes. Você pode tornar esses recursos disponíveis em todos os sites existentes navegando até a página 'Habilitar Recursos em Sites Existentes'. Caso não deseje fazer isso agora, você pode excluir esta tarefa; ela pode ser executada a qualquer momento na página Operações do site da Administração Central. Esses recursos também podem ser disponibilizados para sites individuais por meio do menu Definições do Site de cada site.</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>Habilitar novos recursos em sites existentes</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>Habilitar Recursos em Sites Existentes</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">Tarefas Adicionais de Atualização</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">Aplicação de Recurso</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">Use Aplicação de Recurso para habilitar novos recursos em sites existentes.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>Visualizador RSS</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>Exibe um RSS feed.</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>Meus Sites do SharePoint</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>Use para exibir documentos criados por você em sites dos quais você é membro e em sites da sua escolha.</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>Documentos do SharePoint</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>Use para exibir documentos criados pelo usuário na condição de membro de um site.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>Agregador de Sites</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>Exibe sites da sua escolha.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>Biblioteca de Documentos de Área</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>Bibliotecas de Documentos de Área são pastas que facilitam o compartilhamento de documentos com outras pessoas. Cada biblioteca exibe documentos em uma lista que pode ser filtrada ou classificada.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>Novidades</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>Exibe uma lista de seus colegas e as respectivas alterações recentes.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>Controlador de Interesses</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>Exibe atividades recentes em suas áreas de interesse.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>Detalhes do Contato</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>Exibe detalhes sobre um contato para esta página ou este site.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>Minhas Imagens</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>Exibe imagens da biblioteca de imagens, com uma opção para exibir uma apresentação de slides.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>Imagens Compartilhadas</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>Meus Espaços de Trabalho</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>Exibe os sites criados em Meu Site.</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>Minha Pasta de Email</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>Exibe a pasta de email usando o Outlook Web Access para o Microsoft Exchange Server 2000.</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>Meu Calendário</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>Exibe o seu calendário usando o Outlook Web Access para o Microsoft Exchange Server 2003 ou posterior.</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>Minha Caixa de Entrada</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>Exibe a caixa de entrada usando o Outlook Web Access para o Microsoft Exchange Server 2003 ou posterior.</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>Minhas Tarefas</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>Exibe suas tarefas usando o Outlook Web Access para o Microsoft Exchange Server 2003 ou posterior.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>Meus Contatos</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>Exibe os contatos usando o Outlook Web Access para o Microsoft Exchange Server 2003 ou posterior.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>Meus Links</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>Use para exibir seus links</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>Grupos padrão do Adicionador de Web Parts</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>Adiciona novos grupos padrão à coluna QuickAddGroups na galeria de web parts</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>Carregando...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>Menu Abrir</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>Membros</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>Web part para exibir os membros de um grupo</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>Web Parts Globais</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>Instala web parts adicionais que são comuns a todos os tipos de sites.</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>Meu Site</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>Instala recursos relacionados a Meu Site e Perfis de Usuário.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>Host de Meu Site</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>Instala recursos relacionados à hospedagem de Meus Sites.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>Logotipos de Organizações</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>Biblioteca de Imagens Compartilhadas para logotipos de Organizações</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>Use esta Biblioteca de Imagens para armazenar logotipos de Organizações.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>Navegação no Meu Site</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>Instala provedores de navegação para Meu Site.</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>Configuração de Site Pessoal Meu Site</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>Configura um site pessoal do usuário.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>Links de Administração de Perfis de Usuário</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>Instala links relacionados à administração do serviço de Perfis de Usuário.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>Links Básicos de Administração de Perfis de Usuário</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>Instala links relacionados à administração básica do serviço de Perfis de Usuário.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>Direcionamento de Conteúdo de Listas</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>Instala um botão na página Definições de Listas para habilitar o direcionamento de conteúdo usando audiências.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>Definições de direcionamento de audiência</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>Recurso de Sincronização de Perfis</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>Instala um trabalho para a sincronização de perfis de usuários e associações com sites de equipe.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>Migrador de Usuários do Provedor de Serviços Compartilhados</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>Instala recursos relacionados à migração de dados do usuário quando as informações da conta de um usuário são alteradas.</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>Pesquisa</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>O que são Sites de Personalização...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>Os sites de personalização foram projetados para ajudar a proporcionar uma experiência isenta e distinta de personalização que conecta o seu portal aos Meus Sites de usuários. Use este site para oferecer informações personalizadas e direcionadas aos usuários com base em quem eles são e por que estão visitando o seu portal. O modelo de site de personalização ajudará você a identificar o usuário atual e usar seu perfil para um direcionamento preciso das informações, apresentando somente aquelas que sejam específicas ao usuário e às suas necessidades. Com isso, você terá a oportunidade de oferecer aos usuários do seu portal uma exibição centrada nos seus interesses individuais.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>&lt;i&gt;Apenas como exemplo, você pode usar um site de personalização para desbloquear as informações ocultas em vários sistemas comerciais e, usando a estrutura do seu site, fornecer uma experiência concentrada na qual os usuários exibam e acessem com facilidade apenas as informações relevantes para o desempenho de seus trabalhos ou tarefas. Ou você pode oferecer uma experiência que ajude a alinhar sua organização às metas estipuladas, usando o site de personalização para direcionar o comportamento dos usuários por meio de indicadores e métricas de desempenho, que podem ser definidos especificamente para um usuário individual com base na sua função.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>Depois de desenvolver o seu site de personalização, contate o administrador para registrá-lo e incorporá-lo permanentemente à barra de navegação Meu Site dos seus usuários.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>Controles da Faixa de Opções de Marcas Sociais e Quadro de Notas</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>Adiciona pontos de entrada para marcações sociais e comentários no quadro de notas à interface do usuário da faixa de opções.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>Marcas e Notas</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>Marcas e Notas</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>Marcas e Notas</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>Marcas ajudam a memorizar links e a classificar o  item selecionado. Notas são comentários públicos. Marcas e notas são postadas no seu feed de notícias e funcionam em diferentes sites.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>Gosto disso</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>Marca o(s) item(ns) selecionado(s) com 'Gosto disso'.  Marcas facilitam a memorização de links e sua postagem em um feed de notícias.</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>Proprietário</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>Descrição</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>Status</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>Exibe sites do Diretório de Sites dentro de uma categoria específica.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>Exibe as categorias do Diretório de Sites.</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>Permite que os usuários selecionem em uma lista de opções e naveguem até o local relevante.</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>Arquivo de Notícias</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>Documentos</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>Detalhes sobre os sites dos quais o usuário é membro</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>Colegas</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>Esta web part deve ser adicionada à página de perfil de uma pessoa. Ela apresenta uma lista de todos os colegas que o usuário compartilha com outras pessoas. Fornece um ponto de entrada para que o proprietário do perfil gerencie a lista de colegas.</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>Quadro de Notas</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>Habilite os usuários a deixarem notas curtas e visíveis publicamente sobre esta página.</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>Itens Marcados</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>Mostra pessoas que aplicaram uma marca a uma URL específica</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>Conecte-se</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>Mostra pessoas que usam frequentemente ou que expressaram interesse ou experiência em determinada marca.</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>Marcas Relacionadas</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>Mostra marcas que foram usadas com um termo específico e habilita a filtragem da web part Itens Marcados</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>Sobre esta Marca</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>Exibe metadados de uma taxonomia gerenciada sobre termos específicos</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>Atividade Recente</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>Mostra pessoas relacionadas a termos específicos</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>Em Comum com Você</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>Mostra o que há em comum entre você e o usuário</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>Meu Organograma</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>Mostra o organograma e a hierarquia organizacional</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>Associações</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>Exibe as associações ao site e à lista de distribuição.</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>Links</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>Mostra os links que o usuário compartilhou com você</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>Grupo</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>Web part para exibir detalhes do grupo</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>Membros</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>Web part para exibir os membros de um grupo</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>Grupos de Membros</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>Web part para exibir grupos de membros</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>Link de Exemplo 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>Descrição de exemplo</value>
+  </data>
+  <data name="imglibList">
+    <value>Esta Semana na Biblioteca de Imagens</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>Fornece um local para o armazenamento de imagens desta área.</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>Link de Exemplo 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>Link de Exemplo 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>Centro de Documentos</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>Site de Centro de Documentos</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(vinculado à URL)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(vinculado ao menu de edição)</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>Acúmulo de Conteúdo</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Aplicativos Cliente do Office</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>Formulários</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>Diversos</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>Meu Site: Início</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>Meu Site: Meio Esquerdo</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>Meu Site: Meio Direito</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>Meu Site: Fim</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>Classificar por Url</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>Classificar por Título</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>Recurso DiscoPage do Portal</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>Recurso do portal que define a propriedade DiscoPage do serviço Web padrão como spsdisco.aspx.</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>Página inicial com zonas de Web Part</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>Filtro de Propriedade do Perfil</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>Controle de Captura de Diretório de Site Mestre do SharePoint Portal Server</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>Controle de Captura de Diretório de Site Mestre do SharePoint Portal Server.</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>Este layout de página contém um campo de imagem à esquerda, um campo rich text e zonas de Web Part organizadas em uma coluna à direita, no cabeçalho, no rodapé e em 2 colunas.</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>Este layout de página contém zonas de Web Part organizadas em um cabeçalho, rodapé e 2 colunas.</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>Este layout de página contém zonas de Web Part organizadas em uma coluna à direita, no cabeçalho, no rodapé e em 2 colunas.</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>Este layout de página contém um controle guia. Ele tem zonas de Web Part organizadas em um cabeçalho, rodapé e 2 colunas. </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>Este layout de página contém zonas de Web Part organizadas em um cabeçalho, rodapé, 2 colunas e 3 linhas.</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>Este layout de página contém um controle guia. Ele tem zonas de Web Part organizadas em um cabeçalho, rodapé e 2 colunas.</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>Este layout de página contém um controle guia e uma Web Part de caixa de pesquisa. Ele tem zonas de Web Part organizadas em um cabeçalho e rodapé.</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>Este layout de página contém um controle guia e Web Parts de pesquisa. Ele tem zonas de Web Part organizadas em uma coluna à direita, no cabeçalho, no rodapé, 2 colunas e 2 linhas.</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>Este layout de página contém um controle guia. Ele tem zonas de Web Part organizadas em uma coluna à direita, no cabeçalho, no rodapé, 2 colunas e 2 linhas.</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>Este layout de página contém zonas de Web Part organizadas em uma coluna à direita, no cabeçalho, no rodapé e em 2 colunas.</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>Homem trabalhando no computador</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>Recurso Layouts do Meu Site</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>Recurso de Meu Site que carrega todos os layouts na galeria de páginas mestras.</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>Escolha uma tarefa que precisa ser executada</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>Recurso Layouts do Meu Site</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>O recurso Meu Site que carrega todos os layouts na galeria da página mestra</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>Recurso de Carregamento de Arquivo de Atualização do Portal</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>Recurso do portal que carrega apenas arquivos de atualização.</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>Esta é uma postagem de blog de exemplo. Normalmente, ele seria preenchido com uma postagem do usuário.</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>Postagem de Exemplo</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>Usuário de Exemplo</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>Exemplo</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>Todas as Marcas</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>Mostra marcas aplicadas por todos os usuários</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>Minhas Marcas</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>Mostra as Marcas Aplicadas pelo Usuário Atual</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>Nuvem de Marcas</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>Exibe os assuntos mais populares que estão sendo marcados dentro da organização.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>Marcas de Todos</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>Minhas Marcas</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>Links Recomendados (somente M1)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>Exibe informações de Meu Indicador</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>Navegador da Organização</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>Esta Web Part exibe cada pessoa na cadeia de subordinação, em um modo de exibição interativo otimizado para navegar em organogramas.</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>Classificações</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>Use este recurso para que os usuários possam classificar conteúdo.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>Classificação (0-5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>Valor médio de todas as classificações enviadas</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>Classificações</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>Número de Classificações</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>Número de classificações enviadas</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>Defina o local do diretório para listar novos sites.</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>Forneça sites a serem incluídos no escopo "Este Site e Sites Relacionados" dos resultados de pesquisa deste site.</value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>Configurações de classificação</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>Pessoas</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>Gerenciar Propriedades de Usuário</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>Gerenciar Perfis de Usuário</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>Gerenciar Subtipos de Usuário</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>Gerenciar Audiências</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>Agendar Compilação de Audiência</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>Compilar Audiências</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>Gerenciar Permissões de Usuário</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>Sincronização</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>Configurar Conexões de Sincronização</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>Configurar Sincronização</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>Organizações</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>Gerenciar Propriedades de Organização</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>Gerenciar Perfis de Organização</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>Gerenciar Subtipos de Organização</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>Definições de Meu Site</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>Configurar Meus Sites</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>Configurar Locais de Hosts Confiáveis</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>Configurar Site de Personalizações</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>Publicar Links em Aplicativos Clientes do Office</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>Gerenciar Marcas Sociais e Notas</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>Configurar marcação Social e de Experiência</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>Gerenciar Políticas</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>Provedor de Declarações de Pessoas e Organizações</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>Instala o provedor de declarações de Pessoas e Organizações.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>Provedor de Declarações de Grupos</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>Instala o provedor de declarações para Grupos.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>Provedor de Hierarquia de Declarações de Organizações</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>Instala o Provedor de Hierarquia de Declarações com base em Organizações.</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>Gerenciar Aplicativo de Perfil de Usuário</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>Aplicativo de Perfil de Usuário de Inquilino</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>Vincula a subpáginas de Gerenciamento de Aplicativo de Perfil de Usuário de Inquilino</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>Associação de Aplicativo de Perfil de Usuário de Inquilino</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>Associar Recurso de Aplicativo de Perfil de Usuário de Inquilino ao Modelo TenantAdmin</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>Configurar Trabalho de Timer de Sincronização</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>Iniciar Sincronização de Perfil</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>Lista Suspensa de Pesquisa</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>Ignorar cartão do contato</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>Meu News Feed</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>Meu Conteúdo</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>Meu Perfil</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>Visão Geral</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>Organização</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>Conteúdo</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>Marcas e Notas</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>Colegas</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>Associações</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>Painel Minhas Tarefas</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>Apresenta um painel no Meu Site de um usuário para gerenciar e interagir com suas tarefas, agregado a sites e sistemas.</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>Associação do Painel Minhas Tarefas</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>Esse recurso grampeia (conecta) o recurso de Painel Minhas Tarefas ao modelo de MeuSite.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>Documentos Compartilhados - ANTIGOS</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>Documentos Pessoais - ANTIGOS</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>Conteúdo Acompanhado</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>Acompanhamento de Conteúdo</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>O Acompanhamento de Conteúdo permite que os usuários assinem atualizações em seu feed para determinado documento</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>Assinatura de Conteúdo</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>Acompanhamento de Conteúdo</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>Contém uma referência a um item de conteúdo acompanhado</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>ID do Farm</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>Identificação do Site</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>Identificação de Web</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>ID da Lista</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>Identificação Exclusiva</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>Identificação do Item</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>URL</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>URL Pai</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>Tipo</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>Subtipo</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>URL do Ícone</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>Não Visível no Feed</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>Tem Feed</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>Sinalizadores</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>ProgID do Tipo de Arquivo</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>ProgID da Url do Servidor</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>Documentos Acompanhados</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>Sites Acompanhados</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>Siga documentos interessantes indo até eles e clicando em seguir.</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>Você ainda não seguiu qualquer Site. Para ver algo nesta lista, vá para um Site e clique no ícone Seguir.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>Esta biblioteca de documentos já foi usada para documentos que você quis compartilhar com outras pessoas. Agora é recomendável usar a nova biblioteca Meus Documentos para essa finalidade.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>Esta biblioteca de documentos já foi usada para documentos que você quis guardar para uso pessoal. Agora é recomendável usar a nova biblioteca Meus Documentos para essa finalidade.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>Esta lista conterá todos os itens que você optou por acompanhar.</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>Seguinte conteúdo</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>Habilita usuários a acompanhar documentos ou sites.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>Conteúdo sequência de grampeamento</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>Ativa o recurso Seguir Conteúdo em todo os conjuntos de sites.</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>Acompanhamento de Conteúdo</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>Habilita usuários a acompanhar documentos ou sites.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>Lista de Acompanhamento de Conteúdo</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>Recurso que encapsula a lista que habilita os usuários a seguirem conteúdo no SharePoint.</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>Acompanhamento de Conteúdo</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>Lista que habilita os usuários a acompanhar conteúdo no SharePoint.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>Recurso Biblioteca de Documentos do Meu Site</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>Aprimora a biblioteca de documentos do SharePoint existente para o Meu Site. Habilita novos modos de exibição, controle de versão leve, melhores informações contextuais e compartilhamento por item.</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>Documentos</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>Todos</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>Compartilhado comigo</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>Compartilhado com Todos</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>Campos de Compartilhamento</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>Compartilhamento</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>Compartilhamento</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>É Meus Documentos</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>É Meus Documentos</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>Compartilhado com Interno</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>Compartilhado com Interno</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>Manter minhas últimas edições</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>Permissões</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>Pesquisa indisponível. Tente novamente mais tarde. Se o problema persistir, contate o administrador do sistema.</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>A pesquisa está desabilitada no momento. Contate o administrador do sistema.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>Acompanhar</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>Siga esse documento e obtenha atualizações na sua news feed.</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>Gerenciamento de Trabalho</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>Classificado por</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>Usuários classificaram o item.</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>Classificações de usuários</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>Classificações de usuários para o item</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>Comentários sobre o Conteúdo</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Documentos</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>Funcionalidade de Projeto</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>Esse recurso adiciona a funcionalidade de gerenciamento de projeto para um site. Ele inclui tarefas, um calendário e Web parts na home page do site.</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>Meus Projetos</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>Pessoas</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>News Feed</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>Documentos</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>Tarefas</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>Pessoas</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>Sites</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>Sobre mim</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value>Sobre o(a) {0}</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>Meus Aplicativos</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>Ir para o Meu Site</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>Estou acompanhando</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>Compartilhado comigo</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>News Feed</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>Aplicativos</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>Mais aplicativos</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>News Feed</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>Exibe conversas e notificações de eventos do conteúdo e das pessoas que você segue nos sites do SharePoint e permite aos usuários enviar mensagens curtas e visíveis ao público.</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>Feed de Atividades</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>Exibe as conversas e atividades mais recentes de um usuário.</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>Microfeed</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>Lista de Armazenamento Persistente de MicroFeed do MeuSite</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>Lista de Armazenamento Persistente para Feed Publicado do MeuSite</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>Microfeed ContentTypes</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>Atualização do Site Pessoal MeuSite na navegação</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>Cria ou atualiza o site pessoal de um usuário ao navegar para o site Host do Meu Site.</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>Experiência na Primeira Execução de Meu Site</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>Hashtags de Tendências</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>Esta Web Part do lado cliente ajuda o usuário a localizar novo conteúdo social</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>Contagens seguidas</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>Exibe as contagens de usuários, conteúdo e marcas seguidos pelo usuário atual.</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>Pessoas</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>Exibe as pessoas que alguém está seguindo e quem as estão seguindo.</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>Linha do Tempo Configurada Manualmente</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>Mostra dados configurados manualmente em um modo de exibição de linha do tempo</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>Resumo do Projeto</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>Exibe informações sobre um projeto em uma visão geral de fácil leitura</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>Linha do Tempo Conectada</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>Use esta linha do tempo para mostrar um modo de exibição de alto nível dos dados de outra web part</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>Linhas do Tempo</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>Linha do Tempo do Site do Projeto</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>Use esta linha do tempo para criar um modo de exibição de alto nível das tarefas em um projeto</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>Web Parts do Site do Projeto</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>Web Parts úteis para o site do projeto e que o requerem</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>Centro de Trabalho em Equipe</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>O Centro de Trabalho em Equipe apresenta uma visão acumulada de todos os seus sites de projeto em um único local. O Centro de Trabalho em Equipe pode ser conectado à Web Part Linha do Tempo para criar uma visualização do seu portfólio de projetos.</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>Recurso de itens relacionados</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>Recurso de itens relacionados para a adição da funcionalidade de itens relacionados e recomendados a um conjunto de sites.</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>Recomendações do Formulário de Itens</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>Adiciona controle do CBS de recomendações a todos os formulários de exibição de itens.</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>Recomendações do Meu Site</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>Documentos e sites automaticamente recomendados por usuários para serem seguidos nos seus Meu Sites do SharePoint.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>A web part de recomendações sugere conteúdo que um usuário pode desejar seguir dentro de uma farm.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>Documentos Recomendados para Mim</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>Sites Recomendados para Mim</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>Pessoas recomendou-Me</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>A web part de recomendações sugere conteúdo que um usuário pode desejar seguir dentro de um farm.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>Documentos sugeridos para acompanhar</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>Sites sugeridos para acompanhar</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>Pessoas sugeridas a seguir</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>A web part de recomendações sugere conteúdo que um usuário pode desejar seguir dentro de um farm.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>Documentos Recomendados</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>Sites Recomendados</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>Pessoas recomendadas</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>Minhas Recomendações</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>Não é possível importar a Web Part Minhas Recomendações.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>Não é possível importar Web Part de Itens Relacionados.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>Itens Relacionados</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>Web Part de Itens Relacionados.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>Sugestões de Itens Relacionados</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>Web Part de Sugestões de Itens Relacionados.</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>Itens Relacionados</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>Novas Sugestões de Itens</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>Web Part de Novas Sugestões de Itens</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>Provedor de Configurações de Usuário do Perfil do Usuário</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>Este recurso provisiona o Provedor de Configurações de Usuário do Perfil do Usuário.</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>Caixa de Correio de Site</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>Caixa de Correio</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>O aplicativo de Caixa de Correio do Site o ajuda a manter emails e documentos juntos conectando seu site a uma caixa de correio do Exchange. Você pode exibir seu email no SharePoint e exibir documentos de site no Outlook.</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>Caixas de Correio de Sites</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>Habilita o provisionamento de uma caixa de correio do Exchange para sites neste farm e conecta os documentos do site ao Outlook.</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>Manter o email no contexto.</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>Compartilhe email em seu site e conecte documentos ao Outlook.</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>Suporte do Site do Projeto</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>Habilita a criação de Sites de Projeto neste Conjunto de Sites.</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>Controle de Marca para Sites de Projeto</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>Este recurso provisiona a Web Part de Marcação do Site do Projeto.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>Não é possível importar a Web Part de marcação.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>Web Part de Marcas</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>A web part Marcação permite aos membros de um site marcar e exibir as marcas nas páginas do site.</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>Projetos</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>Projeto</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>Novo</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>Criar um novo espaço de trabalho de projeto.</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>Abrir</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>Abra o projeto selecionado.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>No Espaço de Trabalho do Projeto</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>Abrir no Espaço de Trabalho do Projeto</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>No Project Professional</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>Abra o projeto selecionado no Microsoft Project. Se o projeto estiver com check-out para outra pessoa, ele será aberto como somente leitura. Se você tiver vários projetos selecionados, eles serão abertos em um novo projeto mestre.</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>Linha do Tempo</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>Adicionar à Linha do Tempo</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>Adicionar itens selecionados à linha do tempo.</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>Projeto</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>Proprietário</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>Data de Início</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>Data de Término</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>Atualizando lista de projetos...</value>
+  </data>
+  <data name="NextRefresh">
+    <value>A lista de projetos será atualizada em {0}</value>
+  </data>
+  <data name="RefreshNow">
+    <value>Atualizar Agora</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>Pesquisar esta lista...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>Escopo de Site de Projeto</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>Site e Abaixo</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>Conjunto de Sites</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>Inteligência Comercial</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>Relatório</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>O item é um relatório?</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>Dados</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>O item é uma fonte de dados?</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>Inteligência Comercial</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>Documento de Relatório</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>Crie um novo documento de relatório.</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>Biblioteca de documentos de relatório</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>Um lugar onde você pode criar e gerenciar documentos de relatório.</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>Biblioteca de documentos de relatório</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>Suporte de Pesquisa de Dados e Relatório</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>Fornece tipos de conteúdo, colunas de site e modelos de biblioteca necessários para dar suporte à Pesquisa de Relatório e Dados no Centro de Pesquisa Corporativo.</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>Recurso de Portal da Comunidade</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>Esse recurso adiciona funcionalidade de portal comunitário. Ele também provisiona páginas do portal comunitário.</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>Comunidades Populares</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>Site da Comunidade</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>Sobre Nós</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>Recurso de Site da Comunidade</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>Esse recurso adiciona a funcionalidade de comunidade, como categorias de discussão, reputação de pessoas e conteúdo e a lista de membros. Ele também provisiona páginas do site da comunidade que contêm essas listas e recursos.</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>Lista de Discussões</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>Use a lista de Discussão para reter as conversas em estilo de fórum, incluindo perguntas e respostas sobre tópicos relevantes à sua equipe, projeto ou comunidade.</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>Contagem de Ocorrências de Curtir Agregadas</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>Contagem de Classificações Agregadas</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>Número de Ocorrências de Curtir</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>Curtido por</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>Popularidade</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>Tópico Atualizado pela Última Vez por</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>Pontuação de Reputação do Autor</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>Número de Respostas do Autor</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>Número de Postagens do Autor</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>Número de Melhores Respostas do Autor</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>Data da última atividade do autor</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>Data da associação do autor</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>Status da associação do autor</value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>Nível 1</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>Nível 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>Nível 3</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>Nível 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>Nível 5</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>Categoria</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>Nome do Membro</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>Postado por</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>Tópico Atualizado pela Última Vez em</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Categorias</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>Infraestrutura do Site da Comunidade</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>Campos no nível de conjunto de sites, tipos de conteúdo e web parts necessários para listas de discussão, reputação, categorias e associação a uma comunidade.</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>Recurso de Lista de Categorias</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>Este recurso contém o modelo para a funcionalidade da lista de Categorias</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>Lista de Categorias</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>Lista de Categorias</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>Categoria</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(Descrição do Tipo de Conteúdo da Categoria)</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>Lista de Categorias</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>Elementos da Categoria</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>Modo de Exibição do Administrador</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>Modo de Exibição de Categoria Única</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>Nome da Categoria</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>O nome da categoria.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>Descrição</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>Sobre o que os membros da comunidade devem falar nesta categoria?</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>Imagem da Categoria</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>Adicione uma imagem que represente esta categoria.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>Discussões</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>Respostas</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>Última Postagem por</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>Data da Última Postagem</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>Categorias</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>Use a lista de Categorias para definir as categorias disponíveis para postagens na lista de discussão.</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>Geral</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>Se você não sabe onde postar, comece aqui.</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>Membro</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>Status</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>Status do Membro</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>Pendente</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>Ativo</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>Inativo</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>Bloqueado</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>Saiu</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>Tipos de Conteúdo da Comunidade</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>Associação do Site</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>Adicionar um novo membro</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>Associação do Site</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>Este recurso contém o esquema de lista e a instância de lista usada para gerenciar os membros dentro de um site como Comunidade, Projeto, Equipe, Educação</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>Modelo de Lista de Associação</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>Esquema do modelo de Lista de Associação do Site</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>Membros da Comunidade</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>Esta lista mantém um registro das atividades em andamento por membros e reputação acumulados nesta comunidade.</value>
+  </data>
+  <data name="members_Folder">
+    <value>Membros</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Discussao da Comunidade</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>Relatórios</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>Este recurso contém o esquema de lista e a instância de lista usada para gerenciar conteúdo ofensivo em um site da comunidade</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>Modelo de Lista de Relatórios</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>Esquema do modelo de Lista de Relatórios</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>Lista de Relatórios</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>Esta lista armazena comentários sobre um item de discussão enviados por pessoas que relataram o item como abusivo</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>AbuseReports</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>Relator</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>Comentários</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>Discussão</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>Relatórios</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>Pesquisa de Relatórios</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>Pesquisa de Relator</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>Pesquisa de Comentários</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>Postar</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>URL da página de tópico</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>Relatórios</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>Moderação</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>Examinar Postagens Relatadas</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>Examinar Relatórios</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>Examinar Relatórios</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>Analisar o conteúdo relatado com os comentários deixados por membros que o acharam ofensivo</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>Editar Postagem</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>Editar Postagem</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>Editar item de discussão relatado para remover conteúdo potencialmente ofensivo</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>Excluir Postagem</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>Excluir Postagem</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>Excluir o item de discussão que foi relatado como ofensivo, o que também remove os comentários associados deixados por membros que reclamaram do item</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>Ignorar Relatório</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>Ignorar Relatório</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>Ignorar os relatos associados ao item de discussão se você acha que ele é apropriado para a comunidade. Isso remove os comentários associados deixados por membros que o acharam ofensivo</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>Selos Especiais</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>Dar Selo</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>Dar Selo a um Membro</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>Dar Selo a um Membro</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>Ingressou em</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>Última Atividade</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>Melhores Respostas</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>Discussões</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>Respostas</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>Respostas para atingir o próximo nível</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>Pontuação de Reputação</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>Ocultar Reputação</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>Selo Especial</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>Texto do Selo Especial</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>Membro da Comunidade</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>Adicionar um novo membro da comunidade</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Selos</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>Selos</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>Esta lista armazena selos criados por administradores ou moderadores desta comunidade.</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>Nome do Selo</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>Especialista</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>Profissional</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>Administração da Comunidade</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>Gerenciar Discussões</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>Gerenciar discussões em uma comunidade.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>Gerenciar Categorias</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>Gerenciar categorias em uma comunidade.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>Gerenciar Membros</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>Gerenciar membros em uma comunidade.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>Configurações da Comunidade</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>Configurações da Comunidade como data estabelecida e habilitação de relatório de conteúdo ofensivo.</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>Gerenciar Postagens Relatadas</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>Gerenciar postagens relatadas como ofensivas.</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>Configurações de Reputação</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>Configurações de Reputação da Comunidade como reputação das pessoas e do conteúdo.</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>Comunidade</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>Ingressar</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>Não membros de um site de comunidade têm a opção de ingressar na comunidade. O botão não aparece quando o usuário já é um membro. Essa Web part funcionará em sites de Comunidade ou em qualquer outro site que possua Recursos de Comunidade ativados.</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>Sobre esta comunidade</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>Esta Web part exibe a descrição da comunidade e outras propriedades, como a data em que ela foi estabelecida. Essa Web part funcionará em sites de Comunidade ou qualquer outro site que possua Recursos de Comunidade ativados.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>Ferramentas</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>Fornece aos administradores e proprietários de comunidades links rápidos para páginas de configurações e listas de conteúdo comuns para gerenciar um site de comunidade. Essa Web part funcionará em sites de Comunidade ou em qualquer outro site que possua Recursos de Comunidade ativados.</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>Discussões em Destaque</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>O que está acontecendo</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>Exibe o número de membros, tópicos e respostas em um site de comunidade. Essa Web part funcionará em sites de Comunidade ou em qualquer outro site que possua Recursos de Comunidade ativados.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>Minha associação</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>Exibe informações de reputação e associação do visitante atual de um site de comunidade. Essa Web part funcionará em sites de Comunidade ou em qualquer outro site que possua Recursos de Comunidade ativados.</value>
+  </data>
+  <data name="MembersView">
+    <value>Modo de Exibição dos Membros</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>Modo de Exibição do Administrador</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>Modo de Exibição de Membro Único</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>Maiores Colaboradores</value>
+  </data>
+  <data name="NewMembersView">
+    <value>Novos Membros</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>Comunidade</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>Categorias</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>Membros</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>Sobre</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>Início</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>Postagens Relatadas</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>DiscussõesPorCategoria</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>DiscussõesCompletasPorCategoria</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>VisualizaçãodasDiscussõesPorCategoriaemDestaque</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>Recurso de Notificações de Blog</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>Esse recurso adiciona notificações a Blogs</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>Recurso de Grampeamento de Notificações de Blog</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>Esse recurso grampeia notificações de Blog e o recurso de curtições a modelos de site de Blog</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>{0}editar{1} seu perfil</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>Email</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>Telefone</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>Escritório</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>Em Comum</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>Mostra o que há em comum entre você e o usuário</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>Organograma</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>Mostra o organograma e a hierarquia de relatórios</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>Gerenciar Acompanhamento</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>Marcas e Notas</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>Exibe os assuntos mais populares que estão sendo marcados dentro da organização.</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>Informações do Perfil</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>Mostra informações básicas do perfil do usuário atual</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>Mover Documentos</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>Mova documentos selecionados para outro site ou para uma pasta dentro da biblioteca atual.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>Mover Documentos.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>Mova documentos selecionados para outro site ou para uma pasta dentro da biblioteca atual.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>Mova documentos selecionados para outro site ou para uma pasta dentro da biblioteca atual.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>Permissões de Site entre Farms</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>Use o recurso de permissões de site entre farms para permitir que aplicativos internos do SharePoint acessem sites entre farms.</value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>Somente para uso interno</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>Social</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>Propriedades do Microblog</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>Não Lido nas Menções</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>Última Postagem</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>Propriedades sociais</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>Item Acompanhado</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>Site</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>Documento Acompanhado</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>Armazenamento de Dados Sociais</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>Fornece suporte de dados para recursos sociais</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>Social</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>Fornece suporte de dados para recursos sociais</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>Recurso Mestre do Meu Site</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>Recurso Meu Site que carrega a página mestra para a Galeria de páginas mestras.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>Recurso de Navegação Unificada do Meu Site</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>Recurso Meu Site que mostra a mesma navegação para o host e os sites pessoais.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>Recurso de Início Rápido Único do Meu Site</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>O recurso do Meu Site que mostra o mesmo início rápido para os sites de host e pessoal.</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>Página Mestra de Meu Site</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>Apresenta a aparência exclusiva do Meu Site.</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>Sites Promovidos</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>Renderiza sites promovidos como ladrilhos.</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>novo site</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>Sites Promovidos</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>Gerenciar Sites Promovidos</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>Feed do site</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>Feed do Site contém conversas de microblog em um site do grupo.</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>News Feed</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>Feed do site</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>Permite o uso de feeds do site.</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>News Feed</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>Site Feed recurso controlador</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>Controla a ativação do recurso de feed do site.</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>Site Feed recurso grampeamento</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>Anexa o recurso de feed do site para todos os conjuntos de site  do novo Site da Equipe.</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>Microblog editar</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>Pode exibir, adicionar, atualizar e excluir itens de lista e documentos.</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>Alterar sua foto</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>Apenas {0} pode alterar esta foto.</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>Você não pode alterar a foto da pessoa porque ela é sincronizada com o Microsoft Exchange.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>Estou acompanhando</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>Pessoas</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>Ver as pessoas que você está seguindo</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>Documentos</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>Consulte os documentos que você está seguindo</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>Sites</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>Consulte os sites que você está seguindo</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>Marcas</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>Veja as marcas que você está acompanhando</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">{Assigner} atribuiu a você novas tarefas em {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">Foram atribuídas uma ou mais tarefas em {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>EXIBIR MINHAS TAREFAS</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>Seu SkyDrive Pro está pronto</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>Acessar seus documentos offline</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>Use o celular!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>Personalizar seu perfil</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>Manter-me em contato</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>Deixe que os outros saibam no que você está trabalhando</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>  &lt;a href="{0}"&gt;Atualize suas configurações de privacidade &lt;/a&gt; para que outras pessoas possam ver e comentar suas atividades no newsfeed do SharePoint.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>Seus documentos de Meu Site existentes foram movidos para o &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;, o lugar no SharePoint para armazenar, sincronizar e compartilhar seu trabalho.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>Você pode colocar documentos offline clicando no botão Sincronizar em qualquer biblioteca. Experimente no seu &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>Leve o SharePoint com você ao baixar os {0}aplicativos móveis{1}.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>Carregue uma foto e conte mais a seu respeito &lt;a href="{0}"&gt;aqui&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>Outras pessoas podem ver e comentar algumas de suas atividades no SharePoint. Você pode alterar as configurações &lt;a href="{0}"&gt; aqui&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>&lt;a href="{0}"&gt;Siga&lt;/a&gt; pessoas que são importantes para você.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>Seu newsfeed do SharePoint está pronto</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>Isto é o que você pode fazer a seguir:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>Obtendo o máximo proveito do SharePoint</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>Outras pessoas podem ver e comentar suas atividades no SharePoint. Você pode mudar as configurações &lt;a href="{0}"&gt; aqui&lt;/a&gt;.</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>SkyDrive Pro</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>Gerenciar aplicativos compartilhados</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>Exibir todas as bibliotecas e listas deste site.</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>News Feed</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>Bem-vindo ao  &lt;span id="skyDriveText"&gt;SkyDrive Pro&lt;/span&gt;, o local para armazenar, sincronizar e compartilhar seu trabalho. Seus documentos continuam particulares até você os compartilhar.&lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Saiba mais aqui&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>Ignorar</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>Todos em &lt;span id="skyDriveFolder"&gt;sua organização&lt;/span&gt; podem acessar os documentos aqui.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>Preparando seu SkyDrive Pro. Isso pode demorar um pouco, fique à vontade para sair.</value>
+  </data>
+</root>

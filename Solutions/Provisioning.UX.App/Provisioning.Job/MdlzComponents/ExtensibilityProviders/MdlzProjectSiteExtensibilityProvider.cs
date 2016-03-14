@@ -2,6 +2,7 @@
 using OfficeDevPnP.Core.Entities;
 using OfficeDevPnP.Core.Framework.Provisioning.Extensibility;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
+using Provisioning.Common.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,20 @@ namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
     {
         public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, string configurationData)
         {
-            List list = ctx.Web.GetListByUrl("Lists/TeamMembers");
-            if (list.Fields.Any(x => x.InternalName == "Person"))
-                list.CreateField(new FieldCreationInformation(FieldType.User) { InternalName = "Person", DisplayName = "Person", AddToDefaultView = true });
+            try
+            {
+                List list = ctx.Web.GetListByUrl("Lists/TeamMembers");
+                ctx.Load(list, x => x.Fields.Include(y => y.InternalName));
+                ctx.ExecuteQuery();
+
+                if (!list.Fields.Any(x => x.InternalName == "Person"))
+                    list.CreateField(new FieldCreationInformation(FieldType.User) { InternalName = "Person", DisplayName = "Person", AddToDefaultView = true });
+            }
+            catch (Exception ex)
+            {
+                Log.Error("MdlzProjectSiteExtensibilityProvider.ProcessRequest", ex.ToString());
+                throw;
+            }
         }
     }
 }

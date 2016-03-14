@@ -1,0 +1,3631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4569.1503" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>मुख पृष्ठ</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>नया SharePoint Server!</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>खोज चर्चाएँ</value>
+  </data>
+  <data name="SetupMySite">
+    <value>मेरी साइट सेटअप करें</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>श्रेणियों के लिए क्लिक करें</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>शीर्ष साइट्स के लिए क्लिक करें</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>साइट मैप के लिए क्लिक करें</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>श्रेणियाँ</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>शीर्ष साइट्स</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>साइट मैप</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>सभी साइट्स</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>सभी साइट से परिणामों के लिए क्लिक करें</value>
+  </data>
+  <data name="PeopleTab">
+    <value>लोग</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>लोगों के परिणामों के लिए क्लिक करें</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>चर्चाएँ</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>SharePoint Server उपयोग रिपोर्टिंग</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>उपयोगकर्ता रिपोर्टिंग</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>खोज उपयोग रिपोर्ट</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>साइट उपयोग रिपोर्ट</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>साइट संग्रह उपयोग रिपोर्ट</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>दस्तावेज़ लाइब्रेरी</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>इस क्षेत्र के लिए दस्तावेज़ संग्रहीत करने के लिए स्थान प्रदान करता है.</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>व्यावसायिक डेटा प्रोफ़ाइल टेम्पलेट</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>SharePoint शीर्ष नेविगेशन पट्टी</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>रिपोर्ट्स</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>डैशबोर्ड्स</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>नमूना</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>संसाधन</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>डेटा कनेक्शन</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>रिपोर्ट कैलेंडर</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>संदर्भ लाईब्रेरी</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>रिपोर्ट लाईब्रेरी</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>एक स्थान जहाँ आप आसानी से मीट्रिक्स, लक्ष्यों और व्यावसायिक इंटेलिजेंस जानकारी ट्रैक करने के लिए वेब पृष्ठ और दस्तावेज़ बना और प्रबंधित कर सकते हैं. </value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>स्थिति सूची</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>लक्ष्यों के किसी सेट को ट्रैक करने और दिखाने का एक स्थान. लक्ष्य किस डिग्री तक प्राप्त हुए हैं यह रंगीन चिह्न प्रदर्शित करते हैं.</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>वेब पॉर्ट पेजेज़ दस्तावेज़ लाईब्रेरी</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>वेब पॉर्ट पेज टेम्पलेट वाली कोई दस्तावेज़ लाईब्रेरी.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>रिपोर्ट्स लाईब्रेरी</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>रिपोर्ट लाईब्रेरी रिपोर्ट्स को प्रबंधित करने के लिए एन्हांस्ड समर्थन प्रदान करती है जो स्थिति संकेतक संकेतक और Excel कार्यपत्रक को प्रदर्शित कर सकते है.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>संदर्भ लाईब्रेरी</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>जानकारी के लिए लाईब्रेरी जो बताती है कि इस साइट का उपयोग कैसे करें.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>रिपोर्ट कैलेंडर</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>इस कैलेंडर का उपयोग इस क्षेत्र से संबंधित ईवेंट्स पोस्ट करने के लिए करें.</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>डेटा कनेक्शन</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>डेटा कनेक्शन लाईब्रेरी उन फ़ाइलों को जो उपयोगकर्ता को बाह्य डेटा स्रोत से कनेक्ट करने में सक्षम बनाती हैं, को साझा करना सरल बनाता है.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>घोषणाएँ</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>इस घोषणा सूची का प्रयोग इस क्षेत्र से संबंधित संदेशों को पोस्ट करने के लिए करें.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>रिपोर्ट केंद्र में आपका स्वागत है</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>रिपोर्ट केंद्र आपको व्यावसायिक जानकारी बनाने, वितरित करने और प्रबंधित करने में सक्षम बनाता है.</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>साइट टेम्पलेट गैलरी</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>नमूना संकेतक</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>नमूना स्थिति संकेतक जो डिफ़ॉल्ट रूप से इस रिपोर्ट केंद्र के मुख पृष्ठ पर प्रदर्शित होते हैं.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>नैतिक</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>उत्पादकता</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>व्यय</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>यह कोई नमूना संकेतक है, और सुरक्षित रूप से हटाया जा सकता है.</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>रिपोर्ट केंद्र</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>रिपोर्ट केंद्र का उपयोग कर रहा है</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>स्वरूपित पाठ, तालिकाओं और छवियों के लिए उपयोग करें.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>रिपोर्ट केंद्र सुविधाओं में शामिल हैं:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;मुख्य कार्यक्षमता संकेतक&amp;lt;/A&amp;gt; (KPIs) आपको लक्ष्य, रुझान जानने में और प्रगति का ट्रैक रखने में सक्षम बनाता है.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;डैशबोर्ड&amp;lt;/A&amp;gt; आपको Excel कार्यपुस्तिका और KPI के उपयोग से अपनी जानकारी का विस्तृत विवरण देने में सक्षम बनाते हैं. डैशबोर्ड फ़िल्टर जानकारी की किसी श्रे‍णी को देखने के लिए उसका चयन आसान बनाते हैं. अपना डैशबोर्ड बनाने के लिए रिपोर्ट्स लाइब्रेरी के&amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;डैशबोर्ड&amp;lt;/A&amp;gt; दृश्य पर जाएँ और 'नया' क्लिक करें.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>The &amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;रिपोर्ट्स&amp;lt;/A&amp;gt; लाइब्रेरी रिपोर्ट्स और डैशबोर्ड वाली फ़ाइलें संग्रहीत करने के लिए और पिछले समय खंडों से जानकारी पर आसान पहुँच स्वीकृत करने के लिए डिज़ाइन की गई है.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>इस रिपोर्ट केंद्र को उपयोग के लिए तैयार करने में निम्‍न क्रियाएँ सुझाई गई हैं:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>इस रिपोर्ट केंद्र की कुछ कार्यक्षमताएँ जानने के लिए नमूना &amp;lt;A &amp;gt;dashboard&amp;lt;/A&amp;gt; and &amp;lt;A&amp;gt;workbook&amp;lt;/A&amp;gt; देखें</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>यदि नमूने ठीक से कार्य न करें तो Excel Services की सक्षमता और इस रिपोर्ट केंद्र के विश्वसनीय स्थान की सुनिश्चितता के लिए किसी व्यवस्थापक से पूछें</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>यदि आपकी योजना मौजूदा डेटा सर्वर्स से जानकारी विश्लेषित करने के लिए Excel का उपयोग करने की है, तो डेटा कनेक्शन (ODC) फ़ाइलें बनाएँ और &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;डेटा कनेक्शन लाइब्रेरी पर&amp;lt;/A&amp;gt;अपलोड करें. यदि आप चाहते हैं कि उपयोगकर्ता नई KPI सूचियाँ बनाएँ, तो उन्हें "स्वामी" समूह में जोड़ें. "सदस्य" समूह के उपयोगकर्ता पृष्ठों को संपादित कर सकते हैं लेकिन KPI सूचियाँ नहीं बना सकते.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>नमूना सामग्री अद्यतन करें या निकालें</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>हाइलाइट</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>अधिक जानकारी</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>त्वरित संदर्भ निर्देशिका</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>संपर्क विवरण</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>इस पेज या साइट के लिए किसी संपर्क के बारे में विवरण दिखाने के लिए उपयोग किया जाता है.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>आने वाले ईवेंट्स</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>रिपोर्ट केंद्र पेज</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>स्थिति संकेतक</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>रिपोर्ट्स</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>वर्णन</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>वर्णन लक्ष्य के प्रायोजन के बारे में जानकारी देता है.</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>संकेतक टिप्पणियाँ</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>टिप्पणियाँ संकेतक की वर्तमान स्थिति का विवरण देती हैं, और कारणों और समस्याओं के बारे में जानकारी प्रदान कर सकती हैं.</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>संकेतक मान</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>संकेतक लक्ष्य थ्रेशहोल्ड</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>संकेतक चेतावनी थ्रेशहोल्ड</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>विवरण लिंक</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>क्लिक करने के द्वारा विवरण के लिए पृष्‍ट के लिए लिंक </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>निचले मान अच्छे हैं</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>देखें निचला अच्छा है या उच्च अच्छा है</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>स्वत: अद्यतन करें</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>हर समय बैकएंड डेटा प्राप्त करें या नहीं</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>त्रुटियाँ अद्यतन करें</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>पिछले अद्यतन से त्रुटि संदेश रखता है, यदि कोई हो</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>डेटा स्रोत</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>डेटा स्रोत को URL</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>दृश्य निर्देशिका</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>दृश्यों की निर्देशिका</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>नाम देखें</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>दृश्‍य का नाम</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>मान व्यंजक</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>संकेतक का मान निर्धारित करने के लिए उपयोग किया गया व्यंजक.</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>प्रतिशत व्यंजक</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>यह निर्धारित करें कि व्यंजक प्रतिशत का परिकलन करने के लिए उपयोग किया गया है या नहीं</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>मान पत्रक</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>मान के लिए पत्रक का नाम</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>कक्ष मान</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>मान के लिए कक्ष का पता या नाम</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>उद्देश्य पत्रक</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>उद्देश्य के लिए पत्रक का नाम</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>उद्देश्य कक्ष</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>उद्देश्य के लिए कक्ष का नाम और पता</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>चेतावनी पत्रक</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>चेतावनी के लिए प‍त्रक का नाम</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>चेतावनी कक्ष</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>चेतावनी के लिए कक्ष का नाम और पता</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>कार्य पुस्तिका के लिए उद्देश्य</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>उद्देश्य कार्यपुस्तिका से आता है या संकेतक परिभाषा से</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>कार्यपुस्तिका से चेतावनी</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>चेतावनी कार्यपुस्तिका से आती है या संकेतक जानकारी से</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>रुझान</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>संकेतक का रुझान</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>संकेतक स्थिति</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>संकेतक की स्थिति</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>फ़ोल्डर प्रदर्शित करें</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>संकेतक का प्रदर्शन फ़ोल्डर</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>संकेतक</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Microsoft SQL Server 2005 Analysis सेवाएँ KPI का नाम</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>चाइल्ड संकेतक शामिल करें</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>चाइल्ड KPI शामिल करने या न करने के लिए</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>स्वरूपित संकेतक मान</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>इसके डेटास्रोत प्रदाता से अद्यतन किए गए संकेतक का मान</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>स्वरूपित संकेतक उद्देश्य</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>इसके डेटास्रोत प्रदाता से अद्यतन किए गए संकेतक का उद्देश्य</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>स्वरूपित संकेतक चेतावनी</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>संकेतक का चेतावनी मान, इसके डेटा स्रोत प्रदाता द्वारा स्वरूपित किया गया</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>सबसे नए संकेतक डेटा अद्यतन</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>पिछले संकेतक को इसके डेटास्रोत प्रदाता से अद्यतन करें</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>रिपोर्ट वर्णन</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>रिपोर्ट की सामग्री का वर्णन</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>रिपोर्ट इतिहास में सहेजें</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>प्रत्येक बार यह दस्तावेज़ सहेजने पर इसकी कोई प्रतिल‍िपि रिपोर्ट इतिहास में जोड़ी जाएगी.</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>पेरेंट ID</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>इस रिपोर्ट का पेरेंट Id</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>स्वामी</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>इस दस्तावेज़ का स्वामी</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>रिपोर्ट श्रेणी</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>रिपोर्ट की श्रेणी</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>श्रेणी 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>श्रेणी 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>श्रेणी 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>रिपोर्ट स्थिति</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>रिपोर्ट की स्थिति</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>अंतिम</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>प्रारंभिक</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>अवधि से दिनांक तक</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>इतिहास</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>इतिहास देखें</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>नाम</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>नाम</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>नया</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>संशोधित रिपोर्ट लिंक</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>बनाई गई रिपोर्ट</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(स्नैपशॉट किए गए मान)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>इनके द्वारा बनाई गई रिपोर्ट</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>संशोधित रिपोर्ट</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>इसके द्वारा रिपोर्ट संशोधित की गई</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>रिपोर्ट पेरेंट का नाम</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(स्नैपशॉट के पेरेंट का नाम)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>रिपोर्ट से लिंक करें</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(संपादन मेनू वाली रिपोर्ट से लिंक करें)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>व्यवसाय इंटेलिजेंस</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>सामान्य संकेतक स्तंभ</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>निश्चित मान आधारित स्थिति संकेतक</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>मैन्युअली दर्ज जानकारियों का उपयोग करते हुए एक नया स्थिति संकेतक बनाएँ</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>SharePoint सूची आधारित स्थिति संकेतक</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>SharePoint सूची से डेटा का उपयोग करते हुए एक नया स्थिति संकेतक बनाएँ</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>Excel आधारित स्थिति संकेतक</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>Excel Services से डेटा का उपयोग करते हुए एक नया स्थिति संकेतक बनाएँ</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>SQL Server Analysis सेवाएँ पर आधारित स्थिति संकेतक</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>SQL Server Analysis सेवाएँ से डेटा का उपयोग करते हुए एक नया स्थिति संकेतक बनाएँ</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>रिपोर्ट</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>स्थिति सूची के साथ वेब पार्ट पेज</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>वह पेज बनाएँ जो स्थिति संकेतक और Excel कार्यपुस्तिका प्रदर्शित करता है.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Excel रिपोर्ट</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>डैशबोर्ड्स</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>वर्तमान रिपोर्ट्स</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>सभी रिपोर्ट्स और डैशबोर्ड्स</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>हाल ही में अद्यतन किया गया</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Excel फ़ाइलों के लिए विवरण रिपोर्ट पेज.</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>शीर्ष बायाँ ज़ोन</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>शीर्ष दायाँ ज़ोन</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>फ़िल्टर ज़ोन</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>कोई फ़िल्टर जोड़ें</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>निचला बायाँ ज़ोन</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>निचला मध्य ज़ोन</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>निचला दायाँ ज़ोन</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>शीर्ष ज़ोन</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>मध्य बायाँ ज़ोन</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>मध्य दायाँ ज़ोन</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>निचला ज़ोन</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>सभी आइटम</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>स्थिति सूची</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>स्थिति सूची</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>स्थिति संकेतकों की कोई सूची दिखाता है. स्थिति संकेतक आपके संगठन के लिए महत्वपूर्ण मापों को दर्शाते हैं, और यह दर्शाते हैं कि आपका संगठन आपके उद्देश्यों के संदर्भ में किस प्रकार कार्य कर रहा है.</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>स्थिति संकेतक विवरण</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>किसी एकल स्थिति संकेतक का विवरण दिखाता है. स्थिति संकेतक किसी संगठन के लिए कोई महत्वपूर्ण माप को दर्शाते हैं और अन्य डेटा स्रोतों जिनमें SharePoint सूचियाँ, Excel कार्यपुस्तिकाएँ, और SQL Server 2005 Analysis सेवाएँ KPI शामिल है से प्राप्त किया जा सकता है.</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>व्यावसायिक डेटा</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>हाँ</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>नहीं</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(रिक्त)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(सभी)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(अद्यतन)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>अद्यतन करें</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(रिक्त)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>आरोही क्रम में सॉर्ट करें</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>अवरोही क्रम में सॉर्ट करें</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>इसके आधार पर फ़िल्टर करें </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>इससे सॉर्ट करें </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>लक्ष्य किए गए श्रोता</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>लक्ष्य किए गए श्रोता (नियम-आधारित श्रोता; SharePoint समूह; वितरण सूचियाँ)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>लक्षित</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>लक्ष्य नहीं किया गया</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>वैश्विक श्रोताओं की अनुमति दें</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>वितरण सूचियों की अनुमति दें</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>SharePoint समूहों की अनुमति दें</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>साइट निर्देशिका</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>साइट मैप</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>श्रे‍णी में साइट्‍स</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>शीर्ष साइट्स</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>साइट्स निर्देशिका साइट्स का वह कैटलॉग है जो श्रेणियों में समूहीकृत किया जा सकता है. किसी साइट को साइट निर्देशिका में सबमिट करने के लिए, इस पृष्ठ के शीर्ष-दाएँ कोने पर कृपया या तो "साइट बनाएँ" या "साइट से लिंक जोड़ें" चुनें.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>शीर्ष साइट्स जोड़ने के लिए, साइट निर्देशिका सूची के लिए कोई लिंक जोड़ें, और यह लिंक किसी "शीर्ष साइट" के रूप में चिह्नित करें. साइट निर्देशिका के लिए कोई लिंक जोड़ना शुरु करें और इसे कोई शीर्ष साइट के रूप में सबमिट करें.</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>संबंधित लिंक्स क्षेत्र सेटिंग्स</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>चित्र के साथ समाचार लेख</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>समाचार लेखों को लिंक</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>वेब पार्ट ज़ोन</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>समाचार मुख पृष्ठ</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>साइट निर्देशिका मुख पृष्ठ</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>एंटरप्राइज़ सुविधाएँ सक्षम करें</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>डिफ़ॉल्ट</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>फ़िल्टर</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>व्यावसायिक डेटा</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>डैशबोर्ड</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>WSRP उपभोक्ता वेब पार्ट</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>वर्तमान उपयोगकर्ता</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>वर्तमान उपयोगकर्ता फ़िल्टर</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>वर्तमान उपयोगकर्ता के गुणों का उपयोग कर वेब पार्ट्स की सामग्री को फ़िल्टर करें.</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>पाठ फ़िल्टर</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>उपयोगकर्ताओं को कोई पाठ मान दर्ज करने की अनुमति देकर वेब पार्ट की सामग्रियों को फ़िल्टर करता है.</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>SharePoint सूची फ़िल्टर</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>मानों की सूची के उपयोग से वेब पार्ट्स की सामग्री फ़िल्टर करता है.</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>क्वेरीस्ट्रिंग</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>क्वेरी स्ट्रिंग (URL) फ़िल्टर</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>उन वेब पार्ट की सामग्रियाँ फ़िल्टर करता है जो क्वेरी स्ट्रिंग से भेजे गए मानों का उपयोग कर रहे हैं.</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>पेज फ़ील्ड</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>पेज फ़ील्ड फ़िल्टर</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>उन वेब पार्ट की सामग्रियाँ फ़िल्टर करता है जो वर्तमान पृष्ठ के बारे में जानकारी उपयोग कर रहे हैं.</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>SQL Server Analysis सेवाएँ फ़िल्टर</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>SQL Server Analysis सेवाएँ क्यूब से मानों की एक सूची का उपयोग कर वेब पार्ट्स की सामग्रियों को फ़िल्‍टर करता है.</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>स्थिति सूची</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>IView वेब पार्ट</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>संकेतक विवरण</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>दिनांक</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>दिनांक फ़िल्टर</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>उपयोगकर्ताओं को कोई दिनांक दर्ज करने या चुनने की अनुमति देकर वेब पार्ट की सामग्रियाँ फ़िल्टर करें.</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>व्यावसायिक डेटा सूची</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>व्यावसायिक डेटा कनेक्टिविटी में किसी डेटा स्रोत से आइटम्स की एक सूची‍ प्रदर्शित करता है.</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>इस वेब पॉर्ट को आयात नहीं कर सकता.</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>व्यवसाय डेटा कनेक्‍टिविटी ‍फ़िल्टर</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>व्यवसाय डेटा कनेक्‍टिविटी में से किसी मान सूची के उपयोग से वेबपार्ट की सामग्री ‍फ़िल्टर करता है.</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>व्यावसायिक डेटा आइटम</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>व्यावसायिक डेटा कनेक्टिविटी में किसी डेटा स्रोत से एक आइटम प्रदर्शित करता है.</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>व्यवसाय डेटा संबंधित सूची</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>व्यावसायिक डेटा कनेक्टिविटी में किसी डेटा स्रोत से एक या अधिक पेरेंट से संबंधित आइटम्स की एक सूची‍ प्रदर्शित करता है.</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>व्यावसायिक डेटा क्रियाएँ</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>व्यावसायिक डेटा कनेक्टिविटी से क्रियाओं की एक सूची‍ प्रदर्शित करता है.</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>व्यवसाय डेटा आइटम बिल्डर</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>क्वेरी स्ट्रिंग में पैरामीटर्स से कोई व्यवसाय डेटा आइटम बनाता है और इसे अन्य बेब पार्ट को प्रदान करता है.</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>पसंद फ़िल्टर</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>पृष्ठ लेखक द्वारा दर्ज किए गए मानों की सूची के उपयोग से वेब पार्ट्स की सामग्री ‍फ़िल्टर करता है.</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>मान 1&amp;मान 2&amp;मान 3=वर्णन 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>फ़िल्‍टर बटन लागू करें</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>इस बटन को पृष्ठ पर जोड़ें ताकि उपयोगकर्ता यह निर्णय कर सकें कि वे अपने फ़िल्‍टर पसंदों को कब लागू करें. अन्‍यथा, प्रत्‍येक फ़िल्‍टर तब लागू किया जाता है जब इसका मान परिवर्तित हो जाता है.</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>शीर्ष साइट्स</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>साइट निर्देशिका से शीर्ष साइट्स प्रदर्शित करता है.</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>समाचार</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>वर्तमान समाचार</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>समाचार रोल अप</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>चित्रों में यह सप्ताह</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>किसी छवि लाईब्रेरी से एक छवि प्रदर्शित करता है और किसी स्लाइड शो से लिंक करता है जहाँ से उपयोगकर्ता छवि लाईब्रेरी की सभी छवियाँ देख सके.</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>समाचार</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>नमूना समाचार आलेख</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>यह पेज इरादतन रिक्त छोड़ा गया है.</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>समाचार संग्रह</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>उद्योग समाचार</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>अधिक समाचार</value>
+  </data>
+  <data name="KPIList">
+    <value>स्थिति संकेतक सूची</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>कोई स्थिति संकेतक सूची, लक्ष्यों के किसी सेट को ट्रैक करने और दिखाने के लिए उपयोग किया जाता है. लक्ष्यों को किस डिग्री तक प्राप्त कर लिया है यह रंगीन चिह्न दिखाते हैं.</value>
+  </data>
+  <data name="EventsList">
+    <value>ईवेंट्‍स</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>मीटिंग्स, समय सीमा और इस क्षेत्र से संबंधित अन्य ईवेंट्स के बारे में जानकारी को पोस्ट करने के लिए ईवेंट्स सूची का उपयोग करें.</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>इस वेब पॉर्ट को आयात नहीं कर सकता.</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>मुख पृष्ठ</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>मुख्य पेज छवि वेब पॉर्ट</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>मुख्य पेज छवि दिखाएँ</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>मुख्य पेज छवि</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>सामग्री संपादक</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>लेखकों को रिच टेक्‍सट सामग्री दर्ज करने की अनुमति दें.</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>मुझे इसकी आवश्यकता है...</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>कर्मचारी देखें</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>कर्मचारियों के लिए खोज</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>सामग्री तालिका</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>साइट निर्देशिका सेटिंग्स</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>साइट निर्देशिका कॉन्‍फ़िगर करें</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>साइट निर्देशिका लिंक्‍स स्कैन करें</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>पेजेज़</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>साझा दस्तावेज़</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>व्यक्तिगत दस्तावेज़</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>साझा चित्र</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>उपयोगकर्ता के फ़ोटो</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>सभी उपयोगकर्ताओं के प्रोफ़ाइल चित्र यहाँ संग्रहीत होंगें.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>अपने वेबपार्ट पेजेज़ संग्रहीत करने के लिए ‍इस दस्तावेज़ लाईब्रेरी का उपयोग करें. वे आपके सार्वजनिक मुख पेज पर अपने आप साझा हो जाएँगे.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>अपने दस्तावेज़ संग्रहीत करने के लिए इस दस्तावेज़ लाईब्रेरी का उपयोग करें. यहाँ साझा किए गए दस्तावेज़ आपके सार्वजनिक मुख पेज पर प्रदर्शित होंगे.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>उन दस्तावेज़ों के लिए इस दस्तावेज़ लाईब्रेरी का उपयोग करें जिन्हें आप व्यक्तिगत उपयोग के लिए रखना चाहते हैं. वे केवल आपके और सर्वर के व्यवस्थापक के लिए दृश्‍यमान होंगे.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>इस चित्र लाईब्रेरी से जोड़ कर अपने चित्र और फ़ोटो दूसरों के साथ साझा करें. यहाँ संग्रहीत चित्र और छवियाँ आपके म‍ुख पेज पर साझा होगी.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>मेरी साइट के साथ प्रारंभ करें</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>मेरी साइट के उपयोग के विभिन्न संकेतों और युक्तियों से लिंक करता है.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>SharePoint साइट</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>उस साइट का विवरण जिसका उपयोगकर्ता सदस्य है</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>मेरा साइट मास्टर पेज</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>मेरी साइट की अनन्‍य दर्शनीयता और उस जैसा भाव प्रदान करता है.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>वर्तमान ब्लॉग पोस्ट</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>उपयोगकर्ता के लिए नवीनतम ब्लॉग पोस्ट</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>कोई नया पोस्ट जोड़ें</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>साझाकरण केंद्र</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>केंद्रीय वेब पार्ट जिसका उपयोगकर्ता आइटम्‍स को साझा करने के लिए उपयोग करेगा.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>हाल की गतिविधियाँ</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>वेब पार्ट जो मेरी नवीनतम गतिविधियाँ दिखाता है.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>मुझसे इस बारे में पूछें</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>वेब पार्ट जो कीवर्ड की किसी सूची को दिखाता है जिस पर अन्‍य मुझसे प्रश्न कर सकते हैं.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>मेरी लिंक्स</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>वे लिंक्स प्रदर्शित करें जो आपने बनाई है.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>मेरा कैलेंडर</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>Microsoft Exchange Server 2003 या बाद के संस्करण के लिए Outlook Web Access के उपयोग से अपना कैलेंडर प्रदर्शित करें.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>सहकर्मी ट्रैकर</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>अपने सहकर्मियों की कोई सूची और उनमें हाल ही में किए गए परिवर्तन प्रदर्शित करता है.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>मेरी सदस्यताएँ</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>आप जिन समूहों के सदस्य हैं उनको प्रदर्शित करता है.</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>उपयोगकर्ता प्रोफ़ाइल और मेरी साइट्स</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>श्रोता</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>उपयोगकर्ता प्रोफ़ाइल्स और गुण</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>श्रोता</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>प्रोफ़ाइल सेवा नीति</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>मेरी साइट सेटिंग्स</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>विश्वस्त मेरे साइट होस्ट स्थान</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Office क्लाइंट अनुप्रयोगों की प्रकाशित लिंक्स</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>वैयक्तिकरण साइट लिंक्स</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>वैयक्तिकरण सेवा अनुमतियाँ</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>संगठन डेलिगेशन सेटिंग्‍स</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>व्यावसायिक डेटा आइटम</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>व्यवसाय डेटा आइटम विवरणों के लिए वेब पार्ट</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>व्यावसायिक डेटा क्रियाएँ</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>व्यवसाय डेटा क्रियाओं प्रदर्शन के लिए वेब पार्ट</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>व्यावसायिक डेटा कनेक्‍टिविटी</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>अनुप्रयोग परिभाषा आयात करें</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>अनुप्रयोग देखें</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>निकाय देखें</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>प्रोफ़ाइल पृष्ठ टेम्पलेट को संपादित करें</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>व्यावसायिक डेटा कनेक्टिविटी अनुमतियाँ</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>एकल साइन-ऑन (SSO) के लिए सेटिंग्स कॉन्‍फ़िगर करें</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>टैब नाम</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>यह टैब लेबल पाठ है.</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>पेज</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>उस पेज का नाम लिखें जो इस टैब के भाग के रूप में प्रदर्शित होना चाहिए. यदि आपने पेज नहीं बनाया है, तब साइट क्रियाएँ में पेज बनाएँ विकल्प का उपयोग करते हुए पेज बनाएँ.</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>नई लिंक जोड़ें</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>टूल टिप</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>जब उपयोगकर्ता माउस संकेतक को इस टैब के उपर से ले जाता है तब यह टूलटिप प्रदर्शित होगा.</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>सभी टैब्स</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>शीर्षक</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>URL</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>वर्णन</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>स्वामी</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>प्रभाग</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>क्षेत्र</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>स्पॉटलाइट साइट</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>शीर्ष साइट</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>कार्य और उपकरण</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>लिंक स्थिति</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>ठीक</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>भंग</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>अस्पष्ट</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>शीर्ष कार्य</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>अंतर्राष्ट्रीय</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>राष्ट्रीय</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>स्थानीय</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>सूचना प्रौद्योगिकी</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>अनुसंधान &amp; विकास</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>विक्रय</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>वित्त</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>सभी साइट्स</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>सारांश</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>साइट्स प्रबंधित करें</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>सबमिट की गई साइट्स</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>श्रेणियाँ</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>अस्वीकार साइट्स</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>साइट बनाना श्रेणियाँ</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>भंग साइट्स</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>Microsoft® SharePoint® Server 2013 में आपका स्वागत है</value>
+  </data>
+  <data name="HomePageContent2">
+    <value>Microsoft SharePoint Server 2013 के नए संस्करण के साथ प्रारंभ करें:</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>साइट और सामग्री प्रबंधन</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>नए &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;पृष्ठ&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;साइट्स &lt;/a&gt;, और &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;सूचियाँ &lt;/a&gt; बनाएँ</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>"सदस्य" समूह के लिए पृष्ठ संपादन हेतु &lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;उपयोगकर्ता जोड़ें &lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>"मेरी साइट" पर क्लिक करके &lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;एक व्यक्तिगत साइट बनाएँ&lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>साइट्स, दस्‍तावेज़ और लोग पर &lt;a href="~SiteCollection/SearchCenter"&gt;खोजें&lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>व्यवसाय समाधान (एंटरप्राइज़ लायसेंस की आवश्यकता)</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>स्थिति संकेतक और रिपोर्ट्‍स बनाएँ</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>Excel Web Access वेब पार्ट के द्वारा कोई Excel कार्यपुस्तिका दिखाएँ</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>दस्तावेज़ लाईब्रेरी पर कोई InfoPath प्रपत्र परिनियोजित करें</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>कार्य चुनें</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>साइट्‍स की सूची</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>साइट सूचियाँ बनाने में इस सूची टेम्पलेट का उपयोग करें.</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>टैब सूची</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>टैब सूची बनाने में इस सूची टेम्पलेट का उपयोग करें.</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>इस दृश्य में दिखाने के लिए कोई आइटम नहीं हैं.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>श्रेणियाँ</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>साइट मैप</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>श्रे‍णी में साइट्‍स</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>मुख पृष्ठ</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>पोर्टल होम साइट</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>विषय</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>विषय वेब</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>भाग</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>विभाजन वेब</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>विक्रय</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>विक्रय वेब</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>अनुसंधान &amp; विकास</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>RD वेब</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>मानव संसाधन</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>मानव संसाधन वेब</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>उत्पाद</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>उत्पाद वेब</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>समाचार</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>कंपनी समाचार मुख पृष्ठ</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>साइट्स</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>साइट निर्देशिका वेब</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>खोजें</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>खोज केंद्र खोज परिणाम प्रदर्शित करता है</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>रिपोर्ट्स</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>रिपोर्ट केंद्र</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>WSRP व्यूअर</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>WSRP 1.1 के उपयोग से वेब साइट से पोर्टलेट्‍स प्रदर्शित करता है.</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>यह वेब पार्ट डेप्रिकेटेड है.</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>साइट्स</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>साइट और साइट श्रेणियों के लिंक संग्रहीत करने के लिए साइट सूची का उपयोग करें.</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>टैब्स</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>पृष्ठों को लिंक संग्रहीत करने के लिए टैब्स का उपयोग करें. टेब सूची आपकी साइट पर टेब नियंत्रण के साथ उपयोग होना चाहिए.</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>जाएँ</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>लक्ष्य किए गए श्रोता</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>लक्ष्य किए गए श्रोता</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>वैश्विक श्रोता की अनुमति दें</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>वितरण सूची की अनुमति दें</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>Sharepoint समूह की अनुमति दें</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>हाँ</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>नहीं</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>व्यक्तिगत</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>मेरी साइट</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>नेविगेशन</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>साइट निर्देशिका</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>रिपोर्ट केंद्र निर्माण</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>प्रीमियम साइट्स पर रिपोर्ट केंद्र बनाता है.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>पोर्टल लेआउट सुविधा</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>पोर्टल सुविधा जो सभी लेआउट्स को मास्टर पेज गैलरी पर अपलोड करती है.</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>समाचार संग्रह ब्राउज़ करें</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>स्वागत लेआउट</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>आपके नवीनीकरण के भाग के रूप में, आपने अब अपने SharePoint फ़ार्म पर अतिरिक्त स‍ुविधाएँ स्थापित की हैं. ये सुविधाएँ नई बनाई गई साइट पर सक्षम की जाएँगी, लेकिन मौजूदा साइट के लिए अभी तक उपलब्ध नहीं की गई हैं. आप इन सुविधाओं को अपनी सभी मौजूदा साइट्स पर 'मौजूदा साइट्स पर स‍ुविधा सक्षम करें' साइट पेज पर नेविगेट कर, उपलब्ध कर सकते हैं. यदि आपकी इच्छा इन सुविधाओं को सभी मौजूदा साइट्स पर उपलब्ध करने की नहीं है तो, आप इस कार्य को हटा सकते हैं. आप किसी भी समय इस कार्य को केंद्रीय व्यवस्थापन साइट में कार्रवाई पेज से कर सकते हैं. आप साइट के लिए साइट सेटिंग मेनू का उपयोग कर इन सुविधाओं को एकल साइट के लिए भी उपलब्ध कर सकते हैं.</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>मौजूदा साइट्स पर नई सुविधाओं को सक्षम करें</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>मौजूदा साइट्स पर सुविधाएँ सक्षम करें</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">अतिरिक्त नवीनीकरण कार्य</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">पुशडाउन सुविधा</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">मौजूदा साइटों पर नई सुविधाओं को सक्षम करने के लिए पुशडाउन सुविधा का उपयोग करें.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>RSS व्यूअर</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>RSS फ़ीड प्रदर्शित करता है.</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>मेरी SharePoint साइट्स</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>वह साइट्स जिनके आप सदस्य हैं और आपकी पसंद की साइट्स पर आपके द्वारा लिखे गए दस्तावेज़ों को दिखाने के लिए इसका उपयोग करें.</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>SharePoint दस्तावेज़</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>उपयोगकर्ता द्वारा लिखे गए दस्तावेज़ों को दिखाने के लिए, जहाँ उपयोगकर्ता साइट का सदस्य है इसका उपयोग करें.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>साइट एग्रीगेटर</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>आपकी पसंद की साइट प्रदर्शित करता है.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>क्षेत्र दस्तावेज़ लाईब्रेरी</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>क्षेत्र दस्तावेज़ लाईब्रेरीज़ वे फ़ोल्डर्स है जो अन्य लोगों से दस्तावेज़ों के साझाकरण को आसान बनाते हैं. प्रत्येक लाईब्रेरी दस्तावेज़ों को किसी सूची में प्रदर्शित करती है जिसे फ़िल्टर या संग्रहीत किया जा सकता है.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>नया क्या है</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>अपने सहकर्मियों की कोई सूची और उनमें हाल ही में किए गए परिवर्तन प्रदर्शित करता है.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>रूचि ट्रैकर</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>आपकी रूचि के क्षेत्र में नवीनतम गतिविधियों को प्रदर्शित  करता है.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>संपर्क विवरण</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>इस पेज या साइट के लिए किसी संपर्क के बारे में विवरण प्रदर्शित करता है.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>मेरे चित्र</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>स्लाइड शो के रूप में देखें विकल्प के साथ आपकी चित्र लाईब्रेरी से चित्र प्रदर्शित करता है.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>साझा चित्र</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>मेरे कार्यस्थान</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>आपके मेरी साइट्स के अंतर्गत बनाई गई साइट्स प्रदर्शित करता है.</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>मेरा मेल फ़ोल्डर</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>Microsoft Exchange Server 2000 के लिए Outlook Web Access के उपयोग से आपका मेल फ़ोल्डर प्रदर्शित करता है.</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>मेरा कैलेंडर</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>Microsoft Exchange Server 2003 या बाद के संस्करण के लिए Outlook Web Access के उपयोग से अपना कैलेंडर प्रदर्शित करें.</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>मेरा इनबॉक्स</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>Microsoft Exchange Server 2003 या बाद के लिए Outlook Web Access के उपयोग से आपका इनबॉक्स प्रदर्शित करता है.</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>मेरे कार्य</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>Microsoft Exchange Server 2003 या बाद के ‍लिए Outlook Web Access के उपयोग से आपके कार्य प्रदर्शित करता है.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>मेरे संपर्क</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>Microsoft Exchange Server 2003 या बाद के लिए Outlook Web Access के उपयोग से अपके संपर्क प्रदर्शित करता है.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>मेरी लिंक्स</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>आपकी लिंक प्रदर्शित करने में उपयोग करें</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>वेब पार्ट एडर डिफ़ॉल्ट समूह</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>किसी वेबपार्ट गैलरी में अतिरिक्त डिफ़ॉल्ट समूह QuickAddGroups स्तंभ जोड़ता है</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>लोड कर रहा है...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>मेनू खोलें</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>सदस्य</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>किसी समूह के सदस्यों को प्रदर्शित करने के लिए वेब भाग</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>वैश्विक वेब भाग</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>अतिरिक्त वेब भाग को स्थापित करता है जो सभी प्रकार की साइट्स में है.</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>मेरी साइट</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>मेरी साइट और उपयोगकर्ता प्रोफ़ाइल से संबंधित सुविधाओं को स्थापित करता है.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>मेरी साइट होस्ट</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>मेरी साइट को होस्ट करने से संबंधित सुविधाओं को स्थापित करें.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>संगठन के लोगो</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>संगठन लोगो के लिए साझा चित्र लाईब्रेरी</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>इस चित्र लाईब्रेरी का उपयोग संगठन के लिए लोगो संग्रहीत करने के लिए करें.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>मेरी साइट नेविगेशन</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>मेरी साइट के लिए नेविगेशन प्रदाता स्थापित करता है.</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>मेरी साइट व्यक्तिगत साइट कॉन्फ़िगरेशन</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>किसी उपयोगकर्ता की व्यक्तिगत साइट को कॉन्फ़िगर करता है.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>उपयोगकर्ता प्रोफ़ाइल व्यवस्थापन लिंक्स</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>उपयोगकर्ता प्रोफ़ाइल सेवा के व्यवस्थापन से संबंधित लिंक स्थापित करता है.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>उपयोगकर्ता प्रोफ़ाइल व्‍यवस्‍थापन मूलभूत लिंक्‍स</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>उपयोगकर्ता प्रोफ़ाइल सेवा का मूलभूत व्‍यवस्‍थापन से संबंधित लिंक्‍स को स्‍थापित करता है.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>सूची सामग्री लक्ष्य</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>श्रोताओं का उपयोग कर सामग्री लक्ष्य सक्षम करने के लिए सूची सेटिंग पेज पर कोई बटन स्थापित करें.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>श्रोता लक्ष्य सेटिंग्स</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>प्रोफ़ाइल सिंक्रनाइज़ेशन सुविधा</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>उपयोगकर्ता प्रोफ़ाइल के लिए कार्य और टीम साइट्स के साथ सदस्यता सिंक्रनाइज़ेशन स्थापित करता है.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>साझा सेवा प्रदाता उपयोगकर्ता माइग्रेटर</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>किसी उपयोगकर्ता की खाता जानकारी बदलने पर उपयोगकर्ता डेटा माइग्रेट करने के लिए संबंधित सुविधाएँ स्थापित करता है.</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>खोज</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>वैयक्तिकरण साइट्स क्या हैं...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>वैयक्तिकरण साइट किसी अनम्य और अलग वैयक्तिकरण अनुभव प्रदान करने में आपकी मदद के लिए डिज़ाइन की गई है जो आपके पोर्टल को उपयोगकर्ता की मेरी साइट से कनेक्ट करता है. वे कौन हैं और वे आपका पोर्टल क्यों देखते हैं पर आधारित अपने उपयोगकर्ता के लिए व्यक्तिगत और लक्षित जानकारी देने के लिए यह साइट उपयोग करें. वैयक्तिकरण साइट टेम्पलेट वर्तमान उपयोगकर्ता पहचानना में आपकी मदद करता है जो उस उपयोगकर्ता और उसका या उसकी आवश्यकता के लिए निर्दिष्ट है. यह आपको आपके उपयोगकर्ताओं को अपने पोर्टल का केंद्रीय दृश्य मुझे देने का अवसर देता है.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>&lt;i&gt;किसी उदाहरण के रूप में आप विभिन्न व्यावसायिक सि‍स्टम में पाई जाने वाली जानकारी अनवरोधित करने के लिए कोई वैयक्तिकरण साइट उपयोग कर सकते है और अपने साइट संरचना द्वारा, कोई वन स्टॉप शॉप अनुभव जो उपयोगकर्ताओं को जानकारी देखने और पहुँच के लिए आसानी से अनुमति देती है प्रदान करने के लिए उन्हें आवश्यक है कि वे उनके कार्य और काम करें.  या आप प्रदर्शन संकेतक और मैट्रिक द्वारा उपयोगकर्ता व्यवहार पता करने के लिए, अपनी वैयक्तिकरण साइट उपयोग कर कोई अनुभव दे सकेंगे जो आपके संगठन को इसके लक्ष्यों के साथ बेहतर संरेखण करने के लिए मदद करता है, जिसे भूमिका पर आधारित किसी अलग उपयोगकर्ता के लिए निर्दिष्ट रूप से सेट कर सकते हैं.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>अपनी वैयक्तिकरण साइट विकसित होने के बाद, अपने उपयोगकर्ताओं की मेरी साइट नेविगेशन पट्टी पर कोई स्थायी स्थान बनाने के लिए, अपनी वैयक्तिकरण साइट पंजीकृत करने के लिए अपने व्यवस्थापक से संपर्क करें.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>सामाजिक टैग्‍स और नोट बोर्ड रिबन नियंत्रण</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>रिबन उपयोगकर्ता इंटरफ़ेस में सामाजिक टैगिंग और नोट बोर्ड टिप्पणी देने के लिए प्रविष्टि पॉइंट्स जोड़ता है.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>टैग्‍स और नोट्स</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>TagsAndNotes</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>टैग्‍स और नोट्स</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>लिंक्स याद रखने तथा चयनित आइटम वर्गीकृत करने में टैग्स आपकी मदद करते हैं. नोट्स सार्वजनिक टिप्पणियाँ हैं. टैग्स तथा नोट्स आपके समाचार फ़ीड में प्रेषित किए जाते हैं और अलग साइट्स पर कार्य करते हैं.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>मुझे यह पसंद है</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>चयनित आइटम 'मुझे यह पसंद है' के साथ टैग करें. लिंक्स याद रखना तथा आपके समाचार फ़ीड में आइटम प्रेषित करना टैग्स के साथ आसान हो जाता है.</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>स्वामी</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>वर्णन</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>स्थिति</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>किसी निर्दिष्‍ट श्रेणी में साइट निर्देशिका में साइट्स प्रदर्शित करता है.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>साइट निर्देशिका से श्रेणियाँ प्रदर्शित करता है.</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>उपयोगकर्ताओं को प्रासंगिक स्‍थानों से विकल्‍पों की सूची को चुनने और नेविगेट करने की अनुमति देता है.</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>समाचार संग्रह</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>दस्तावेज़</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>उस साइट का विवरण जिसका उपयोगकर्ता सदस्य है</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>सहकर्मी</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>यह वेब पार्ट एक व्यक्ति के प्रोफ़ाइल पृष्ठ में जोड़ने के लिए डिज़ाइन किया गया है. यह उन सभी सहकर्मियों की सूची प्रदान करता है जिसे उपयोगकर्ता ने अन्‍य के साथ साझा किया है. यह सहकर्मिर्यों की सूची को प्रबंधित करने के लिए प्रोफ़ाइल के स्‍वामी को एक प्रविष्‍टि बिंदु प्रदान करता है.</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>नोट बोर्ड</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>इस पृष्ठ के बारे में उपयोगकर्ताओं को छोटे, सार्वजनिक देखने योग्य नोट्स छोड़ने में सक्षम करता है.</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>टैग किए गए आइटम्‍स</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>किसी विशिष्ट URL में किसी टैग्‍ा को लागू कर चुके लोगो को दिखाएँ</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>कनेक्ट हों</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>उन लोगों को दिखाता है जो किसी टैग को बार-बार उपयोग करते हैं या रूचि या अनुभव व्यक्त करते हैं.</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>संबंधित टैग्‍स</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>उन टैग्‍स को दिखाता है जो किसी विशिष्‍ट शब्‍द के साथ उपयोग किए गए हैं और टैग किए गए वेब पार्ट आइटम्‍स को फ़िल्‍टर करना सक्षम करते हैं</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>इस टैग के बारे में</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>किन्‍हीं विशिष्‍ट शब्‍दों के बारे में प्रबंधित टैक्‍सोनॉमी से मेटाडेटा प्रदर्शित करता है</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>हाल की गतिविधि</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>विशिष्‍ट शब्‍दों से संबंधित लोगों को दिखाएँ</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>आपके साथ समान</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>आपके और उपयोगकर्ता के मध्य क्या उभयनिष्ठ है, यह दिखाता है</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>मेरा संगठन चार्ट</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>आपके संगठन चार्ट और रिपोर्टिंग पदानुक्रम दिखाता है</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>सदस्यताएँ</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>आपकी साइट और वितरण सूची सदस्यता प्रदर्शित करता है.</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>लिंक्स</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>वह लिंक दिखाता है जो उपयोगकर्ता आपके साथ साझा कर चुका है</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>समूह</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>समूह विवरण प्रदर्शित करने के लिए वेबपार्ट</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>सदस्य</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>किसी समूह के सदस्यों को प्रदर्शित करने के लिए वेब भाग</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>सदस्य समूह</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>सदस्य समूहों को प्रदर्शित करने के लिए वेबपार्ट</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>नमूना लिंक 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>नमूना वर्णन</value>
+  </data>
+  <data name="imglibList">
+    <value>यह सप्ताह चित्र लाईब्रेरी में</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>इस क्षेत्र के लिए छवियाँ संग्रहीत करने के लिए स्थान प्रदान करता है.</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>नमूना लिंक 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>नमूना लिंक 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>दस्तावेज़ केंद्र</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>दस्तावेज़ केंद्र साइट</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(URL से लिंक्ड)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(संपादन मेनू से लिंक्ड)</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>सामग्री रोलअप</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Office क्लाइंट अनुप्रयोग</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>प्रपत्र</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>विविध</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>मेरी साइट: शीर्ष</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>मेरी साइट: मध्य बाएँ</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>मेरी साइट: मध्य दाएँ</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>मेरी साइट: नीचे</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>Url के आधार पर सॉर्ट करें</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>शीर्षक के आधार पर सॉर्ट करें</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>पोर्टल डिस्को पेज सुविधा</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>वह पोर्टल सुविधा जो डिफ़ॉल्ट वेब सेवा के डिस्को पेज गुण को spsdisco.aspx सेट करती है.</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>वेब पार्ट ज़ोन के साथ स्वागत पेज</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>प्रोफ़ाइल गुण फ़िल्टर</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>SharePoint पोर्टल सर्वर मास्टर साइट निर्देशिका कैप्चर नियंत्रण</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>SharePoint पोर्टल सर्वर मास्टर साइट निर्देशिका कैप्चर नियंत्रण.</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>इस पृष्‍ठ लेआउट में बाईं ओर कोई छवि फ़ील्ड, कोई रिच टेक्स्ट फ़ील्ड और किसी दाएँ स्तंभ, शीर्षलेख, पाद लेख, और 2 स्तंभों में व्यवस्थित वेब पार्ट ज़ोन हैं.</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>इस पृष्‍ठ लेआउट में शीर्षलेख, पाद लेख, और 2 स्तंभों में व्यवस्थित वेब पार्ट ज़ोन हैं.</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>इस पृष्ठ लेआउट में किसी दाएँ स्तंभ, शीर्ष लेख, पाद लेख, और 2 स्तंभों में व्यवस्थित वेब पार्ट ज़ोन हैं.</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>इस पृष्‍ठ लेआउट में कोई टैब नियंत्रण है. इसमें शीर्षलेख, पाद लेख, और 2 स्तंभों में व्यवस्थित वेब पार्ट ज़ोन हैं. </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>इस पृष्‍ठ लेआउट में शीर्ष लेख, पाद लेख, और 2 स्तंभों और 3 पंक्तियों में व्यवस्थित वेब पार्ट ज़ोन हैं.</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>इस पृष्‍ठ लेआउट में कोई टैब नियंत्रण है. इसमें शीर्षलेख, पाद लेख, और 2 स्तंभों में व्यवस्थित वेब पार्ट ज़ोन हैं.</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>इस पृष्‍ठ लेआउट में कोई टैब नियंत्रण और खोज बॉक्स वेब पार्ट है. इसमें शीर्ष लेख और पाद लेख में व्यवस्थित वेब पार्ट ज़ोन हैं.</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>इस पृष्‍ठ लेआउट में कोई टैब नियंत्रण और खोज वेब पार्ट्स हैं. इसमें दायाँ स्तंभ, शीर्ष लेख, पाद लेख, और 2 स्तंभों और 2 पंक्तियों में व्यवस्थित वेब पार्ट ज़ोन हैं.</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>इस पृष्ठ लेआउट में कोई टैब नियंत्रण है. इसमें दायाँ स्तंभ, शीर्ष लेख, पाद लेख, और 2 स्तंभों और 2 पंक्तियों में व्यवस्थित वेब पार्ट ज़ोन हैं.</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>इस पृष्ठ लेआउट में किसी दाएँ स्तंभ, शीर्ष लेख, पाद लेख, और 2 स्तंभों में व्यवस्थित वेब पार्ट ज़ोन हैं.</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>किसी कंप्यूटर पर आदमी कार्य कर रहा है</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>मेरी साइट लेआउट सुविधाएँ</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>मेरी साइट सुविधा जो मास्टर पेज गैलरी पर सभी लेआउट्स को अपलोड करती है.</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>कोई ऐसा कार्य चुनें जो आप करना चाहते हैं</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>मेरी साइट लेआउट सुविधाएँ</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>मेरी साइट सुविधा जो मास्टर पेज गैलरी पर सभी लेआउट्स को अपलोड करती है</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>पोर्टल अद्यतन फ़ाइल अपलोड विफलता</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>वह पोर्टल सुविधा जो केवल नवीनीकृत फ़ाइलें अद्यतन करती है.</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>यह कोई नमूना ब्लॉग पोस्ट है. यह किसी उपयोगकर्ता द्वारा किसी पोस्ट के साथ पारंपरिक रूप से भरी जाएगी.</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>नमूना पोस्ट</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>नमूना उपयोगकर्ता</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>नमूना</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>सभी टैग्‍स</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>सभी उपयोगकर्ताओं द्वारा लागू किए गए टैग्‍स दिखाएँ</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>मेरे टैग्‍स</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>वर्तमान उपयोगकर्ता द्वारा लागू किए गए सभी टैग्‍स दिखाएँ</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>टैग बादल</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>आपके संगठन में टैग किए हुए सबसे लोकप्रिय विषयों को दिखाता है.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>प्रत्येक के टैग्‍स</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>मेरे टैग्‍स</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>अनुशंसित लिंक्‍स (M1 केवल)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>मेरे बुकमार्क जानकारी को प्रदर्शित करता है</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>संगठन ब्राउज़र</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>यह वेब पार्ट रिपोर्ट चेन में प्रत्येक व्यक्ति को संगठनात्मक चार्ट्स ब्राउज़ करने के लिए ऑप्टिमाइज़ किए गए सहभागी दृश्‍य में प्रदर्शित करता है.</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>रेटिंग</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>सामग्री को रेट करने में उपयोगकर्ताओं को सक्षम करने के लिए इस सुविधा का उपयोग करें.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>रेटिंग (0-5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>सबमिट की गई सभी रेटिंग का औसत मान</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>रेटिंग</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>रेटिंग की संख्‍या</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>सबमिट की गई रेटिंग की संख्‍या</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>नई साइटों की सूची के लिए निर्देशिका के स्‍थान निर्धारित करें.</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>इस साइट के लिए खोज परिणामों के "यह और संबंधित साइटें" के क्षेत्र के साथ शामिल करने के लिए साइटों को उपलब्ध कराएँ.</value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>रेटिंग सेटिंग्‍स</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>लोग</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>उपयोगकर्ता के गुणों को प्रबंधित करें</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>उपयोगकर्ता प्रोफ़ाइल्‍स प्रबंधित करें</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>उपयोगकर्ता के उप-प्रकारों को प्रबंधित करें</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>श्रोताओं का प्रबंध करें</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>शेड्यूल श्रोता संकलन</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>श्रोताओं को संकलित करें</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>उपयोगकर्ता की अनुमतियों को प्रबंधित करें</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>सिंक्रनाइज़ेशन</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>सिंक्रनाइज़ेशन कनेक्शंस कॉन्फ़िगर करें</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>सिंक्रनाइज़ेशन सेटिंग्‍स कॉन्फ़िगर करें</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>संगठन</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>संगठन के गुणों का प्रबंध करें</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>संगठन की प्रोफ़ाइल्‍स का प्रबंध करें</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>संगठन के उप-प्रकारों का प्रबंध करें</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>मेरी साइट सेटिंग्‍स</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>मेरी साइट सेटअप करें</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>विश्वसनीय मेरे होस्ट स्थान कॉन्फ़िगर करें</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>वैयक्तिकरण साइट कॉन्फ़िगर करें</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>Office क्लाइंट अनुप्रयोगों से लिंक्‍स प्रकाशित करें</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>सामाजिक टैग्‍स और नोट्स प्रबंधित करें</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>सामाजिक और विशेषज्ञता टैगिंग कॉन्फ़िगर करें</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>नीतियाँ प्रबंधित करें</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>लोग और संगठन दावा प्रदाता</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>लोगों और संगठन के लिए दावा प्रदाता स्‍थापित करता है.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>समूह दावा प्रदाता</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>समूहों के लिए दावा प्रदाता को स्‍थापित करता है.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>संगठन का दावा पदानुक्रम प्रदाता</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>संगठन पर आधारित दावा पदानुक्रम प्रदाता स्थापित करता है.</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>उपयोगकर्ता प्रोफ़ाइल अनुप्रयोग प्रबंधित करता है</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>Tenant उपयोगकर्ता प्रोफ़ाइल अनुप्रयोग</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>Tenant उपयोगकर्ता अनुप्रयोग प्रबंधन के लिए उपपृष्ठों को लिंक करता है</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>Tenant उपयोगकर्ता प्रोफ़ाइल अनुप्रयोग स्टेपलिंग</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>Tenant उपयोगकर्ता प्रोफ़ाइल अनुप्रयोग सुविधा को Tenant व्‍यवस्‍थापन टेम्‍पलेट से स्‍टेपल करें</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>सिंक्रनाइज़ेशन टाइमर कार्य कॉन्फ़िगर करें</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>प्रोफ़ाइल सिंक्रनाइज़ेशन प्रारंभ करें</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>खोज ड्रॉपडाउन</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>संपर्क कार्ड छोड़ें</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>मेरा न्यूज़फ़ीड</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>मेरी सामग्री</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>मेरी प्रोफ़ाइल</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>ओवरव्यू</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>संगठन</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>सामग्री</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>टैग्स और नोट्स</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>सहकर्मी</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>सदस्यताएँ</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>मेरा कार्य डैशबोर्ड</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>अपने कार्यों को प्रबंधित करने और वार्तालाप करने के लिए, एग्रीगेटेड साइट और सिस्टम के साथ उपयोगकर्ता की मेरी साइट पर डैशबोर्ड प्रदान करता है.</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>मेरा कार्य डैशबोर्ड स्टैपलिंग</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>यह सुविधा मेरे कार्य डैशबोर्ड सुविधा को मेरी साइट टेम्पलेट पर स्टैपल (कनेक्ट) करती है.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>साझा दस्तावेज़ - पुराना</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>व्यक्तिगत दस्तावेज़ - पुराना</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>अनुसरण की गई सामग्री</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>निम्नलिखित सामग्री</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>सामग्री का अनुसरण उपयोगकर्ताओं को अपनी फ़ीड में किसी विशेष दस्तावेज़ के लिए अपडेट की सदस्यता प्राप्त करने की अनुमति देता है</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>सामग्री सदस्यता</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>सामग्री ट्रैकिंग</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>अनुसरण किए गए सामग्री आइटम में संदर्भ शामिल है</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>फ़ॉर्म Id</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>साइट Id</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>वेब Id</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>सूची Id</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>अद्वितीय Id</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>आइटम Id</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>url</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>पैरेंट Url</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>प्रकार</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>उप-प्रकार</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>चिह्न Url</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>फ़ीड में दृश्यमान नहीं</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>फ़ीड है</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>ध्वज</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>फ़ाइल प्रकार ProgID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>सर्वर Url ProgID</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>अनुसरण किए गए दस्तावेज़</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>अनुसरण की गई साइट्स</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>रोचक दस्तावेज़ों पर जाकर और अनुसरण करें पर क्लिक करके उनका अनुसरण करें.</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>आपने अभी तक किसी भी साइट्स का अनुसरण नहीं किया है. इस सूची में कुछ देखने के लिए साइट पर जाएँ और अनुसरण करें चिह्न पर क्लिक करें.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>यह दस्तावेज़ लाइब्रेरी पहले उन लोगों के लिए उपयोग की जाती थी, जिन्हें आप अन्य लोगों के साथ साझा करना चाहते थे. अब यह अनुशांसित किया जाता है कि आप इस उद्देश्य के लिए नई मेरी दस्तावेज़ लाइब्रेरी का उपयोग करें.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>यह दस्तावेज़ लाइब्रेरी पहले उन लोगों के लिए उपयोग की जाती थी, जिन्हें आप अपने व्यक्तिगत उपयोग के लिए रखना चाहते थे. अब यह अनुशांसित किया जाता है कि आप इस उद्देश्य के लिए नई मेरी दस्तावेज़ लाइब्रेरी का उपयोग करें.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>इस सूची में वे सभी आइटम शामिल है, जिन्हें आपने अनुसरण करने के लिए चुना है.</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>निम्न सामग्री</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>उपयोगकर्ताओं को दस्तावेज़ या साइट्स का अनुसरण करने में सक्षम करें.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>स्टैपलिंग का अनुसरण करने वाली सामग्री</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>सभी साइट संकलनों पर सामग्री का अनुसरण करने की सुविधा सक्रिय करें.</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>निम्नलिखित सामग्री</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>उपयोगकर्ताओं को दस्तावेज़ या साइट्स का अनुसरण करने में सक्षम करें.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>सूची की अनुसरण करने वाली सामग्री</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>वह सुविधा जो उस सूची को संपुटित करती है जो SharePoint में सामग्री का अनुसरण करने में उपयोगकर्ताओं को सक्षम करती है.</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>निम्नलिखित सामग्री</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>वह सूची जो SharePoint में सामग्री का अनुसरण करने के लिए उपयोगकर्ताओं को सक्षम करती है.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>मेरी साइट दस्तावेज़ लाइब्रेरी सुविधा</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>मेरी साइट के लिए मौजूदा SharePoint दस्तावेज़ लाइब्रेरी को एन्हांस करता है. नए दृश्यों, हल्के संस्करण, एन्हांस की गई प्रांसगिक जानकारी और प्रति आइटम साझा को सक्षम करता है. </value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>दस्तावेज़</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>सभी</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>मेरे साथ साझा किया गया</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>सभी के साथ साझा</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>फ़ील्ड साझा करना</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>साझाकरण</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>साझाकरण</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>यह मेरे दस्तावेज़ है</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>यह मेरे दस्तावेज़ है</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>आंतरिक के साथ साझा किया गया</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>आंतरिक के साथ साझा किया गया </value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>मेरे अंतिम संपादन रखें</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>अनुमतियाँ</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>वर्तमान में खोज अनुपलब्ध है. कृपया बाद में पुनः प्रयास करें. यदि समस्या बनी रहती है, तो अपने सिस्टम व्यवस्थापक से संपर्क करें. </value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>वर्तमान में खोज अक्षम है. कृपया अपने सिस्टम व्यवस्थापक से संपर्क करें. </value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>अनुसरण करें</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>इस दस्तावेज़ का अनुसरण करें और अपने न्यूज़फ़ीड में अद्यतन प्राप्त करें.</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>कार्य प्रबंधन</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>इसके द्वारा मूल्यांकित</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>उपयोगकर्ताओं ने आइटम का मूल्यांकन किया.</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>उपयोगकर्ता मूल्यांकन</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>आइटम के लिए उपयोगकर्ता मूल्यांकन</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>सामग्री प्रतिक्रिया</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Documents</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>प्रोजेक्ट कार्यक्षमता</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>यह सुविधा साइट पर एक प्रोजेक्ट प्रबंधन कार्यक्षमता को जोड़ती है. इसमें कार्य, कैलेंडर और साइट के मुख पृष्ठ पर वेब पार्ट शामिल हैं.</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>मेरे प्रोजेक्ट</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>लोग</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>न्यूज़फ़ीड</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>दस्तावेज़</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>कार्य</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>लोग</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>साइट्स</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>मेरे बारे में</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value> {0} इसके बारे में </value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>मेरे अनुप्रयोग</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>मेरी साइट पर जाएँ</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>मेरे द्वारा अनुसरण किया जा रहा है</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>मेरे साथ साझा किया गया</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>न्यूज़फ़ीड</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>अनुप्रयोग</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>अधिक अनुप्रयोग</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>न्यूज़फ़ीड</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>सामग्री के और उन लोगों के वार्तालाप और इवेंट सूचनाएँ दिखाएँ, जिनका आप पूरे SharePoint साइट पर अनुसरण करते हैं, और उपयोगकर्ताओं को छोटे, सार्वजनिक रूप से दृश्यमान संदेश भेजने दें.</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>गतिविधि फ़ीड</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>उपयोगकर्ता के सबसे ताज़ा वार्तालाप और गतिविधियाँ प्रदर्शित करता है.</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>माइक्रोफ़ीड</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>मेरी साइट माइक्रोफ़ीड निर्बाध संग्रहण सूची</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>मेरी साइट प्रकाशित फ़ीड के लिए निर्बाध संग्रहण सूची </value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>माइक्रोफ़ीड सामग्रीप्रकार</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>नेविगेशन पर MySite व्यक्तिगत साइट नवीनीकरण</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>मेरी साइट होस्ट साइट पर नेविगेशन पर किसी उपयोगकर्ता की व्यक्तिगत साइट बनाता या नवीनीकृत करता है.</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>मेरी साइट First Run अनुभव</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>रुझान वाले हैशटैग</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>यह क्लाइंट-साइट वेबपार्ट नई सामाजिक सामग्री को खोजने में उपयोगकर्ता की मदद करता है</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>अनुसरण की गई गणनाएँ</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>वर्तमान उपयोगकर्ता के लिए अनुसरण किए गए उपयोगकर्ताओं, सामग्री और टैग्स की गणना प्रदर्शित करता है.</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>लोग</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>उन लोगों को प्रदर्शित करता है, जिनका कोई अनुसरण कर रहा है, साथ ही उनका अनुसरण करने वाले लोगों को भी प्रदर्शित करता है.</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>मैन्युअल रूप से कॉन्फ़िगर टाइमलाइन</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>टाइमलाइन दृश्य में मैन्युअल रूप से कॉन्फ़िगर किया गया डेटा दिखाता है</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>प्रोजेक्ट सारांश</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>किसी प्रोजेक्ट के बारे में जानकारी को पढ़ने में आसान ओवरय्यू में  प्रदर्शित करता है</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>कनेक्टेड टाइमलाइन</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>किसी अन्य वेबपार्ट से डेटा का उच्च स्तरीय दृश्य दिखाने के लिए इस टाइमलाइन का उपयोग करें</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>टाइमलाइन</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>प्रोजेक्ट साइट टाइमलाइन</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>किसी प्रोजेक्ट में कार्यों का उच्च स्तरीय दृश्य को बनाने के लिए इस टाइमलाइन का उपयोग करें</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>प्रोजेक्ट साइट वेबपार्ट</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>इसके लिए उपयोगी वेब पार्ट और प्रोजेक्ट साइट की आवश्यकता</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>टीम कार्य केंद्र</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>टीम कार्य केंद्र एक एकल स्थान में आपकी सभी प्रोजेक्ट साइट्स का रोल अप दृश्य प्रदान करता है. टीम कार्य केंद्र आपके प्रोजेक्ट के पोर्टफ़ोलियो का दृश्यावलोकन बनाने के लिए टाइमलाइन वेबपार्ट से कनेक्ट किया जा सकता है.</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>संबंधित आइटम सुविधा</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>साइट संग्रह पर संबंधित आइटम जोड़ने के लिए और अनुशांसित साइट कार्यक्षमता के लिए संबंधित आइटम सुविधा.</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>आइटम प्रपत्र अनुशंसाएँ</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>सभी प्रदर्शन प्रपत्रों पर अनुशंसाएँ CBS नियंत्रण जोड़ता है.</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>मेरी साइट अनुशंसाएँ</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>उपयोगकर्ताओँ के SharePoint MySites पर अनुसरण करने हेतु उनके लिेए दस्तावेज़ों और साइट्स की स्वचालित रूप से अनुशंसा करता है.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>अनुशंसाएँ वेब पार्ट उस सामग्री का सुझाव देता है, जिसका एक उपयोगकर्ता किसी फ़ार्म में अनुसरण करना चाह सकता है.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>मेरे लिए अनुशंसित दस्तावेज़</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>मेरे लिए अनुशंसित साइटें</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>मुझे अनुशंसित किए गए लोग</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>अनुशंसाएँ वेब पार्ट उस सामग्री का सुझाव देता है, जिसका एक उपयोगकर्ता किसी फ़ार्म में अनुसरण करना चाह सकता है.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>अनुसरण करने के लिए सुझाए गए दस्तावेज़</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>अनुसरण करने के लिए सुझाई गई साइट्‍स</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>अनुसरण करने के लिए सुझाए गए लोग</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>अनुशंसाएँ वेब पार्ट उस सामग्री का सुझाव देता है, जिसका एक उपयोगकर्ता किसी फ़ार्म में अनुसरण करना चाह सकता है.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>अनुशंसित दस्तावेज़</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>अनुशंसित साइट्स</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>अनुशंसित लोग</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>मेरी अनुशंसाएँ</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>मेरी अनुशंसाएँ वेबपार्ट आयात करने में असमर्थ.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>संबंधित आइटम वेबपार्ट को आयात करने में अक्षम.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>संबंधित आइटम्स</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>संबंधित आइटम वेबपार्ट.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>संबंधित आइटम सुझाव</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>संबंधित आइटम सुझाव वेबपार्ट.</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>संबंधित आइटम्स</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>नए आइटम सुझाव</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>नए आइटम सुझाव वेबपार्ट</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>उपयोगकर्ता प्रोफ़ाइल उपयोगकर्ता सेटिंग्स प्रदाता</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>यह सुविधा उपयोगकर्ता प्रोफ़ाइल उपयोगकर्ता सेटिंग्स प्रदाता का प्रावधान करती है.</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>साइट मेलबॉक्स</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>मेलबॉक्स</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>साइट मेलबॉक्स अनुप्रयोग आपके Exchange मेलबॉक्स को आपकी साइट से कनेक्ट करके आपको ईमेल और दस्तावेज़ साथ रखने में सहायता करता है. आप तब अपने ईमेल को SharePoint पर और साइट दस्तावेज़ों को Outlook में देख सकते हैं. </value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>साइट मेलबॉक्स</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>इस फ़ॉर्म पर साइट के लिए Exchange मेलबॉक्स के प्रावधान को सक्षम करता है और साइट से दस्तावेज़ों को Outlook पर कनेक्ट करता है.</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>ईमेल संदर्भ में रखें.</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>अपनी साइट पर ईमेल साझा करें और दस्तावेज़ों को Outlook से कनेक्ट करें.</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>प्रोजेक्ट साइट समर्थन</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>इस साइट संग्रह में प्रोजेक्ट साइट्‍स के निर्माण को सक्षम बनाता है.</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>प्रोजेक्ट साइट्‍स के लिए टैग नियंत्रण</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>यह सुविधा प्रोजेक्ट साइट टैगिंग वेबपार्ट का प्रावधान करता है.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>टैगिंग वेबपार्ट आयात करने में अक्षम.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>टैग वेबपार्ट</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>वेबपार्ट टैग करना किसी साइट के सदस्यों को साइट में टैग करने और पृष्ठों पर टैग को देखने की अनुमति देता है.</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>प्रोजेक्ट</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>प्रोजेक्ट</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>नया</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>कोई नया प्रोजेक्ट कार्यस्थान बनाएँ.</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>खोलें</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>चयनित प्रोजेक्ट खोलें.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>प्रोजेक्ट कार्यस्थान में</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>प्रोजेक्ट कार्यस्थान में खोलें</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>प्रोजेक्ट प्रोफेशनल में</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>चयनित प्रोजेक्ट को Microsoft Project में खोलें. यदि प्रोजेक्ट को किसी और को चेक आउट किया गया है, तो वह केवल पढ़ने के लिए खोला जाएगा. यदि आपके पास एकाधिक प्रोजेक्ट चयनित हैं. तो वे एक नए मास्टर प्रोजेक्ट में खोले जाएंगे.</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>समयरेखा</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>समयरेखा में जोड़ें</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>टाइमलाइन में चयनित आइटम्स जोड़ें</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>प्रोजेक्ट</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>स्वामी</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>प्रारंभ दिनांक</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>समाप्ति दिनांक</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>प्रोजेक्ट सूची ताज़ी की जा रही है…</value>
+  </data>
+  <data name="NextRefresh">
+    <value>प्रोजेक्ट सूची का {0} पर अद्यतन किया जाएगा</value>
+  </data>
+  <data name="RefreshNow">
+    <value>अब ताज़ा करें</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>इस सूची में खोजें...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>प्रोजेक्ट साइट क्षेत्र</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>साइट और उससे नीचे</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>साइट संकलन</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>बिज़नेस इंटेलिजेंस</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>रिपोर्ट है</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>क्या आइटम एक रिपोर्ट है?</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>डेटा है</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>क्या आइटम कोई डेटा स्रोत है?</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>बिज़नेस इंटेलिजेंस</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>रिपोर्ट दस्तावेज़</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>कोई नया रिपोर्ट दस्तावेज़ बनाएँ.</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>रिपोर्ट दस्तावेज़ लाइब्रेरी</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>वह स्थान जहाँ आप रिपोर्ट दस्तावेज़ बना सकते और प्रबंधित कर सकते हैं.</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>रिपोर्ट दस्तावेज़ लाइब्रेरी</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>रिपोर्ट और डेटा खोज समर्थन</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>एंटरप्राइज़ खोज केंद्र में रिपोर्ट्स और डेटा खोज के समर्थन के लिए आवश्यक सामग्री प्रकार, साइट स्तंभ और लाइब्रेरी टेम्पलेट्स प्रदान करता है.</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>समुदाय पोर्टल सुविधा</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>यह सुविधा समुदाय पोर्टल कार्यक्षमता को जोड़ती है. यह समुदाय पोर्टल पृष्ठों के लिए भी प्रावधान करती है.</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>लोकप्रिय समुदाय</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>समुदाय साइट</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>हमारे बारे में</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>समुदाय साइट सुविधा</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>यह सुविधा समुदाय कार्यक्षमता जैसे चर्चा श्रेणियाँ, सामग्री और लोगों का प्रसिद्धि और सदस्य सूची को जोड़ती है. यह उन साइट पृष्ठों का भी प्रावधान करती है, जिनमें ये सूचियाँ और सुविधाएँ हैं.</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>चर्चाएँ सूची</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>आपकी टीम, प्रोजेक्ट या समुदाय से संबंधित विषयों पर प्रश्न और उत्तर सहित फ़ोरम शैली के वार्तालाप को बनाए रखने के लिए चर्चा सूची का उपयोग करें.</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>एकत्रित पसंद गणना</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>एकत्रित मूल्यांकन गणना</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>पसंदों की संख्या</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>इनके द्वारा पसंद किया गया</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>लोकप्रियता</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>अंतिम बार अद्यतन विषय </value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>लेखक का प्रसिद्धि स्कोर</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>लेखक के उत्तरों की संख्या</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>लेखक के पोस्ट की संख्या</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>लेखक के सर्वश्रेष्ठ उत्तरों की संख्या</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>लेखक का अंतिम गतिविधि दिनांक</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>लेखक की सदस्यता दिनांक</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>लेखक की सदस्यता स्थिति</value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>स्तर 1</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>स्तर 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>स्तर 3</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>स्तर 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>स्तर 5</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>श्रेणी</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>सदस्य का नाम</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>इनके द्वारा पोस्ट किया गया</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>अंतिम बार अद्यतन विषय</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Categories</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>समुदाय साइट संरचना</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>समुदाय में चर्चा सूचियाँ, प्रसिद्धि, श्रेणियाँ और सदस्यता के लिए आवश्यक साइट संग्रह स्तर फ़ील्ड, सामग्री प्रकार और वेबपार्ट.</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>श्रेणियाँ सूची सुविधा</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>इस सुविधा में श्रेणियाँ सूची कार्यक्षमता के लिए टेम्पलेट है</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>श्रेणियाँ सूची</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>श्रेणियाँ सूची</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>श्रेणी</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(श्रेणी सामग्री प्रकार विवरण)</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>श्रेणी सूची</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>श्रेणी टाइल्स</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>व्यवस्थापन दृश्य</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>एकल श्रेणी दृश्य</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>श्रेणी नाम</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>श्रेणी का नाम.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>वर्णन</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>इस श्रेणी में समुदाय के सदस्यों को किस बारे में बात करनी चाहिए?</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>श्रेणी चित्र</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>इस श्रेणी का प्रतिनिधित्व करने वाला कोई चित्र जोड़ें.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>चर्चाएँ</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>प्रत्युत्तर</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>इसके द्वारा अंतिम पोस्ट </value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>अंतिम पोस्ट दिनांक</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>श्रेणियाँ</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>चर्चा सूची पोस्ट के लिए उपलब्ध श्रेणियों को परिभाषित करने के लिए श्रेणियों का उपयोग करें.</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>सामान्य</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>यदि आप नहीं जानते कि कहाँ पोस्ट करना है, तो यहाँ से प्रारंभ करें.</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>सदस्य</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>स्थिति</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>सदस्य स्थिति</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>लंबित</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>सक्रिय</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>असक्रिय</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>अवरोधित</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>बायाँ</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>समुदाय सामग्री प्रकार</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>साइट सदस्यता</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>नया सदस्य जोड़ें</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>साइट सदस्यता</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>इस सुविधा में सूची स्कीमा और सूची आवृत्ति शामिल हैं, जिनका उपयोग किसी साइट के अंतर्गत समुदाय, प्रोजेक्ट, टीम ओर शिक्षण साइट में सदस्यों को प्रबंधित करने के लिए किया जाता है.</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>सदस्यता सूची टेम्पलेट</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>साइट सदस्यता सूची टेम्पलेट स्कीमा</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>समुदाय के सदस्य</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>यह सूची सदस्यों द्वारा जारी गतिविधि का और इस समुदाय में मिलने वाली प्रसिद्धि का रिकॉर्ड रखती है.</value>
+  </data>
+  <data name="members_Folder">
+    <value>Members</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Community Discussion</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>रिपोर्ट्‍स</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>इस सुविधा में सूची स्कीमा और सूची आवृत्ति शामिल हैं, जिनका समुदाय साइट में आपत्तिजनक सामग्री को प्रबंधित करने के लिए उपयोग किया जाता है</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>रिपोर्ट सूची टेम्पलेट</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>रिपोर्ट सूची टेम्पलेट स्कीमा</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>रिपोर्ट्स सूची</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>यह सूची किसी चर्चा आइटम के बारे में वे टिप्पणियाँ संग्रहीत करती है, जो उन लोगों द्वारा सबमिट किए गए है, जिन्होने आइटम को दुर्व्यवहार  के रूप में रिपोर्ट किया था</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>AbuseReports</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>रिपोर्टर</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>टिप्पणियाँ</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>चर्चा</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>रिपोर्ट्‍स</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>रिपोर्ट लुकअप</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>रिपोर्टर लुकअप</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>टिप्पणियाँ लुकअप</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>पोस्ट</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>विषय पृष्ठ URL</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>रिपोर्ट्‍स</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>सुधार</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>रिपोर्ट किए गए पोस्ट की समीक्षा</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>समीक्षा रिपोर्ट</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>समीक्षा रिपोर्ट</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>उन सदस्यों द्वारा टिप्पणियों के साथ समीक्षा सामग्री, जिन्होंने इसे आपत्तिजनक पाया था</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>पोस्ट संपादित करें</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>पोस्ट संपादित करें</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>संभावित आपत्तिजनक सामग्री निकालने के लिए रिपोर्ट चर्चा आइटम संपादित करें</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>पोस्ट हटाएँ</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>पोस्ट हटाएँ</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>उस चर्चा आइटम को हटाएँ, जिसे आपत्तिजनक के रूप में रिपोर्ट किया गया है. यह आइटम के बारे में शिकायत करने वाले सदस्यों की संबंधित टिप्पणियों को भी निकाल देगा</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>रिपोर्ट ख़ारिज करें</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>रिपोर्ट ख़ारिज करें</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>चर्चा आइटम के साथ संबंधित रिपोर्ट को ख़ारिज करें, यदि आपको लगता है कि यह समुदाय के लिए उपयुक्त है. यह उन सदस्यों द्वारा संबंधित टिप्पणियों को निकाल देगा, जिन्होने इसे आपत्तिजनक पाया</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>भेंट किए गए बैज</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>बैज दें</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>किसी सदस्य को बैज दें</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>किसी सदस्य को बैज दें</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>जुड़ा</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>अंतिम गतिविधि</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>श्रेष्ठ उत्तर</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>चर्चाएँ</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>प्रत्युत्तर</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>अगले स्तर तक पहुँचने के लिए उत्तर</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>प्रसिद्धि स्कोर</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>प्रसिद्धि छुपाएँ</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>भेंट किया गया बैज</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>भेंट किया गया बैज पाठ</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>समुदाय सदस्य</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>एक नया समुदाय सदस्य जोड़ें</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Badges</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>बैज</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>यह सूची इस समुदाय के व्यवस्थापकों या मॉडरेटर्स द्वारा बनाए गए बैज को सहेजती है.</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>बैज नाम</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>विशेषज्ञ</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>पेशेवर</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>समुदाय व्यवस्थापन</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>चर्चा प्रबंधित करें</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>किसी समुदाय में चर्चा प्रबंधित करें.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>श्रेणियाँ प्रबंधित करें</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>एक समुदाय में श्रेणियों का प्रबंधन करें.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>सदस्य प्रबंधित करें</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>समुदाय में सदस्य प्रबंधित करें.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>समुदाय सेटिंग्स</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>समुदाय सेटिंग जैसे आपत्तिजनक सामग्री की स्थापित दिनांक और रिपोर्टिंग सक्षम करना.</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>रिपोर्ट की गई पोस्ट प्रबंधित करें</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>आपत्तिजनक के रूप में रिपोर्ट किए गए पोस्ट प्रबंधित करें.</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>प्रसिद्धि सेटिंग्स</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>सामग्री और लोग प्रसिद्धि जैसी समुदाय प्रसिद्धि सेटिंग.</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>समुदाय</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>जोड़ें</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>समुदाय साइट के गैर-सदस्यों को समुदाय से जुड़ने की क्षमता प्रदान करता है. यदि उपयोगकर्ता पहले से ही सदस्य है तो वह बटन अपनेआप छुप जाता है. यह वेब पार्ट उन समुदाय साइट पर या किसी भी ऐसी अन्य साइट पर कार्य करता है, जिनमें सदस्यता सुविधा चालू हो.</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>इस समुदाय के बारे में</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>यह वेब पार्ट स्थापित दिनांक जैसे समुदाय वर्णन और अन्य गुणों को प्रदर्शित करता है. यह वेब पार्ट उन समुदाय साइट पर या किसी भी ऐसी अन्य साइट पर कार्य करता है, जिनमें सदस्यता सुविधा चालू हो.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>उपकरण</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>समुदाय स्वामी और व्यवस्थापकों को समुदाय साइट को प्रबंधित करने करने के लिए सामान्य सेटिंग्स पृष्ठों और सामग्री सूचियों में त्वरित लिंक प्रदान करता है. यह वेब पार्ट उन समुदाय साइट पर या किसी भी ऐसी अन्य साइट पर कार्य करता है, जिनमें सदस्यता सुविधा चालू हो.</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>फ़ीचर्ड चर्चाएँ</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>क्या हो रहा है?</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>किसी समुदाय साइट के अंतर्गत सदस्यों, विषयों और उत्तरों की संख्या  प्रदर्शित करता है. यह वेब पार्ट उन समुदाय साइट पर या किसी भी ऐसी अन्य साइट पर कार्य करता है, जिनमें सदस्यता सुविधा चालू हो.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>मेरी सदस्यता</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>किसी समुदाय साइट के वर्तमान आगंतुक के लिए प्रसिद्धि और सदस्यता जानकारी प्रदर्शित करता है. यह वेब पार्ट उन समुदाय साइट पर या किसी भी ऐसी अन्य साइट पर कार्य करता है, जिनमें सदस्यता सुविधा चालू हो.</value>
+  </data>
+  <data name="MembersView">
+    <value>सदस्य दृश्य</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>व्यवस्थापन दृश्य</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>एक सदस्य दृश्य</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>शीर्ष योगदानकर्ता</value>
+  </data>
+  <data name="NewMembersView">
+    <value>नए सदस्य</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>समुदाय</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>श्रेणियाँ</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>सदस्य</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>इसके बारे में</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>मुख पृष्ठ</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>रिपोर्ट किए गए पोस्ट</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>DiscussionsByCategory</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>DiscussionsByCategoryFeaturedFull</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>DiscussionsByCategoryFeaturedPreview</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>ब्लॉग अधिसूचना सुविधा</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>इस सुविधा के लिए ब्लॉग अधिसूचनाएँ जोड़ता है</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>ब्लॉग अधिसूचनाएँ स्टैपलिंग सुविधा</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>यह सुविधा ब्लॉग साइट टेम्पलेट पर ब्लॉग अधिसूचनाओं और पसंद सुविधा को स्टैप्ल करती है</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>अपनी प्रोफ़ाइल {0}संपादित करें{1}</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>ईमेल</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>फ़ोन</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>कार्यालय</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>इनमें सामान्य</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>आपके और उपयोगकर्ता के बीच क्या सामान्य है, यह दिखाता है"</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>संगठन चार्ट</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>आपके संगठन चार्ट और रिपोर्टिंग पदानुक्रम दिखाता है</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>निम्नलिखित प्रबंधित करें</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>टैग्स और नोट्स</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>आपके संगठन में टैग किए जा रहे सबसे लोकप्रिय विषयों को दिखाता है.</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>प्रोफ़ाइल जानकारी</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>वर्तमान उपयोगकर्ता के लिए आधारभूत प्रोफ़ाइल जानकारी दिखाता है.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>दस्तावेज़ ले जाएँ</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>चयनित दस्तावेज़ों को अन्य साइट पर या वर्तमान लाइब्रेरी के अंतर्गत किसी फ़ोल्डर में ले जाएँ.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>दस्तावेज़ ले जाएँ.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>चयनित दस्तावेज़ों को अन्य साइट पर या वर्तमान लाइब्रेरी के अंतर्गत किसी फ़ोल्डर में ले जाएँ.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>चयनित दस्तावेज़ों को अन्य साइट पर या वर्तमान लाइब्रेरी के अंतर्गत किसी फ़ोल्डर में ले जाएँ.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>क्रॉस-फ़ॉर्म साइट अनुमतियाँ</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>फ़ॉर्म पर वेबसाइट तक पहुँच प्राप्त करने के लिए आंतरिक SharePoint अनुप्रयोगों को अनुमति देने के लिए क्रॉस-फ़ॉर्म साइट अनुमति सुविधा का उपयोग करें. </value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>केवल आंतरिक उपयोग के लिए</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>सामाजिक</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>माइक्रोब्लॉग गुण</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>उल्लेख पर नहीं पढ़ा गया</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>अंतिम पोस्ट</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>सामाजिक गुण</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>अनुसरण किए गए आइटम</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>साइट</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>अनुसरण किया गया दस्तावेज़</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>सामाजिक डेटा संग्रहण</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>सामाजिक सुविधाओं के लिए डेटा समर्थन प्रदान करता है</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>सामाजिक</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>सामाजिक सुविधाओं के लिए डेटा समर्थन प्रदान करता है</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>मेरी साइट मुख्य सुविधा</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>मेरी साइट सुविधा जो मास्टर पृष्ठ गैलरी पर मास्टर पृष्ठ को अपलोड करती है.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>मेरी साइट पर एकीकृत नेविगेशन सुविधा </value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>मेरी साइट सुविधा जो होस्ट और व्यक्तिगत साइट्स के लिए समान नेविगेशन दिखाती है.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>मेरी साइट एकल त्वरित लॉन्च सुविधा</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>मेरी साइट सुविधा जो होस्ट और व्यक्तिगत साइट्स के लिए समान त्वरित लॉन्च दिखाती है.</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>मेरा साइट मास्टर पृष्ठ</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>मेरी साइट की अनन्‍य दर्शनीयता और भाव प्रदान करता है.</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>प्रमोट की गई साइटें</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>संवर्धित साइट को टाइल के रूप में रैंडर करता है.</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>नई साइट</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>प्रमोट की गई साइटें</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>संवर्धित साइट्स प्रबंधित करें</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>साइट फ़ीड</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>समूह साइट पर साइट फ़ीड में माइक्रोब्लॉगिंग वार्तालाप होते हैं.</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>न्यूज़फ़ीड</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>साइट फ़ीड</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>साइट फ़ीड्स का उपयोग सक्षम बनाता है.</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>न्यूज़फ़ीड</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>साइट फ़ीड सुविधा नियंत्रक</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>साइट फ़ीड सुविधा के सक्रियण को नियंत्रित करता है.</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>स्टैपलिंग करने की साइट फ़ीड सुविधा</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>साइट फ़ीड सुविधा को सभी नए टीम साइट संग्रहों पर स्टैपल करता है.</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>माइक्रोब्लॉग संपादित करें</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>सूची आइटम्स और दस्तावेज़ों को देखा, जोड़ा, अद्यतन किया और हटाया जा सकता है.</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>अपना फ़ोटो बदलें</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>केवल {0} इस फ़ोटो को बदल सकता है.</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>आप इस व्यक्ति का चित्र परिवर्तित नहीं कर सकते हैं क्योंकि इसे Microsoft Exchange के साथ सिंक्रनाइज़ किया गया है.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>मेरे द्वारा अनुगमित किए गए</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>लोग</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>आप जिन लोगों का अनुसरण कर रहे हैं उन्हें देखें</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>दस्तावेज़</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>आप जिन दस्तावेजों का अनुसरण कर रहे हैं उन्हें देखें</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>साइट्‍स</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>आप जिन साइट्स का अनुसरण कर रहे हैं उन्हें देखें</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>टैग्स</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>आप जिन टैग्स का अनुसरण कर रहे हैं, उन्हें देखें</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">{Assigner} ने आपको {TLNFSiteName} &gt; {TLNFListName} में नए कार्य असाइन किए हैं</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">आपको एक या अधिक कार्य {TLNFSiteName} &gt; {TLNFListName} में असाइन किए गए थे</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>मेरे कार्य देखें</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>आपका SkyDrive Pro तैयार है</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>अपने दस्तावेज़ों पर ऑफ़लाइन पहुँचें</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>गो मोबाइल!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>अपने प्रोफ़ाइल को व्यक्तिगत बनाएँ</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>संपर्क में रहें</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>दूसरों को जानने दें कि आप किस पर कार्य कर रहे हैं</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>  &lt;a href="{0}"&gt;अपनी गोपनीयता सेटिंग्स का अद्यतन करें&lt;/a&gt; जिससे SharePoint न्यूज़फ़ीड में अन्य लोग आपकी गतिविधियों को देख सकें और उनपर टिप्पणी दे सकें.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>आपके मौजूदा मेरी साइट दस्तावेज़ों को आपके &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt; में भेज दिया गया है, जो SharePoint में आपके कार्य को संग्रहीत करने, सिंक करने और साझा करने का स्थान है</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>आप किसी लाइब्रेरी के सिंक बटन पर क्लिक करके, दस्तावेज़ों को ऑफ़लाइन ले सकते हैं. इसे अपने &lt;a href="{0}"&gt;OneDrive&lt;/a&gt; पर आज़माएँ.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2">
+    <value>किसी भी लाइब्रेरी में सिंक करनें बटन क्लिक करके आप दस्तावेज़ ऑफ़लाइन ले सकते हैं. इसे अपने &lt;a href="{0}"&gt;{1} व्यापार के लिए&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>{0}मोबाइल अनुप्रयोग{1} डाउनलोड करके SharePoint अपने साथ ले जाएँ.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>कोई फोटो अपलोड करे और &lt;a href="{0}"&gt;यहाँ&lt;/a&gt; दूसरों को अपने बारे में और अधिक बताएँ.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>SharePoint में अन्य लोग आपकी कुछ गतिविधियों को देख सकते हैं और उन पर टिप्पणी कर सकते हैं. आप &lt;a href="{0}"&gt; यहाँ&lt;/a&gt; सेटिंग्स को परिवर्तित कर सकते हैं.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>अपने करीबी लोगों का &lt;a href="{0}"&gt;अनुसरण करें&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>आपका SharePoint न्यूज़फ़ीड तैयार है</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>आप आगे क्या कर सकते हैं यहाँ यह बताया गया है:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>SharePoint का सर्वाधिक लाभ लेना</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>SharePoint में अन्य लोग आपकी गतिविधियों को देख सकते हैं और उन पर टिप्पणी कर सकते हैं. आप &lt;a href="{0}"&gt; यहाँ&lt;/a&gt; सेटिंग्स को परिवर्तित कर सकते हैं.</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>व्यवसाय के लिए OneDrive</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>साझा अनुप्रयोगों को प्रबंधित करें</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>इस साइट में सभी लाइब्रेरीज़ और सूचियाँ देखें.</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>न्यूज़फ़ीड</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>आपके &lt;span id="skyDriveText"&gt;व्यवसाय के लिए OneDrive&lt;/span&gt;, में, आपका स्वागत है एक ऐसा स्थान जहाँ आप अपने कार्य को संग्रहीत, सिंक्रनाइज़ और साझा कर सकते हैं. दस्तावेज़ साझा नहीं किए जाने तक व्यक्तिगत रहते हैं. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;यहाँ अधिक जानें&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText2">
+    <value>आपके &lt;span id="skyDriveText"&gt; व्यवसाय के लिए {0}&lt;/span&gt;, में, आपका स्वागत है एक ऐसा स्थान जहाँ आप अपने कार्य को संग्रहीत, सिंक्रनाइज़ और साझा कर सकते हैं. दस्तावेज़ साझा नहीं किए जाने तक व्यक्तिगत रहते हैं. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutskyDrivePro")&gt;यहाँ अधिक जानें&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated">
+    <value>अच्छी खबर! आपके पास Office 365 पर व्यवसाय के लिए {0} भी है और वहाँ से आप कहीं से भी फ़ाइलों तक पहुँच प्राप्त कर सकते हैं. प्रारंभ करने के लिए शीर्ष नेविगेशन पट्टी में केवल {1} क्लिक करें. चिंता न करें, यहाँ आपकी फ़ाइलें भी कार्य करना जारी रखेंगी. अपनी फ़ाइलों को ले जाने के बारे में जानकारी के लिए {2}यहाँ क्लिक करें{3}.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated">
+    <value>चिंता न करें, आपकी फ़ाइलें सुरक्षित हैं. हम उन्हें Office 365 पर आपके नए व्यवसाय के लिए {0} पर ले गए हैं, जहाँ आप उन पर किसी भी डिवाइस पर कहीं से भी पहुँच प्राप्त करने में समर्थ रहेंगे. आप शीर्ष नेविगेशन पट्टी में {1} पर क्लिक करके वहाँ पहुँच सकते हैं.</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>ख़ारिज करें</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>&lt;span id="skyDriveFolder"&gt;आपके संगठन&lt;/span&gt; में सभी यहाँ दस्तावेज़ों तक पहुँच सकते हैं.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>आपके OneDrive को तैयार किया जा रहा है. इसमें कुछ समय लग सकता है, आप निसंकोच नेविगेट करें.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2">
+    <value>आपके व्यवसाय के लिए {0} को तैयार कर रहा है. इसमें कुछ समय लग सकता है, आप अन्यत्र नेविगेट कर सकते हैं.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription">
+    <value>अपने मौजूदा मेरी साइट दस्तावेज़ों को अपने व्यापार के लिए OneDrive पर ले जाएँ, एक ऐसा स्थान जहाँ आप अपने कार्य को संग्रहीत, सिंक्रनाइज़ और साझा कर सकते हैं.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2">
+    <value>अपने मौजूदा मेरी साइट दस्तावेज़ों को अपने व्यवसाय के लिए {0} पर ले जाएँ, अपना कार्य संग्रहीत करने, सिंक करने और साझा करने का स्थान.</value>
+  </data>
+</root>

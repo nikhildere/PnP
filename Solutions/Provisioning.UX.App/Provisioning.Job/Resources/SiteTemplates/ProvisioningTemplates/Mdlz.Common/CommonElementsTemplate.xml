@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
+  <pnp:Preferences/>
+  
+  <pnp:Templates ID="CONTAINER-Mdlz.Common">
+    <pnp:ProvisioningTemplate ID="Mdlz.Common">
+      <pnp:CustomActions>
+        <pnp:SiteCustomActions>
+          <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Description="Override new sub-site link"
+                    Location="ScriptLink"
+                    Title="CA_SITE_SUBSITE_OVERRIDE"
+                    ScriptSrc=""
+                    ScriptBlock="
+                    var SubSiteSettings_Web_Url = '{{$RemoteWebHostNameToken}}/pages/subsite/newsbweb.aspx?SPHostUrl=';
+                    var headID = document.getElementsByTagName('head')[0]; 
+                    var subsiteScriptTag = document.createElement('script');
+                    subsiteScriptTag.type = 'text/javascript';
+                    subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
+                    headID.appendChild(subsiteScriptTag);"/>
+        </pnp:SiteCustomActions>
+        <pnp:WebCustomActions>
+          <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
+                    Description="Site Classification Application"
+                    Group="SiteTasks"
+                    Location="Microsoft.SharePoint.SiteSettings"
+                    Title="Site Classification"
+                    Sequence="1000"
+                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
+                    Rights="31"/>
+          <pnp:CustomAction Name="CA_SITE_STDMENU_SITECLASSIFICATION"
+                    Description="Site Classification Module"
+                    Group="SiteActions"
+                    Location="Microsoft.SharePoint.StandardMenu"
+                    Title="Site Classification"
+                    Sequence="1000"
+                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
+                    Rights="31"/>
+          
+        </pnp:WebCustomActions>
+      </pnp:CustomActions>
+      
+      
+      <pnp:Providers>
+        <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzCommonExtensibilityProvider, Provisioning.Job" Enabled="true">
+        </pnp:Provider>
+      </pnp:Providers>
+      
+      <pnp:PropertyBagEntries>
+        <pnp:PropertyBagEntry Key="allowdesigner" Value="0" Overwrite="true" />
+        <pnp:PropertyBagEntry Key="allowmasterpageediting" Value="0" Overwrite="true" />
+        <pnp:PropertyBagEntry Key="allowrevertfromtemplate" Value="0" Overwrite="true" />
+        <pnp:PropertyBagEntry Key="showurlstructure" Value="0" Overwrite="true" />
+      </pnp:PropertyBagEntries>
+      <!--<pnp:Security>
+        <pnp:AdditionalAdministrators>
+          <pnp:User Name="krft\s-shpt"/>
+        </pnp:AdditionalAdministrators>
+      </pnp:Security>-->
+      <pnp:Features>
+        <pnp:WebFeatures>
+          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/>
+        </pnp:WebFeatures>
+      </pnp:Features>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

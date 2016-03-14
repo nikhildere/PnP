@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4448.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Ayrı Tutma Durumu</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>İlke Dışı</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Ayrı Tutma Durumu</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Etkin</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Serbest Bırakılmayı Bekliyor</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>Ayrı tutma durumunda</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Tarafımdan Kullanıma Alındı veya Değiştirildi</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Geçerli kullanıcı tarafından değiştirilen ve kullanıma alınan belgeleri görüntülemek için bu web bölümünü kullanın.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Tarafımdan Değiştirildi</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Geçerli kullanıcı tarafından değiştirilen belgeleri görüntülemek için bu web bölümünü kullanın.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Geçerli kullanıcıya atanan görevleri görüntülemek için bu web bölümünü kullanın.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Görevlerim</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>En Yüksek Dereceli Belgeler</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Bu web sitesinde en yüksek derecelendirmelere sahip belgeleri görüntülemek için bu web bölümünü kullanın.</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>En Yeni Belgeler</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Bu sitedeki ilk 10 en yeni belgeyi görüntülemek için bu web bölümünü kullanın</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Belgeler</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Belgeler</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Belge Merkezi</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Belge Merkezi Geliştirmeleri</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Site için ağaç görünümünde gezinme sağlar.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Belge Merkezi'ne Hoş Geldiniz</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Belgeleri oluşturmak, üzerinde birlikte çalışmak ve depolamak için bu siteyi kullanın. Bu site, ekip içinde belgeler yazmak için bir ortak çalışma deposu veya birden çok ekibin aralarındaki belgeler için bir Bilgi Bankası olabilir.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Katkıda Bulunanlar ve Ziyaretçiler</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Site Yöneticileri</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Belgeyi Karşıya Yükle</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Site koleksiyonu ilkeleri</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>İçerik Türü İlkesi Şablonları</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Site koleksiyonu denetim ayarları</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Bilgi Yönetimi İlkesi Yapılandır</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Bilgi Yönetimi İlkesi Kullanım Raporlarını Gözden Geçir</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Bilgi yönetimi ilkesi ayarları</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>Bekletme</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>İşlenmek üzere içeriği otomatik olarak zamanlama ve son tarihine ulaşılan içerik üzerinde bekletme eylemi gerçekleştirme.</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Bir dizi bekletme aşaması belirterek içeriğin nasıl yönetileceğini ve düzenleneceğini zamanlayın. Birden fazla aşama belirtirseniz, her aşama, bu sayfada göründükleri sırayla art arda gerçekleşir. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Not:&lt;/b&gt; Kitaplık ve Klasör Temelinde Bekletme özelliği etkinse, liste yöneticileri içerik türü ilkelerini kendi bekletme zamanlamalarıyla geçersiz kılabilir. Bunu önlemek için site koleksiyonunda bu özelliği devre dışı bırakın.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>Denetleme</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Belgelerdeki kullanıcı eylemlerini denetleyip öğeleri Denetim Günlüğü'ne listeler.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Bu ilkeye bağlı belgeler ve öğeler için denetlenecek olayları belirtin.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>Barkodlar</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Microsoft Office belgelerine eklenebilen benzersiz tanıtıcılar oluşturur. Belgeleri aramak için barkodlar da kullanılabilir.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Her belge veya öğeye barkod atar. İsteğe bağlı olarak, Microsoft Office uygulamaları kullanıcının belgelere bu barkodları eklemesini gerektirebilir.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Barkod</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Barkod Değeri</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>Bu öğeye atanan barkod.</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>Bu öğeye atanan barkodun değeri.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>Etiketler</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Belge özelliklerinin ve diğer önemli bilgilerin yazılı çıktılarda bulunmasını sağlamak üzere Microsoft Office belgelerine eklenebilecek etiketler oluşturur. Etiketler belgeleri aramak için de kullanılabilir.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>Belge hakkındaki önemli bilgilerin yazdırılan belgede bulunmasını sağlamak üzere belgeye etiket ekleyebilirsiniz. Etiketi belirtmek için, kullanmak istediğiniz metni "Etiket biçimi" kutusuna yazın. GUID veya CreatedBy gibi hesaplanan veya yerleşik özellikler dışında istediğiniz sabit metin veya belge özellikleri birleşimini kullanabilirsiniz. Yeni bir satır başlatmak için \n karakter dizilimini kullanabilirsiniz.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Etiket</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Etiketin geçerli değerini depolar.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (Kod 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>ANSI/AIM BC1-1995 (Kod 39) standardına uygun barkodlar oluşturur.</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Kayıt Merkezi Süre Sonu Eylemi</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Kayıt Merkezi sunucusuna gönderilen atılmış dosyaların süresinin dolmasını sağlar.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Kayıt ve gönderi bilgilerini sil</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Kayıt Merkezi'ne gönderilen kayıtları ve özgün kayıt gönderisine dahil edilen tüm ilişkili özellikleri ve denetim geçmişini siler.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Çeviri Belgesi</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Kaynak Belge</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Kaynak Belge Sürümü</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Çeviri Durumu</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Bu belge bir çeviriyse, kaynak belgenin hangi sürümünü temsil ettiğini belirtin. Çeviriyi yönetmek için Çeviri Yönetimi iş akışını kullanırsanız, iş akışı tamamlandığında bu bilgiler otomatik olarak ayarlanacak.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Bu belge bir çeviriyse, çeviri durumunu belirtin. Çeviriyi yönetmek için Çeviri Yönetimi iş akışını kullanırsanız, iş akışı tamamlandığında bu bilgiler otomatik olarak ayarlanacak.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Başlatılmadı</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>İşlemde</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Tamamlandı</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>İptal Edildi</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Güncelleştirmeler Gerekiyor</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Kaynak Belgeleri</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Diller ve Çevirmenler</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Çeviri Kaynağı</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Çeviri Hedefi</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Çevirmen</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Diller</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Ayrı Tutma ve eBulma</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Ayrı Tutma ve eBulma</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Ayrı Tut</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Ayrı Tut</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Bu özellik, öğelerin bırakılmasını askıya almanızı gerektiren dava, araştırma ve denetimler gibi dış eylemleri izlemek için kullanılır.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Ayrı Tutulanları Yönet</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(TODO) Ayrı Tutulanları Yönet</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>İçerik bul ve ayrı tut</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>İçerik bul ve ayrı tut</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Ayrı Tutma Raporları</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Ayrı Tutma Raporları</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Ayrı Tutmalar</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Ayrı Tutmalar</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Ayrı Tutmalar</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Belgelerin bırakılmasını askıya almanızı gerektiren dava, araştırma ve denetimler gibi dış eylemleri izlemek için bu listeyi kullanın. Bir öğenin bir veya daha fazla ayrı tutmaya yerleştirilmesi, öğeyi korur ve öğe artık hiçbir ayrı tutma tarafından yönetilmiyor oluncaya kadar öğenin bırakılmasını askıya alır.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Ayrı Tutma Raporları</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Bu kitaplık bu sitedeki tüm ayrı tutmalarla ilgili raporları içerir. Her rapor, ayrı tutmada olan öğeler gibi bilgileri ve ayrı tutma için gerçekleştirilmiş arama sorgularını içerir.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Ayrı Tutmayı Bulma Sorguları</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Yöneten</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Açıklama</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Ayrı Tutma Durumu</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>Site URL'si</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Ayrı Tutmalar</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>Ayrı Tutma Url'si</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Ayrı Tutmalara Göre Gruplandır</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Raporlama</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Microsoft SharePoint Foundation'daki bilgiler hakkında raporlar oluşturur.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Denetim günlüğü raporları</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>İş akışı raporlarını görüntüle</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Popülerlik Eğilimleri</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Popülerlik Eğilimleri</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Popülerlik Eğilimleri ve Arama Raporları</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>En Popüler Öğeler</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Raporlama Meta Verileri</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>Rapor Galerisi, bu site ve altındaki tüm siteler için kullanılabilir olan rapor türlerini depolar.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Raporlama Şablonları</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Rapor Şablonu Galerisi tarafından kullanılan dosyaları depolamak için Rapor Şablonu Dosyaları kitaplığını kullanın.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Kitaplık ve Klasör Temelinde Bekletme</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Liste yöneticilerinin içerik türü bekletme zamanlamalarını geçersiz kılmasına ve kitaplık ve klasörlerde zamanlamalar ayarlamalarına olanak sağlar.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Kayıt Yönetimi</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Microsoft SharePoint Foundation'a kayıt yönetimi ve bilgi yönetimi ilkesi yetenekleri ekleyin.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Koruma Listesi</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Koruma Ayrı Tutma Listesi oluşturmak için liste şablonu.</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>eBulma Koruma Liste Şablonu</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Koruma Ayrı Tutma Listesi oluşturmak için kullanılan liste şalonu.</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Ara Ve İşle</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Ara ve İşle zamanlayıcı işlerini hazırlar.</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Kayıt Merkezi Sitesi</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Kayıt Merkezi'ne Hoş Geldiniz</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Uzun dönem arşivleme için depolanacak önemli belgeleri göndermek ve bulmak için bu siteyi kullanın. Gönderilen kayıtlar doldurduğunuz özelliklere göre otomatik olarak doğru kitaplığa ve klasöre yerleştirilir.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Kayıt Gönder</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Gönderilmeyi Bekleyen Kayıtlarım</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Kayıt Merkezi ziyaretçilerine kayıt yönetimi ve kurumsal uyumluluk hakkında bilgi vermek için bu web bölümünü kullanın.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Kayıt yönetimi konularıyla ilgili olarak şunlar gibi bilgiler ekleyin:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Diğer kuruluş uyumluluk sitelerine bağlantılar ekleyin:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>Kuruluşunuzdaki bir kaydın tanımı</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>Kayıt Merkezine gönderildikten sonra bir kayda olanlar</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Kullanıcıların kuruluş ilkesine uymak için atabileceği adımlar</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Kuruluşunuzun uyumluluk eğitim sitesi</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> Kuruluş bekletme ilkeleriyle ilgili site</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> Her bölümle ilgili kayıt yönetimi kişilerinin listesi</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Kayıtları Gönder</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Belge Merkezi'ne hoş geldiniz.</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Yeni Belge Merkezinize hoş geldiniz. Bu siteyi kuruluşunuzdaki belgeleri merkezi olarak yönetmek için kullanın.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Bekletme Zamanlamasını Yönet</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Tüm klasörler için sona erme zamanlamasını yönetme amaçlı giriş noktası</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Uyumluluk Ayrıntıları</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Öğenin yaşam döngüsü boyunca bekletme ve diğer uyumluluk ayrıntılarını görüntülemek için araç çubuğu giriş noktası</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Dosya planı raporu oluştur</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Belge Kimliği Hizmeti</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>Site Koleksiyonundaki belgelere, geçerli konumlarından bağımsız olarak alınmaları için kullanılabilecek kimlikler atayın.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Belge Kimliği Ayarları</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Bu site koleksiyonunun belge kimliği ayarlarını yönet</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Belge Kimliğine Göre Bul</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Belge kimliğine göre belge bulur.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Belge Kimliği Değeri</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>Bu öğeye atanan belge kimliğinin değeri.</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>Belge Kimliği</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Bu belgeye yönelik kalıcı bağlantı.</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Teslim Kitaplığı</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>Özelikleri doldurulduktan sonra, bu kitaplığa yüklenen dosyalar bu sitenin sahibi tarafından oluşturulan kurallara göre doğru kitaplık veya klasöre otomatik olarak taşınır.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>İçerik Düzenleyici Kuralları</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Bu liste, içeriklerin bu sitede nasıl düzenleneceğine ilişkin bir plan oluşturmanıza yardımcı olur. Bu siteye gönderilen belgelerin doğru konuma gönderilmesini ve doğru özelliklere sahip olmasını sağlayan kurallar oluşturun.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Kural</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Bu siteye gönderilen içeriği doğru kitaplık veya klasöre taşıyan bir kural oluşturun.</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>İçerik Düzenleyici</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Bu siteye gönderilen içeriği doğru kitaplık veya klasöre taşıyan meta veri tabanlı kurallar oluşturun.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Belge Yönlendirme Kaynakları</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Bu site koleksiyonundaki siteler içinde belgeleri yönlendirmek için gereken kaynakları sağlayın.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Kayıt Kaynakları</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Bu site koleksiyonundaki sitelerde kayıt ve ayrı tutma oluşturmak için gereken kaynakları sağlayın.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Yerinde Kayıt Yönetimi</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Kayıtların yerinde tanımlanmasına ve bildirilmesine olanak sağlar.</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Belge ve Kayıt Yönetimi Sütunları</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>İçerik Düzenleyici İçerik Türleri</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Öncelik</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Etkin</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Kural Adı</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Açıklama</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Gönderme İçerik Türü</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Gönderme İçerik Türü (İç)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>Koşul XML</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Koşullarda Kullanılan Özellikler</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Diğer adlar</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Hedef Kitaplık</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Hedef Klasör</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Hedef Yol</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>Hedef Site URL'si</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Otomatik Klasör Oluşturma Özelliği</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Otomatik klasör yapılandırma verileri</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Özel Yönlendirici</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Dış Konuma Yönlendir</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Orijinal Özellikler</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>Konu</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Gönderen</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Kime</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>Kimden</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>Bilgi</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>Gizli</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Gönderme Tarihi</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Alınma Tarihi</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>E-posta Gönderme Sütunları</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>E-posta Gönderme</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Gönderilen E-posta Kayıtları</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Bu liste, alınan e-posta kayıtlarını geçici olarak depolamak için yönlendirici tarafından kullanılır.</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Bu içerik türünde, içerik düzenleyiciye e-posta gönderildiği zaman gönderilen ortak özelliklere karşılık gelen sütunlar vardır.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>Düzenleme İçin Kilitli</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Ayrı Tutma ve Kayıt Durumu</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Bildirilen Kayıt</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>İlkenin Dışında Tut</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Süre Sonu</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Özgün Süre Sonu Tarihi</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Ana Belge Kümesi Sütunları</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Açıklama</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>Belge Kümesinin açıklaması</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Belge Kümeleri</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Belge kümeleri oluşturmak ve kullanmak için gereken içerik türlerini sağlar. Birden fazla belgeyi tek bir çalışma ürünü olarak yönetmek istediğinizde bir belge kümesi oluşturun.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Belge Kümeleri meta veri eşitlemesi</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Belge kümeleriyle ilgili meta verileri eşitlemek için altyapı sağlar.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Belge Kümesi</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Belge Kümesi İçerik Türleri</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Birden fazla belgeyi tek bir çalışma ürünü olarak yönetmek istediğinizde bir belge kümesi oluşturun.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Karşılama Sayfasını Görüntüle</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Bu belge kümesine ait karşılama sayfasını görüntüler.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Belge Kümesi Ayarları</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Kopyasını indir</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Belge kümesi ve geçerli içeriğinin bir kopyasını indirin</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Başka bir konuma gönder</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Bu belge kümesi ve geçerli içeriğini başka bir konuma gönderin</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Sürüm Yakala</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Belge kümesinin geçerli içeriğinin bir sürümünü yakalar</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Belge Kümesi Sürüm Geçmişi</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Belge kümesinin sürüm geçmişini görüntüler</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Belge Kümesi Özellikleri</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Belge Kümesinin özelliklerini görüntüler.</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Belge Kümesi İçeriği</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Belge Kümesinin içeriğini görüntüler.</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Site İlkesi</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Site koleksiyonu yöneticilerinin bir siteye ve tüm içeriğine uygulanan bekletme zamanlamalarını tanımlamasına izin verir.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Proje İlkesi</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Proje İlke tanımlarına yönelik kapsayıcı içerik türü</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Site İlkeleri</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Site ilkeleri, bir sitenin ve içeriğinin yönetilme ve atılma şeklini tanımlar. İlkeler İçerik Türü Yayımlama mekanizması üzerinden Site Koleksiyonları arasında paylaşılabilir.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Site Kapatma ve Silme</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Bu sitede kullanılan bilgi yönetimi ilkesini görüntüleyin veya değiştirin ve site yaşam döngüsü eylemlerini yönlendiren tarihleri yapılandırın.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Proje İlkesi Öğe Listesi</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>Proje İlkesi Öğelerini depolamak için kullanılan, Proje Temelli Bekletme tarafından oluşturulan bir liste.</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Video ve Zengin Medya</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Depolama, yönetme ve görüntü, ses klipleri ile videolar gibi zengin medya varlıklarını görüntülemeye yönelik kitaplıklar, içerik türleri ve web bölümleri sağlar.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Video İşleme ve Kayıttan Yürütme Ayarları</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Video</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Videoyu karşıya yükleyin veya videoya bağlantı oluşturun.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Açıklama</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>Video özeti</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Sahip</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>Videonun sahibi</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Küçük Resim Zaman Dizini</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Varsayılan Kodlama</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Varsayılan Kodlama Kullanıcı Geçersiz Kılma</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Dış Bağlantı</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Ekleme Kodu</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>İndirme Bağlantısını Göster</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Video oynatıcı sayfasında kullanıcının oynatılan videoyu indirmesini sağlayan bir düğmenin görünüp görünmediğini belirtir.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Ekleme Bağlantısını Göster</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Video oynatıcıda kullanıcının oynatılan videoya ait ekleme kodunu almasını sağlayan bir düğmenin görünüp görünmediğini belirtir.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Çeviri Bilgileri</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Videodaki Kişiler</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>Videoda görünen kişiler.</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Meta Veri Gezinme ve Filtreleme</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Sitedeki her listeye, yer alan öğelerde gezinme ve filtrelemeyi geliştirmek amacıyla bu listeyi meta veri ağaç görünümü hiyerarşilerini ve filtre denetimlerini kullanacak şekilde yapılandırmaya yarayan bir ayar sayfası sağlar.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Meta veri gezinme ayarları</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Konum başına görünüm ayarları</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>"Office'e Bağlan" Şerit Denetimleri</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Kitaplıklarda en son Office sürümü yüklüyse, kullanıcının SharePoint Siteleri listesinde kitaplık kısayolları oluşturmak için şerit kullanıcı arabirimine girdi noktaları ekler. Office düzenli aralıklarla bu kitaplıklarda kullanılabilir olan şablonları kullanıcının yerel makinesinde önbelleğe alır.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Kitaplık/Eylemler sekmesine bir düğme ekler.</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Office'e Bağlan</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Office'e Bağlan</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Office'e Bağlan</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Word, Excel ve PowerPoint gibi Microsoft Office uygulamalarında belge oluştururken, açarken ve kaydederken görüntülenen kısayollarınıza ekleyin.</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>SharePoint Sitelerine Ekle</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>SharePoint Sitelerine Ekle</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Microsoft Office'teki bu kitaplığa bir kısayol ekleyin.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>SharePoint Sitelerinden Kaldır</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>SharePoint Sitelerinden Kaldır</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Bu kitaplığı Microsoft Office kısayolları listenizden kaldırın.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>SharePoint Sitelerini Yönet</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>SharePoint Sitelerini Yönet</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Microsoft Office kısayolları listenizi değiştirin.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>İçerik Düzenleyici ile E-posta Tümleştirmesi</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Sitenin belge yönlendiricisinin e-posta iletilerini kabul etmesini ve düzenlemesini sağlar. Bu özellik yalnızca, Kayıt Merkezi gibi yoğun şekilde yönetilen depolarda kullanılmalıdır.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>İçerik Düzenleyici Ayarları</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>İçerik Düzenleyici Kuralları</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Kayıt bildirim ayarları</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Kayıt Kitaplığı</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Önemli işletme kayıtlarını depolamak için belge kitaplığı oluşturun.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Tamamlanan belgeleri bu kitaplığa yükleyin. Bu kitaplığa eklenen belgeler otomatik şekilde kayıt olarak bildirilir.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Kayıt Merkezi Yapılandırması</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Bir siteyi Kayıt Merkezi olarak yapılandırır.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Kayıtları Merkezini Yönet</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Bu sitede kayıt tutma ayarlarını yönet.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Kur Görevleri ve Dosya Planı Oluşturma</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Kayıtları Merkezi sitesini yapılandırmayı tamamlamak için bu yönergeleri kullanın.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>Bu siteyi kayıt kabul etmeye hazır hale getirmek için, kuruluşunuzun dosya planıyla eşleşecek şekilde yapılandırın:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Not:&lt;/b&gt; Bazı site koleksiyonu özellikleri etkin olmadığından bu Kayıt Merkezi tam olarak yapılandırılamadı. Bu sorunları gidermek için erişiminiz yok site koleksiyonu yöneticinize başvurun:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Gelen belgeler kayıt olarak işaretlenemez. Site Koleksiyonu Özellikler Galerisi'nde, Yerinde Kayıtlar özelliğini etkinleştirin.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Gelen belgelere Belge Kimliği atanamaz. Site Koleksiyonu Özellikler Galerisi'nde Belge Kimliği Hizmeti'ni etkinleştirin.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Adım 1:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Adım 2:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Adım 3:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>4. Adım:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>İçerik türleri oluştur</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Kayıt türleri ve her türe göre özellikleri tanımlayın.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Kayıt kitaplıkları oluştur</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Kayıt kitaplıkları ve klasörlerinin hiyerarşisini oluşturun ve her birine bir bekletme zamanlaması atayın.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>İçerik düzenleyici kuralları oluştur</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Gönderilen kayıt doğru klasöre yönlendiren kurallar tanımlayın.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Site Karşılama Sayfası Tasarla</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Dosya planı ve kayıt yönetimi ilkelerinizi kullanıcılara açıklayın.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>Tamamlandıktan sonra bu web bölümünü kaldırabilirsiniz.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Genel Kayıt Yönetimi Görevleri</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Yeni Kayıt Kitaplığı oluştur</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Kayıtları saklamak için yeni kitaplık oluşturun.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>İçerik ve Yapıyı Yönet</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Sitenin klasör yapısını yeniden düzenlemek için bir hiyerarşi yönetim aracı kullanın.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>İçerik Düzenleyici Kuralları Oluştur</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Gönderilen kayıtların depolanacağı yeri yönetin.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Kayıtları Bul ve Ayrı Tut</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Dava nedeniyle saklanması gereken kayıtları arayın.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Dosya Planı Raporu Oluştur</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Kayıt kitaplığının yapısı ve bekletme zamanlamalarıyla ilgili bir elektronik tablo görüntüleyin.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Denetim Raporu Oluştur</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Kayıtlarda gerçekleşen olayların geçmişine erişin (Site Koleksiyonu Yöneticisi ayrıcalıkları gerekir).</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>İçerik etkinliği, güvenlik, ilke veya diğer filtreler için geniş olay izleme sağlayan kullanılabilir denetim günlük raporlarını gözden geçirin.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Hangi içeriğe nasıl erişildiği hakkında bilgi sağlayan popülerlik eğilimleri raporlarını gözden geçirin.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Bu site koleksiyonundaki tüm sitelerdeki kullanıcı eylemlerini izleyen denetim özelliğini yapılandırın.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Bu site koleksiyonundaki tüm sitelere ilke bildirimleri, etiketler, denetim, süre sonu ve barkodlar sağlayan bilgi yönetimi ilkelerini yönetin.</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Bildirim ayarlarını kaydet</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Özel varsayılan değer ayarları</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Sütunlar İçin Varsayılan Değerleri Değiştir</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Bu klasör için varsayılan sütun değerlerini değiştirin.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Kayıt Bildir</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Öğeyi, kısıtlamalar ekleyebilen ve sistem ayarlarına bağlı olarak belirli ilkeleri kaydedebilen bir kayıt olarak bildirin.</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Kayıt Bildirimini Kaldır</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Kayıt kısıtlamalarını ve ilkeleri kaldırmak için kayıt öğesi bildirimini geri alın.</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Bu Konum için Görünümleri Yapılandır</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Bu klasör için kullanılabilir görünümleri değiştirin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Belge Kümesi</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Yönet</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Eylemler</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Özellikleri Düzenle</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Bu Belge Kümesinin özelliklerini düzenleyin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Kopyasını İndir</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Bu Belge Kümesinin bir kopyasını indirin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>İzinler</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Bu Belge Kümesi için izin eklemek, değiştirmek veya kaldırmak amacıyla İzinler sayfasına gidin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Sil</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Sorguyu Yönet</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Yeni</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Yönet</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Sorgu</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Sorguyu Kopyala</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Sorguyu Kopyala</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Seçili öğenin bir kopyasını oluşturun.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>İstatistikleri Güncelleştir</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>İstatistikleri Güncelleştir</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>İstatistiklerini güncelleştirmek için seçili sorgu veya sorguları çalıştırın.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Dışarı aktar</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Dışarı aktar</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Seçili sorgu veya sorguların sonuçlarını dışarı aktarın.</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Bu Belge Kümesini silin. Bu Belge Kümesi içindeki tüm belgeler silinir.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Paylaş</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>E-postayla Bağlantı Gönder</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Bu Belge Kümesine e-posta ile bir bağlantı gönderin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Gönder</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Bu Belge Kümesini başka bir konuma taşımak veya kopyalamak için Diğer Konuma Gönder sayfasına gidin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Yönet</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Sürüm Yakala</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Bu Belge Kümesindeki geçerli özelliklerin ve belgelerin bir sürümünü kaydedin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Sürüm Geçmişi</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Bu Belge Kümesinin sürüm geçmişini görüntüleyin ve yönetin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>İş Akışları</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Bu Belge Kümesi ile ilişkili iş akışlarını başlatmak veya yönetmek için İş Akışları sayfasına gidin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Video Çevirilerini Yönet</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Bu Videonun çevirilerini yönetin.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Meta Veri Gezinti Şeridi Özel Eylemi.</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Güncelleştir</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Kaynak Durumunu Güncelleştir</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Seçili kaynakların durumunu güncelleştirir.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Hata Dışarı Aktarma</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Bir rapor almak veya indirmek amacıyla hata içeren tüm öğelere ait bir dışarı aktarma listesi oluşturun.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Kaynak Eylemleri</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Aranıyor</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Bu birkaç dakika sürebilir...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>İlgi</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Tarih(en eski)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Tarih(en yeni)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Ara</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Kaydedilen sorgu</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>eBulma Portalı</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>eBulma servis talepleri oluşturun ve yönetin.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>eBulma Servis Talepleri Özelliği</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>eBulma servis talebi için gerekli kaynakları sağlar.</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Ad</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Yerinde Saklama Durumu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Koruma Filtreleme</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Yerelleştirilmeyen Yerinde Saklama Durumu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Yerinde Saklama</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Yerinde Saklama Geçmişi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Son Dizin Oluşturma Zamanı</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Dizin Oluşturma Hataları - Öğeler</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Dizin Oluşturma Hataları - SharePoint Konumları</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Gezinme Hata Yüzdesi</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Kaynaklar</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Yeni bir kaynak ekleyin.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Dışarı aktar</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Yeni bir dışarı aktarma işlemi ekleyin.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Sorgu</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Yeni kaydedilmiş arama oluşturun.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Koruyucu</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Yeni koruyucu ekleyin.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Posta Kutusu</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Yeni posta kutusu ekleyin.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Konum</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Yeni konum ekleyin.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>eBulma Kümesi</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Yeni bir eBulma kümesi oluşturun.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Korunan Madde</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Yeni Korunan Öğe ekleyin.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>eBulma İçerik Türleri</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Öğe sayısı</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Boyut (MB)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Sorgular</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>Site Kimliği</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Kaynak Türü</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Ham Kaynak Türü</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>Web Kimliği</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>Federasyon Kimliği</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>Dış Federasyon Kimliği</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Yinelenenleri Kaldırma</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Yinelenen Exchange içeriğini kaldırın</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Hak Yönetimi Korumasını Kaldır</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Exchange verilerinden Hak Yönetimi Hizmetleri (RMS) korumasını ve şifrelemesini kaldırın</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Sürümleri Ekle</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>SharePoint belgelerinin sürümlerini ekleyin</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Aranamayan öğeler</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Şifrelenmiş veya tanınmayan biçime sahip öğe ekleyin</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Durum</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>eBulma Özellikleri</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Sorgu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Yazar</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Başlangıç Tarihi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Etki Alanı Filtresi (Yalnızca Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>SharePoint İyileştiricileri</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Exchange İyileştiricileri</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Kaynak Yönetimi Türü</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>Ayrı Tutma Kimliği</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>Eylem Kimliği</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Eylem Türü</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>Kaynak Kimliği</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>Görüntü Kimliği</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Kaynaklar</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Kaynak Grupları</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Koruyucular</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Notlar</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Kaynak</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Koruma Sürüm Numarası</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Koruma Özgün Konumu</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>Koruma Özgün Liste Kimliği</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Koruma Özgün Meta Verileri</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Koruma Tarihi</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Koruyucular Liste Türü</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>eBulma Servis Talebinde kullanılan koruyucular için liste türü.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Kaynaklar Liste Türü</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>eBulma Servis Talebinde kaynaklar liste türü.</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Sorgular Liste Türü</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>eBulma Servis Talebinde kaydedilen aramalar için liste türü.</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Dışarı Aktarmalar Liste Türü</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>eBulma Servis Talebinde dışarı aktarmalar için liste türü.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>eBulma Kümeleri Liste Türü</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>eBulma Servis Talebinde keşif kümeleri için liste türü.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Kaynak Örnekleri Liste Türü</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>eBulma Servis Talebinde kaynak örnekleri için liste türü.</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>eBulma Portalı Site Şablonu</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Sorgular</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Arama sonuçlarını azaltmak ve analiz etmek için sorguları kullanın.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Kaynaklar</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Servis talebi içindeki posta kutularının ve konumların durumunu izleyin.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>eBulma Kümeleri</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Grupları oluşturun ve filtre ve bekletilen içeriği yönetin.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Dışarı Aktarma: Yeni Öğe</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Dışarı aktarmalar</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Dışarı aktarılan eBulma içeriğinin indirilme işlemini yönetmek için Dışarı Aktarma listesini kullanın.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Kaynak Örnekleri</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Servis talebi durumlarını izleyin.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Koruyucular</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Servis talebine posta kutuları ve konumlar gibi kaynaklarla ilişkilendirilebilecek kullanıcılar ekleyin.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Yerinde Saklama Durumu</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Dışarı Aktarma Durumu</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>İndirme Başlatılmadı</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>İndirme Başlatıldı</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>İndirme Tamamlandı</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>İçeri Aktarma Başarısız Oldu</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>Ayrı Tutuluyor</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>Filtre ile ayrı tutuluyor</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Zaman aşımına uğradı</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Ayrı Tutulamıyor</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Ayrı Tutulmuyor</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>İşleniyor</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Kısmi</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Başarısız</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>eBulma Merkezine Hoş Geldiniz</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>Bu siteyi eBulma Servis Talebi oluşturma, yönetme ve üzerinde çalışmak için kullanın. eBulma Servis Talepleri ile Exchange posta kutularının, SharePoint sitelerinin ve diğer içerik kaynaklarının tanımlanmasını ve yerinde saklanmasını yönetebilirsiniz. Ayrıca ilgili içeriği tanımlamak için arama sorguları oluşturabilir, yönetebilir ve ardından arama sonuçlarını dışarı aktarabilirsiniz.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Başla</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Yasal kullanıcılarınıza SharePoint dağıtımınızdaki içeriğe erişme izni verin. Yasal ekip üyelerinizi içeren bir güvenlik grubu oluşturmanızı öneririz.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>Exchange posta kutularını bulmak için yöneticinizin tüm SharePoint sunucularında Exchange Web Hizmetleri Yönetilen İstemcisini yüklediğinden emin olun ve yöneticinizin Exchange ve SharePoint arasında yetkilendirmeyi yapılandırmasını sağlayın.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Yasal ekibinize üzerinde eBulma gerçekleştirmeniz gereken içerik barındıran tüm uygun SharePoint Web Uygulamalarına yönelik güvenlik grubu kullanıcı ilkesi izinleri verin.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Üzerinde eBulma eylemleri gerçekleştirmeniz gereken Exchange posta kutuları için yasal kullanıcılarınıza eBulma izinleri verin.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Yerinde Saklama, Arama ve Dışarı Aktarma</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>Yerinde saklamalar ile saklanacak SharePoint sitelerini ve posta kutularını belirtebilirsiniz. İçerik değiştirildiğinde veya silindiğinde, onu dışarı aktarmanız gerekene kadar yerinde depolanır.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>Yerinde eBulma arama SharePoint siteleri, dosya paylaşımları ve Exchange posta kutularında arama yapmanızı sağlar. Sonuç kapsamını ihtiyaç duyduğunuz içeriğe yönelik olarak daraltmak için yakınlık, joker karakterler, Boole mantığı ve iyileştiriciler kullanın. Arama yerinde olduğundan, sonuçlarınız normal Outlook Web Access veya SharePoint site araması yapıldığında olduğu gibi canlı ve günceldir.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>İhtiyaç duyduğunuz içeriği tanımladıktan sonra, taşınabilir bir yerel biçimde yerel sabit sürücünüze veya dosya paylaşımınıza indirebilirsiniz. SharePoint sayfalarını, belgeleri, listeleri ve Exchange posta kutusu verilerini kolayca indirin.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Servis talebinize hoş geldiniz.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>Posta kutuları veya SharePoint siteleri gibi içerik kaynaklarını tanımlamak için durumunuzu kullanın ve bu içeriği yerinde saklama ile koruyun. İçerik kaynaklarını tanımladıktan sonra, ilgili öğeleri aramak ve dışarı aktarmak üzere bu içerikte arama yapabilirsiniz.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Yeni servis talebi oluştur</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Ek bir konum ekle</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Ek bir posta kutusu ekle</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Konumu Denetle</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Posta Kutusunu Denetle</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Gözat</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Kaynak Ekle ve Yönet)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Sorgu Kapsamını Değiştir)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Kaynaklar: Öğeyi Düzenle</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Kaynaklar: Yeni Öğe</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Kaynakları Ekle ve Yönet</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Konumlar</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Arama tarafından dizinlenen SharePoint sitelerini ve dosya paylaşımlarını belirtmek için URL girin. SharePoint site kaynakları tüm alt siteleri içerir. Dosya paylaşımı kaynakları, belirtilen klasör altındaki tüm klasörleri içerir.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Posta kutuları</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Exchange posta kutularını adları veya e-posta adreslerini kullanarak belirleyin.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>Tamam</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>İşbirliği yapan kişiler</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Exchange Posta Kutusu</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Dosya Paylaşımı</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Servis Talebi İçeriği</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Toplam Servis Talebi İçeriği</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Yerinde Saklama İçeriği</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Öğeler:</value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Boyut:</value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Doğrulandı</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Arama hizmeti uygulaması bağlantısı başarısız oldu.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>Kaynak doğrulanmaya çalışılırken bir hata oluştu.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>Belirtilen kaynak servis talebinde zaten bulunuyor.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Tam eşleşme bulunamadı. URL geçersiz olabilir veya bu konuma erişim izniniz olmayabilir ya da konum Arama tarafından dizinlenmemiş olabilir.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Posta kutusu doğrulanamadı. Posta kutusu mevcut olmayabilir veya doğru izin düzeyine sahip olmayabilirsiniz.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>İçerik Türü</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Gelişmiş Sorgu Seçenekleri</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>Bu sorguda kaynak yok. Kaynak eklemek için sorgu sayfasına geri dönün ve "{0}" öğesini tıklatın</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Sorgu Tabanlı Yerinde Saklama</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>Sorgu temelli koruma etkinleştirildiğinde, Koruma Kitaplığı'nda depolanan, bu siteye ait hiçbir saklama filtresiyle eşleşmeyen içeriğin süresi dolar. Bu özellik genellikle birden çok eşzamanlı saklama içeren arşiv siteleri için kullanılmalıdır.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} Tüm içeriğe yönelik koruma '{1}' eBulma kümesi tarafından zamanlandı.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} Tüm içerik şimdi '{1}' eBulma kümesi için ayrı tutuluyor.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} '{1}' eBulma kümesine yönelik zamanlanmış koruma güncelleştirmesi.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} '{1}' eBulma kümesine yönelik başlatılmış yerinde koruma güncelleştirmesi.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} Koruma güncelleştirmesi '{1}' eBulma kümesi tarafından '{2}' filtresi ile zamanlandı.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} Ayrı tutmanın '{2}' filtresine sahip '{1}' eBulma kümesi için güncelleştirilmesi başlatıldı.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} '{2}' filtresine sahip '{1}' eBulma kümesi tarafından filtrelenen alt kümeye ait zamanlanan ayrı tutma.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} İçeriğin filtrelenmiş alt kümesi, şu anda '{2}' filtresine sahip '{1}' eBulma kümesi için ayrı tutuluyor.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} '{1}' eBulma kümesi için bırakılan ayrı tutma. Bu kaynak diğer eBulma kümeleri için halen ayrı tutuluyor.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} Tüm içeriğe yönelik ayrı tutmanın bırakılması '{1}' eBulma kümesi tarafından zamanlandı.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} '{1}' eBulma kümesi için tüm içeriğe ait ayrı tutma bırakıldı.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} Artık mevcut olmayan bir eBulma kümesinin tüm içeriğine ait bırakılan yerinde saklama.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} '{1}' eBulma kümesi için kaynak ayrı tutmaya alınamadı. Hata iletisi: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} '{1}' eBulma kümesi için bu kaynağa ait ayrı tutma bırakılamadı. Hata iletisi: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>eBulma Denetim Olayı</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Servis Talebi İçeriği</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Servis talebi içeriğini görüntüler.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Servis talebi içerik web bölümü, yalnızca eBulma Servis Talebi web öğelerinde kullanılabilir.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Bu gerekli alan için değer belirtmelisiniz.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">Bu kaynak şu an ayrı tutuluyor. Bu kaynağı silmek için lütfen tüm ayrı tutmaları bırakın.</value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Şu anda bu eBulma kümesinde yerinde saklama etkin. Bu eBulma kümesini silmek için lütfen yerinde saklamayı bırakın.</value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>Site yok</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>Sitenin bölüm kimliği, ayrı tutma eyleminin bölüm kimliği ile eşleşmiyor.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Boyut</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Öğeler</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Toplam:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Yinelenenleri Kaldır</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>RMS korumasını kaldır</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Sürümleri ekle</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Aranamayan öğeleri ekle</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>İndir</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Sonuç Raporu</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>Öğelerin tahmini sayısı ve boyutu sürüm veya yinelenenleri kaldırma içermiyor. Bu seçenekler belirlendiğinde, toplam dışarı aktarma boyutu etkilenir.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Bu servis talebini kapat</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Bu servis talebini aç</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Servis talebi kapanışı</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Adresinizle eşleşen sonuç bulunamadı.  Lütfen yeni bir adres veya daha genel bir adres girin.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Görünen Ad</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>E-posta Adresi</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Tahmini Toplam</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Öğe Sayısı</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Öğelerin Boyutu</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Sorgular</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Yerinde Saklama</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Yerinde Saklamayı Bırak</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Yerinde saklamayı güncelleştir</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Dışarı Aktarma Durumu</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Kaynak Durumu</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Bu servis talebi şu tarihte kapatıldı: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>eBulma kümeleri halen ayrı tutuluyor, silmek için tüm ayrı tutmaları bırakın veya servis talebini kapatın.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>eBulma Durum İlkesi</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Servis talebi kapanışı işleme ilkesi.</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Yeni: eBulma Kümesi</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Koruma Ayrı Tutma Ayarları</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Yerinde saklamalar için depolama ayarlarına yönelik liste.</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>{0} Kaynak Türü ve {1} filtresi için kaynak alınamadı</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Kayıt Yönetimi Kiracı Yönetimi</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Kayıt yönetimi kiracı yönetimi.</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Kayıt Yönetimi Kiracı Yönetimi Zımbalama</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Kayıt Yönetimi kiracı yönetimi zımbalama.</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Gönderme Bağlantılarını Yapılandır</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Alma sırasında hata oluştu</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>Yok</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>{0} Hataları</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>Bu eBulma kümesinde bu türde hiç kaynak yok. Kaynak eklemek için "{0}" öğesini tıklatın.</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>Bu sorguda bu türde hiç kaynak yok. Kaynak eklemek için "{0}" öğesini tıklatın.</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Etkin</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Devre Dışı</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Dışarı Aktarma: İndirme</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Kapat</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Güncelleştirme İstatistikleri</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Seçenekler</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Dışarı aktarma adını ve seçeneklerini belirleyin. Dışarı aktarımlar Elektronik Veri Referans Modeli (EDRM) yükleme dosyası içerir.</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Sonuçları İndir</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Raporu İndir</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>İndirmeyi Dışarı Aktar</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Tüm arama sonuçlarını, arama sonuçlarının listesini içeren bir raporda şimdi indirmek mi, yoksa kapatıp sonra indirmek mi istiyorsunuz?</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Sorguları Seç</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Dışarı aktarmak istediğiniz sorguları seçin.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Hata</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Ara</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Ayrı Tutmayı Yeniden Dene</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Kaynağı Çöz</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>Bu kaynağa yönelik URL veya adres değişti. Yeni URL veya adresi güncelleştirmek için burayı tıklatın.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>Bu gerekli bir alandır.</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} - Kopyası</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} - Kopyası ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Bu konum bir web uygulamasının veya yönetilen yolun kökü ve birden çok site koleksiyonu içeriyor. Yalnızca kök site koleksiyonu korunacak, ancak arama sonuçları ve dışarı aktarmalar bu yol altındaki tüm site koleksiyonlarını içerecek.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>Konum bir web uygulamasının veya yönetilen yolun kökü ve birden çok site koleksiyonu içeriyor. Yalnızca kök site koleksiyonu korunacak, ancak arama sonuçları ve dışarı aktarmalar bu yol altındaki tüm site koleksiyonlarını içerecek. Konumunuzu kabul etmek için Tamam'ı veya konumunuzu değiştirmek için İptal'i seçin.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>Yeni servis talebi {0}oluşturmak{1} için tıklatın</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Değiştirme: {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Servis talepleri</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>Bu eBulma kümesi kaynak sınırından (100 SharePoint kaynağı veya 1000 posta kutusu) fazlasını içeriyor. Lütfen istatistikler ile sonuçları almak için Kaynak Ekle ve Yönet'i tıklatın ve sayıyı azaltın.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Bu sorgu, kaynak sınırından (100 SharePoint kaynağı veya 1000 posta kutusu) fazlasını içeriyor. Lütfen sonuçları almak için Sorgu Kapsamını Değiştir'i tıklatın ve arama sorgunuzu daraltın.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Bu dışarı aktarma, kaynak sınırından (100 SharePoint kaynağı veya 1000 posta kutusu) fazlasını içeriyor. Bu dışarı aktarmayı gerçekleştirmek için lütfen ilişkili sorgularda kaynak sayısını azaltın veya daha az sorgu seçin.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Kök Ayırma</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Yinelenenleri Kaldırma</value>
+  </data>
+</root>

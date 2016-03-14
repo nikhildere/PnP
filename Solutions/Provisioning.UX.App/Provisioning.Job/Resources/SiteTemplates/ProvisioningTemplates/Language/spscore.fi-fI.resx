@@ -1,0 +1,3631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4569.1502" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>Kotisivu</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>Uusi SharePoint Server!</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>Keskustelujen etsiminen</value>
+  </data>
+  <data name="SetupMySite">
+    <value>Määritä oma sivusto</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>Napsauta tätä, jos haluat nähdä luokat</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>Napsauta tätä, jos haluat nähdä suosituimmat sivustot</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>Napsauta tätä, jos haluat nähdä sivuston kartan</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>Luokat</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>Suosituimmat sivustot</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>Sivustokartta</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>Kaikki sivustot</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>Napsauta, jos haluat nähdä kaikkien sivustojen tulokset</value>
+  </data>
+  <data name="PeopleTab">
+    <value>Ihmiset</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>Tarkastele henkilötuloksia napsauttamalla</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>Keskustelut</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>SharePoint Server -käyttöraportointi</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>Käyttöraportointi</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>Etsi käyttötietoraporteista</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>Sivuston käyttötietoraportit</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>Sivustokokoelman käyttötietoraportit</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>Tiedostokirjasto</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>Tämän alueen asiakirjojen tallennuspaikka.</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>Yritystietoprofiilimalli</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>SharePointin yläsiirtymispalkki</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>Raportit</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>Dashboard-sivut</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>Esimerkki</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>Resurssit</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>Tietoyhteydet</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>Raporttikalenteri</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>Viittauskirjasto</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>Raporttikirjasto</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>Tässä voit helposti luoda ja hallita seurattavia mittaustietoja, tavoitteita ja liiketoimintatietoja sisältäviä verkkosivuja ja tiedostoja. </value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>Tilaluettelo</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>Tässä voit seurata ja tarkastella tavoitejoukkoa. Värilliset kuvakkeet ilmaisevat, missä määrin tavoitteet on saavutettu.</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>Verkko-osasivun tiedostokirjasto</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>Tiedostokirjasto ja verkko-osasivumalli</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>Raporttikirjasto</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>Raporttikirjasto tukee tilailmaisimia ja Excel-työkirjoja sisältävien raporttien hallintaa.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>Viittauskirjasto</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>Kirjasto, joka sisältää sivuston käyttöä koskevia tietoja.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>Raporttikalenteri</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>Kalenterialueen avulla voit luoda viestejä tähän alueeseen liittyvistä tapahtumista.</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>Tietoyhteydet</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>Tietoyhteyskirjaston avulla on helppo jakaa tiedostoja, joiden avulla käyttäjät voivat muodostaa yhteyden ulkoisiin tietolähteisiin.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>Ilmoitukset</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>Julkaise tähän alueeseen liittyviä viestejä Ilmoitukset-luettelon avulla.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>Tervetuloa raporttikeskuksen käyttäjäksi</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>Raporttikeskuksen avulla voit luoda, jaella ja hallita yritystietoja.</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>Sivustomallivalikoima</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>Esimerkki-ilmaisimet</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>Esimerkkitilailmaisimet, jotka näkyvät oletusarvon mukaan tämän raporttikeskuksen kotisivulla.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>Moraali</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>Tuottavuus</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>Kulut</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>Tämä on malli-ilmaisin. Se voidaan poistaa turvallisesti.</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>Raporttikeskus</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>Raporttikeskuksen käyttäminen</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>Käytä tätä osaa muotoilulle tekstille, taulukoille ja kuville.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>Raporttikeskuksen ominaisuuksia:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;Suorituskykyilmaisimilla&amp;lt;/A&amp;gt; (KPI:lla) voit viestiä tavoitteista ja kehityssuunnista sekä seurata edistymistä.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;Raporttinäkymät&amp;lt;/A&amp;gt; auttavat tietojen yksityiskohtaisessa selittämisessä Excel-työkirjoilla ja KPI-ilmaisimilla. Raporttinäkymäsuodattimilla on helppoa valita tarkasteltava tietoalue. Voit luoda oman raporttinäkymän menemällä Raporttikirjaston &amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;Raporttinäkymät&amp;lt;/A&amp;gt; -näkymään ja napsauttamalla Uusi.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>The &amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;Raportti&amp;lt;/A&amp;gt;kirjasto on suunniteltu raportteja ja raporttinäkymiä sisältävien tiedostojen tallentamiseen ja tarjoamaan helpon pääsyn edellisten ajanjaksojen tietoihin.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>Voit valmistella tämän raporttikeskuksen käyttöön tekemällä seuraavat suositellut toimet:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>Katso esimerkkiä &amp;lt;A &amp;gt;raporttinäkymästä&amp;lt;/A&amp;gt; ja &amp;lt;A&amp;gt;työkirjasta&amp;lt;/A&amp;gt;, niin saat käsityksen muutamista Raporttikeskuksen toiminnoista</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>Jos esimerkit eivät toimi oikein, pyydä järjestelmänvalvojaa varmistamaan, että Excel Services on käytössä ja että tämä Raporttikeskus sijaitsee luotetussa sijainnissa</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>Jos aiot analysoida olemassa olevista datapalvelimista peräisin olevia tietoja Excelissä, luo ja lataa tietoyhteystiedostot (ODC-tiedostot) &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;tietoyhteyskirjastoon&amp;lt;/A&amp;gt;. Jos haluat käyttäjien luovan uusia suorituskykyilmaisinluetteloita, lisää heidät Omistajat-ryhmään. Jäsenet-ryhmän käyttäjät voivat muokata sivuja, mutta eivät voi luoda suorituskykyilmaisinluetteloita.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>Päivitä tai poista esimerkkisisältö</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>Tärkeät kohteet</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>Lisätietoja</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>Pikaopas</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>Yhteystiedot</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>Käytä tämän sivun tai sivuston yhteyshenkilön tietojen esittämiseen.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>Tulevia tapahtumia</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>Raporttikeskussivu</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>Tilailmaisimet</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>Raportit</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>Kuvaus</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>Kuvaus sisältää tietoja tavoitteesta.</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>Ilmaisimen kommentit</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>Kommentit kuvaavat ilmaisimen nykytilaa ja saattavat sisältää tietoja syistä tai ongelmista.</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>Ilmaisimen arvo</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>Ilmaisimen tavoitekynnys</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>Ilmaisimen varoituskynnys</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>Lisätietolinkki</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>Linkki sivulle, josta voit hakea lisätietoja napsauttamalla </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>Pienet arvot ovat parempia</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>Onko pienempi vai suurempi parempi</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>Automaattinen päivittäminen</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>Haetaanko taustatiedot joka kerta</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>Päivitysvirhe</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>Sisältää edellisen päivityksen virhesanoman (jos olemassa)</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>Tietolähde</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>Tietolähteen URL-osoite</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>Näkymän GUID-tunnus</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>Näkymän GUID-tunnus</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>Näkymän nimi</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>Näkymän nimi</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>Arvon lauseke</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>Ilmaisimen arvon määrittämisessä käytettävä lauseke.</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>Prosenttilauseke</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>Määritä, käytetäänkö lauseketta prosenttiarvon laskemiseen</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>Arvolomake</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>Arvon lomakkeen nimi</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>Arvosolu</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>Arvon solun osoite tai nimi</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>Tavoitelomake</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>Tavoitteen lomakkeen nimi</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>Tavoitesolu</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>Tavoitteen solun osoite tai nimi</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>Varoituslomake</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>Varoituksen lomakkeen nimi</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>Varoitussolu</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>Varoituksen solun osoite tai nimi</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>Työkirjan tavoite</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>Tieto siitä, onko tavoite peräisin työkirjasta vai ilmaisimen määrityksestä</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>Työkirjan varoitus</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>Tieto siitä, onko varoitus peräisin työkirjasta vai ilmaisimen määrityksestä</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>Trendi</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>Ilmaisimen trendi</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>Ilmaisimen tila</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>Ilmaisimen tila</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>Näyttökansio</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>Ilmaisimen näyttökansio</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>Ilmaisin</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Microsoft SQL Server 2005:n analyysipalveluiden suorituskykyilmaisimen nimi</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>Sisällytä ali-ilmaisimet</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>Tieto siitä, sisällytetäänkö alisuorituskykyilmaisimet</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>Muotoiltu ilmaisimen arvo</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>Ilmaisimen arvo, jonka on muotoillut sen tietolähteen tarjoaja</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>Muotoiltu ilmaisimen päämäärä</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>Ilmaisimen päämäärä, jonka on muotoillut sen tietolähteen tarjoaja</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>Muotoiltu ilmaisimen varoitus</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>Ilmaisimen varoituksen arvo, jonka on muotoillut sen tietolähteen tarjoaja</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>Viimeisin ilmaisimen tietojen päivitys</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>Viimeisin ilmaisimen päivitys sen tietolähteen tarjoajalta</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>Raportin kuvaus</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>Raportin sisällön kuvaus</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>Tallenna raporttihistoriaan</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>Aina, kun tämä asiakirja tallennetaan, kopio lisätään raporttikirjastoon.</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>Päätunnus</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>Tämän raportin päätunnus</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>Omistaja</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>Tämän asiakirjan omistaja</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>Raportin luokka</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>Raportin luokka</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>Luokka 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>Luokka 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>Luokka 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>Raportin tila</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>Raportin tila</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>Lopullinen</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>Alustava</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>Ajanjakson päivämäärä</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>Historia</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>Näytä historiatiedot</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>Nimi</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>Nimi</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>Uusi</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>Ilmoita muokattu linkki</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>Raportti luotu</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(vedosarvo)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>Raportin tekijä</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>Raporttia muokattu</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>Raporttia on muokannut</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>Raportin pääkohteen nimi</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(vedoksen pääkohteen nimi)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>Linkitä raporttiin</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(linkitä raporttiin muokkausvalikon avulla)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>Liiketoimintatiedot</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>Yleiset ilmaisinsarakkeet</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>Kiinteä arvo -pohjainen tilailmaisin</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>Luo uusi tilailmaisin manuaalisesti syötetyistä tiedoista</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>SharePoint-luettelopohjainen tilailmaisin</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>Luo uusi tilailmaisin SharePoint-luetteloiden tiedoista</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>Excel-pohjainen tilailmaisin</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>Luo uusi tilailmaisin Excel Services -tiedoista</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>SQL Server Analysis Services -pohjainen tilailmaisin</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>Luo uusi tilailmaisin SQL Server Analysis Services -tiedoista</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>Raportti</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>verkko-osasivu ja tilaluettelo</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>Luo tilailmaisimet ja Excel-työkirjat näyttävä sivu.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Excel-raportti</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>Dashboard-sivut</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>Nykyiset raportit</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>Kaikki raportit ja dashboard-sivut</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>Viimeksi päivitetyt</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Excel-tiedostojen tietojen raporttisivu</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>Vasen ylävyöhyke</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>Oikea ylävyöhyke</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>Suodatinvyöhyke</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>Lisää suodatin</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>Vasen alavyöhyke</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>Keskeinen alavyöhyke</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>Oikea alavyöhyke</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>Ylävyöhyke</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>Vasen keskivyöhyke</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>Oikea keskivyöhyke</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>Alavyöhyke</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>Kaikki kohteet</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>Tilaluettelo</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>Tilaluettelo</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>Näyttää tilailmaisimien luettelon. Tilailmaisimet näyttävät tärkeitä organisaatioon liittyviä mittaustietoja ja kuvaavat, miten organisaatio on saavuttanut tavoitteensa.</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>Tilailmaisimen tiedot</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>Näyttää yksittäisen tilailmaisimen tiedot. Tilailmaisimet näyttävät tärkeitä organisaatioon liittyviä mittaustietoja, joita voidaan hakea muista tietolähteistä, kuten SharePoint-luetteloista, Excel-työkirjoista ja SQL Server 2005 Analysis Services -suorituskykyilmaisimista.</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>Yritystiedot</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>Kyllä</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>Ei</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(Tyhjä)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(Kaikki)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(Päivitys)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>Päivitä</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(Tyhjä)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>Lajittele nousevasti</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>Lajittele laskevasti</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>Suodatusperuste: </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>Lajitteluperuste: </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>Kohdentaminen käyttäjäryhmälle</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>Kohteena oleva käyttäjäryhmä (sääntöihin perustuvat käyttäjäryhmät, SharePoint-ryhmät, jakeluluettelot)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>Kohdennettu</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>Ei kohdennettu</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>Salli yleiset käyttäjäryhmät</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>Salli jakeluluettelot</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>Salli SharePoint-ryhmät</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>Sivustohakemisto</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>Sivustokartta</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>Luokan sivustot</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>Suosituimmat sivustot</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>Sivustohakemisto on luettelo sivustoja, jotka voidaan ryhmitellä luokkiin. Voit lähettää sivuston sivustohakemistoon valitsemalla tämän sivun oikeassa yläkulmassa Luo sivusto tai Lisää linkki sivustoon.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>Jos haluat lisätä suosituimpia sivustoja, lisää linkki sivustohakemistoluetteloon ja merkitse kyseinen linkki suosituimpiin sivustoihin kuuluvaksi. Aloita lisäämällä linkki sivustohakemistoon ja lähettämällä se suosituimpiin sivustoihin kuuluvana.</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>Aiheeseen liittyvät linkit -käyttöalueen asetukset</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>Uutisartikkeli ja kuva</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>Uutisartikkelin linkki</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>Verkko-osien vyöhykkeet</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>Uutisten kotisivu</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>Sivustohakemiston kotisivu</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>Ota Enterprise-ominaisuudet käyttöön</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>Oletus</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>Suodattimet</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>Yritystiedot</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>Dashboard-sivu</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>WSRP-kuluttajan verkko-osa</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>Nykyinen käyttäjä</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>Nykyinen käyttäjän suodatin</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>Suodattaa verkko-osien sisällön käyttämällä nykyisen käyttäjän ominaisuuksia.</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>Tekstisuodatin</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>Suodattaa verkko-osien sisällön sallimalla käyttäjille tekstiarvon syöttämisen.</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>SharePoint-luettelon suodatin</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>Suodattaa verkko-osien sisällön käyttämällä arvoluetteloa.</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>Kyselymerkkijono</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>Kyselymerkkijonon (URL) suodatin</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>Suodattaa verkko-osien sisällön käyttämällä kyselymerkkijonon kautta välitettyjä arvoja.</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>Sivukenttä</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>Sivun kentän suodatin</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>Suodattaa verkko-osien sisällön käyttämällä nykyistä sivua käsitteleviä tietoja.</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>SQL Server Analysis Services -suodatin</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>Suodattaa verkko-osien sisällön käyttämällä SQL Server Analysis Services -datakuutioiden arvoluetteloa.</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>Tilaluettelo</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>IView-verkko-osa</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>Ilmaisimen tiedot</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>Päivämäärä</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>Päivämääräsuodatin</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>Suodattaa verkko-osien sisällön sallimalla käyttäjille päivämäärän määrittämisen tai valitsemisen.</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>Yritystietoluettelo</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>Näyttää Yritystietojen yhdistämispalvelun tietolähteeseen liittyvien kohteiden luettelon.</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>Tätä verkko-osaa ei voi tuoda.</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>Yritystietojen yhdistämispalvelun suodatin</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>Suodattaa verkko-osien sisällön käyttämällä yritystietojen yhdistämispalvelun arvoluetteloa.</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>Yritystietokohde</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>Näyttää Yritystietojen yhdistämispalvelun tietolähteeseen liittyvän yhden kohteen.</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>Yritystietoihin liittyvä luettelo</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>Näyttää vähintään yhteen Yritystietojen yhdistämispalvelun tietolähteen pääkohteeseen liittyvien kohteiden luettelon.</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>Yritystietotoiminnot</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>Näyttää Yritystietojen yhdistämispalvelun toimintojen luettelon.</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>Yritystietokohteen muodostin</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>Luo yritystietokohteen kyselymerkkijonon parametreista ja antaa sen muille verkko-osille.</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>Valintasuodatin</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>Suodattaa verkko-osien sisällön käyttämällä sivun tekijän antamien arvojen luetteloa.</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>Arvo 1&amp;Arvo 2&amp;Arvo 3=Kuvaus 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>Käytä suodattimia -painike</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>Lisää tämä painike sivulle, jotta käyttäjät voivat päättää, milloin suodatus otetaan käyttöön. Muuten kukin suodatin otetaan käyttöön, kun sen arvo muuttuu.</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>Suosituimmat sivustot</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>Näyttää sivustohakemiston suosituimmat sivustot.</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>Uutiset</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>Viimeisimmät uutiset</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>Uutiskatsaus</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>Tämän viikon tapahtumat kuvina</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>Näyttää yhden kuvan kuvakirjastosta ja linkittää diaesitykseen, jossa käyttäjät voivat nähdä kaikki kuvakirjaston kuvat.</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>Uutiset</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>Uutisartikkelimalli</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>Tämä sivu on jätetty tyhjäksi tarkoituksella.</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>Uutisarkisto</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>Teollisuuden uutisia</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>Lisää uutisia</value>
+  </data>
+  <data name="KPIList">
+    <value>Tilailmaisimen luettelo</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>Tilailmaisimen luetteloa käytetään tavoiteryhmän seuraamiseen ja näyttämiseen. Värikkäillä kuvakkeilla näytetään tavoitteiden saavuttamisaste.</value>
+  </data>
+  <data name="EventsList">
+    <value>Tapahtumat</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>Julkaise tietoja kokouksista, määräajoista ja muista tähän alueeseen liittyvistä tapahtumista Tapahtumat-luettelon avulla.</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>Tätä verkko-osaa ei voi tuoda.</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>Kotisivu</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>Kotisivun kuva -verkko-osa</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>Näyttää kotisivun kuvan</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>Kotisivun kuva</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>Sisältöeditori</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>Sallii käyttäjille RTF-muotoisen sisällön kirjoittamisen.</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>Haluan...</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>Työntekijöiden haku</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>Hae työntekijöitä</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>Sisällysluettelo</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>Sivustohakemiston asetukset</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>Määritä sivustohakemisto</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>Tarkista sivustohakemiston linkit</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>Sivut</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>Jaetut asiakirjat</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>Omat asiakirjat</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>Jaetut kuvatiedostot</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>Käyttäjien valokuvat</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>Kaikkien käyttäjien profiilikuvat tallennetaan tänne.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>Säilytä WebPartPages-sivujasi tässä tiedostokirjastossa. Ne jaetaan automaattisesti julkisella kotisivullasi.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>Käytä tätä tiedostokirjastoa asiakirjojen tallentamiseen. Tässä kirjastossa jaetut asiakirjat näytetään julkisella kotisivulla.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>Käytä tätä tiedostokirjastoa sellaisille asiakirjoille, jotka haluat säilyttää omaa käyttöäsi varten. Vain sinä ja palvelimen järjestelmänvalvojat voivat nähdä ne.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>Jaa kuvia ja valokuvia lisäämällä ne tähän kuvakirjastoon. Tähän tallennetut kuvat jaetaan julkisella kotisivullasi.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>Aloita oman sivuston käyttö</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>Linkkejä oman sivuston käytön vinkkeihin ja vihjeisiin.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>SharePoint-sivustot</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>Tietoja sivustoista, joiden jäsen käyttäjä on</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>Oman sivuston perustyylisivu</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>Sisältää oman sivuston yksilöllisen käyttötuntuman.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>Uusimmat blogimerkinnät</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>Käyttäjän uusimmat blogimerkinnät</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>Lisää uusi merkintä</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>Jakamiskeskus</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>Keskitetty verkko-osa, jolla käyttäjä jakaa kohteita.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>Viimeisimmät toiminnot</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>Verkko-osa, joka näyttää viimeisimmät toiminnot.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>Kysy minulta</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>Verkko-osa, joka näyttää niiden avainsanojen luettelon, joista muut käyttäjät voivat esittää kysymyksiä.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>Omat linkit</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>Näyttää luomasi linkit.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>Oma kalenteri</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>Näyttää kalenterin käyttämällä Microsoft Exchange Server 2003:n tai uudempien versioiden Outlook Web Access -ohjelmaa.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>Työtoverien seuranta</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>Näyttää luettelon työtovereista ja heidän äskettäin tehdyistä muutoksista.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>Omat jäsenyydet</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>Näyttää ryhmät, joiden jäsen olet.</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>Käyttäjäprofiilit ja omat sivustot</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>Käyttäjäryhmät</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>Käyttäjäprofiilit ja ominaisuudet</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>Käyttäjäryhmät</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>Profiilipalveluiden käytännöt</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>Oman sivuston asetukset</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>Luotetut omien sivustojen isäntien sijainnit</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Office-asiakassovellusten julkaistut linkit</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>Mukauttamissivustolinkit</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>Mukauttamispalveluiden käyttöoikeudet</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>Organisaation delegointiasetukset</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>Yritystietokohde</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>Yritystietokohteen tietojen verkko-osa</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>Yritystietotoiminnot</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>Yritystietotoimintojen näyttämisen verkko-osa</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>Yritystietojen yhdistämispalvelu</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>Tuo sovelluksen määritys</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>Näytä sovellukset</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>Näytä kohteet</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>Muokkaa profiilisivun mallia</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>Yritystietojen yhdistämispalvelun käyttöoikeudet</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>Määritä Single Signon (SSO) -asetukset</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>Välilehden nimi</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>Tämä on välilehden otsikkoteksti.</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>Sivu</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>Kirjoita sen sivun nimi, joka näytetään tämän välilehden osana. Jos et ole luonut sivua, luo sivu Sivuston toiminnot -osan Luo sivu -toiminnon avulla.</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>Lisää uusi linkki</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>Työkaluvihje</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>Tämä työkaluvihje näytetään, kun käyttäjä siirtää hiiren osoittimen tämän välilehden päälle.</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>Kaikki välilehdet</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>Otsikko</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>URL-osoite</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>Kuvaus</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>Omistaja</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>Yksikkö</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>Alue</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>Tärkeiden tietojen sivusto</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>Suosituimpiin sivustoihin kuuluva</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>Tehtävät ja työkalut</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>Linkin tili</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>OK</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>Katkennut</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>Ei selvitettävissä</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>Tärkeimmät tehtävät</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>Kansainväliset</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>Kansalliset</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>Paikalliset</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>Tietotekniikka</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>Tutkimus &amp; kehitys</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>Myynti</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>Talous</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>Kaikki sivustot</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>Yhteenveto</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>Sivustojen hallinta</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>Lähetetyt sivustot</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>Luokat</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>Hylätyt sivustot</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>Sivuston luomisen luokat</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>Rikkinäiset sivustot</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>Tervetuloa käyttämään Microsoft® SharePoint® Server 2013 -ohjelmaa</value>
+  </data>
+  <data name="HomePageContent2">
+    <value>Aloita uuden Microsoft SharePoint Server 2013 -version käyttäminen:</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>Sivuston ja sisällön hallinta</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>Luo uusia &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;sivuja&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;sivustoja &lt;/a&gt; ja &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;luetteloita &lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>&lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;Lisää käyttäjiä&lt;/a&gt; Jäsenet-ryhmään sivujen muokkaamista varten</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>&lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;Luo oma sivusto &lt;/a&gt; valitsemalla Oma sivusto</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>&lt;a href="~SiteCollection/SearchCenter"&gt;Hae&lt;/a&gt; sivustoista, tiedostoista ja henkilöistä</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>Yritysratkaisut (edellyttää Enterprise-käyttöoikeuden)</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>Luo tilailmaisimia ja raportteja</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>Tarkastele Excel-työkirjaa Excel Web Access -verkko-osan kautta</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>Ota InfoPath-lomake käyttöön tiedostokirjastossa</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>Valitse tehtävä</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>Sivustoluettelo</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>Tämän luettelomallin avulla voit luoda sivustoluetteloita.</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>Välilehti-luettelo</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>Tämän luettelomallin avulla voit luoda Välilehti-luettelon.</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>Tässä näkymässä ei ole näytettäviä kohteita.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>Luokat</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>Sivustokartta</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>Luokan sivustot</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>Kotisivu</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>Portaalin kotisivusto</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>Aiheet</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>Aiheiden verkkosivusto</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>Osastot</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>Osastojen verkkosivusto</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>Myynti</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>Myynnin verkkosivusto</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>Tutkimus &amp; kehitys</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>RD-sivusto</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>Henkilöstö</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>Henkilöstöhallintasivusto</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>Tuotteet</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>Tuotesivusto</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>Uutiset</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>Yrityksen uutiset -kotisivu</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>Sivustot</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>Sivustohakemiston verkkosivusto</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>Haku</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>Haun tulokset näkyvät Hakukeskuksessa</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>Raportit</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>Raporttikeskus</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>WSRP-katseluohjelma</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>Näyttää Portlet-sovellukset verkkosivustoista käyttämällä WSRP 1.1:tä.</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>Tämä verkko-osa on vanhentunut.</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>Sivustot</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>Käytä sivustoluettelo sivustojen ja sivustoluokkien linkkien tallentamiseen.</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>Välilehdet</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>Käytä Välilehdet-luetteloa sivujen linkkien tallentamiseen. Välilehdet-luetteloa tulisi käyttää sivuston välilehtiohjausobjektin kanssa.</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>Käynnistä</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>Kohdentaminen käyttäjäryhmälle</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>Kohdentaminen käyttäjäryhmälle</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>Salli yleinen käyttäjäryhmä</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>Salli jakeluluettelo</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>Salli SharePoint-ryhmä</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>Kyllä</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>Ei</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>Oma</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>Oma sivusto</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>Siirtyminen</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>Sivustohakemisto</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>Raporttikeskuksen luonti</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>Luo raporttikeskuksen Premium-sivustoihin.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>Portaalin asetteluominaisuus</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>Portaaliominaisuus, joka lataa asettelut perustyylisivujen valikoimaan.</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>Selaa uutisarkistoa</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>Aloitussivun asettelu</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>Päivityksen yhteydessä SharePoint-klusteriin on asennettu lisäominaisuuksia. Nämä ominaisuudet otetaan käyttöön uusissa luoduissa sivustoissa, mutta ne eivät ole vielä käytettävissä aiemmissa sivustoissa. Voit määrittää nämä ominaisuudet käytettäviksi kaikissa aiemmin luoduissa sivustoissa siirtymällä Ominaisuuksien käyttöönotto aiemmin luoduissa sivustoissa -sivulle. Jos et halua nyt määrittää näitä ominaisuuksia käyttöön kaikissa aiemmin luoduissa sivustoissa, voit poistaa tämän tehtävän. Voit suorittaa tämän tehtävän milloin tahansa keskitetyn hallinnan sivuston Toiminnot-sivulla. Voit myös määrittää nämä ominaisuudet käytettäviksi yksittäisissä sivustoissa käyttämällä kyseisen sivuston Sivuston asetukset -valikkoa.</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>Uusien ominaisuuksien käyttöönotto aiemmin luoduissa sivustoissa</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>Ota ominaisuudet käyttöön aiemmin luoduissa sivustoissa</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">Lisäpäivitystehtävät</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">Toiminnon kopioiminen palvelimesta</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">Ota uusia toimintoja käyttöön aiemmin luoduissa sivustoissa käyttämällä toiminnon kopioimista palvelimesta.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>RSS-katseluohjelma</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>Näyttää RSS-syötteen.</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>Omat SharePoint-sivustot</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>Tämän avulla voit näyttää tekemäsi asiakirjat sivustoissa, joiden jäsen olet, sekä määrittämissäsi sivustoissa.</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>SharePoint-asiakirjat</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>Tämän avulla voit näyttää käyttäjän tekemät asiakirjat sivustoissa, joiden jäsen käyttäjä on.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>Sivustojen koostetoiminto</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>Näyttää valitsemasi sivustot.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>Alueen tiedostokirjasto</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>Alueen tiedostokirjastot ovat kansioita, joiden avulla on helppo jakaa asiakirjoja muiden kanssa. Asiakirjat näkyvät jokaisessa kirjastossa luettelossa, joka voidaan suodattaa tai lajitella.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>Uudet ominaisuudet</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>Näyttää luettelon työtovereista ja heidän äskettäin tekemistään muutoksista.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>Kiinnostuksen seuranta</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>Näyttää viimeisimmät toiminnot kiinnostuksesi kohteissa.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>Yhteystiedot</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>Näyttää tämän sivun tai sivuston yhteyshenkilön tiedot.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>Omat kuvatiedostot</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>Näyttää kuvakirjaston kuvat. Sisältää mahdollisuuden näyttää kuvat diaesityksenä.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>Jaetut kuvatiedostot</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>Omat työtilat</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>Näyttää omaan sivustoon luodut sivustot.</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>Oma Posti-kansio</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>Näyttää postikansion Microsoft Exchange Server 2000:n Outlook Web Accessin avulla.</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>Oma kalenteri</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>Näyttää kalenterin käyttämällä Microsoft Exchange Server 2003:n tai uudempien versioiden Outlook Web Access -ohjelmaa.</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>Oma Saapuneet-kansio</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>Näyttää kalenterin Microsoft Exchange Server 2003:n tai uudempien versioiden Outlook Web Accessin avulla.</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>Omat tehtävät</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>Näyttää tehtävät Microsoft Exchange Server 2003:n tai uudempien versioiden Outlook Web Accessin avulla.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>Omat yhteystiedot</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>Näyttää yhteystiedot Microsoft Exchange Server 2003:n tai uudempien versioiden Outlook Web Accessin avulla.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>Omat linkit</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>Tämän avulla voit tuoda näyttöön omat linkkisi</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>Verkko-osan lisäystoiminnon oletusryhmät</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>Lisää oletusryhmiä verkko-osa-valikoiman QuickAddGroups-sarakkeeseen</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>Ladataan...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>Avaa valikko</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>Jäsenet</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>Verkko-osa ryhmän jäsenten näyttämistä varten</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>Yleiset verkko-osat</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>Asentaa lisää kaikille sivustotyypeille yhteisiä verkko-osia.</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>Oma sivusto</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>Asentaa omaan sivustoon ja käyttäjäprofiileihin liittyviä ominaisuuksia.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>Oman sivuston isäntä</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>Asentaa omien sivustojen isännöintiin liittyviä ominaisuuksia.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>Organisaation logot</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>Organisaatiologojen jaettu kuvakirjasto</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>Kuvakirjastoon voit tallentaa organisaation logot.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>Oman sivuston siirtyminen</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>Asentaa oman sivuston siirtymisominaisuuksia.</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>Oman henkilökohtaisen sivuston määrittäminen</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>Määrittää käyttäjän oman sivuston.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>Käyttäjäprofiilin hallintalinkit</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>Asentaa käyttäjäprofiilipalvelun hallintaan liittyviä linkkejä.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>Käyttäjäprofiilin hallinnan peruslinkit</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>Asentaa käyttäjäprofiilipalvelun perushallintaan liittyviä linkkejä.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>Luettelosisällön kohdistaminen</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>Asentaa luetteloasetusten sivulle painikkeen, jonka avulla voidaan ottaa käyttöön sisällön kohdistaminen käyttäjäryhmien avulla.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>Käyttäjäryhmälle kohdistuksen asetukset</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>Profiilin synkronointiominaisuus</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>Asentaa työn, jonka avulla voidaan synkronoida käyttäjäprofiili ja jäsenyys työryhmäsivustojen kanssa.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>Jaettujen palveluiden tarjoajan käyttäjänsiirto</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>Asentaa käyttäjätietojen siirtämiseen liittyvät ominaisuudet, kun käyttäjän tilitiedot muuttuvat</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>Haku</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>Mukautussivustojen kuvaus...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>Mukautussivustot on suunniteltu auttamaan sinua tarjoamaan tinkimättömät ja selkeät mukautusominaisuudet, jotka yhdistävät portaalisi käyttäjien omiin sivustoihin. Tämän sivuston avulla voit kopioida mukautetut ja kohdistetut tiedot käyttäjillesi sen perusteella, keitä he ovat ja miksi he vierailevat portaalissasi. Mukautussivustomallin avulla voit tunnistaa nykyisen käyttäjän ja käyttää hänen profiiliaan, jotta voit kohdistaa ja esittää kyseiseen käyttäjään sekä hänen tarpeisiinsa liittyvät tiedot tarkasti. Tämän avulla voit tarjota portaalisi keskitetyn näkymän käyttäjillesi.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>&lt;i&gt;Voit esimerkiksi käyttää mukautussivustoja tuomaan eri yritysjärjestelmien syövereissä olevat tiedot käytettäviksi ja käyttää sivustosi rakennetta tarjoamaan yksittäisen pisteen, jonka avulla käyttäjät voivat helposti käyttää työssään tai tehtävässään tarvitsemiaan tietoja. Voit myös auttaa organisaatiotasi saavuttamaan tavoitteensa entistä paremmin käyttämällä mukautussivustosi avulla käyttäjille suorituskykyilmaisimia ja -mittareita, jotka voidaan määrittää erikseen yksittäiselle käyttäjälle hänen roolinsa mukaan.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>Kun mukautussivustosi on luotu, ota yhteyttä järjestelmänvalvojaan, jotta voit rekisteröidä sivuston ja sijoittaa sen pysyvään sijaintiin käyttäjiesi omien sivustojen siirtymispalkkiin.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>Sosiaalisten tunnisteiden ja muistitaulun valintanauhan ohjausobjektit</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>Lisää sosiaalisten tunnisteiden ja muistitaulun aloituskohdat valintanauhan käyttöliittymään.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>Tunnisteet ja huomautukset</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>TunnisteetJaHuomautukset</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>Tunnisteet ja huom.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>Tunnisteet helpottavat linkkien muistamista ja valitun kohteen luokittelemista. Huomautukset ovat julkisia kommentteja. Tunnisteet ja huomautukset lisätään uutissyötteeseen, ja ne toimivat eri sivustoissa.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>Pidän tästä</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>Varustaa valitut kohteet Pidän tästä -tunnisteella. Tunnisteet helpottavat linkkien muistamista ja kohteiden lisäämistä uutissyötteeseen.</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>Omistaja</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>Kuvaus</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>Tila</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>Näyttää sivustohakemiston tietyn luokan sivustot.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>Näyttää sivustohakemiston luokat.</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>Sallii käyttäjille kohteiden valitsemisen asetusluettelosta ja niiden siirtämisen oikeaan sijaintiin.</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>Uutisarkisto</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>Asiakirjat</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>Tietoja sivustoista, joiden jäsen käyttäjä on</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>Työtoverit</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>Tämä verkko-osa on suunniteltu lisättäväksi henkilön profiilisivuun. Se sisältää kaikkien niiden työtovereiden luettelon, jotka käyttäjä on jakanut muiden kanssa. Profiilin omistaja voi käyttää verkko-osaa aloituskohtana työtovereiden luettelon hallinnassa.</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>Muistitaulu</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>Voit sallia käyttäjille lyhyiden, julkisesti tarkasteltavien huomautusten jättämisen tästä sivusta.</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>Merkityt kohteet</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>Näytä henkilöt, jotka ovat lisänneet tunnisteen tiettyyn URL-osoitteeseen</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>Muodosta yhteys</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>Näyttää henkilöt, jotka lisäävät tunnisteita usein tai osoittavat kiinnostuksen kohteen tai asiantuntemuksen tunnisteilla.</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>Aiheeseen liittyvät tunnisteet</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>Näyttää tunnisteet, joita on käytetty yhdessä tietyn termin kanssa, ja mahdollistaa Merkityt kohteet -verkko-osan suodattamisen</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>Tietoja tästä tunnisteesta</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>Näyttää hallitun luokituksen metatiedot tietyistä termeistä</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>Viimeisimmät toiminnot</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>Näyttää tiettyihin termeihin liittyvät henkilöt</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>Yhteistä</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>Näyttää, mitä yhteistä sinulla ja käyttäjällä on</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>Oma organisaatiokaavio</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>Näyttää organisaatiokaavion ja raportointihierarkian</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>Jäsenyydet</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>Näyttää sivustosi ja jakeluluetteloidesi jäsenyydet.</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>Linkit</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>Näyttää linkit, jotka käyttäjä on jakanut kanssasi</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>Ryhmä</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>Verkko-osa ryhmän tietojen näyttämistä varten</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>Jäsenet</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>Verkko-osa ryhmän jäsenten näyttämistä varten</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>Jäsenryhmät</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>Verkko-osa jäsenryhmien näyttämistä varten</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>Mallilinkki 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>Mallikuvaus</value>
+  </data>
+  <data name="imglibList">
+    <value>Tällä viikolla kuvakirjastossa</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>Tämän alueen kuvien tallennuspaikka.</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>Mallilinkki 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>Mallilinkki 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>Asiakirjakeskus</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>Asiakirjakeskussivusto</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(linkitetty URL-osoitteeseen)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(linkitetty muokkausvalikkoon)</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>Koottu sisältö</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Office-asiakassovellukset</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>Lomakkeet</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>Sekalaiset</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>Oma sivusto: Ylhäällä</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>Oma sivusto: Keskellä vasemmalla</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>Oma sivusto: Keskellä oikealla</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>Oma sivusto: Alhaalla</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>Lajittele URL-osoitteen mukaan</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>Lajittele otsikon mukaan</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>Portaalin DiscoPage-ominaisuus</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>Portaaliominaisuus, joka määrittää oletusarvon mukaisen verkkopalvelun DiscoPage-ominaisuudeksi spsdisco.aspx.</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>Aloitussivu ja verkko-osien vyöhykkeet</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>Profiiliominaisuuden suodatin</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>SharePoint Portal Serverin pääsivustohakemiston Capture Control -toiminto</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>SharePoint Portal Serverin pääsivustohakemiston Capture Control -toiminto.</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>Tämä sivun asettelu sisältää kuvan vasemmalla, RTF-kentän sekä verkko-osien vyöhykkeitä, jotka on järjestetty oikeanpuoleiseen sarakkeeseen, ylä- ja alatunnisteeseen sekä kahteen sarakkeeseen.</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>Tämä sivun asettelu sisältää verkko-osien vyöhykkeitä, jotka on järjestetty ylä- ja alatunnisteeseen sekä kahteen sarakkeeseen.</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>Tämä sivun asettelu sisältää verkko-osien vyöhykkeitä, jotka on järjestetty oikeanpuoleiseen sarakkeeseen, ylä- ja alatunnisteeseen sekä kahteen sarakkeeseen.</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>Tämä sivun asettelu sisältää välilehtiohjausobjektin. Siinä olevat verkko-osien vyöhykkeet on järjestetty ylä- ja alatunnisteeseen sekä kahteen sarakkeeseen. </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>Tämä sivun asettelu sisältää verkko-osien vyöhykkeitä, jotka on järjestetty ylä- ja alatunnisteeseen, kahteen sarakkeeseen sekä kolmeen riviin.</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>Tämä sivun asettelu sisältää välilehtiohjausobjektin. Siinä olevat verkko-osien vyöhykkeet on järjestetty ylä- ja alatunnisteeseen sekä kahteen sarakkeeseen.</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>Tämä sivun asettelu sisältää välilehtiohjausobjektin ja hakuruutuverkko-osan. Siinä olevat verkko-osien vyöhykkeet on järjestetty ylä- ja alatunnisteeseen.</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>Tämä sivun asettelu sisältää välilehtiohjausobjektin ja haun verkko-osia. Siinä olevat verkko-osien vyöhykkeet on järjestetty oikeanpuoleiseen sarakkeeseen, ylä- ja alatunnisteeseen, kahteen sarakkeeseen ja kahteen riviin.</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>Tämä sivun asettelu sisältää välilehtiohjausobjektin. Siinä olevat verkko-osien vyöhykkeet on järjestetty oikeanpuoleiseen sarakkeeseen, ylä- ja alatunnisteeseen, kahteen sarakkeeseen ja kahteen riviin.</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>Tämä sivun asettelu sisältää verkko-osien vyöhykkeitä, jotka on järjestetty oikeanpuoleiseen sarakkeeseen, ylä- ja alatunnisteeseen sekä kahteen sarakkeeseen.</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>Mies työskentelemässä tietokoneella</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>Oman sivuston asetteluominaisuus</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>Oman sivuston ominaisuus, joka lataa kaikki asettelut perustyylisivujen valikoimaan.</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>Valitse tehtävä, jonka haluat tehdä</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>Oman sivuston asetteluominaisuus</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>Oman sivuston ominaisuus, joka lataa kaikki asettelut perustyylisivujen valikoimaan</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>Portaalin päivityksen tiedostojen lataamisen ominaisuus</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>Portaaliominaisuus, joka lataa vain päivitykseen liittyvät tiedostot.</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>Tämä on blogimerkinnän malli. Se sisältää tavallisesti käyttäjän tekemän merkinnän.</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>Mallimerkintä</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>Mallikäyttäjä</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>Esimerkki</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>Kaikki tunnisteet</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>Näytä kaikkien käyttäjien lisäämät tunnisteet</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>Omat tunnisteet</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>Näytä nykyisen käyttäjän lisäämät tunnisteet</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>Tunnistepilvi</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>Näyttää organisaatiossa useimmin merkityt aiheet.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>Jokaisen tunnisteet</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>Omat tunnisteet</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>Suositellut linkit (vain M1)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>Näyttää omat kirjanmerkkitiedot</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>Organisaatioselain</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>Tämä verkko-osa näyttää raportointiketjun jokaisen henkilön vuorovaikutteisessa näkymässä, joka on optimoitu organisaatiokaavioiden selaamista varten.</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>Luokitukset</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>Käytä tätä toimintoa, jos haluat sallia käyttäjille sisällön luokittelemisen.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>Luokitus (0 - 5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>Kaikkien lähetettyjen luokitusten keskiarvo</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>Luokitukset</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>Luokitusten määrä</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>Lähetettyjen luokitusten määrä</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>Määritä uusien sivustojen luetteloinnissa käytettävän hakemiston sijainti.</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>Kirjoita sivustot, jotka sisällytetään sivuston hakutulosten Tämä ja aiheeseen liittyvät sivustot -alueeseen.</value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>Luokitusasetukset</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>Ihmiset</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>Käyttäjän ominaisuuksien hallinta</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>Käyttäjäprofiilien hallinta</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>Käyttäjän alityyppien hallinta</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>Käyttäjäryhmien hallinta</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>Käyttäjäryhmän kääntämisen ajoittaminen</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>Käyttäjäryhmien kääntäminen</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>Käyttöoikeuksien hallinta</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>Synkronointi</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>Synkronointiyhteyksien määrittäminen</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>Synkronointiasetusten määrittäminen</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>Organisaatiot</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>Organisaation ominaisuuksien hallinta</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>Organisaatioprofiilien hallinta</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>Organisaation alityyppien hallinta</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>Oman sivuston asetukset</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>Omien sivustojen määrittäminen</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>Luotettujen isäntäsijaintien määrittäminen</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>Määritä mukautussivusto</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>Julkaise linkkejä Office-asiakassovelluksiin</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>Hallitse sosiaalisia tunnisteita ja huomautuksia</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>Määritä sosiaaliset ja asiantuntemustunnisteet</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>Hallitse käytäntöjä</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>Henkilöiden ja organisaatioiden vaatimuspalvelu</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>Asentaa henkilöiden ja organisaatioiden vaatimuspalvelun.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>Ryhmien vaatimuspalvelu</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>Asentaa ryhmien vaatimuspalvelun.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>Organisaatioiden vaatimushierarkiapalvelu</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>Asentaa organisaatiopohjaisen vaatimushierarkiapalvelun.</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>Käyttäjäprofiilisovelluksen hallinta</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>Palveltava käyttäjäprofiilisovellus</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>Linkit palveltavan käyttäjäprofiilisovelluksen hallinnan alisivuihin</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>Palveltavan käyttäjäprofiilisovelluksen liittäminen</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>Liitä palveltavan käyttäjäprofiilisovelluksen toiminto TenantAdmin-malliin</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>Määritä synkronoinnin ajoitustyö</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>Aloita profiilin synkronointi</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>Avattava hakuluettelo</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>Ohita yhteystietokortti</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>Oma uutissyöte</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>Oma sisältö</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>Oma profiili</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>Yleiskatsaus</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>Organisaatio</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>Sisältö</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>Tunnisteet ja muistiinpanot</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>Työtoverit</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>Jäsenyydet</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>Omien tehtävien raporttinäkymät</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>Omien tehtävien raporttinäkymien avulla voit hallita ja käsitellä eri sivustoissa ja järjestelmissä koostettuja omia tehtäviä.</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>Omien tehtävien raporttinäkymien liittäminen</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>Tämä ominaisuus liittää (yhdistää) Omien tehtävien raporttinäkymät -ominaisuuden Oman sivuston malliin.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>Jaetut asiakirjat - VANHA</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>Omat asiakirjat - VANHA</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>Seurattava sisältö</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>Sisällön seuranta</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>Sisällön seuraamisen avulla käyttäjät voivat tilata syötteessään tietyn asiakirjan päivityksiä</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>Sisällön tilaus</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>Sisällön seuranta</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>Sisältää viittauksen seuratun sisällön kohteeseen</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>Klusterin tunnus</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>Sivuston tunnus</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>WebId-tunnus</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>Luettelon tunnus</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>Yksilöllinen tunnus</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>Kohteen tunnus</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>URL-osoite</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>URL-pääosoite</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>Tyyppi</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>Alityyppi</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>Kuvakkeen URL-osoite</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>Ei näy syötteessä</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>Sisältää syötteen</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>Liput</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>Tiedostotyypin ohjelmatunnus</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>Palvelimen URL:n ohjelmatunnus</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>Seuratut asiakirjat</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>Seuratut sivustot</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>Voit lisätä tiedostoja seurantaan siirtymällä valitsemaasi tiedostoon ja napsauttamalla sitten seurantakuvaketta.</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>Et ole vielä seurannut yhtään sivustoa. Voit päivittää luettelon siirtymällä sivustoon ja napsauttamalla Seuraa-kuvaketta.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>Tätä asiakirjakirjastoa käytettiin aiemmin asiakirjojen jakamiseen muiden käyttäjien kanssa. On suositeltavaa siirtyä käyttämään uutta Omat tiedostot -kirjastoa tätä tarkoitusta varten.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>Tässä asiakirjakirjastossa säilytettiin aiemmin asiakirjoja omaa käyttöä varten. On suositeltavaa siirtyä käyttämään uutta Omat tiedostot -kirjastoa tätä tarkoitusta varten.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>Luettelo sisältää kaikki kohteet, joita haluat seurata.</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>Sisällön seuraaminen</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>Salli käyttäjien seurata asiakirjoja tai sivustoja.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>Sisällön seuraamisen liittäminen</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>Aktivoi sisällön seuraamisominaisuus kaikissa sivustokokoelmissa.</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>Sisällön seuranta</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>Salli käyttäjien seurata asiakirjoja tai sivustoja.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>Sisällön seurannan luettelo</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>Ominaisuus, joka kapseloi luettelon, jonka avulla käyttäjät voivat seurata SharePoint-sisältöä.</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>Sisällön seuranta</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>Luettelo, jonka avulla käyttäjät voivat seurata SharePoint-sisältöä.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>Oman sivuston asiakirjakirjasto -ominaisuus</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>Parantaa oman sivuston SharePoint-asiakirjakirjastoa. Ottaa käyttöön uusia näkymiä, kevyitä versiotietoja, parannettuja tilannekohtaisia tietoja ja  kohdekohtaisen jakamisen.</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>Asiakirjat</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>Kaikki</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>Jaettu kanssani</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>Jaettu kaikille</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>Jakaminen-kentät</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>Jakaminen</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>Jakaminen</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>Omat asiakirjat</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>Omat asiakirjat</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>Jaettu sisäisesti</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>Jaettu sisäisesti</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>Säilytä viimeisimmät omat muutokset</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>Käyttöoikeudet</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>Haku ei ole käytettävissä. Yritä myöhemmin uudelleen. Jos ongelma toistuu, ota yhteyttä järjestelmänvalvojaan.</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>Haku on tällä hetkellä poissa käytöstä. Ota yhteyttä järjestelmänvalvojaan.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>Seuraa</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>Seuraa tätä asiakirjaa ja saat päivitykset uutissyötteeseesi.</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>Työn hallinta</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>Luokittelija</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>Käyttäjät luokittelivat kohteen.</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>Käyttäjän luokitukset</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>Käyttäjän luokitukset kohteelle</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>Sisällön palaute</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Asiakirjat</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>Projektin toiminnot</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>Tämän ominaisuuden avulla voit lisätä projektinhallinnan toiminnon sivustoon. Se sisältää sivuston kotisivun tehtävät, kalenterin ja verkko-osat.</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>Omat projektit</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>Ihmiset</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>Uutissyöte</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>Asiakirjat</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>Tehtävät</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>Ihmiset</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>Sivustot</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>Omat tiedot</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value>Käyttäjän {0} tiedot</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>Omat sovellukset</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>Siirry Oma sivusto -sivuun</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>Omat seurattavat</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>Jaettu kanssani</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>Uutissyöte</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>Sovellukset</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>Lisää sovelluksia</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>Uutissyöte</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>Näyttää sisällön keskustelut ja tapahtumailmoitukset sekä henkilöt, joita seuraat SharePoint-sivustoissa. Sen avulla käyttäjät voivat lähettää lyhyitä, julkisesti tarkasteltavia viestejä.</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>Toimintasyöte</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>Näyttää käyttäjän viimeisimmät keskustelut ja toiminnot.</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>Mikrosyöte</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>Oman sivuston mikrosyötteen pysyvän tallennuksen luettelo</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>Oman sivuston julkaistun syötteen pysyvä tallennus</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>Mikrosyötteen sisältölajit</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>Oman sivuston päivittäminen siirryttäessä</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>Luo tai päivittää käyttäjän oman sivuston siirryttäessä oman sivuston isäntäsivustoon.</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>Oman sivuston ensimmäinen käyttökerta</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>Kiinnostavimmat hash-tunnisteet</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>Tämä asiakaspuolen verkko-osa auttaa käyttäjää löytämään uutta sisältöä yhteisöpalveluista</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>Seurattujen määrä</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>Näyttää nykyisen käyttäjän seuraamien käyttäjien, sisällön ja tunnisteiden määrän.</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>Ihmiset</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>Näyttää henkilöt, jota joku seuraa, sekä henkilön, joka seuraa heitä.</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>Manuaalisesti määritetty aikajana</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>Näyttää manuaalisesti määritetyt tiedot aikajananäkymässä</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>Projektin yhteenveto</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>Näyttää projektin tiedot helppolukuisena yhteenvetona</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>Yhdistetty aikajana</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>Tämän aikajanan avulla voit näyttää toisen verkko-osan tietojen ylätason näkymän</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>Aikajanat</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>Projektisivuston aikajana</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>Tämän aikajanan avulla voit luoda projektin tehtävien ylätason näkymän</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>Projektisivuston verkko-osat</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>Projektisivuston hyödylliset ja tarvittavat verkko-osat</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>Ryhmätyökeskus</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>Ryhmätyökeskuksessa kaikkien projektisivustojen näkymä on yhdessä sijainnissa. Ryhmätyökeskus voidaan yhdistää aikajanan verkko-osaan niin, että projektien portfoliosta voidaan luoda yhtenäinen mielikuva.</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>Aiheeseen liittyvät kohteet -ominaisuus</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>Aiheeseen liittyvät kohteet -ominaisuuden avulla voit  lisätä sivustokokoelmaan aiheeseen liittyviä kohteita ja suositellun kohteiden toiminnon.</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>Kohdelomakkeen suositukset</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>Lisää suositeltavan CBS-ohjausobjektin kaikkiin kohteen näyttölomakkeisiin.</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>Oman sivuston suositukset</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>Suosittele käyttäjille automaattisesti tiedostoja ja sivustoja seurattavaksi omissa SharePoint-sivustoissa.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>Suositusten verkko-osa ehdottaa sisältöä, jota käyttäjä voi haluta seurata klusterissa.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>Minulle suositellut asiakirjat</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>Minulle suositellut sivustot</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>Omat suositellut henkilöt</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>Suositusten verkko-osa ehdottaa sisältöä, jota käyttäjä voi haluta seurata klusterissa.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>Ehdotetut seurattavat asiakirjat</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>Ehdotetut seurattavat sivustot</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>Ehdotetut seurattavat henkilöt</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>Suositusten verkko-osa ehdottaa sisältöä, jota käyttäjä voi haluta seurata klusterissa.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>Suositellut asiakirjat</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>Suositellut sivustot</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>Suositellut henkilöt</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>Omat suositukset</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>Omien suositusten verkko-osaa ei voi tuoda.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>Aiheeseen liittyviä kohteita ei voi tuoda verkko-osaan.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>Aiheeseen liittyvät kohteet</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>Aiheeseen liittyvien kohteiden verkko-osa.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>Aiheeseen liittyvän kohteen ehdotukset</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>Aiheeseen liittyvän kohteen ehdotusten verkko-osa.</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>Aiheeseen liittyvät kohteet</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>Uuden kohteen ehdotukset</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>Uuden kohteen ehdotusten verkko-osa</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>Käyttäjäprofiilin käyttäjän asetukset -palvelu</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>Tämä ominaisuus valmistelee käyttäjäprofiilin käyttäjän asetukset -palvelun.</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>Sivuston postilaatikko</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>Postilaatikko</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>Sivuston postilaatikko -sovellus auttaa sinua pitämään sähköpostit ja asiakirjat yhdessä yhdistämällä sivuston Exchange-postilaatikkoon. Voit sen jälkeen tarkastella sähköpostiasi SharePointissa ja sivuston asiakirjoja Outlookissa.</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>Sivuston postilaatikot</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>Ottaa Exchange-postilaatikon valmistelun käyttöön klusterin sivustoissa ja yhdistää sivuston asiakirjat Outlookiin.</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>Pidä sähköposti käytettävissä.</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>Jaa sähköpostiviestejä sivustossa ja yhdistä tiedostoja Outlookiin.</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>Projektisivuston tuki</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>Ottaa käyttöön tämän sivustokokoelman projektisivustojen luomisen.</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>Projektisivustojen tunnisteohjausobjekti</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>Tämä ominaisuus valmistelee projektisivuston tunnisteiden verkko-osan.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>Tunnisteiden verkko-osaa ei voi tuoda.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>Tunnisteiden verkko-osa</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>Tunnisteiden verkko-osan avulla sivuston jäsenet voivat  merkitä ja tarkastella tämän sivuston sivujen tunnisteita.</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>Projektit</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>Projekti</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>Uusi</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>Luo uusi projektin työtila.</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>Avaa</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>Avaa valittu projekti.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>Projektin työtilassa</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>Avaa projektin työtilassa</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>Projektin perustilassa</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>Avaa valittu projekti Microsoft Projectissa.  Jos projekti on kuitattu ulos toiselle käyttäjälle, se avataan vain luku -tilassa.  Jos valittuja projekteja on useita, ne avataan uudessa pääprojektissa.</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>Aikajana</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>Lisää aikajanaan</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>Lisää valitut kohteet aikajanaan.</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>Projekti</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>Omistaja</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>Aloituspäivämäärä</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>Loppupäivämäärä</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>Päivitetään projektiluetteloa...</value>
+  </data>
+  <data name="NextRefresh">
+    <value>Projektiluettelo päivitetään {0}</value>
+  </data>
+  <data name="RefreshNow">
+    <value>Päivitä nyt</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>Hae tästä luettelosta...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>Projektisivuston käyttöalue</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>Sivusto ja sen alla olevat toiminnot</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>Sivustokokoelma</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>Liiketoimintatiedot</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>Raportti</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>Onko kohde raportti?</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>Data</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>Onko kohde tietolähde?</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>Liiketoimintatiedot</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>Raporttitiedosto</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>Luo uusi raporttitiedosto.</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>Raporttitiedostokirjasto</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>Paikka, jossa voit luoda ja hallita raporttitiedostoja.</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>Raporttitiedostokirjasto</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>Raportti- ja datahaun tuki</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>Sisältötyypit, sivustosarakkeet ja kirjastomallit, joita tarvitaan tukemaan raportin ja tietojen hakua yrityksen hakukeskuksessa.</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>Yhteisön portaali -ominaisuus</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>Tämä ominaisuus lisää yhteisön portaalin toimintoja. Se myös valmistelee yhteisön portaalin sivuja.</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>Suositut yhteisöt</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>Yhteisön sivusto</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>Tietoja meistä</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>Yhteisön sivusto -ominaisuus</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>Tämä ominaisuus lisää yhteisön toiminnon, kuten keskustelun luokkia, sisällön ja henkilöiden maineen sekä jäsenten luettelon. Se myös valmistelee yhteisön sivuston sivut, jotka sisältävät nämä luettelot ja ominaisuudet.</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>Keskustelut-luettelo</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>Keskusteluluettelon avulla voit ylläpitää foorumityylisiä keskusteluja, jotka sisältävät  työryhmään, projektiin ja yhteisöön liittyvien aiheiden kysymyksiä ja vastauksia.</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>Koostettu tykkäysten määrä</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>Koostettu arvostelujen määrä</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>Tykkäysten määrä</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>Tykkääjä</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>Suosio</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>Aiheen viimeksi päivittänyt</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>Tekijän mainepistetilanne</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>Tekijän vastausten määrä</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>Tekijän viestien määrä</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>Tekijän parhaiden vastausten määrä</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>Tekijän viimeisimmän toiminnon päivämäärä</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>Tekijän jäsenyyden päivämäärä</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>Tekijän jäsenyyden tila</value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>Taso 1</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>Taso 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>Taso 3</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>Taso 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>Taso 5</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>Luokka</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>Jäsenen nimi</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>Lähettäjä</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>Aihe viimeksi päivitetty</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Luokat</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>Yhteisön sivuston infrastruktuuri</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>Sivustokokoelman yhteisön keskusteluluetteloiden, maineen, luokkien ja jäsenyyden edellyttämät tasokentät, sisältötyypit ja verkko-osat.</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>Luokat-luettelo-ominaisuus</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>Tämä ominaisuus sisältää luokat-luettelon toiminnon mallin</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>Luokat-luettelo</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>Luokat-luettelo</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>Luokka</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(Luokan sisältötyypin kuvaus)</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>Luokan luettelo</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>Luokan kuvakkeet ja tiedot</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>Järjestelmänvalvojan näkymä</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>Yksittäisen luokan näkymä</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>Ryhmän nimi</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>Luokan nimi.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>Kuvaus</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>Mistä yhteisön jäsenten tulisi keskustella tässä luokassa?</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>Luokan kuva</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>Lisää tätä luokkaa edustava kuva.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>Keskustelut</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>Vastaukset</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>Viimeisimmän viestin kirjoittaja</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>Viimeisimmän viestin päivämäärä</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>Luokat</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>Luokat-luettelon avulla voit määrittää luokat, jotka ovat valittavissa keskusteluluettelon viestejä varten.</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>Yleiset</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>Jos et tiedä, mihin kirjoitat viestin, aloita tästä.</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>Jäsen</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>Tila</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>Jäsenen tila</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>Odottaa</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>Aktiivinen</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>Passiivinen</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>Estetty</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>Poistunut</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>Yhteisön sisältötyypit</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>Sivuston jäsenyys</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>Lisää uusi jäsen</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>Sivuston jäsenyys</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>Tämä ominaisuus sisältää luettelorakenteen ja luetteloesiintymän, joiden avulla hallitaan sivuston, kuten yhteisön, projektin, työryhmän tai koulutussivustojen, jäseniä</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>Jäsenluettelomalli</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>Sivuston jäsenluettelomallin rakenne</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>Yhteisön jäsenet</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>Tämä luettelo kirjaa jäsenten jatkuvat toiminnot ja jäsenten keräämän maineen tässä yhteisössä.</value>
+  </data>
+  <data name="members_Folder">
+    <value>Jasenet</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Yhteison keskustelu</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>Raportit</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>Tämä ominaisuus sisältää luettelorakenteen ja luetteloesiintymän, joiden avulla hallitaan yhteisön sivuston loukkaavana pidettävää sisältöä</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>Raportit-luettelomalli</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>Raportit-luettelomallin rakenne</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>Raportit-luettelo</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>Tämä luettelo sisältää niiden henkilöiden lähettämät keskustelukohteen kommentit, jotka ilmoittivat kohteen olevan loukkaava</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>Vaarinkayttoraportit</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>Raportoija</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>Kommentit</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>Keskustelu</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>Raportit</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>Raporttihaku</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>Raportoijahaku</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>Kommenttihaku</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>Viesti</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>Aihesivun URL</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>Raportit</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>Valvonta</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>Tarkastele ilmoitettuja viestejä</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>Tarkastele raportteja</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>Tarkastele raportteja</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>Tarkastele jäsenten ilmoittamaa, heidän mielestään loukkaavaa sisältöä ja siihen liittyviä kommentteja</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>Muokkaa viestiä</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>Muokkaa viestiä</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>Poista mahdollisesti loukkaava sisältö muokkaamalla ilmoitettua keskustelukohdetta</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>Poista viesti</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>Poista viesti</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>Poista keskustelukohteet, joiden on ilmoitettu olevan loukkaavia. Tämä poistaa myös jäsenten kohteesta jättämät, siihen liittyvät kommentit</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>Hylkää raportti</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>Hylkää raportti</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>Hylkää keskustelukohteeseen liittyvät raportit, jos se on yhteisön edun mukaista. Tämä poistaa myös raportteihin liittyvät kommentit, joita jäsenet pitivät loukkaavina</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>Etevä-merkit</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>Anna infopiste</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>Anna jäsenelle infopiste</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>Anna jäsenelle infopiste</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>Liittynyt</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>Viimeisin toiminto</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>Parhaat vastaukset</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>Keskustelut</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>Vastaukset</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>Vastausmäärä, jolla pääsee seuraavalle tasolle</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>Mainepisteet</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>Piilota maine</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>Etevä-merkki</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>Etevä-merkin teksti</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>Yhteisön jäsen</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>Lisää uusi yhteisön jäsen</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Merkit</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>Merkit</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>Luettelo sisältää järjestelmänvalvojien tai yhteisön valvojien merkit.</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>Merkin nimi</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>Asiantuntija</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>Perus</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>Yhteisön hallinta</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>Keskustelujen hallinta</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>Hallitse yhteisön keskusteluja.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>Luokkien hallinta</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>Hallitse yhteisön luokkia.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>Jäsenien hallinta</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>Hallitse yhteisön jäseniä.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>Yhteisön asetukset</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>Yhteisön asetukset, kuten vahvistettu päivämäärä ja loukkaavasta sisällöstä ilmoittamisen ottaminen käyttöön.</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>Ilmoitettujen viestien hallinta</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>Voit hallita viestejä, joiden on ilmoitettu olevan loukkaavia.</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>Maineen asetukset</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>Yhteisön maineen asetukset, kuten sisällön ja henkilöiden maine.</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>Yhteisö</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>Liity</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>Mahdollistaa muiden kuin yhteisön jäsenten liittymisen yhteisöön. Painike piilottaa itsensä, jos käyttäjä on jo jäsen. Tämä verkko-osa toimii yhteisön sivustoissa tai muissa sivustoissa, joissa on otettu käyttöön yhteisön ominaisuudet.</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>Tietoja yhteisöstä</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>Tämä verkko-osa näyttää yhteisön kuvauksen ja muut ominaisuudet, kuten vahvistetun päivämäärän. Se toimii yhteisön sivustoissa tai muissa sivustoissa, joissa on otettu käyttöön yhteisön ominaisuudet.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>Työkalut</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>Antaa yhteisön omistajille ja järjestelmänvalvojille yleisten asetussivujen ja sisältöluetteloiden pikalinkit yhteisösivuston hallintaa varten. Tämä verkko-osa toimii yhteisön sivustoissa tai muissa sivustoissa, joissa on otettu käyttöön yhteisön ominaisuudet.</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>Ajankohtaiset keskustelut</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>Mitä tapahtuu</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>Näyttää yhteisön sivuston jäsenten, aiheiden ja vastausten määrän. Tämä verkko-osa toimii yhteisön sivustoissa tai muissa sivustoissa, joissa on otettu käyttöön yhteisön ominaisuudet.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>Oma jäsenyys</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>Näyttää yhteisön sivuston nykyisen käyttäjän maine- ja jäsentiedot. Tämä verkko-osa toimii yhteisösivustoissa, ja muissa sivustoissa, joissa on otettu käyttöön yhteisön ominaisuudet.</value>
+  </data>
+  <data name="MembersView">
+    <value>Jäsenten näkymä</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>Järjestelmänvalvojan näkymä</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>Yksittäisen jäsenen näkymä</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>Aktiivisimmat osallistujat</value>
+  </data>
+  <data name="NewMembersView">
+    <value>Uudet jäsenet</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>Yhteisö</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>Luokat</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>Jäsenet</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>Tietoja</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>Kotisivu</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>Ilmoitetut viestit</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>KeskustelutLuokittain</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>KeskustelutLuokittainAjankohtaisetTäysi</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>KeskustelutLuokittainAjankohtaisetEsikatselu</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>Blogi-ilmoitukset -ominaisuus</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>Tämä ominaisuus lisää ilmoitukset blogeihin</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>Blogi-ilmoitusten liittäminen -ominaisuus</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>Tämä ominaisuus liittää blogi-ilmoitukset ja tykkäys-ominaisuuden blogisivustomalleihin</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>{0}muokkaa{1} profiiliasi</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>Sähköposti</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>Puhelin</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>Toimisto</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>Yhteinen</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>Näyttää, mitä yhteistä sinulla ja käyttäjällä on</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>Organisaatiokaavio</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>Näyttää organisaatiokaavion ja raportointihierarkian</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>Seurannan hallinta</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>Tunnisteet ja muistiinpanot</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>Näyttää organisaatiossa useimmin merkityt aiheet.</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>Profiilin tiedot</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>Näyttää nykyisen käyttäjän profiilin tiedot</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>Siirrä asiakirjat</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>Siirrä valitut asiakirjat toiseen sivustoon tai nykyisen kirjaston kansioon.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>Siirrä asiakirjat.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>Siirrä valitut asiakirjat toiseen sivustoon tai nykyisen kirjaston kansioon.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>Siirrä valitut asiakirjat toiseen sivustoon tai nykyisen kirjaston kansioon.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>Klustereidenvälisen sivuston käyttöoikeudet</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>Klustereidenvälisen sivuston käyttöoikeuksien avulla voit sallia sisäisen SharePoint-sovellusten käyttää klustereiden verkkosivustoja.</value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>Vain sisäiseen käyttöön</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>Sosiaalinen</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>Mikroblogin ominaisuudet</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>Lukematon Mainituissa</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>Viimeisin merkintä</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>Sosiaaliset ominaisuudet</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>Seurattu kohde</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>Sivusto</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>Seurattu asiakirja</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>Sosiaalisten tietojen tallennus</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>Sosiaalisten ominaisuuksien tietojen tuki</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>Sosiaalinen</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>Sosiaalisten ominaisuuksien tietojen tuki</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>Oman sivuston perustyyli -ominaisuus</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>Oman sivuston ominaisuus, joka lataa perustyylisivun perustyylisivujen valikoimaan.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>Oman sivuston yhdistetty siirtyminen -ominaisuus</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>Oma sivuston ominaisuus, joka näyttää saman siirtymisen isäntäsivustoon ja omaan sivustoon.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>Oman sivuston yhtenäinen pikakäynnistys -ominaisuus</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>Oman sivuston ominaisuus, joka näyttää saman pikakäynnistyksen isäntäsivustoille ja omille sivustoille.</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>Oman sivuston perustyylisivu</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>Sisältää oman sivuston yksilöllisen käyttötuntuman.</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>Ylemmälle tasolle siirretyt sivustot</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>Käsittelee ylemmälle tasolle siirrettyjä sivustoja kuvakkeina ja tiedostoina.</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>uusi sivusto</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>Ylemmälle tasolle siirretyt sivustot</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>Ylemmälle tasolle siirrettyjen sivustojen hallinta</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>Sivuston syöte</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>Sivuston syöte sisältää ryhmäsivuston mikroblogin keskustelut.</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>Uutissyöte</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>Sivuston syöte</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>Ottaa käyttöön sivuston syötteiden käytön.</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>Uutissyöte</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>Sivuston syöteominaisuuden ohjauskone</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>Ohjaa sivuston syöteominaisuuden aktivointia.</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>Sivuston syöteominaisuuden liittäminen</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>Liittää sivuston syöteominaisuuden kaikkiin uusiin ryhmäsivuston sivustokokoelmiin.</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>Mikroblogin muokkaus</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>Voi tarkastella, lisätä, päivittää ja poistaa luettelon kohteita sekä tiedostoja.</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>Vaihda valokuva</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>Vain {0} voi vaihtaa tämän valokuvan.</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>Et voi muuttaa tämän henkilön valokuvaa, koska se on synkronoitu Microsoft Exchangen kanssa.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>Omat seurattavat</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>ihmiset</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>Tarkastele seurattavia henkilöitä</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>tiedostot</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>Tarkastele seurattavia tiedostoja</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>sivustot</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>Tarkastele seurattavia sivustoja</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>tunnisteet</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>Tarkastele seuraamiasi tunnisteita</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">{Assigner} määritti sinulle uusia tehtäviä sivustossa {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">Sinulle on määritetty vähintään yksi tehtävä sivustossa {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>NÄYTÄ OMAT TEHTÄVÄT</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>SkyDrive Pro on valmis</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>Tarkastele tiedostojasi offline-tilassa</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>Ota mobiilitoiminnot käyttöön!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>Mukauta omaa profiilia</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>Pysy ajan tasalla</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>Anna muiden nähdä, mitä teet</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>  &lt;a href="{0}"&gt;Päivitä tietosuoja-asetuksesi &lt;/a&gt;, niin muut voivat tarkastella ja kommentoida tekemisiäsi SharePointin uutissyötteessä.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>Nykyiset oman sivuston tiedostosi on siirretty &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;-palveluun. Siellä voit tallentaa, synkronoida ja jakaa töitäsi.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>Voit siirtää tiedostoja offline-tilaan napsauttamalla synkronointipainiketta missä tahansa kirjastossa. Kokeile sitä &lt;a href="{0}"&gt;OneDrive for Business&lt;/a&gt; -palvelussa.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2">
+    <value>Voit siirtää tiedostot offline-tilaan napsauttamalla kirjaston synkronointipainiketta. Kokeile sitä &lt;a href="{0}"&gt;{1} for Business&lt;/a&gt; -palvelussasi.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>Ota SharePoint mukaasi lataamalla {0}mobiilisovelluksia{1}.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>Lataa kuva ja kerro muille lisää itsestäsi &lt;a href="{0}"&gt; täällä&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>Muut käyttäjät näkevät SharePoint-toimintosi ja voivat kommentoida niitä. Voit muuttaa asetuksia &lt;a href="{0}"&gt; täällä&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>&lt;a href="{0}"&gt;Seuraa&lt;/a&gt; sinulle läheisiä ihmisiä.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>SharePointin uutissyötteesi on valmis</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>Tässä on, mitä voit tehdä seuraavaksi:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>Kaikki hyöty SharePointista</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>Muut käyttäjät näkevät SharePoint-toimintosi ja voivat kommentoida niitä. Voit muuttaa asetuksen &lt;a href="{0}"&gt; täällä&lt;/a&gt;.</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>OneDrive for Business</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>Hallitse jaettuja sovelluksia</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>Näytä kaikki tämän sivuston kirjastot ja luettelot.</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>Uutissyöte</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>Tervetuloa &lt;span id="skyDriveText"&gt;OneDrive for Business&lt;/span&gt; -palveluun. Täällä voit tallentaa, synkronoida ja jakaa töitäsi. Tiedostot ovat yksityisiä, kunnes ne jaetaan. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Lue lisää napsauttamalla tätä&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText2">
+    <value>Tervetuloa &lt;span id="skyDriveText"&gt; {0} for Business&lt;/span&gt; -palveluun. Täällä voit tallentaa, synkronoida ja jakaa töitäsi. Tiedostot ovat yksityisiä, kunnes ne jaetaan. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Lue lisää napsauttamalla tätä&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated">
+    <value>Hyviä uutisia. Myös {0} for Business on Office 365:ssä, ja voit käyttää tiedostoja siellä mistä tahansa. Aloita valitsemalla ylemmässä siirtymispalkissa {1}. Älä huolehdi, sillä myös täällä olevat tiedostot toimivat. Saat lisätietoja tiedostojen siirtämisestä {2}napsauttamalla tätä{3}.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated">
+    <value>Voit olla rauhallisin mielin, sillä tiedostosi ovat turvassa. Ne on siirretty Office 365:n uuteen {0} for Business -palveluun, jossa voit käyttää niitä missä tahansa millä laitteella tahansa. Voit siirtyä palveluun valitsemalla ylemmässä siirtymispalkissa {1}.</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>Hylkää</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>Kaikki &lt;span id="skyDriveFolder"&gt;organisaatiossasi&lt;/span&gt; voivat käyttää täällä olevia tiedostoja.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>OneDrive for Business -palvelua valmistellaan. Tämä saattaa kestää hetken, joten voit tehdä välillä muuta.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2">
+    <value>{0} for Business -palveluasi valmistellaan. Tämä saattaa kestää hetken, ja voit siirtyä pois tästä näkymästä.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription">
+    <value>Siirrä nykyiset Oma sivusto -tiedostot OneDrive for Businessiin, jossa voit tallentaa, synkronoida ja jakaa työsi.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2">
+    <value>Siirrä nykyiset oman sivustosi tiedostot {0} for Business -palveluun, jossa voit tallentaa, synkronoida ja jakaa niitä.</value>
+  </data>
+</root>

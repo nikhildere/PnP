@@ -1,0 +1,3631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4569.1502" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>Hjemmeside</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>Ny SharePoint Server!</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>Søk i diskusjoner</value>
+  </data>
+  <data name="SetupMySite">
+    <value>Konfigurer Mitt område</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>Klikk for kategorier</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>Klikk for populære områder</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>Klikk for områdekart</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>Kategorier</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>Populære områder</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>Områdekart</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>Alle områder</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>Klikk for resultater fra alle områder</value>
+  </data>
+  <data name="PeopleTab">
+    <value>Personer</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>Klikk for personresultater</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>Diskusjoner</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>Rapportering av SharePoint Server-trafikk</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>Trafikkrapport</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>Bruksrapporter for søk</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>Områdebruksrapporter</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>Bruksrapporter for områdesamling</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>Dokumentbibliotek</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>Gir deg et sted å lagre dokumenter for dette området.</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>Mal for forretningsdataprofil</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>Øverste navigasjonsfelt på SharePoint</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>Rapporter</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>Instrumentbord</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>Eksempel</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>Ressurser</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>Datatilkoblinger</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>Rapportkalender</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>Referansebibliotek</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>Rapportbibliotek</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>Et sted der du enkelt kan opprette og behandle nettsider og dokumenter for å spore målinger, mål og innsamlede firmaopplysninger. </value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>Statusliste</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>En sted for å spore og vise et sett med mål. Fargede ikoner viser i hvilken grad målene er nådd.</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>Dokumentbibliotek for webdel-side</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>Et dokumentbibliotek med sidemal for webdel</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>Rapportbibliotek</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>Et rapportbibliotek gir utvidet støtte for rapportbehandling som kan vise statusindikatorer og Excel-arbeidsbøker.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>Referansebibliotek</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>Et bibliotek for informasjon som beskriver hvordan du bruker dette området.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>Rapportkalender</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>Bruk kalenderen til å kunngjøre hendelser som er beslektet med dette området.</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>Datatilkoblinger</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>Med datatilkoblingsbiblioteket blir det enkelt å dele filer som brukerne kan bruke til å koble til eksterne datakilder.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>Kunngjøringer</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>Bruk listen Kunngjøringer til å kunngjøre meldinger som har med dette området å gjøre.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>Velkommen til rapportsentral</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>Bruk rapportsentralen til å opprette, distribuere og behandle firmaopplysninger.</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>Galleri for områdemaler</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>Eksempelindikatorer</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>Eksempelstatusindikatorer som vises som standard på denne rapportsentralens hjemmeside.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>Velferd</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>Produktivitet</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>Utgifter</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>Dette er en eksempelindikator som trygt kan slettes.</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>Rapportsentral</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>Bruke rapportsentralen</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>Brukes for formatert tekst, tabeller og bilder.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>Funksjonene i rapportsentralen inkluderer:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;Sentrale ytelsesindikatorer&amp;lt;/A&amp;gt; (KPIer) lar deg kommunisere med mål, trender og spore fremdrift.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;Instrumentbord&amp;lt;/A&amp;gt; lar deg gi en mer detaljert forklaring av informasjonen ved hjelp av Excel-arbeidsbøker og KPIer. Instrumentbordfiltre gjør det enkelt å merke et område for visning. Hvis du vil opprette et eget instrumentbord, går du til &amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;Instrumentbord&amp;lt;/A&amp;gt;-visningen av rapportbiblioteket og klikker Ny.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>&amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;Rapporter&amp;lt;/A&amp;gt;-biblioteket er utformet til å lagre filer som inneholder rapporter og instrumentbord, og tillate enkel tilgang til informasjon fra tidligere perioder.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>Hvis du vil forberede denne rapportsentralen for bruk, foreslås følgende handlinger:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>Vis eksemplene på &amp;lt;A &amp;gt;instrumentbord&amp;lt;/A&amp;gt; og &amp;lt;A&amp;gt;arbeidsbok&amp;lt;/A&amp;gt; for å forstå noen av egenskapene i denne rapportsentralen</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>Hvis eksemplene ikke fungerer riktig, ber du en administrator om å sørge for at Excel Services aktiveres, og at denne rapportsentralen er en klarert plassering</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>Hvis du har tenkt å bruke Excel til å analysere informasjon fra eksisterende dataservere, oppretter du og laster opp dataforbindelsesfiler (ODC) til &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;datatilkoblingsbiblioteket&amp;lt;/A&amp;gt;. Hvis du vil at brukere skal kunne opprette nye KPI-lister, legger du dem til i Eiere-gruppen. Brukere i Medlemmer-gruppen kan redigere sider, men kan ikke opprette KPI-lister.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>Oppdatere eller fjerne eksempelinnhold</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>Høydepunkt</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>Mer informasjon</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>Hurtigreferanse</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>Kontaktdetaljer</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>Brukes til å vise detaljer om en kontakt for denne siden eller dette området.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>Kommende hendelser</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>Rapportsentralside</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>Statusindikatorer</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>Rapporter</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>Beskrivelsen gir informasjon om hensikten med målet.</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>Merknader for indikator</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>Kommentarer beskriver gjeldende status for indikatoren, og kan gi informasjon om årsaker eller problemer.</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>Indikatorverdi</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>Målterskel for indikator</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>Varselterskel for indikator</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>Deltaljkobling</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>Kobling for side for gjennomklikking etter detaljer </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>Lavere verdier er bedre</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>Om det er bedre med lavere eller høyere</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>Automatisk oppdatering</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>Om data skal hentes fra bakdatabasen hver gang</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>Oppdateringsfeil</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>Inneholder eventuell feilmelding fra siste oppdatering</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>Datakilde</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>URL-adresse til datakilden</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>Vis Guid</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>Guide for visningen</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>Visningsnavn</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>Navnet på visningen</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>Verdiuttrykk</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>Uttrykk som brukes til å fastsette indikatoren.</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>Prosentuttrykk</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>Bestem om uttrykket brukes til å beregne prosentandel</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>Verdiark</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>Navn på arket for verdien</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>Verdicelle</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>Adresse eller navn på cellen for verdien</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>Målark</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>Navn på arket for målet</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>Målcelle</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>Adresse eller navn på cellen for målet</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>Varselark</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>Navn på arket for advarselen</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>Varselcelle</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>Adresse eller navn på cellen for varselet</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>Mål fra arbeidsbok</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>Om målet kommer fra arbeidsboken eller fra indikatordefinisjonen</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>Varsel fra arbeidsboken</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>Om varselet kommer fra arbeidsboken eller fra indikatordefinisjonen</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>Trend</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>Indikatortrenden</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>Indikatorstatus</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>Status for indikatoren</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>Visningsmappe</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>Visningsmappe for indikatoren</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>Indikator</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Navn på KPI for Microsoft SQL Server 2005 Analysis Services</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>Ta med underordnede indikatorer</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>Inkludere underordnede KPIer eller ikke</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>Formatert indikatorverdi</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>Verdien for indikatoren, formatert etter dens datakildeleverandør</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>Formatert indikatormål</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>Målet for indikatoren, formatert etter dens datakildeleverandør</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>Formatert indikatorvarsel</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>Varselverdien for indikatoren, formatert etter dens datakildeleverandør</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>Siste indikatordataoppdatering</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>Den siste indikatoroppdateringen fra datakildeleverandøren</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>Rapportbeskrivelse</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>En beskrivelse av innholdet i rapporten</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>Lagre til rapportlogg</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>Hver gang dette dokumentet lagres, vil en kopi legges til i rapportloggen.</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>Overordnet ID</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>Den overordnede IDen i denne rapporten</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>Eier</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>Eier av dette dokumentet</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>Rapportkategori</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>Kategori i rapporten</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>Kategori 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>Kategori 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>Kategori 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>Rapportstatus</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>Status for rapporten</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>Endelig</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>Foreløpig</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>Perioden til i dag</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>Logg</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>Vis logg</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>Navn</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>Navn</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>Ny</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>Rapporter om endret kobling</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>Rapport opprettet</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(statisk utvalg-verdi)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>Rapport opprettet av</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>Rapport endret</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>Rapport endret av</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>Rapporter navn på overordnet</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(navnet på det statiske utvalgets overordnede)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>Koble til rapport</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(kobling til rapport med redigeringsmeny)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>Innsamlede firmaopplysninger</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>Vanlige indikatorkolonner</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>Statusindikator basert på fast verdi</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>Opprett en ny statusindikator ved hjelp av manuelt angitt informasjon</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>Statusindikator basert på SharePoint-liste</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>Opprett en ny statusindikator ved hjelp av data fra SharePoint-lister</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>Statusindikator basert på Excel</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>Opprett en ny statusindikator ved hjelp av data fra Excel Services</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>Statusindikator basert på SQL Server Analysis Services</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>Opprett en ny statusindikator ved hjelp av data fra SQL Server Analysis Services</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>Rapport</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>Webdelside med statusliste</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>Opprett en side som viser statusindikator og Excel-arbeidsbøker.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Excel-rapport</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>Instrumentbord</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>Gjeldende rapporter</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>Alle rapporter og instrumentbord</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>Nylig oppdatert</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Detaljrapportside for Excel-filer.</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>Øvre venstre sone</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>Øvre høyre sone</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>Filtrer sone</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>Legg til et filter</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>Nedre venstre sone</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>Nedre midtre sone</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>Nedre høyre sone</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>Toppsone</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>Midtre sone, venstre</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>Midtre sone, høyre</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>Bunnsone</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>Alle elementer</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>Statusliste</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>Statusliste</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>Viser en liste over statusindikatorer. Statusindikatorer viser viktige mål for organisasjonen, og viser hvordan organisasjonen gjør det i forhold til målene.</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>Detaljer for statusindikator</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>Viser detaljer for én enkelt statusindikator. Statusindikatorer viser et viktig mål for en organisasjon og kan hentes fra andre datakilder, inkludert SharePoint-lister, Excel-arbeidsbøker og SQL Server 2005 Analysis Services-KPIer.</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>Forretningsdata</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>Ja</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>Nei</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(Tom)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(Alle)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(Oppdater)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>Oppdater</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(Tom)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>Sorter stigende</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>Sorter synkende</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>Filtrer etter </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>Sorter etter </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>Målgruppeangivelse</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>Målgruppe (regelbaserte målgrupper; SharePoint-grupper; distribusjonslister)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>Angitt</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>Ikke angitt</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>Tillat globale målgrupper</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>Tillat distribusjonslister</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>Tillat SharePoint-grupper</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>Områdekatalog</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>Områdekart</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>Områder i kategori</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>Populære områder</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>Områdekatalogen er en katalog med områder som kan grupperes i kategorier. Hvis du vil sende inn et område til områdekatalogen, velg enten "Opprett område" eller "Legg til kobling på område" i øvre høyre hjørne på siden.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>Hvis du vil legge til populære områder, legger du til en kobling i listen med områdekataloger, og merker denne koblingen som "Populært område". Kom i gang ved å legge til en kobling i områdekatalogen og sende den inn som et Populært område.</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>Omfangsinnstillinger for beslektede koblinger</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>Nyhetsartikkel med bilde</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>Kobling til nyhetsartikkel</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>Webdel-soner</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>Hjemmeside for nyheter</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>Hjemmeside for områdekatalog</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>Aktiver Enterprise-funksjoner</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>Standard</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>Filtre</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>Forretningsdata</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>Instrumentbord</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>Webdel for WSRP-bruker</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>Gjeldende bruker</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>Gjeldende bruker-filter</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>Filtrerer innholdet i webdeler ved å bruke egenskaper for gjeldende bruker.</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>Tekstfilter</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>Filtrerer innholdet i webdeler ved å la brukere skrive inn en tekstverdi.</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>SharePoint-listefilter</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>Filtrerer innholdet i webdeler ved hjelp av en verdiliste.</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>QueryString</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>Spørringsstrengfilter (URL-adresse)</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>Filtrerer innholdet i webdeler ved hjelp av verdier som sendes via spørringsstrengen.</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>Sidefelt</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>Sidefeltfilter</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>Filtrerer innholdet i webdeler ved hjelp av informasjon om gjeldende side.</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>SQL Server Analysis Services-filter</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>Filtrerer innholdet i webdeler ved hjelp av en verdiliste fra SQL Server Analysis Services-kuber.</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>Statusliste</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>IView-webdel</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>Indikatordetaljer</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>Dato</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>Datofilter</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>Filtrerer innholdet i webdeler ved å la brukere skrive inn eller velge en dato.</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>Forretningsdataliste</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>Viser en liste over elementer fra en datakilde for tilkobling for forretningsdata.</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>Kan ikke importere denne webdelen.</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>Filter for forretningsdatatilkobling</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>Filtrerer innholdet i webdeler ved hjelp av en verdiliste fra forretningsdatatilkoblingen.</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>Forretningsdataelement</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>Viser ett element fra en datakilde for tilkobling for forretningsdata.</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>Forretningsdatarelatert liste</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>Viser en liste over elementer som er relatert til ett eller flere overordnede elementer, fra en datakilde for tilkobling for forretningsdata.</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>Handlinger for forretningsdata</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>Viser en liste over handlinger fra tilkobling for forretningsdata.</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>Forretningsdataelementbygger</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>Oppretter et forretningsdataelement fra parametere i spørringsstrengen og leverer det til andre webdeler.</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>Valgfilter</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>Filtrerer innholdet i webdeler ved hjelp av en verdiliste som er skrevet inn av sidens forfatter.</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>Verdi 1&amp;Verdi 2&amp;Verdi 3=Beskrivelse 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>Bruk filtre-knappen</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>Legg til denne knappen på en side, slik at brukerne kan bestemme når de skal bruke filtervalgene. Ellers brukes hvert filter når filterverdien endres.</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>Populære områder</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>Viser de mest populære områdene i områdekatalogen.</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>Nyheter</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>Ferske nyheter</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>Nyhetsoversikt</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>Denne uken i bilder</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>Viser et bilde fra et bildebibliotek og koblinger til en lysbildefremvisning der brukere kan se alle bildene i bildebiblioteket.</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>Nyheter</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>Eksempel på nyhetsartikkel</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>Denne siden er med vilje tom.</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>Nynetsarkiv</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>Bransjenyheter</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>Flere nyheter</value>
+  </data>
+  <data name="KPIList">
+    <value>Statusindikatorliste</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>En statusindikatorliste brukes til å spore og vise et sett med mål. Fargede ikoner vises for å kommunisere i hvilken grad målene er oppnådd.</value>
+  </data>
+  <data name="EventsList">
+    <value>Hendelser</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>Bruk hendelseslisten til å legge inn informasjon om møter, frister og andre hendelser som hører til dette området.</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>Kan ikke importere denne webdelen.</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>Hjemmeside</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>Webdel for hjemmesidebilde</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>Viser hjemmesidebilde</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>Hjemmesidebilde</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>Innholdsredigering</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>Gjør det mulig å legge inn innhold som rik tekst.</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>Jeg trenger å…</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>Ansattoppslag</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>Søke etter ansatte</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>Innholdsfortegnelse</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>Innstillinger for områdekatalog</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>Konfigurer områdekatalogen</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>Skann koblinger i områdekatalog</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>Sider</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>Delte dokumenter</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>Personlige dokumenter</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>Delte bilder</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>Brukerbilder</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>Profilbilder for alle brukere vil bli lagret her.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>Bruk dette dokumentbiblioteket til å lagre webdel-sidene. De vil automatisk bli delt på din offentlige hjemmeside.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>Bruk dette dokumentbiblioteket til å lagre dokumentene dine. Dokumenter som deles her vil bli vist på din offentlige hjemmeside.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>Bruk dette dokumentbiblioteket for dokumenter du vil beholde for personlig bruk. De vil bare være synlige for deg og administratorer for serveren.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>Del bilder og fotografier med andre ved å legge dem til i dette bildebiblioteket. Bilder og grafikk som lagres her, vil bli delt på din felles hjemmeside.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>Kom i gang med Mitt område</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>Koblinger til forskjellige hint og tips om bruken av Mitt område.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>SharePoint-områder</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>Informasjon om områdene brukeren er medlem av</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>Hoveddokument for Mitt område</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>Gir Mitt område et unikt preg.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>Nye bloggposter</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>Brukeres siste blogger</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>Legg til et nytt innlegg</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>Delingssenter</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>Den sentrale webdelen som brukeren skal bruke til å dele elementer.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>Siste aktiviteter</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>Webdelen som viser mine siste aktiviteter.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>Spør meg om</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>Webdelen som viser en liste over nøkkelord som andre kan stille meg spørsmål om.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>Mine koblinger</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>Viser koblingene du har opprettet.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>Min kalender</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>Viser kalenderen din ved hjelp av Outlook Web Access for Microsoft Exchange Server 2003 eller senere.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>Kollegasporing</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>Viser en liste med dine kolleger og deres nylige endringer.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>Mine medlemskap</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>Viser gruppene du er medlem i.</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>Brukerprofiler og Mine områder</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>Målgrupper</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>Brukerprofiler og egenskaper</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>Målgrupper</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>Policyer for profiltjenester</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>Innstillinger for mitt område</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>Klarerte vertsplasseringer for Mitt område</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Publiserte koblinger til Office-klientprogrammer</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>Koblinger til område for personlig tilpasning</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>Tillatelser for personlig tilpasning-tjenester</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>Delegeringsinnstillinger for organisasjoner</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>Forretningsdataelement</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>Webdel for detaljer i forretningsdataelement</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>Handlinger for forretningsdata</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>Webdel for visning av forretningsdatahandlinger</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>Tilkobling for forretningsdata</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>Importer programdefinisjon</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>Vis programmer</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>Vis enheter</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>Rediger profilsidemal</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>Tillatelser for tilkobling for forretningsdata</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>Konfigurer innstillinger for enkel pålogging (SSO)</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>Kategorinavn</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>Dette er teksten på kategorietiketten.</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>Side</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>Skriv inn navnet på siden som skal vises som en del av denne kategorien. Hvis du ikke har opprettet en side, gjør du det med alternativet Opprett side i Områdehandlinger.</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>Legg til ny kobling</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>Verktøytips</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>Dette er verktøytipset som vil vises når en bruker beveger musepekeren over denne kategorien.</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>Alle kategorier</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>Tittel</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>URL-adresse</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>Eier</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>Divisjon</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>Område</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>Spotlys-område</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>Populært område</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>Oppgaver og verktøy</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>Koblingsstatus</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>OK</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>Brutt</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>Ubestemmelig</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>Øverste oppgaver</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>Internasjonal</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>Nasjonal</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>Lokal</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>Informasjonsteknologi</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>Forskning og utvikling</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>Salg</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>Økonomi</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>Alle områder</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>Sammendrag</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>Behandle områder</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>Innsendte områder</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>Kategorier</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>Avviste områder</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>Kategorier for oppretting av område</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>Brutte områder</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>Velkommen til Microsoft® SharePoint® Server 2013 </value>
+  </data>
+  <data name="HomePageContent2">
+    <value>Kom i gang med den nye versjonen av Microsoft SharePoint Server 2013:</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>Behandling av område og innhold</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>Opprett nye &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;sider&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;områder &lt;/a&gt; og &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;lister &lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>&lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;Legg til brukere&lt;/a&gt; i gruppen over medlemmer for å redigere sider</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>&lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;Opprett et personlig område&lt;/a&gt; ved å klikke Mitt område</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>&lt;a href="~SiteCollection/SearchCenter"&gt;Søk&lt;/a&gt; på tvers av områder, dokumenter og personer</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>Forretningsløsninger (krever Enterprise-lisens)</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>Opprett statusindikator og rapporter</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>Vis en Excel-arbeidsbok via webdelen Excel Web Access</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>Distribuer et InfoPath-skjema til et dokumentbibliotek</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>Velg oppgave</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>Områdeliste</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>Bruk denne listemalen til å opprette områdelister.</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>Kategoriliste</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>Bruk denne listemalen til å opprette kategorilister.</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>Det finnes ingen elementer å vise i denne visningen.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>Kategorier</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>Områdekart</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>Områder i kategori</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>Hjemmeside</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>Portalens hjemmesider</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>Emner</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>Emneweb</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>Avdelinger</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>Avdelingsweb</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>Salg</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>Salgsweb</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>Forskning og utvikling</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>FU-web</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>Personaladministrasjon</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>Personaladministrasjonsweb</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>Produkter</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>Web med produkter</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>Nyheter</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>Firmaets hjemmeside for nyheter</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>Områder</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>Web med områdekatalog</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>Søk</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>Søkesentralen viser søkeresultater</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>Rapporter</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>Rapportsentral</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>WSRP-visning</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>Viser portleter fra webområder ved hjelp av WSRP 1.1.</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>Denne webdelen er avskrevet.</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>Områder</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>Bruk områdelisten til å lagre koblinger til områder og områdekategorier.</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>Kategorier</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>Bruk kategorilisten til å lagre koblinger til sider. Kategorilisten bør brukes med kategorikontrollen på området ditt.</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>Start</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>Målgruppeangivelse</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>Målgruppeangivelse</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>Tillat global målgruppe</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>Tillat distribusjonsliste</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>Tillat SharePoint-gruppe</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>Ja</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>Nei</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>Personlig</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>Mitt område</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>Navigasjon</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>Områdekatalog</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>Opprettelse av rapportsentral</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>Oppretter rapportsentralen på Premium-områder.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>Funksjon for portaloppsett</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>Portalfunksjon som laster opp alle oppsett til galleriet med hovedsider.</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>Bla gjennom nyhetsarkiv</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>Velkomstoppsett</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>Som en del av oppgraderingen har du nå flere funksjoner installert på SharePoint-farmen. Disse funksjonene vil bli aktivert i nyopprettede områder, men er enda ikke gjort tilgjengelig for eksisterende områder. Du kan gjøre disse funksjonene tilgjengelige for alle eksisterende områder ved å navigere til siden Aktiver funksjoner på eksisterende områder. Hvis du ikke ønsker å gjøre disse funksjonene tilgjengelig for alle eksisterende områder nå, kan du slette denne oppgaven. Du kan når som helst utføre denne oppgaven fra siden Operasjoner på området for sentraladministrasjon. Du kan også gjøre disse funksjonene tilgjengelig for enkeltområder ved å bruke Områdeinnstillinger-menyen for det området.</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>Aktiver nye funksjoner på eksisterende webområder</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>Aktiver funksjoner på eksisterende webområder</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">Flere oppgraderingsoppgaver</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">Funksjonsinnføring</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">Bruk Funksjonsinnføring til å aktivere nye funksjoner på eksisterende områder.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>RSS-visningsprogram</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>Viser en RSS-feed.</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>Mine SharePoint-områder</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>Brukes til å vise dokumenter du har redigert, på områder hvor du er medlem samt på ønskede områder.</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>SharePoint-dokumenter</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>Brukes til å vise dokumenter brukeren har redigert, der brukeren er områdemedlem.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>Områdesamler</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>Viser ønskede områder.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>Dokumentbibliotek for område</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>Områdedokumentbiblioteker er mapper som gjør det enkelt å dele dokumenter med andre. Hvert bibliotek viser dokumenter i en liste som kan filtreres eller sorteres.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>Nyheter</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>Viser en liste over dine kolleger og deres siste endringer.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>Interessesporing</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>Viser nylige aktiviteter på dine interesseområder.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>Kontaktdetaljer</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>Viser detaljer om en kontakt for denne siden eller dette området.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>Mine bilder</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>Viser bilder fra bildebiblioteket ditt, men et alternativ for å vise som en lysbildefremvisning.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>Delte bilder</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>Mine arbeidsområder</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>Brukes til å vise områder som er opprettet under ditt Mitt område.</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>Mappen Min e-post</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>Viser e-postmappen din ved hjelp av Outlook Web Access for Microsoft Exchange Server 2000.</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>Min kalender</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>Viser kalenderen ved hjelp av Outlook Web Access for Microsoft Exchange Server 2003 eller senere.</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>Min innboks</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>Viser innboksen din ved hjelp av Outlook Web Access for Microsoft Exchange Server 2003 eller senere.</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>Mine oppgaver</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>Viser oppgavene dine ved hjelp av Outlook Web Access for Microsoft Exchange Server 2003 eller senere.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>Mine kontakter</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>Viser kontaktene dine ved hjelp av Outlook Web Access for Microsoft Exchange Server 2003 eller senere.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>Mine koblinger</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>Brukes til å vise koblingene</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>Standardgrupper i webdelinnlegging</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>Legger til flere standardgrupper i QuickAddGroups-kolonnen i webdelgalleri</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>Laster inn...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>Åpne meny</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>Medlemmer</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>Webdel for å vise medlemmene i en gruppe</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>Globale webdeler</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>Installerer ekstra webdeler som er felles for alle typer områder.</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>Mitt område</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>Installerer funksjoner for Mitt område og Brukerprofiler.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>Mitt område-vert</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>Installerer funksjoner for de som er vert for Mine områder.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>Organisasjonslogoer</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>Delt bildebibliotek for organisasjonslogoer</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>Bruk dette bildebiblioteket til å lagre logoer for organisasjoner.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>Mitt område-navigasjon</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>Installerer navigasjonsleverandører for Mitt område.</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>Konfigurasjon av personlig område for Mitt område</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>Konfigurerer en brukers personlige område.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>Koblinger til administrasjon av brukerprofil</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>Installerer koblinger til administrasjon av brukerprofiltjenesten.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>Koblinger for grunnleggende administrasjon av brukerprofil</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>Installerer koblinger relatert til grunnleggende administrasjon av brukerprofiltjenesten.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>Målretting av listeinnhold</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>Installerer en knapp på siden med listeinnstillinger for å tilpasse innholdet ved hjelp av målgrupper.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>Innstillinger for målgruppeangivelse</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>Funksjon for profilsynkronisering</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>Installerer jobb for brukerprofil og medlemskapssynkronisering med gruppeområder.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>Brukeroverføring for leverandør for delt tjeneste</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>Installerer funksjoner i forhold til overføring av brukerdata når en brukers kontoinformasjon endres.</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>Søk</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>Hva er områder for personlig tilpasning...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>Områder for personlig tilpasning er utformet for at du skal kunne levere en kompromissløs, distinkt og personlig opplevelse som kobler din portal til brukere av Mine områder. Bruk dette området til å gi personlig tilpasset og målrettet informasjon til brukerne dine, basert på hvem de er og hvorfor de besøker din portal. Områdemalen for personlig tilpasning hjelper deg med å identifisere gjeldende bruker og bruke vedkommendes profil til å målrette og presentere informasjon som er spesifikk for den aktuelle brukerens vaner og behov. Dermed får du mulighet til å tilby en "jeg"-sentrert visning av portalen til brukerne dine.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>&lt;i&gt;Du kan for eksempel bruke et område for personlig tilpasning til å finne informasjon som er begravd i forskjellige forretningssystemer og i områdestrukturen, til å gi en én-stopps kjøpeopplevelse hvor brukerne enkelt kan vise og få tilgang til informasjonen de trenger for å utføre en jobb eller oppgave. Alternativt kan du tilby en opplevelse som bidrar til å justere organisasjonen din i forhold til målene, ved å bruke tilpasningsområdet til å fremme brukeratferd gjennom ytelsesindikatorer og målinger som kan angis spesifikt for hver enkelt bruker basert på brukrens rolle.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>Etter at personlig tilpasning-området er ferdig utviklet, kan du plassere ditt personlig tilpasning-område permanent på brukernes Mitt område-navigasjonsfelt ved å kontakte administrator for å registrere ditt personlig tilpasning-område.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>Båndkontroller for sosiale merker og notatområdet</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>Legger til startpunkt for sosial merking og kommentering i notatområdet i båndbrukergrensesnittet.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>Merker og kommentarer</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>TagsAndNotes</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>Merker og kommentarer</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>Merker hjelper deg å huske koblinger og klassifisere det valgte elementet. Kommentarene er offentlige. Merker og kommentarer legges inn i nyhetsfeeden og fungerer på tvers av forskjellige områder.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>Jeg liker det</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>Hvis du merker det merkede elementet med Jeg liker det, blir det enkelt å huske koblinger og legge inn elementer i nyhetsfeeden.</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>Eier</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>Status</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>Viser områder fra områdekatalogen i en bestemt kategori.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>Viser kategorier fra områdekatalogen.</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>Gjør det mulig å velge fra en alternativliste og navigere til den relevante plasseringen.</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>Nyhetsarkiv</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>Dokumenter</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>Informasjon om områdene brukeren er medlem av</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>Kolleger</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>Denne webdelen er utformet slik at den kan legges til på profilsiden til en person. Den viser en liste over alle kolleger som en bruker har delt med andre, og er et startpunkt for profileieren for administrasjon av listen over kolleger.</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>Notatområde</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>Lar brukerne legge inn korte kommentarer som er synlige for alle, om denne siden.</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>Merkede elementer</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>Vis personer som har angitt et merke for en bestemt URL-adresse</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>Hold kontakten</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>Viser personer som ofte bruker eller har uttrykt interesse for eller ekspertise i et merke.</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>Beslektede merker</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>Viser merker som er brukt sammen med en bestemt betingelse, og aktiverer filtrering av webdelen for merkede elementer</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>Om dette merket</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>Viser metadata fra en administrert taksonomi om bestemte betingelser</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>Siste aktivitet</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>Vis personer som er knyttet til bestemte betingelser</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>Til felles med deg</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>Viser hva du og brukeren har til felles</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>Mitt organisasjonskart</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>Viser organisasjonskart og rapporteringshierarki</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>Medlemskap</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>Viser dine område- og distribusjonslistemedlemskap.</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>Koblinger</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>Viser koblingene brukeren har delt med deg</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>Gruppe</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>Webdel for å vise gruppedetaljer</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>Medlemmer</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>Webdel for å vise medlemmene i en gruppe</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>Medlemsgrupper</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>Webdel for å vise medlemsgrupper</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>Eksempelkobling 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>Eksempelbeskrivelse</value>
+  </data>
+  <data name="imglibList">
+    <value>Bibliotek for denne uken i bilder</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>Gir deg et sted å lagre bilder for dette området.</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>Eksempelkobling 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>Eksempelkobling 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>Dokumentsentral</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>Dokumentsentralområde</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(koblet til URL-adresse)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(koblet til Rediger-meny)</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>Innholdsfremheving</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Office-klientprogrammer</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>Skjemaer</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>Diverse</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>Mitt område: Topp</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>Mitt område: Midten venstre</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>Mitt område: Midten høyre</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>Mitt område: Bunn</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>Sorter etter URL-adresse</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>Sorter etter tittel</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>Portalfunksjonen DiscoPage</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>Portalffunksjon som angir egenskapen DiscoPage for standard webtjeneste til spsdisco.aspx.</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>Velkomstside med webdel-soner</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>Profilegenskapsfilter</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>Hentekontroll for hovedområdekatalog for SharePoint Portal Server</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>Hentekontroll for hovedområdekatalog for SharePoint Portal Server.</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>Sideoppsettet inneholder et bildefelt til venstre, et rik tekst-felt, og webdel-soner ordnet i en høyrekolonne, overskrift, bunntekst og to kolonner.</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>Sideoppsettet inneholder webdel-soner ordnet i en overskrift, bunntekst og to kolonner.</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>Sideoppsettet inneholder webdel-soner ordnet i en høyrekolonne, overskrift, bunntekst og to kolonner.</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>Sideoppsettet inneholder en kategorikontroll. Det inneholder webdel-soner ordnet i en overskrift, bunntekst og to kolonner. </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>Sideoppsettet inneholder webdel-soner ordnet i en overskrift, bunntekst, to kolonner og 3 rader.</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>Sideoppsettet inneholder en kategorikontroll. Det inneholder webdel-soner ordnet i en overskrift, bunntekst og to kolonner.</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>Sideoppsettet inneholder en kategorikontroll og søkebokswebdel. Det inneholder webdel-soner ordnet i en overskrift og bunntekst.</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>Sideoppsettet inneholder en kategorikontroll og søkebokswebdel. Det inneholder webdel-soner ordnet i en overskrift, bunntekst to kolonner og tre rader.</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>Sideoppsettet inneholder en kategorikontroll. Det inneholder webdel-soner ordnet i en overskrift, bunntekst, to kolonner og to rader.</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>Sideoppsettet inneholder webdel-soner ordnet i en høyrekolonne, overskrift, bunntekst og to kolonner.</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>Mann som arbeider på en datamaskin</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>Oppsett-funksjon for Mitt område</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>Mitt område-funksjon som laster opp alle oppsett til galleriet med hovedsider.</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>Velg en oppgave du må utføre</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>Oppsett-funksjon for Mitt område</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>Mitt område-funksjon som laster opp alle oppsett til galleriet med hovedsider</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>Filopplastingsfunksjon for portaloppgradering</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>Portalfunksjon som laster opp bare oppgraderingsfiler.</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>Dette er et eksempel på en bloggpost. Den vil vanligvis være fylt med en post fra brukeren.</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>Eksempelpost.</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>Eksempelbruker</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>Eksempel</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>Alle merker</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>Vis merker som brukes av alle brukere</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>Mine merker</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>Vis merker som brukes av gjeldende bruker</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>Merkesky</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>Viser de mest populære emnene som blir merket i organisasjonen.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>Alles merker</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>Mine merker</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>Anbefalte koblinger (bare M1)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>Viser informasjon om mine bokmerker</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>Organisasjonsleser</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>Denne webdelen viser hver person i rapporteringskjeden i en interaktiv visning som er optimalisert for visning av organisasjonskart.</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>Vurderinger</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>Bruk denne funksjonen til å la brukere rangere innhold.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>Vurdering (0-5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>Gjennomsnittsverdien av alle vurderingene som er sendt inn</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>Vurderinger</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>Antall vurderinger</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>Antall vurderinger som er sendt inn</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>Definer plasseringen til mappen som skal vise nye områder.</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>Gir områder som kan inkluderes med omfanget Dette og beslektede områder i søkeresultatene for dette området.</value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>Innstillinger for vurdering</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>Personer</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>Behandle brukeregenskaper</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>Administrere brukerprofiler</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>Behandle brukerundertyper</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>Behandle målgrupper</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>Planlegg målgruppekompilering</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>Kompiler målgrupper</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>Behandle brukertillatelser</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>Synkronisering</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>Konfigurer synkroniseringstilkoblinger</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>Konfigurer synkroniseringsinnstillinger</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>Organisasjoner</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>Behandle organisasjonsegenskaper</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>Behandle organisasjonsprofiler</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>Behandle organisasjonsundertyper</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>Innstillinger for mitt område</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>Oppsett av mine områder</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>Konfigurer plasseringer for klarerte verter</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>Konfigurer område for personlig tilpasning</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>Publiser koblinger til Office-klientprogrammer</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>Behandle sosiale merker og kommentarer</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>Konfigurer sosial merking og ekspertisemerking</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>Behandle policyer</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>Kravleverandør for personer og organisasjoner</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>Installerer kravleverandør for personer og organisasjoner.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>Kravleverandør for grupper</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>Installerer kravleverandør for grupper.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>Leverandør for kravhierarki for organisasjoner</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>Installerer Leverandør for kravhierarki basert på organisasjoner.</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>Behandle brukerprofilprogram</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>Brukerprofilprogram for leier</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>Koblinger til undersider for administrasjon av brukerprofilprogram for leier</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>Stifting for brukerprofilprogram for leier</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>Stift leierfunksjon i brukerprofilprogram til TenantAdmin-mal</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>Konfigurer tidtakerjobb for synkronisering</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>Start profilsynkronisering</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>Rullegardinliste for søk</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>Hopp over kontaktkort</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>Min nyhetsfeed</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>Mitt innhold</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>Min profil</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>Oversikt</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>Organisasjon</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>Innhold</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>Merker og kommentarer</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>Kolleger</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>Medlemskap</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>Instrumentbord for Mine oppgaver</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>Gir tilgang til et instrumentbord på Mitt område for en bruker, for å behandle og samhandle med oppgaver, aggregert på tvers av områder og systemer.</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>Tilknytning for instrumentbord for Mine oppgaver</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>Denne funksjonen stifter (kobler) instrumentbordfunksjonen for Mine oppgaver til Mitt område-malen.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>Delte dokumenter - GAMLE</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>Personlige dokumenter - GAMLE</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>Fulgt innhold</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>Innholdsfølging</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>Innholdsfølging gjør det mulig for brukere å abonnere på oppdateringer i feeden for et bestemt dokument</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>Innholdsabonnement</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>Innholdssporing</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>Inneholder en referanse til et innholdselement som følges</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>Farm-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>Område-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>Nettsted-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>Liste-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>Unik ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>Element-ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>URL-adresse</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>URL-adresse for panel</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>Type</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>Undertype</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>URL-adresse for ikon</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>Ikke synlig i feed</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>Har feed</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>Flagg</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>ProgID for filtype</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>ProgID for URL-adresse for server</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>Fulgte dokumenter</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>Fulgte områder</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>Følg interessante dokumenter ved å gå til dem og klikke følg.</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>Du følger ingen områder ennå. Hvis du vil se noe i denne listen, kan du gå til et område og klikke Følg-ikonet.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>Dette dokumentbiblioteket ble tidligere brukt for dokumenter som du ville dele med andre personer. Det anbefales at du nå bruker det nye Mine dokumenter-biblioteket for dette formålet.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>Dette dokumentbiblioteket ble tidligere brukt for dokumenter som du ville beholde for personlig bruk. Det anbefales at du nå bruker det nye Mine dokumenter-biblioteket for dette formålet.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>Denne listen vil inneholde alle elementer du har valgt å følge.</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>Følging av innhold</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>Aktiver at brukere kan følge dokumenter eller områder.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>Stifting av innholdsfølging</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>Aktiver funksjonen for innholdsfølging på alle områdesamlinger.</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>Innholdsfølging</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>Aktiver at brukere kan følge dokumenter eller områder.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>Liste for innholdsfølging</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>Funksjonen som kapsler inn listen som gjør det mulig for brukere å følge innhold i SharePoint.</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>Innholdsfølging</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>Liste som gjør det mulig for brukere å følge innhold i SharePoint.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>Funksjon for dokumentbibliotek for Mitt område</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>Forbedrer eksisterende SharePoint-dokumentbibliotek for Mitt område. Aktiverer nye visninger, Lightweight-versjonskontroll, forbedret kontekstinformasjon og deling per element.</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>Dokumenter</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>Alle</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>Deles med meg</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>Delt med alle</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>Delingsfelt</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>Deling</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>Deling</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>Er Mine dokumenter</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>Er Mine dokumenter</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>Deles med interne</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>Deles med interne</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>Behold mine siste redigeringer</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>Tillatelser</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>Søk er ikke tilgjengelig. Vennligst prøv på nytt senere. Hvis problemet vedvarer, kontakter du systemansvarlig.</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>Søk er deaktivert. Vennligst kontakt systemansvarlig.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>Følg</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>Følg dette dokumentet og få oppdateringer i nyhetsfeeden.</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>Arbeidsbehandling</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>Rangert av</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>Brukere rangerte elementet.</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>Brukerrangeringer</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>Brukerrangeringer for elementet</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>Innholdstilbakemelding</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Dokumenter</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>Prosjektfunksjonalitet</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>Denne funksjonen legger til funksjoner for prosjektstyring på et område. De omfatter aktiviteter, en kalender og nettdeler på hjemmesiden for området.</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>Mine prosjekter</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>Personer</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>Dokumenter</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>Oppgaver</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>Personer</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>Områder</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>Om meg</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value>Om {0}</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>Mine apper</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>Gå til Mitt område</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>Jeg følger</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>Deles med meg</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>Nyhetsfeed</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>Apper</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>Flere apper</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>Viser diskusjoner og hendelsesvarsler fra innhold og personer du følger på tvers av SharePoint-områder, og gjør det mulig for brukere å sende korte meldinger som er synlige for alle.</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>Aktivitetsfeed</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>Viser de siste diskusjonene og aktivitetene for en bruker.</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>Mikrofeed</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>Liste for fast lager for mikrofeed for Mitt område</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>Liste for fast lager for publisert feed for Mitt område</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>Innholdstyper for mikrofeed</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>Personlig oppgradering av Mitt område ved navigasjon</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>Oppretter eller oppgraderer det personlige området for en bruker ved navigasjon til vertsområdet for Mitt område.</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>Opplevelse ved førstegangskjøring for Mitt område</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>Hash-merker for trend</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>Denne webdelen for klientside gjør den enklere for brukerne å finne nytt sosialt innhold</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>Antall fulgte</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>Viser antall fulgt brukere, innhold og merker for gjeldende bruker.</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>Personer</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>Viser personen noen følger og hver som følger dem.</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>Manuelt konfigurert tidslinje</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>Vis manuelt konfigurerte data i en tidslinjevisning</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>Prosjektsammendrag</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>Viser informasjon om et prosjekt i en oversikt som er enkel å lese</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>Tidslinje for tilkobling</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>Bruk denne tidslinje for å vise en visning av data fra en annen webdel på høyt nivå.</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>Tidslinjer</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>Tidslinje for prosjektområde</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>Bruk denne tidslinjen for å opprette en visning av aktivitetene i et prosjekt på høyt nivå.</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>Webdeler for prosjektområde</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>Webdeler som er nyttig for og som krever prosjektområdet</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>Gruppearbeidssenter</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>Senteret for gruppearbeid inneholder en sammendragsvisning for alle prosjektområder på én enkelt plassering. Senteret for gruppearbeid kan kobles til tidslinje-webdelen for å opprette en visualisering av din prosjektportefølje.</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>Funksjon for relaterte elementer</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>Funksjon for relaterte elementer for å legge til relaterte elementer og anbefalte elementfunksjoner i en områdesamling.</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>Anbefalinger for elementskjema</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>Legger til CBS-kontroll for anbefalinger for alle visningsskjemaer for element.</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>Anbefalinger for Mitt område</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>Anbefaler automatisk dokumenter og områder for brukere å følge på Mitt område på SharePoint.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>Webdelen for anbefalinger foreslår innhold en bruker kanskje vil følge i en farm.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>Dokumenter anbefalt til meg</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>Områder anbefalt til meg</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>Personer som er anbefalt til meg</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>Webdelen for anbefalinger foreslår innhold en bruker kanskje vil følge i en farm.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>Foreslåtte dokumenter å følge</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>Foreslåtte områder å følge</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>Foreslåtte personer å følge</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>Webdelen for anbefalinger foreslår innhold en bruker kanskje vil følge i en farm.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>Anbefalt dokumenter</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>Anbefalte områder</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>Anbefalte personer</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>Mine anbefalinger</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>Kan ikke importere webdelen Mine anbefalinger.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>Kan ikke importere webdel for relaterte elementer.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>Relaterte elementer</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>Webdel for relaterte elementer.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>Forslag til relatert element</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>Webdel for forslag til relatert element</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>Relaterte elementer</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>Forslag til nytt element</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>Webdel for forslag til nytt element</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>Leverandør for brukerinnstillinger for brukerprofil</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>Denne funksjonen klargjør leverandør for brukerinnstillinger for brukerprofil</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>Områdepostboks</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>Postboks</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>Områdepostboks-appen gjør det mulig å holde e-post og dokumenter samlet ved å koble nettstedet til en Exchange-postboks. Deretter kan du vise e-posten din på SharePoint og områdedokumenter i Outlook.</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>Områdepostbokser</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>Aktiverer klargjøring av en Exchange-postboks for områder i denne farmen, og kobler dokumenter fra området til Outlook.</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>Hold e-post i konteksten.</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>Del e-post på området og koble dokumenter til Outlook.</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>Kundestøtte for prosjektområde</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>Aktiverer opprettelse av prosjektområder i denne områdesamlingen.</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>Merkekontroll for prosjektområder</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>Denne funksjonen klargjør merke-webdelen for prosjektområde.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>Kan ikke importere webdelen for merking.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>Merker webdel</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>Webdelen for merking tillater at medlemmer av et området kan merke og vise merker på sider på området.</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>Prosjekter</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>Prosjekt</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>Ny</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>Oppretter et nytt prosjektarbeidsområde.</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>Åpne</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>Åpne det valgte prosjektet.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>I prosjektarbeidsområde</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>Åpne i prosjektarbeidsområde</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>I Project Professional</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>Åpne det valgte prosjektet i Microsoft Project. Hvis prosjektet er sjekket ut til noen andre, åpnes det som skrivebeskyttet. Hvis du har valgt flere prosjekter, åpnes de i et nytt hovedprosjekt.</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>Tidslinje</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>Legg til på tidslinje</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>Legg til valgte elementer i tidslinjen.</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>Prosjekt</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>Eier</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>Startdato</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>Sluttdato</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>Oppdaterer prosjektlisten...</value>
+  </data>
+  <data name="NextRefresh">
+    <value>Prosjektlisten oppdateres på {0}</value>
+  </data>
+  <data name="RefreshNow">
+    <value>Oppdater nå</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>Søk i denne listen...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>Omfang for prosjektområde</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>Området og nedenfor</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>Områdesamling</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>Innsamlede firmaopplysninger</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>Er rapport</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>Er elementet en rapport?</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>Er data</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>Er elementet en datakilde?</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>Innsamlede firmaopplysninger</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>Rapportdokument</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>Opprett et nytt rapportdokument.</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>Dokumentbiblioteket for rapport</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>Et sted der du kan opprette og behandle rapportdokumenter.</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>Dokumentbiblioteket for rapport</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>Støtte for rapporter og datasøk</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>Angir innholdstyper, områdekolonner og biblioteksmaler som er nødvendig for å støtte rapporter og datasøk i søkesentralen for virksomheten.</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>Funksjon for fellesskapsportal</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>Denne funksjonen legger til funksjonalitet for fellesskapsportal. Den klargjør også sider for fellesskapsportalen.</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>Populære fellesskap</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>Område for fellesskap</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>Om oss</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>Funksjon for område for fellesskap</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>Denne funksjonen legger til fellesskapsfunksjonalitet, for eksempel diskusjonskategorier, innhold, personomdømme og medlemslisten. Den klargjør også nettsidene for fellesskapet som inneholder disse listene og funksjonene.</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>Diskusjonsliste</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>Bruk diskusjonslisten til diskusjoner i forumstil, inkludert spørsmål og svar, om emner som er relevante for gruppen, prosjekt eller fellesskapet.</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>Samlet Liker-antall</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>Samlet rangeringsantall</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>Antall koblinger</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>Likes av</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>Popularitet</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>Emne sist oppdatert av</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>Omdømmepoengsum for forfatteren </value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>Antall svar for forfatteren</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>Antall innlegg for forfatteren</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>Antall beste svar for forfatteren</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>Dato for siste aktivitet for forfatteren </value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>Dato for medlemskap for forfatteren </value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>Dato for medlemskapsstatus for forfatteren </value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>Nivå 1</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>Nivå 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>Nivå 3</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>Nivå 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>Nivå 5</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>Kategori</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>Medlemsnavn</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>Lagt inn av</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>Emne sist oppdatert</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Kategorier</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>Infrastruktur for område for fellesskap</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>Nivåfelt for områdesamlingen, innholdstyper og webdeler som er nødvendige diskusjonslister, omdømme, kategorier og medlemskap i et felleskap.</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>Funksjon for kategoriliste</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>Denne funksjonen inneholder malen for listefunksjonaliteten for kategorier</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>Kategoriliste</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>Kategoriliste</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>Kategori</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(Beskrivelse for innholdstype for kategori)</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>Kategoriliste</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>Kategoriruter</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>Administratorvisning</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>Visning for enkeltkategori</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>Kategorinavn</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>Navnet på kategorien.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>Hva skal medlemmer i fellesskapet snakke om i denne kategorien?</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>Kategoribilde</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>Legg til et bilde som representerer denne kategorien.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>Diskusjoner</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>Svar</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>Siste innlegg av</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>Dato for siste innlegg</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>Kategorier</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>Bruk kategorilisten til å angi kategoriene som er tilgjengelige diskusjonslisteinnlegg.</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>Generelt</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>Start her hvis du ikke vet hvor du skal legge inn.</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>Medlem</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>Status</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>Medlemsstatus</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>Venter</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>Aktiv</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>Inaktiv</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>Blokkert</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>Venstre</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>Innholdstyper for fellesskap</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>Områdemedlemskap</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>Legg til et nytt medlem</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>Områdemedlemskap</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>Denne funksjonen inneholder listeskjemaet og listeforekomsten som brukes til å behandle medlemmene på et område, for eksempel fellesskaps-, prosjekt-, gruppe- og utdanningsområder</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>Listemal for medlemskap</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>Listemalskjema for områdemedlemskap</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>Medlemmer i fellesskap</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>Denne listen inneholder en oversikt over pågående aktiviteter for medlemmer og omdømmet de opparbeider i dette fellesskapet.</value>
+  </data>
+  <data name="members_Folder">
+    <value>Medlemmer</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Diskusjon i fellesskap</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>Rapporter</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>Denne funksjonen inneholder listeskjemaet og listeforekomsten som brukes til å behandle det støtende innholdet på et fellesskapsområde</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>Mal for rapportliste</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>Malskjema for rapportliste</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>Rapportliste</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>Denne listen inneholder kommentarer om et diskusjonselement som er sendt inn av personer som rapportert elementet som krenkende</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>AbuseReports</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>Rapporterende</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>Kommentarer</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>Diskusjon</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>Rapporter</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>Rapportoppslag</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>Oppslag for rapporterende</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>Kommentaroppslag</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>Innlegg</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>URL-adresse til emneside</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>Rapporter</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>Sensur</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>Se gjennom rapporterte innlegg</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>Se gjennom rapporter</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>Se gjennom rapporter</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>Se gjennom rapportert innholdet sammen med kommentarer, som er lagt inn av medlemmer som synes det er støtende</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>Redigere innlegg</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>Redigere innlegg</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>Rediger rapportert diskusjonselement for å fjerne potensielt støtende innhold</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>Slett innlegg</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>Slett innlegg</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>Slett diskusjonselementet som er rapportert som støtende. Dette vil også fjerne tilknyttede kommentarer fra medlemmer som klager på elementet.</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>Forkast rapport</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>Forkast rapport</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>Forkaster rapporter tilknyttet diskusjonselementer hvis du mener at det er riktig for fellesskapet. Dette vil også fjerne tilknyttede kommentarer fra medlemmer som syntes det var støtende.</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>Merker for gode prestasjoner</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>Gi merke</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>Gi merke til et medlem</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>Gi merke til et medlem</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>Ble med</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>Siste aktivitet</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>Beste svar</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>Diskusjoner</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>Svar</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>Svar for å nå neste nivå</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>Poengsum for omdømme</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>Skjul omdømme</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>Merke for gode prestasjoner</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>Tekst for merke for gode prestasjoner</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>Medlem av fellesskapet</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>Legg til et nytt fellesskapsmedlem</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Merker</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>Merker</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>Denne listen inneholder utmerkelser som opprettes av administratorer eller sensuransvarlige for dette fellesskapet.</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>Merkenavn</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>Ekspert</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>Profesjonell</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>Behandling av fellesskap</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>Behandle diskusjoner</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>Behandle diskusjoner i et fellesskap.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>Behandle kategorier</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>Behandle kategorier i et fellesskap.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>Behandle medlemmer</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>Behandle medlemmer i et fellesskap.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>Innstillinger for fellesskap</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>Innstillinger for fellesskap, for eksempel etableringsdato og aktivering av rapportering av støtende innhold</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>Behandle rapporterte innlegg</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>Behandler innlegg som ble rapportert som støtende.</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>Innstillinger for omdømme</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>Innstillinger for fellesskapsomdømme, for eksempel innhold og omdømme</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>Fellesskap</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>Delta</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>Gjør det mulig for personer som ikke er medlem av et fellesskapsområde, å bli medlem av fellesskapet. Knappen skjules hvis brukeren allerede er medlem. Denne webdelen fungerer på fellesskapsområder eller andre områder der fellesskapsfunksjonene er aktivert.</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>Om dette fellesskapet</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>Denne webdelen viser fellesskapsbeskrivelsen og andre egenskaper, for eksempel etableringsdato. Denne webdelen vil fungere på fellesskapsområder eller andre områder der fellesskapsfunksjoner er aktivert.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>Verktøy</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>Gir eiere av og administratorer for fellesskap tilgang til hurtigkoblinger til vanlige innstillingssider og innholdslister for behandling av et fellesskapsområde. Denne webdelen fungerer på fellesskapsområder eller andre områder der fellesskapsfunksjonene er aktivert.</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>Aktuelle diskusjoner</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>Hva skjer?</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>Viser antall medlemmer, emner og svar i et fellesskapsområde. Denne webdelen fungerer på fellesskapsområder eller andre områder der fellesskapsfunksjonene er aktivert.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>Mitt medlemskap</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>Viser omdømme- og medlemskapsinformasjon for gjeldende besøkene på et fellesskapsområde. Denne webdelen fungerer på fellesskapsområder eller andre områder der fellesskapsfunksjonene er aktivert.</value>
+  </data>
+  <data name="MembersView">
+    <value>Medlemsvisning</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>Administratorvisning</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>Visning for enkeltmedlem</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>Øverste bidragsytere</value>
+  </data>
+  <data name="NewMembersView">
+    <value>Nye medlemmer</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>Fellesskap</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>Kategorier</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>Medlemmer</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>Om</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>Hjem</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>Rapporterte innlegg</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>DiskusjonerEtterKategori</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>DiscussionsByCategoryFeaturedFull</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>DiscussionsByCategoryFeaturedPreview</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>Funksjon for bloggvarsler</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>Denne funksjonen legger til varsler for blogger</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>Stiftefunksjon for bloggvarsler</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>Denne funksjonen stifter bloggvarsler og liker-funksjoner til bloggområdemalene</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>{0}rediger{1} profilen din</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>E-post</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>Telefon</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>Office</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>I felles</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>Viser hva du og brukeren har til felles</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>Organisasjonskart</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>Viser organisasjonskart og rapporteringshierarki</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>Behandle tilhengere</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>Merker og kommentarer</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>Viser de mest populære emnene som blir merket i organisasjonen.</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>Profilinformasjon</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>Vise grunnleggende profilinformasjon for gjeldende bruker</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>Flytt dokumenter</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>Flytte valgte dokumenter til et annet område eller til en mappe i gjeldende bibliotek.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>Flytt dokumenter.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>Flytte valgte dokumenter til et annet område eller til en mappe i gjeldende bibliotek.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>Flytte valgte dokumenter til et annet område eller til en mappe i gjeldende bibliotek.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>Områdetillatelser på tvers av farm</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>Bruk funksjonen for områdedekkende tillatelser til å tillate at interne SharePoint-apper får tilgang til nettsteder på tvers av farmer.</value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>Bare for intern bruk</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>Sosialt</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>Egenskaper for mikroblogg</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>Ulest ved omtaler</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>Siste innlegg</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>Egenskaper for sosialt</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>Fulgt element</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>Område</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>Fulgt dokument</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>Lagringsplass for sosiale data</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>Gir datastøtte til sosiale funksjoner</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>Sosialt</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>Gir datastøtte til sosiale funksjoner</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>Funksjon for hoveddokument for Mitt område</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>Mitt område-funksjon som laster opp hoveddokumentet til galleriet for hoveddokumenter.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>Funksjon for enhetlig navigasjon for Mitt område</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>Mitt område-funksjonen som viser samme navigasjon for vert og personlige områder.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>Én hurtigstartfunksjon for Mitt område</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>Mitt område-funksjonen som viser samme hurtigstart for vert og personlige områder.</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>Hoveddokument for Mitt område</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>Gir Mitt område et unikt utseende.</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>Forfremmede områder</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>Gjengir forfremmet områder som ruter.</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>nytt område</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>Forfremmede områder</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>Behandle forfremmede områder</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>Områdefeed</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>Områdefeed inneholder mikrobloggingsdiskusjoner på et gruppeområde.</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>Områdefeed</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>Aktiverer bruk av områdefeeder.</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>Kontroller for områdefeedfunksjon</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>Styrer aktivering av områdefeedfunksjonen.</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>Stifting for områdefeedfunksjon</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>Stifter områdfeedfunksjonen til alle nye områdesamlinger for gruppeområde.</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>Mikrobloggredigering</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>Kan vise, legge til, oppdatere og slette listeelementer og dokumenter.</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>Endre bildet ditt</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>Bare {0} kan endre dette bildet.</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>Du kan ikke endre bilde for personen fordi det er synkronisert med Microsoft Exchange.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>Jeg følger</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>personer</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>Se personene du følger</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>dokumenter</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>Se dokumentene du følger</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>områder</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>Se områdene du følger</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>merker</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>Se merkene du følger</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">{Assigner} tilordnet den nye oppgaven i {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">Du ble tildelt én eller flere oppgaver i {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>VIS OPPGAVENE MINE</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>Din SkyDrive Pro er klar</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>Tilgang til dokumentene dine i frakoblet modus</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>Vær mobil!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>Tilpass profilen din</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>Holde kontakten</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>La andre få vite hva du arbeider med</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>  &lt;a href="{0}"&gt;Oppdater personverninnstillingene&lt;/a&gt; slik at andre kan se gjennom og kommentere aktivitetene dine i SharePoint-nyhetsfeeden.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>Dine eksisterende dokumenter på Mitt område er flyttet til din &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;, stedet i SharePoint for å lagre, synkronisere og dele arbeidet ditt.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>Du kan koble dokumentene fra ved å klikke Synkroniser på et hvilket som helst bibliotek. Prøv det på &lt;a href="{0}"&gt;OneDrive for Business&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2">
+    <value>Du kan koble dokumentene fra ved å klikke Synkroniser på et hvilket som helst bibliotek. Prøv det på din &lt;a href="{0}"&gt;{1} for Business&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>Ta SharePoint med deg ved å laste ned de {0}mobile appene{1}.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>Laste opp et bilde, og fortell andre mer om deg selv &lt;a href="{0}"&gt;her&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>Andre kan se og kommentere noen av aktivitetene dine i SharePoint. Du kan endre innstillingene &lt;a href="{0}"&gt;her&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>&lt;a href="{0}"&gt;Følg&lt;/a&gt; personer du bryr deg om.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>Din SharePoint-nyhetsfeed er klar</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>Her er det neste du kan gjøre:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>Få mest mulig utbytte av SharePoint</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>Andre kan se og kommentere aktivitetene dine i SharePoint. Du kan endre innstillingene &lt;a href="{0}"&gt;her&lt;/a&gt;.</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>OneDrive for Business</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>Behandle delte apper</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>Vis alle biblioteker og lister på dette området.</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>Nyhetsfeed</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>Velkommen til &lt;span id="skyDriveText"&gt;OneDrive for Business&lt;/span&gt;, stedet hvor du kan lagre, synkronisere og dele arbeidet ditt. Dokumenter er private helt til de deles. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Lær mer her&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText2">
+    <value>Velkommen til &lt;span id="skyDriveText"&gt; {0} for Business&lt;/span&gt;, stedet hvor du kan lagre, synkronisere og dele arbeidet ditt. Dokumenter er private helt til du deler dem. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Lær mer her&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated">
+    <value>Gode nyheter! Du har også {0} for Business i Office 365, og du kan få tilgang til filer der fra hvor som helst. Bare klikk {1} i det øverste navigasjonsfeltet for å komme i gang. Ikke vær redd, filene du har her, vil fortsatt fungere. {2}Klikk her{3} hvis du vil ha informasjon om flytting av filer.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated">
+    <value>Ikke vær redd, filene dine er sikre. Vi flyttet dem til din nye {0} for Business i Office 365, hvor du kan få tilgang til dem fra hvor som helst, på en hvilken som helst enhet. Du kan navigere der ved å klikke {1} i det øverste navigasjonsfeltet.</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>Forkast</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>Alle i &lt;span id="skyDriveFolder"&gt;organisasjonen din&lt;/span&gt; har tilgang til dokumentene her.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>Klargjør OneDrive for Business. Dette kan ta litt tid. Naviger gjerne til et annet sted så lenge.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2">
+    <value>Klargjør {0} for Business. Dette kan ta litt tid. Naviger til et annet sted hvis du vil.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription">
+    <value>Flytt dine eksisterende dokumenter på Mitt område til OneDrive for Business, stedet hvor du kan lagre, synkronisere og dele arbeidet ditt.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2">
+    <value>Flytt dine eksisterende dokumenter på Mitt område til {0} for Business, stedet hvor du kan lagre, synkronisere og dele arbeidet ditt.</value>
+  </data>
+</root>

@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4454.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Stare suspendare</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>În afara politicii</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Stare suspendare</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Activ</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Eliberare în așteptare</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>Suspendat</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Extras sau modificat de mine</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Această parte Web se utilizează pentru a afișa documentele care au fost modificate de utilizatorul curent sau care au fost extrase în numele său.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Modificate de mine</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Utilizați această parte Web pentru a afișa documentele care sunt modificate de utilizatorul curent.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Se utilizează această parte Web pentru a afișa activități care sunt asociate utilizatorului curent.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Activitățile mele</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>Documente cu cea mai mare evaluare</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Utilizați această parte Web pentru a afișa documentele cu cele mai mari evaluări din acest site Web</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>Cele mai noi documente</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Utilizați această parte Web pentru a afișa cele mai noi 10 documente din acest site</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Documente</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Documente</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Centru documente</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Îmbunătățiri ale Centrului documente</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Furnizează o vizualizare în arbore a navigării pentru un site.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Bun venit la centrul de documente</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Utilizați acest site pentru a crea, a depozita și a lucra cu documente. Acest site poate deveni un depozit de colaborare pentru crearea de documente în cadrul unei echipe sau o bază de cunoștințe pentru documente de la mai multe echipe.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Colaboratori și vizitatori</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Manageri site</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Încărcare document</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Politicile colecției de site-uri</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>Șabloane politică tip de conținut</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Setările de audit ale colecției de site-uri</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Configurare politică de gestionare a informațiilor</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Examinare rapoarte de utilizare a politicii de gestionare a informațiilor</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Setări politică de gestionare a informațiilor</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>Retenție</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>Programarea automată a conținutului pentru procesare și efectuarea unei acțiuni de retenție a conținutului care a ajuns la data scadentă.</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Se programează modul de gestionare și distrugere prin specificarea unei succesiuni de etape de retenție. Dacă specificați mai multe etape, fiecare etapă se va desfășura una după alta, în ordinea în care apar în această pagină. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Notă:&lt;/b&gt; Dacă este activă caracteristica Retenție bazată pe biblioteci și foldere, administratorii listei pot înlocui politicile pentru tipul de conținut cu programări de retenție proprii. Pentru a împiedica aceasta, dezactivați caracteristica din colecția de site-uri.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>Audit</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Consemnează acțiunile utilizatorului în documente și elemente din liste în Jurnalul de audit.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Se specifică evenimentele care trebuie consemnate pentru documente și elemente subordonate acestei politici.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>Coduri de bare</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Generează identificatori unici care se pot insera în documente Microsoft Office. De asemenea, și codurile de bare se pot utiliza pentru căutarea documentelor.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Asociază un cod de bare pentru fiecare document sau element. Opțional, aplicațiile Microsoft Office pot solicita utilizatorilor să insereze aceste coduri de bare în documente.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Cod de bare</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Valoare cod de bare</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>Codul de bare asociat acestui element.</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>Valoarea codului de bare asociat acestui element.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>Etichete</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Generează etichete care se pot insera în documente Microsoft Office pentru a se asigura că proprietățile documentului sau alte informații importante sunt incluse atunci când documentele sunt imprimate. Etichetele se pot utiliza și pentru căutarea documentelor.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>Aveți posibilitatea să adăugați o etichetă unui document pentru a vă asigura că informațiile importante despre document sunt incluse atunci când acesta este imprimat. Pentru a specifica eticheta, tastați în caseta „Format etichetă” textul pe care îl utilizați. Aveți posibilitatea să utilizați orice combinație de text fix sau de proprietăți ale documentului, cu excepția proprietăților calculate sau predefinite, cum ar fi GUID sau CreatedBy. Pentru a începe un rând nou, utilizați secvența de caractere \n.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Etichetă</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Stochează valoarea curentă a etichetei.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (Cod 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>Generează coduri de bare, codate utilizând ANSI/AIM BC1-1995 (Cod 39) standard.</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Acțiune de expirare Centru de înregistrări</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Se expiră fișierele abandonate remise la serverul Centru de înregistrări.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Se șterg informațiile de înregistrare și de remitere</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Se șterg înregistrările remise la Centrul de înregistrări împreună cu toate proprietățile asociate și istoricul de audit incluse în remiterea inițială a înregistrării.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Document traducere</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Document sursă</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Versiune document sursă</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Stare traducere</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Dacă acest document este o traducere, indicați versiunea documentului sursă pe care o reprezintă. Aceste informații se vor seta automat după terminarea fluxului de lucru, dacă utilizați fluxul de lucru Gestionare traducere pentru gestionarea traducerii.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Dacă acest document este o traducere, indicați starea sa de traducere. Aceste informații se vor seta automat după terminarea fluxului de lucru, dacă utilizați fluxul de lucru Gestionare traducere pentru gestionarea traducerii.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Nu a început</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>În desfășurare</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Terminat</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>Anulaat</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Necesită actualizări</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Documente sursă</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Limbi și traducători</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Traducere din</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Traducere în</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Traducător</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Limbi</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Suspendare și eDiscovery</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Suspendare și eDiscovery</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Suspendare</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Suspendare</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Această caracteristică se utilizează pentru a urmări acțiuni externe, cum ar fi litigii, investigații sau audituri care necesită suspendarea distrugerii documentelor.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Gestionare suspendări</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(TODO) Gestionare suspendări</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>Descoperire și suspendare conținut</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>Descoperire și suspendare conținut</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Rapoarte suspendare</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Rapoarte suspendare</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Suspendări</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Suspendări</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Suspendări</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Utilizați această listă pentru a urmări acțiuni externe, cum ar fi litigiile, investigațiile și auditările care necesită suspendarea dispunerii de elemente. Plasarea unui element într-una sau mai multe suspendări va determina păstrarea elementului și suspendarea dispunerii sale până când elementul nu va mai fi gestionat de nicio suspendare.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Rapoarte suspendare</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Această bibliotecă conține rapoarte despre fiecare suspendare din acest site. Fiecare raport conține informații cum ar fi elementele dintr-o suspendare și interogările de căutare care s-au efectuat pentru suspendare.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Suspendare interogări de descoperire</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Gestionat de</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Descriere</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Stare suspendare</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>URL site</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Suspendări</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>URL suspendare</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Grupare după suspendări</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Raportare</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Se creează rapoarte despre informații în Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Rapoarte Jurnal de audit</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>Vizualizare rapoarte fluxuri de lucru</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Tendințe popularitate</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Tendințe popularitate</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Rapoarte popularitate și căutare</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>Cele mai apreciate elemente</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Raport metadate</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>Galeria de rapoarte stochează tipurile de rapoarte disponibile pentru acest site și pentru toate site-urile din acesta.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Șabloane de raport</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Utilizați biblioteca de fișiere șablon de raport pentru a stoca fișiere utilizate de galeria de șabloane de raport.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Retenție bazată pe biblioteci și foldere</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Permite administratorilor de liste să ignore programările de retenție de tip de conținut și să seteze programări în biblioteci și foldere.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Gestionare înregistrări</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Adaugă capacități de gestionare a înregistrărilor și de politici de gestionare a informațiilor la Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Lită de păstrare</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Listați șablonul utilizat pentur crearea Listei de păstrare a elementelor.</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>Șablon Listă de păstrare eDiscovery</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Listați șablonul utilizat pentur crearea Listei de păstrare a elementelor.</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Căutare și procesare</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Asigură acces pentru operațiunile cronometru Căutare și procesare.</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Site centru de înregistrări</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Bun venit la Centrul de înregistrări</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Utilizați acest site pentru a remite și găsi documente importante care ar trebui stocate pentru arhivare pe termen lung. Înregistrările remise sunt plasate automat în folderul și biblioteca corectă pe baza proprietăților pe care le completați.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Remitere înregistrare</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Remitere în așteptare a înregistrărilor personale</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Utilizați această parte Web pentru a instrui vizitatorii Centrului de înregistrări despre gestionarea înregistrărilor și conformitatea organizației.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Adăugați informații despre subiecte de gestionare a înregistrărilor, cum ar fi:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Adăugați linkuri la alte site-uri de conformitate a organizației, cum ar fi:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>Definiția unei înregistrări din organizația dvs.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>Ce se întâmplă cu o înregistrare după ce a fost remisă în Centrul de înregistrări</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Pași care pot fi efectuați de utilizatori pentru a se conforma cu politica organizației</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Site-ul de instruire de conformitate al organizației dvs.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> Un site despre politicile de retenție ale organizației</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> O listă de persoane de contact din gestionarea înregistrărilor pentru fiecare departament</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Remitere înregistrări</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Bun venit la Centru documente.</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Bun venit la noul Centru documente. Utilizați acest site pentru a gestiona central documentele în firmă.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Gestionare programare retenție</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Punct de intrare pentru ca toate folderele să gestioneze programul de expirare</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Detalii conformitate</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Punct de intrare în bara de instrumente pentru vizualizarea detaliilor de retenție și a altor detalii de conformitate în timpul ciclului de viață al elementului</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Generare raport plan fișiere</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Serviciu ID document</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>Atribuie ID-uri documentelor din Colecția de site-uri, care se pot utiliza pentru a regăsi elemente independent de locația lor curentă.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Setări ID document</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Se gestionează setările de ID document ale acestei colecții de site-uri</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Găsiți un ID de document</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Găsește un document după ID-ul de document.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Valoare ID document</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>Valoarea ID-ului de document atribuită acestui element.</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>ID document</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Link permanent la acest document.</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Bibliotecă de remitere</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>După ce se completează proprietățile, fișierele încărcate în această bibliotecă se mută automat în biblioteca sau folderul corect în funcție de regulile create de proprietarul acestui site.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>Reguli Organizator conținut</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Această listă vă permite să creați un plan pentru cum se va organiza conținutul pe acest site. Creați reguli care asigură că documentele remise la acest site sunt trimise în locația corectă și au proprietățile corecte.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Regulă</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Creați o regulă care mută conținutul remis la acest site în biblioteca sau folderul corect.</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>Organizator conținut</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Creați reguli bazate pe metadate, care mută conținutul remis la acest site în biblioteca sau folderul corect.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Resurse distribuire documente</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Furnizați resursele necesare pentru distribuirea documentelor în site-urile din această colecție de site-uri.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Înregistrare resurse</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Furnizați resursele necesare pentru crearea înregistrărilor sau suspendărilor în site-urile din această colecție de site-uri.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Gestionare înregistrări în locație</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Activați definirea și declararea de înregistrări în locație.</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Coloane gestionare înregistrări și documente</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>Tipuri de conținut Organizator conținut</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Prioritate</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Activ</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Nume regulă</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Descriere</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Tip conținut remitere</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Tip conținut remitere (intern)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>XML condiție</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Proprietăți utilizate în condiții</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Aliasuri</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Biblioteca țintă</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Folderul țintă</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Calea țintă</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>URL site țintă</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Proprietate pentru crearea automată de folder</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Date configurare folder automat</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Distribuitor particularizat</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Distribuire în locație externă</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Proprietăți originale</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>Subiect</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Remițător</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Către</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>De la</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>CC</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>CCI</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Data trimiterii</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Data recepționării</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>Coloane remitere e-mail</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>Remitere e-mail</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Înregistrări de e-mail remise</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Această listă este utilizată de distribuitor pentru a stoca temporar înregistrările de e-mail primite</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Acest tip de conținut are coloane care corespund cu proprietățile de coloane trimise atunci când se trimit mesaje de poștă electronică la organizatorul de conținut.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>Blocat pentru editare</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Stare suspendare și înregistrare</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Înregistrare declarată</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>Excepție de la politică</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Data expirării</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Data expirării inițiale</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Coloane set documente nucleu</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Descriere</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>O descriere a setului de documente</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Seturi de documente</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Oferă tipurile de conținut necesare pentru crearea și utilizarea seturilor de documente. Creați un set de documente atunci când doriți să gestionați mai multe documente ca un singur produs de lucru.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Sincronizare metadate Seturi de documente</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Oferă infrastructura pentru sincronizarea metadatelor pentru Seturile de documente.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Set documente</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Tipuri de conținut Set documente</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Creați un set de documente atunci când doriți să gestionați mai multe documente ca un singur produs de lucru.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Vizualizare pagină de întâmpinare</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Vizualizați pagina de întâmpinare pentru acest set de documente.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Setări set documente</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Descărcare copie</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Descărcați o copie a setului de documente și a conținutului său curent</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Trimitere la altă locație</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Trimiteți acest set de documente și conținutul său curent în altă locație</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Versiune captură</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Capturați o versiune a conținutului curent al setului de documente</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Istoric versiuni set documente</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Vizualizați istoricul de versiuni al setului de documente</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Proprietăți set documente</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Afișează proprietățile setului de documente.</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Conținut set documente</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Afișează conținutul setului de documente.</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Politică site</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Permite administratorilor de colecții de site-uri să definească planificările de reținere care se aplică pentru un site și pentru tot conținutul său.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Politică de proiect</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Tipul de conținut al containerului pentru definițiile Politică de proiect</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Politici site</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Politicile de site determină modul în care un site și conținutul său sunt gestionate și eliminate. Ele pot fi partajate în colecțiile de site-uri prin mecanismul Publicare tip conținut.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Închidere și ștergere site</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Vizualizați sau modificați politica de gestionare a informațiilor utilizată în acest site și configurați datele care conduc acțiunile ciclului de viață al site-ului.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Lista elementelor Politică proiect</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>O listă creată de Reținere pe bază de proiect, utilizată pentru stocarea elementelor de politică de proiect.</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Elemente video și media îmbogățite</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Furnizează biblioteci, tipuri de conținut și părți web pentru depozitarea, gestionarea și vizualizarea activelor media îmbogățite, precum imagini, clipuri audio și video.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Setări procesare și redare video</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Video</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Încărcați sau creați un link la un clip video.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Descriere</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>Un rezumat pentru video</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Proprietar</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>Proprietarul clipului video</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Index timp imagine redusă</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Codificare implicită</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Înlocuire codificare implicită utilizator</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Legătură externă</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Cod încorporat</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>Afișare link descărcare</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Specifică dacă apare un buton în pagina de player video care permite utilizatorului să descarce clipul video în curs de redare.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Afișare link încorporat</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Specifică dacă apare un buton în pagina de player video care permite utilizatorului să obțină un cod de încorporare pentru clipul video în curs de redare.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Informații de redare</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Persoane în clipul video</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>Persoanele care apar în clipul video.</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Navigare și filtrare metadate</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Oferă o pagină de setări fiecărei liste din site, pentru a configura lista respectivă să utilizeze ierarhii de vizualizare arborescentă de metadate și controale de filtrare în vederea îmbunătățirii navigării și filtrării elementelor conținute.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Setări navigare metadate</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Setări vizualizare pentru locație</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>Controale Panglică „Conectare la Office”</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Adaugă puncte de intrare în interfața utilizator panglică pentru crearea de comenzi rapide la biblioteci din lista de site-uri SharePoint ale utilizatorului dacă au o versiune recentă de Office instalată. Office va memora periodic în cache șabloanele disponibile din aceste biblioteci pe computerul local al utilizatorului.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Inserează un buton în fila Bibliotecă/Acțiuni.</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Conectare la Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Conectare la Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Conectare la Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Adăugați la comenzile dvs. rapide care apar la crearea, deschiderea și salvarea documentelor în aplicații Microsoft Office, cum ar fi Word, Excel și PowerPoint.</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>Adăugare la site-urile SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>Adăugare la site-urile SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Adăugați o comandă rapidă la această bibliotecă din Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>Eliminare din site-uri SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>Eliminare din site-uri SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Eliminați această bibliotecă din lista de comenzi rapide Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>Gestionare site-uri SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>Gestionare site-uri SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Modificați lista de comenzi rapide Microsoft Office.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>Integrare e-mail cu Organizator conținut</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Permite organizatorului de conținut al unui site să accepte și să organizeze mesaje de poștă electronică. Această caracteristică ar trebui utilizată numai într-un depozit cu nivel ridicat de gestionare, cum ar fi un Centru de înregistrări.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>Setări Organizator conținut</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>Reguli Organizator conținut</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Setări declarație înregistrare</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Bibliotecă de înregistrări</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Creați o bibliotecă de documente pentru stocarea înregistrărilor de afaceri importante.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Încărcați documentele terminate în această bibliotecă. Documentele adăugate la această bibliotecă vor fi declarate automat ca înregistrări.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Configurare Centru înregistrări</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Configurează un site ca Centru de înregistrări.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Gestionare Centru înregistrări</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Gestionează setările de păstrare a înregistrărilor pe acest site.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Configurare activități și Creare plan fișiere</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Utilizați aceste instrucțiuni pentru a termina configurarea site-ului Centru înregistrări.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>Pentru a pregăti acest site să accepte înregistrări, configurați-l să se potrivească cu planul de fișiere al organizației:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Notă:&lt;/b&gt; Acest Centru de înregistrări nu ar trebui să fie configurat complet, deoarece unele caracteristici de colecție de site-uri nu sunt activate. Contactați administratorul de colecție de site-uri dacă nu aveți acces să rezolvați aceste probleme:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Documentele de intrare nu pot fi marcate ca înregistrări. Activați caracteristica Înregistrări în locație din galeria de caracteristici a colecției de site-uri.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Documentele de intrare nu pot primi un ID de document. Activați serviciul ID documente din galeria de caracteristici a colecției de site-uri.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Pas 1:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Pas 2:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Pas 3:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>Pasul 4:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>Creare tipuri de conținut</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Definiți tipurile de înregistrări și proprietățile pentru fiecare tip.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Creare biblioteci înregistrări</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Generați o ierarhie de foldere și biblioteci de înregistrări și atribuiți fiecărui element o programare de retenție.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>Creare reguli pentru organizatorul de conținut</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Definiți regulile care distribuie înregistrările remise în folderul corect.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Proiectare pagina de întâmpinare a site-ului</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Explicați utilizatorilor politicile de gestionare a înregistrărilor și planul de fișiere.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>Odată ce ați terminat, această parte Web poate fi eliminată.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Activități gestionare înregistrări comune</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Creați o nouă Bibliotecă de înregistrări</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Creați o bibliotecă nouă pentru stocarea înregistrărilor.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>Administrare conținut și structură</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Utilizați un instrument de gestionare a ierarhiei pentru a rearanja structura de foldere a acestui site.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>Creare reguli pentru organizatorul de conținut</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Gestionați unde se stochează înregistrările remise.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Descoperire și suspendare înregistrări</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Căutați înregistrările care se vor păstra din cauza litigiului.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Generare Raport plan fișiere</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Vizualizați o foaie de date despre programările de retenție și structura bibliotecii de înregistrări.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Generare Raport audit</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Accesați un istoric de evenimente care s-au produs în înregistrări (necesită privilegii de administrator de colecții de site-uri).</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>Revizuiți rapoartele de jurnal de auditare disponibile, care oferă o urmărire detaliată a evenimentelor privind activitatea conținutului, securitatea și politica acestuia sau pentru alte filtre.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Revizuiți rapoartele de tendințe ale popularității, care oferă informații despre ce conținut este accesat și prin ce modalitate.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Configurați auditarea, care urmărește acțiunile utilizatorilor pe toate site-urile din această colecție de site-uri.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Gestionați politicile de gestionare a informațiilor, care oferă declarații de politică, etichete, auditare, expirare și coduri de bare pentru toate site-urile din această colecție de site-uri.</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Setări declarație înregistrare</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Setări valori implicite coloană</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Modificare valori implicite pentru coloane</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Modificați valorile implicite de coloane pentru acest folder.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Declarare înregistrare</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Declararea elementului ca înregistrare poate adăuga restricții și politici specifice înregistrărilor, pe baza setărilor de sistem.</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Anulare declarare înregistrare</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Anulați declararea elementului ca înregistrare pentru a elimina restricțiile și politicile pentru înregistrări.</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Configurare vizualizări pentru această locație</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Modificați vizualizările disponibile pentru acest folder.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Set documente</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Gestionare</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Acțiuni</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Editare proprietăți</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Editați proprietățile pentru acest set de documente.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Descărcare copie</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Descărcați o copie a acestui set de documente.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>Permisiuni</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Accesați pagina Permisiuni pentru a adăuga, a modifica sau a elimina permisiuni pentru acest set de documente.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Ștergere</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Gestionare interogare</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Nou</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Gestionare</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Interogare</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Copiere interogare</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Copiere interogare</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Creați o copie a elementului selectat.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>Actualizare statistici</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>Actualizare statistici</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>Rulați interogarea sau interogările selectate pentru a le actualiza statisticile.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Export</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Export</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Exportați rezultatele interogării sau interogărilor selectate.</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Ștergeți acest set de documente. Toate seturile de documente din acest set de documente vor fi șterse.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Partajare</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>Trimitere link prin e-mail</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Trimiteți prin e-mail un link către acest set de documente.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Trimitere la</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Accesați pagina Trimitere în altă locație pentru a muta sau a copia acest set de documente în altă locație.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Gestionare</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Versiune captură</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Salvați o versiune a documentelor și proprietăților curente în acest set de documente.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Istoric versiuni</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Vizualizați și gestionați istoricul de versiune al acestui set de documente.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>Fluxuri de lucru</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Accesați pagina Fluxuri de lucru pentru a porni sau a gestiona fluxurile de lucru asociate cu acest set de documente.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Gestionare redări video</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Gestionați redările acestui clip video.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Acțiune particularizată Panglică navigare metadate.</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Actualizare</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Actualizare stare sursă</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Actualizează starea surselor selectate.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Eroare de export</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Generează o listă de export a tuturor elementelor cu erori pentru a obține un raport sau pentru a le descărca.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Acțiuni sursă</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Se caută</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Acest lucru poate să ia un minut...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>Relevanță</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Dată(cel mai vechi)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Dată(cel mai nou)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Căutare</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Interogare salvată</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>Portal eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>Creați și gestionați cazuri eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>Caracteristică pentru caz eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>Furnizează resursele necesare pentru un caz eDiscovery.</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Nume</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Stare reținere în locație</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Păstrare filtrată</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Stare reținere în locație nelocalizată</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Reținere în locație</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Istoric reținere în locație</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Ultima oră indexată</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Erori de indexare - elemente</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Erori de indexare - locații SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Procentaj eroare de accesare cu crawlere</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Surse</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Adăugați o sursă nouă.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Export</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Adăugați un export nou.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Interogare</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Creați o căutare salvată nouă.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Custode</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Adăugați un custode nou.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Cutie poștală</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Adăugați o cutie poștală nouă.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Locație</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Adăugați o locație nouă.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>Set eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Creați un set eDiscovery nou.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Element păstrat</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Adăugați un Element păstrat nou.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>Tipuri de conținut eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Elemente</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Dimensiune (MB)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Interogări</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>ID site</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Tip sursă</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Tip de sursă brut</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>ID web</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>ID federație</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>ID federație externă</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Anulare dublare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Eliminare conținut Exchange dublat</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Eliminare Rights Management Protecție</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Elimină protecția RMS (Rights Management Services) și criptarea din datele Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Includere versiuni</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>Includere versiuni pentru documente SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Elemente care nu pot fi căutate</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Se adaugă elementele care sunt criptate sau care au un format nerecunoscut</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Stare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>Proprietăți eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Interogare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Autor</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Data de începere</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Data de terminare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Filtru domeniu (doar Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>Componente rafinare SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Componente rafinare Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Tip gestionare sursă</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>ID reținere</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>ID acțiune</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Tip acțiune</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>ID sursă</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>ID afișare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Surse</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Grupuri sursă</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Custozi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Utilizator</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Note</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Sursă</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Număr versiune păstrare</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Locație originală de păstrare</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>ID listă originală de păstrare</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Metadate originale de păstrare</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Dată conservată</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Tip listă custozi</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>Listați tipul pentru aparținătorii utilizați într-un caz eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Tip listă surse</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>Listați tipul pentru surse într-un caz eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Tip listă interogări</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>Listați tipul pentru căutările salvate într-un caz eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Tip listă exporturi</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>Listați tipul pentru exporturi într-un caz eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>Tip listă seturi eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>Listați tipul pentru seturile de descoperiri într-un caz eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Tip listă instanțe sursă</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>Listați tipul pentru instanțele sursă într-un caz eDiscovery.</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>Șablon site portal eDiscovery</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Interogări</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Utilizați interogări pentru a reduce și analiza rezultatele căutării.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Surse</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Urmăriți starea cutiilor poștale și locațiile implicate în caz.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>Seturi eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Creați și gestionați grupurile de conținut care pot fi filtrate și puse în așteptare.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Export: element nou</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Exporturi</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Utilizați lista Exporturi pentru a gestiona descărcarea de conținut exportat de eDiscovery.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Instanțe sursă</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Urmăriți starea cazurilor.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Custozi</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Adăugați la caz utilizatori carepot fi asociați cu sursele, cum ar fi cutii poștale sau locații.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Stare reținere în locație</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Stare export</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>Descărcare neîncepută</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>Descărcare începută</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>Descărcare terminată</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>Export nereușit</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>Suspendat</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>Reținere cu filtru</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Expirat</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Nu se poate reține</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Nu este suspendat</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>În curs de procesare</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Parțial</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Eroare</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>Bun venit la Centrul eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>Utilizați acest site pentru a crea, gestiona și lucra la Cazuri eDiscovery. Cu ajutorul Cazurilor eDiscovery puteți gestiona identificarea și reținerea în depozit a cutiilor poștale Exchange, a site-urilor SharePoint și a altor surse de conținut. De asemenea, puteți crea și gestiona interogări de căutare pentru a identifica conținut relevant, apoi pentur a exporta rezultatele căutării.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Pornire</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Oferiți utilizatorilor cu rol juridic permisiuni să acceseze conținutul din implementarea SharePoint. Vă recomandăm să creați un grup de securitate care conține membrii echipei juridice.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>Pentru a descoperi cutiile poștale Exchange, asigurați-vă că administratorul a instalat Exchange Web Services Managed Client pe toate serverele SharePoint și spuneți administratorului să configureze autentificarea între Exchange și SharePoint. </value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Oferiți grupului de securitate al echipei juridice permisiuni de politică de utilizator pentru toate aplicațiile web SharePoint care au conținut de care aveți nevoie pentru a efectua eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Oferiți utilizatorilor cu rol juridic permisiuni eDiscovery pentru cutiile Exchange pentru care trebuie să efectuați acțiuni eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Reținere în locație, căutare și export</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>Cu reținerile în depozit, puteți specifica ce cutii poștale și site-uri SharePoint să opriți. Când se modifică sau se șterge conținut, va fi stocat în depozit până când va trebui să-l exportați.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>Căutarea eDiscovery în locație vă permite să căutați în site-uri SharePoint, în partajările de fișiere și în cutiile poștale Exchange. Utilizați componente de proximitate, de rafinare și elemente logice de tip Boolean pentru a restrânge rezultatele la conținutul de care aveți nevoie. Deoarece căutarea se desfășoară în locație, rezultatele sunt în direct și actuale, așa cum ar fi dacă ați efectua o căutare de site SharePoint sau Outlook Web Access.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>Odată ce ați identificat conținutul de care aveți nevoie, îl puteți descărca în unitatea hard disk locală sau în partajarea de fișiere într-un format nativ portabil. Descărcați cu ușurință pagini SharePoint, documente, liste și date de cutii poștale Exchange.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Bun venit la cazul dvs.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>Utilizați cazul dvs. pentru a identifica surse de conținut, cum ar fi cutii poștale sau site-uri SharePoint și păstrați acest conținut cu reținerea în depozit. Odată ce ați identificat sursele de conținut, puteți căuta în conținut pentru a identifica elementele relevante și a le exporta.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Creare caz nou</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Adăugare locație suplimentară</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Adăugare cutie poștală suplimentară</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Verificare locație</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Verificare cutie poștală</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Răsfoire</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Adăugare și gestionare surse)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Modificare domeniu interogare)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Surse: editare element</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Surse: element nou</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Adăugare și gestionare surse</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Locații</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Introduceți URL-uri pentru a specifica partajările de fișiere și site-urile SharePoint care sunt indexate de căutare. Sursele de site-uri SharePoint vor conține toate subsite-urile. Sursele de partajare de fișiere vor conține toate folderele de sub folderul specificat.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Cutii poștale</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Specificați cutiile poștale Exchange utilizând nume sau adrese de poștă electronică.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>OK</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>Colaboratori</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Cutie poștală Exchange</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Partajare fișiere</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Conținut caz</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Conținut total caz</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Conținut reținere în depozit</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Elemente: </value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Dimensiune: </value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Validare</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Conexiunea la aplicația serviciului de căutare nu a reușit.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>S-a produs o eroare la încercarea de validare a sursei.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>Sursa specificată există deja în caz.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Nu s-a găsit o potrivire exactă. Este posibil ca URL-ul să nu fie valid, nu aveți permisiunea să accesați această locație sau locația nu este indexată de Căutare.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Cutia poștală nu a fost validată. Este posibil să nu existe cutia poștală sau să nu aveți nivelul corect de permisiuni.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>Tip de conținut</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Opțiuni complexe de interogare</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>Nu există surse în această interogare. Pentru a adăuga surse, mergeți înapoi la pagina de interogare și faceți clic pe "{0}"</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Reținere în depozit pe bază de interogare</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>Când este activată păstrarea pe bază de interogare, expiră  conținutul stocat în Biblioteca de păstrare care nu se potrivește cu niciun filtru de așteptare pentru acest site. Această caracteristică ar trebui să fie utilizată în general pentru site-urile de arhivă care vor avea mai multe așteptări concurente.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} O așteptare a întregului conținut a fost programată de setul eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} Tot conținutul este acum în așteptare pentru setul eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} Actualizarea programată a așteptării pentru setul eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} S-a inițializat actualizarea așteptării în locație pentru setul eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} O actualizare a așteptării a fost programată de setul eDiscovery '{1}' cu filtrul '{2}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} S-a inițializat actualizarea așteptării pentru setul eDiscovery '{1}' cu filtrul '{2}'.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} S-a programat așteptarea unui subset filtrat de setul eDiscovery '{1}' cu filtrul '{2}'.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} Un subset filtrat al conținutului este acum în așteptare pentru setul eDiscovery '{1}' cu filtrul '{2}'.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} S-a eliberat așteptarea pentru setul eDiscovery '{1}'.  Această sursă este încă în așteptare pentru alte seturi eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} A fost programată eliberarea așteptării pentru tot conținutul de setul eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} S-a eliberat așteptarea pentru tot conținutul pentru setul eDiscovery'{1}'.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} S-a eliberat așteptarea în locație a întregului conținut dintr-un set eDiscovery care nu mai există.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} Nu a reușit punerea sursei în așteptare pentru setul eDiscovery '{1}'. Mesaj de eroare: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} Nu a reușit eliberarea așteptării pentru această sursă pentru setul eDiscovery '{1}'. Mesaj de eroare: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>Eveniment audit eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Conținut caz</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Afișează conținutul cazului.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Partea web de conținut de caz poate fi utilizată doar în weburile Caz eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Trebuie specificată o valoare pentru acest câmp obligatoriu.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">Această sursă este în prezent în așteptare. Pentru a șterge această sursă, eliberați toate așteptările. </value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Acest set eDiscovery are activată în prezent așteptarea în locație. Pentru a șterge acest set eDiscovery, eliberați reținerea în locație. </value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>Site-ul nu există</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>ID-ul partiției acestui site nu se potrivește cu ID-ul partiției acțiunii de așteptare.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Dimensiune</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Elemente</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Total:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Eliminare dubluri</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>Eliminare protecție RMS</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Includere versiuni</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Includere elemente care nu pot fi căutate</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>Descărcare</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Raport rezultate</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>Numărul și dimensiunea estimate a elementelor nu conține versiuni sau anulare de dubluri. Selectarea acelor opțiuni va afecta dimensiunea totală a exportului.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Închidere caz</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Deschidere caz</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Închidere caz</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Nu s-au găsit rezultate potrivite cu adresa dvs. Introduceți o adresă nouă sau o adresă mai puțin specifică.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Nume afișat</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>Adresă de e-mail</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Total estimat</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Număr de elemente</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Dimensiune elemente</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Interogări</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Reținere în depozit</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Eliberare reținere în depozit</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Actualizare reținere în depozit</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Stare export</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Stare sursă</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Acest caz a fost închis la: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>Există seturi eDiscovery așteptare, eliberați toate așteptările sau închideți cazul pentru a le șterge.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>Politică pentru cazul eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Politică pentru gestionarea închiderii de caz.</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Nou: set eDiscovery</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Setări reținere păstrare</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Lista pentru setările de stocare pentru așteptările în locație.</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>Nu s-a obținut o sursă pentru acest SourceType {0} și filtrul {1}</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Administrare entitate găzduită de gestionare a înregistrărilor</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Administrare entitate găzduită de gestionare a înregistrărilor.</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Fixare administrare entitate găzduită de gestionare a înregistrărilor</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Fixare administrare entitate găzduită de gestionare a înregistrărilor.</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Configurare conexiuni de Trimitere la</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Eroare la regăsire</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>Indisponibil</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>{0} erori</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>Nu există surse în acest set eDiscovery. Pentru a adăuga surse, faceți clic pe "{0}".</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>Nu există surse de acest tip în această interogare. Pentru a adăuga surse, faceți clic pe "{0}".</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Activat</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Dezactivat</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Export: descărcare</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Închidere</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Statistici actualizare</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Opțiuni</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Alegeți numele și opțiunile pentru export. Printre exporturi se numără un fișier de încărcare EDRM (Electronic Data Reference Model - Model de referință pentru date electronice).</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Rezultate descărcare</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Descărcare raport</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>Descărcare export</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Doriți să descărcați toate rezultatele căutării acum, un raport cu o listă a rezultatelor căutării sau să închideți și să descărcați mai târziu?</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Selectare interogări</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Selectați interogările pe care doriți să le exportați.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Eroare</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Căutare</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Reîncercare reținere</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Rezolvare sursă</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>URL-ul sau adresa pentru această sursă s-a modificat. Faceți clic aici pentru a actualiza la noul URL sau la noua adresă.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>Acesta este un câmp obligatoriu.</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} - Copiere</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} - Copiere ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Această locație este rădăcina unei aplicații web sau a unei căi gestionate și conține mai multe colecții de site-uri. Se va păstra doar colecția de site-uri a rădăcinii, dar rezultatele căutării și exporturile vor conține toate colecțiile de site-uri în această cale.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>O locație este rădăcina unei aplicații web sau a unei căi gestionate și conține mai multe colecții de site-uri. Se va păstra doar colecția site-ului rădăcină, dar rezultatele căutării și exporturile vor conține toate colecțiile de site-uri din această cale. Selectați OK pentru a accepta locația sau anulați pentru a modifica locația.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>Faceți clic pentru a {0}crea{1} un caz nou</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Modificat {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Cazuri</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>Acest set eDiscovery conține mai mult de limita de surse (100 surse SharePoint sau 1000 de cutii poștale). Faceți clic pe Adăugare și gestionare surse și reduceți numărul de surse pentru a obține statistici și rezultate.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Această interogare conține mai mult de limita de surse (100 surse SharePoint sau 1000 de cutii poștale). Faceți clic pe Modificare domeniu interogare și restrângeți interogarea de căutare pentru a obține rezultate.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Acest export conține mai mult de limita de surse (100 surse SharePoint sau 1000 de cutii poștale).  Pentru a efectua acest export, reduceți numărul de cutii poștale din interogările asociate sau selectați mai puține interogări.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Analiză rădăcină</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Anulare dublare</value>
+  </data>
+</root>

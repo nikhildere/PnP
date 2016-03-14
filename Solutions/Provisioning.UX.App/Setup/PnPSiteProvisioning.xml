@@ -23,6 +23,7 @@
         <Field ID="{7A79B397-C69C-4CFD-8C9D-644D81BEA6AE}" Type="Boolean" Name="SP_RootWebOnly" DisplayName="Root web only" Group="SiteProvisioning" />
         <Field ID="{867FB9FF-8314-4244-9A2D-41B60C5DCE3F}" Type="Boolean" Name="SP_SubWebOnly" DisplayName="Sub web only" Group="SiteProvisioning" />
         <Field ID="{30BD94DA-4717-450D-BB96-A40D82C0413A}" Type="Boolean" Name="SP_UseTemplateSitePolicy" DisplayName="Use Site Policy defined in template" Group="SiteProvisioning" />
+        <Field ID="{2F670C14-5465-4C35-8AC8-C4D90903BE57}" Type="Boolean" Name="SP_AutoApprove" DisplayName="Auto Approve" Group="SiteProvisioning" />
 
 
         <!--SITE REQUEST FIELDS-->
@@ -40,6 +41,7 @@
         <Field Type="Note" Name="SP_Props" DisplayName="Properties" ID="{ff0d9ebb-576f-45ff-8328-73d6b7c6e1a4}" Group="SiteProvisioning" Description="Field that stores custom property bag entries." SourceID="{e39236f6-e0b6-4d25-99b4-6e02eceb2207}" StaticName="SP_Props" />
         <Field Type="Boolean" Name="SP_ExternalSharingFlag" DisplayName="External Sharing Enabled" ID="{be2c62c2-5973-4223-a5b3-95e7379cce66}" Group="SiteProvisioning" ShowInDisplayForm="TRUE" Description="" SourceID="{e39236f6-e0b6-4d25-99b4-6e02eceb2207}" StaticName="SP_ExternalSharingFlag" />
         <Field Type="Text" Name="SP_StatusMessage" DisplayName="Status Message" ID="{80fdfcf7-b765-48a4-8391-52ce026bdf42}" Group="SiteProvisioning" ShowInDisplayForm="TRUE" Description="Status Message" SourceID="{e39236f6-e0b6-4d25-99b4-6e02eceb2207}" StaticName="SP_StatusMessage" />
+        <Field Type="Boolean" Name="SP_IsConfidential" DisplayName="Is Confidential" ID="{53AE11D5-57EA-46DF-B8C6-EA42375770EB}" Group="SiteProvisioning" ShowInDisplayForm="TRUE" Description="Is Confidential" SourceID="{e39236f6-e0b6-4d25-99b4-6e02eceb2207}" StaticName="SP_IsConfidential" />
       </pnp:SiteFields>
       <pnp:ContentTypes>
         <!--TEMPLATES-->
@@ -61,6 +63,7 @@
             <pnp:FieldRef ID="7A79B397-C69C-4CFD-8C9D-644D81BEA6AE" Name="SP_RootWebOnly"/>
             <pnp:FieldRef ID="867FB9FF-8314-4244-9A2D-41B60C5DCE3F" Name="SP_SubWebOnly" />
             <pnp:FieldRef ID="30BD94DA-4717-450D-BB96-A40D82C0413A" Name="SP_UseTemplateSitePolicy" />
+            <pnp:FieldRef ID="2F670C14-5465-4C35-8AC8-C4D90903BE57" Name="SP_AutoApprove" />
           </pnp:FieldRefs>
         </pnp:ContentType>
         <!--SITE REQUEST CONTENT TYPE-->
@@ -82,6 +85,7 @@
             <pnp:FieldRef ID="33ca4a33-6bd5-42e5-a28f-09eba9409c6b" Name="SP_ApprovedDate" />
             <pnp:FieldRef ID="80fdfcf7-b765-48a4-8391-52ce026bdf42" Name="SP_StatusMessage" />
             <pnp:FieldRef ID="be2c62c2-5973-4223-a5b3-95e7379cce66" Name="SP_ExternalSharingFlag" />
+            <pnp:FieldRef ID="53ae11d5-57ea-46df-b8c6-ea42375770eb" Name="SP_IsConfidential" />
           </pnp:FieldRefs>
         </pnp:ContentType>
         <pnp:ContentType ID="0x0100E8E02176148641249C78524B952CD187" Name="Site Classifications" Description="Site Classification Reference Data" Group="Site Provisioning Content Types">
@@ -212,6 +216,7 @@
                 <FieldRef Name="SP_RootWebOnly"/>
                 <FieldRef Name="SP_SubWebOnly"/>
                 <FieldRef Name="SP_Enabled" />
+                <FieldRef Name="SP_AutoApprove" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <JSLink>clienttemplates.js</JSLink>

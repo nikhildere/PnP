@@ -1,271 +1,355 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<pnp:ProvisioningTemplate ID="Mdlz.TeamSite" Version="1.0"
-  xmlns:pnp="http://schemas.dev.office.com/PnP/2015/05/ProvisioningSchema"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <pnp:CustomActions>
-    <pnp:SiteCustomActions>
-      <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE"
-                Description="Override new sub-site link"
-                Location="ScriptLink"
-                Title="CA_SITE_SUBSITE_OVERRIDE"
-                ScriptSrc=""
-                ScriptBlock="
-                    var SubSiteSettings_Web_Url = 'https://[RemoteWebHostNameToken]/pages/subsite/newsbweb.aspx?SPHostUrl=';
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
+  <pnp:Preferences/>
+  <pnp:Localizations>
+    <pnp:Localization LCID="2052" Name="core" ResourceFile="Language/core.zh-cn.resx"/>
+    <pnp:Localization LCID="1029" Name="core" ResourceFile="Language/core.cs.resx"/>
+    <pnp:Localization LCID="1030" Name="core" ResourceFile="Language/core.da.resx"/>
+    <pnp:Localization LCID="1033" Name="core" ResourceFile="Language/core.en-us.resx"/>
+    <pnp:Localization LCID="1035" Name="core" ResourceFile="Language/core.fi.resx"/>
+    <pnp:Localization LCID="1036" Name="core" ResourceFile="Language/core.fr-fr.resx"/>
+    <pnp:Localization LCID="1031" Name="core" ResourceFile="Language/core.de-de.resx"/>
+    <pnp:Localization LCID="1032" Name="core" ResourceFile="Language/core.el.resx"/>
+    <pnp:Localization LCID="1040" Name="core" ResourceFile="Language/core.it-it.resx"/>
+    <pnp:Localization LCID="1041" Name="core" ResourceFile="Language/core.ja.resx"/>
+    <pnp:Localization LCID="1042" Name="core" ResourceFile="Language/core.ko.resx"/>
+    <pnp:Localization LCID="1063" Name="core" ResourceFile="Language/core.lt.resx"/>
+    <pnp:Localization LCID="1044" Name="core" ResourceFile="Language/core.no-no.resx"/>
+    <pnp:Localization LCID="1045" Name="core" ResourceFile="Language/core.pl.resx"/>
+    <pnp:Localization LCID="1046" Name="core" ResourceFile="Language/core.pt-br.resx"/>
+    <pnp:Localization LCID="1048" Name="core" ResourceFile="Language/core.ro.resx"/>
+    <pnp:Localization LCID="1049" Name="core" ResourceFile="Language/core.ru.resx"/>
+    <pnp:Localization LCID="1051" Name="core" ResourceFile="Language/core.sk.resx"/>
+    <pnp:Localization LCID="3082" Name="core" ResourceFile="Language/core.es-es.resx"/>
+    <pnp:Localization LCID="1053" Name="core" ResourceFile="Language/core.sv-se.resx"/>
+    <pnp:Localization LCID="1054" Name="core" ResourceFile="Language/core.th.resx"/>
+    <pnp:Localization LCID="1055" Name="core" ResourceFile="Language/core.tr.resx"/>
+    <pnp:Localization LCID="1066" Name="core" ResourceFile="Language/core.vi.resx"/>
+    <pnp:Localization LCID="2052" Name="spscore" ResourceFile="Language/spscore.zh-cn.resx"/>
+    <pnp:Localization LCID="1029" Name="spscore" ResourceFile="Language/spscore.cs.resx"/>
+    <pnp:Localization LCID="1030" Name="spscore" ResourceFile="Language/spscore.da.resx"/>
+    <pnp:Localization LCID="1033" Name="spscore" ResourceFile="Language/spscore.en-us.resx"/>
+    <pnp:Localization LCID="1035" Name="spscore" ResourceFile="Language/spscore.fi.resx"/>
+    <pnp:Localization LCID="1036" Name="spscore" ResourceFile="Language/spscore.fr-fr.resx"/>
+    <pnp:Localization LCID="1031" Name="spscore" ResourceFile="Language/spscore.de-de.resx"/>
+    <pnp:Localization LCID="1032" Name="spscore" ResourceFile="Language/spscore.el.resx"/>
+    <pnp:Localization LCID="1040" Name="spscore" ResourceFile="Language/spscore.it-it.resx"/>
+    <pnp:Localization LCID="1041" Name="spscore" ResourceFile="Language/spscore.ja.resx"/>
+    <pnp:Localization LCID="1042" Name="spscore" ResourceFile="Language/spscore.ko.resx"/>
+    <pnp:Localization LCID="1063" Name="spscore" ResourceFile="Language/spscore.lt.resx"/>
+    <pnp:Localization LCID="1044" Name="spscore" ResourceFile="Language/spscore.no-no.resx"/>
+    <pnp:Localization LCID="1045" Name="spscore" ResourceFile="Language/spscore.pl.resx"/>
+    <pnp:Localization LCID="1046" Name="spscore" ResourceFile="Language/spscore.pt-br.resx"/>
+    <pnp:Localization LCID="1048" Name="spscore" ResourceFile="Language/spscore.ro.resx"/>
+    <pnp:Localization LCID="1049" Name="spscore" ResourceFile="Language/spscore.ru.resx"/>
+    <pnp:Localization LCID="1051" Name="spscore" ResourceFile="Language/spscore.sk.resx"/>
+    <pnp:Localization LCID="3082" Name="spscore" ResourceFile="Language/spscore.es-es.resx"/>
+    <pnp:Localization LCID="1053" Name="spscore" ResourceFile="Language/spscore.sv-se.resx"/>
+    <pnp:Localization LCID="1054" Name="spscore" ResourceFile="Language/spscore.th.resx"/>
+    <pnp:Localization LCID="1055" Name="spscore" ResourceFile="Language/spscore.tr.resx"/>
+    <pnp:Localization LCID="1066" Name="spscore" ResourceFile="Language/spscore.vi.resx"/>
+    <pnp:Localization LCID="2052" Name="dlcore" ResourceFile="Language/dlccore.zh-cn.resx"/>
+    <pnp:Localization LCID="1029" Name="dlcore" ResourceFile="Language/dlccore.cs.resx"/>
+    <pnp:Localization LCID="1030" Name="dlcore" ResourceFile="Language/dlccore.da.resx"/>
+    <pnp:Localization LCID="1033" Name="dlcore" ResourceFile="Language/dlccore.en-us.resx"/>
+    <pnp:Localization LCID="1035" Name="dlcore" ResourceFile="Language/dlccore.fi.resx"/>
+    <pnp:Localization LCID="1036" Name="dlcore" ResourceFile="Language/dlccore.fr-fr.resx"/>
+    <pnp:Localization LCID="1031" Name="dlcore" ResourceFile="Language/dlccore.de-de.resx"/>
+    <pnp:Localization LCID="1032" Name="dlcore" ResourceFile="Language/dlccore.el.resx"/>
+    <pnp:Localization LCID="1040" Name="dlcore" ResourceFile="Language/dlccore.it-it.resx"/>
+    <pnp:Localization LCID="1041" Name="dlcore" ResourceFile="Language/dlccore.ja.resx"/>
+    <pnp:Localization LCID="1042" Name="dlcore" ResourceFile="Language/dlccore.ko.resx"/>
+    <pnp:Localization LCID="1063" Name="dlcore" ResourceFile="Language/dlccore.lt.resx"/>
+    <pnp:Localization LCID="1044" Name="dlcore" ResourceFile="Language/dlccore.no-no.resx"/>
+    <pnp:Localization LCID="1045" Name="dlcore" ResourceFile="Language/dlccore.pl.resx"/>
+    <pnp:Localization LCID="1046" Name="dlcore" ResourceFile="Language/dlccore.pt-br.resx"/>
+    <pnp:Localization LCID="1048" Name="dlcore" ResourceFile="Language/dlccore.ro.resx"/>
+    <pnp:Localization LCID="1049" Name="dlcore" ResourceFile="Language/dlccore.ru.resx"/>
+    <pnp:Localization LCID="1051" Name="dlcore" ResourceFile="Language/dlccore.sk.resx"/>
+    <pnp:Localization LCID="3082" Name="dlcore" ResourceFile="Language/dlccore.es-es.resx"/>
+    <pnp:Localization LCID="1053" Name="dlcore" ResourceFile="Language/dlccore.sv-se.resx"/>
+    <pnp:Localization LCID="1054" Name="dlcore" ResourceFile="Language/dlccore.th.resx"/>
+    <pnp:Localization LCID="1055" Name="dlcore" ResourceFile="Language/dlccore.tr.resx"/>
+    <pnp:Localization LCID="1066" Name="dlcore" ResourceFile="Language/dlccore.vi.resx"/>
+  </pnp:Localizations>
+  <pnp:Templates>
+    <pnp:ProvisioningTemplate ID="Mdlz.TeamSite">
+      <pnp:CustomActions>
+        <pnp:SiteCustomActions>
+          <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Description="Override new sub-site link"
+                    Location="ScriptLink"
+                    Title="CA_SITE_SUBSITE_OVERRIDE"
+                    ScriptSrc=""
+                    ScriptBlock="
+                    var SubSiteSettings_Web_Url = '{{$RemoteWebHostNameToken}}/pages/subsite/newsbweb.aspx?SPHostUrl=';
                     var headID = document.getElementsByTagName('head')[0]; 
                     var subsiteScriptTag = document.createElement('script');
                     subsiteScriptTag.type = 'text/javascript';
                     subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
                     headID.appendChild(subsiteScriptTag);"/>
-    </pnp:SiteCustomActions>
-    <pnp:WebCustomActions>
-      <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
-                Description="Site Classification Application"
-                Group="SiteTasks"
-                Location="Microsoft.SharePoint.SiteSettings"
-                Title="Site Classification"
-                Sequence="1000"
-                Url="https://[RemoteWebHostNameToken]/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                Rights="31"/>
-      <pnp:CustomAction Name="CA_SITE_STDMENU_SITECLASSIFICATION"
-                Description="Site Classification Module"
-                Group="SiteActions"
-                Location="Microsoft.SharePoint.StandardMenu"
-                Title="Site Classification"
-                Sequence="1000"
-                Url="https://[RemoteWebHostNameToken]/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                Rights="31"/>
-      <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
-                Description="Mondelez Js Injections"
-                Group="SiteActions"
-                Location="ScriptLink"
-                Title="Mondelez Js Injections"
-                Sequence="1000"
-                ScriptBlock="var nl = new Date();
-                             var nlu = new Date(nl.getTime() + nl.getTimezoneOffset() * 60000);
-                             var onejan = new Date(nlu.getFullYear(), 0, 1);
-                             var verStr = Math.ceil( (((nlu - onejan) / 86400000) + onejan.getDay() + 1) / 7 ).toString() + nl.getFullYear().toString();
-                             var scr_elem = document.createElement('script');
-                             scr_elem.type = 'text/javascript';
-                             scr_elem.src = '/SiteAssets/Team/scripts/MDLZTeamsite.Init.js' + '?rev=' + verStr;
-                             var headElem = document.getElementsByTagName('head')[0];
-                             headElem.appendChild(scr_elem);"/>
-    </pnp:WebCustomActions>
-  </pnp:CustomActions>
-  <pnp:Lists>
-    <pnp:ListInstance Title="Announcements"
-                      Description="A list of news items, statuses and other short bits of information."
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="104"
-                      Url="Lists/Announcements"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="false">
-      <pnp:DataRows>
-        <pnp:DataRow>
-          <pnp:DataValue FieldName="Title">Welcome To Your Team Site!</pnp:DataValue>
-          <pnp:DataValue FieldName="Body">
-            Please notice that there are a number of new and enhanced capabilities. If you'd like to learn more about how to leverage these capabilities, please visit the &lt;B&gt;IQ University&lt;/B&gt; where you can access a variety of learning resources.
-          </pnp:DataValue>
-        </pnp:DataRow>
-      </pnp:DataRows>
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="Shared Documents"
-                      Description="Share a document with the team by adding it to this document library."
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="101"
-                      Url="/SharedDocuments1"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="Calendar"
-                      Description="Use the Calendar list to keep informed of upcoming meetings, deadlines, and other important events."
-                      EnableFolderCreation="false"
-                      OnQuickLaunch="false"
-                      TemplateType="106"
-                      Url="Lists/Calendar"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="Team Discussion"
-                      Description="Use the Team Discussion list to hold newsgroup-style discussions on topics relevant to your team."
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="108"
-                      Url="Lists/Team Discussion"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-  </pnp:Lists>
-  <pnp:ComposedLook Name="Office"
-                    AlternateCSS="/SiteAssets/Team/Css/MDLZTeamsite.css"
-                    SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png" 
-                    ColorFile="" FontFile="" BackgroundFile=""/>
-  <pnp:Pages>
-    <pnp:Page Layout ="OneColumnSidebar" WelcomePage ="true" Url ="{site}/SitePages/Welcome.aspx">
-      <pnp:WebParts>
-        <!--Left column webparts-->
-        <pnp:WebPart Column="1" Row="1" Title="Announcements">
-          <pnp:Contents>
-            <![CDATA[<webParts>
-                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-                                                        <metaData>
-                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
-                                                        </metaData>
-                                                        <data>
-                                                          <properties>
-                                                            <property name="ListUrl" type="string">Lists/Announcements</property>
-                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
-                                                          </properties>
-                                                        </data>
-                                                      </webPart>
-                                                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Column="1" Row="1" Title="Calendar">
-          <pnp:Contents>
-            <![CDATA[
-                                                    <webParts>
-                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-                                                        <metaData>
-                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
-                                                        </metaData>
-                                                        <data>
-                                                          <properties>
-                                                            <property name="ListUrl" type="string">Lists/Calendar</property>
-                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
-                                                          </properties>
-                                                        </data>
-                                                      </webPart>
-                                                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Column="1" Row="1" Title="Documents">
-          <pnp:Contents>
-            <![CDATA[
-                                                    <webParts>
-                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-                                                        <metaData>
-                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
-                                                        </metaData>
-                                                        <data>
-                                                          <properties>
-                                                            <property name="ListUrl" type="string">SharedDocuments1</property>
-                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
-                                                          </properties>
-                                                        </data>
-                                                      </webPart>
-                                                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <!--Sidebar webparts-->
-        <pnp:WebPart Column="2" Row="1" Title="Getting Started">
-          <pnp:Contents>
-            <![CDATA[<webParts>
-  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-    <metaData>
-      <type name="Microsoft.SharePoint.WebPartPages.GettingStartedWebPart, Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-      <importErrorMessage>Det går inte att importera den här webbdelen.</importErrorMessage>
-    </metaData>
-    <data>
-      <properties>
-        <property name="AllowZoneChange" type="bool">True</property>
-        <property name="HelpUrl" type="string" />
-        <property name="Hidden" type="bool">False</property>
-        <property name="MissingAssembly" type="string">Det går inte att importera den här webbdelen.</property>
-        <property name="Description" type="string" />
-        <property name="BaseViewID" type="string">1</property>
-        <property name="AllowHide" type="bool">True</property>
-        <property name="AllowMinimize" type="bool">True</property>
-        <property name="Title" type="string">Getting Started</property>
-        <property name="TitleUrl" type="string" />
-        <property name="ExportMode" type="exportmode">All</property>
-        <property name="ChromeType" type="chrometype">TitleAndBorder</property>
-        <property name="AllowConnect" type="bool">True</property>
-        <property name="Width" type="string" />
-        <property name="Height" type="string" />
-        <property name="CatalogIconImageUrl" type="string" />
-        <property name="HelpMode" type="helpmode">Modeless</property>
-        <property name="AllowEdit" type="bool">True</property>
-        <property name="TitleIconImageUrl" type="string" />
-        <property name="Direction" type="direction">NotSet</property>
-        <property name="AllowClose" type="bool">True</property>
-        <property name="ChromeState" type="chromestate">Normal</property>
-      </properties>
-    </data>
-  </webPart>
-</webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Column="2" Row="1" Title="Team Discussion">
-          <pnp:Contents>
-            <![CDATA[
-                                                    <webParts>
-                                                      <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-                                                        <metaData>
-                                                          <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-                                                          <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
-                                                        </metaData>
-                                                        <data>
-                                                          <properties>
-                                                            <property name="ListUrl" type="string">Lists/Team Discussion</property>
-                                                            <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
-                                                          </properties>
-                                                        </data>
-                                                      </webPart>
-                                                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Column="2" Row="1" Title="Tag Cloud">
-          <pnp:Contents>
-            <![CDATA[<webParts>
-  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
-    <metaData>
-      <type name="Microsoft.SharePoint.Portal.WebControls.TagCloudWebPart, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
-    </metaData>
-    <data>
-      <properties>
-        <property name="ChromeType" type="chrometype">TitleOnly</property>
-        <property name="Height" type="string" />
-        <property name="AllowZoneChange" type="bool">True</property>
-        <property name="AllowEdit" type="bool">True</property>
-        <property name="MaxTerms" type="int">50</property>
-        <property name="CatalogIconImageUrl" type="string" />
-        <property name="ShowCount" type="bool">False</property>
-        <property name="AllowConnect" type="bool">True</property>
-        <property name="AllowClose" type="bool">True</property>
-        <property name="HelpMode" type="helpmode">Modeless</property>
-        <property name="UserScope" type="Microsoft.SharePoint.Portal.WebControls.TagCloudUserScope, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">CurrentUser</property>
-        <property name="Hidden" type="bool">False</property>
-        <property name="ChromeState" type="chromestate">Normal</property>
-        <property name="AllowHide" type="bool">True</property>
-        <property name="Title" type="string">Tag Cloud</property>
-        <property name="Description" type="string">Displays the most popular subjects being tagged inside your organization.</property>
-        <property name="HelpUrl" type="string" />
-        <property name="AllowMinimize" type="bool">True</property>
-        <property name="TitleUrl" type="string" />
-        <property name="Width" type="string" />
-        <property name="ExportMode" type="exportmode">All</property>
-        <property name="Direction" type="direction">NotSet</property>
-        <property name="DateRange" type="Microsoft.SharePoint.Portal.WebControls.TagCloudDateRange, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">OneMonth</property>
-        <property name="TitleIconImageUrl" type="string" />
-        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
-      </properties>
-    </data>
-  </webPart>
-</webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-      </pnp:WebParts>
-    </pnp:Page>
-  </pnp:Pages>
-  <pnp:Providers>
-    <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzTeamSiteExtensibilityProvider, Provisioning.Job" Enabled="true">
-    </pnp:Provider>
-  </pnp:Providers>
-</pnp:ProvisioningTemplate>
+        </pnp:SiteCustomActions>
+        <pnp:WebCustomActions>
+          <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
+                    Description="Site Classification Application"
+                    Group="SiteTasks"
+                    Location="Microsoft.SharePoint.SiteSettings"
+                    Title="Site Classification"
+                    Sequence="1000"
+                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
+                    Rights="31"/>
+          <pnp:CustomAction Name="CA_SITE_STDMENU_SITECLASSIFICATION"
+                    Description="Site Classification Module"
+                    Group="SiteActions"
+                    Location="Microsoft.SharePoint.StandardMenu"
+                    Title="Site Classification"
+                    Sequence="1000"
+                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
+                    Rights="31"/>
+          <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Description="Mondelez Js Injections"
+                    Group="SiteActions"
+                    Location="ScriptLink"
+                    Title="Mondelez Js Injections"
+                    Sequence="1000"
+                    ScriptBlock="var scr_elem = document.createElement('script');
+                                 scr_elem.type = 'text/javascript';
+                                 scr_elem.src = '/SiteAssets/Team/scripts/MDLZTeamsite.Init.js' + '?rev=' + new Date().toISOString();
+                                 var headElem = document.getElementsByTagName('head')[0];
+                                 headElem.appendChild(scr_elem);"/>
+        </pnp:WebCustomActions>
+      </pnp:CustomActions>
+      <pnp:Lists>
+        <pnp:ListInstance Title="{res:announce_Folder}"
+                          Description="{res:announceList_Desc}"
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="104"
+                          Url="{res:lists_Folder}/{res:announce_Folder}"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="false">
+          <pnp:DataRows>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Welcome To Your Team Site!</pnp:DataValue>
+              <pnp:DataValue FieldName="Body">
+                Please notice that there are a number of new and enhanced capabilities. If you'd like to learn more about how to leverage these capabilities, please visit the &lt;B&gt;IQ University&lt;/B&gt; where you can access a variety of learning resources.
+              </pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="{res:shareddocuments_Title_15}"
+                          Description="{res:camlidDc5}"
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="101"
+                          Url="{res:shareddocuments_Folder}"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="{res:calendar_Folder}"
+                          Description="{res:calendarList_Desc}"
+                          EnableFolderCreation="false"
+                          OnQuickLaunch="false"
+                          TemplateType="106"
+                          Url="{res:lists_Folder}/{res:calendar_Folder}"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="{res:discussions_Title}"
+                          Description="{res:discussionList_Desc}"
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="108"
+                          Url="{res:lists_Folder}/{res:discussions_Folder}"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Pages>
+        <pnp:Page Layout ="OneColumnSidebar" Url ="{site}/SitePages/Welcome.aspx">
+          <pnp:WebParts>
+            <!--Left column webparts-->
+            <pnp:WebPart Column="1" Row="1" Title="{res:announce_Folder}">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>{res:ImportErrorMessage}</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ListUrl" type="string">{res:lists_Folder}/{res:announce_Folder}</property>
+                        <property name="MissingAssembly" type="string">{res:ImportErrorMessage}</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Column="1" Row="1" Title="{res:calendar_Folder}">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>{res:ImportErrorMessage}</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ListUrl" type="string">{res:lists_Folder}/{res:calendar_Folder}</property>
+                        <property name="MissingAssembly" type="string">{res:ImportErrorMessage}</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Column="1" Row="1" Title="{res:shareddocuments_Title_15}">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>{res:ImportErrorMessage}</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ListUrl" type="string">{res:shareddocuments_Folder}</property>
+                        <property name="MissingAssembly" type="string">{res:ImportErrorMessage}</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <!--Sidebar webparts-->
+            <pnp:WebPart Column="2" Row="1" Title="{res:GettingStartedFeatureTitle}">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.WebPartPages.GettingStartedWebPart, Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>{res:ImportErrorMessage}</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="AllowZoneChange" type="bool">True</property>
+                        <property name="HelpUrl" type="string" />
+                        <property name="Hidden" type="bool">False</property>
+                        <property name="MissingAssembly" type="string">{res:ImportErrorMessage}</property>
+                        <property name="Description" type="string" />
+                        <property name="BaseViewID" type="string">1</property>
+                        <property name="AllowHide" type="bool">True</property>
+                        <property name="AllowMinimize" type="bool">True</property>
+                        <property name="Title" type="string">{res:GettingStartedFeatureTitle}</property>
+                        <property name="TitleUrl" type="string" />
+                        <property name="ExportMode" type="exportmode">All</property>
+                        <property name="ChromeType" type="chrometype">TitleAndBorder</property>
+                        <property name="AllowConnect" type="bool">True</property>
+                        <property name="Width" type="string" />
+                        <property name="Height" type="string" />
+                        <property name="CatalogIconImageUrl" type="string" />
+                        <property name="HelpMode" type="helpmode">Modeless</property>
+                        <property name="AllowEdit" type="bool">True</property>
+                        <property name="TitleIconImageUrl" type="string" />
+                        <property name="Direction" type="direction">NotSet</property>
+                        <property name="AllowClose" type="bool">True</property>
+                        <property name="ChromeState" type="chromestate">Normal</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Column="2" Row="1" Title="{res:discussions_Title}">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>{res:ImportErrorMessage}</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ListUrl" type="string">{res:lists_Folder}/{res:discussions_Folder}</property>
+                        <property name="MissingAssembly" type="string">{res:ImportErrorMessage}</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Column="2" Row="1" Title="{res:TagCloudWebPart_Title}">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.Portal.WebControls.TagCloudWebPart, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>{res:ImportErrorMessage}</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ChromeType" type="chrometype">TitleOnly</property>
+                        <property name="Height" type="string" />
+                        <property name="AllowZoneChange" type="bool">True</property>
+                        <property name="AllowEdit" type="bool">True</property>
+                        <property name="MaxTerms" type="int">50</property>
+                        <property name="CatalogIconImageUrl" type="string" />
+                        <property name="ShowCount" type="bool">False</property>
+                        <property name="AllowConnect" type="bool">True</property>
+                        <property name="AllowClose" type="bool">True</property>
+                        <property name="HelpMode" type="helpmode">Modeless</property>
+                        <property name="UserScope" type="Microsoft.SharePoint.Portal.WebControls.TagCloudUserScope, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">CurrentUser</property>
+                        <property name="Hidden" type="bool">False</property>
+                        <property name="ChromeState" type="chromestate">Normal</property>
+                        <property name="AllowHide" type="bool">True</property>
+                        <property name="Title" type="string">{res:TagCloudWebPart_Title}</property>
+                        <property name="Description" type="string">{res:Displays the most popular subjects being tagged inside your organization.}</property>
+                        <property name="HelpUrl" type="string" />
+                        <property name="AllowMinimize" type="bool">True</property>
+                        <property name="TitleUrl" type="string" />
+                        <property name="Width" type="string" />
+                        <property name="ExportMode" type="exportmode">All</property>
+                        <property name="Direction" type="direction">NotSet</property>
+                        <property name="DateRange" type="Microsoft.SharePoint.Portal.WebControls.TagCloudDateRange, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">OneMonth</property>
+                        <property name="TitleIconImageUrl" type="string" />
+                        <property name="MissingAssembly" type="string">{res:ImportErrorMessage}</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+          </pnp:WebParts>
+        </pnp:Page>
+      </pnp:Pages>
+      <pnp:Providers>
+        <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzTeamSiteExtensibilityProvider, Provisioning.Job" Enabled="true">
+        </pnp:Provider>
+      </pnp:Providers>
+      <pnp:WebSettings AlternateCSS="/SiteAssets/Team/Css/MDLZTeamsite.css"
+                       SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png"
+                       WelcomePage="SitePages/Welcome.aspx" />
+      <pnp:PropertyBagEntries>
+        <pnp:PropertyBagEntry Key="allowdesigner" Value="0" Overwrite="true" />
+        <pnp:PropertyBagEntry Key="allowmasterpageediting" Value="0" Overwrite="true" />
+        <pnp:PropertyBagEntry Key="allowrevertfromtemplate" Value="0" Overwrite="true" />
+        <pnp:PropertyBagEntry Key="showurlstructure" Value="0" Overwrite="true" />
+        <pnp:PropertyBagEntry Key="__WebTemplates" Value="&lt;webtemplates&gt;&lt;lcid id=&quot;all&quot;&gt;&lt;webtemplate name=&quot;STS#0&quot; /&gt;&lt;webtemplate name=&quot;BLOG#0&quot; /&gt;&lt;webtemplate name=&quot;ENTERWIKI#0&quot; /&gt;&lt;/lcid&gt;&lt;/webtemplates&gt;" Overwrite="true" />
+        <pnp:PropertyBagEntry Key="Mdlz_Site_Type" Value="Team Site" Overwrite="true" />
+      </pnp:PropertyBagEntries>
+      <!--<pnp:Security>
+        <pnp:AdditionalAdministrators>
+          <pnp:User Name="krft\s-shpt"/>
+        </pnp:AdditionalAdministrators>
+      </pnp:Security>-->
+      <pnp:Features>
+        <pnp:WebFeatures>
+          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/>
+        </pnp:WebFeatures>
+      </pnp:Features>
+    </pnp:ProvisioningTemplate>
+    
+  </pnp:Templates>
+</pnp:Provisioning>

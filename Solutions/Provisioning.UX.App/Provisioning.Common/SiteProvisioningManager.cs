@@ -128,6 +128,8 @@ namespace Provisioning.Common
                 var _web = _siteprovisioningService.GetWebByUrl(siteRequest.Url);
                 provisioningTemplate.Connector = this.GetProvisioningConnector();                
                 provisioningTemplate = new TemplateConversion().HandleProvisioningTemplate(provisioningTemplate, siteRequest, template);
+                
+                MdlzComponents.MdlzCommonCustomizations.LocalizeElementsFix(siteRequest.Url, provisioningTemplate, this._siteprovisioningService.Authentication);
 
                 ProvisioningTemplateApplyingInformation _pta = new ProvisioningTemplateApplyingInformation();
                 _pta.ProgressDelegate = (message, step, total) =>

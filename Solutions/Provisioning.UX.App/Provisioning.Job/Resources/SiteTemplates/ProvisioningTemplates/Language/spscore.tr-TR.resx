@@ -1,0 +1,3631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4569.1504" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>Giriş</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>Yeni SharePoint Server!</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>Tartışmaları Ara</value>
+  </data>
+  <data name="SetupMySite">
+    <value>Sitem Kurulumu</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>Kategoriler için tıklatın</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>En iyi siteler için tıklatın</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>Site haritası için tıklatın</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>Kategoriler</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>En İyi Siteler</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>Site Haritası</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>Tüm Siteler</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>Tüm Siteler'den sonuçlar için tıklatın</value>
+  </data>
+  <data name="PeopleTab">
+    <value>Kişiler</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>Kişi sonuçları için tıklatın</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>Tartışmalar</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>SharePoint Server Kullanım Raporlaması</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>Kullanım raporlaması</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>Arama kullanım raporları</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>Site kullanım raporları</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>Site koleksiyonu kullanım raporları</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>Belge Kitaplığı</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>Bu alanın belgelerinin depolanacağı bir yer sağlar.</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>İş Verisi Profili Şablonu</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>SharePoint Üst Gezinti Çubuğu</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>Raporlar</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>Panolar</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>Örnek</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>Kaynaklar</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>Veri Bağlantıları</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>Rapor Takvimi</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>Başvuru Kitaplığı</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>Rapor Kitaplığı</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>Ölçümleri, hedefleri ve iş zekası bilgilerini izlemek için kolay bir şekilde web sayfaları ve belgeleri oluşturabileceğiniz ve yönetebileceğiniz bir yer. </value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>Durum Listesi</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>Hedef kümesini izlemek ve görüntülemek için kullanılan bir yer. Renkli simgeler, hedeflerin ulaşılma derecesini belirtmek için görüntülenir.</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>Web Bölümü Sayfası Belge Kitaplığı</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>Web bölümü sayfa şablonu içeren bir Belge Kitaplığı.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>Rapor Kitaplığı</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>Durum Göstergelerini ve Excel çalışma kitaplarını görüntüleyebilen rapor kitaplığı, raporları yönetmek için gelişmiş destek sağlar.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>Başvuru Kitaplığı</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>Bu sitenin nasıl kullanılacağını açıklayan bilgileri içeren kitaplık.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>Rapor Takvimi</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>Bu alanla ilişkili olayları yayımlamak için takvimi kullanın.</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>Veri Bağlantıları</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>Veri Bağlantısı Kitaplığı, kullanıcıların dış veri kaynaklarına bağlanmasına olanak tanıyan dosyaları paylaşmasını kolaylaştırır.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>Duyurular</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>Bu alanla ilgili ileti göndermek için Duyurular listesini kullanın.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>Rapor Merkezi'ne Hoş Geldiniz</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>Rapor Merkezi işletme bilgileri oluşturmanıza, bunları dağıtmanıza ve yönetmenize olanak tanır.</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>Site Şablonu Galerisi</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>Örnek Göstergeler</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>Bu Rapor Merkezi'nin giriş sayfasında varsayılan olarak görüntülenen örnek Durum Göstergeleri.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>Teşvik</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>Üretkenlik</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>Giderler</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>Bu örnek bir göstergedir ve güvenli bir şekilde silinebilir.</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>Rapor Merkezi</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>Rapor Merkezi'ni Kullanma</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>Biçimlendirilmiş metin, tablolar ve resimler için kullanın.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>Rapor Merkezi özellikleri aşağıdakileri içerir:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;Ana Performans Göstergelerini&amp;lt;/A&amp;gt; (KPI) kullanarak hedefleri, eğilimleri aktarabilir ve ilerlemeyi izleyebilirsiniz.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;Panolar&amp;lt;/A&amp;gt;, Excel çalışma kitaplarını ve KPI'leri kullanarak bilgileriniz hakkında daha ayrıntılı bir açıklama sunmanızı sağlar. Pano filtreleri, görüntülenecek çeşitli bilgilerin seçimini kolaylaştırır. Kendi panonuzu oluşturmak için Rapor kitaplığının &amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;Panolar&amp;lt;/A&amp;gt; görünümüne gidin ve 'Yeni'yi tıklatın.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>&amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;Rapor&amp;lt;/A&amp;gt; kitaplığı, raporları ve panoları içeren dosyaları depolamak ve önceki dönemlere ait bilgilere kolay erişimi sağlamak için tasarlanmıştır.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>Bu Rapor Merkezi'ni kullanıma hazırlamak için aşağıdaki eylemler önerilir:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>Bu Rapor Merkezi'nin bazı özelliklerini anlamak için örnek &amp;lt;A &amp;gt;panoyu&amp;lt;/A&amp;gt; ve &amp;lt;A&amp;gt;çalışma kitabını&amp;lt;/A&amp;gt; görüntüleyin</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>Örnekler düzgün çalışmazsa, bir yöneticiden Excel Services'ı etkinleştirmesini ve bu Rapor Merkezi'ni Güvenilir Konum yapmasını isteyin</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>Varolan veri sunucularındaki bilgileri çözümlemek için Excel kullanmayı planlıyorsanız, veri bağlantısı (ODC) dosyalarını oluşturun ve &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;Veri Bağlantısı Kitaplığı&amp;lt;/A&amp;gt;'na yükleyin. Kullanıcıların yeni KPI Listeleri oluşturmasını istiyorsanız, bu kullanıcıları "Sahipler" grubuna ekleyin. "Üyeler" grubundaki kullanıcılar sayfaları düzenleyebilir, ancak KPI Listeleri oluşturamaz.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>Örnek içeriği güncelleştirin veya kaldırın</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>Önemli Noktalar</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>Daha Fazla Bilgi</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>Hızlı Başvuru Kılavuzu</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>İlgili Kişi Ayrıntıları</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>Bu sayfa veya siteye ilişkin bir kişiyle ilgili ayrıntıları görüntülemek için kullanın.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>Yaklaşan Olaylar</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>Rapor Merkezi Sayfası</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>Durum Göstergeleri</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>Raporlar</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>Açıklama</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>Açıklama, hedefin amacıyla ilgili bilgi sağlar.</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>Gösterge Açıklamaları</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>Açıklamalar, göstergenin geçerli durumunu açıklar ve nedenler veya sorunlarla ilgili bilgi sağlayabilir.</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>Gösterge Değeri</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>Gösterge Hedef Eşiği</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>Gösterge Uyarı Eşiği</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>Ayrıntı Bağlantısı</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>Ayrıntılar için tıklatılacak sayfanın bağlantısı </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>Düşük Değerler Daha İyidir</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>Düşük değerlerin mi, yoksa yüksek değerlerin mi daha iyi olduğu</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>Otomatik Güncelleştir</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>Arka uç verilerinin her seferinde getirilip getirilmeyeceği</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>Güncelleştirme Hatası</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>Varsa, son güncelleştirmedeki hata iletisini içerir</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>Veri Kaynağı</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>Veri kaynağına ilişkin URL</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>Guid Görüntüle</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>Görünümün Guid'si</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>Görünüm Adı</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>Görünümün adı</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>Değer İfadesi</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>Göstergenin değerini belirlemek için kullanılan ifade.</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>Yüzde İfadesi</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>İfadenin yüzdeyi hesaplamak için kullanılıp kullanılmayacağını belirleyin</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>Değer Sayfası</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>Değere ilişkin Sayfanın Adı</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>Değer Hücresi</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>Değere ilişkin hücrenin adresi veya adı</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>Hedef Sayfası</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>Hedefe ilişkin sayfanın adı</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>Hedef Hücresi</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>Hedefe ilişkin hücrenin adresi veya adı</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>Uyarı Sayfası</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>Uyarıya ilişkin sayfanın adı</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>Uyarı Hücresi</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>Uyarıya ilişkin hücrenin adresi veya adı</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>Çalışma Kitabındaki Hedef</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>Hedefin çalışma kitabından mı, gösterge tanımından mı geldiği</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>Çalışma Kitabındaki Uyarı</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>Uyarının çalışma kitabından mı, gösterge tanımından mı geldiği</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>Eğilim</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>Göstergenin eğilimi</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>Gösterge Durumu</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>Göstergenin durumu</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>Klasörü Görüntüle</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>Göstergenin Görüntü Klasörü</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>Gösterge</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Microsoft SQL Server 2005 Analysis Services KPI Adı</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>Alt Göstergeleri Ekle</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>Alt KPI'leri eklemek veya eklememek için</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>Biçimlendirilmiş Gösterge Değeri</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>Göstergenin, veri kaynağı sağlayıcısı tarafından biçimlendirilmiş değeri</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>Biçimlendirilmiş Gösterge Hedefi</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>Göstergenin, veri kaynağı sağlayıcısı tarafından biçimlendirilmiş hedefi</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>Biçimlendirilmiş Gösterge  Uyarısı</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>Göstergenin, veri kaynağı sağlayıcısı tarafından biçimlendirilmiş uyarı değeri</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>En Son Gösterge Verileri Güncelleştirmesi</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>Göstergenin veri kaynağı sağlayıcısından son güncelleştirmesi</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>Rapor Açıklaması</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>Raporun içeriğinin açıklaması</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>Rapor Geçmişine Kaydet</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>Bu belge her kaydedildiğinde rapor geçmişine bir kopyası eklenir.</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>Üst Kimlik</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>Bu raporun Üst Kimliği</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>Sahip</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>Bu belgenin sahibi</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>Rapor Kategorisi</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>Raporun kategorisi</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>Kategori 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>Kategori 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>Kategori 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>Rapor Durumu</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>Raporun durumu</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>Son</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>Geçici</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>Bugüne Kadarki Dönem</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>Geçmiş</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>Geçmişi Görüntüle</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>Ad</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>Ad</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>Yeni</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>Değiştirilen Bağlantıyı Raporu</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>Rapor Oluşturuldu</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(anlık görüntüyle alınan değer)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>Raporu Oluşturan</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>Rapor Değiştirildi</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>Raporu Değiştiren</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>Rapor Üstü Adı</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(anlık görüntünün üstünün adı)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>Rapor Bağlantısı</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(düzen menüsü olan rapora bağlantı)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>İş Zekası</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>Ortak Gösterge Sütunları</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>Sabit Değeri temel alan Durum Göstergesi</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>El ile girilen bilgileri kullanarak yeni Durum Göstergesi oluştur</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>SharePoint Listesini temel alan Durum Göstergesi</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>SharePoint Listelerindeki verileri kullanarak yeni Durum Göstergesi oluştur</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>Excel'i temel alan Durum Göstergesi</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>Excel Services'daki verileri kullanarak yeni Durum Göstergesi oluştur</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>SQL Server Analysis Services'i temel alan Durum Göstergesi</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>SQL Server Analysis Services verilerini kullanarak yeni Durum Göstergesi oluştur</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>Rapor</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>Durum Listesiyle Web Bölümü Sayfası</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>Durum Göstergelerini ve Excel çalışma kitaplarını görüntüleyen bir sayfa oluşturun.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Excel Raporu</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>Panolar</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>Geçerli raporlar</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>Tüm raporlar ve panolar</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>En Son Güncelleştirilen</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Excel dosyaları için ayrıntılı rapor sayfası.</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>Üst Sol Bölge</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>Üst Sağ Bölge</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>Filtre Bölgesi</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>Filtre ekle</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>Alt Sol Bölge</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>Alt Orta Bölge</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>Alt Sağ Bölge</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>Üst Bölge</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>Sol Orta Bölge</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>Sağ Orta Bölge</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>Alt Bölge</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>Tüm Öğeler</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>Durum Listesi</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>Durum Listesi</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>Durum Göstergelerinin listesini gösterir. Durum Göstergeleri, kuruluşunuz için önemli ölçümleri görüntüler ve hedefleriniz açısından kuruluşunuzun nasıl performans sergilediğini gösterir.</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>Durum Göstergesi Ayrıntıları</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>Tek bir Durum Göstergesinin ayrıntılarını görüntüler. Durum Göstergeleri bir kuruluş için önemli bir ölçü görüntüler ve SharePoint listeleri, Excel çalışma kitapları ve SQL Server 2005 Analysis Services KPI'ları gibi diğer veri kaynaklarından elde edilebilirler.</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>İş verileri</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>Evet</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>Hayır</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(Boş)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(Tümü)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(Güncelleştir)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>Güncelleştir</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(Boş)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>Artarak Sırala</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>Azalarak Sırala</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>Filtre uygula: </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>Sıralama ölçütü: </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>Hedef Kitle Belirleme</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>Hedeflenen Dinleyici (Kurala Dayalı Dinleyiciler; SharePoint Grupları; Dağıtım Listeleri)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>Hedeflenen</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>Hedeflenmeyen</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>Genel Dinleyicilere İzin Ver</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>Dağıtım Listelerine İzin ver</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>SharePoint Gruplarına İzin Ver</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>Site Dizini</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>Site Haritası</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>Kategorideki Siteler</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>En İyi Siteler</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>Siteler Dizini, kategoriler halinde gruplandırılabilen sitelerin bir kataloğudur. Bir siteyi Siteler Dizini'ne göndermek için, lütfen bu sayfanın üstünde "Site Oluştur" öğesini ya da "Siteye Bağlantı Ekle" öğesini seçin.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>En iyi siteler eklemek için site dizini listesine bir bağlantı ekleyin ve bu bağlantıyı "En İyi Site" olarak işaretleyin. Site dizini listesine bağlantılar ekleyip, bunları "En İyi Site" olarak göndererek başlayın.</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>İlişkili Bağlantılar kapsam ayarları</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>Resimli Haber Yazısı</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>Haber Yazısı Bağlantıları</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>Web Bölümü bölgeleri</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>Haberler Giriş</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>Site dizini giriş sayfası</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>Enterprise Özelliklerini Etkinleştir</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>Varsayılan</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>Filtreler</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>İş Verileri</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>Pano</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>WSRP Tüketici Web Bölümü</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>Geçerli Kullanıcı</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>Geçerli Kullanıcı Filtresi</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>Geçerli kullanıcının özelliklerini kullanarak Web Bölümlerinin içeriğine filtre uygular.</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>Metin Filtresi</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>Kullanıcıların bir metin değeri girmelerine izin vererek Web Bölümlerinin içeriğine filtre uygular.</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>SharePoint Liste Filtresi</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>Bir değer listesi kullanarak Web Bölümlerinin içeriğine filtre uygular.</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>Sorgu Dizesi</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>Sorgu Dizesi (URL) Filtresi</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>Sorgu dizesi yoluyla geçirilen değerleri kullanarak Web Bölümlerinin içeriğine filtre uygular.</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>Sayfa Alanı</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>Sayfa Alan Filtresi</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>Geçerli sayfayla ilgili bilgileri kullanarak Web Bölümlerinin içeriğine filtre uygular.</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>SQL Server Analysis Services Filtresi</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>SQL Server Analysis Services küplerinden bir değer listesini kullanarak, Web Bölümlerinin içeriğine filtre uygular.</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>Durum Listesi</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>IView Web Bölümü</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>Gösterge Ayrıntıları</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>Tarih</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>Tarih Filtresi</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>Kullanıcıların bir tarih girmelerine veya seçmelerine izin vererek Web Bölümlerinin içeriğine filtre uygular.</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>İş Verileri Listesi</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>İş Verileri Bağlantısı'ndaki bir veri kaynağından öğe listesi görüntüler.</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>Bu web bölümü içeri aktarılamıyor.</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>İş Verileri Bağlantı Filtresi</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>İş Verileri Bağlantısı'ndan bir değer listesi kullanarak Web Bölümleri'nin içeriğine filtre uygular.</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>İş Verileri Öğesi</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>İş Verileri Bağlantısı'ndaki veri kaynağından tek bir öğe görüntüler.</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>İş Verileri İlişkili Listesi</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>İş Verileri Bağlantısı'ndaki bir veri kaynağından bir veya daha fazla üst öğeyle ilişkili öğelerin listesini görüntüler.</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>İş Verisi Eylemleri</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>İş Verileri Bağlantısı'ndan bir eylem listesi görüntüler.</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>İş Verileri Öğesi Oluşturucu</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>Sorgu dizesindeki parametrelerden bir İş Verileri öğesi oluşturur ve bu öğeyi diğer Web Bölümlerine sağlar.</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>Seçim Filtresi</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>Sayfanın yazarının girdiği değerlerin listesini kullanarak, Web Bölümlerinin içeriğine filtre uygular.</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>Değer 1&amp;Değer 2&amp;Değer 3=Açıklama 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>Filtreleri uygula düğmesi</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>Kullanıcıların istedikleri filtreleri ne zaman uygulayacaklarına karar verebilmesi için bu düğmeyi sayfaya ekleyin. Aksi halde, her filtre, değeri değiştiğinde uygulanır.</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>En İyi Siteler</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>Site Dizinindeki en çok kullanılan siteleri görüntüler.</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>Haberler</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>En Son Haberler</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>Toplu Haberler</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>Resimlerle Bu Hafta</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>Resim Kitaplığı'ndan bir resim görüntüler ve kullanıcıların Resim Kitaplığı'ndaki tüm resimleri görebileceği bir slayt gösterisine bağlantı oluşturur.</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>Haberler</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>Örnek Haber Makaleleri</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>Bu sayfa özellikle boş bırakıldı.</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>Haber Arşivi</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>Endüstri Haberleri</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>Diğer haberler</value>
+  </data>
+  <data name="KPIList">
+    <value>Durum Göstergesi Listesi</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>Durum göstergesi listesi, bir hedef kümesini izlemek ve görüntülemek için kullanılır. Hedeflere ne ölçüde ulaşıldığını belirtmek için renkli simgeler görüntülenir.</value>
+  </data>
+  <data name="EventsList">
+    <value>Olaylar</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>Toplantılar, süre sonları ve bu alanla ilgili diğer olaylar hakkında bilgi göndermek için Olaylar listesini kullanın.</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>Bu web bölümü içeri aktarılamıyor.</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>Giriş</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>Giriş Sayfası Resmi Web Bölümü</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>Giriş sayfası resmini görüntüler</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>Giriş Sayfası Resmi</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>İçerik Düzenleyicisi</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>Yazarların zengin metin içeriği girmesini sağlar.</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>Yapmam gereken...</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>Çalışan Araması</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>Çalışanları ara</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>İçindekiler</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>Site Dizini Ayarları</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>Site Dizinini Yapılandır</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>Site Dizini Bağlantılarını Tara</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>Sayfalar</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>Paylaşılan Belgeler</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>Kişisel Belgeler</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>Paylaşılan Resimler</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>Kullanıcı Fotoğrafları</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>Tüm kullanıcıların Profil Resimleri burada saklanır.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>Bu Belge Kitaplığını Web Bölümü Sayfalarınızı depolamak için kullanın. Bu sayfalar otomatik olarak ortak giriş sayfanızda paylaştırılır.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>Belgelerinizi depolamak için bu belge kitaplığını kullanın. Burada paylaşılan belgeler, ortak giriş sayfanızda görüntülenir.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>Bu belge kitaplığını kişisel kullanım için tutmak istediğiniz belgeler için kullanın. Yalnızca siz ve sunucu yöneticileri tarafından görülebilirler.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>Resim kitaplığına ekleyerek resimlerinizi ve fotoğraflarınızı diğerleriyle paylaşın. Burada depolanan resimler ve fotoğraflar ortak giriş sayfanızda paylaştırılır.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>Sitem ile Başlarken</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>Sitem'in kullanımıyla ilgili çeşitli ipuçlarına bağlantı oluşturur.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>SharePoint Siteleri</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>Kullanıcının üyesi olduğu sitelerle ilgili ayrıntılar</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>Sitem Ana Sayfası</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>Sitem için benzersiz görünüm ve kullanım sağlar.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>En Son Blog Postaları</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>Kullanıcı için en yeni blog postaları</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>Yeni bir posta ekle</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>Paylaşım Merkezi</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>Kullanıcının öğelerini paylaşmak için kullanacağı merkezi web bölümü.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>En Son Etkinlikler</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>En son etkinliklerimi gösteren web bölümü.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>Bana Bunları Sorun</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>Başkalarının bana hakkında soru sorabileceği anahtar sözcüklerin listesini gösteren web bölümü.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>Bağlantılarım</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>Oluşturduğunuz bağlantıları görüntüler.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>Takvimim</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>Microsoft Exchange Server 2003 için Outlook Web Access'i veya daha yenisini kullanarak takviminizi görüntüler.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>İş Arkadaşı İzleyicisi</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>İş arkadaşlarınızın listesini ve son değişikliklerini görüntüler.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>Üyeliklerim</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>Üyesi olduğunuz grupları görüntüler.</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>Kullanıcı Profilleri ve Sitelerim</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>Hedef Kitle</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>Kullanıcı profilleri ve özellikleri</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>Hedef Kitle</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>Profil hizmetleri ilkeleri</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>Sitem ayarları</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>Güvenilen Sitem barındırma konumları</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Office istemci uygulamalarına yayımlanan bağlantılar</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>Kişiselleştirme sitesi bağlantıları</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>Kişiselleştirme hizmetleri izinleri</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>Kuruluş Temsilci Seçme Ayarları</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>İş Verileri Öğesi</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>İş verileri öğesi ayrıntılarıyla ilgili Web bölümü</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>İş Verisi Eylemleri</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>İş Verileri Eylemlerini görüntüleyecek Web bölümü</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>İş Verileri Bağlantısı</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>Uygulama tanımını içeri aktar</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>Uygulamaları görüntüle</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>Varlıkları görüntüle</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>Profil sayfası şablonunu düzenle</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>İş Verileri Bağlantısı izinleri</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>Çoklu Oturum Açma (SSO) Ayarlarını Yapılandır</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>Sekme Adı</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>Bu, sekme etiketi metnidir.</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>Sayfa</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>Bu sekmenin bir parçası olarak görüntülenecek sayfanın adını yazın. Sayfa oluşturmadıysanız, Site Eylemleri'ndeki Sayfa Oluştur seçeneğini kullanarak bir sayfa oluşturun.</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>Yeni bağlantı ekle</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>Araç İpucu</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>Bu, kullanıcı fare işaretçisini bu sekmenin üzerine getirdiğinde görüntülenecek araç ipucudur.</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>Tüm Sekmeler</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>Başlık</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>URL</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>Açıklama</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>Sahip</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>Kısım</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>Bölge</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>Yenilik Sitesi</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>En İyi Site</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>Görevler ve Araçlar</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>Bağlantı Durumu</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>Tamam</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>Bozuk</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>Belirsiz</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>En İyi Görevler</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>Uluslararası</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>Ulusal</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>Yerel</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>Bilişim Teknolojileri</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>Araştırma ve Geliştirme</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>Satış</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>Finans</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>Tüm Siteler</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>Özet</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>Siteleri Yönet</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>Sunulan Siteler</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>Kategoriler</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>Reddedilen Siteler</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>Site Oluşturma Kategorileri</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>Bozuk Siteler</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>Microsoft ® SharePoint ® Server 2013'e Hoş Geldiniz </value>
+  </data>
+  <data name="HomePageContent2">
+    <value>Microsoft SharePoint Server 2013'ün yeni sürümü ile başlayın:</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>Site ve İçerik Yönetimi</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>Yeni &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;sayfalar&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;siteler &lt;/a&gt; ve &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;listeler &lt;/a&gt; oluşturun</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>Sayfa düzenlemek için kullanıcıları "Üyeler" grubuna &lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;ekleyin&lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>"Sitem"i tıklatarak &lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;kişisel bir site oluşturun&lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>Siteleri, belgeleri ve kişileri &lt;a href="~SiteCollection/SearchCenter"&gt;arayın&lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>İş Çözümleri (Enterprise Lisansı gerektirir )</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>Durum göstergeleri ve raporları oluşturun</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>Excel Web Access Web Bölümü üzerinden bir Excel çalışma kitabını görüntüleyin</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>Bir InfoPath formunu bir Belge Kitaplığına dağıtın</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>Görev seçin</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>Siteler Listesi</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>Bu liste şablonunu Siteler listeleri oluşturmak için kullanın.</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>Sekmeler Listesi</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>Sekme listesi oluşturmak için bu liste şablonunu kullanın.</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>Bu görünümde gösterilecek öğe yok.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>Kategoriler</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>Site Haritası</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>Kategorideki Siteler</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>Giriş</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>Portal Giriş Sayfası sitesi</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>Konular</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>Konular web'i</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>Bölümler</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>Bölümler web'i</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>Satış</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>Satış web'i</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>Araştırma ve Geliştirme</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>RD web'i</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>İnsan Kaynakları</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>İnsanKaynakları web'i</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>Ürünler</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>Ürünler web'i</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>Haberler</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>Şirket Haberleri Giriş Sayfası</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>Siteler</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>Site Dizini web'i</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>Ara</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>Arama Merkezi arama sonuçlarını görüntüler</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>Raporlar</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>Rapor Merkezi</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>WSRP Görüntüleyicisi</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>WSRP 1.1 kullanarak web sitelerinden portlet görüntüler.</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>Bu web bölümü kullanılmıyor.</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>Siteler</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>Bağlantıları sitelere ve site kategorilerine depolamak için Site Listesini kullanın.</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>Sekmeler</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>Bağlantıları sayfalara depolamak için Sekmeler listesini kullanın. Sekmeler listesi sitenizde sekme denetimiyle kullanılmalıdır.</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>Git</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>Hedef Kitle Belirleme</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>Hedef Kitle Belirleme</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>Global Dinleyiciye İzin Ver</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>Dağıtım Listesine İzin Ver</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>Sharepoint Grubuna İzin Ver</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>Evet</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>Hayır</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>Kişisel</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>Sitem</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>Gezinti</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>Site Dizini</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>Rapor Merkezi Oluşturma</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>Premium sitelerde Rapor Merkezi oluşturur.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>Portal Düzenleri Özelliği</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>Tüm düzenleri ana sayfa galerisine yükleyen portal özelliği.</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>Haber Arşivini Tara</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>Karşılama Düzeni</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>Yükseltmenizin bir parçası olarak, SharePoint grubunuzda yüklü olan ek özellikleriniz var. Bu özellikler yeni oluşturulan sitelerde etkinleştirilecek, ancak varolan siteler için henüz kullanılabilir yapılmamış. 'Varolan Sitelerde Özellikleri Etkinleştir' sayfasına giderek bu özellikleri varolan tüm siteleriniz için kullanılabilir yapabilirsiniz. Bu özellikleri varolan tüm siteler için kullanılabilir yapmayı şu anda istemiyorsanız, bu görevi silebilirsiniz. Bu görevi Merkezi Yönetim sitesindeki İşlemler sayfasından istediğiniz anda gerçekleştirebilirsiniz. Ayrıca, ilgili sitede Site Ayarlarını seçerek bu özellikleri siteler için tek tek kullanılabilir yapabilirsiniz.</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>Varolan sitelerde yeni özellikleri etkinleştirme</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>Varolan Sitelerde Özellikleri Etkinleştir</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">Ek Yükseltme Görevleri</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">Özellik İtme</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">Varolan sitelerde yeni özellikleri etkinleştirmek için Özellik İtme'yi kullanın.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>RSS Görüntüleyici</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>RSS akışını görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>SharePoint Sitelerim</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>Üye olduğunuz sitelerde ve seçtiğiniz sitelerde sizin tarafınızdan yazılan belgeleri görüntülemek için kullanın.</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>SharePoint Belgeleri</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>Kullanıcının üye olduğu sitelerde kullanıcı tarafından yazılan belgeleri görüntülemek için kullanın.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>Site Toplayıcı</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>Seçtiğiniz siteleri görüntüler.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>Alan Belge Kitaplığı</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>Alan Belge kitaplıkları diğerleriyle belge paylaşmayı kolaylaştıran klasörlerdir. Her kitaplık, belgeleri filtre uygulanabilen ve sıralanabilen bir liste içinde görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>Yenilikler</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>İş arkadaşlarınızın listesini ve son değişikliklerini görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>İlgi Alanı İzleyicisi</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>İlgilendiğiniz alanlardaki en son etkinlikleri görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>İlgili Kişi Ayrıntıları</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>Bu sayfa veya siteye ilişkin bir kişiyle ilgili ayrıntıları görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>Resimlerim</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>Resim kitaplığınızdaki resimleri slayt gösterisi olarak görüntüleme seçeneğiyle birlikte görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>Paylaşılan Resimler</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>Çalışma Alanlarım</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>Sitem altında oluşturulan siteleri görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>Posta Klasörüm</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>Microsoft Exchange Server 2000 için Outlook Web Access'i kullanarak posta klasörünüzü görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>Takvimim</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>Microsoft Exchange Server 2003 için Outlook Web Access'i veya daha yenisini kullanarak takviminizi görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>Gelen Kutum</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>Microsoft Exchange Server 2003 için Outlook Web Access'i veya daha yenisini kullanarak gelen kutunuzu görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>Görevlerim</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>Microsoft Exchange Server 2003 veya üzeri için Outlook Web Access'i kullanarak görevlerinizi görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>İlgili Kişilerim</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>Microsoft Exchange Server 2003 için Outlook Web Access'i veya daha yenisini kullanarak ilgili kişilerinizi görüntüler.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>Bağlantılarım</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>Bağlantılarınızı görüntülemek için kullanın</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>Web Bölümü Ekleyici varsayılan grupları</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>Web bölümü galerisindeki HızlıGrupEkle sütununa ek varsayılan gruplar ekler</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>Yükleniyor...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>Menüyü Aç</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>Üyeler</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>Bir grubun üyelerini görüntüleyecek web bölümü</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>Genel Web Bölümleri</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>Tüm siteler için ortak olan ek web bölümleri yükler.</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>Sitem</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>Sitem ve Kullanıcı Profilleri ile ilgili özellikleri yükler.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>Sitem Ana Bilgisayarı</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>Sitelerim'i barındırmakla ilgili özellikleri yükler.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>Kuruluş Logoları</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>Kuruluşlar logoları için Paylaşılan Resim Kitaplığı</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>Kuruluşların logolarını depolamak için bu Resim Kitaplığını kullanın.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>Sitem Gezintisi</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>Sitem için gezinti sağlayıcıları yükler.</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>Sitem Kişisel Site Yapılandırması</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>Kullanıcının kişisel sitesini yapılandırır.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>Kullanıcı Profili Yönetimi Bağlantıları</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>Kullanıcı Profili hizmetini yönetmekle ilgili bağlantıları yükler.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>Kullanıcı Profili Temel Yönetim Bağlantıları</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>Kullanıcı Profili hizmetinin temel yönetimiyle ilgili bağlantıları yükler.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>Liste İçeriği Hedefleme</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>Dinleyicileri kullanarak içerik hedeflemeyi etkinleştirmek için Liste Ayarları sayfasına bir düğme yükler.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>Dinleyici belirleme ayarları</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>Profil Eşleştirme Özelliği</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>Kullanıcı profilini ve üyeliği, ekip siteleriyle eşitleme işini yükler.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>Paylaşan Hizmet Sağlayıcısı Kullanıcı Geçirici</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>Bir kullanıcının hesap bilgileri değiştirdiğinde kullanıcı verilerini geçirmeyle ilgili özellikleri yükler.</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>Ara</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>Kişiselleştirme Siteleri Nelerdir...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>Kişiselleştirme siteleri portalınızı kullanıcıların Sitelerim sitelerine bağlayan ödün vermeyen belirgin kişiselleştirme deneyimi sağlamanıza yardımcı olmak amacıyla tasarlanmıştır. Bu siteyi, kullanıcılarınızın kim olduğuna ve portalınızı ziyaret etme nedenlerine göre kişiselleştirilmiş ve hedeflenmiş bilgileri kullanıcılarınıza sunmak için kullanın. Kişiselleştirme sitesi şablonu geçerli kullanıcıyı tanımlamanıza ve bu kullanıcıya ve gereksinimlerine özel bilgileri kesin olarak hedeflemek ve sunmak için kullanıcıların profillerini kullanmanıza yardımcı olur. Böylece kullanıcılarınıza portalınızın kendileri merkezli bir görünümünü sunma fırsatı yakalamış olursunuz.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>&lt;i&gt;Kişiselleştirme sitesi kullanımına örnek olarak, çeşitli işletme sistemlerinde gömülü kalmış ve site yapınız tarafından ulaşılamaz durumda bırakılmış bilgileri açığa çıkarmak, kullanıcıların işlerini veya görevlerini gerçekleştirmek için gereksinim duydukları bilgileri kolayca görüntülemesine ve bunlara erişmesine olanak veren tek bir noktadan alışveriş deneyimi sağlamak verilebilir. Veya herhangi bir kullanıcının rolüne göre özel olarak ayarlanabilecek performans göstergeleri ve ölçütleriyle kullanıcı davranışını yönlendirmek için kişiselleştirme sitenizi kullanarak, kuruluşunuzun hedeflerine daha çok yaklaşmasına yardımcı olan bir deneyim sunabilirsiniz.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>Kişiselleştirme siteniz geliştirildikten sonra, kişiselleştirme sitenizi kullanıcılarınızın Sitem gezinti çubuğunda kalıcı bir konum olmasını sağlamak amacıyla, kişiselleştirme sitenizi kaydettirmesi için yöneticinize başvurun.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>Sosyal İçerik Etiketleri ve Not Alanı Şerit Denetimleri</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>Şerit kullanıcı arabirimine açıklamalar gönderen sosyal içerik etiketleme ve not alanı için giriş noktaları ekler.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>Etiketler ve Notlar</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>EtiketlerVeNotlar</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>Etiketler ve Notlar</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>Etiketler bağlantıları anımsamanıza ve seçili öğeyi sınıflandırmanıza yardımcı olur. Notlar ortak açıklamalardır. Etiketler ve notlar haber akışınıza gönderilir ve farklı siteler arasında çalışır.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>Beğeniyorum</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>Etiketler 'Beğeniyorum' ile seçtiğiniz öğelerdir. Etiketler bağlantıları anımsamanızı ve haber akışınıza öğe göndermenizi kolaylaştırır.</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>Sahip</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>Açıklama</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>Durum</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>Belirli bir kategoride Site Dizininde bulunan siteleri görüntüler.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>Site Dizininden kategorileri görüntüler.</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>Kullanıcıların seçenek listesinden seçim yapmasını sağlar ve kullanıcıları ilgili konuma yönlendirir.</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>Haber Arşivi</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>Belgeler</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>Kullanıcının üyesi olduğu sitelerle ilgili ayrıntılar</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>İş Arkadaşları</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>Bu web bölümü, kişinin profil sayfasına eklenmek üzere tasarlanmıştır. Kullanıcının başkalarıyla paylaştığı tüm iş arkadaşlarının listesini sağlar. Profil sahibinin iş arkadaşları listesini yönetmesi için bir giriş noktası oluşturur.</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>Not Alanı</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>Kullanıcılar, bu sayfa hakkında herkesin görebileceği kısa notlar bırakabilsin.</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>Etiketli Öğeler</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>Belirli bir URL'ye etiket uygulamış kişileri göster</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>Bağlanın</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>Etiketi sık kullanan veya etikete ilgi gösteren ya da etiketle ilgili uzmanlığı olan kişileri gösterir.</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>İlgili Etiketler</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>Belirli bir terimle birlikte kullanılan ve Etiketli Öğeler web bölümünün filtrelenmesini sağlayan etiketleri gösterir</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>Bu Etiket Hakkında</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>Belirli terimler hakkında, yönetilen bir taksonomiden gelen meta verileri görüntüler</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>En Son Etkinlik</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>Belirli terimlerle ilgili kişileri göster</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>Sizinle Ortaklaşa</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>Siz ve kullanıcı arasında neyin ortak olduğunu gösterir</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>Kuruluş Şemam</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>Kuruluş şemanızı ve bağlı çalışma hiyerarşinizi gösterir</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>Üyelikler</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>Sitenizi ve dağıtım listesi üyeliklerinizi görüntüler.</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>Bağlantılar</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>Kullanıcının sizinle paylaştığı bağlantıları gösterir</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>Grup</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>Grup ayrıntılarını görüntüleyecek web bölümü</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>Üyeler</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>Bir grubun üyelerini görüntüleyecek web bölümü</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>Üye Gruplar</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>Üye grupları görüntüleyecek web bölümü</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>Örnek Bağlantı 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>Örnek açıklama</value>
+  </data>
+  <data name="imglibList">
+    <value>Resim Kitaplığı'nda Bu Hafta</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>Bu alanın resimlerinin depolanacağı bir yer sağlar.</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>Örnek Bağlantı 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>Örnek Bağlantı 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>Belge Merkezi</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>Belge Merkezi sitesi</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(URL'ye bağlanmış)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(Düzen menüsüne bağlanmış)</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>İçerik Toplaması</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Office İstemci Uygulamaları</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>Formlar</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>Diğer</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>Sitem: Üst</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>Sitem: Orta Sol</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>Sitem: Orta Sağ</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>Sitem: Alt</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>Url'ye Göre Sırala</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>Başlığa Göre Sırala</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>Portal DiscoPage Özelliği</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>Varsayılan Web hizmetinin DiscoPage özelliğini spsdisco.aspx olarak ayarlayan portal özelliği.</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>Web Bölümü Bölgeleri İçeren Karşılama Sayfası</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>Profil Özellik Filtresi</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>SharePoint Portal Server Ana Site Dizini Yakalama Denetimi</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>SharePoint Portal Server Ana Site Dizini Yakalama Denetimi.</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>Bu sayfa düzeni solda bir resim alanı, bir zengin metin alanı ve sağ sütun, üstbilgi, altbilgi ve 2 sütun şeklinde düzenlenmiş Web Bölümü bölgeleri içerir.</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>Bu sayfa düzeni üstbilgi, altbilgi ve 2 şeklinde olarak düzenlenmiş Web Bölümü bölgeleri içerir.</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>Bu sayfa düzeni sağ sütun, üstbilgi, altbilgi ve 2 sütun şeklinde düzenlenmiş Web Bölümü bölgeleri içerir.</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>Bu sayfa düzeni bir sekme denetimi içerir. Üstbilgi, altbilgi ve 2 sütun şeklinde düzenlenmiş Web Bölümü bölgeleri vardır. </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>Bu sayfa düzeni üstbilgi, altbilgi, 2 sütun ve 3 satır şeklinde düzenlenmiş Web Bölümü bölgeleri içerir.</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>Bu sayfa düzeni bir sekme denetimi içerir. Üstbilgi, altbilgi ve 2 sütun şeklinde düzenlenmiş Web Bölümü bölgeleri vardır.</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>Bu sayfa düzeni bir sekme denetimi ve bir arama kutusu Web Bölümü içerir. Üstbilgi ve altbilgi şeklinde düzenlenmiş Web Bölümü bölgeleri vardır.</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>Bu sayfa düzeni bir sekme denetimi ve bir arama Web Bölümü içerir. Sağ sütun, üstbilgi, altbilgi, 2 sütun ve 2 satır şeklinde düzenlenmiş Web Bölümü bölgeleri vardır.</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>Bu sayfa düzeni bir sekme denetimi içerir. Sağ sütun, üstbilgi, altbilgi, 2 sütun ve 2 satır şeklinde düzenlenmiş Web Bölümü bölgeleri vardır.</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>Bu sayfa düzeni sağ sütun, üstbilgi, altbilgi ve 2 sütun şeklinde düzenlenmiş Web Bölümü bölgeleri içerir.</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>Bilgisayarda çalışan adam</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>Sitem Düzenleri Özelliği</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>Tüm düzenleri ana sayfa galerisine yükleyen Sitem özelliği.</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>Gerçekleştirmek istediğiniz görevi seçin</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>Sitem Düzenleri Özelliği</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>Tüm düzenleri ana sayfa galerisine yükleyen Sitem özelliği</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>Portal Yükseltme Dosyası Karşıya Yükleme Özelliği</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>Yalnızca yükseltme dosyalarını karşıya yükleyen portal özelliği.</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>Bu örnek bir blog postasıdır. Normalde kullanıcı tarafından bir posta ile doldurulur.</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>Örnek Posta</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>Örnek Kullanıcı</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>Örnek</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>Tüm Etiketler</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>Tüm kullanıcılar tarafından uygulanan etiketleri göster</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>Etiketlerim</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>Geçerli Kullanıcı Tarafından Uygulanan Etiketleri Göster</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>Etiket Bulutu</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>Kuruluşunuzda etiketlenmekte olan en popüler konuları görüntüler.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>Herkesin Etiketleri</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>Etiketlerim</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>Önerilen Bağlantılar (yalnızca M1)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>Yer İşaretim bilgilerini görüntüler</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>Kuruluş Tarayıcısı</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>Bu Web Bölümü, kuruluş şemasını görüntülerken raporlama zincirindeki herkesi en iyi duruma getirilmiş etkileşimli bir görünümde görüntüler.</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>Derecelendirmeler</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>Kullanıcıların içeriği derecelendirmesini sağlamak için bu özelliği kullanın.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>Derecelendirme (0-5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>Gönderilen tüm derecelendirmelerin ortalama değeri</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>Derecelendirmeler</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>Derecelendirme Sayısı</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>Gönderilen derecelendirmelerin sayısı</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>Yeni sitelerin listeleneceği dizinin konumunu tanımlayın.</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>Bu site için arama sonuçlarının "Bu ve İlgili Siteler" kapsamına eklenecek siteleri sağlayın.</value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>Derecelendirme ayarları</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>Kişiler</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>Kullanıcı Özelliklerini Yönet</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>Kullanıcı Profillerini Yönet</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>Kullanıcı Alt Türlerini Yönet</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>İzleyicileri Yönet</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>İzleyici Derlemesi Zamanla</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>İzleyicileri Derle</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>Kullanıcı İzinlerini Yönet</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>Eşitleme</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>Eşitleme Bağlantılarını Yapılandır</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>Eşitleme Ayarlarını Yapılandır</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>Kuruluşlar</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>Kuruluş Özelliklerini Yönet</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>Kuruluş Profillerini Yönet</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>Kuruluş Alt Türlerini Yönet</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>Sitem Ayarları</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>Sitelerim Kurulumu</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>Güvenilir Ana Bilgisayar Konumlarını Yapılandır</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>Kişiselleştirme Sitesini Yapılandır</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>Office İstemci Uygulamalarına Yönelik Bağlantıları Yayımla</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>Sosyal İçerik Etiketleri'ni ve Notlar'ı Yönet</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>Sosyal İçerik ve Uzmanlık etiketlemeyi yapılandır</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>İlkeleri Yönet</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>Kişiler ve Kuruluşlar Talep Sağlayıcısı</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>Kişiler ve Kuruluşlar için talep sağlayıcısını yükler.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>Grup Talep Sağlayıcısı</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>Gruplar için talep sağlayıcısı yükler.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>Kuruluşlar Talep Hiyerarşisi Sağlayıcısı</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>Kuruluşları temel alarak Talep Hiyerarşisi Sağlayıcısı'nı yükler.</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>Kullanıcı Profili Uygulamasını Yönet</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>Kiracı Kullanıcı Profili Uygulaması</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>Kiracı Kullanıcı Profili Uygulaması Yönetimi'nin alt sayfalarına bağlantılar</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>Kiracı Kullanıcı Profili Uygulaması Zımbalama</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>Kiracı Kullanıcı Profili Uygulaması Özelliğini TenantAdmin Şablonuna Zımbala</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>Eşitleme Zamanlayıcı İşini Yapılandır</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>Profil Eşitlemeyi Başlat</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>Arama Açılan Menüsü</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>Kişi kartını geç</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>Haber Akışım</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>İçeriğim</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>Profilim</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>Genel Bakış</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>Kuruluş</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>İçerik</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>Etiketler ve Notlar</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>İş Arkadaşları</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>Üyelikler</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>Görevlerim Panosu</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>Sitem üzerinde bir pano sağlayarak kullanıcının sitelerde ve sistemlerde toplanan görevlerini yönetmesine ve etkileşimde bulunmasına olanak tanır.</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>Görevlerim Panosunu Zımbalama</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>Bu özellik Görevlerim Panosu özelliğini Sitem şablonuna zımbalar (bağlar).</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>Paylaşılan Belgeler - ESKİ</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>Kişisel Belgeler - ESKİ</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>Takip Edilen İçerik</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>İçerik Takibi</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>İçerik Takibi, kullanıcılara akışlarında belirli bir belgeye ait güncelleştirmelere abone olmalarına izin verir</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>İçerik Aboneliği</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>İçerik İzleme</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>Takip edilen bir içerik öğesine yönelik başvuru içerir</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>Grup Kimliği</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>Site Kimliği</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>Web Kimliği</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>Liste Kimliği</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>Benzersiz Kimlik</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>Öğe Kimliği</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>Url</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>Üst Url</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>Tür</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>Alt Tür</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>Simge Url'si</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>Akışta Görünür Değil</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>Akışa Sahip</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>Bayraklar</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>Dosya Türü ProgID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>Sunucu Url'si ProgID</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>Takip Edilen Belgeler</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>Takip Edilen Siteler</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>İlginç belgeleri, üzerine gidip takip et seçeneğini tıklatarak takip edin.</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>Henüz hiçbir Site takip etmiyorsunuz. Bu listede bir şeyler görmek için bir Site'ye gidin ve Takip Et simgesini tıklatın.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>Bu belge kitaplığı, önceden diğer kişilerle paylaşmak istediğiniz belgeler için kullanılmaktaydı. Bu amaç için artık yeni Belgelerim kitaplığını kullanmanız önerilir.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>Bu belge kitaplığı, önceden kişisel kullanım amacıyla saklamak istediğiniz belgeler için kullanılmaktaydı. Bu amaç için artık yeni Belgelerim kitaplığını kullanmanız önerilir.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>Bu liste, takip etmeyi seçtiğiniz tüm öğeleri içerir.</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>İçerik Takip Etme</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>Kullanıcıların belgeleri veya siteleri takip etmesini sağlar.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>İçerik Takip Etme Zımbalama</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>Tüm site koleksiyonları üzerinde İçerik Takibi özelliğini etkinleştirin.</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>İçerik Takibi</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>Kullanıcıların belgeleri veya siteleri takip etmesini sağlar.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>İçerik Takibi Listesi</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>Kullanıcıların SharePoint'te içerik takip etmesini sağlayan listeyi kapsayan özellik.</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>İçerik Takibi</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>Kullanıcıların SharePoint'te içerik takip etmesini sağlayan liste.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>Sitem Belge Kitaplığı Özelliği</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>Sitem'e ait var olan SharePoint belge kitaplığını geliştirir. Yeni görünümleri, basit sürüm oluşturmayı, gelişmiş bağlamsal bilgileri ve öğe başına paylaşımı mümkün kılar.</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>Belgeler</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>Tümü</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>Benimle paylaşılan</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>Herkesle paylaşılan</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>Paylaşım Alanları</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>Paylaşılıyor</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>Paylaşılıyor</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>Belgelerim</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>Belgelerim</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>İç kullanıcılar ile paylaşılan</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>İç kullanıcılar ile paylaşılan</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>Son düzenlemelerimi koru</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>İzinler</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>Arama şu anda kullanılamıyor. Lütfen daha sonra tekrar deneyin. Sorun devam ederse, sistem yöneticinize başvurun.</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>Arama şu anda devre dışı. Lütfen sistem yöneticinize başvurun.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>Takip Et</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>Bu belgeyi takip ederek güncelleştirmeleri haber akışınızda alın.</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>İş Yönetimi</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>Puanlayan</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>Kullanıcılar öğeyi puanladı.</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>Kullanıcı puanları</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>Öğe için kullanıcı puanları</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>İçerik Geri Bildirimi</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Belgeler</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>Proje İşlevselliği</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>Bu özellik, bir siteye proje yönetimi işlevselliğini ekler. Bu şekilde, sitenin giriş sayfasında görevler, takvim ve web bölümleri bulunur.</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>Projelerim</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>Kişiler</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>Haber akışı</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>Belgeler</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>Görevler</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>Kişiler</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>Siteler</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>Hakkımda</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value>{0} Hakkında</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>Uygulamalarım</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>Sitem'e git</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>Takip ettiklerim</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>Benimle paylaşılan</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>Haber akışı</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>Uygulamalar</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>Diğer uygulamalar</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>Haber Akışı</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>SharePoint sitelerinde takip ettiğiniz içeriğe ve kişilere ait konuşmaları ve olay bildirimlerini görüntüler, kullanıcıların kısa, herkes tarafından görüntülenebilir iletiler göndermesini sağlar.</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>Etkinlik Akışı</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>Kullanıcının en son konuşmalarını ve etkinliklerini görüntüler.</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>Mikro Akış</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>Sitem Mikro Akış Kalıcı Depolama Listesi</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>Sitem Yayımlanan Akışı için Kalıcı Depolama Listesi</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>Mikro Akış İçerik Türleri</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>Sitem Kişisel Sitesini Gezinerek Yükseltme</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>Sitem Ana bilgisayar sitesine giderek kullanıcının kişisel sitesini oluşturur veya yükseltir.</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>Sitem İlk Çalıştırma Deneyimi</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>Gündemdeki Etiketler</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>İstemci tarafındaki bu web bölümü kullanıcının yeni sosyal içerikleri bulmasına yardımcı oluyor</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>Takip Edilen Öğe Sayıları</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>Geçerli kullanıcıya ait takip edilen kullanıcı, içerik ve etiketlerin sayısını gösterir.</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>Kişiler</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>Birini takip ettiği kişileri ve kendisini takip edenleri görüntüler.</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>Elle Yapılandırılmış Zaman Çizelgesi</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>Zaman çizelgesi görünümünde elle yapılandırılmış verileri gösterir</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>Proje Özeti</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>Okumanın kolay olduğu bir genel görünümde projeyle ilgili bilgileri görüntüler</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>Bağlı Zaman Çizelgesi</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>Başka bir web bölümüne ait verilerin yüksek düzeyli bir görünümü için bu zaman çizelgesini kullanın</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>Zaman Çizelgeleri</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>Proje Sitesi Zaman Çizelgesi</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>Bir projedeki görevlerin yüksek düzeyli bir görünümü için bu zaman çizelgesini kullanın</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>Proje Sitesi Web Bölümleri</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>Proje sitesi için yararlı ve proje sitesini gerektiren Web Bölümleri</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>Ekip Çalışma Merkezi</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>Ekip Çalışma Merkezi, tüm proje sitelerinizin tek konumda toplu şekilde görülebilmesini sağlar. Ekip Çalışma Merkezi, proje portföyünüze ait bir görselleştirme oluşturmak için Zaman Çizelgesi Web Bölümüne bağlanabilir.</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>İlgili öğeler özelliği</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>Bir site koleksiyonuna ilişkili öğeler ve önerilen öğeler işlevselliği eklemeye yönelik ilgili öğeler özelliği.</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>Öğe Form Önerileri</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>Tüm öğe görüntüleme formlarına öneriler CBS denetimi ekler.</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>Sitem Önerileri</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>Kullanıcılara, kendilerine ait SharePoint Sitem bölümünde takip edebilecekleri belgeler ve siteler önerir.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>Öneriler web bölümü, kullanıcının bir grupta takip etmek isteyebileceği içeriği önerir.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>Bana Önerilen Belgeler</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>Bana Önerilen Siteler</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>Bana Önerilen Kişiler</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>Öneriler web bölümü, kullanıcının bir grupta takip etmek isteyebileceği içeriği önerir.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>Takip edilmesi önerilen belgeler</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>Takip edilmesi önerilen siteler</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>Takip edilmesi önerilen kişiler</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>Öneriler web bölümü, kullanıcının bir grupta takip etmek isteyebileceği içeriği önerir.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>Önerilen Belgeler</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>Önerilen Siteler</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>Önerilen Kişiler</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>Önerilerim</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>Önerilerim web bölümü içeri aktarılamıyor.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>İlgili Öğeler Web Bölümü içeri aktarılamıyor.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>İlgili Öğeler</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>İlgili Öğeler Web Bölümü.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>İlgili Öğe Önerileri</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>İlgili Öğe Önerileri Web Bölümü.</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>İlgili Öğeler</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>Yeni Öğe Önerileri</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>Yeni Öğe Önerileri Web Bölümü</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>Kullanıcı Profili Kullanıcı Ayarları Sağlayıcısı</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>Bu özellik Kullanıcı Profili Kullanıcı Ayarları Sağlayıcısını sunar.</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>Site Posta Kutusu</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>Posta Kutusu</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>Site Posta Kutusu uygulaması, sitenizi bir Exchange posta kutusuna bağlayarak e-posta ve belgelerinizi bir arada tutmanıza yardımcı olur. Böylece e-postanızı SharePoint'te, site belgelerinizi Outlook'ta görüntüleyebilirsiniz.</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>Site Posta Kutuları</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>Bu gruptaki siteler için bir Exchange posta kutusunun sağlanmasına izin verir ve sitedeki belgeleri Outlook'a bağlar.</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>E-postayı bağlam içerisinde tutun.</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>Sitenizde e-posta paylaşın ve belgeleri Outlook'a bağlayın.</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>Proje Sitesi Desteği</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>Bu Site Koleksiyonunda Proje Siteleri oluşturulmasını sağlar.</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>Proje Siteleri için Etiket Denetimi</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>Bu özellik Proje Sitesi Etiketleme web bölümünü sağlar.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>Etiketleme web bölümü içeri aktarılamıyor.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>Etiketler Web Bölümü</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>Etiketleme web bölümü, bir sitenin üyelerinin sitedeki sayfalarda etiket eklemesini ve etiketleri görüntülemesini sağlar.</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>Projeler</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>Proje</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>Yeni</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>Yeni bir proje çalışma alanı oluşturun.</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>Aç</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>Seçilen projeyi açın.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>Proje Çalışma Alanı'nda</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>Proje Çalışma Alanında Aç</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>Project Professional'da</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>Seçilen projeyi Microsoft Project'te açın. Proje başka biri tarafından kullanıma alındıysa, salt okunur olarak açılır. Seçili birden çok projeniz varsa, yeni bir ana proje olarak açılır.</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>Zaman Çizelgesi</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>Zaman Çizelgesine Ekle</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>Seçilen öğeleri zaman çizelgesine ekleyin.</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>Proje</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>Sahibi</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>Başlangıç Tarihi</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>Proje listesi yenileniyor...</value>
+  </data>
+  <data name="NextRefresh">
+    <value>Proje listesinin güncelleştirileceği zaman: {0}</value>
+  </data>
+  <data name="RefreshNow">
+    <value>Şimdi Yenile</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>Bu listede ara...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>Proje Sitesi Kapsamı</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>Site ve Aşağısı</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>Site Koleksiyonu</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>İş Zekası</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>Rapor</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>Öğe bir rapor mu?</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>Veri</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>Öğe bir veri kaynağı mı?</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>İş Zekası</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>Rapor Belgesi</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>Yeni bir rapor belgesi oluşturun.</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>Rapor Belgesi Kitaplığı</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>Rapor belgeleri oluşturup yönetebileceğiniz bir yer.</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>Rapor Belgesi Kitaplığı</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>Rapor ve Veri Arama Desteği</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>Kurumsal Arama Merkezi'nde Raporlar ve Veri Arama bölümlerinin desteklenmesi için gereken içerik türlerini, site sütunlarını ve kitaplık şablonlarını sağlar.</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>Topluluk Portalı Özelliği</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>Bu özellik, topluluk portalı işlevselliğini ekler. Ayrıca, topluluk portalı sayfalarını sağlar.</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>Popüler Topluluklar</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>Topluluk Sitesi</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>Topluluk Sitesi Özelliği</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>Bu özellik tartışma kategorileri, içerik ve kişi saygınlığı ve üyeler listesi gibi topluluk işlevselliği ekler. Ayrıca bu liste ve özellikleri içeren topluluk sitesi sayfaları da sağlar.</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>Tartışma Listesi</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>Ekibiniz, projeniz veya toplulukla ilgili konular hakkında, soru ve cevap dahil olmak üzere forum stilinde konuşmalar için Tartışma listesini kullanın.</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>Toplanan Beğeni Sayısı</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>Toplu Puan Sayısı</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>Beğeni Sayısı</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>Beğenen</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>Popülerlik</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>Konuyu Son Güncelleştiren</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>Yazarın Saygınlık Puanı</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>Yazarın Yanıt Sayısı</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>Yazarın Gönderi Sayısı</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>Yazarın En İyi Yanıt Sayısı</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>Yazarın son etkinlik tarihi</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>Yazarın üyelik tarihi</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>Yazarın üyelik durumu</value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>Düzey 1</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>Düzey 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>Düzey 3</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>Düzey 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>Düzey 5</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>Kategori</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>Üye Adı</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>Gönderen</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>Konuyu Son Güncelleştiren</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Kategoriler</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>Topluluk Sitesi Altyapısı</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>Bir topluluktaki tartışma listeleri, saygınlık, kategoriler ve üyelik için gereken site koleksiyonu düzeyindeki alanlar, içerik türleri ve web bölümleri.</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>Kategoriler Listesi Özelliği</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>Bu özellik Kategoriler listesi işlevselliğine ait şablonu içerir</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>Kategoriler Listesi</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>Kategoriler Listesi</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>Kategori</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(Kategori İçerik Türü Açıklaması)</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>Kategori Listesi</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>Kategori Kutucukları</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>Yönetici Görünümü</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>Tek Kategori Görünümü</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>Kategori Adı</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>Kategorinin adı.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>Açıklama</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>Topluluk üyeleri bu kategoride neler hakkında konuşmalıdır?</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>Kategori Resmi</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>Bu kategoriyi temsil eden bir resim ekleyin.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>Tartışmalar</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>Yanıt sayısı</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>Son Gönderi Sahibi</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>Son Gönderi Tarihi</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>Kategoriler</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>Tartışma listesi gönderileri için kullanılabilen kategorileri tanımlamak üzere Kategoriler listesini kullanın.</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>Genel</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>Gönderi yayınlamak için buradan başlayın.</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>Üye</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>Durum</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>Üye Durumu</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>Beklemede</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>Etkin</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>Etkin değil</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>Engellendi</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>Ayrıldı</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>Topluluk İçerik Türleri</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>Site Üyeliği</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>Yeni bir üye ekleyin</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>Site Üyeliği</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>Bu özellik Topluluk, Proje, Ekip veya Eğitim siteleri gibi bir site içindeki üyeleri yönetmek için kullanılan liste şemasını ve liste örneğini içerir</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>Üyelik Listesi Şablonu</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>Site Üyelik Listesi şablon şeması</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>Topluluk Üyeleri</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>Bu liste, üyeler tarafından gerçekleştirilen etkinliklerin ve bu topluluk içerisinde edindikleri saygınlığın kaydını tutar.</value>
+  </data>
+  <data name="members_Folder">
+    <value>Uyeler</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Topluluk Tartismasi</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>Bildirimler</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>Bu özellik, bir topluluk sitesindeki rahatsız edici içeriği yönetmek için kullanılan liste şemasını ve liste örneğini içerir</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>Bildirimler Listesi Şablonu</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>Bildirimler Listesi şablon şeması</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>Bildirimler Listesi</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>Bu liste, bir tartışma öğesini rahatsız edici olarak bildiren kişiler tarafından gönderilen ilgili yorumları depolar</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>Uygunsuz Kullanim Raporlari</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>Bildiren</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>Yorumlar</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>Tartışma</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>Bildirim sayısı</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>Bildirim Arama</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>Bildiren Arama</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>Yorum Araması</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>Gönderi</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>Konu sayfası URL'si</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>Bildirimler</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>Denetim</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>Bildirilen Gönderileri İncele</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>Bildirimleri İncele</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>Bildirimleri İncele</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>Bildirilen içeriği, rahatsız edici olduğunu belirten üye yorumlarıyla birlikte inceleyin</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>Gönderiyi Düzenle</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>Gönderiyi Düzenle</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>Bildirilen tartışma öğesini düzenleyerek olası rahatsız edici içeriği kaldırın</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>Gönderiyi Sil</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>Gönderiyi Sil</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>Rahatsız edici olarak bildirilen tartışma öğesini silin. Bu şekilde, öğe hakkında şikayette bulunan üyelerin ilgili yorumları da kaldırılır</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>Bildirimi Kapat</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>Bildirimi Kapat</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>Topluluk için uygun olduğunu düşünüyorsanız, tartışma öğesiyle ilişkili bildirimleri yok sayın. Bu şekilde, öğeyi rahatsız edici bulan üyelerin ilgili yorumları da kaldırılır</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>Hediye Rozetler</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>Rozet Ver</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>Üyeye Rozet Verin</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>Üyeye Rozet Verin</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>Katılma Tarihi</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>Son Etkinlik</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>En İyi Yanıtlar</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>Tartışmalar</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>Yanıt sayısı</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>Sonraki düzeye ulaşmak için gereken yanıt sayısı</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>Saygınlık Puanı</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>Saygınlığı Gizle</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>Hediye Rozet</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>Hediye Rozet Metni</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>Topluluk Üyesi</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>Yeni bir topluluk üyesi ekleyin</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Rozetler</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>Rozetler</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>Bu liste, bu topluluğun yöneticileri veya moderatörleri tarafından oluşturulan rozetleri depolar.</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>Rozet Adı</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>Uzman</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>Profesyonel</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>Topluluk Yönetimi</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>Tartışmaları Yönet</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>Topluluktaki tartışmaları yönetin.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>Kategorileri Yönet</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>Topluluktaki kategorileri yönetin.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>Üyeleri Yönet</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>Topluluktaki üyeleri yönetin.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>Topluluk Ayarları</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>Topluluk Ayarları, örneğin kuruluş tarihi ve rahatsız edici içerik bildirme özelliğinin etkinleştirilmesi.</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>Bildirilen Gönderileri Yönet</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>Rahatsız edici olarak bildirilen gönderileri yönetin.</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>Saygınlık Ayarları</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>İçerik ve kişi saygınlığı gibi Topluluk içi Saygınlık Ayarları.</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>Topluluk</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>Katıl</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>Bir topluluk sitesine üye olmayanların topluluğa katılabilmesini sağlar. Kullanıcı zaten bir üye ise düğme gizlenir. Bu web bölümü, Topluluk sitelerinde veya Topluluk Özellikleri açık olan diğer herhangi bir sitede çalışır.</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>Bu topluluk hakkında</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>Bu web bölümü, topluluk açıklamasını ve kuruluş tarihi gibi diğer özellikleri görüntüler. Bu web bölümü, Topluluk sitelerinde veya Topluluk Özellikleri açık olan diğer herhangi bir sitede çalışır.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>Araçlar</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>Topluluk sahipleri ve yöneticileri için, topluluk sitesini yönetmeyi sağlayan genel ayarlar sayfaları ve içerik listelerine giden hızlı bağlantılar sağlar. Bu web bölümü, Topluluk sitelerinde veya Topluluk Özellikleri açık olan diğer herhangi bir sitede çalışır.</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>Öne Çıkan Tartışmalar</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>Neler oluyor?</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>Bir topluluk sitesi içerisindeki üye, konu ve yanıt sayısını görüntüler. Bu web bölümü, Topluluk sitelerinde veya Topluluk Özellikleri açık olan diğer herhangi bir sitede çalışır.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>Üyeliğim</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>Bir topluluk sitesini ziyaret eden kişinin saygınlık ve üyelik bilgilerini görüntüler. Bu web bölümü, Topluluk sitelerinde veya Topluluk Özellikleri açık olan diğer herhangi bir sitede çalışır.</value>
+  </data>
+  <data name="MembersView">
+    <value>Üyeler Görünümü</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>Yönetici Görünümü</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>Tek Üye Görünümü</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>En Çok Katkıda Bulunanlar</value>
+  </data>
+  <data name="NewMembersView">
+    <value>Yeni Üyeler</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>Topluluk</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>Kategoriler</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>Üyeler</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>Hakkında</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>Giriş</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>Bildirilen Gönderiler</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>Kategoriye Göre Tartışmalar</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>Kategoriye Göre Öne Çıkan Tartışmalar Tam</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>Kategoriye Göre Öne Çıkan Tartışmalar Önizleme</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>Blog Bildirimleri Özelliği</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>Bu özellik Bloglara bildirimler ekler</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>Blog Bildirimleri Zımbalama Özelliği</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>Bu özellik Blog bildirimleri ve beğeniler özelliğini Blog sitesi şablonlarına zımbalar</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>profilinizi {0}düzenleyin{1}</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>E-posta</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>Telefon</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>Ofis</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>Ortak</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>Siz ve kullanıcı arasındaki ortak öğeleri gösterir</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>Kuruluş Şeması</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>Kuruluş şemanızı ve bağlı çalışma hiyerarşinizi gösterir</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>Takipleri Yönet</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>Etiketler ve Notlar</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>Kuruluşunuz içinde etiketlenen en popüler konuları görüntüler.</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>Profil Bilgileri</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>Geçerli kullanıcıya ait temel profil bilgilerini gösterir</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>Belgeleri Taşı</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>Seçilen belgeleri başka bir siteye veya geçerli kitaplıktaki bir klasöre taşıyın.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>Belgeleri Taşıyın.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>Seçilen belgeleri başka bir siteye veya geçerli kitaplıktaki bir klasöre taşıyın.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>Seçilen belgeleri başka bir siteye veya geçerli kitaplıktaki bir klasöre taşıyın.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>Gruplar Arası Site İzinleri</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>Dahili SharePoint uygulamalarının gruplar arasında web sitelerine erişmesine izin vermek için gruplar arası site izinlerini kullanın.</value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>Yalnızca iç kullanım için</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>Sosyal</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>Mikro Blog Özellikleri</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>Bahsetmelerde Okunmamış</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>Son Gönderi</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>Sosyal Özellikler</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>Takip Edilen Öğe</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>Site</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>Takip Edilen Belge</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>Sosyal İçerik Verisi Depolama</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>Sosyal özelliklere veri desteği sağlar</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>Sosyal</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>Sosyal özelliklere veri desteği sağlar</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>Sitem Ana Sayfa Özelliği</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>Ana sayfayı ana sayfa galerisine yükleyen Sitem özelliği.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>Sitem Birleşik Gezinti Özelliği</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>Ana siteler ve kişisel siteler için aynı gezintiyi gösteren Sitem özelliği.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>Sitem Tek Hızlı Başlatma Özelliği</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>Ana siteler ve kişisel siteler için aynı hızlı başlatmayı gösteren Sitem özelliği.</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>Sitem Ana Sayfası</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>Sitem için benzersiz görünüm ve kullanım sağlar.</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>Tanıtılan Siteler</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>Tanıtılan siteleri kutucuk olarak gösterir.</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>Yeni Site</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>Tanıtılan Siteler</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>Tanıtılan Siteleri Yönet</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>Site Akışı</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>Site Akışı bir grup sitesindeki mikro blog konuşmalarını içerir.</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>Haber Akışı</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>Site Akışı</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>Site akışlarının kullanımını mümkün kılar.</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>Haber akışı</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>Site Akışı Özelliği Denetleyicisi</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>Site akışı özelliğinin etkinleştirilmesini denetler.</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>Site Akışı Özelliği Zımbalama</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>Site akışı özelliğini tüm yeni Ekip Sitesi site koleksiyonlarına zımbalar.</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>Mikro Blog Düzenleme</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>Liste öğelerini ve belgeleri görüntüleyebilir, ekleyebilir, güncelleştirebilir ve silebilir.</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>Fotoğrafınızı değiştirin</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>Bu fotoğrafı yalnızca {0} değiştirebilir.</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>Microsoft Exchange ile eşitlendiğinden bu kişinin fotoğrafını değiştiremezsiniz.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>Takip ettiklerim</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>kişi</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>Takip ettiğiniz kişileri görün</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>belge</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>Takip ettiğiniz belgeleri görün</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>site</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>Takip ettiğiniz siteleri görün</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>etiket</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>Takip ettiğiniz etiketleri görün</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">{Assigner} size {TLNFSiteName} &gt; {TLNFListName} konumunda yeni görevler atadı</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">Size {TLNFSiteName} &gt; {TLNFListName} konumunda bir veya daha fazla görev atanmış</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>GÖREVLERİMİ GÖRÜNTÜLE</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>SkyDrive Pro'nuz hazır</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>Belgelerinize çevrimdışı olarak erişin</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>Mobil olun!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>Profilinizi kişiselleştirin</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>İletişimi sürdürün</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>Çalışmanızı diğerlerine bildirin</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>  Diğer kişilerin SharePoint haber akışında etkinliklerinizi görüp yorum yapabilmesi için &lt;a href="{0}"&gt;gizlilik ayarlarınızı güncelleştirin&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>Mevcut Sitem belgeleriniz çalışmalarınızı depolamaya, eşitlemeye ve paylaşmaya yönelik bir yer olan &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;'ya taşındı.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>Herhangi bir kitaplıktaki Eşitle düğmesini tıklatarak belgelerinizi çevrimdışı kullanıma alabilirsiniz. Bunu &lt;a href="{0}"&gt;OneDrive İş&lt;/a&gt; uygulamanızda deneyin.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2">
+    <value>Herhangi bir kitaplıkta Eşitle düğmesini tıklatarak belgeleri çevrimdışı konuma alabilirsiniz. Bunu &lt;a href="{0}"&gt;{1} İş&lt;/a&gt;'inizde deneyin.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>{0}Mobil uygulamaları{1} indirerek SharePoint'i yanınıza alın.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>&lt;a href="{0}"&gt;Buradan&lt;/a&gt; bir fotoğraf yükleyin ve kendinizi biraz daha tanıtın.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>Diğer kişiler SharePoint'te etkinliklerinizin bir kısmını görebilir ve yorum yapabilir. Ayarları &lt;a href="{0}"&gt;buradan&lt;/a&gt; değiştirebilirsiniz.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>Değer verdiğiniz kişileri &lt;a href="{0}"&gt;takip edin&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>SharePoint haber akışınız hazır</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>Şimdi şunları yapabilirsiniz:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>SharePoint'ten en iyi şekilde yararlanın</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>Diğer kişiler SharePoint'te etkinliklerinizi görebilir ve yorum yapabilir. Ayarları &lt;a href="{0}"&gt;buradan&lt;/a&gt; değiştirebilirsiniz.</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>OneDrive İş</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>Paylaşılan uygulamaları yönet</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>Bu sitedeki tüm kitaplıkları ve listeleri görüntüleyin.</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>Haber akışı</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>Çalışmalarınızı depolama, eşitleme ve paylaşma yeri olan &lt;span id="skyDriveText"&gt;OneDrive İş&lt;/span&gt;\'inize hoş geldiniz. Belgeler paylaşılana kadar özeldir. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Buradan daha fazla bilgi edinin&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText2">
+    <value>Çalışmalarınızı depolama, eşitleme ve paylaşma yeri olan &lt;span id="skyDriveText"&gt;{0} İş&lt;/span&gt;\'e hoş geldiniz. Belgeler paylaşılana kadar özeldir. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Buradan daha fazla bilgi edinin&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated">
+    <value>İyi haber! Office 365'te {0} İş uygulamasına da sahipsiniz ve her yerden buradaki dosyalara erişebilirsiniz. Başlamak için en üst gezinti çubuğundaki {1} seçeneğini tıklatmanız yeterlidir. Endişelenmeyin, buradaki dosyalarınız çalışmaya devam edecek. Dosyalarınızı taşıma hakkında bilgi için {2}burayı tıklatın{3}.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated">
+    <value>Endişelenmeyin, dosyalarınız güvende. Dosyaları Office 365'te yeni {0} İş uygulamanıza taşıdık; böylece herhangi bir cihazdan ve her yerden dosyalarınıza erişebilirsiniz. En üst gezinti bölmesindeki {1} seçeneğini tıklatarak buraya ulaşabilirsiniz.</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>Kapat</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>&lt;span id="skyDriveFolder"&gt;Kuruluşunuzdaki&lt;/span&gt; herkes belgelere buradan erişebilir.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>OneDrive İş uygulamanız hazırlanıyor. Bu işlem biraz sürebilir, diğer sitelerde gezinmekten çekinmeyin.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2">
+    <value>{0} İş'iniz hazırlanıyor. Bu işlem biraz sürebilir, diğer sitelerde gezinmekten çekinmeyin.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription">
+    <value>Mevcut Sitem belgelerinizi, çalışmalarınızı depolamaya, eşitlemeye ve paylaşmaya yönelik bir yer olan OneDrive İş taşıyın.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2">
+    <value>Mevcut Sitem belgelerinizi, çalışmalarınızı depolamaya, eşitlemeye ve paylaşmaya yönelik bir yer olan {0} İş'inize taşıyın.</value>
+  </data>
+</root>

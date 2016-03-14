@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4442.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Stan blokady</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>Brak zastosowanych zasad</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Stan blokady</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Aktywne</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Oczekuje na zwolnienie</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>Zablokowane</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Wyewidencjonowane lub zmodyfikowane przeze mnie</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Użyj tego składnika Web Part w celu wyświetlenia dokumentów wyewidencjonowanych lub zmodyfikowanych przez bieżącego użytkownika.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Zmodyfikowane przeze mnie</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Użyj tego składnika Web Part w celu wyświetlenia dokumentów zmodyfikowanych przez bieżącego użytkownika.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Użyj tego składnika Web Part w celu wyświetlenia zadań przydzielonych do bieżącego użytkownika.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Moje zadania</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>Najwyżej oceniane dokumenty</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Użyj tego składnika Web Part w celu wyświetlenia dokumentów o najwyższych ocenach w tej witrynie sieci Web.</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>Najnowsze dokumenty</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Użyj tego składnika Web Part w celu wyświetlenia 10 najnowszych dokumentów w tej witrynie.</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Dokumenty</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Dokumenty</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Centrum dokumentów</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Rozszerzenia Centrum dokumentów</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Zapewnia możliwość nawigowania w widoku drzewa witryny.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Centrum dokumentów — Zapraszamy!</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Ta witryna umożliwia tworzenie i przechowywanie dokumentów oraz pracowanie nad nimi. Ta witryna może pełnić rolę repozytorium do współpracy podczas tworzenia dokumentów w zespole lub bazy wiedzy dokumentów dla wielu zespołów.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Współautorzy i osoby odwiedzające</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Menedżerowie witryny</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Przekaż dokument</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Zasady zbioru witryn</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>Szablony zasad typu zawartości</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Ustawienia inspekcji zbioru witryn</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Konfiguruj zasady zarządzania informacjami</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Przejrzyj raporty użycia zasad zarządzania informacjami</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Ustawienia zasad zarządzania informacjami</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>Przechowywanie</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>Automatyczne planowanie zawartości do przetwarzania i wykonywanie akcji przechowywania zawartości, która osiągnęła termin wykonania.</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Zaplanuj sposób zarządzania i usuwania zawartości, określając sekwencję etapów przechowywania. Jeśli zostanie określonych wiele etapów, będą one następować po sobie w kolejności pokazanej na tej stronie. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Uwaga:&lt;/b&gt; Jeśli aktywne jest przechowywanie oparte na bibliotece i folderze, administratorzy list mogą zastępować zasady dotyczące typów zawartości swoimi własnymi harmonogramami przechowywania. Aby temu zapobiec, należy zdezaktywować tę funkcję dla zbioru witryn.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>Inspekcja</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Poddaje inspekcji akcje użytkowników dotyczące dokumentów oraz elementów listy i zapisuje je w dzienniku inspekcji.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Określ zdarzenia, które mają być poddawane inspekcji w dokumentach i elementach podlegających tym zasadom.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>Kody kreskowe</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Generuje unikatowe identyfikatory, które mogą być wstawiane w dokumentach pakietu Microsoft Office. Dokumenty można także wyszukiwać za pomocą kodów kreskowych.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Przypisuje kod kreskowy do każdego dokumentu lub elementu. Opcjonalnie aplikacje pakietu Microsoft Office mogą wymagać od użytkowników wstawienia tych kodów kreskowych do dokumentów.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Kod kreskowy</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Wartość kodu kreskowego</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>Kod kreskowy przypisany do tego elementu.</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>Wartość kodu kreskowego przypisanego do tego elementu.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>Etykiety</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Generuje etykiety, które można wstawiać do dokumentów pakietu Microsoft Office w celu zapewnienia, że właściwości dokumentu lub inne ważne informacje będą znajdować się na wydrukach. Dokumenty można także wyszukiwać za pomocą etykiet.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>Do dokumentu można dodać etykietę, aby zapewnić umieszczenie na wydruku ważnych informacji o dokumencie. Aby określić etykietę, wpisz tekst, którego chcesz użyć, w polu Format etykiety. Może to być dowolna kombinacja stałego tekstu lub właściwości dokumentu, oprócz właściwości obliczanych lub wbudowanych, takich jak GUID czy CreatedBy. Aby rozpocząć nowy wiersz, użyj sekwencji znaków „\n”.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Etykieta</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Przechowuje bieżącą wartość etykiety.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (standard kodów kreskowych Code 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>Generuje kody kreskowe zgodne ze standardem ANSI/AIM BC1-1995 (Code 39).</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Akcja wykonywana po wygaśnięciu centrum rekordów</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Powoduje wygaśnięcie porzuconych plików przesłanych do serwera centrum rekordów.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Usuń rekord i informacje o przesyłaniu</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Usuwa rekordy przesłane do centrum rekordów oraz wszelkie powiązane właściwości i historię inspekcyjną dołączone do oryginalnej operacji przesłania rekordu.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Dokument tłumaczenia</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Dokument źródłowy</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Wersja dokumentu źródłowego</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Stan tłumaczenia</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Jeśli ten dokument jest tłumaczeniem, wskaż wersję dokumentu źródłowego, którą on reprezentuje. Te informacje zostaną ustawione automatycznie po ukończeniu przepływu pracy, jeśli w celu zarządzania tłumaczeniem jest używany przepływ pracy Zarządzanie tłumaczeniami.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Jeśli ten dokument jest tłumaczeniem, wskaż stan tłumaczenia. Te informacje zostaną ustawione automatycznie po ukończeniu przepływu pracy, jeśli w celu zarządzania tłumaczeniem jest używany przepływ pracy Zarządzanie tłumaczeniami.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Nierozpoczęte</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>W trakcie wykonywania</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Ukończone</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>Anulowane</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Wymaga aktualizacji</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Dokumenty źródłowe</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Języki i tłumacze</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Tłumaczenie z</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Tłumaczenie na</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Tłumacz</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Języki</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Blokada i zbieranie elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Blokada i zbieranie elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Blokada</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Blokada</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Ta funkcja służy do śledzenia akcji zewnętrznych, takich jak procesy, dochodzenia bądź kontrole, które wymagają zawieszenia operacji usuwania dokumentów.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Zarządzaj blokadami</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(Do zrobienia) Zarządzaj blokadami</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>Odnajdź i zablokuj zawartość</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>Odnajdź i zablokuj zawartość</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Raporty blokad</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Raporty blokad</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Blokady</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Blokady</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Blokady</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Ta lista służy do śledzenia akcji zewnętrznych, takich jak procesy sądowe, śledztwa czy inspekcje, które wymagają zawieszenia usunięcia elementów. Umieszczenie elementu w jednej lub kilku blokadach spowoduje zawieszenie usunięcia elementu do czasu, gdy przestanie być zarządzany za pomocą blokady.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Raporty blokad</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Ta biblioteka zawiera raporty dotyczące każdej blokady w tej witrynie. Każdy raport zawiera informacje, np. o zablokowanych elementach i kwerendach wyszukiwania wykonanych dla blokady.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Zablokowane kwerendy odnajdowania</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Zarządzane przez</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Opis</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Stan blokady</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>Adres URL witryny</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Blokady</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>Adres URL blokady</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Grupuj według blokad</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Raportowanie</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Tworzy raporty dotyczące informacji znajdujących się w programie Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Raporty dziennika inspekcji</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>Wyświetlanie raportów przepływu pracy</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Trendy popularności</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Trendy popularności</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Raporty dotyczące popularności i wyszukiwania</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>Najpopularniejsze elementy</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Metadane raportowania</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>Galeria raportów służy do przechowywania typów raportów dostępnych dla tej witryny oraz wszystkich witryn podrzędnych.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Szablony raportowania</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Biblioteka plików szablonów raportów służy do przechowywania plików używanych przez galerię szablonów raportów.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Przechowywanie oparte na bibliotece i folderze</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Umożliwia administratorom listy zastępowanie harmonogramów przechowywania typu zawartości i ustawianie harmonogramów dla bibliotek i folderów.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Zarządzanie rekordami</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Dodaje funkcje zasad zarządzania rekordami i informacjami do programu Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Lista zachowywania</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Szablon listy używany do tworzenia listy archiwum zachowywania.</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>Szablon listy zachowywania zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Szablon listy używany do tworzenia listy archiwum zachowywania.</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Wyszukiwanie i przetwarzanie</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Obsługuje zadania czasomierza Wyszukiwanie i przetwarzanie.</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Witryna centrum rekordów</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Centrum rekordów — Zapraszamy!</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Ta witryna służy do przesyłania i znajdowania ważnych dokumentów, które powinny być przechowywane w celu długoterminowej archiwizacji. Przesłane rekordy są automatycznie umieszczane we właściwej bibliotece i folderze na podstawie wypełnionych właściwości.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Prześlij rekord</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Moje rekordy oczekujące na przesłanie</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Ten składnik Web Part służy do uczenia osób, które odwiedzają centrum rekordów, zarządzania rekordami i zasad zgodności organizacyjnej.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Dodaj informacje o tematach dotyczących zarządzania rekordami, takie jak:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Dodaj łącza do innych witryn zgodności organizacyjnej, takie jak:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>Definicja rekordu w organizacji</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>Co się dzieje z rekordem po przesłaniu go do centrum rekordów</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Czynności, które użytkownicy mogą wykonać, aby zapewnić zgodność z zasadami organizacyjnymi</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Witryna szkoleniowa z zakresu zgodności w organizacji</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> Witryna dotycząca organizacyjnych zasad przechowywania</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> Lista kontaktów związanych z zarządzaniem rekordami w każdym dziale</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Prześlij rekordy</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Centrum dokumentów — Zapraszamy!</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Witamy w nowym Centrum dokumentów. Ta witryna służy do scentralizowanego zarządzania dokumentami w przedsiębiorstwie.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Zarządzaj harmonogramem przechowywania</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Punkt wejścia dla wszystkich folderów do zarządzania harmonogramem wygasania</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Szczegóły dotyczące zgodności</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Punkt wejścia paska narzędzi do wyświetlania przechowywania i innych szczegółów dotyczących zgodności podczas cyklu życia elementu</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Generuj raport planu ewidencji</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Usługa identyfikatorów dokumentów</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>Przypisuje do dokumentów w zbiorze witryn identyfikatory, które mogą być używane do pobierania elementów niezależnie od ich bieżącej lokalizacji.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Ustawienia identyfikatora dokumentu</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Zarządzaj ustawieniami identyfikatora dokumentu w tym zbiorze witryn</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Znajdź według identyfikatorów dokumentów</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Znajduje dokument według jego identyfikatora.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Wartość identyfikatora dokumentu</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>Wartość identyfikatora dokumentu przypisanego do tego elementu.</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>Identyfikator dokumentu</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Łącze stałe do tego dokumentu.</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Rozdzielnia dokumentów</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>Gdy właściwości plików przekazanych do tej biblioteki zostaną wypełnione, te pliki będą automatycznie przenoszone do właściwej biblioteki lub folderu zgodnie z regułami utworzonymi przez właściciela tej witryny.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>Reguły organizatora zawartości</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Ta lista ułatwia tworzenie planu organizowania zawartości w tej witrynie. Utwórz reguły w celu zapewnienia, że dokumenty przesłane do tej witryny są wysyłane do właściwej lokalizacji i mają prawidłowe właściwości.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Reguła</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Utwórz regułę, która przenosi zawartość przesłaną do tej witryny do właściwej biblioteki lub właściwego folderu.</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>Organizator zawartości</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Utwórz reguły oparte na metadanych, które przenoszą zawartość przesłaną do tej witryny do właściwej biblioteki lub właściwego folderu.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Zasoby do rozsyłania dokumentu</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Zapewnij zasoby wymagane do rozsyłania dokumentów w witrynach w tym zbiorze witryn.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Zasoby rekordu</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Zapewnij zasoby wymagane do tworzenia rekordów lub blokad w witrynach w tym zbiorze witryn.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Zarządzanie rekordami w miejscu</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Umożliwia definiowanie i deklarowanie rekordów na miejscu.</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Kolumny zarządzania dokumentami i rekordami</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>Typy zawartości organizatora zawartości</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Priorytet</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Aktywne</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Nazwa reguły</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Opis</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Typ zawartości przesyłania</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Typ zawartości przesyłania (wewnętrzne)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>Kod XML warunku</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Właściwości używane w warunkach</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Aliasy</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Biblioteka docelowa</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Folder docelowy</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Ścieżka docelowa</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>Adres URL witryny docelowej</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Właściwość automatycznego tworzenia folderu</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Dane konfiguracyjne folderu automatycznego</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Router niestandardowy</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Rozsyłanie do lokalizacji zewnętrznej</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Właściwości oryginalne</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>Temat</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Osoba przesyłająca</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Do</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>Od</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>DW</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>UDW</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Data wysłania</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Data odebrania</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>Kolumny przesyłania wiadomości e-mail</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>Przesyłanie wiadomości e-mail</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Przesłane rekordy poczty e-mail</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Ta lista jest używana przez router do tymczasowego przechowywania odebranych rekordów poczty e-mail</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Ten typ zawartości zawiera kolumny odpowiadające typowym właściwościom wysyłanym podczas przesyłania wiadomości e-mail do organizatora zawartości.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>Zablokowany do edycji</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Stan blokady i rekordu</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Zadeklarowany rekord</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>Wyklucz z zasad</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Data wygaśnięcia</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Pierwotna data wygaśnięcia</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Podstawowe kolumny zestawu dokumentów</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Opis</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>Opis zestawu dokumentów</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Zestawy dokumentów</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Udostępnia typy zawartości wymagane do tworzenia i używania zestawów dokumentów. Utwórz zestaw dokumentów, aby zarządzać wieloma dokumentami jak jednym produktem pracy.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Synchronizacja metadanych zestawów dokumentów</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Zapewnia infrastrukturę do synchronizacji metadanych zestawów dokumentów.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Zestaw dokumentów</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Typy zawartości zestawu dokumentów</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Utwórz zestaw dokumentów, aby zarządzać wieloma dokumentami jak jednym produktem pracy.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Wyświetlanie strony powitalnej</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Wyświetl stronę powitalną dla tego zestawu dokumentów.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Ustawienia zestawu dokumentów</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Pobieranie kopii</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Pobierz kopię zestawu dokumentów i jego bieżącej zawartości</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Wysyłanie do innej lokalizacji</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Wyślij ten zestaw dokumentów i jego bieżącą zawartość do innej lokalizacji</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Przechwytywanie wersji</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Przechwyć wersję bieżącej zawartości zestawu dokumentów</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Historia wersji zestawu dokumentów</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Wyświetl historię wersji zestawu dokumentów</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Właściwości zestawu dokumentów</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Wyświetla właściwości zestawu dokumentów</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Zawartość zestawu dokumentów</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Wyświetla zawartość zestawu dokumentów</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Zasady witryny</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Umożliwia administratorom zbiorów witryn definiowanie harmonogramów przechowywania, które mają zastosowanie do witryny i całej jej zawartości.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Zasady projektu</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Typ zawartości kontenera na potrzeby definicji zasad projektu</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Zasady witryny</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Zasady witryny określają sposób zarządzania witryną i jej zawartością oraz rozmieszczanie jej. Można je udostępniać w zbiorze witryny za pomocą mechanizmu publikowania typu zawartości.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Usuwanie i zamykanie witryny</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Wyświetlanie i zmienianie zasad zarządzania informacjami stosowanych w tej witrynie i konfigurowanie dat sterujących akcjami cyklu życia witryny.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Lista elementów zasad projektu</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>Lista tworzona za pomocą funkcji przechowywania opartego na projekcie używana do przechowywania elementów zasad projektu.</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Wideo i multimedia</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Udostępnia biblioteki, typy zawartości i składniki Web Part na potrzeby przechowywania i wyświetlania elementów multimedialnych, takich jak obrazy, klipy dźwiękowe i wideo, oraz zarządzania nimi.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Ustawienia odtwarzania i przetwarzania wideo</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Wideo</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Przekazywanie wideo lub łącze do pliku wideo.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Opis</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>Podsumowanie wideo</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Właściciel</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>Właściciel wideo</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Indeks czasu miniatury</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Domyślne kodowanie</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Domyślne kodowanie zastąpione przez użytkownika</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Łącze zewnętrzne</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Kod osadzania</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>Pokaż łącze pobierania</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Określa, czy na stronie odtwarzacza wideo ma być widoczny przycisk, który umożliwia użytkownikowi pobranie odtwarzanego pliku wideo.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Pokaż łącze osadzania</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Określa, czy w odtwarzaczu wideo ma być widoczny przycisk, który umożliwia użytkownikowi uzyskanie kodu osadzania odtwarzanego pliku wideo.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Informacje o renderowaniu</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Ludzie w wideo</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>Ludzie widoczni w klipie wideo.</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Nawigacja po metadanych i filtrowanie ich</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Zapewnia każdej liście w witrynie strony ustawień. Te strony umożliwiają konfigurowanie listy do używania hierarchii widoku drzewa metadanych oraz formantów filtrowania, aby usprawnić nawigowanie po elementach zawartych na tej liście i filtrowanie ich.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Ustawienia nawigacji po metadanych</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Ustawienia widoku dla lokalizacji</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>Formanty Wstążki „Połącz z pakietem Office”</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Służy do dodawania do interfejsu użytkownika wstążki punktów wejścia umożliwiających tworzenie na liście witryn programu SharePoint użytkownika skrótów do bibliotek, jeśli jest zainstalowana ostatnia wersja pakietu Office. Pakiet Office będzie okresowo zapisywać szablony dostępne w tych bibliotekach w pamięci podręcznej na lokalnym komputerze użytkownika.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Wstawia przycisk na karcie Biblioteka/Akcje</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Połącz z pakietem Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Połącz z pakietem Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Połącz z pakietem Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Dodaj elementy do skrótów wyświetlanych podczas tworzenia, otwierania i zapisywania dokumentów w aplikacjach pakietu Microsoft Office, takich jak program Word, Excel lub PowerPoint.</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>Dodaj do witryn programu SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>Dodaj do witryn programu SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Dodaj skrót do tej biblioteki w pakiecie Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>Usuń z witryn programu SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>Usuń z witryn programu SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Usuń tę bibliotekę z listy skrótów w pakiecie Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>Zarządzaj witrynami programu SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>Zarządzaj witrynami programu SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Zmodyfikuj listę skrótów pakietu Microsoft Office.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>Integracja poczty e-mail z organizatorem zawartości</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Włączenie organizatora zawartości witryny pozwala akceptować i organizować wiadomości e-mail. Tej funkcji należy używać tylko w wysoce zarządzanym magazynie, takim jak centrum rekordów.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>Ustawienia organizatora zawartości</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>Reguły organizatora zawartości</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Ustawienia deklaracji rekordu</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Biblioteka rekordów</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Utwórz bibliotekę dokumentów do przechowywania ważnych rekordów biznesowych.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Przekaż gotowe dokumenty do tej biblioteki. Dokumenty dodane do tej biblioteki będą automatycznie deklarowane jako rekordy.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Konfiguracja centrum rekordów</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Konfiguruje witrynę jako centrum rekordów.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Zarządzaj centrum rekordów</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Zarządzaj ustawieniami zachowywania rekordu w tej witrynie</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Zadania instalacyjne i tworzenie planu ewidencji</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Korzystając z tych instrukcji, można zakończyć konfigurowanie witryny centrum rekordów.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>Aby przygotować tę witrynę do akceptowania rekordów, skonfiguruj ją tak, aby pasowała do planu ewidencji organizacji:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Uwaga:&lt;/b&gt; Nie można w pełni skonfigurować tego centrum rekordów, ponieważ niektóre funkcje zbioru witryn nie są włączone. Skontaktuj się z administratorem zbioru witryn, jeśli nie masz dostępu, aby zająć się tymi problemami:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Nie można oznaczać dokumentów przychodzących jako rekordów. Uaktywnij funkcję rekordów w miejscu w galerii funkcji zbioru witryn.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Nie można przypisywać identyfikatorów dokumentów do dokumentów przychodzących. Uaktywnij usługę identyfikatorów dokumentów w galerii funkcji zbioru witryn.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Krok 1.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Krok 2.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Krok 3.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>Krok 4:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>Tworzenie typów zawartości</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Zdefiniuj typy rekordów i właściwości dla każdego typu.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Tworzenie bibliotek rekordów</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Zbuduj hierarchię bibliotek oraz folderów rekordów i przypisz do każdej pozycji harmonogram przechowywania.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>Tworzenie reguł organizatora zawartości</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Zdefiniuj reguły rozsyłające przesłane rekordy do właściwego folderu.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Projektowanie strony powitalnej witryny</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Wyjaśnij użytkownikom plan ewidencji i zasady zarządzania rekordami.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>Po zakończeniu można usunąć ten składnik Web Part.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Typowe zadania zarządzania rekordami</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Tworzenie nowej biblioteki rekordów</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Utwórz nową bibliotekę do przechowywania rekordów.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>Zarządzaj zawartością i strukturą</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Zmień strukturę folderów witryny za pomocą narzędzia zarządzania hierarchią.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>Tworzenie reguł organizatora zawartości</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Zarządzaj miejscem przechowywania przesłanych rekordów.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Odnajdowanie i blokowanie rekordów</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Wyszukaj rekordy, które mają zostać zachowane z powodu sporu prawnego.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Generowanie raportu planu ewidencji</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Wyświetl arkusz kalkulacyjny dotyczący harmonogramów przechowywania i struktury biblioteki rekordów.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Generowanie raportu inspekcji</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Uzyskaj dostęp do historii zdarzeń, które wystąpiły w rekordach (wymaga uprawnień administratora zbioru witryn).</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>Umożliwia przeglądanie dostępnych raportów dziennika inspekcji, które zapewniają kompleksowe śledzenie zdarzeń dla działań, zabezpieczeń i zasad dotyczących zawartości oraz innych filtrów.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Przejrzyj raporty trendów popularności, z których można dowiedzieć się , do jakiej  zawartości jest uzyskiwany dostęp i w jaki sposób.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Skonfiguruj inspekcję śledzącą akcje użytkownika we wszystkich witrynach w tym zbiorze witryn</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Zarządzaj zasadami zarządzania informacjami, które zawierają ustawienia deklaracji zasad, etykiet, inspekcji, wygasania i kodów kreskowych dla wszystkich witryn w tym zbiorze witryn</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Ustawienia deklaracji rekordu</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Ustawienia wartości domyślnych kolumn</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Zmień wartości domyślne kolumn</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Zmień wartości domyślne kolumn w tym folderze.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Zadeklaruj rekord</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Zadeklaruj element jako rekord, który może dodawać ograniczenia i zasady specyficzne dla rekordów na podstawie ustawień systemowych</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Anuluj deklarację rekordu</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Anuluj deklarację elementu jako rekordu, aby usunąć ograniczenia i zasady dotyczące rekordu</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Konfiguruj widoki dla tej lokalizacji</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Zmień dostępne widoki tego folderu.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Zestaw dokumentów</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Zarządzanie</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Akcje</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Edytuj właściwości</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Edytuj właściwości tego zestawu dokumentów.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Pobierz kopię</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Pobierz kopię tego zestawu dokumentów.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>Uprawnienia</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Przejdź do strony uprawnień, aby dodać, zmienić lub usunąć uprawnienia do tego zestawu dokumentów.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Usuń</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Zarządzanie kwerendą</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Nowy</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Zarządzanie</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Kwerenda</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Kopiuj kwerendę</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Kopiuj kwerendę</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Umożliwia utworzenie kopii wybranego elementu.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>Aktualizuj statystyki</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>Aktualizuj statystyki</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>Umożliwia uruchomienie wybranej kwerendy lub wybranych kwerend w celu zaktualizowania ich statystyk.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Eksportuj</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Eksportuj</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Umożliwia wyeksportowanie wyników wybranej kwerendy lub wybranych kwerend.</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Usuń ten zestaw dokumentów. Wszystkie dokumenty w tym zestawie dokumentów zostaną usunięte.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Udostępnianie</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>Wyślij łącze pocztą e-mail</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Wyślij łącze pocztą e-mail do tego zestawu dokumentów.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Wyślij do</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Przejdź do strony wysyłania do innej lokalizacji, aby przenieść lub skopiować ten zestaw dokumentów do innej lokalizacji.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Zarządzanie</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Przechwyć wersję</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Zapisz wersję bieżących właściwości i dokumentów w tym zestawie dokumentów.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Historia wersji</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Przejrzyj historię wersji tego zestawu dokumentów i zarządzaj nią.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>Przepływy pracy</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Przejdź do strony przepływów pracy, aby uruchomić przepływy pracy skojarzone z tym zestawem dokumentów i zarządzać nimi.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Zarządzaj odwzorowaniami wideo</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Zarządzaj odwzorowaniami tego pliku wideo.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Niestandardowa akcja Wstążki nawigacji po metadanych</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Aktualizuj</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Aktualizacja stanu źródła</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Umożliwia aktualizację stanu wybranych źródeł.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Eksport błędów</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Generowanie listy eksportu wszystkich elementów zawierających błędy w celu uzyskania raportu lub pobrania ich.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Akcje źródła</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Trwa wyszukiwanie</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Może to chwilę potrwać...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>Istotność</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Data (najstarsze)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Data (najnowsze)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Szukaj</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Zapisano kwerendę</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>Portal zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>Tworzenie spraw zbierania elektronicznych materiałów dowodowych i zarządzanie nimi.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>Funkcja sprawy zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>Zapewnia obsługę administracyjną niezbędnych zasobów dla sprawy zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Nazwa</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Stan archiwum miejscowego</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Zachowywanie filtrowane</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Niezlokalizowany stan archiwum miejscowego</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Archiwum miejscowe</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Historia archiwum miejscowego</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Godzina ostatniego indeksowania</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Błędy indeksowania — elementy</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Błędy indeksowania — lokalizacje programu SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Procent błędów przeszukiwania</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Źródła</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Dodawanie nowego źródła.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Eksportowanie</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Dodawanie nowego eksportu.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Kwerenda</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Tworzenie nowego zapisanego wyszukiwania.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Element przechowujący</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Dodawanie nowego elementu przechowującego.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Skrzynka pocztowa</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Dodawanie nowej skrzynki pocztowej.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Lokalizacja</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Dodawanie nowej lokalizacji.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>Zestaw zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Tworzenie nowego zestawu zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Element zachowany</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Dodawanie nowego elementu zachowanego.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>Typy zawartości zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Elementy</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Rozmiar (MB)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Kwerendy</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>Identyfikator witryny</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Typ źródła</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Typ źródła nieprzetworzonego</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>Identyfikator witryny sieci Web</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>Identyfikator federacji</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>Identyfikator federacji zewnętrznej</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Deduplikacja</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Usuń zduplikowaną zawartość programu Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Usuwanie ochrony zarządzania prawami</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Usuwanie ochrony usług zarządzania prawami (RMS) i szyfrowania z danych programu Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Uwzględnij wersje</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>Uwzględnij wersje dokumentów w programie SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Elementy, których nie można wyszukiwać</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Uwzględnienie elementów, które są zaszyfrowane lub mają nierozpoznany format</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Stan</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>Właściwości zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Kwerenda</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Autor</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Data rozpoczęcia</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Data zakończenia</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Filtr domeny (tylko program Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>Elementy uściślające programu SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Elementy uściślające programu Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Typ zarządzania źródłem</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>Identyfikator blokady</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>Identyfikator akcji</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Typ akcji</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>Identyfikator źródła</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>Identyfikator wyświetlania</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Źródła</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Grupy źródłowe</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Elementy przechowujące</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Użytkownik</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Uwagi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Źródło</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Numer wersji zachowywania</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Oryginalna lokalizacja zachowywania</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>Identyfikator oryginalnej listy zachowywania</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Oryginalne metadane zachowywania</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Data zachowania</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Typ listy elementów przechowujących</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>Typ listy elementów przechowujących używanych w sprawie zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Typ listy źródeł</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>Typ listy źródeł w sprawie zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Typ listy kwerend</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>Typ listy zapisanych wyszukiwań w sprawie zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Typ listy eksportu</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>Typ listy eksportu w sprawie zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>Typ listy zestawów zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>Typ listy zestawów odnajdowania w sprawie zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Typ listy wystąpień źródła</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>Typ listy wystąpień źródła w sprawie zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>Szablon witryny portalu zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Kwerendy</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Używanie kwerendy do zmniejszania liczby wyników wyszukiwania i ich analizowania.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Źródła</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Śledzenie stanu skrzynek pocztowych i lokalizacji związanych z daną sprawą.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>Zestawy zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Utwórz grupy zawartości, którą można filtrować i umieszczać w archiwum, oraz zarządzaj nimi.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Eksport: nowy element</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Eksporty</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Przy użyciu listy eksportów można zarządzać pobieraniem eksportowanej zawartości zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Wystąpienia źródła</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Śledzenie stanu spraw.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Elementy przechowujące</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Dodawanie użytkowników do sprawy, która może być związana ze źródłami, takimi jak skrzynki pocztowe i lokalizacje.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Stan archiwum miejscowego</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Stan eksportu</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>Nie rozpoczęto pobierania</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>Rozpoczęto pobieranie</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>Pobieranie ukończone</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>Eksportowanie nie powiodło się</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>W archiwum</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>W archiwum z filtrem</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Przekroczono limit czasu</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Nie można umieścić w archiwum</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Nieumieszczone w archiwum</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>Przetwarzanie</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Częściowo</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Niepowodzenie</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>Witamy w Centrum zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>Przy użyciu tej witryny można tworzyć sprawy zbierania elektronicznych materiałów dowodowych, pracować nad nimi i zarządzać nimi. Dzięki sprawom zbierania elektronicznych materiałów dowodowych można zarządzać identyfikacją i archiwum miejscowym skrzynek pocztowych programu Exchange, witryn programu SharePoint i innych źródeł zawartości. Można także tworzyć kwerendy wyszukiwania i zarządzać nimi w celu zidentyfikowania odpowiedniej zawartości, a następnie eksportować wyniki wyszukiwania.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Rozpoczynanie pracy</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Udziel użytkownikom prawnym uprawnień dostępu do zawartości w całym wdrożeniu programu SharePoint. Zalecamy utworzenie grupy zabezpieczeń zawierającej członków zespołu prawnego.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>Aby odnaleźć skrzynki pocztowe programu Exchange, upewnij się, że administrator zainstalował zarządzanego klienta usług sieci Web programu Exchange na wszystkich serwerach programu SharePoint i że skonfigurował uwierzytelnianie między programem Exchange a programem SharePoint. </value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Nadaj zespołowi prawnemu uprawnienia zasad użytkowników grupy zabezpieczeń do wszystkich odpowiednich aplikacji sieci Web programu SharePoint z zawartością, w której należy wykonać operację zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Nadaj użytkownikom prawnym uprawnienia do zbierania elektronicznych materiałów dowodowych dla skrzynek pocztowych programu Exchange, dla których trzeba wykonać akcje zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Archiwum miejscowe, wyszukiwanie i eksport</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>Dzięki archiwum miejscowym można określić skrzynki pocztowe i witryny programu SharePoint, które należy zablokować. Jeśli zawartość zostanie zmodyfikowana lub usunięta, będzie ona przechowywana na miejscu do momentu jej wyeksportowania.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>Wyszukiwanie w ramach miejscowego zbierania elektronicznych materiałów dowodowych umożliwia wyszukiwanie we wszystkich witrynach programu SharePoint, udziałach plików i skrzynkach pocztowych programu Exchange. Aby uzyskać zakres wyników obejmujący potrzebną zawartość, można używać usług zbliżeniowych, symboli wieloznacznych, wartości logicznych i elementów uściślających. Wyszukiwanie odbywa się w miejscu, dlatego wyniki są dynamiczne i aktualne, tak jak przy normalnym wyszukiwaniu w programie Outlook Web Access lub w witrynie programu SharePoint.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>Po odnalezieniu potrzebnej zawartości można pobrać ją na lokalny dysk twardy lub do udziału plików w przenośnym, natywnym formacie. Można łatwo pobierać strony programu SharePoint, dokumenty, listy i dane skrzynek pocztowych programu Exchange.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Twoja sprawa — zapraszamy.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>Przy użyciu sprawy można określać źródła zawartości, takie jak skrzynki pocztowe czy witryny programu SharePoint, oraz zachowywać tę zawartość w archiwum miejscowym. Po zidentyfikowaniu źródeł zawartości można przeszukać tę zawartość, aby określić odpowiednie elementy i wyeksportować je.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Utwórz nową sprawę</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Dodaj kolejną lokalizację</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Dodaj kolejną skrzynkę pocztową</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Sprawdź lokalizację</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Sprawdź skrzynkę pocztową</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Przeglądaj</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Dodaj źródła i zarządzaj nimi)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Modyfikuj zakres kwerendy)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Źródła: edytowanie elementu</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Źródła: nowy element</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Dodawanie źródeł i zarządzanie nimi</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Lokalizacje</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Umożliwia wprowadzenie adresów URL w celu określenia witryn programu SharePoint i udziałów plików indeksowanych przez usługę wyszukiwania. Źródła witryn programu SharePoint będą zawierać wszystkie podwitryny. Źródła udziałów plików będą zawierać wszystkie foldery podrzędne w stosunku do określonego folderu.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Skrzynki pocztowe</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Określanie skrzynek pocztowych programu Exchange przy użyciu nazw lub adresów e-mail.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>OK</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>Współpracujące osoby</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Skrzynka pocztowa programu Exchange</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Udział plików</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Zawartość sprawy</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Całkowita zawartość sprawy</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Zawartość archiwum miejscowego</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Elementy: </value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Rozmiar: </value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Sprawdzono poprawność</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Połączenie z aplikacją usługi wyszukiwania nie powiodło się.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>Wystąpił błąd podczas próby sprawdzenia poprawności źródła.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>Określone źródło już istnieje w tej sprawie.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Nie znaleziono dokładnego dopasowania. Adres URL może być nieprawidłowy, nie masz uprawnień dostępu do tej lokalizacji lub dana lokalizacja nie jest indeksowana przez usługę wyszukiwania.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Nie można sprawdzić poprawności skrzynki pocztowej. Być może skrzynka pocztowa nie istnieje lub nie masz odpowiedniego poziomu uprawnień.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>Typ zawartości</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Zaawansowane opcje kwerendy</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>Ta kwerenda nie zawiera źródeł. Aby dodać źródła, wróć na stronę kwerendy i kliknij pozycję „{0}”</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Archiwum miejscowe oparte na kwerendach</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>Gdy jest włączone zachowywanie na podstawie kwerendy, zawartość przechowywana w bibliotece archiwum, która nie jest zgodna z żadnym filtrem blokady dla tej witryny, wygasa. Ta funkcja powinna być używana w przypadku witryn archiwum, które będą zawierać wiele równoczesnych blokad.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} Zaplanowano umieszczenie całej zawartości w archiwum dla zestawu zbierania elektronicznych materiałów dowodowych {1}.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} Cała zawartość znajduje się obecnie w archiwum dla zestawu zbierania elektronicznych materiałów dowodowych {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} Zaplanowana aktualizacja archiwum dla zestawu zbierania elektronicznych materiałów dowodowych {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} Zainicjowano aktualizację archiwum miejscowego dla zestawu zbierania elektronicznych materiałów dowodowych {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} Zaplanowano aktualizację archiwum dla zestawu zbierania elektronicznych materiałów dowodowych {1} z filtrem {2}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} Zainicjowano aktualizację archiwum dla zestawu zbierania elektronicznych materiałów dowodowych {1} z filtrem {2}.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} Planowane umieszczenie filtrowanego podzestawu w archiwum dla zestawu zbierania elektronicznych materiałów dowodowych {1} z filtrem {2}.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} Filtrowany podzestaw zawartości znajduje się obecnie w archiwum dla zestawu zbierania elektronicznych materiałów dowodowych {1} z filtrem {2}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} Zwolniono archiwum dla zestawu zbierania elektronicznych materiałów dowodowych {1}. To źródło jest nadal umieszczone w archiwum dla innych zestawów zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} Zaplanowano zwolnienie archiwum dla całej zawartości dla zestawu zbierania elektronicznych materiałów dowodowych {1}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} Zwolniono archiwum dla całej zawartości dla zestawu zbierania elektronicznych materiałów dowodowych {1}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} Zwolniono archiwum miejscowe dla całej zawartości z zestawu zbierania elektronicznych materiałów dowodowych, który już nie istnieje.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} Nie można umieścić źródła w archiwum dla zestawu zbierania elektronicznych materiałów dowodowych {1}. Komunikat o błędzie: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} Nie można zwolnić archiwum dla tego źródła dla zestawu zbierania elektronicznych materiałów dowodowych {1}. Komunikat o błędzie: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>Zdarzenie inspekcji zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Zawartość sprawy</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Wyświetla zawartość danej sprawy.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Składnika Web Part zawartości sprawy można używać tylko na stronach sieci Web spraw zbierania elektronicznych materiałów dowodowych.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Musisz określić wartość dla tego pola wymaganego.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">To źródło jest obecnie umieszczone w archiwum. Aby usunąć to źródło, najpierw trzeba zwolnić wszystkie archiwa. </value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Dla tego zestawu zbierania elektronicznych materiałów dowodowych jest obecnie włączone archiwum miejscowe. Aby usunąć ten zestaw zbierania elektronicznych materiałów dowodowych, najpierw trzeba zwolnić archiwum miejscowe. </value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>Ta witryna nie istnieje</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>Identyfikator partycji witryny jest niezgodny z identyfikatorem partycji akcji archiwum.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Rozmiar</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Elementy</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Łącznie:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Usuń duplikaty</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>Usuń ochronę usługi RMS</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Uwzględnij wersje</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Uwzględniaj elementy, których nie można wyszukiwać</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>Pobierz</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Raport dotyczący wyników</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>Szacowana liczba i szacowany rozmiar elementów nie uwzględniają wersji ani deduplikacji. Wybranie tych opcji wpłynie na całkowity rozmiar eksportu.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Zamknij tę sprawę</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Otwórz tę sprawę</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Zamknięcie sprawy</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Nie odnaleziono wyników pasujących do podanego adresu. Wprowadź nowy lub mniej dokładny adres.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Nazwa wyświetlana</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>Adres e-mail</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Szacunkowe miejsce całkowite</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Liczba elementów</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Rozmiar elementów</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Kwerendy</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Archiwum miejscowe</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Zwolnij archiwum miejscowe</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Aktualizuj archiwum miejscowe</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Stan eksportu</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Stan źródła</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Ta sprawa została zamknięta dnia: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>Zestawy zbierania elektronicznych materiałów dowodowych są nadal zablokowane. Aby je usunąć, zwolnij wszystkie blokady lub zamknij sprawę.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>Zasady sprawy zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Zasady obsługi zamykania sprawy.</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Nowy: zestaw zbierania elektronicznych materiałów dowodowych</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Ustawienia archiwum zachowywania</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Lista do przechowywania ustawień archiwów miejscowych.</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>Nie można uzyskać źródła dla typu źródła {0} i filtru {1}</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Administracja dzierżawcza zarządzania rekordami</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Administracja dzierżawcza zarządzania rekordami.</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Zszywanie funkcji administracji dzierżawczej zarządzania rekordami</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Zszywanie funkcji administracji dzierżawczej zarządzania rekordami.</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Konfiguruj połączenia funkcji Wyślij do</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Wystąpił błąd podczas pobierania</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>BRAK</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>Błędy sprawy {0}</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>W tym zestawie zbierania elektronicznych materiałów dowodowych nie ma żadnych źródeł. Aby dodać źródła, kliknij pozycję „{0}”.</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>Ta kwerenda nie zawiera źródeł tego typu. Aby dodać źródła, kliknij pozycję „{0}”.</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Włączone</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Wyłączone</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Eksport: pobieranie</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Zamknij</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Aktualizuj statystyki</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Opcje</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Wybierz nazwę i opcje eksportu. Operacje eksportu obejmują plik ładowania modelu EDRM (Electronic Data Reference Model).</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Pobierz wyniki</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Pobierz raport</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>Eksportowanie pobierania</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Czy chcesz teraz pobrać wszystkie wyniki wyszukiwania lub raport z listą wyników wyszukiwania, czy zamknąć i pobrać później?</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Wybieranie kwerend</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Wybieranie kwerend, które mają być eksportowane.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Błąd</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Szukaj</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Ponów próbę umieszczenia w archiwum</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Rozpoznaj źródło</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>Adres URL lub adres tego źródła został zmieniony. Kliknij tutaj, aby zaktualizować nowy adres URL lub adres.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>To pole jest wymagane</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} — kopia</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} — kopia ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Ta lokalizacja jest elementem głównym aplikacji sieci Web lub ścieżki zarządzanej i zawiera wiele zbiorów witryn. Zostanie zachowany tylko główny zbiór witryn, ale wyniki wyszukiwania i elementy eksportowane będą zawierać wszystkie zbiory witryn w tej ścieżce.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>Lokalizacja jest elementem głównym aplikacji sieci Web lub ścieżką zarządzaną i zawiera wiele zbiorów witryn. Zostanie zachowany tylko główny zbiór witryn, ale wyniki wyszukiwania i operacje eksportu będą uwzględniać wszystkie zbiory witryn w tej ścieżce. Wybierz przycisk OK, aby zaakceptować lokalizację, lub przycisk Anuluj, aby zmienić lokalizację.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>Kliknij, aby {0}utworzyć{1} nową sprawę</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Zmodyfikowano {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Sprawy</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>Ten zestaw zbierania elektronicznych materiałów dowodowych zawiera zbyt wiele źródeł (limit: 100 źródeł programu SharePoint lub 1000 skrzynek pocztowych). Aby uzyskać statystykę i wyniki, kliknij pozycję Dodawanie źródeł i zarządzanie nimi i zmniejsz liczbę źródeł.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Ta kwerenda zawiera zbyt wiele źródeł (limit: 100 źródeł programu SharePoint lub 1000 skrzynek pocztowych). Aby uzyskać wyniki, kliknij pozycję Modyfikuj zakres kwerendy i zawęź kwerendę wyszukiwania.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Ten eksport zawiera zbyt wiele źródeł (limit: 100 źródeł programu SharePoint lub 1000 skrzynek pocztowych). Aby wykonać tę operację eksportowania, zmniejsz liczbę źródeł w skojarzonych kwerendach lub zaznacz mniejszą liczbę kwerend.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Analiza słowotwórcza</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Deduplikacja</value>
+  </data>
+</root>

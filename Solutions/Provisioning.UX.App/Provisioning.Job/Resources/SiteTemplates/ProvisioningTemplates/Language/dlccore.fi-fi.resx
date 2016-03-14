@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4442.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Pidon tila</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>Poistettu käytännöstä</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Pidon tila</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Aktiivinen</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Odottaa vapautusta</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>Pidossa</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Minun uloskuittaamani tai muokkaamani</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Tämän WWW-osan avulla voit näyttää tiedostot, joita valittu käyttäjä on muokannut ja jotka hän on kuitannut ulos.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Minun muokkaamani</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Tämän verkko-osan avulla voit näyttää tiedostot, joita valittu käyttäjä on muokannut.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Tämän WWW-osan avulla voit näyttää tehtävät, jotka on määritetty valitulle käyttäjälle.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Omat tehtävät</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>Parhaan luokituksen tiedostot</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Tällä verkko-osalla voit tuoda näyttöön tiedostot, joilla on tämän sivuston paras luokitus.</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>Uusimmat tiedostot</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Tällä verkko-osalla voit tuoda näyttöön tämän sivuston 10 uusinta tiedostoa</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Tiedostot</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Tiedostot</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Tiedostokeskus</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Tiedostokeskuksen laajennukset</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Sivustossa siirtyminen puunäkymän avulla.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Tervetuloa käyttämään tiedostokeskusta</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Tämän sivuston avulla voit luoda, käsitellä ja tallentaa tiedostoja. Tästä sivustosta voi tehdä työryhmän yhteisen tiedostosäilön tai useiden työryhmien välisen tiedostotietokannan.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Osallistujat ja vierailijat</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Sivuston valvojat</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Lataa tiedosto</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Sivustokokoelman käytännöt</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>Sisältötyypin käytäntömallit</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Sivustokokoelman valvonta-asetukset</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Määritä tietojen hallintakäytäntö</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Tarkastele tietojen hallintakäytännön käyttöraportteja</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Tietojen hallintakäytännön asetukset</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>Säilytys</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>Sisällön automaattinen ajoitus käsittelyä varten ja määräpäivän saavuttaneen sisällön säilytystoiminnon suorittaminen.</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Ajoita sisällön hallinta- ja hävitystapa määrittämällä säilytysvaiheiden jakso. Jos määrität useita vaiheita, kukin vaihe tapahtuu peräkkäin tällä sivulla esitetyssä järjestyksessä. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Huomautus:&lt;/b&gt; Jos kirjasto- ja kansiopohjainen säilytystoiminto on aktiivinen, luettelon ylläpitäjät voivat ohittaa sisältötyyppikäytäntöjä omilla säilytysaikatauluilla. Estä tämä poistamalla toiminto käytöstä sivustokokoelmassa.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>Valvonta</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Kirjaa käyttäjien tiedostoille ja luettelokohteille tekemät toimet valvontalokiin.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Määritä tapahtumat, joiden osalta tämän käytännön piiriin kuuluvia tiedostoja ja kohteita valvotaan.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>Viivakoodit</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Luo yksilölliset tunnisteet, jotka voidaan upottaa Microsoft Office -tiedostoihin. Viivakoodien avulla tiedostoja voidaan myös hakea.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Määrittää viivakoodin kullekin tiedostolle tai kohteelle. Vaihtoehtoisesti Microsoft Office -sovellukset voivat edellyttää, että käyttäjät lisäävät nämä viivakoodit tiedostoihin.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Viivakoodi</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Viivakoodin arvo</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>Tälle kohteelle määritetty viivakoodi.</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>Tälle kohteelle määritetyn viivakoodin arvo.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>Selitteet</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Luo selitteitä, joita voidaan lisätä Microsoft Office -tiedostoihin, kun tiedoston ominaisuudet tai muut tärkeät tiedot halutaan sisällyttää tulosteisiin. Tiedostoja voidaan myös hakea selitteiden perusteella.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>Voit lisätä tiedostoon selitteen varmistaaksesi, että tiedostoon sisällytetään tärkeät tiedot, kun se tulostetaan. Määritä selite kirjoittamalla haluamasi teksti Selitteen muoto -ruutuun. Voit käyttää mitä tahansa kiinteää tekstiä tai tiedoston ominaisuuksien yhdistelmää lukuun ottamatta laskettuja tai sisäänrakennettuja ominaisuuksia, esimerkiksi GUID- tai CreatedBy-tunnusta. Voit lisätä selitteeseen uusia rivejä merkkijonolla \n.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Selite</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Tallentaa selitteen nykyisen arvon.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1 - 1995 (Code 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>Luo ANSI/AIM BC1-1995 (Code 39) -standardin mukaisia viivakoodeja.</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Tietuekeskuksen vanhenemistapahtuma</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Määrittää tietuekeskuspalvelimeen lähetetyt hylätyt tiedostot vanhentuneiksi.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Poista tietue ja lähetystiedot</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Poistaa tietuekeskukseen lähetetyt tietueet ja kaikki niihin liittyvät ominaisuudet sekä alkuperäiseen lähetykseen sisältyneet tapahtumahistoriatiedot.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Käännöstiedosto</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Lähdetiedosto</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Lähdetiedostoversio</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Käännöksen tila</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Jos tämä tiedosto on käännös, määritä, mitä lähdetiedoston versiota se vastaa. Tämä tieto määritetään automaattisesti työnkulun valmistumisen yhteydessä, jos käytät Käännöksenhallinta-työnkulkua käännöksen hallitsemiseen.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Jos tämä tiedosto on käännös, määritä sen käännöstila. Tämä tieto määritetään automaattisesti työnkulun valmistumisen yhteydessä, jos käytät Käännöksenhallinta-työnkulkua käännöksen hallitsemiseen.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Ei aloitettu</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>Keskeneräinen</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Valmis</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>Peruutettu</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Edellyttää päivityksiä</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Lähdetiedostot</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Kielet ja kääntäjät</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Lähdekieli</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Kohdekieli</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Kääntäjä</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Kielet</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Pito ja eDiscovery</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Pito ja eDiscovery</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Pito</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Pito</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Tätä toimintoa käytetään seuraamaan ulkoisia toimintoja, kuten oikeusjuttuja, tutkimuksia tai auditointeja, jotka vaativat tiedostojen aseman jäädyttämistä.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Pitojen hallinta</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(TEHTÄVÄ) Pitojen hallinta</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>Etsi sisältöä ja aseta se pitoon</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>Etsi sisältöä ja aseta se pitoon</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Pitoraportit</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Pitoraportit</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Pidot</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Pidot</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Pidot</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Tällä luettelolla voit seurata ulkoisia toimintoja, kuten oikeusjuttuja, tutkimuksia tai auditointeja, jotka vaativat kohteiden aseman jäädyttämistä. Kohteen asettaminen ainakin yhteen pitoon säilyttää kohteen ja jäädyttää sen aseman, kunnes kohde ei ole enää yhdessäkään pidossa.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Pitoraportit</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Tämä kirjasto sisältää raportteja kaikista tämän sivuston pidoista. Kussakin raportissa on tietoja esimerkiksi pidossa olevista kohteista ja suoritetuista hakukyselyistä.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Aseta etsintäkyselyt pitoon</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Hallinta</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Kuvaus</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Pidon tila</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>Sivuston URL-osoite</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Pidot</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>Pidon URL-osoite</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Ryhmitä pitojen mukaan</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Raportointi</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Luo raportteja Microsoft Sharepoint Foundationin sisältämistä tiedoista.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Valvontalokiraportit</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>Näytä työnkulkuraportit</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Suosiotrendit</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Suosiotrendit</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Suosio- ja hakuraportit</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>Suosituimmat kohteet</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Raportoinnin metatiedot</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>Tämän sivuston ja kaikkien sen alaisten sivustojen käytettävissä olevat raporttityypit tallentuvat raporttivalikoimaan.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Raportointimallit</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Raporttimallitiedostokirjaston avulla voit tallentaa raporttimallivalikoiman käyttämiä tiedostoja.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Kirjasto- ja kansiopohjainen säilytys</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Sallii luettelon ylläpitäjien ohittaa sisältötyypin säilytysaikatauluja ja määrittää aikatauluja kirjastoille ja kansioille.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Tietueiden hallinta</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Lisää tietueiden hallinnan ja tietojen hallinnan käytäntöominaisuudet Microsoft SharePoint Foundationiin.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Säilyttämisluettelo</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Luettelomalli, jolla luotiin palautusluettelo.</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>eDiscovery-säilyttämisluettelomalli</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Luettelomalli, jolla luotiin palautusluettelo.</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Etsintä ja käsittely</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Valmistelee etsinnän ja käsittelyn ajastintyöt.</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Tietuekeskuksen sivusto</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Tervetuloa käyttämään tietuekeskusta</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Tämän sivuston avulla voit lähettää ja etsiä tärkeitä tiedostoja, jotka tulee tallentaa pitkäaikaista arkistointia varten. Lähetetyt tietueet sijoitetaan automaattisesti oikeaan kirjastoon ja kansioon täyttämiesi ominaisuuksien mukaisesti.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Lähetä tietue</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Omat lähettämistä odottavat tietueet</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Tämän WWW-osan avulla voit opettaa tietuekeskuksen vierailijoille tietueiden hallintaa ja organisaation yhteensopivuutta.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Lisää tietoja tietueiden hallinta-aiheista, kuten:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Lisää linkkejä muihin organisaation yhteensopivuussivustoihin, kuten:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>Tietueen määritelmä organisaatiossasi</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>Mitä tietueelle tapahtuu, kun se on lähetetty tietuekeskukseen</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Toimet, joilla käyttäjät voivat noudattaa organisaation käytäntöä</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Organisaation yhteensopivuuskoulutussivusto</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> Sivusto, joka liittyy organisaation säilytyskäytäntöihin</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> Kunkin osaston tietueiden ylläpitoyhteystietojen luettelo</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Lähetä tietueita</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Tervetuloa käyttämään tiedostokeskusta.</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Tervetuloa käyttämään uutta tiedostokeskusta. Tämän sivuston avulla voit hallita yrityksesi tiedostoja keskitetysti.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Hallitse säilytysaikataulua</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Kaikkien kansioiden aloituskohta vanhentumisaikataulun hallintaan</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Yhteensopivuustiedot</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Työkalurivin aloituskohta, jolla voidaan tarkastella säilytystä ja muita yhteensopivuustietoja kohteen elinkaaren ajan</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Luo tiedostosuunnitelmaraportti</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Tiedostotunnistepalvelu</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>Määrittää sivustokokoelman tiedostoille tunnisteet, joita voidaan käyttää haettaessa kohteita niiden nykyisestä sijainnista riippumatta.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Tiedostotunnisteasetukset</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Hallitse tämän sivustokokoelman tiedostotunnisteiden asetuksia</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Etsi tiedostotunnisteen mukaan</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Etsii tiedoston tiedostotunnisteen mukaan.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Tiedostotunnisteen arvo</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>Tälle kohteelle määritetyn tiedostotunnisteen arvo.</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>Tiedostotunniste</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Tämän tiedoston pysyvä linkki.</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Latauskirjasto</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>Kun tähän kirjastoon ladattujen tiedostojen ominaisuudet on määritetty, tiedostot siirretään automaattisesti oikeaan kirjastoon tai kansioon sivuston omistajan luomien sääntöjen mukaan.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>Sisällönjärjestämisen säännöt</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Tämän luettelon avulla voit luoda suunnitelman siitä, miten tämän sivuston sisältö järjestellään. Luo säännöt varmistamaan, että tähän sivustoon lähetetyt tiedostot lähetetään oikeaan sijaintiin ja että niillä on oikeat ominaisuudet.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Sääntö</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Luo sääntö, joka siirtää sivustoon lähetetyn sisällön oikeaan kirjastoon tai kansioon.</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>Sisällönjärjestäminen</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Luo metatietopohjaiset säännöt, jotka siirtävät sivustoon lähetetyn sisällön oikeaan kirjastoon tai kansioon.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Tiedostoreititysresurssit</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Varaa resurssit, joita tarvitaan tiedostojen reitittämiseen tämän sivustokokoelman sivustoihin.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Tietueresurssit</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Varaa resurssit, joita tarvitaan tietueiden tai pitojen luomiseen tämän sivustokokoelman sivustoihin.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Paikallaan tapahtuva tietueiden käsittely</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Ota paikallaan olevien tietueiden määritys ja määrittely käyttöön.</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Tiedoston ja tietueen hallintasarakkeet</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>Sisällönjärjestämisen sisältötyypit</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Prioriteetti</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Aktiivinen</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Säännön nimi</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Kuvaus</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Lähetyksen sisältötyyppi</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Lähetyksen sisältötyyppi (sisäinen)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>Ehdon XML</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Ehdoissa käytetyt ominaisuudet</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Tunnukset</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Kohdekirjasto</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Kohdekansio</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Kohdepolku</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>Kohdesivuston URL-osoite</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Automaattisen kansion luonnin ominaisuus</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Kansion automaattisen määrityksen tiedot</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Mukautettu reititin</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Reitti ulkoiseen sijaintiin</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Alkuperäiset ominaisuudet</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>Aihe</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Lähettäjä</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Vastaanottaja</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>Lähettäjä</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>Kopio</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>Piilokopio</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Lähetetty</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Vastaanotettu</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>Sähköpostin lähetyssarakkeet</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>Sähköpostin lähettäminen</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Lähetetyt sähköpostitietueet</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Reititin tallentaa vastaanotetut sähköpostitietueet tilapäisesti tähän luetteloon</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Tässä sisältötyypissä on sarakkeita, jotka vastaavat tavallisia ominaisuuksia, jotka lähetetään, kun sähköpostiviesti lähetetään sisällönjärjestämiseen.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>On lukittu muokattavaksi</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Pidon ja tietueen tila</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Määritelty tietue</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>Vapauta käytännöstä</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Vanhenemispäivämäärä</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Alkuperäinen vanhenemispäivämäärä</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Ydintiedoston määritetyt sarakkeet</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Kuvaus</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>Tiedostojoukon kuvaus</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Tiedostojoukot</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Tarjoaa sisältötyypit, joita tarvitaan tiedostojoukkojen luomiseen ja käyttämiseen. Luo tiedostojoukko, kun haluat hallita useita tiedostoja yhtenä työtuotteena.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Tiedostojoukkojen metatietojen synkronointi</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Tarjoaa infrastruktuurin, jolla voidaan synkronoida tiedostojoukkojen metatiedot.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Tiedostojoukko</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Tiedostojoukko-sisältötyypit</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Luo tiedostojoukko, kun haluat hallita useita tiedostoja yhtenä työtuotteena.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Näytä kotisivu</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Näytä tämän tiedostojoukon kotisivu.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Tiedostojoukon asetukset</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Lataa kopio</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Lataa tiedostojoukon ja sen nykyisen sisällön kopio</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Lähetä toiseen sijaintiin</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Lähetä tämä tiedostojoukko ja sen nykyinen sisältö toiseen sijaintiin</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Sieppaa versio</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Sieppaa tiedostojoukon nykyisen sisällön versio</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Tiedostojoukon versiohistoria</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Tarkastele tiedostojoukon versiohistoriaa</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Tiedostojoukon ominaisuudet</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Näyttää tiedostojoukon ominaisuudet.</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Tiedostojoukon sisältö</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Näyttää tiedostojoukon sisällön.</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Sivustokäytäntö</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Sallii sivuston sivustokokoelman järjestelmänvalvojien määrittää sivustoa ja koko sen sisältöä koskevan säilytysaikataulun.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Projektikäytäntö</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Projektikäytäntömääritelmien säilön sisältölaji</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Sivustokäytännöt</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Sivustokäytännöt määrittävät sivuston ja sen sisällön hallinta- ja hävitystavat. Sivustokokoelmat voivat jakaa nämä tavat sisältötyypin julkaisumekanismilla.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Sivuston sulkeminen ja poistaminen</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Näytä tässä sivustossa käytetty tietojen hallintakäytäntö tai muuta sitä sekä määritä päivämäärät, jotka ohjaavat sivuston elinkaaritoimintoja.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Projektikäytännön kohdeluettelo</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>Projektiperusteisen säilytyksen luoma luettelo, johon projektikäytännön kohteet tallennetaan.</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Video- ja monimuotosisältö</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Sisältää kirjastoja, sisältölajeja ja verkko-osia monimuotosisällön, kuten kuvien, äänileikkeiden ja videoiden, tallentamiseen, hallitsemiseen ja katsomiseen.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Videokuvan käsittely- ja toistoasetukset</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Video</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Lataa tai linkitä videoon.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Kuvaus</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>Videon yhteenveto</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Omistaja</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>Videon omistaja</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Pikkukuvan aikaindeksi</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Oletuskoodaus</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Oletuskoodauksen käyttäjän ohitus</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Ulkoinen linkki</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Liittämiskoodi</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>Näytä latauslinkki</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Määrittää, näkyykö painike sillä videon toisto-ohjelman sivulla, jolla käyttäjä voi ladata toistettavan videon.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Näytä liittämislinkki</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Määrittää, näkyykö painike siinä videon toisto-ohjelmassa, jossa käyttäjä voi hakea toistettavan videon liittämiskoodin.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Tietoja käännöksistä</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Videon henkilöt</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>Videossa näkyvät henkilöt.</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Metatietosiirtyminen ja -suodatus</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Antaa kullekin sivuston luettelolle asetussivun, jolla voidaan määrittää luettelo käyttämään metatietopuunäkymän hierarkioita ja suodatinohjausobjekteja, joilla voit parantaa sisällytettyjen kohteiden siirtymistä ja suodattamista.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Metatietojen siirtymisasetukset</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Sijaintikohtaiset näkymäasetukset</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>Muodosta yhteys Officeen -valintanauhan ohjausobjektit</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Lisää valintanauhakäyttöliittymään järjestelmäliittymiä, joilla voi luoda kirjastopikakuvakkeita käyttäjän SharePoint-sivustoluetteloon, jos käyttäjä on asentanut Officen uuden version. Office tallentaa aika ajoin välimuistiin mallit, jotka ovat käytettävissä näissä kirjastoissa käyttäjän paikallisessa tietokoneessa.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Lisää painikkeen Kirjasto/toiminnot-välilehteen.</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Yhdistä Officeen</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Yhdistä Officeen</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Yhdistä Officeen</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Lisää pikakuvakkeisiin, jotka näkyvät luotaessa, avattaessa ja tallennettaessa tiedostoja sellaisissa Microsoft Office -sovelluksissa kuin Word, Excel ja PowerPoint.</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>Lisää SharePoint-sivustoihin</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>Lisää SharePoint-sivustoihin</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Lisää tämän kirjaston pikakuvake Microsoft Officeen.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>Poista SharePoint-sivustoista</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>Poista SharePoint-sivustoista</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Poista tämä kirjasto Microsoft Officen pikakuvakkeiden luettelosta.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>SharePoint-sivustojen hallinta</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>SharePoint-sivustojen hallinta</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Muokkaa Microsoft Officen pikakuvakkeiden luetteloa.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>Sähköpostin integroiminen sisällönjärjestämisen kanssa</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Ota käyttöön sivuston sisällönjärjestäminen, jonka avulla voit hyväksyä ja järjestää sähköpostiviestejä. Tätä ominaisuutta tulisi käyttää vain erittäin hallitussa säilössä, kuten tietuekeskuksessa.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>Sisällönjärjestämisen asetukset</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>Sisällönjärjestämisen säännöt</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Tietueen määrittelyasetukset</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Tietuekirjasto</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Luo tiedostokirjasto tärkeiden liiketoimintatietueiden tallentamiseen.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Lataa valmiit tiedostot tähän kirjastoon. Tähän kirjastoon lisätyt tiedostot määritellään automaattisesti tietueiksi.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Tietuekeskuksen määritykset</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Määrittää sivuston tietuekeskukseksi.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Hallitse tietuekeskusta</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Hallitse tämän sivuston tietueiden säilytysasetuksia.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Määritystehtävät ja tiedostosuunnitelman luominen</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Määritä tietuekeskussivusto näiden ohjeiden avulla.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>Valmistele tämä sivusto vastaanottamaan tietueita määrittämällä se vastaamaan organisaation tiedostosuunnitelmaa:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Huomautus:&lt;/b&gt; Tätä tietuekeskusta ei voitu määrittää, koska jotkin sivustokokoelmatoiminnot eivät ole käytössä. Ota yhteyttä sivustokokoelman järjestelmänvalvojaan, jos sinulla ei ole seuraavien ongelmien korjaamiseen tarvittavia käyttöoikeuksia:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Saapuvia tiedostoja ei voi merkitä tietueiksi. Aktivoi Paikallaan-tietueet-toiminto sivustokokoelman toimintovalikoimassa.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Saapuville tiedostoille ei voi määrittää tiedostotunnistetta. Ota tiedostotunnistepalvelu käyttöön sivustokokoelman toimintovalikoimassa.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Vaihe 1:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Vaihe 2:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Vaihe 3:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>Vaihe 4:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>Luo sisältötyyppejä</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Määritä tietueiden tyypit ja kunkin tyypin ominaisuudet.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Luo tietuekirjastot</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Muodosta tietuekirjastojen ja -kansioiden hierarkia ja määritä kullekin säilytysaikataulu.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>Luo sisällönjärjestämisen sääntöjä</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Määritä säännöt, jotka reitittävät lähetetyt tietueet oikeaan kansioon.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Suunnittele sivuston kotisivu</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Selitä tiedostosuunnitelma ja tietueiden hallintakäytännöt käyttäjille.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>Kun olet valmis, voit poistaa tämän WWW-osan.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Tavalliset tietueidenhallintatehtävät</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Luo uusi tietuekirjasto</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Luo uusi kirjasto tietueiden tallentamista varten.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>Hallitse sisältöä ja rakennetta</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Järjestele sivuston kansiorakenne uudelleen hierarkianhallintatyökalulla.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>Luo sisällönjärjestämisen sääntöjä</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Hallitse, mihin lähetetyt tietueet tallennetaan.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Etsi tietueita ja aseta ne pitoon</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Hae tietueita, jotka tulee säilyttää oikeusjutun vuoksi.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Luo tiedostosuunnitelmaraportti</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Näytä laskentataulukko, joka sisältää tietuekirjaston rakenteen ja säilytysaikataulut.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Luo valvontaraportti</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Avaa tietueisiin kohdistuneiden tapahtumien historia (edellyttää sivustokokoelman ylläpitäjän oikeuksia).</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>Tarkastele saatavilla olevia valvontalokiraportteja, jotka sisältävät kattavia tapahtumatietoja sisällön käytöstä, suojauksesta, käytännöistä ja muista käytetyistä suodattimista.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Tarkista suosiotrendiraportit, jotka sisältävät tietoja siitä, miten ja mitä sisältöä käytetään.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Määritä valvonta, joka seuraa käyttäjien toimia kaikissa tämän sivustokokoelman sivustoissa.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Hallitse tietojen hallintakäytäntöjä, jotka tarjoavat käytäntömääritelmiä, selitteitä, valvontatoimia, vanhentumistoimia ja viivakoodeja kaikkiin tämän sivustokokoelman sivustoihin.</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Tietueen määrittelyasetukset</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Sarakkeen oletusarvoasetukset</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Muuta sarakkeiden oletusarvoja</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Muuta tämän kansion sarakkeen oletusarvot.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Määrittele tietue</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Määrittele kohde tietueeksi, mikä voi lisätä sille järjestelmäasetuksiin perustuvia rajoituksia ja tietuekohtaisia käytäntöjä.</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Peruuta tietueeksi määrittely</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Poista kohteesta tietueeksi määrittely, mikä poistaa tietueen rajoitukset ja käytännöt.</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Määritä tämän sijainnin näkymät</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Muuta tämän kansion käytettävissä olevia näkymiä.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Tiedostojoukko</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Hallinta</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Toiminnot</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Muokkaa ominaisuuksia</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Muokkaa tämän tiedostojoukon ominaisuuksia.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Lataa kopio</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Lataa tämän tiedostojoukon kopio.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>Oikeudet</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Lisää, muuta tai poista tämän tiedostojoukon oikeuksia Oikeudet-sivussa.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Poista</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Kyselyn hallinta</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Uusi</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Hallinta</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Kysely  </value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Kopioi kysely</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Kopioi kysely</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Luo valitusta kohteesta kopio.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>Päivitä tilastotiedot</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>Päivitä tilastotiedot</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>Päivitä tilastotiedot suorittamalla valitut kyselyt.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Vienti</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Vienti</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Vie valittujen kyselyjen tulokset.</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Poista tämä tiedostojoukko. Järjestelmä poistaa kaikki tämän tiedostojoukon tiedostot.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Jaa</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>Lähetä linkki sähköpostitse</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Lähetä tiedostojoukon linkki sähköpostitse.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Lähetä</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Siirry Lähetä toiseen sijaintiin -sivuun, jos haluat siirtää tai kopioida tämän tiedostojoukon toiseen sijaintiin.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Hallitse</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Tallenna versio</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Tallenna tiedostojoukon nykyisten ominaisuuksien ja tiedostojen versio.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Versiohistoria</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Tarkastele ja ylläpidä tiedostojoukon versiohistoriaa.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>Työnkulut</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Siirry Työnkulut-sivuun, jos haluat käynnistää tai hallita tähän tiedostojoukkoon liittyviä työnkulkuja.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Videokäännösten hallinta</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Hallitse tämän videon käännöksiä.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Metatietojen siirtymisnauhan mukautettu toiminto.</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Päivitä</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Päivitä lähteen tila</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Päivittää valittujen lähteiden tilan.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Vientivirheet</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Muodostaa vientiluettelon kaikista virheitä sisältävistä kohteista, jotta niistä saataisiin raportti tai jotta ne voitaisiin ladata.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Lähdetoiminnot</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Haetaan</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Tämä voi kestää hetken...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>Osuvuus</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Päivämäärä (vanhin)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Päivämäärä (uusin)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Haku</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Kysely tallennettu</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>eDiscovery-portaali</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>Luo ja hallitse eDiscovery-tapauksia.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>eDiscovery-tapausominaisuus</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>Valmistelee eDiscovery-tapauksen tarvitsemat resurssit.</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Nimi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Pitotoiminnon tila</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Säilyttäminen suodatettu</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Lokalisoimaton pitotoiminnon tila</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Pitotoiminto</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Pitotoiminnon historia</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Edellinen indeksointiaika</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Indeksointivirheet - kohteet</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Indeksointivirheet - SharePoint-sijainnit</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Indeksoinnin virheprosentti</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Lähteet</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Lisää uusi lähde.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Vienti</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Lisää uusi vienti.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Kysely</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Luo uusi tallennettu haku.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Valvoja</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Lisää uusi valvoja.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Postilaatikko</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Lisää uusi postilaatikko.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Sijainti</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Lisää uusi sijainti.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>eDiscovery-joukko</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Luo uusi eDiscovery-joukko.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Säilytetty kohde</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Lisää uusi säilytetty kohde.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>eDiscovery-sisältölajit</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Kohteet</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Koko (Mt)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Kyselyt</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>Sivuston tunnus</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Lähdetyyppi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Raw-lähdetyyppi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>Verkkotunnus</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>Liittoutumistunnus</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>Ulkoinen liittoutumistunnus</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Kaksoiskappaleiden poistaminen</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Poista kaksoiskappaleet Exchange-sisällöstä</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Sisältöoikeuksien hallinnan suojauksen poistaminen</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Poista RMS-palveluiden (oikeuksienhallintapalveluiden) suojaus ja salaus Exchange-tiedoista</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Sisällytetyt versiot</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>Sisällytä SharePoint-tiedostoversiot</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Kohteet, joissa ei voi suorittaa hakuja</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Sisällytä salatut kohteet tai kohteet, joiden muotoa ei tunnisteta</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Tila</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>eDiscoveryn ominaisuudet</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Kysely  </value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Tekijä</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Aloituspäivämäärä</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Lopetuspäivämäärä</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Toimialueen suodatin (vain Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>SharePoint-tarkennukset</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Exchange-tarkennukset</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Lähteen hallintatyyppi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>Pidon tunnus</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>Toiminnon tunnus</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Toimintotyyppi</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>Lähteen tunnus</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>Näytön tunnus</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Lähteet</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Lähderyhmät</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Valvojat</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Käyttäjä</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Huomautukset</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Lähde</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Säilyttämisen versionumero</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Säilyttämisen alkuperäinen sijainti</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>Säilyttämisen alkuperäinen luettelotunnus</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Säilyttämisen alkuperäiset metatiedot</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Säilyttämispäivämäärä</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Valvojat-luettelotyyppi</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>eDiscovery-tapauksessa käytettävä valvojien luettelotyyppi.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Lähteet-luettelotyyppi</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>Lähteiden luettelotyyppi eDiscovery-tapauksessa.</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Kyselyt-luettelotyyppi</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>Tallennettujen hakujen luettelotyyppi eDiscovery-tapauksessa.</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Viennit-luettelotyyppi</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>Vientien luettelotyyppi eDiscovery-tapauksessa.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>eDiscovery-joukkojen luettelotyyppi</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>Etsintäjoukkojen luettelotyyppi eDiscovery-tapauksessa.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Lähde-esiintymät-luettelotyyppi</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>Lähde-esiintymien luettelotyyppi eDiscovery-tapauksessa.</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>eDiscovery-portaalisivuston malli</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Kyselyt</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Voit pienentää ja analysoida hakutuloksia kyselyiden avulla.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Lähteet</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Seuraa tapaukseen liittyvien postilaatikoiden ja sijaintien tilaa.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>eDiscovery-joukot</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Luo ja hallitse sisältöryhmiä, joita voi suodattaa ja asettaa pitoon.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Vienti: uusi kohde</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Viennit</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Viennit-luettelolla voit hallita viedyn eDiscovery-sisällön lataamista.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Lähde-esiintymät</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Seuraa tapauksien tilaa.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Valvojat</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Lisää tapaukseen käyttäjiä, jotka voivat liittyä lähteisiin, kuten postilaatikoihin ja sijainteihin.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Pitotoiminnon tila</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Viennin tila</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>Latausta ei ole aloitettu</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>Lataus aloitettu</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>Lataus valmis</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>Vienti epäonnistui</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>Pidossa</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>Pitotoiminnossa suodattimen kanssa</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Aikakatkaistu</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Ei voi asettaa pitoon</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Ei ole pidossa</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>Käsittelee</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Osittainen</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Epäonnistui</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>Tervetuloa eDiscovery-keskukseen</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>Tässä sivustossa voit luoda, hallita ja työstää eDiscovery-tapauksia. Voit hallita Exchange-postilaatikoiden, SharePoint-sivustojen ja muiden sisältölähteiden tunnistamista ja paikallaan pitoa. Voit myös tunnistaa haluamaasi sisältöä luomalla ja hallitsemalla hakukyselyitä sekä viedä hakutuloksia.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Aloittaminen</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Myönnä juridisille käyttäjille oikeudet käyttää kaikkea SharePoint-käyttöönoton sisältöä. On suositeltava luoda käyttöoikeusryhmä, joka sisältää juridisen ryhmän jäsenet.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>Jotta Exchange-postilaatikot olisivat etsittävissä, varmista, että järjestelmänvalvoja on asentanut Exchange-verkkopalvelujen hallitun asiakkaan kaikkiin SharePoint-palvelimiin. Pyydä myös, että järjestelmänvalvoja määrittää Exchangen ja SharePointin välisen todennuksen. </value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Myönnä juridisen ryhmän käyttöoikeusryhmälle käyttäjäkäytäntöoikeudet kaikkiin niihin SharePoint-Web-sovelluksiin, joiden sisällön on oltava etsittävissä.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Myönnä juridisille käyttäjille niiden Exchange-postilaatikoiden eDiscovery-oikeudet, joissa eDiscovery-toimia on suoritettava.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Pito paikallaan, haku ja vienti</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>Pidoilla paikallaan voit määrittää paikallaan pidettävät SharePoint-sivustot ja postilaatikot. Muokattu tai poistettu sisältö tallennetaan paikalla, kunnes se on vietävä.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>Paikallaan tehtävässä eDiscovery-haussa voit tehdä hakuja niin SharePoint-sivustoissa, jaetuissa tiedostoresursseissa kuin Exchange-postilaatikoissakin. Voit kohdentaa tulokset tarvitsemaasi sisältöön käyttämällä lähivastinehakua, totuusarvoja ja tarkennuksia. Koska haku tehdään paikallaan, tulokset ovat ajantasaisia aivan kuten tavallisessa Outlook Web Access- tai SharePoint-sivustohaussa.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>Kun olet tunnistanut tarvittavan sisällön, voit ladata sen paikalliselle kiintolevylle tai jaettuun tiedostoresurssiin siirrettävässä alkuperäisessä muodossa. Voit ladata kätevästi SharePoint-sivuja, tiedostoja, luetteloita ja Exchange-postilaatikon tietoja.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Tervetuloa käyttämään tapausta.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>Tapauksen avulla voit tunnistaa sisällön lähteitä, kuten postilaatikoita tai SharePoint-sivustoja, ja säilyttää tämän sisällön pitotoiminnossa. Kun olet tunnistanut sisällön lähteet, voit tehdä hakuja koko tässä sisällössä ja tunnistaa tällä tavoin haluamasi kohteet sekä viedä ne.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Luo uusi tapaus</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Lisää muu sijainti</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Lisää muu postilaatikko</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Tarkista sijainti</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Tarkista postilaatikko</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Selaa</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Lisää ja hallitse lähteitä)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Muokkaa kyselyaluetta)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Lähteet: muokkaa kohdetta</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Lähteet: uusi kohde</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Lisää ja hallitse lähteitä</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Sijainnit</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Määritä URL-osoitteet kirjoittamalla SharePoint-sivustot ja jaetut tiedostoresurssit, jotka indeksoidaan hakutoiminnolla. SharePoint-sivustolähteet sisältävät kaikki alisivustot. Jaetut tiedostoresurssilähteet sisältävät kaikki määritetyssä kansiossa olevat kansiot.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Postilaatikot</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Määritä Exchange-postilaatikot nimien ja sähköpostiosoitteiden avulla.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>OK</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>Yhteistyötä tekevät henkilöt</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Exchange-postilaatikko</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Jaettu tiedostoresurssi</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Tapahtuman sisältö</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Tapauksen koko sisältö</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Pitotoiminnon sisältö</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Kohteet:</value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Koko: </value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Vahvistettu</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Yhteys hakupalvelusovellukseen katkesi.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>Virhe vahvistettaessa lähdettä.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>Määritetty lähde on jo tapauksessa.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Tarkkaa vastinetta ei löytynyt. URL-osoite saattaa olla virheellinen, sinulla ei ole sijainnin käyttöoikeuksia tai hakutoiminto ei ole indeksoinut sijaintia.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Postilaatikkoa ei voitu vahvistaa. Postilaatikkoa ei ehkä ole luotu tai käyttöoikeustaso ei ole oikea.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>Sisältötyyppi</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Kyselyn lisäasetukset</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>Tässä kyselyssä ei ole lähteitä. Lisää lähteet siirtymällä takaisin kyselysivulle ja valitsemalla {0}.</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Kyselyyn perustuva pitotoiminto</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>Kun kyselyyn perustuva säilyttäminen on otettu käyttöön, säilytyskirjastoon tallennettu sisältö, joka ei vastaa mitään sivuston pitosuodatinta, vanhenee. Tätä ominaisuutta kannattaa yleensä käyttää arkistointisivustoissa, joissa on useita samanaikaisia pitoja.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} eDiscovery-joukko {1} ajoitti kaiken sisällön pidon.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} eDiscovery-joukon {1} koko sisältö on nyt pidossa.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} eDiscovery-joukon {1} pidon ajoitettu päivitys.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} Aloitettiin eDiscovery-joukon {1} pitotoiminnon päivitys.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} eDiscovery-joukko {1}, jossa on suodatin {2}, ajoitti pidon päivityksen.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} eDiscovery-joukon {1}, jossa on suodatin {2}, pidon päivitys aloitettiin.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} eDiscovery-joukko {1}, jossa suodatin {2}, ajoitti suodatetun alijoukon pidon.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} eDiscovery-joukon {1}, jossa on suodatin {2}, suodatettu alijoukko on nyt pidossa.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} eDiscovery-joukon {1} pito vapautettiin. Lähde on silti pidossa muita etsintäjoukkoja varten.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} eDiscovery-joukko {1} ajoitti koko sisällön pidon vapautuksen.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} eDiscovery-joukon {1} koko sisältö vapautettiin pidosta.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} Koko sisältö vapautettiin pitotoiminnosta, sillä eDiscovery-joukkoa ei enää ole.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} eDiscovery-joukon {1} lähteen asettaminen pitoon epäonnistui. Virhesanoma: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} eDiscovery-joukon {1} lähteen pidon vapautus epäonnistui. Virhesanoma: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>eDiscovery-valvontatapahtuma</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Tapahtuman sisältö</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Näyttää tapauksen sisällön.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Tapauksen sisällön verkko-osaa voi käyttää vain eDiscovery-tapaussivustoissa.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Tälle pakolliselle kentälle on määritettävä arvo.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">Tämä lähde on tällä hetkellä pidossa. Jotta lähteen voisi poistaa, kaikki pidot on ensin vapautettava.</value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Pitotoiminto on otettu tällä hetkellä käyttöön eDiscovery-joukossa. Jotta eDiscovery-joukon voisi poistaa, pitotoiminto on vapautettava.</value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>Sivustoa ei ole</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>Sivuston osion tunnus ei vastaa pitotoiminnon osion tunnusta.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Koko</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Kohteet</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Yhteensä:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Kaksoiskappaleiden poistaminen</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>RMS-suojauksen poistaminen</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Sisällytettävät versiot</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Sisällytä kohteet, joissa ei voi hakea</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>Lataa</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Tulosraportti</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>Kohteiden arvioitu määrä ja koko ei sisällä versioita eikä kaksoiskappaleiden poistoa. Kyseisten asetusten valitseminen vaikuttaa viennin kokonaiskokoon.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Sulje tämä tapaus</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Avaa tämä tapaus</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Tapauksen sulkeminen</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Osoitetta vastaavia tuloksia ei löytynyt. Kirjoita uusi osoite tai yleisempi osoite.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Näyttönimi</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>Sähköpostiosoite</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Yhteensä arviolta</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Kohteiden määrä</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Kohteiden koko</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Kyselyt</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Pitotoiminto</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Vapauta pitotoiminto</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Päivitä pitotoiminto</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Viennin tila</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Lähteen tila</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Tapaus suljettiin {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>eDiscovery-joukot ovat edelleen pidossa. Vapauta kaikki pidot tai sulje tapaus, jos haluat poistaa sen.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>eDiscovery-tapauskäytäntö</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Tapauksen sulkemisen käsittelykäytäntö.</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Uusi: eDiscovery-joukko</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Palauttamisasetukset</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Pitotoimintoasetusten tallentamisluettelo.</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>Lähdetyypin {0} ja suodattimen {1} lähdettä ei voitu hakea</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Tietuehallinnan alihallinta</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Tietuehallinnan alihallinta.</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Tietuehallinnan alihallinnan liittäminen</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Tietuehallinnan alihallinnan liittäminen.</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Lähetysyhteyksien määrittäminen</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Virhe noudettaessa</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>Ei ole</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>Tapauksen {0} virheet</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>eDiscovery-joukolla ei ole lähteitä. Lisää lähteet valitsemalla {0}.</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>Kyselyllä ei ole tämän tyyppisiä lähteitä. Lisää lähteet valitsemalla {0}.</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Käytössä</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Pois käytöstä</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Vienti: lataa</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Sulje</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Päivitä tilastotiedot</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Asetukset</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Valitse nimi ja viennin asetukset. Vientiin sisältyy EDRM (Electronic Data Reference Model) -lataustiedosto.</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Lataa tulokset</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Latausraportti</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>Vie lataus</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Haluatko ladata nyt kaikki hakutulokset tai hakutulosluettelon sisältävän raportin vai sulkea ja ladata myöhemmin?</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Kyselyjen valitseminen</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Valitse kyselyt, jotka haluat viedä.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Virhe</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Haku</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Yritä pitoa uudelleen</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Korjaa lähde</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>Tämän lähteen URL-osoite tai osoite on muuttunut. Päivitä uusi URL-osoite tai osoite napsauttamalla tätä.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>Tämä on pakollinen kenttä.</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} - kopio</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} - kopio ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Tämä sijainti on verkkosovelluksen tai hallitun polun pääkansiossa ja se sisältää useita sivustokokoelmia. Vain pääkansion sivustokokoelma säilytetään, mutta hakutulokset ja viennit sisältävät kaikki tähän polkuun sisältyvät sivustokokoelmat.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>Sijainti on verkkosovelluksen pääkansio tai hallittu polku, ja se sisältää useita sivustokokoelmia. Vain pääsivustokokoelma säilytetään, mutta hakutulokset ja viennit sisältävät kaikki tähän polkuun sisältyvät sivustokokoelmat. Hyväksy sijainti valitsemalla OK tai vaihda sijainti peruuttamalla.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>{0}Luo{1} uusi tapaus napsauttamalla</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Muokattu {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Tapaukset</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>eDiscovery-joukossa on yli 1 000 postilaatikkoa (100 SharePoint-lähdettä tai 1 000 postilaatikkoa). Saat tilastotietoja ja tuloksia, kun pienennät postilaatikoiden määrää valitsemalla Lisää ja hallitse lähteitä.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Kysely sisältää yli 1 000 postilaatikkoa (100 SharePoint-lähdettä tai 1 000 postilaatikkoa) eikä sitä voi suorittaa. Saat tuloksia valitsemalla Muokkaa kyselyaluetta ja tarkentamalla hakukyselyä.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Vienti sisältää yli 1 000 postilaatikkoa (100 SharePoint-lähdettä tai 1 000 postilaatikkoa) eikä sitä voi luoda. Voit suorittaa viennin pienentämällä postilaatikoiden määrää liittyvissä kyselyissä tai valitsemalla vähemmän kyselyjä.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Perusmuodon määrittäminen</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Kaksoiskappaleen poistaminen</value>
+  </data>
+</root>

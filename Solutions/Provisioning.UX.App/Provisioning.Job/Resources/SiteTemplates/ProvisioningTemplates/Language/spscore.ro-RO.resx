@@ -1,0 +1,3631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4569.1502" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>Pagina de pornire</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>Server SharePoint nou!</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>Discuții căutare</value>
+  </data>
+  <data name="SetupMySite">
+    <value>Configurare Site-ul meu</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>Faceți clic pentru categorii</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>Faceți clic pentru site-uri de top</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>Faceți clic pentru hartă site</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>Categorii</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>Site-uri de top</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>Hartă site</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>Toate site-urile</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>Faceți clic pentru rezultate din toate site-urile</value>
+  </data>
+  <data name="PeopleTab">
+    <value>Persoane</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>Faceți clic pentru rezultate persoane</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>Discuții</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>Raportare utilizare SharePoint Server</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>Raportare utilizare</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>Căutare rapoarte de utilizare</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>Rapoarte de utilizare site</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>Rapoarte de utilizare colecție de site-uri</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>Bibliotecă de documente</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>Furnizează un loc pentru stocarea documentelor în această zonă.</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>Șablon profil date firmă</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>Bară de navigare de top SharePoint</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>Rapoarte</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>Tablouri de bord</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>Eșantion</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>Resurse</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>Conexiuni de date</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>Calendar de raport</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>Bibliotecă de referințe</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>Bibliotecă de rapoarte</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>Un loc unde aveți posibilitatea să creați și să gestionați cu ușurință pagini Web și documente pentru a urmări măsurători, obiective și informații domeniu de interes. </value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>Listă de stare</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>Un loc pentru a urmări și a afișa un set de obiective. Pictogramele colorate afișează gradul de realizare a obiectivelor.</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>Bibliotecă de documente pagină parte Web</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>Bibliotecă de documente cu șablon pagină parte Web.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>Bibliotecă de rapoarte</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>O bibliotecă de rapoarte furnizează asistență îmbunătățită pentru administrarea rapoartelor care afișează Indicatori de stare și registre de lucru Excel.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>Bibliotecă de referințe</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>O bibliotecă pentru informațiile care descriu cum se utilizează acest site.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>Calendar de raport</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>Acest calendar se utilizează pentru a depune evenimente legate de această zonă.</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>Conexiuni de date</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>Biblioteca de conexiuni de date facilitează partajarea fișierelor care permit utilizatorilor să realizeze conexiunea la sursele de date externe.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>Anunțuri</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>Lista anunțuri se utilizează pentru depunerea mesajelor legate de această zonă.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>Bun venit la Centrul de raportare</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>Centrul de raportare vă permite să creați, să distribuiți și să administrați informațiile de domeniu.</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>Galerie șabloane site</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>Indicatori eșantion</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>Indicatori de stare eșantion, afișați în mod implicit pe pagina de pornire a acestui Centru de raportare.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>Stimulente</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>Productivitate</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>Cheltuieli</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>Acesta este un indicator eșantion și se poate șterge în siguranță.</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>Centru de raportare</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>Utilizarea Centrului de raportare</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>Se utilizează pentru text formatat, tabele și imagini.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>Printre caracteristicile Centrului de raportare se numără:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;Indicatorii cheie de performanță&amp;lt;/A&amp;gt; (KPI) vă permit să comunicați scopuri și tendințe și să urmăriți progresul.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;Tablourile de bord&amp;lt;/A&amp;gt; vă permit să oferiți o explicație mai detaliată a informațiilor, utilizând registrele de lucru Excel și KPI. Filtrele tablourilor de bord facilitează selectarea unei game largi de informații destinate vizualizării. Pentru a crea tabloul propriu de bord, accesați vizualizarea &amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;Tablouri de bord&amp;lt;/A&amp;gt; din biblioteca de rapoarte și faceți clic pe „Nou”.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>Biblioteca &amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;Reports&amp;lt;/A&amp;gt; este menită să stocheze fișierele care conțin rapoarte și să permită accesul rapid la informații din perioadele de timp anterioare.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>Pentru a pregăti utilizarea acestui Centru de raportare, sunt sugerate următoarele acțiuni:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>Vizualizați &amp;lt;A &amp;gt;tabloul de bord&amp;lt;/A&amp;gt; și  &amp;lt;A&amp;gt;registrul de lucru&amp;lt;/A&amp;gt; eșantion pentru a înțelege unele dintre capacitățile acestui Centru de raportare</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>Dacă eșantioanele nu funcționează corect, întrebați un administrator pentru a vă asigura că Excel Services sunt activate și că acest Centru de raportare se află într-o locație de încredere</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>Dacă vă gândiți să utilizați Excel pentru a analiza informațiile din serverele de date existente, creați și încărcați fișiere conexiuni de date (ODC) în &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;Biblioteca de conexiuni de date&amp;lt;/A&amp;gt;. Dacă doriți ca utilizatorii să creeze noi Liste KPI, atunci adăugați-le în grupul „Proprietari”. Utilizatorii din grupul „Membri” pot edita pagini, dar nu pot crea Liste KPI.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>Actualizare sau eliminare conținut eșantion</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>Evidențieri</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>Mai multe informații</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>Ghid rapid de referințe</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>Detalii persoană de contact</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>Se utilizează pentru a afișa detalii despre o persoană de contact pentru această pagină sau site.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>Evenimente viitoare</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>Pagină centru de raportare</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>Indicatori de stare</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>Rapoarte</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>Descriere</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>Descrierea furnizează informații despre scopul obiectivului.</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>Comentarii indicator</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>Comentariile descriu starea curentă a indicatorului și pot furniza informații despre cauze și probleme.</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>Valoare indicator</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>Prag obiectiv indicator</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>Prag avertisment indicator</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>Link detalii</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>Faceți link pentru pagină făcând clic pentru detalii </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>Valorile mici sunt mai bune</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>Dacă o valoare mai mică este mai bună sau una mai mare</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>Actualizare automată</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>Dacă se obțin date backend de fiecare dată</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>Eroare de actualizare</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>Conține mesajul de eroare de la ultima actualizare, dacă există</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>Sursă de date</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>URL la sursa de date</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>Vizualizare Guid</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>Guid vizualizare</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>Nume de vizualizare</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>Numele vizualizării</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>Expresie valoare</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>Expresie utilizată pentru a determina valoarea indicatorului.</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>Expresie procent</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>Se stabilește dacă expresia este utilizată pentru a calcula procentul</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>Foaie de valori</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>Numele Foii pentru valoare</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>Celulă valoare</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>Adresa sau numele celulei pentru valoare</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>Foaie obiectiv</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>Numele Foii pentru obiectiv</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>Celulă obiectiv</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>Adresa sau numele celulei pentru obiectiv</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>Foaie de avertismente</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>Numele Foii pentru avertisment</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>Celulă de avertismente</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>Adresa sau numele celulei pentru avertisment</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>Obiectiv din registru de lucru</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>Dacă obiectivul a provenit din registrul de lucru sau din definiția indicatorului</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>Avertisment din registrul de lucru</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>Dacă avertismentul a provenit din registrul de lucru sau din definiția indicatorului</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>Tendință</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>Tendința indicatorului</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>Stare indicator</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>Starea indicatorului</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>Afișare folder</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>Folderul de afișare pentru indicator</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>Indicator</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Numele Serverului SQL 2005 de analiză a serviciilor KPI Microsoft</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>Se includ indicatori fiu</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>Se includ sau nu KPI-urile fiu</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>Valoare indicator formatată</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>Valoarea indicatorului, formatată de furnizorul sursei de date al acestuia</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>Obiectiv indicator formatat</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>Obiectivul indicatorului, formatat de furnizorul sursei de date al acestuia</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>Avertisment indicator formatat</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>Valoarea de avertisment a indicatorului, formatată de furnizorul sursei de date al acestuia</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>Cea mai recentă actualizare de date indicator</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>Ultima actualizare a indicatorului din furnizorul sursei de date al acestuia</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>Descriere raport</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>Descrierea conținutului din raport</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>Salvare în istoric raport</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>La fiecare salvare a documentului, se va adăuga o copie la istoricul raportului.</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>ID părinte</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>ID părinte al acestui raport</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>Proprietar</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>Proprietarul acestui document</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>Categorie de raport</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>Categoria raportului</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>Categoria 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>Categoria 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>Categoria 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>Stare raport</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>Starea raportului</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>Final</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>Preliminar</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>Din perioadă în dată</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>Istoric</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>Vizualizare Istoric</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>Nume</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>Nume</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>Nou</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>Raport modificare link</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>S-a creat raportul</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(valoare instantanee)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>Raportul a fost creat de</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>Raportul s-a modificat</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>Raport modificat de</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>Nume părinte raport</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(numele unui părinte instantaneu)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>Link către Raport</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(link la raport cu meniu de editare)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>Domeniu de interes firmă</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>Coloane indicator comune</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>Indicator de stare bazat pe valoare fixă</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>Creați un indicator nou de stare utilizând informațiile introduse manual</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>Indicator de stare bazat pe lista SharePoint</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>Creați un indicator nou de stare utilizând date din liste SharePoint</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>Indicator de stare bazat pe Excel</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>Creați un indicator nou de stare utilizând date de la Excel Services</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>Indicator de stare bazat pe SQL Server Analysis Services</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>Creați un indicator nou de stare utilizând date de la SQL Server Analysis Services</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>Raport</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>Pagină parte Web cu listă de stare</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>Creați o pagină care afișează Indicatori de stare și registre de lucru Excel.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Raport Excel</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>Tablouri de bord</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>Rapoarte curente</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>Toate rapoartele și tablourile de bord</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>Actualizat de curând</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Pagină raport detalii pentru fișiere Excel.</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>Zonă din stânga sus</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>Zonă din dreapta sus</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>Zonă de filtrare</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>Adăugare filtru</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>Zonă din stânga jos</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>Zonă din mijloc jos</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>Zonă din dreapta jos</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>Zonă de sus</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>Zonă mijloc, stânga</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>Zonă mijloc, dreapta</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>Zonă de jos</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>Toate elementele</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>Listă de stare</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>Listă de stare</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>Afișează o listă de indicatori de stare. Indicatorii de stare afișează măsuri importante pentru organizație și arată execuția organizației în funcție de obiective.</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>Detalii indicatori de stare</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>Afișează detaliile unui singur indicator de stare. Indicatorii de stare afișează o măsură importantă pentru o organizație și se pot obține de la alte surse de date, printre care listele SharePoint, registrele de lucru Excel și KPI-urile din SQL Server 2005 Analysis Services.</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>Date firmă</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>Da</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>Nu</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(Gol)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(Toate)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(Actualizare)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>Actualizare</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(Necompletat)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>Sortare ascendentă</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>Sortare descendentă</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>Filtrat de </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>Sortare după </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>Orientare către public</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>Public țintă (Audiențe pe bază de reguli; Grupuri SharePoint; Liste de distribuire)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>Țintit</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>Nu este țintit</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>Se permit audiențe globale</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>Se permit liste de distribuire</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>Se permit grupuri SharePoint</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>Director de site-uri</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>Hartă site</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>Site-uri în categorie</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>Site-uri de top</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>Directorul de site-uri este un catalog se site-uri care poate fi grupat în categorii. Pentru a remite un site la Directorul de site-uri, alegeți fie „Creare site”, fie „Adăugare link la site” în colțul din dreapta sus al paginii.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>Pentru a adăuga un site de nivel superior, adăugați un link la lista directorului de site-uri și marcați acest link ca „Site de nivel superior”. Începeți prin a adăuga un link la directorul de site-uri și a-l remite ca Site de nivel superior.</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>Setări domeniu linkuri asociate</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>Articol informativ cu imagine</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>Link către Articol informativ</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>Zone părți Web</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>Pagină de pornire Știri</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>Pagină de pornire director de site-uri</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>Activare caracteristici Enterprise</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>Implicit</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>Filtre</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>Date firmă</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>Tablou de bord</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>Parte Web consumator WSRP</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>Utilizator curent</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>Filtru utilizator curent</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>Se filtrează conținutul părților Web, utilizându-se proprietățile utilizatorului curent.</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>Filtru text</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>Se filtrează conținutul părților Web, permițând utilizatorilor să introducă o valoare text.</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>Filtru de liste SharePoint</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>Se filtrează conținutul părților Web, utilizându-se o listă de valori.</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>QueryString</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>Filtru șir de interogare (URL)</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>Se filtrează conținutul părților Web, utilizându-se valori transmise prin șirul de interogare.</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>Câmp pagină</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>Filtru câmp pagină</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>Se filtrează conținutul părților Web, utilizându-se informații despre pagina curentă.</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>Filtru SQL Server Analysis Services</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>Se filtrează conținutul părților Web, utilizându-se o listă de valori din cuburile SQL Server Analysis Services.</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>Listă de stare</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>Parte Web IView</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>Detalii indicator</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>Dată</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>Filtru de date</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>Se filtrează conținutul părților Web, permițând utilizatorilor să introducă sau să aleagă o dată.</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>Listă date firmă</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>Se afișează o listă de elemente dintr-o sursă de date în Business Data Connectivity.</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>Imposibil de importat această parte Web.</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>Filtru Business Data Connectivity</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>Se filtrează conținutul părților Web, utilizându-se o listă de valori din Business Data Connectivity.</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>Element date firmă</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>Se afișează un element dintr-o sursă de date în Business Data Connectivity.</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>Listă asociată cu date de firmă</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>Se afișează o listă de elemente legate de unul sau mai multe elemente părinte dintr-o sursă de date în Business Data Connectivity.</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>Acțiuni date firmă</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>Se afișează o listă de acțiuni din Business Data Connectivity.</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>Constructor element date firmă</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>Se creează un element Date de lucru din parametrii din șirul de interogare și se furnizează altor părți Web.</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>Filtru alegere</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>Se filtrează conținutul părților Web, utilizându-se o listă de valori introduse de autorul paginii.</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>Valoare 1&amp;Valoare 2&amp;Valoare 3=Descriere 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>Butonul Aplicare filtre</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>Adăugați acest buton la o pagină pentru ca utilizatorii să poată decide când să aplice opțiunile lor pentru filtre. Altfel, fiecare filtru este aplicat atunci când valoarea sa este modificată.</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>Site-uri de top</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>Afișare site-uri de top din directorul de site-uri.</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>Știri</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>Știri recente</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>Set informativ</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>Această săptămână în Imagini</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>Afișează o imagine dintr-o bibliotecă de imagini și se leagă de o expunere diapozitive unde utilizatorii au posibilitatea să vadă toate imaginile din Biblioteca de imagini.</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>Știri</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>Articol informativ eșantion</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>Această pagină este lăsat necompletată în mod intenționat.</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>Arhivă de știri</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>Știri industriale</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>Mai multe știri</value>
+  </data>
+  <data name="KPIList">
+    <value>Listă de indicatori de stare</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>Lista indicatorului de stare se utilizează pentru a urmări și a afișa un set de obiective. Pictogramele colorate se afișează pentru a comunica gradul de realizare a obiectivelor.</value>
+  </data>
+  <data name="EventsList">
+    <value>Evenimente</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>Lista Evenimente se utilizează pentru a depune informații despre întâlniri, date limită sau alte evenimente legate de această zonă.</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>Imposibil de importat această parte Web.</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>Pagina de pornire</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>Parte Web imagine pagină de pornire</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>Afișează imaginea din pagina de pornire</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>Imagine pagină de pornire</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>Editor de conținut</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>Permite autorilor să introducă text îmbogățit.</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>Trebuie să...</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>Căutare angajat</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>Căutare angajați</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>Cuprins</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>Setări director site</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>Configurare director de site-uri</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>Scanare linkuri director de site-uri</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>Pagini</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>Documente partajate</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>Documente personale</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>Imagini partajate</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>Fotografii utilizator</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>Imaginile de profil pentru toți utilizatorii se vor stoca aici.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>Această bibliotecă de documente se utilizează pentru a stoca paginile parte Web. Acestea se vor partaja automat pe pagina de pornire publică.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>Această bibliotecă de documente se utilizează pentru a stoca documente. Documentele partajate aici se vor afișa pe pagina de pornire publică.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>Această bibliotecă de documente se utilizează pentru documentele pe care doriți să le păstrați pentru uz personal. Acestea vor fi vizibile numai pentru dvs. și pentru administratorii serverului.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>Partajați imagini și fotografii cu alții, adăugându-le la această bibliotecă de imagini. Imaginile și fotografiile stocate aici se vor partaja pe pagina de pornire publică.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>Începeți cu Site-ul meu</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>Linkuri la mai multe indicii și sfaturi despre utilizarea Site-ului meu.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>Site-uri SharePoint</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>Detalii despre site-urile al căror membru este utilizatorul</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>Pagina coordonatoare Site-ul meu</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>Furnizează stilul și aspectul unic al Site-ului meu.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>Publicări recente în blog</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>Cele mai recente publicări pe blog ale utilizatorului</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>Adăugare publicare nouă</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>Centru de partajare</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>Partea Web centrală pe care o va utiliza utilizatorul pentru partajarea elementelor.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>Activități recente</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>Partea Web care afișează activitățile mele recente.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>Întreabă-mă despre</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>Partea Web care afișează o listă de cuvinte cheie în legătură cu care alte persoane pot pune întrebări.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>Linkurile mele</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>Afișează linkurile create.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>Calendarul meu</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>Afișează calendarul utilizând Outlook Web Access pentru Microsoft Exchange Server 2003 sau mai recent.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>Urmărire colegi</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>Afișează o listă a colegilor și modificările lor recente.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>Apartenențele mele</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>Afișează grupurile pentru care sunteți membru.</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>Profiluri utilizator și Site-urile mele</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>Audiențe</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>Profiluri utilizator și Proprietăți</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>Audiențe</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>Politici servicii profil</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>Setări Site-ul meu</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>Locații gazdă de încredere pentru Site-ul meu</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Linkuri publicate la aplicații client Office</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>Linkuri site de personalizare</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>Permisiuni servicii de personalizare</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>Setări delegare organizații</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>Element date firmă</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>Parte Web pentru detalii elemente de date de firmă</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>Acțiuni date firmă</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>Parte Web pentru afișare acțiuni de date de firmă</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>Business Data Connectivity</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>Definiție aplicație de import</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>Vizualizare aplicații</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>Vizualizare entități</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>Editare șablon pagină profil</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>Permisiuni Business Data Connectivity</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>Configurare setări pentru sign-on unic (SSO)</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>Nume filă</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>Acesta este textul etichetei filei.</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>Pagină</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>Tastați numele paginii care trebuie afișată ca parte a acestei file. Dacă nu ați creat o pagină, creați una, utilizând opțiunea Creare pagină din Acțiuni site.</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>Adăugare link nou</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>Sfat ecran</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>Acesta este sfatul ecran care va fi afișat în momentul în care un utilizator mută indicatorul mouse-ului deasupra acestei file.</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>Toate filele</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>Titlu</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>URL</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>Descriere</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>Proprietar</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>Divizare</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>Regiune</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>Site reflector</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>Site de top</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>Activități și Instrumente</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>Stare Link</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>OK</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>Întrerupt</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>Nedefinită</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>Activități de top</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>Internațional</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>Național</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>Local</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>Tehnologia informației</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>Cercetare și dezvoltare</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>Vânzări</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>Finanțare</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>Toate site-urile</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>Rezumat</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>Gestionare site-uri</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>Site-uri remise</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>Categorii</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>Site-uri respinse</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>Categorii creare site</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>Site-uri deteriorate</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>Bun venit la Microsoft® SharePoint® Server 2013 </value>
+  </data>
+  <data name="HomePageContent2">
+    <value>Începeți cu noua versiune de Microsoft SharePoint Server 2013:</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>Gestionarea site-ului și a conținutului</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>Creați &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;pagini&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;site-uri&lt;/a&gt; și &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;liste &lt;/a&gt;noi</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>&lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;Adăugați utilizatori&lt;/a&gt; la grupul „Membri” pentru a edita pagini</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>&lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;Creați un site personal&lt;/a&gt;, făcând clic pe „Site-ul meu”</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>&lt;a href="~SiteCollection/SearchCenter"&gt;Căutați &lt;/a&gt; în site-uri, documente și persoane</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>Soluții pentru firme (necesită licență Enterprise)</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>Creați rapoarte și indicatori de stare</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>Vizualizați un registru de lucru Excel prin partea Web Excel Web Access</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>Implementați InfoPath într-o bibliotecă de documente</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>Alegere activitate</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>Listă site-uri</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>Acest șablon de listă se utilizează pentru a crea liste de site-uri.</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>Liste de file</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>Acest șablon de listă se utilizează pentru a crea liste de file.</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>Nu există elemente de afișat în această vizualizare.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>Categorii</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>Hartă site</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>Site-uri în categorie</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>Pagina de pornire</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>Pagină de pornire portal</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>Subiecte</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>Web subiecte</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>Divizii</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>Web divizii</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>Vânzări</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>Web vânzări</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>Cercetare și dezvoltare</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>Web RD</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>Resurse umane</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>Web resurse umane</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>Produse</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>Web produse</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>Știri</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>Pagină informativă firmă</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>Site-uri</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>Web director de site-uri</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>Căutare</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>Centrul de căutare afișează rezultate de căutare</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>Rapoarte</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>Centru de raportare</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>Vizualizator WSRP</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>Afișează portlets din site-uri Web care utilizează WSRP 1.1.</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>Partea Web este dezaprobată.</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>Site-uri</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>Lista Site-uri se utilizează pentru a stoca linkuri la site-uri și categorii de site-uri.</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>File</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>Lista File se utilizează pentru a stoca linkuri la pagini. Lista File trebuie utilizată pe site împreună cu controlul tab.</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>Salt</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>Orientare către public</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>Orientare către public</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>Permitere audiență globală</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>Permitere listă de distribuire</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>Permitere grup SharePoint</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>Da</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>Nu</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>Personal</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>Site-ul meu</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>Navigare</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>Director de site-uri</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>Creare centru de raportare</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>Creează Centrul de raportare pe site-uri Premium.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>Caracteristică aspecte portal</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>Caracteristică de portal care încarcă toate aspectele la galeria de pagini coordonatoare.</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>Răsfoire arhivă informativă</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>Aspect Bun venit</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>Ca parte din upgrade, aveți acum caracteristici suplimentare instalate în ferma SharePoint. Aceste caracteristici sunt activate în site-urile nou create, dar nu sunt încă disponibile în site-urile existente. Aveți posibilitatea să faceți aceste caracteristici disponibile pentru toate site-urile existente, dacă navigați la pagina 'Activare caracteristici noi pe site-urile existente'. Dacă nu doriți să faceți aceste caracteristici disponibile pentru toate site-urile acum, ștergeți această activitate. Aveți posibilitatea să efectuați această activitate oricând din pagina Operații, în site-ul Administrare centrală. De asemenea, aveți posibilitatea să faceți aceste caracteristici disponibile pentru site-uri individuale dacă utilizați meniul Setări site pentru acel site.</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>Activare caracteristici noi pe site-urile existente</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>Activare caracteristici pe site-urile existente</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">Activități de upgrade suplimentare</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">Propagare caracteristici</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">Utilizați Propagare caracteristici pentru a activa caracteristicile noi pe site-urile existente.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>Vizualizator RSS</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>Afișează un flux RSS.</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>Site-urile mele SharePoint</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>Se utilizează pentru a afișa documente autorizate de către dvs pe site-uri unde sunteți membru și site-uri la alegere.</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>Documente SharePoint</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>Se utilizează pentru a afișa documente autorizate de către dvs pe site-uri unde sunteți membru.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>Agregator site</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>Afișează site-urile alese de dvs.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>Bibliotecă de documente zonale</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>Bibliotecile de documente din zonă sunt foldere care simplifică partajarea documentelor cu ceilalți. Fiecare bibliotecă afișează documente într-o listă care poate fi filtrată sau sortată.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>Noutăți</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>Afișează o listă a colegilor și modificările lor recente.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>Instrument de urmărire interes</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>Afișează activități recente în zonele dvs. de interes.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>Detalii persoană de contact</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>Afișează detalii despre o persoană de contact pentru această pagină sau acest site.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>Imaginile mele</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>Afișează imagini din biblioteca de imagini, cu opțiunea de vizualizare ca expunere diapozitive.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>Imagini partajate</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>Spațiile mele de lucru</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>Afișează site-uri create sub Site-ul meu.</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>Folderul meu de poștă electronică</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>Afișează folderul de poștă electronică utilizând Outlook Web Access pentru Microsoft Exchange Server 2000.</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>Calendarul meu</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>Afișează calendarul utilizând Outlook Web Access pentru Microsoft Exchange Server 2003 sau mai recent.</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>Inboxul meu</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>Afișează inboxul utilizând Outlook Web Access pentru Microsoft Exchange Server 2003 sau mai recent.</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>Activitățile mele</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>Afișează activitățile utilizând Outlook Web Access pentru Microsoft Exchange Server 2003 sau o versiune mai recentă.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>Persoanele mele de contact</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>Afișează persoanele de contact utilizând Outlook Web Access pentru Microsoft Exchange Server 2003 sau mai recent.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>Linkurile mele</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>Utilizată pentru a afișa linkurile</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>Grupuri implicite de adăugare parte Web</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>Adaugă grupuri suplimentare implicite la coloana QuickAddGroups în galeria de părți Web</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>Se încarcă...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>Meniu deschis</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>Membri</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>Parte Web pentru afișarea membrilor unui grup</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>Părți Web globale</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>Instalează părți Web suplimentare comune pentru toate tipurile de site-uri.</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>Site-ul meu</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>Instalează caracteristici corelate cu Site-ul meu și cu Profiluri utilizator.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>Gazda Site-ului meu</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>Instalează caracteristici asociate cu găzduirea pentru Site-urile mele.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>Sigle organizație</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>Bibliotecă de imagini partajate pentru sigle de organizații</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>Utilizați această Bibliotecă de imagini pentru a stoca sigle de organizații.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>Navigarea mea de site</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>Instalează furnizori de navigare pentru SIte-ului meu.</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>Configurare site personal Site-ul meu</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>Configurează un site personal al utilizatorului.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>Linkuri administrare profiluri de utilizator</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>Instalează linkuri corelate cu administrarea serviciului Profil utilizator.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>Linkuri de bază administrare profiluri de utilizator</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>Instalează linkuri corelate cu administrarea de bază a serviciului Profil utilizator.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>Listare țintire conținut</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>Instalează un buton pe pagina Setări listă, pentru a activa direcționarea conținutului utilizând public.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>Setări orientare către public</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>Caracteristică sincronizare profil</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>Instalează o activitate pentru sincronizarea profilului de utilizator și a apartenenței cu site-urile de echipă.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>Migrator utilizator furnizor de servicii partajate</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>Instalează caracteristici corelate cu datele de utilizator care migrează, atunci când se modifică informațiile contului unui utilizator.</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>Căutare</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>Ce sunt site-urile personalizate...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>Site-urile personalizate sunt proiectate pentru a vă ajuta să furnizați o experiență necompromisă, distinctă, de personalizare, care conectează portalul la utilizatori Site-urile mele. Acest site se utilizează pentru a împinge informațiile personalizate și direcționate către utilizatori, pe baza a ceea ce sunt aceștia și de ce vizitează portalul. Șablonul de site personalizat va ajută să identificați utilizatorul curent și să utilizați profilul acestuia pentru a direcționa și a prezenta cu acuratețe informațiile specifice pentru acel utilizator și pentru nevoile acestuia. Acest lucru vă dă oportunitatea de a oferi o vizualizare centrată a portalului pentru utilizatori.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>&lt;i&gt;De exemplu, aveți posibilitatea să utilizați un site personalizat pentru a debloca informațiile îngropate în diverse sisteme de firmă de către structura site-ului, pentru a furniza o experiență de oprire unică ce va permite utilizatorilor să vizualizeze și să acceseze informațiile de care au nevoie pentru a efectua activitatea. Sau, aveți posibilitatea să oferiți o experiență care ajută la potrivirea mai exactă a organizației cu obiectivele acesteia, utilizând site-ul personalizat pentru a trece comportamentul utilizatorului prin indicatori și metrice de performanță, care pot fi setate în mod specific pentru un utilizator, pe baza rolului acestuia.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>După ce se dezvoltă site-ul personalizat, pentru a face ca site-ul personalizat să devină o locație permanentă pe bara de navigare a utilizatorilor Site-ul meu, contactați administratorul pentru a înregistra site-ul personalizat.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>Controale panglică - etichete sociale și zonă pentru comentarii</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>Adaugă puncte de intrare pentru etichetarea socială și comentarii în zonă pentru comentarii pe interfața utilizator panglică.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>Etichete și note</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>EticheteȘiNote</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>Etichete și note</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>Etichetele vă ajută să rețineți linkuri și să clasificați elementul selectat. Notele sunt comentarii publice. Etichetele și notele se publică pe fluxul de știri și funcționează pe site-uri diferite.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>Îmi place</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>Etichetează elementele selectate cu 'Îmi place'. Etichetele facilitează reținerea linkurilor și publicarea elementelor pe fluxul de știri.</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>Proprietar</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>Descriere</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>Stare</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>Afișează site-uri din directorul de site-uri dintr-o anumită categorie.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>Afișează categorii din directorul de site-uri.</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>Permite utilizatorilor să aleagă dintr-o listă de opțiuni și să navigheze în locația relevantă.</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>Arhivă de știri</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>Documente</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>Detalii despre site-urile al căror membru este utilizatorul</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>Colegi</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>Această parte Web este proiectată să fie adăugată la pagina de profil a unei persoane. Ea furnizează o listă a tuturor colegilor pe care un utilizator le-a partajat cu alții. Furnizează un punct de intrare pentru ca deținătorul profilului să gestioneze lista de colegi.</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>Zonă pentru comentarii</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>Permite utilizatorilor să lase note scurte, vizibile public despre această pagină.</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>Elemente etichetate</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>Afișare persoane care au aplicat o etichetă la un anumit URL</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>Conectați-vă</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>Afișează persoanele care utilizează frecvent sau au exprimat interes sau expertiză într-o etichetă.</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>Etichete asociate</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>Afișează etichetele care au fost utilizate împreună cu un anumit termen și permite filtrarea părții Web Elemente etichetate</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>Despre această etichetă</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>Afișează metadate dintr-o taxonomie gestionată pentru elemente specifice</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>Activitate recentă</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>Afișare persoane asociate unor termeni specifici</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>În comun cu tine</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>Afișează ce aveți în comun cu utilizatorul</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>Organigrama mea</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>Afișează organigrama dvs. și ierarhia de raportare</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>Apartenențe la grup</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>Afișează apartenențele site-ului și ale listei de distribuire.</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>Linkuri</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>Afișează linkurile partajate de utilizator</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>Grup</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>Parte Web pentru afișare detalii de grup</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>Membri</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>Parte Web pentru afișarea membrilor unui grup</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>Grupuri membre</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>Parte Web pentru afișare membrii de grup</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>Link eșantion 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>Descriere simplă</value>
+  </data>
+  <data name="imglibList">
+    <value>Această săptămână în Biblioteca de imagini</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>Furnizează un loc pentru stocarea imaginilor în această zonă.</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>Link eșantion 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>Link eșantion 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>Centru de documente</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>Site centru de documente</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(legat la URL)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(legat la meniu de editare)</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>Set de conținut</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Aplicații client Office</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>Formulare</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>Diverse</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>Site-ul meu: Sus</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>Site-ul meu: Stânga la mijloc</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>Site-ul meu: Dreapta la mijloc</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>Site-ul meu: Jos</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>Sortare după URL</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>Sortare după Titlu</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>Caracteristică DiscoPage portal</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>Caracteristica de portal care setează proprietatea DiscoPage a serviciului Web implicit la spsdisco.aspx.</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>Pagină de bun venit cu zone de părți Web</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>Filtru proprietăți de profil</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>Control captură director de site-uri coordonatoare server portal SharePoint</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>Control captură director de site-uri coordonatoare server portal SharePoint.</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>Acest aspect de pagină conține un câmp imagine la stânga, un câmp text îmbogățit și zone Părți Web aranjate în coloană la dreapta, în antet, subsol și 2 coloane.</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>Acest aspect de pagină conține zone Părți Web aranjate în antet, subsol și 2 coloane.</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>Acest aspect de pagină conține zone Părți Web aranjate în coloană la dreapta, antet, subsol și 2 coloane.</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>Acest aspect de pagină conține un control de file. Acesta are zone Părți Web aranjate în antet, subsol și 2 coloane. </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>Acest aspect de pagină conține zone Părți Web aranjate în antet, subsol, 2 coloane și 3 rânduri.</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>Acest aspect de pagină conține un control de file. Acesta are zone Părți Web aranjate în antet, subsol și 2 coloane.</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>Această pagină conține un control de file și o Parte Web casetă de căutare. Acesta are zone Părți Web aranjate în antet și subsol.</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>Acest aspect de pagină conține un control de file și Părți Web de căutare. Acesta are zone Părți Web aranjate în coloană la dreapta, antet, subsol, 2 coloane și 2 rânduri.</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>Acest aspect de pagină conține un control de file. Acesta are zone Părți Web aranjate în coloană la dreapta, antet, subsol, 2 coloane și 2 rânduri.</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>Acest aspect de pagină conține zone Părți Web aranjate în coloană la dreapta, antet, subsol și 2 coloane.</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>Persoană lucrând la computer</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>Caracteristica aspecte pentru Site-ul meu</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>Caracteristică Site-ul meu care încarcă toate aspectele la galeria de pagini coordonatoare.</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>Alegeți activitatea ce trebuie efectuată</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>Caracteristica aspecte pentru Site-ul meu</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>Caracteristică Site-ul meu care încarcă toate aspectele la galeria de pagini coordonatoare</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>Caracteristică încărcare fișier de upgrade pentru portal</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>Caracteristică de portal care încarcă doar fișiere de upgrade.</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>Aceasta este o depunere de blog eșantion. În mod normal, aceasta se umple cu o depunere de către utilizator.</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>Publicare eșantion</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>Utilizator exemplificativ</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>Eșantion</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>Toate etichetele</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>Afișare etichete aplicate de toți utilizatorii</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>Etichetele mele</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>Afișare etichete aplicate de utilizatorul curent</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>Nor de etichetă</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>Afișează cele mai cunoscute subiecte etichetate în organizație.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>Etichetele fiecărei persoane</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>Etichetele mele</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>Linkuri recomandate (doar M1)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>Afișează informații despre marcajele mele</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>Browser organizație</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>Această parte Web afișează fiecare persoană din lanțul de raportare într-o vizualizare interactivă optimizată pentru navigarea prin organigrame.</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>Evaluare</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>Utilizați această caracteristică pentru a permite utilizatorilor să evalueze conținutul.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>Evaluare (0-5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>Valoare medie a tuturor evaluărilor remise</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>Evaluare</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>Număr de evaluări</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>Număr de evaluări remise</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>Definiți locația directorului pentru a lista site-urile noi.</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>Furnizați site-uri de inclus cu domeniul „acesta și site-uri asociate” al rezultatelor căutării pentru acest site.</value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>Setări evaluare</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>Persoane</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>Gestionare proprietăți utilizator</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>Gestionare profiluri utilizator</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>Gestionare subtipuri utilizator</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>Gestionare audiențe</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>Programare compilare audiență</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>Compilare audiențe</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>Gestionare permisiuni utilizator</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>Sincronizare</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>Configurare conexiuni sincronizare</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>Configurare setări sincronizare</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>Organizații</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>Gestionare proprietăți organizație</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>Gestionare profiluri organizație</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>Gestionare subtipuri organizație</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>Setări Site-ul meu</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>Configurare Site-urile mele</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>Configurare locații gazdă de încredere</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>Configurare Site de personalizare</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>Publicare linkuri la aplicații client Office</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>Gestionare note și etichete sociale</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>Configurare etichetare socială și de expertiză</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>Gestionare politici</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>Furnizor revendicări de persoane și organizații</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>Instalează furnizor de revendicări pentru persoane și organizații.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>Furnizor revendicare grupuri</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>Instalează furnizor de revendicare pentru grupuri.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>Furnizor ierarhie revendicare de organizații</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>Instalează furnizor ierarhie de revendicare pe baza organizațiilor.</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>Gestionare aplicație profil utilizator</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>Aplicație profil utilizator entitate găzduită</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>Linkuri la subpagini pentru gestionare aplicație profil utilizator entitate găzduită</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>Asociere aplicație profil utilizator entitate găzduită</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>Asociere caracteristică aplicație profil utilizator entitate găzduită  la șablonul TenantAdmin</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>Configurare activitate cronometru sincronizare</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>Pornire sincronizare profil</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>Lista verticală de căutare</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>Omitere carte de vizită</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>Fluxul meu de știri</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>Conținutul meu</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>Profilul meu</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>Prezentare generală</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>Organizație</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>Conținut</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>Etichete și note</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>Colegi</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>Apartenențe</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>Tablou de bord Activitățile mele</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>Furnizează un tablou de bord în Site-ul meu al utilizatorului, pentru a gestiona și a interacționa cu activitățile sale, agregate între site-uri și sisteme.</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>Capsare Tablou de bord Activitățile mele</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>Această caracteristică conectează caracteristica de tablou de bord Activitățile mele la șablonul Site-ul meu.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>Documente partajate - VECHI</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>Documente personale - VECHI</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>Conținut urmărit</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>Urmărire conținut</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>Urmărirea conținutului permite utilizatorilor să se aboneze la actualizările din fluxul lor pentru un anumit document</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>Abonare la conținut</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>Urmărire conținut</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>Conține o referință la un element de conținut urmărit</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>ID fermă</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>ID site</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>WebId</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>ID listă</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>ID unic</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>ID element</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>URL</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>URL părinte</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>Tip</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>Subtip</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>URL pictogramă</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>Nu este vizibil în flux</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>Are flux</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>Semnalizări</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>ProgID tip de fișier</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>ProgID Url server</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>Documente urmărite</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>Site-uri urmărite</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>Urmăriți documentele interesante accesându-le și făcând clic pe urmărire.</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>Încă nu urmăriți niciun site. Pentru a vedea ceva în această listă, accesați un site și faceți clic pe pictograma Urmărire.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>Această bibliotecă de documente a fost utilizată anterior pentru documente pe care doreați să le partajați cu alte persoane. Acum vă recomandăm să utilizați noua bibliotecă Documentele mele în acest scop.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>Această bibliotecă de documente a fost utilizată anterior pentru documente pe care doreați să le păstrați pentru uz personal. Acum vă recomandăm să utilizați noua bibliotecă Documentele mele în acest scop.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>Această listă va conține toate elementele pe care ați ales să le urmăriți.</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>Urmărire conținut</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>Permiteți utilizatorilor să urmărească documente sau site-uri.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>Capsare urmărire conținut</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>Activați caracteristica Urmărire conținut în toate colecțiile de site-uri.</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>Urmărire conținut</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>Permiteți utilizatorilor să urmărească documente sau site-uri.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>Listă urmărire conținut</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>Caracteristică ce cuprinde lista care permite utilizatorilor să urmărească conținut în SharePoint.</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>Urmărire conținut</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>Listă care permite utilizatorilor să urmărească conținut în SharePoint.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>Caracteristica Bibliotecă de documente Site-ul meu</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>Îmbunătățește biblioteca de documente SharePoint existentă pentru Site-ul meu. Permite vizualizări noi, versiuni simple, informații contextuale îmbunătățite și partajare de elemente.</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>Documente</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>Toate</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>Partajat cu mine</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>Partajat cu toată lumea</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>Partajare câmpuri</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>Partajare</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>Partajare</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>Este Documentele mele</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>Este Documentele mele</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>Partajat cu câmpul intern</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>Partajat cu câmpul intern</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>Se păstrează ultimele editări</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>Permisiuni</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>Căutarea nu este momentan disponibilă. Încercați din nou mai târziu. Dacă problema persistă, contactați administratorul de sistem.</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>Căutarea este dezactivată în prezent. Contactați administratorul de sistem.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>Urmărește</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>Urmăriți acest document și obțineți actualizări în fluxul de știri.</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>Gestionare lucru</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>Evaluat de</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>Utilizatorii au evaluat elementul.</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>Calificative de utilizator</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>Calificative de utilizator pentru element</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>Feedback pentru conținut</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Documente</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>Funcționalitate proiect</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>Această caracteristică adaugă funcționalitatea management de proiect într-un site. Include activități, un calendar și părți web pe pagina de pornire a site-ului.</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>Proiectele mele</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>Persoane</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>Flux de știri</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>Documente</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>Activități</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>Persoane</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>Site-uri</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>Despre mine</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value>Despre {0}</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>Aplicațiile mele</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>Salt la Site-ul meu</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>Urmăresc</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>Partajat cu mine</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>Flux de știri</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>Aplicații</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>Mai multe aplicații</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>Flux de știri</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>Afișează conversații și notificări de eveniment de la conținutul și persoanele pe care le urmăriți în site-urile SharePoint și permite utilizatorilor să trimită mesaje scurte, care pot fi vizualizate în public.</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>Flux activitate</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>Afișează cele mai recente conversații și activități ale unui utilizator.</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>Microflux</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>Listă de stocare persistentă Microflux Site-ul meu</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>Listă de stocare persistentă pentru fluxul publicat Site-ul meu</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>Tipuri de conținut microflux</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>Upgrade site personal Site-ul meu la navigare</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>Creează sau face upgrade-ul unui site personal de utilizator la site-ul gazdă Site-ul meu.</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>Experiența de primă rulare site-ul meu</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>Etichete curente</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>Partea web client ajută utilizatorul să găsească conținut social nou</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>Contoare urmărite</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>Afișează numărul de utilizatori urmăriți, conținutul și etichetele pentru utilizatorul curent.</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>Persoane</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>Afișează persoanele pe care le urmărește o persoană, dar și cine urmărește persoana respectivă.</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>Cronologie configurată manual</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>Afișează datele configurate manual într-o vizualizare cronologie</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>Rezumat proiect</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>Afișează informații despre un proiect într-o prezentare generală ușor de citit</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>Cronologie conectată</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>Utilizați această cronologie pentru a afișa o vizualizare de nivel înalt pentru datele dintr-o altă parte web</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>Cronologii</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>Cronologie site de proiect</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>Utilizați această cronologie pentru a crea o vizualizare de nivel înalt pentru activitățile într-un proiect</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>Părți web site de proiect</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>Părți web utile pentru și necesitând site-ul de proiect</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>Centru de lucru de echipă</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>Centrul Lucru în echipă asigură o vizualizare restrânsă a tuturor site-urilor de proiect într-o singură locație. Centrul Lucru în echipă poate fi conectat la partea web Cronologie pentru a crea o vizualizare a protofoliului dvs. de proiecte.</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>Caracteristica Elemente asociate</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>Caracteristica Elemente asociate pentru adăugarea elementelor asociate și a funcționalității elemente asociate într-o colecție de site-uri.</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>Element din recomandări</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>Adaugă controlul CBS pentru recomandări tuturor formularelor de afișare de elemente.</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>Recomandări Site-ul meu</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>Recomandați automat documente și site-uri pe care utilizatorii să le urmărească în Site-urile mele SharePoint.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>Partea web de recomandări sugerează conținut pe care un utilizator ar putea să-l urmărească din interiorul fermei.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>Documente care mi-au fost recomandate</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>Site-uri care mi-au fost recomandate</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>Persoane care mi-au fost recomandate</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>Partea web de recomandări sugerează conținut pe care un utilizator ar putea să-l urmărească din interiorul fermei.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>Documente sugerate pentru urmărire</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>Site-uri sugerate pentru urmărire</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>Persoane sugerate pentru urmărire</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>Partea web de recomandări sugerează conținut pe care un utilizator ar putea să-l urmărească din interiorul fermei.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>Documente recomandate</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>Site-uri recomandate</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>Persoane recomandate</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>Recomandările mele</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>Nu am reușit să importăm partea web Recomandările mele.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>Nu am reușit să importăm partea web Elemente asociate.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>Elemente asociate</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>Parte web Elemente asociate.</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>Sugestii element asociat</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>Parte web Sugestii element asociat.</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>Elemente asociate</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>Sugestii element nou</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>Parte web Sugestii element nou</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>Furnizor de setări de utilizator pentru profilul de utilizator</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>Această caracteristică asigură accesul furnizorului de setări de utilizator pentru profilul de utilizator.</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>Cutie poștală site</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>Cutie poștală</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>Aplicația Cutie poștală de site vă ajută să păstrați laolaltă e-mailurile și documentele, conectând site-ul la o cutie poștală Exchange. Apoi puteți să vizualizați e-mailul în SharePoint și să vizualizați documentele de site în Outlook.</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>Cutii poștale site</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>Asigură accesul la cutia poștală Exchange pentru site-urile din această fermă și conectează documentele din site la Outlook.</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>Păstrați e-mailul în context.</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>Partajați mesaje de e-mail pe site și conectați documentele la Outlook.</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>Asistență site de proiect</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>Activează crearea de site-uri de proiect în această colecție de site-uri.</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>Control etichetă pentru site-uri de proiect</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>Această caracteristică asigură accesul părții web Etichetare site de proiect.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>Nu am reușit să importăm partea web de etichetare.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>Parte web Etichete</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>Partea web Etichetare permite membrilor unui site să eticheteze și să vizualizeze etichete pe paginile din site.</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>Proiecte</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>Proiect</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>Nou</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>Creați un spațiu de lucru nou de proiect.</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>Deschidere</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>Deschideți proiectul selectat.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>În spațiul de lucru de proiect</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>Deschidere în spațiul de lucru de proiect</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>În Project Professional</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>Deschideți proiectul selectat în Microsoft Project. Dacă proiectul este extras de altcineva, va fi deschis doar în citire. Dacă ați selectat mai multe proiecte, acestea se vor deschide într-un nou proiect coordonator.</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>Cronologie</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>Adăugare la cronologie</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>Adăugați elementele selectate în cronologie.</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>Proiect</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>Proprietar</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>Dată de început</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>Data de sfârșit</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>Se reîmprospătează lista de proiecte...</value>
+  </data>
+  <data name="NextRefresh">
+    <value>Lista de proiect va fi actualizată la {0}</value>
+  </data>
+  <data name="RefreshNow">
+    <value>Reîmprospătare acum</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>Căutați în această listă...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>Domeniu site de proiect</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>Site și dedesubt</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>Colecție de site-uri</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>Domeniu de interes firmă</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>Este raport</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>Elementul este un raport?</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>Este dată</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>Elementul este o sursă de date?</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>Domeniu de interes firmă</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>Document de raportare</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>Creați un document de raportare nou.</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>Bibliotecă documente de raportare</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>Un loc unde puteți să creați și să gestionați documente de raportare.</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>Bibliotecă de documente de raportare</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>Asistență căutare date și rapoarte</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>Furnizează tipurile de conținut, coloanele de site și șabloanele de bibliotecă necesare pentru acceptarea rapoartelor și căutării de date în Centrul de căutare Enterprise.</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>Caracteristică Portal de comunitate</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>Această caracteristică adaugă funcționalitatea de portal de comunitate. De asemenea, asigură accesul paginilor de portal de comunitate.</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>Comunități populare</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>Site de comunitate</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>Despre noi</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>Caracteristica Site de comunitate</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>Această caracteristică adaugă funcționalități de comunitate, cum ar fi categorii de discuții, conținut și reputația persoanelor, dar și lista de membri. De asemenea, asigură accesul paginilor de site de comunitate care conțin aceste liste și caracteristici.</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>Listă de discuții</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>Utilizați lista de discuții pentru a susține conversații în stil forum, inclusiv întrebări și răspunsuri la subiecte relevante pentru echipa dvs., pentru proiect sau pentru comunitate.</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>Contor agregat aprecieri</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>Contor agregat evaluări</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>Număr aprecieri</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>Apreciat de</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>Popularitate</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>Subiectul a fost actualizat ultima dată de</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>Punctaj reputație autor</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>Numărul de răspunsuri al autorului</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>Numărul de publicări al autorului</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>Numărul de cele mai bune răspunsuri al autorului</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>Data ultimei activități a autorului</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>Data apartenenței ca membru a autorului</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>Starea apartenenței ca membru a autorului</value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>Nivel 1</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>Nivel 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>Nivel 3</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>Nivel 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>Nivel 5</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>Categorie</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>Nume membru</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>Publicat de</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>Ultima actualizare a subiectului</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Categorii</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>Infrastructură site de comunitate</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>Câmpurile la nivel de colecție de site-uri, tipurile de conținut și părțile web necesare pentru listele de discuții, reputație, categorii și apartenența la o comunitate.</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>Caracteristică Listă de categorii</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>Această caracteristică conține șablonul pentru funcționalitatea Listă de categorii</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>Listă de categorii</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>Listă de categorii</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>Categorie</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(Descriere tip de conținut de categorie)</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>Listă de categorii</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>Dale categorii</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>Vizualizare admin</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>Vizualizare ca singură categorie</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>Nume categorie</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>Numele categoriei.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>Descriere</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>Despre ce ar trebui să vorbească membrii comunității, în această categorie?</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>Imagine categorie</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>Adăugați o imagine care reprezintă această categorie.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>Discuții</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>Răspunsuri</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>Ultima publicare de</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>Data ultimei publicări</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>Categorii</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>Utilizați Lista de categorii pentru a defini categoriile disponibile pentru publicările din lista de discuții.</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>General</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>Dacă nu știți unde să publicați, începeți aici.</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>Membru</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>Stare</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>Stare membru</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>În așteptare</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>Activ</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>Inactiv</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>Blocat</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>Stânga</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>Tipuri de conținut de comunitate</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>Apartenență la site</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>Adăugare membru nou</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>Apartenență la site</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>Această caracteristică conține schema de listă și instanța de listă utilizată pentru a gestiona membrii dintr-un site precum site-urile Comunitate, Proiect, Echipă, Educație</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>Șablon listă de apartenență</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>Schemă șablon Listă de apartenență la site</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>Membri comunitate</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>Această listă ține o evidență a activităților în desfășurare de către membri și reputația pe care o dobândesc în comunitate.</value>
+  </data>
+  <data name="members_Folder">
+    <value>Membri</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Discutie comunitara</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>Rapoarte</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>Această caracteristică conține schema de listă și instanța de listă care se utilizează pentru gestionarea conținutului ofensator din cadrul unui site de comunitate</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>Șablon listă de rapoarte</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>Schemă șablon Listă de rapoarte</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>Listă de rapoarte</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>Această listă stochează comentarii despre un element de discuție remis de persoane care au raportat elementul respectiv ca abuziv</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>AbuseReports</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>Reporter</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>Comentarii</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>Discuție</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>Rapoarte</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>Căutare rapoarte</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>Căutare reporter</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>Căutare comentarii</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>Publicare</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>URL pagină Subiect</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>Rapoarte</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>Moderare</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>Revizuire publicări raportate</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>Revizuire rapoarte</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>Revizuire rapoarte</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>Revizuiți conținut raportat împreună cu comentariile lăsate de membrii care l-au găsit ofensator</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>Editare publicare</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>Editare publicare</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>Editați un element de discuție raportat pentru a elimina conținutul potențial ofensator</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>Ștergere publicare</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>Ștergere publicare</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>Ștergeți elementul de discuție care a fost raportat ca ofensator. Aceasta va elimina și comentariile asociate lăsate de membrii care s-au plâns în legătură cu elementul</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>Respingere raport</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>Respingere raport</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>Eliminați rapoarte asociate cu elementul de discuție, în cazul în care considerați că este potrivit pentru comunitate. Aceasta va elimina comentariile asociate lăsate de membrii care l-au găsit ofensator</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>Insigne oferite cadou</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>Oferire insignă</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>Oferiți insigna unui membru</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>Oferiți insigna unui membru</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>S-a alăturat</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>Ultima activitate</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>Cele mai bune răspunsuri</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>Discuții</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>Răspunsuri</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>Răspunsuri pentru a ajunge la următorul nivel</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>Punctaj reputație</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>Ascundere reputație</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>Insigne oferite cadou</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>Text insignă oferită cadou</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>Membru al comunității</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>Adăugare membru nou în comunitate</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Insigne</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>Insigne</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>Această listă stochează ecusoane create de administratorii sau de moderatorii acestei comunități.</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>Nume insignă</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>Expert</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>Profesional</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>Administrare comunitate</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>Gestionare discuții</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>Gestionați discuțiile dintr-o comunitate.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>Gestionare categorii</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>Gestionați categoriile dintr-o comunitate.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>Gestionare membri</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>Gestionați membrii dintr-o comunitate.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>Setări de comunitate</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>Setările de comunitate, precum data stabilită și activarea raportării conținutului ofensator.</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>Gestionare publicări raportate</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>Gestionează publicări care au fost raportate ca ofensatoare.</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>Setări reputație</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>Setări de reputație de comunitate, cum ar fi conținutul și reputația persoanelor.</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>Comunitate</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>Asociere</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>Permite celor care nu sunt membri ai unui site de comunitate să se asocieze în comunitate. Butonul se ascunde, dacă utilizatorul este deja membru. Această parte web va funcționa pe site-urile de comunitate sau orice alt site care are activate caracteristicile Comunitate.</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>Despre această comunitate</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>Această parte web afișează descrierea comunității și alte proprietăți, precum data înființării. Această parte web va funcționa în site-urile de comunitate și în orice alt site care are activate caracteristicile de comunitate.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>Instrumente</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>Furnizează proprietarilor de comunități și administratorilor linkuri rapide la pagini de setări uzuale și liste de conținut pentru gestionarea unui site de comunitate. Această parte web va funcționa în site-urile de comunitate și în orice alt site care are activate caracteristicile de comunitate.</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>Discuții deosebite</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>Ce se întâmplă?</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>Afișează numărul de membri, subiecte și răspunsuri din cadrul unui site de comunitate. Această parte web va funcționa în site-urile de comunitate și în orice alt site care are activate caracteristicile de comunitate.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>Apartenența mea</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>Afișează informații cu privire la reputație și apartenență pentru vizitatorul curent al unui site de comunitate. Această parte web va funcționa în site-urile de comunitate și în orice alt site care are activate caracteristicile de comunitate.</value>
+  </data>
+  <data name="MembersView">
+    <value>Vizualizare membri</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>Vizualizare admin</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>Vizualizare membru unic</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>Colaboratori de top</value>
+  </data>
+  <data name="NewMembersView">
+    <value>Membri noi</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>Comunitate</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>Categorii</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>Membri</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>Despre</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>Pagina de pornire</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>Publicări raportate</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>DiscussionsByCategory</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>DiscussionsByCategoryFeaturedFull</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>DiscussionsByCategoryFeaturedPreview</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>Caracteristică Notificări de blog</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>Această caracteristică adaugă notificări în Bloguri</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>Caracteristică Capsare notificări blog</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>Această caracteristică conectează notificările de blog și caracteristica Like la șabloanele de site blog</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>{0}editați {1} profilul</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>E-mail</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>Telefon</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>Office</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>În comun</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>Afișează ce aveți în comun cu utilizatorul</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>Organigramă</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>Afișează organigrama dvs. și ierarhia de raportare</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>Gestionare urmărire</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>Etichete și note</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>Afișează cele mai cunoscute subiecte etichetate în organizație.</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>Informații profil</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>Afișează informațiile de bază din profil pentru utilizatorul curent</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>Mutare documente</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>Mută documentele selectate în alt site sau într-un folder din cadrul bibliotecii curente.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>Mutați documentele.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>Mută documentele selectate în alt site sau într-un folder din cadrul bibliotecii curente.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>Mută documentele selectate în alt site sau într-un folder din cadrul bibliotecii curente.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>Permisiuni site în fermă</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>Utilizează caracteristica permisiuni între site-uri pentru a permite aplicațiilor SharePoint să acceseze site-uri web în ferme.</value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>Numai pentru uz intern</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>Social</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>Proprietăți Microblog</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>Necitit în referiri</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>Ultima publicare</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>Proprietăți sociale</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>Element urmărit</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>Site</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>Document urmărit</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>Stocare date sociale</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>Furnizează asistență de date pentru caracteristicile sociale</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>Social</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>Oferă asistență de date pentru caracteristicile sociale</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>Caracteristică Coordonare Site-ul meu</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>Caracteristica Site-ul meu care încarcă pagina coordonatoare în galeria de pagini coordonatoare.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>Caracteristica Navigare unificată Site-ul meu</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>Caracteristica Site-ul meu care afișează aceeași navigare pentru site-ul gazdă și site-ul personal.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>Caracteristica unică de lansare rapidă site-ul meu</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>Caracteristica site-ul meu care arată aceeași lansare rapidă pentru gazdă și site-uri personale.</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>Pagina coordonatoare Site-ul meu</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>Furnizează stilul și aspectul unic al Site-ului meu.</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>Site-uri promovate</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>Redă site-urile promovate ca dale.</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>Site nou</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>Site-uri promovate</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>Gestionare site-uri promovate</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>Flux site</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>Flux site conține conversațiile de microblogging dintr-un site de grup.</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>Flux de știri</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>Flux site</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>Activează utilizarea fluxurilor de site.</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>Flux de știri</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>Controler caracteristică Flux de site</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>Controlează activarea caracteristicii flux de site.</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>Capsare caracteristică Flux de site</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>Conectează caracteristica flux de site cu toate noile colecții de site-uri Site de echipă.</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>Editare Microblog</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>Poate vizualiza, adăuga, actualiza și șterge elemente și documente din listă.</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>Schimbați fotografia</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>Numai {0} poate modifica această fotografie.</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>Nu puteți să modificați fotografia acestei persoane, pentru că este sincronizată cu Microsoft Exchange.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>Urmăresc pe</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>persoane</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>Vedeți persoanele pe care le urmăriți</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>documente</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>Vedeți documentele pe care le urmăriți</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>site-uri</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>Vedeți site-urile pe care le urmăriți</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>etichete</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>Vedeți etichetele pe care le urmăriți.</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">{Assigner} v-a atribuit activități noi în {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">Una sau mai multe activități v-au fost atribuite în {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>VIZUALIZARE ACTIVITĂȚILE MELE</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>SkyDrive Pro este gata</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>Accesați-vă documentele offline</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>Fiți mobil!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>Personalizați profilul</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>Păstrați legătura</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>Comunicați-le și altora la ce lucrați</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>  &lt;a href="{0}"&gt;Actualizați-vă setările de confidențialitate &lt;/a&gt; astfel încât alte persoane să poată vedea și comenta activitățile dvs. în fluxul de știri SharePoint.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>Documentele existente în Site-ul meu au fost mutate în &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;, locul din SharePoint în care să stocați, să sincronizați și să vă partajați documentele.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>Puteți să treceți offline documentele făcând clic pe butonul Sincronizare din orice bibliotecă. Încercați în &lt;a href="{0}"&gt;OneDrive pentru business&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2">
+    <value>Puteți să treceți offline documentele făcând clic pe butonul Sincronizare din orice bibliotecă. Încercați în &lt;a href="{0}"&gt;{1} pentru business&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>Luați SharePoint cu dvs. descărcând {0}aplicațiilemobile{1}.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>Încărcați o fotografie și povestiți-le celorlalți mai multe despre dvs. &lt;a href="{0}"&gt; aici&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>Alte persoane pot vedea și comenta unele din activitățile dvs. în SharePoint. Puteți să modificați setările &lt;a href="{0}"&gt; aici&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>&lt;a href="{0}"&gt;Urmăriți&lt;/a&gt; persoanele de care vă pasă.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>Fluxul de știri SharePoint este gata</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>Iată ce puteți face în continuare:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>Profitați la maxim de SharePoint</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>Alte persoane pot vedea și comenta activitățile dvs. în SharePoint. Puteți modifica setările &lt;a href="{0}"&gt; aici&lt;/a&gt;.</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>OneDrive pentru business</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>Gestionare activități partajate</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>Vizualizați toate bibliotecile și listele din acest site.</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>Flux de știri</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>Bun venit la &lt;span id="skyDriveText"&gt;OneDrive pentru business&lt;/span&gt;, un loc dedicat pentru stocarea, sincronizarea și partajarea lucrului. Documentele sunt private până când sunt partajate. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Aflați mai multe aici&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText2">
+    <value>Bun venit la &lt;span id="skyDriveText"&gt;{0} pentru business&lt;/span&gt;, un loc dedicat pentru stocarea, sincronizarea și partajarea lucrului. Documentele sunt private până când vor fi partajate. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Aflați mai multe aici&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated">
+    <value>Vești bune! Aveți {0} pentru business și în Office 365. Puteți accesa de oriunde fișierele aflate aici. Faceți clic pe {1} în bara de navigare din partea de sus pentru a începe. Nu vă faceți griji, fișierele de aici vor funcționa în continuare. {2}Faceți clic aici{3} pentru informații despre mutarea fișierelor.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated">
+    <value>Nu vă faceți griji, fișierele sunt în siguranță. Le-am mutat în noul {0} pentru business de pe Office 365. Acolo le puteți accesa pe orice dispozitiv, de oriunde. Puteți ajunge acolo făcând clic pe {1} în bara de navigare din partea de sus.</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>Îndepărtare</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>Toată lumea din &lt;span id="skyDriveFolder"&gt;organizația dvs.&lt;/span&gt; poate accesa documentele aici.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>Momentan se pregătește OneDrive pentru business. Este posibil să dureze un timp, dar puteți naviga în altă parte.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2">
+    <value>Se pregătește {0} pentru business. Este posibil să dureze un timp. Puteți naviga în continuare.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription">
+    <value>Mutați-vă documentele existente din Site-ul meu în OneDrive pentru business, un loc dedicat pentru stocarea, sincronizarea și partajarea lucrului.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2">
+    <value>Mutați documentele existente din Site-ul meu în {0} pentru business, un loc dedicat pentru stocarea, sincronizarea și partajarea lucrului.</value>
+  </data>
+</root>

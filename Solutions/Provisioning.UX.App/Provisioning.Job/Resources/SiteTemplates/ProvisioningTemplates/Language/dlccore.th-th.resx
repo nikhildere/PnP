@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4442.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>สถานะหยุด</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>ไม่มีนโยบาย</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>สถานะหยุด</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>ใช้งานอยู่</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>รอการยกเลิกการหยุด</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>เมื่อหยุด</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>เช็คเอาท์หรือปรับเปลี่ยนโดยฉัน</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>ใช้ Web Part นี้เพื่อแสดงเอกสารที่ปรับเปลี่ยนโดยผู้ใช้ในปัจจุบันและเช็คเอาท์ไปยังเอกสารเหล่านั้น</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>ที่ปรับเปลี่ยนโดยฉัน</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>ใช้ WebPart นี้ในการแสดงเอกสารที่ปรับเปลี่ยนโดยผู้ใช้ในปัจจุบัน</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>ใช้ Webpart นี้เพื่อแสดงงานที่ได้มอบหมายให้แก่ผู้ใช้ปัจจุบัน</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>งานของฉัน</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>เอกสารที่ได้รับการจัดให้เป็นอันดับสูงสุด</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>ใช้ WebPart นี้ในการแสดงเอกสารที่ได้รับการจัดให้เป็นอันดับสูงสุดในเว็บไซต์นี้</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>เอกสารที่ใหม่ที่สุด</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>ใช้ WebPart นี้ในการแสดงเอกสารที่ใหม่ที่สุด 10 อันดับในไซต์นี้</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>เอกสาร</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>เอกสาร</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>ศูนย์เอกสาร</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>สิ่งที่เพิ่มเติมของศูนย์เอกสาร</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>แสดงการนำทางมุมมองแบบทรีให้กับไซต์</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>ยินดีต้อนรับสู่ศูนย์เอกสาร</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>ใช้ไซต์นี้ในการสร้าง ทำงาน และจัดเก็บเอกสาร โดยสามารถใช้ไซต์นี้เป็นที่เก็บเพื่อทำงานร่วมกันในการเขียนเอกสารภายในทีมของคุณได้ หรือใช้เป็นฐานความรู้สำหรับเอกสารระหว่างทีมหลายๆ ทีมได้</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>ผู้สนับสนุนและผู้เยี่ยมชม</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>ตัวจัดการไซต์</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>อัปโหลดเอกสาร</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>นโยบายไซต์คอลเลกชัน</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>เทมเพลตของนโยบายชนิดเนื้อหา</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>การตั้งค่าการตรวจสอบไซต์คอลเลกชัน</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>กำหนดค่านโยบายการจัดการข้อมูล</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>รีวิวรายงานการใช้นโยบายการจัดการข้อมูล</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>การตั้งค่านโยบายการจัดการข้อมูล</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>การเก็บข้อมูล</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>จัดกำหนดการของเนื้อหาสำหรับการประมวลผล และการดำเนินการกระทำการเก็บข้อมูลกับเนื้อหาที่ถึงวันครบกำหนดแล้วโดยอัตโนมัติ</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>จัดกำหนดการสำหรับวิธีการจัดการและการกำจัดเนื้อหาโดยการระบุลำดับสำหรับขั้นตอนการเก็บข้อมูล ถ้าคุณระบุหลายขั้นตอน แต่ละขั้นตอนจะเกิดขึ้นทีละขั้นตามลำดับที่ปรากฏในหน้านี้ &lt;br /&gt;&lt;br /&gt;&lt;b&gt;หมายเหตุ:&lt;/b&gt; ถ้าฟีเจอร์การเก็บข้อมูลโดยยึดตามไลบรารีและโฟลเดอร์เปิดใช้งานอยู่ ผู้ดูแลรายการอาจแทนที่นโยบายเกี่ยวกับชนิดเนื้อหาด้วยกำหนดการในการเก็บข้อมูลของตนเองได้ เพื่อป้องกันเหตุการณ์นี้  ให้ปิดใช้งานฟีเจอร์นี้ในไซต์คอลเลกชัน</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>การตรวจสอบ</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>ตรวจสอบการกระทำของผู้ใช้ในเอกสารและข้อมูลในชุดรายการลงใน 'บันทึกการตรวจสอบ'</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>ระบุเหตุการณ์ที่ควรตรวจสอบสำหรับเอกสารและรายการที่เป็นไปตามนโยบายนี้</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>บาร์โค้ด</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>สร้างตัวระบุที่ไม่ซ้ำที่สามารถแทรกลงในเอกสาร Microsoft Office และยังสามารถใช้บาร์โค้ดในการค้นหาเอกสารได้อีกด้วย</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>มอบหมายบาร์โค้ดให้แต่ละเอกสารหรือรายการ คุณสามารถเลือกให้แอปพลิเคชัน Microsoft Office ร้องขอให้ผู้ใช้แทรกบาร์โค้ดเหล่านี้ลงในเอกสารได้</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>บาร์โค้ด</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>ค่าบาร์โค้ด</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>บาร์โค้ดที่กำหนดให้กับรายการนี้</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>ค่าของบาร์โค้ดที่กำหนดให้กับรายการนี้</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>ป้ายชื่อ</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>สร้างป้ายชื่อที่สามารถแทรกลงในเอกสาร Microsoft Office เพื่อให้แน่ใจว่าคุณสมบัติของเอกสาร หรือข้อมูลที่สำคัญอื่นๆได้รวมอยู่ในสิ่งที่จะพิมพ์แล้ว และยังสามารถใช้ป้ายชื่อในการค้นหาเอกสารได้อีกด้วย</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>คุณสามารถเพิ่มป้ายชื่อลงในเอกสารเพื่อให้แน่ใจว่าข้อมูลสำคัญเกี่ยวกับเอกสารถูกรวมอยู่ด้วยเมื่อเอกสารถูกพิมพ์ออกมา เมื่อต้องการระบุป้ายชื่อ ให้พิมพ์ข้อความที่คุณต้องการใช้ในช่อง "รูปแบบป้ายชื่อ" คุณสามารถใช้การผสมกันของข้อความคงที่ หรือคุณสมบัติเอกสารใดๆ ก็ได้ ยกเว้นคุณสมบัติที่ถูกคำนวณหรือคุณสมบัติที่มีอยู่แล้วภายใน เช่น GUID หรือ CreatedBy เมื่อต้องการเริ่มบรรทัดใหม่ ให้ใช้ลำดับอักขระ \n</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>ป้ายชื่อ</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>เก็บค่าปัจจุบันของป้ายชื่อ</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (โค้ด 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>สร้างบาร์โค้ดที่เข้ารหัสโดยใช้มาตรฐาน ANSI/AIM BC1-1995 (โค้ด 39)</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>การกระทำการหมดอายุของศูนย์ระเบียน</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>การหมดอายุได้ละทิ้งไฟล์ที่ส่งไปยังเซิร์ฟเวอร์ศูนย์ระเบียน</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>ลบระเบียนและข้อมูลการส่ง</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>ลบระเบียนที่ส่งไปยังศูนย์ระเบียนและคุณสมบัติที่สัมพันธ์กันทั้งหมดและประวัติการทำรายการที่รวมอยู่ในการส่งระเบียนเดิม</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>เอกสารการแปล</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>เอกสารแหล่งที่มา</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>เวอร์ชันเอกสารแหล่งที่มา</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>สถานะการแปล</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>ถ้าเอกสารนี้เป็นการแปล ให้ระบุว่าเอกสารแหล่งที่มาเวอร์ชันใดที่เอกสารนั้นแสดงไว้ ข้อมูลนี้จะถูกตั้งค่าโดยอัตโนมัติตามความสมบูรณ์ของเวิร์กโฟลว์ ถ้าคุณใช้เวิร์กโฟลว์การจัดการการแปล สำหรับจัดการกับการแปล</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>ถ้าเอกสารนี้เป็นการแปล ให้ระบุสถานะการแปลของเอกสาร ข้อมูลนี้จะถูกตั้งค่าโดยอัตโนมัติตามความสมบูรณ์ของเวิร์กโฟลว์ ถ้าคุณใช้เวิร์กโฟลว์การจัดการการแปล สำหรับจัดการกับการแปล</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>ยังไม่เริ่มต้น</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>กำลังดำเนินการ</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>เสร็จสมบูรณ์</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>ถูกยกเลิก</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>ต้องมีการอัปเดต</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>เอกสารแหล่งที่มา</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>ภาษาและผู้แปล</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>กำลังแปลจาก</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>กำลังแปลไปยัง</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>ผู้แปล</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>ภาษา</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>การหยุดและ eDiscovery</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>การหยุดและ eDiscovery</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>การหยุด</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>การหยุด</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>ฟีเจอร์นี้ใช้เพื่อติดตามการกระทำภายนอก เช่น การดำเนินคดี การสืบสวน หรือการตรวจสอบที่คุณจะต้องหยุดการใช้เอกสารชั่วคราว</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>จัดการการหยุด</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(สิ่งที่ต้องทำ) จัดการการหยุด</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>ค้นหาและหยุดเนื้อหา</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>ค้นหาและหยุดเนื้อหา</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>รายงานการหยุด</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>รายงานการหยุด</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>การหยุด</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>การหยุด</value>
+  </data>
+  <data name="HoldsListName">
+    <value>การหยุด</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>ใช้รายการนี้เพื่อติดตามการกระทำภายนอกต่างๆ เช่น คดีความ การสืบสวน หรือการตรวจสอบที่คุณจำเป็นต้องหยุดการจัดการกับรายการไว้ชั่วคราว การวางรายการไว้ในการหยุดอย่างน้อยหนึ่งชุดจะเป็นการเก็บรักษารายการนั้น และหยุดการจัดการกับรายการนั้นจนกว่าจะไม่มีการจัดการรายการโดยการหยุดใดๆ อีกต่อไป</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>รายงานการหยุด</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>ไลบรารีนี้ประกอบด้วยรายงานเกี่ยวกับการหยุดแต่ละชุดในไซต์นี้  แต่ละรายงานประกอบด้วยข้อมูลต่างๆ เช่น รายการที่มีอยู่ในการหยุด คิวรีการค้นหาที่เรียกใช้สำหรับการหยุด</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>หยุดคิวรีการค้นพบ</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>จัดการโดย</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>คำอธิบาย</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>สถานะหยุด</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>URL ของไซต์</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>การหยุด</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>หยุด URL</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>จัดกลุ่มตามการหยุด</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>การรายงาน</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>สร้างรายงานเกี่ยวกับข้อมูลใน Microsoft SharePoint Foundation</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>รายงานบันทึกการตรวจสอบ</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>ดูรายงานเวิร์กโฟลว์</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>แนวโน้มความนิยม</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>แนวโน้มความนิยม</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>รายงานความนิยมและการค้นหา</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>รายการที่ได้รับความนิยมสูงสุด</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Metadata การรายงาน</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>แกลเลอรีรายงานที่เก็บชนิดรายงานที่พร้อมใช้งานสำหรับไซต์นี้และไซต์ทั้งหมดที่อยู่ภายใต้ไซต์นี้</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>เทมเพลตการรายงาน</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>ใช้ไลบรารีไฟล์เทมเพลตรายงานเพื่อเก็บไฟล์ที่ถูกใช้โดยแกลเลอรีเทมเพลตรายงาน</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>การเก็บข้อมูลตามไลบรารีและโฟลเดอร์</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>อนุญาตให้ผู้ดูแลรายการสามารถแทนที่กำหนดการในการเก็บข้อมูลตามชนิดเนื้อหา และตั้งค่ากำหนดการตามไลบรารีและโฟลเดอร์ได้</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>การจัดการระเบียน</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>เพิ่มความสามารถเกี่ยวกับนโยบายการจัดการระเบียนและการจัดการข้อมูลให้กับ Microsoft SharePoint Foundation</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>รายการที่ได้รับการป้องกัน</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>แสดงรายการเทมเพลตที่ใช้สร้างรายการเนื้อหาที่รักษาไว้</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>เทมเพลตรายการที่ได้รับการป้องกันของ eDiscovery</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>แสดงรายการเทมเพลตที่ใช้สร้างรายการเนื้อหาที่รักษาไว้</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>ค้นหาและประมวลผล</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>เตรียมใช้งานการค้นหาและประมวลผลงานตัวจับเวลา</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>ไซต์ศูนย์ระเบียน</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>ยินดีต้อนรับสู่ศูนย์ระเบียน</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>ใช้ไซต์นี้ในการส่งและค้นหาเอกสารสำคัญที่ควรได้รับการจัดเก็บถาวรในระยะยาว  ระเบียนที่ส่งจะถูกเก็บไว้ในไลบรารีและโฟลเดอร์ที่ถูกต้องตามคุณสมบัติที่คุณกรอกไว้โดยอัตโนมัติ</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>ส่งระเบียน</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>ระเบียนของฉันที่รอการส่ง</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>ใช้ Web Part นี้ในการสอนผู้ที่เข้าไปเยี่ยมชมศูนย์ระเบียนเกี่ยวกับการจัดการระเบียนและข้อกำหนดขององค์กร</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>เพิ่มข้อมูลเกี่ยวกับหัวข้อการจัดการระเบียน เช่น:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>เพิ่มลิงก์ไปยังไซต์ข้อกำหนดขององค์กรอื่น เช่น:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>ข้อกำหนดของระเบียนในองค์กรของคุณ</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>เกิดอะไรขึ้นกับระเบียนหลังจากที่ส่งไปยังศูนย์ระเบียน</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>ขั้นตอนที่ผู้ใช้สามารถใช้เพื่อให้เป็นไปตามตามนโยบายขององค์กร</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>ไซต์การอบรมข้อกำหนดขององค์กรของคุณ</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> ไซต์เกี่ยวกับนโยบายการเก็บข้อมูลขององค์กร</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> รายการของที่ติดต่อการจัดการระเบียนสำหรับแต่ละแผนก</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>ส่งระเบียน</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>ยินดีต้อนรับสู่ศูนย์เอกสาร</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>ยินดีต้อนรับสู่ศูนย์เอกสารใหม่ของคุณ ให้ใช้ไซต์นี้เพื่อเป็นศูนย์กลางในการจัดการเอกสารในองค์กรของคุณ</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>จัดการกำหนดการในการเก็บข้อมูล</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>จุดรับเข้าสำหรับโฟลเดอร์ทั้งหมดเพื่อจัดการกำหนดการหมดอายุ</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>รายละเอียดการปฏิบัติตามกฎระเบียบ</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>จุดรับเข้าแถบเครื่องมือเพื่อดูการเก็บข้อมูล และรายละเอียดที่สอดคล้องอื่นๆ ในระหว่างวงจรอายุของรายการ</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>สร้างรายงานการวางแผนไฟล์</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>บริการรหัสเอกสาร</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>กำหนด ID ให้กับเอกสารในไซต์คอลเลกชันซึ่งสามารถใช้เพื่อรับรายการได้โดยไม่ขึ้นกับตำแหน่งที่ตั้งปัจจุบันของรายการ</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>การตั้งค่ารหัสเอกสาร</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>จัดการการตั้งค่ารหัสเอกสารของไซต์คอลเลกชันนี้</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>ค้นหาตามรหัสเอกสาร</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>ค้นหาเอกสารด้วยรหัสเอกสาร</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>ค่าของรหัสเอกสาร</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>ค่าของรหัสเอกสารที่กำหนดให้กับรายการนี้</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>รหัสเอกสาร</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>ลิงก์ถาวรไปยังเอกสารนี้</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>ไลบรารีสำหรับปล่อย</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>หลังจากที่กรอกข้อมูลในคุณสมบัติแล้ว ไฟล์ที่ถูกอัปโหลดไปยังไลบรารีนี้จะถูกย้ายไปยังไลบรารีหรือโฟลเดอร์ที่ถูกต้องตามกฎที่สร้างโดยเจ้าของไซต์นี้โดยอัตโนมัติ</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>กฏของตัวจัดระเบียบเนื้อหา</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>รายการนี้จะช่วยคุณในการสร้างแผนการสำหรับวิธีการจัดระเบียบเนื้อหาในไซต์นี้ สร้างกฎเพื่อให้แน่ใจว่าเอกสารที่ส่งไปยังไซต์นี้จะถูกส่งไปยังตำแหน่งที่ตั้งที่ถูกต้องและมีคุณสมบัติที่ถูกต้อง</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>กฎ</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>สร้างกฎเพื่อย้ายเนื้อหาที่ถูกส่งไปยังไซต์นี้ไปยังไลบรารีหรือโฟลเดอร์ที่ถูกต้อง</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>ตัวจัดระเบียบเนื้อหา</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>สร้างกฎที่ขึ้นอยู่กับ Metadata ซึ่งจะย้ายเนื้อหาที่ถูกส่งไปยังไซต์นี้ไปยังไลบรารีหรือโฟลเดอร์ที่ถูกต้อง</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>ทรัพยากรของการกำหนดเส้นทางเอกสาร</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>จำเป็นต้องทำการเตรียมใช้งานทรัพยากรสำหรับการกำหนดเส้นทางเอกสารในไซต์ภายในไซต์คอลเลกชันนี้</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>ทรัพยากรระเบียน</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>จำเป็นต้องทำการเตรียมใช้งานทรัพยากรสำหรับการสร้างระเบียนหรือการหยุดในไซต์ภายในไซต์คอลเลกชันนี้</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>การจัดการระเบียนที่มีอยู่</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>เปิดใช้งานข้อกำหนดและการประกาศของระเบียนที่มีอยู่</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>คอลัมน์การจัดการเอกสารและระเบียน</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>ชนิดเนื้อหาของตัวจัดระเบียบเนื้อหา</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>ลำดับความสำคัญ</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>ใช้งานอยู่</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>ชื่อกฏ</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>คำอธิบาย</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>ชนิดเนื้อหาการส่ง</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>ชนิดเนื้อหาการส่ง (ภายใน)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>เงื่อนไข XML</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>คุณสมบัติที่ใช้ในเงื่อนไข</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>นามแฝง</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>ไลบรารีเป้าหมาย</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>โฟลเดอร์เป้าหมาย</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>เส้นทางเป้าหมาย</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>URL ของไซต์เป้าหมาย</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>คุณสมบัติสำหรับการสร้างโฟลเดอร์โดยอัตโนมัติ</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>ข้อมูลการกำหนดค่าโฟลเดอร์อัตโนมัติ</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>เราเตอร์แบบกำหนดเอง</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>กำหนดเส้นทางไปยังตำแหน่งที่ตั้งภายนอก</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>คุณสมบัติเริ่มต้น</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>เรื่อง</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>ผู้ส่ง</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>ถึง</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>จาก</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>สำเนาถึง</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>สำเนาลับถึง</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>ข้อมูลที่ส่ง</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>วันที่ได้รับ</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>คอลัมน์การส่งอีเมล</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>การส่งอีเมล</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>ระเบียนอีเมลที่ส่ง</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>รายการนี้ถูกใช้โดยเราเตอร์เพื่อเก็บระเบียนอีเมลที่ได้รับชั่วคราว</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>ชนิดเนื้อหาชนิดนี้มีคอลัมน์ที่เกี่ยวข้องกับคุณสมบัติทั่วไปซึ่งจะถูกส่งไปเมื่อส่งอีเมลไปยังตัวจัดระเบียบเนื้อหา</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>ถูกล็อกการแก้ไข</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>สถานะการหยุดและระเบียน</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>ระเบียนที่ประกาศ</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>ยกเว้นจากนโยบาย</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>วันหมดอายุ</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>วันหมดอายุเดิม</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>คอลัมน์ชุดเอกสารหลัก</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>คำอธิบาย</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>คำอธิบายของชุดเอกสาร</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>ชุดเอกสาร</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>แสดงชนิดเนื้อหาที่จำเป็นสำหรับการสร้างและการใช้ชุดเอกสาร สร้างชุดเอกสารเมื่อคุณต้องการจัดการเอกสารหลายเอกสารในลักษณะเป็นผลิตภัณฑ์งานชุดเดียว</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>การซิงโครไนซ์ Metadata สำหรับชุดเอกสาร</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>แสดงโครงสร้างพื้นฐานเพื่อซิงโครไนซ์ Metadata สำหรับชุดเอกสาร</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>ชุดเอกสาร</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>ชนิดเนื้อหาของชุดเอกสาร</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>สร้างชุดเอกสารเมื่อคุณต้องการจัดการเอกสารหลายเอกสารในลักษณะเป็นผลิตภัณฑ์งานชุดเดียว</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>ดูหน้ายินดีต้อนรับ</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>ดูหน้ายินดีต้อนรับสำหรับชุดเอกสารนี้</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>การตั้งค่าชุดเอกสาร</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>ดาว์นโหลดสำเนา</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>ดาวน์โหลดสำเนาของชุดเอกสารและเนื้อหาปัจจุบันของชุดเอกสาร</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>ส่งไปยังตำแหน่งที่ตั้งอื่น</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>ส่งชุดเอกสารนี้และเนื้อหาปัจจุบันของชุดเอกสารไปยังตำแหน่งที่ตั้งอื่น</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>เก็บค่าเวอร์ชัน</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>เก็บค่าเวอร์ชันของเนื้อหาในปัจจุบันของชุดเอกสาร</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>ประวัติเวอร์ชันของชุดเอกสาร</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>ดูประวัติเวอร์ชันของชุดเอกสาร</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>คุณสมบัติของชุดเอกสาร</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>แสดงคุณสมบัติของชุดเอกสาร</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>เนื้อหาของชุดเอกสาร</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>แสดงเนื้อหาของชุดเอกสาร</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>นโยบายไซต์</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>อนุญาตให้ผู้ดูแลไซต์คอลเลกชันกำหนดตารางเวลาการเก็บข้อมูลที่นำไปใช้กับไซต์และเนื้อหาทั้งหมดของไซต์</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>นโยบายโครงการ</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>ชนิดเนื้อหาของคอนเทนเนอร์สำหรับข้อกำหนดของนโยบายโครงการ</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>นโยบายไซต์</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>นโยบายไซต์จะกำหนดวิธีที่ไซต์จัดการและกำจัดเนื้อหาของไซต์ นโยบายสามารถแชร์ข้ามไซต์คอลเลกชันได้โดยใช้กลไกการประกาศชนิดเนื้อหา</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>การปิดและลบไซต์</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>ดูหรือเปลี่ยนแปลงข้อมูลที่นโยบายการจัดการใช้บนไซต์นี้ และกำหนดวันที่สำหรับขั้นตอนต่างๆ ในวงจรชีวิตของไซต์</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>รายการนโยบายโครงการ</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>รายการที่สร้างขึ้นโดยการเก็บข้อมูลตามโครงการซึ่งใช้เพื่อเก็บรายการนโยบายของโครงการ</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>วิดีโอและ Rich Media</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>ให้บริการไลบรารี ชนิดเนื้อหา และ Web Part สำหรับการเก็บ การจัดการ และการดูแอสเซทแบบ Rich Media เช่น รูป คลิปเสียง และวิดีโอ</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>การตั้งค่าการประมวลผลวิดีโอและการเล่น</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>วิดีโอ</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>อัปโหลดหรือลิงก์ไปยังวิดีโอ</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>คำอธิบาย</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>ข้อมูลสรุปของวิดีโอ</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>เจ้าของ</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>เจ้าของวิดีโอ</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>ดัชนีเวลารูปขนาดย่อ</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>เข้ารหัสเริ่มต้น</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>การแทนที่การเข้ารหัสเริ่มต้นโดยผู้ใช้</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>ลิงก์ภายนอก</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>ฝังโค้ด</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>แสดงลิงก์สำหรับการดาวน์โหลด</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>ระบุว่าจะให้ปุ่มปรากฏขึ้นบนหน้าของแอปเล่นวิดีโอหรือไม่ ซึ่งทำให้ผู้ใช้สามารถดาวน์โหลดวิดีโอที่กำลังเล่นอยู่ได้</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>แสดงลิงก์ที่ฝังตัว</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>ระบุว่าจะให้ปุ่มปรากฏขึ้นในแอปเล่นวิดีโอหรือไม่ ซึ่งทำให้ผู้ใช้สามารถรับโค้ดฝังตัวสำหรับวิดีโอที่กำลังเล่นอยู่ได้</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>ข้อมูลการแปลง</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>บุคคลในวิดีโอ</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>บุคคลที่ปรากฏในวิดีโอ</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>การนำทางและการกรอง Metadata</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>แสดงรายการแต่ละรายการในไซต์พร้อมหน้าการตั้งค่าสำหรับการกำหนดค่าซึ่งรายการจะใช้ลำดับชั้นมุมมองแบบทรีของ Metadata และตัวควบคุมการกรองในการปรับปรุงการนำทางและการกรองของรายการที่มีให้ดีขึ้น</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>การตั้งค่าการนำทาง Metadata</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>การตั้งค่ามุมมองต่อตำแหน่งที่ตั้ง</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>ตัวควบคุม Ribbon "เชื่อมต่อไปยัง Office"</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>เพิ่มจุดรับเข้าในส่วนติดต่อผู้ใช้ Ribbon สำหรับการสร้างทางลัดไลบรารีในรายการไซต์ SharePoint ของผู้ใช้ถ้าผู้ใช้มี Office เวอร์ชันล่าสุดติดตั้งอยู่  Office จะทำการแคชเทมเพลตที่มีในไลบรารีเหล่านั้นบนเครื่องที่ใช้งานอยู่ของผู้ใช้</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>แทรกปุ่มลงในแท็บ ไลบรารี/แอคชัน</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>เชื่อมต่อไปยัง Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>เชื่อมต่อไปยัง Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>เชื่อมต่อไปยัง Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>เพิ่มลงในทางลัดของคุณที่ปรากฏเมื่อสร้าง เปิด และบันทึกเอกสารในแอปพลิเคชัน Microsoft Office เช่น Word, Excel และ PowerPoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>เพิ่มลงในไซต์ SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>เพิ่มลงในไซต์ SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>เพิ่มทางลัดลงในไลบรารีนี้ใน Microsoft Office</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>เอาออกจากไซต์ SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>เอาออกจากไซต์ SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>เอาไลบรารีนี้ออกจากรายการทางลัดของคุณใน Microsoft Office</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>จัดการไซต์ SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>จัดการไซต์ SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>ปรับเปลี่ยนรายการทางลัด Microsoft Office ของคุณ</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>การผนวกอีเมลเข้ากับตัวจัดระเบียบเนื้อหา</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>เปิดใช้งานตัวจัดระเบียบเนื้อหาของไซต์เมื่อต้องการยอมรับและจัดระเบียบข้อความอีเมล  ฟีเจอร์นี้ควรใช้เฉพาะในที่จัดเก็บที่มีการจัดการอย่างดี เช่น ศูนย์ระเบียน เท่านั้น</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>การตั้งค่าตัวจัดระเบียบเนื้อหา</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>กฏของตัวจัดระเบียบเนื้อหา</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>การตั้งค่าการประกาศระเบียน</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>ไลบรารีระเบียน</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>สร้างไลบรารีเอกสารสำหรับการจัดเก็บระเบียนเกี่ยวกับธุรกิจที่สำคัญ</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>อัปโหลดเอกสารที่เสร็จสิ้นแล้วไปยังไลบรารีนี้ เอกสารที่ถูกเพิ่มเข้าไปในไลบรารีนี้จะถูกประกาศเป็นระเบียนโดยอัตโนมัติ</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>การกำหนดค่าศูนย์ระเบียน</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>กำหนดค่าไซต์เป็นศูนย์ระเบียน</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>จัดการศูนย์ระเบียน</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>จัดการระเบียนโดยการรักษาการตั้งค่าไว้ในไซต์นี้</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>การตั้งค่างานและการสร้างการวางแผนไฟล์</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>ใช้คำแนะนำเหล่านี้เพื่อกำหนดค่าไซต์ศูนย์ระเบียนให้เสร็จสิ้น</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>เมื่อต้องการทำให้ไซต์นี้พร้อมสำหรับการยอมรับระเบียน ให้กำหนดค่าไซต์ให้ตรงกับการวางแผนไฟล์ขององค์กรของคุณ:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;หมายเหตุ:&lt;/b&gt; ไม่สามารถกำหนดค่าศูนย์ระเบียนนี้ได้อย่างสมบูรณ์เนื่องจากไม่ได้เปิดใช้งานฟีเจอร์ของไซต์คอลเลกชันบางฟีเจอร์ไว้  ถ้าคุณไม่มีสิทธิ์เข้าถึงเพื่อแก้ปัญหาเหล่านี้ ให้ติดต่อผู้ดูแลไซต์คอลเลกชันของคุณ:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>ไม่สามารถทำเครื่องหมายเอกสารขาเข้าเป็นระเบียนได้  ให้เปิดใช้งานฟีเจอร์ ระเบียนที่มีอยู่ ใน แกลเลอรีฟีเจอร์ของไซต์คอลเลกชัน</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>ไม่สามารถกำหนดรหัสเอกสารให้กับเอกสารขาเข้าได้  ให้เปิดใช้งาน บริการรหัสเอกสาร ใน แกลเลอรีฟีเจอร์ของไซต์คอลเลกชัน</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>ขั้นที่ 1:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>ขั้นที่ 2:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>ขั้นที่ 3:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>ขั้นที่ 4:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>สร้างชนิดเนื้อหา</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>กำหนดชนิดของระเบียนและคุณสมบัติของระเบียนแต่ละชนิด</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>สร้างไลบรารีระเบียน</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>สร้างลำดับชั้นของไลบรารีระเบียนและโฟลเดอร์แล้วระบุกำหนดการในการเก็บข้อมูลให้ไลบรารีระเบียนและโฟลเดอร์แต่ละชุด</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>สร้างกฎตัวจัดระเบียบเนื้อหา</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>กำหนดกฎที่จะกำหนดเส้นทางระเบียนที่ส่งให้ไปยังโฟลเดอร์ที่ถูกต้อง</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>ออกแบบหน้ายินดีต้อนรับของไซต์</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>อธิบายการวางแผนไฟล์และนโยบายการจัดการระเบียนของคุณให้กับผู้ใช้</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>เมื่อคุณทำเสร็จสิ้นแล้ว คุณสามารถเอา Web Part นี้ออกได้</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>งานการจัดการระเบียนทั่วไป</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>สร้างไลบรารีระเบียนใหม่</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>สร้างไลบรารีใหม่สำหรับการจัดเก็บระเบียน</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>จัดการเนื้อหาและโครงสร้าง</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>ใช้เครื่องมือการจัดการลำดับชั้นในการจัดเรียงโครงสร้างโฟลเดอร์ของไซต์ใหม่</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>สร้างกฎตัวจัดระเบียบเนื้อหา</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>จัดการที่จัดเก็บระเบียนที่ส่ง</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>ค้นหาและหยุดระเบียน</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>ค้นหาระเบียนที่ควรรักษาไว้เนื่องจากการดำเนินคดี</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>สร้างรายงานการวางแผนไฟล์</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>ดูสเปรดชีตเกี่ยวกับโครงสร้างของไลบรารีระเบียนและกำหนดการในการเก็บข้อมูล</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>สร้างรายงานการตรวจสอบ</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>เข้าถึงประวัติของเหตุการณ์ต่างๆ ที่เกิดขึ้นกับระเบียน (ต้องมีสิทธิ์ของผู้ดูแลไซต์คอลเลกชัน)</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>รีวิวรายงานบันทึกการตรวจสอบที่มีอยู่ซึ่งแสดงการติดตามเหตุการณ์แบบครอบคลุมสำหรับกิจกรรมของเนื้อหา ความปลอดภัย นโยบาย หรือตัวกรองอื่นๆ </value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>รีวิวรายงานแนวโน้มความนิยมซึ่งให้ข้อมูลเชิงลึกเกี่ยวกับวิธีและเนื้อหาที่มีการเข้าถึง</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>กำหนดค่าการตรวจสอบซึ่งติดตามการกระทำของผู้ใช้บนไซต์ทั้งหมดในไซต์คอลเลกชันนี้</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>จัดการนโยบายการจัดการข้อมูลซึ่งให้ข้อมูลข้อกำหนดนโยบาย ป้ายชื่อนโยบาย การตรวจสอบ วันหมดอายุ และบาร์โค้ดให้กับไซต์ทั้งหมดในไซต์คอลเลกชันนี้</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>การตั้งค่าการประกาศระเบียน</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>การตั้งค่าค่าเริ่มต้นสำหรับคอลัมน์</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>เปลี่ยนค่าเริ่มต้นสำหรับคอลัมน์</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>เปลี่ยนค่าเริ่มต้นสำหรับคอลัมน์สำหรับโฟลเดอร์นี้</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>ประกาศระเบียน</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>ประกาศรายการเป็นระเบียนซึ่งอาจเพิ่มข้อจำกัดและนโยบายที่ขึ้นกับระเบียบ โดยยึดตามการตั้งค่าของระบบ</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>ยกเลิกการประกาศระเบียน</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>ยกเลิกการประกาศรายการระเบียนเพื่อเอาข้อจำกัดและนโยบายของระเบียนออก</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>กำหนดค่ามุมมองสำหรับตำแหน่งที่ตั้งนี้</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>เปลี่ยนมุมมองที่มีอยู่สำหรับโฟลเดอร์นี้</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>ชุดเอกสาร</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>จัดการ</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>การกระทำ</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>แก้ไขคุณสมบัติ</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>แก้ไขคุณสมบัติของชุดเอกสารนี้</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>ดาวน์โหลดสำเนา</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>ดาวน์โหลดสำเนาของชุดเอกสารนี้</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>สิทธิ์</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>ไปยังหน้าสิทธิ์เพื่อเพิ่ม เปลี่ยนแปลง หรือเอาสิทธิ์สำหรับชุดเอกสารนี้ออก</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>ลบ</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>จัดการคิวรี</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>ใหม่ </value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>จัดการ</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>คิวรี  </value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>คัดลอกคิวรี</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>คัดลอกคิวรี</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>สร้างสำเนาของรายการที่เลือก</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>อัปเดตสถิติ</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>อัปเดตสถิติ</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>เรียกใช้คิวรีที่เลือกเพื่ออัปเดตสถิติของตนเอง</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>ส่งออก</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>ส่งออก</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>ส่งออกผลลัพธ์ของคิวรีที่เลือก</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>ลบชุดเอกสารนี้ เอกสารทั้งหมดในชุดเอกสารนี้จะถูกลบ</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>แชร์</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>ส่งลิงก์ทางอีเมล</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>อีเมลลิงก์ไปยังชุดเอกสารนี้</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>ส่งไปยัง</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>ไปที่หน้า ส่งไปยังตำแหน่งที่ตั้งอื่น เพื่อย้ายหรือคัดลอกชุดเอกสารนี้ไปยังตำแหน่งที่ตั้งอื่น</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>จัดการ</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>เก็บค่าเวอร์ชัน</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>บันทึกเวอร์ชันของคุณสมบัติและเอกสารปัจจุบันในชุดเอกสารนี้</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>ประวัติเวอร์ชัน</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>แสดงและจัดการประวัติเวอร์ชันของชุดเอกสารนี้</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>เวิร์กโฟลว์</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>ไปที่หน้าเวิร์กโฟลว์เพื่อเริ่มหรือจัดการเวิร์กโฟลว์ที่สัมพันธ์กับชุดเอกสารนี้</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>จัดการการแปลงวิดีโอ</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>จัดการการแปลงวิดีโอนี้</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>การกระทำแบบกำหนดเองของ Ribbon การนำทาง Metadata</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>อัปเดต</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>อัปเดตสถานะของแหล่งที่มา</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>อัปเดตสถานะของแหล่งที่มาที่เลือก</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>ข้อผิดพลาดการส่งออก</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>สร้างรายการส่งออกของรายการทั้งหมดที่มีข้อผิดพลาด เพื่อรับรายงานหรือดาวน์โหลดรายการดังกล่าว</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>การกระทำของแหล่งที่มา</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>การค้นหา</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>การดำเนินการนี้อาจใช้เวลาสักครู่...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>ความเกี่ยวข้อง</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>วันที่(เก่าที่สุด)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>วันที่(ใหม่ที่สุด)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>ค้นหา</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>คิวรีได้รับการบันทึก</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>พอร์ทัล eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>สร้างและจัดการกรณีของ eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>ฟีเจอร์กรณีของ eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>เตรียมทรัพยากรที่จำเป็นสำหรับกรณี eDiscovery</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>ชื่อ  </value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>สถานะ In-Place Hold</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>การรักษาที่ถูกกรอง</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>สถานะ Non Localized In-Place Hold</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>In-Place Hold</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>ประวัติ In-Place Hold</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>เวลาที่ทำดัชนีล่าสุด</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>ข้อผิดพลาดในการทำดัชนี - รายการ</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>ข้อผิดพลาดในการทำดัชนี - ตำแหน่ง SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>เปอร์เซ็นต์ข้อผิดพลาดการตระเวน</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>แหล่งที่มา</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>เพิ่มแหล่งที่มาใหม่</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>ส่งออก</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>เพิ่มการส่งออกใหม่</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>คิวรี</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>สร้างการค้นหาจากการบันทึกใหม่</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Custodian</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>เพิ่ม Custodian ใหม่</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>กล่องจดหมาย</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>เพิ่มกล่องจดหมายใหม่</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>ตําแหน่งที่ตั้ง</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>เพิ่มตำแหน่งที่ตั้งใหม่</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>ชุด eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>สร้างชุด eDiscovery ใหม่</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>รายการที่รักษาไว้</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>เพิ่มรายการที่รักษาไว้ใหม่</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>ชนิดเนื้อหา eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>รายการ</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>ขนาด (เมกะไบต์)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>คิวรี</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>ID ของไซต์</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>ชนิดของแหล่งที่มา</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>ชนิดของแหล่งข้อมูลเบื้องต้น</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>Id เว็บ</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>Id การติดต่อกับภายนอก</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>Id ภายนอกของการติดต่อกับภายนอก</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>การลบรายการที่ซ้ำกัน</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>เอาเนื้อหา Exchange ที่ซ้ำกันออก</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>เอาการป้องกันการจัดการสิทธิ์ออก</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>เอาการบริการการจัดการสิทธิ์ (RMS) และการเข้ารหัสลับออกจากข้อมูล Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>รวมเวอร์ชัน</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>รวมเวอร์ชันของเอกสาร SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>รายการที่ไม่สามารถค้นหา</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>รวมรายการที่ถูกเข้ารหัสลับ หรือมีรูปแบบที่ไม่รู้จัก</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value> สถานะ</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>คุณสมบัติของ eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>คิวรี  </value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>ผู้เขียน</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>วันที่เริ่ม</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>วันที่สิ้นสุด</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>ตัวกรองของโดเมน (เฉพาะ Exchange เท่านั้น)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>Sharepoint Refiners</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Exchange Refiners</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>ชนิดของการจัดการแหล่งที่มา</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>ID การเก็บ</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>ID การดำเนินการ</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>ชนิดของการกระทำ</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>ID แหล่งที่มา</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>ID แสดงผล</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>แหล่งที่มา</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>กลุ่มแหล่งที่มา</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>ผู้ดูแล</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>ผู้ใช้</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>บันทึกย่อ </value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>แหล่งที่มา</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>หมายเลขเวอร์ชันการรรักษา</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>ตำแหน่งที่ตั้งเดิมการรักษา</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>Id รายการต้นฉบับที่รักษา</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Metadata ต้นฉบับที่รักษา</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>วันที่รักษา</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>ชนิดรายการ Custodian</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>ชนิดรายการ Custodian ที่ใช้ในกรณี eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>ชนิดรายการของแหล่งที่มา</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>ชนิดรายการสำหรับแหล่งที่มาในกรณี eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>ชนิดรายการคิวรี</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>ชนิดรายการสำหรับการค้นหาที่บันทึกไว้ในกรณี eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>ชนิดของรายการที่ส่งออก</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>ชนิดรายการสำหรับการส่งออกในกรณี eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>ชนิดรายการชุด eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>ชนิดรายการของชุดการค้นหาในกรณี eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>ชนิดรายการอินสแตนซ์ต้นทาง</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>ชนิดรายการสำหรับอินสแตนซ์ต้นทางในกรณี eDiscovery</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>เทมเพลตไซต์พอร์ทัล eDiscovery</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>คิวรี</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>ใช้คิวรีเพื่อลดและวิเคราะห์ผลลัพธ์การค้นหา</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>แหล่งที่มา</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>ติดตามสถานะของกล่องจดหมายและตำแหน่งที่ตั้งที่เกี่ยวข้องกับกรณี</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>ชุด eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>สร้างและจัดการกลุ่มของเนื้อหาที่สามารถถูกกรองและหยุดไว้ชั่วคราวได้</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>ส่งออก: รายการใหม่</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>ส่งออก</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>ใช้รายการ ส่งออก เพื่อจัดการการดาวน์โหลดเนื้อหา eDiscovery ที่ส่งออก</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>อินสแตนซ์ของแหล่งที่มา</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>ติดตามสถานะของกรณี</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>ผู้ดูแล</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>เพิ่มผู้ใช้ในกรณีซึ่งสามารถเชื่อมโยงกับแหล่งข้อมูล เช่น กล่องจดหมาย และตำแหน่งที่ตั้ง</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>สถานะ In-Place Hold</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>สถานะการส่งออก</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>การดาวน์โหลดยังไม่เริ่ม</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>เริ่มต้นการดาวน์โหลด</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>การดาวน์โหลดเสร็จสมบูรณ์</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>การส่งออกล้มเหลว</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>พักไว้</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>หยุดไว้ด้วยตัวกรอง</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>หมดเวลา</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>ไม่สามารถหยุดไว้ได้</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>ไม่ได้พักไว้</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>กำลังประมวลผล</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>บางส่วน</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>ล้มเหลว</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>ยินดีต้อนรับสู่ศูนย์ eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>ใช้ไซต์นี้เพื่อสร้าง จัดการ และทำงานกรณี eDiscovery เมื่อใช้กรณี eDiscovery คุณก็สามารถจัดการการระบุรหัสประจำตัวและการหยุดภายในของกล่องจดหมาย Exchange ไซต์ SharePoint และแหล่งข้อมูลเนื้อหาอื่นๆ ได้ คุณยังสามารถสร้างและจัดการคิวรีการค้นหาเพื่อระบุเนื้อหาที่เกี่ยวข้องแล้วส่งออกผลลัพธ์การค้นหาได้อีกด้วย</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>เริ่มต้นใช้งาน</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>อนุญาตให้ผู้ใช้ตามกฎหมายของคุณมีสิทธิ์เข้าถึงเนื้อหาทั้งหมดในการปรับใช้ SharePoint ของคุณ เราขอแนะนำให้สร้างกลุ่มความปลอดภัยที่ประกอบด้วยสมาชิกในทีมกฎหมายของคุณ</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>เมื่อต้องการค้นหากล่องจดหมาย Exchange โปรดตรวจดูให้แน่ใจว่าผู้ดูแลระบบของคุณได้ติดตั้ง Exchange Web Services Managed Client บนเซิร์ฟเวอร์ SharePoint ทั้งหมดแล้ว และให้ผู้ดูแลระบบของคุณกำหนดค่าการรับรองความถูกต้องระหว่าง Exchange และ SharePoint ด้วย</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>อนุญาตให้ทีมกฎหมายของคุณได้รับสิทธิ์ในนโยบายผู้ใช้กลุ่มความปลอดภัยสำหรับแอปพลิเคชันบนเว็บ SharePoint ที่ประกอบด้วยเนื้อหาที่คุณต้องการเพื่อดำเนินการ eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>อนุญาตให้ผู้ใช้ตามกฎหมายของคุณมีสิทธิ์ใน eDiscovery สำหรับกล่องจดหมาย Exchange ที่คุณต้องดำเนินการแอคชัน eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>In-Place Hold, การค้นหา และการส่งออก</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>เมื่อใช้การหยุด คุณสามารถระบุไซต์ SharePoint และกล่องจดหมายที่ต้องการหยุด เมื่อมีการปรับเปลี่ยนหรือลบเนื้อหา เนื้อหานั้นก็จะถูกเก็บไว้ในสถานที่นั้นจนกว่าคุณต้องการจะส่งออก</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>การค้นหา eDiscovery ในสถานที่ทำให้คุณสามารถค้นหาทั้งไซต์ SharePoint การแชร์ไฟล์ และกล่องจดหมาย Exchange ได้ ใช้ความใกล้เคียง อักขระตัวแทน ตรรกะบูลีน และตัวปรับปรุง เพื่อจำกัดขอบเขตของผลลัพธ์ให้มีเนื้อหาตามที่คุณต้องการ เนื่องจากการค้นหาจะทำในสถานที่ ผลลัพธ์ของคุณจึงเป็นผลลัพธ์ล่าสุดและทันสมัยเช่นเดียวกับการที่คุณค้นหาไซต์ Outlook Web Access หรือ SharePoint ตามปกติ</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>หลังจากที่คุณระบุเนื้อหาที่คุณต้องการแล้ว คุณก็สามารถดาวน์โหลดเนื้อหาดังกล่าวไปที่ฮาร์ดไดรฟ์ภายในของคุณหรือการแชร์ไฟล์ในรูปแบบดั้งเดิมแบบเคลื่อนย้ายได้ การดาวน์โหลดหน้า SharePoint เอกสาร รายการ และข้อมูลกล่องจดหมาย Exchange เป็นเรื่องที่ทำได้อย่างสะดวก</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>ยินดีต้อนรับสู่กรณีของคุณ</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>ใช้กรณีของคุณเพื่อระบุแหล่งที่มาของเนื้อหา เช่น กล่องจดหมายหรือไซต์ SharePoint และรักษาเนื้อหานี้ด้วย In-Place Hold หลังจากที่คุณได้ระบุแหล่งที่มาของเนื้อหา คุณสามารถค้นหาในเนื้อหานี้เพื่อระบุรายการที่เกี่ยวข้องและส่งออก</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>สร้างกรณีใหม่</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>เพิ่มตำแหน่งที่ตั้งเพิ่มเติม</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>เพิ่มกล่องจดหมายเพิ่มเติม</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>ตรวจสอบตำแหน่งที่ตั้ง</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>ตรวจสอบกล่องจดหมาย</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>เรียกดู</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(เพิ่มและจัดการแหล่งที่มา)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(ปรับเปลี่ยนขอบเขตของคิวรี)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>แหล่งที่มา: แก้ไขรายการ</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>แหล่งที่มา: รายการใหม่</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>เพิ่มและจัดการแหล่งที่มา</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>ตำแหน่งที่ตั้ง</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>ป้อน URL ที่ระบุในไซต์ SharePoint และการแชร์ไฟล์ที่มีการทำดัชนีโดยการค้นหา แหล่งข้อมูลของไซต์ SharePoint จะรวมถึงไซต์ย่อยทั้งหมด แหล่งข้อมูลของการแชร์ไฟล์จะรวมถึงโฟลเดอร์ทั้งหมดภายใต้โฟลเดอร์ที่ระบุไว้</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>กล่องจดหมาย</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>ระบุกล่องจดหมาย Exchange โดยใช้ชื่อหรือที่อยู่อีเมล</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>ตกลง</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>การทำงานร่วมกันของบุคคล</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>กล่องจดหมาย Exchange</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Fileshare</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>เนื้อหากรณี</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>เนื้อหากรณีทั้งหมด</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>เนื้อหา In-Place Hold</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>รายการ:</value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>ขนาด :</value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>ตรวจสอบแล้ว</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>การเชื่อมต่อไปยังแอปพลิเคชัน Search Service ล้มเหลว</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>ความล้มเหลวเกิดขึ้นขณะกำลังพยายามตรวจสอบแหล่งที่มา</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>มีแหล่งที่ระบุอยู่แล้วในกรณี</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>ไม่พบรายการที่ตรงกัน URL อาจไม่ถูกต้อง คุณไม่มีสิทธิ์ในการเข้าถึงตำแหน่งที่ตั้งนี้ หรือตำแหน่งที่ตั้งไม่มีการทำดัชนีโดยการค้นหา</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>ไม่สามารถตรวจสอบกล่องจดหมายได้ กล่องจดหมายอาจไม่มีอยู่หรือคุณอาจไม่มีระดับสิทธิ์ที่ถูกต้อง</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>ชนิดเนื้อหา</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>ตัวเลือกคิวรีขั้นสูง</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>ไม่มีแหล่งข้อมูลในคิวรีนี้ เมื่อต้องการเพิ่มแหล่งข้อมูล โปรดกลับไปยังหน้าคิวรี แล้วคลิก "{0}"</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>In-Place Hold ที่ขึ้นกับคิวรี</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>เมื่อเปิดใช้งานการรักษาตามคิวรี เนื้อหาที่เก็บอยู่ในไลบรารีการรักษาที่ไม่ตรงกับตัวกรองการหยุดใดๆ สำหรับไซต์นี้ได้หมดอายุลงแล้ว โดยทั่วไปแล้วควรใช้ฟีเจอร์นี้สำหรับไซต์ที่เก็บถาวรซึ่งจะมีการหยุดแบบพร้อมกันจำนวนมาก</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} การหยุดเนื้อหาทั้งหมดถูกกำหนดเวลาไว้โดยชุด eDiscovery'{1}'</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} ขณะนี้เนื้อหาทั้งหมดถูกหยุดไว้สำหรับชุด eDiscovery '{1}'</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} ตั้งเวลาการอัปเดตของการหยุดไว้สำหรับชุด eDiscovery '{1}'</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} เริ่มการอัปเดตของ In-Place Hold ของชุด eDiscovery '{1}'</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} การอัปเดตของการหยุดไว้ถูกตั้งเวลาด้วยชุด eDiscovery '{1}' ด้วยตัวกรอง '{2}'</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} เริ่มการอัปเดตของการหยุดไว้สำหรับชุด eDiscovery '{1}' ด้วยตัวกรอง '{2}'</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} ตั้งเวลาการหยุดไว้ของชุดย่อยที่ผ่านการกรองโดยชุด eDiscovery '{1}' ด้วยตัวกรอง '{2}'</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} ขณะนี้ชุดย่อยของเนื้อหาที่ผ่านการกรองถูกหยุดไว้สำหรับชุด eDiscovery '{1}' ด้วยตัวกรอง '{2}'</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} ปลดการหยุดไว้สำหรับชุด eDiscovery '{1}' แหล่งข้อมูลนี้ยังคงถูกหยุดไว้โดยชุด eDiscovery</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} การปลดการหยุดไว้สำหรับเนื้อหาทั้งหมดถูกตั้งเวลาโดยชุด eDiscovery '{1}'</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} ปลดการหยุดไว้ของเนื้อหาทั้งหมดสำหรับชุด eDiscovery '{1}'</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} ปลด In-Place Hold ของเนื้อหาทั้งหมดจากชุด eDiscovery ที่ไม่มีอยู่แล้ว</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} การหยุดแหล่งข้อมูลไว้สำหรับชุด eDiscovery '{1}' ล้มเหลว ข้อความแสดงข้อผิดพลาด: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} การปลดการหยุดไว้ของแหล่งข้อมูลนี้สำหรับชุด eDiscovery '{1}' ล้มเหลว ข้อความผิดพลาด: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>กิจกรรมการตรวจสอบ eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>เนื้อหากรณี</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>แสดงเนื้อหาของของกรณี</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Web Part เนื้อหาของกรณีสามารถใช้ได้เฉพาะบนเว็บกรณีของ eDiscovery เท่านั้น</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>คุณต้องระบุค่าสำหรับเขตข้อมูลที่ต้องการนี้</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">ขณะนี้แหล่งข้อมูลนี้ถูกหยุดไว้ เมื่อต้องการลบแหล่งข้อมูลนี้จะต้องปลดที่หยุดไว้ทั้งหมด</value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">ขณะนี้ชุด eDiscovery นี้ได้เปิดใช้งาน In-Place Hold แล้ว เมื่อต้องการลบชุด eDiscovery นี้ โปรดปลด In-Place Hold</value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>ไซต์นี้ไม่มีอยู่</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>ID พาร์ติชันของไซต์ไม่ตรงกับ ID พาร์ติชันของการดำเนินการหยุดที่ไว้</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>ขนาด</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>รายการ</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>ผลรวม:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>เอารายการที่ซ้ำกันออก</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>เอาการป้องกัน RMS ออก</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>รวมเวอร์ชัน</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>รวมรายการที่ไม่สามารถค้นหา</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>ดาวน์โหลด</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>รายงานผลลัพธ์</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>จำนวนและขนาดของรายการที่ประเมินไว้ไม่มีเวอร์ชันหรือการลบรายการที่ซ้ำกัน การเลือกตัวเลือกดังกล่าวจะมีผลกับขนาดทั้งหมดของการส่งออก</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>ปิดกรณีนี้</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>เปิดกรณีนี้</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>การปิดกรณี</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>ไม่พบผลลัพธ์ในการจับคู่ที่อยู่ของคุณ โปรดใส่อยู่ใหม่หรือที่อยู่ที่มีความจำเพาะเจาะจงน้อยลง</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>ชื่อที่ใช้แสดง</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>ที่อยู่อีเมล</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>ผลรวมที่ประเมิน</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>จำนวนรายการ</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>ขนาดของรายการ</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>คิวรี</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>In-Place Hold</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>ปลด In-Place Hold</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>อัปเดต In-Place Hold</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>สถานะการส่งออก</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>สถานะของแหล่งที่มา</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>กรณีนี้ถูกปิดเมื่อ: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>ชุด eDiscovery ยังคงถูกหยุดอยู่ โปรดปลดการหยุดทั้งหมดหรือปิดเหตุการณ์เพื่อลบ</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>นโยบายกรณี eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>นโยบายสำหรับจัดการการปิดกรณี</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>ใหม่: ชุด eDiscovery</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>การตั้งค่าการหยุดการรักษาชั่วคราว</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>รายการสำหรับเก็บการตั้งค่าสำหรับ In-Place Hold</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>ไม่สามารถรับแหล่งข้อมูลสำหรับ SourceType {0} และตัวกรอง {1}</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>การบริหารจัดการผู้เช่าการจัดการระเบียน</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>การบริหารจัดการผู้เช่าการจัดการระเบียน</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>การยึดติดการบริหารจัดการผู้เช่าการจัดการระเบียน</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>การยึดติดการบริหารจัดการผู้เช่าการจัดการระเบียน</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>กำหนดค่าการเชื่อมต่อสำหรับการส่งไปยัง</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>เกิดข้อผิดพลาดระหว่างการเรียก</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>ไม่พร้อมให้ใช้งาน</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>ข้อผิดพลาด {0}</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>ไม่มีแหล่งที่มาในชุด eDiscovery นี้ เมื่อต้องการเพิ่มแหล่งที่มา ให้คลิก "{0}"</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>ไม่มีแหล่งข้อมูลในคิวรีชนิดนี้ เมื่อต้องเพิ่มแหล่งข้อมูล ให้คลิก "{0}"</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>เปิดใช้งาน</value>
+  </data>
+  <data name="export_NoValue">
+    <value>ปิดใช้งาน</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>ส่งออก: ดาวน์โหลด</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>ปิด</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>อัปเดตสถิติ</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>ตัวเลือก</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>เลือกชื่อและตัวเลือกสำหรับการส่งออก โดยการส่งออกรวมถึงไฟล์โหลด  Electronic Data Reference Model (EDRM)</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>ผลลัพธ์การดาวน์โหลด</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>ดาวน์โหลดรายงาน</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>ส่งออกการดาวน์โหลด</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>คุณต้องการดาวน์โหลดผลลัพธ์การค้นหาทั้งหมดเดี๋ยวนี้ ซึ่งเป็นรายงานที่มีรายการของผลลัพธ์การค้นหา หรือปิดแล้วดาวน์โหลดในภายหลัง</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>เลือกคิวรี</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>เลือกคิวรีที่คุณต้องการส่งออก</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>ข้อผิดพลาด</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>ค้นหา</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>ลองหยุดไว้อีกครั้ง</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>แก้ไขแหล่งข้อมูล</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>URL หรือที่อยู่สำหรับแหล่งข้อมูลนี้มีการเปลี่ยนแปลง คลิกที่นี่เพื่ออัปเดตเป็น URL หรือที่อยู่ใหม่</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>เขตข้อมูลนี้เป็นเขตข้อมูลที่ต้องการ</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} - สำเนา</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} - สำเนา ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>ตำแหน่งที่ตั้งนี้เป็นรากของแอปพลิเคชันบนเว็บหรือเส้นทางที่ได้รับการจัดการ และประกอบด้วยหลายไซต์คอลเลกชัน เฉพาะไซต์คอลเลกชันรากเท่านั้นที่จะได้รับการรักษา แต่ผลลัพธ์การค้นหาและการส่งออกจะรวมไซต์คอลเลกชันทั้งหมดภายใต้เส้นทางนี้</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>ตำแหน่งที่ตั้งคือรากของแอปพลิเคชันบนเว็บหรือเส้นทางที่มีการจัดการ และประกอบด้วยไซต์คอลเลกชันหลายไซต์ เฉพาะรากไซต์คอลเลกชันเท่านั้นที่จะถูกรักษาไว้ แต่ผลลัพธ์การค้นหาและการส่งออกจะรวมไซต์คอลเลกชันทั้งหมดภายใต้เส้นทางนี้  เลือก ตกลง เพื่อยอมรับตำแหน่งที่ตั้งของคุณ หรือ ยกเลิก เพื่อเปลี่ยนแปลงตำแหน่งที่ตั้งของคุณ</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>คลิกเพื่อ {0}สร้าง{1} กรณีใหม่</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>ถูกปรับเปลี่ยนเมื่อ {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>กรณี</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>ชุด eDiscovery นี้มีแหล่งข้อมูลเกินขีดจำกัด (100 แหล่งข้อมูล SharePoint หรือ 1000 กล่องจดหมาย) โปรดคลิก เพิ่มและจัดการแหล่งข้อมูล แล้วลดจำนวนแหล่งข้อมูลเพื่อให้ได้สถิติและผลลัพธ์</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>คิวรีนี้มีแหล่งข้อมูลเกินขีดจำกัด (100 แหล่งข้อมูล SharePoint หรือ 1000 กล่องจดหมาย) โปรดคลิก ปรับเปลี่ยนขอบเขตของคิวรี แล้วจำกัดขอบเขตของคิวรีการค้นหาของคุณให้แคบลงเพื่อให้ได้ผลลัพธ์</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>การส่งออกนี้มีแหล่งข้อมูลเกินขีดจำกัด (100 แหล่งข้อมูล SharePoint หรือ 1000 กล่องจดหมาย) ถ้าต้องการดำเนินการการส่งออกนี้ โปรดลดจำนวนแหล่งข้อมูลในคิวรีที่เกี่ยวข้อง หรือเลือกคิวรีน้อยลง</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>การแยกศัพท์</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>การลบรายการที่ซ้ำกัน</value>
+  </data>
+</root>

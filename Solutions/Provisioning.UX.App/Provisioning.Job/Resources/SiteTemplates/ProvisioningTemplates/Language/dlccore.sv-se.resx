@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4442.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Undantagsstatus</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>Utan princip</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Undantagsstatus</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Aktiv</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Väntar på att släppas</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>Undantagen</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Utcheckat eller ändrat av mig</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Använd den här webbdelen för att visa dokument som har ändrats av den aktuella användaren och som är utcheckat till denna.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Ändrat av mig</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Använd den här webbdelen om du vill visa dokument som har ändrats av den aktuella användaren.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Använd den här webbdelen om du vill visa uppgifter som är tilldelade den aktuella användaren.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Mina uppgifter</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>Högst klassificerade dokument</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Använd den här webbdelen om du vill visa de dokument som har högst klassificering på den här webbplatsen</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>Nyaste dokument</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Använd den här webbdelen om du vill visa de 10 nyaste dokumenten på den här webbplatsen</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Dokument</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Dokument</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Dokumentcenter</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Utökningar för dokumentcenter</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Tillhandahåller trädvynavigering för en webbplats.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Välkommen till dokumentcentret</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Använd den här webbplatsen för att skapa, arbeta med och lagra dokument. Webbplatsen kan vara en samlad plats där alla i en arbetsgrupp kan samarbeta om dokument, eller en kunskapsbas med dokument för flera arbetsgrupper.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Deltagare och besökare</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Webbplatshanterare</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Ladda upp ett dokument</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Principer för webbplatssamlingar</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>Policymallar för innehållstyp</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Granskningsinställningar för webbplatssamling</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Konfigurera informationshanteringsprincip</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Granska användningsrapporter för informationshanteringsprincip</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Inställningar för informationshanteringsprincip</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>Bevarande</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>Automatisk schemaläggning av innehåll som ska bearbetas, och utföra en bevarandeåtgärd på innehåll som har nått sitt förfallodatum.</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Schemalägg hur innehåll hanteras och tas bort genom att ange en sekvens med bevarandefaser. Om du anger flera faser kommer de att uppträda en efter en i den ordning de visas på den här sidan. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Obs!&lt;/b&gt;Om funktionen Biblioteks- och mappbaserat bevarande är aktiverad kan listadministratörer förbigå innehållstypsprinciper med egna bevarandescheman. Om du vill förhindra detta ska du inaktivera funktionen i webbplatssamlingen.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>Granskning</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Rapporterar användaråtgärder i dokument och listobjekt till granskningsloggen.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Ange de händelser som ska granskas för dokument och objekt som berörs av den här principen.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>Streckkoder</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Genererar unika identifierare som kan infogas i Microsoft Office-dokument. Streckkoder kan också användas för att söka efter dokument.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Tilldelar varje dokument och objekt en streckkod. Om du vill kan Microsoft Office-programmen kräva att användarna infogar streckkoderna i dokument.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Streckkod</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Streckkodsvärde</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>Streckkoden som tilldelats det här objektet.</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>Värdet som streckkoden tilldelat det här objektet.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>Etiketter</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Genererar etiketter som kan infogas i Microsoft Office-dokument för att se till att dokumentegenskaper och annan viktig information inkluderas när dokument skrivs ut. Etiketter kan också användas för att söka efter dokument.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>Du kan lägga till en etikett i ett dokument för att se till att viktig information om dokumentet inkluderas i utskrifter. Om du vill ange etiketten skriver du text i rutan Etikettformat. Du kan ange en valfri kombination av fast text eller dokumentegenskaper men inte beräknade eller inbyggda egenskaper, t.ex. GUID eller CreatedBy. Om du vill påbörja en ny rad använder du teckensekvensen \n.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Etikett</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Lagrar aktuellt värde för etiketten.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (kod 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>Genererar streckkoder som är kodade enligt standarden ANSI/AIM BC1-1995 (kod 39).</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Förfalloåtgärd för arkivhandlingscenter</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Låter övergivna filer som skickats till servern för arkivhandlingscentret förfalla.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Ta bort information arkivhandlingar och sändning</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Tar bort arkivhandlingar som skickats till arkivhandlingscentret och alla associerade egenskaper samt granskningshistorik som är inkluderad i den ursprungliga sändningen.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Översättningsdokument</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Källdokument</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Källdokumentversion</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Översättningsstatus</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Om det här dokumentet är en översättning anger du vilken version av källdokumentet det representerar. Den här informationen anges automatiskt när arbetsflödet slutförs om du använder arbetsflödet för översättningshantering.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Om det här dokumentet är en översättning anger du vilken översättningsstatus det har. Den här informationen anges automatiskt när arbetsflödet slutförs om du använder arbetsflödet för översättningshantering.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Har inte startats</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>Pågår</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Slutförd</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>Avbrutet</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Kräver uppdateringar</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Källdokument</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Språk och översättare</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Översätter från</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Översätter till</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Översättare</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Språk</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Undantag och e-informationsavslöjande</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Undantag och e-informationsavslöjande</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Undantag</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Undantag</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Den här funktionen använder du för att spåra externa åtgärder som rättstvister, utredningar eller granskningar som kräver att du avbryter förfogandet av dokumenten.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Hantera undantag</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(ÅTGÄRD) Hantera undantag</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>Använd informationsavslöjande och sätt innehåll i undantag</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>Använd informationsavslöjande och sätt innehåll i undantag</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Undantagsrapporter</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Undantagsrapporter</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Undantag</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Undantag</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Undantag</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Använd den här listan om du vill spåra externa åtgärder som processer, utredningar eller granskningar som kräver att du avbryter förfogandet av objekten. Om du sätter ett objekt i ett eller flera undantag bevarar du objektet och avbryter förfogandet av det till dess att objektet inte längre hanteras av något undantag.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Undantagsrapporter</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Det här biblioteket innehåller rapporter om alla undantag på den här webbplatsen. Varje rapport innehåller information om vilka objekt som finns i ett undantag och sökfrågor som har körts för undantaget.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Frågor om undanta informationsavslöjande</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Hanteras av</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Beskrivning</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Undantagsstatus</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>Webbplatsens URL</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Undantag</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>Undantags-URL</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Gruppera efter undantag</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Rapportering</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Skapar rapporter över information i Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Granskningsloggrapporter</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>Visa arbetsflödesrapporter</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Popularitetstrender</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Popularitetstrender</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Popularitets- och sökrapporter</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>Mest populära artiklar</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Rapportmetadata</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>I rapportgalleriet lagras de rapporttyper som är tillgängliga på den här webbplatsen och alla webbplatser under den.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Rapportmallar</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Använd biblioteket för rapportmallfiler om du vill lagra filer som används av galleriet över rapportmallar.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Biblioteks- och mappbaserat bevarande</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Gör det möjligt för listadministratörer att åsidosätta bevarandescheman för innehållstyp och ange scheman för bibliotek och mappar.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Hantering av arkivhandlingar</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Lägger till principfunktioner för hantering av arkivhandlingar och information i Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Konserveringslista</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Listmall som används för att skapa listan med konserveringsundantag.</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>Mall för konserveringslistor för e-dataidentifiering</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Listmall som används för att skapa listan med konserveringsundantag.</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Sök och bearbeta</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Etablerar de tidsinställda jobben Sök och bearbeta.</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Webbplats för arkivhandlingscenter</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Välkommen till arkivhandlingscentret</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Använd den här webbplatsen om du vill skicka in och hitta viktiga dokument som ska lagras för arkivering på lång sikt. Inskickade arkivhandlingar placeras i rätt bibliotek och mapp utifrån vilka egenskaper du anger.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Skicka in en arkivhandling</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Mina arkivhandlingar som ska skickas in</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Använd den här webbdelen om du vill lära en besökare på arkivhandlingscentret om arkivhandlingshantering och organisationsefterlevnad.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Lägg till information om arkivhandlingshantering, till exempel:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Lägg till länkar till andra webbplatser om organisationsefterlevnad, till exempel:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>Definitionen av en arkivhandling i din organisation</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>Vad händer med en arkivhandling när den har skickats till arkivhandlingscentret?</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Steg som användare kan ta för att efterleva organisationsprincipen</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Organisationens utbildningswebbplats för efterlevnad</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> En webbplats om organisationens bevarandeprinciper</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> En lista med kontaktuppgifter för arkivhandlingshantering på varje avdelning</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Skicka in arkivhandlingar</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Välkommen till dokumentcentret.</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Välkommen till det nya dokumentcentret. Använd den här platsen om du vill hantera företagsdokument på en central plats.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Hantera bevarandeschema</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Startpunkt för alla mappar för att hantera förfalloschema</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Information om efterlevnad</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Startpunkt på verktygsfält för att visa uppgifter om bevarande och andra efterlevnadsuppgifter under ett objekts livscykel</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Skapa arkivplansrapport</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Dokument-ID-tjänst</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>Tilldelar ID till dokument på webbplatssamlingen, som kan användas för att hämta objekt oberoende av deras nuvarande plats.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Inställningar för dokument-ID</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Hantera den här webbplatssamlingens inställningar för dokument-ID</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Sök efter dokument-ID</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Hittar ett dokument på dess dokument-ID.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Dokument-ID-värde</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>Värdet för dokument-ID som tilldelats till det här objektet.</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>Dokument-ID</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Permanent länk till det här dokumentet.</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Samlingsbibliotek</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>När egenskaperna har angetts flyttas filer som har laddats upp till det här biblioteket automatiskt till rätt bibliotek eller mapp enligt reglerna som skapats av ägaren till webbplatsen.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>Regler för Ordna innehåll</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Den här listan hjälper dig att skapa en plan för hur innehåll ska ordnas på webbplatsen. Skapa regler som säkerställer att dokument som skickas till webbplatsen hamnar på rätt plats och har rätt egenskaper.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Regel</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Skapa en regel som flyttar innehåll som skickats till den här webbplatsen till rätt bibliotek eller mapp.</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>Ordna innehåll</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Skapa metadatabaserade regler som flyttar innehåll som skickats till webbplatsen till rätt bibliotek eller mapp.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Resurser för dokumentcirkulation</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Tillhandahåller de resurser som krävs för cirkulation av dokument på webbplatser inom den här webbplatssamlingen.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Arkivhandlingsresurser</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Tillhandahåller de resurser som krävs för att skapa arkivhandlingar eller undantag i den här webbplatssamlingen.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Hantering av arkivhandlingar på plats</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Möjliggör definition och deklaration av arkivhandlingar på plats.</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Kolumnerna dokument- och arkivhandlingshantering</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>Innehållstyper för Ordna innehåll</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Prioritet</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Aktiv</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Regelnamn</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Beskrivning</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Inskickad innehållstyp</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Inskickad innehållstyp (intern)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>XML-villkor</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Egenskaper som används i Villkor</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Alias</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Målbibliotek</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Målmapp</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Målsökväg</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>Målwebbplatsens URL</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Egenskap för automatiskt skapad mapp</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Konfigurationsdata för automatisk mapp</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Anpassad router</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Cirkulera till extern plats</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Ursprungliga egenskaper</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>Ämne</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Avsändare</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Till</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>Från</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>Kopia</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>Hemlig kopia</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Skickat den</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Mottaget den</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>Kolumner för e-postöverföring</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>E-postöverföring</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Arkivhandlingar som skickats via e-post</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Den här listan används av routern för att tillfälligt lagra arkivhandlingar som skickats via e-post</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Den här innehållstypen har kolumner som motsvarar de gemensamma egenskaperna som skickas när e-post överförs till funktionen Ordna innehåll.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>Är låst för redigering</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Undantags- och arkivhandlingsstatus</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Deklarerad som arkivhandling</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>Undanta från princip</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Förfallodatum</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Originalförfallodag</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Kolumner för kärndokumentgrupp</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Beskrivning</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>En beskrivning av dokumentgruppen</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Dokumentgrupper</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Tillhandahåller de innehållstyper som krävs för att skapa och använda dokumentgrupper. Skapa en dokumentgrupp när du vill hantera flera dokument som en enda arbetsprodukt.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Metadatasynkronisering för dokumentgrupper</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Tillhandahåller infrastrukturen för att synkronisera metadata för dokumentgrupper.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Dokumentgrupp</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Innehållstyper för dokumentgrupp</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Skapa en dokumentgrupp när du vill hantera flera dokument som en enda arbetsprodukt.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Visa välkomstsidan</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Visa välkomstsidan för den här dokumentgruppen.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Inställningar för dokumentgrupp</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Ladda ned en kopia</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Ladda ned en kopia av dokumentgruppen och dess nuvarande innehåll</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Skicka till annan plats</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Skicka den här dokumentgruppen och dess nuvarande innehåll till en annan plats</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Fånga version</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Fånga en version av det nuvarande innehållet i dokumentgruppen</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Dokumentgruppens versionshistorik</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Visa dokumentgruppens versionshistorik</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Dokumentgruppens egenskaper</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Visar dokumentgruppens egenskaper.</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Dokumentgruppens innehåll</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Visar dokumentgruppens innehåll.</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Webbplatsprincip</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Gör det möjligt för webbplatssamlingarnas administratörer att definiera bevarandescheman som gäller för en webbplats och hela dess innehåll.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Projektprincip</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Behållarinnehållstyp för definitioner av projektprinciper</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Webbplatsprinciper</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Webbplatsprinciperna anger hur en webbplats och dess innehåll hanteras och tas bort. Principerna kan delas av flera olika webbplatssamlingar via publiceringsmekanismen för innehållstyper.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Stänga och ta bort webbplatsen</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Visa eller ändra den informationshanteringsprincip som tillämpas på webbplatsen och konfigurera de datum som styr webbplatsens livscykelåtgärder.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Lista över projektprincipsobjekt</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>En lista som skapas via Projektbaserat bevarande och används för att lagra principobjekt för projektet.</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Video och multimedia</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Tillhandahåller bibliotek, innehållstyper och webbdelar för lagring, hantering och visning av multimediatillgångar, exempelvis bilder, ljudklipp och videor.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Inställningar för videobehandling och uppspelning</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Video</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Ladda upp eller länka till en video.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Beskrivning</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>En sammanfattning av videon</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Ägare</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>Ägaren till videon</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Miniatyrtidsindex</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Standardkodning</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Åsidosättande av standardkodningen via användare</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Extern länk</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Bädda in kod</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>Visa nedladdningslänk</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Anger om en knapp ska visas på videospelaren som tillåter användaren att ladda ned den video som spelas upp.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Visa inbäddad länk</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Anger om en knapp ska visas på videospelaren som tillåter användaren att hämta en inbäddad kod för den video som spelas upp.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Återgivningsinformation</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Personer i videon</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>De personer som förekommer i videon.</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Metadatanavigering och -filtrering</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Varje lista på webbplatsen har en inställningssida för konfiguration av listan så att den använder trädvyhierarkier och filterkontroller av metadata för att förbättra navigering och filtrering av ingående objekt.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Inställningar för metadatanavigering</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Vyinställningar per plats</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>Menyflikskontroller "Anslut till Office"</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Lägger till startpunkter i menyfliksgränssnittet för att skapa biblioteksgenvägar i användarens lista med SharePoint-webbplatser om de har någon av de senaste versionerna av Office installerat. Mallar som är tillgängliga i de biblioteken cachelagras med jämna mellanrum på användarens lokala dator.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Infogar en knapp på fliken Bibliotek/åtgärder.</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Anslut till Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Anslut till Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Anslut till Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Lägg till bland dina genvägar som visas när du skapar, öppnar och sparar dokument i Microsoft Office-program, till exempel Word, Excel och PowerPoint.</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>Lägg till bland SharePoint-webbplatser</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>Lägg till bland SharePoint-webbplatser</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Lägg till en genväg till det här biblioteket i Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>Ta bort från SharePoint-webbplatser</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>Ta bort från SharePoint-webbplatser</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Ta bort det här biblioteket från listan med genvägar i Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>Hantera SharePoint-webbplatser</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>Hantera SharePoint-webbplatser</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Ändra listan med Microsoft Office-genvägar.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>E-postintegration med Ordna innehåll</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Gör det möjligt för funktionen Ordna innehåll för en webbplats att ta emot och ordna e-postmeddelanden. Den här funktionen bör endast användas i ett i hög grad hanterat lager, till exempel ett arkivhandlingscenter.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>Inställningar för Ordna innehåll</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>Regler för Ordna innehåll</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Inställningar för arkivhandlingsdeklaration</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Arkivhandlingsbibliotek</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Skapa ett dokumentbibliotek för att lagra viktiga affärsarkivhandlingar.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Ladda upp avslutade dokument till det här biblioteket. Dokument som läggs till i biblioteket deklareras automatiskt som arkivhandlingar.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Konfiguration av arkivhandlingscenter</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Konfigurerar en webbplats som ett arkivhandlingscenter.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Hantera arkivhandlingscenter</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Hantera inställningar för arkivhållning på den här webbplatsen.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Skapa uppgifter och arkivplan</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Använd de här instruktionerna om du vill avsluta konfigurationen av webbplatsen arkivhandlingscenter.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>Om du vill göra webbplatsen redo att ta emot arkivhandlingar konfigurerar du den så att den överensstämmer med organisationens arkivplan:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Obs!&lt;/b&gt; Det här arkivhandlingscentret kunde inte konfigureras fullt ut eftersom vissa webbplatssamlingsfunktioner inte är aktiverade. Kontakta webbplatssamlingens administratör om du inte har behörighet att åtgärda dessa problem:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Inkommande dokument kan inte markeras som arkivhandlingar. Aktivera funktionen Arkivhandlingar på plats i galleriet över webbplatssamlingens funktioner.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Inkommande dokument kan inte tilldelas ett dokument-ID. Aktivera Dokument-ID-tjänst i galleriet för webbplatssamlingens funktioner.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Steg 1:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Steg 2:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Steg 3:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>Steg 4:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>Skapa innehållstyper</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Definiera arkivhandlingstyper och egenskaperna för varje typ.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Skapa arkivhandlingsbibliotek</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Bygg en hierarki av arkivhandlingsbibliotek och mappar och tilldela ett bevarandeschema till vart och ett.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>Skapa Ordna innehåll-regler</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Definiera regler som cirkulerar inskickade arkivhandlingar till rätt mapp.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Designa webbplatsens välkomstsida</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Förklara arkivplanen och arkivhandlingsprinciperna för användare.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>När du är klar kan du ta bort den här webbdelen.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Gemensamma uppgifter för arkivhandlingshantering</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Skapa ett nytt arkivhandlingsbibliotek</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Skapa ett nytt bibliotek för lagring av arkivhandlingar.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>Hantera innehåll och struktur</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Använd ett verktyg för hierarkihantering om du vill ändra webbplatsens mappstruktur.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>Skapa Ordna innehåll-regler</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Hantera var inskickade arkivhandlingar ska lagras.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Använd informationsavslöjande och undanta arkivhandlingar</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Sök efter arkivhandlingar som ska bevaras på grund av rättstvist.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Skapa en arkivplansrapport</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Visa ett kalkylblad om arkivhandlingsbibliotekets struktur och bevarandescheman.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Skapa en granskningsrapport</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Visa en händelsehistorik för arkivhandlingar (kräver privilegier som webbplatssamlingsadministratör).</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>Granska de ljudloggrapporter som finns tillgängliga och som innehåller omfattande händelsespårning i fråga om innehållsaktivitet, säkerhet, principer och andra filter.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Granska popularitetstrendrapporterna, som ger en inblick i vilket innehåll som öppnas och på vilket sätt det sker.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Konfigurera granskning, som spårar användaråtgärder på alla webbplatser i den här webbplatssamlingen.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Hantera informationshanteringsprinciper, vilka tillhandahåller hanteringsprinciper, etiketter, granskning, upphörande och streckkoder till alla webbplatser i den här webbplatssamlingen.</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Inställningar för arkivhandlingsdeklaration</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Inställningar för kolumnstandardvärde</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Ändra standardvärden för kolumner</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Ändra standardkolumnvärdena för den här mappen.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Deklarera arkivhandling</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Deklarera objektet som en post som kan lägga till begränsningar och postspecifika principer baserade på systeminställningarna.</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Avdeklarera arkivhandling</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Avdeklarera postobjektet för att ta bort begränsningar och principer.</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Konfigurera vyer för den här platsen</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Ändra tillgängliga vyer för den här mappen.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Dokumentgrupp</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Hantera</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Åtgärder</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Redigera egenskaper</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Redigera egenskaperna för den här dokumentgruppen.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Ladda ned en kopia</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Ladda ned en kopia av den här dokumentgruppen.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>Behörigheter</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Gå till sidan Behörigheter om du vill lägga till, ta bort eller ändra behörigheter för den här dokumentgruppen.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Ta bort</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Hantera fråga</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Nytt</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Hantera</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Fråga</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Kopiera fråga</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Kopiera fråga</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Gör en kopia av det markerade objektet.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>Uppdatera statistik</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>Uppdatera statistik</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>Kör den valda frågan eller frågorna för att uppdatera statistiken.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Exportera</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Exportera</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Exportera resultatet för den valda frågan eller frågorna.</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Ta bort den här dokumentgruppen. Alla dokument i den här dokumentgruppen kommer att tas bort.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Dela ut</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>Skicka en länk med e-post</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Skicka en länk till den här dokumentgruppen med e-post.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Skicka till</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Gå till sidan Skicka till annan plats om du vill flytta eller kopiera den här dokumentgruppen till en annan plats.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Hantera</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Fånga version</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Spara en version av aktuella egenskaper och dokument i den här dokumentgruppen.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Versionshistorik</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Visa och hantera versionshistoriken för den här dokumentgruppen.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>Arbetsflöden</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Gå till sidan Arbetsflöden om du vill starta eller hantera arbetsflöden som är associerade med den här dokumentgruppen.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Hantera videoåtergivningar</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Hantera återgivningarna av videon.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Anpassad åtgärd för menyfliksområde för metadatanavigering.</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Uppdatera</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Uppdatera källstatus</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Uppdaterar de markerade källornas status.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Felexport</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Generera en exportlista som omfattar alla objekt med fel, så att du kan ta fram en rapport eller ladda ned dem.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Källåtgärder</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Söker</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Det här kan ta en minut...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>Relevans</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Datum (äldst)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Datum (nyast)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Sök i</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Frågan har sparats</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>e-dataidentifieringsportal</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>Skapa och hantera ärenden gällande e-dataidentifiering.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>Funktion för e-dataidentifieringsärende</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>Etablerar de resurser som är nödvändiga för ett e-dataidentifieringsärende.</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Namn</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Status för Håll på plats</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Konserveringen har filtrerats</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Icke-lokaliserad håll på plats-status</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Håll på plats</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Håll på plats-historik</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Senast indexerad</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Indexeringsfel - Objekt</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Indexeringsfel - SharePoint-webbplatser</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Crawl-felprocent</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Källor</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Lägg till en ny källa.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Exportera</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Lägg till en ny export.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Fråga</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Skapa en ny sparad sökning.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Förmyndare</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Lägg till en ny förmyndare.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Postlåda</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Lägg till en ny postlåda.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Plats</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Lägg till en ny plats.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>eDiscovery-uppsättning</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Skapa en ny eDiscovery-uppsättning.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Konserverat objekt</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Lägg till ett nytt konserverat objekt.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>Typer av e-dataidentifieringsinnehåll</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Objekt</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Storlek (MB)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Frågor</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>Plats-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Källtyp</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Rå källtyp</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>Webb-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>Federations-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>Externt federations-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Avduplicering</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Ta bort duplicerat Exchange-innehåll</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Ta bort Rights Management-skyddet</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Ta bort RMS-skyddet och RMS-krypteringen från Exchange-data (RMS = Rights Management Services)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Inkludera versioner</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>Inkludera versioner för alla SharePoint-dokument</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Objekt som det inte går att söka efter</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Inkludera objekt som är krypterade eller har ett okänt format</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Status</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>Egenskaper för eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Fråga</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Författare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Startdatum</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Slutdatum</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Domänfilter (endast Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>SharePoint-förfinare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Exchange-förfinare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Källhanteringstyp</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>Undantags-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>Åtgärds-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Åtgärdstyp</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>Käll-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>Visnings-ID</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Källor</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Källgrupper</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Förmyndare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Användare</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Anteckningar</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Källa</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Konserveringsversionsnummer</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Ursprunglig konserveringsplats</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>Ursprungligt list-ID för konserveringen</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Ursprungliga konserveringsmetadata</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Sparades den</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Förmyndarlisttyp</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>Listtyp för förmyndare i ett e-dataidentifieringsärende.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Källisttyp</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>Listtyp för källor i ett e-dataidentifieringsärende.</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Frågelisttyp</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>Listtyp för sparade sökningar i ett e-dataidentifieringsärende.</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Exportlisttyp</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>Listtyp för exporter i ett e-dataidentifieringsärende.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>Listtyp för eDiscovery-uppsättningar</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>Listtyp för dataidentifieringsuppsättningar i ett e-dataidentifieringsärende.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Listtyp för källinstanser</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>Listtyp för källinstanser i ett e-dataidentifieringsärende.</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>Webbplatsmall för e-dataidentifieringsportalen</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Frågor</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Använd frågor för att reducera och analysera sökresultaten.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Källor</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Spåra status för postlådor och platser som är inblandade i ärendet.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>eDiscovery-uppsättningar</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Skapa och hantera innehållsgrupper som kan filtreras och hållas på plats.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Exportera: Nytt objekt</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Exporter</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Använd listan Exporter för att hantera nedladdningen av exporterat eDiscovery-innehåll.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Källinstanser</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Spåra status för olika ärenden.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Förmyndare</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Lägg till användare i ärendet som kan relateras till källor som postlådor och platser.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Status för Håll på plats</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Exportstatus</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>Nedladdningen har inte påbörjats</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>Nedladdningen har påbörjats</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>Nedladdningen är slutförd</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>Exporten misslyckades</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>Undantagen</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>Hålls på plats med filter</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Tidsgränsen uppnåddes</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Går inte att hålla på plats</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Inte undantagen</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>Bearbetning</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Delvis</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Misslyckades</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>Välkommen till eDiscovery Center</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>På den här webbplatsen kan du skapa, hantera och arbeta med eDiscovery-fall. Med hjälp av eDiscovery-fall kan du hantera identifieringen och på plats-hållningen av Exchange-postlådor, SharePoint-webbplatser och andra innehållskällor. Du kan också skapa och hantera sökfrågor för att identifiera relevant innehåll, och sedan exportera sökresultaten.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Kom igång</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Ge dina registrerade användare behörighet att komma åt innehåll överallt i SharePoint-distributionen. Vi rekommenderar att du skapar en säkerhetsgrupp som omfattar dina registrerade gruppmedlemmar.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>För att det ska gå att identifiera Exchange-postlådorna måste du kontollera att administratören har installerat Exchange-webbtjänsternas hanterade klient på alla SharePoint-servrar, och du måste också se till att administratören konfigurerar en autentisering mellan Exchange och SharePoint.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Ge din säkerhetsgrupp med registrerade gruppanvändare användarprincipbehörighet till alla lämpliga SharePoint-webbprogram med innehåll som du måste utföra eDiscovery på.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Ge de registrerade användarna eDiscovery-behörighet till de Exchange-postlådor som du måste utföra eDiscovery-åtgärder på.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Hålla på plats, söka och exportera</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>Med hjälp av på plats-hållare kan du ange SharePoint-webbplatser och postlådor som ska spärras. När innehållet ändras eller tas bort kommer det att lagras på platsen tills du behöver exportera det.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>Genom eDiscovery-sökningar på plats kan du söka i alla SharePoint-webbplatser, filresurser och Exchange-postlådor. Använd närhetsval, jokertecken, boolesk logik och förfiningsval för att begränsa resultatet och få fram just det innehåll som du behöver. Eftersom sökningen sker på plats blir resultatet lika aktuellt som om du skulle göra en vanlig Outlook Web Access- eller SharePoint-webbplatssökning.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>När du har identifierat det innehåll som du behöver kan du ladda ned det till din lokala hårddisk eller filresurs i ett portabelt, eget format. Det är lätt att ladda ned SharePoint-sidor, dokument, listor och data från Exchange-postlådorna.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Välkommen till ditt ärende!</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>Du kan använda ditt ärende för att identifiera källor med innehåll som postlådor eller SharePoint-webbplatser samt för att hålla detta innehåll på plats. När du väl har identifierat källor med innehåll kan du söka efter relevanta objekt i innehållet och sedan exportera objekten.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Skapa ett nytt ärende</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Lägg till ytterligare en plats</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Lägg till ytterligare en postlåda</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Kontrollera plats</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Kontrollera postlåda</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Bläddra</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Lägg till och hantera källor)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Ändra frågans omfattning)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Källor: Redigera objekt</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Källor: Nytt objekt</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Lägg till och hantera källor</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Platser</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Ange URL:er för att specificera de SharePoint-webbplatser och filresurser som indexeras genom sökningar. SharePoint-webbplatsernas källor inkluderar alla underwebbplatser. Filresursernas källor inkluderar alla mappar under den angivna mappen.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Postlådor</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Specificera Exchange-postlådorna genom att ange deras namn eller e-postadresser.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>OK</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>Personer som samarbetar</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Exchange-postlåda</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Filresurs</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Ärendeinnehåll</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Totalt ärendeinnehåll</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Håll på plats-innehåll</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Objekt:</value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Storlek: </value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Verifierad</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Det gick inte att ansluta till söktjänstprogrammet.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>Det inträffade ett fel när källan skulle verifieras.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>Den angivna källan existerar redan i ärendet.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Det gick inte att hitta någon exakt träff. Det kan bero på att URL:en är ogiltig, att du inte har behörighet att komma åt den här platsen eller att platsen inte indexeras genom sökningar.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Postlådan kunde inte verifieras. Postlådan kanske inte finns eller så har du kanske inte rätt behörighetsnivå.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>Innehållstyp</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Avancerade frågealternativ</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>Det finns inte några källor i frågan. Gå tillbaka till frågesidan och klicka på "{0}" för att lägga till källor.</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Frågebaserad Håll på plats</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>När frågebaserad konservering är aktiverat innebär det att innehåll som sparats i konserveringsbiblioteket, men som inte matchar något undantagsfilter för webbplatsen, gäller som inaktuellt. Den här funktionen bör i allmänhet användas för arkivwebbplatser med flera samtidiga undantag.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} Håll allt innehåll på plats schemalades med hjälp av eDiscovery-uppsättningen {1}.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} Allt innehåll för eDiscovery-uppsättningen {1} hålls nu på plats.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} Schemalagd uppdatering av håll på plats med hjälp av eDiscovery-uppsättningen {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} Påbörjad uppdatering av håll på plats med hjälp av eDiscovery-uppsättningen {1}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} En uppdatering av håll på plats schemalades via eDiscovery-uppsättningen {1} med filtret {2}.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} Påbörjad uppdatering av håll på plats via eDiscovery-uppsättningen {1} med filtret {2}.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} Schemalagd håll på plats av en filtrerad delmängd via eDiscovery-uppsättningen {1} med filtret {2}.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} En filtrerad delmängd hålls nu på plats via eDiscovery-uppsättningen {1} med filtret {2}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} Frisläppt håll på plats för eDiscovery-uppsättningen {1}. Källan hålls fortfarande på plats via andra eDiscovery-uppsättningar.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} Schemalagt frisläppande av håll på plats av allt innehåll från eDiscovery-uppsättningen {1}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} Frisläppt håll på plats av allt innehåll för eDiscovery-uppsättningen {1}.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} Frisläppt håll på plats av allt innehåll från en eDiscovery-uppsättning som inte längre finns.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} Det gick inte att hålla källan på plats för eDiscovery-uppsättningen {1}. Felmeddelande: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} Det gick inte att släppa fri håll på plats av källan för eDiscovery-uppsättningen {1}. Felmeddelande: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>Granska eDiscovery-händelse</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Ärendeinnehåll</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Visar ärendets innehåll.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Webbdelen ärendeinnehåll kan bara användas på webbplatser med e-dataidentifieringsärenden.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Du måste ange ett värde för det här obligatoriska fältet.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">Den här källan hålls för närvarande på plats. Om du vill ta bort källan måste du börja med att all håll på plats. </value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Den här eDiscovery-uppsättningen hålls för närvarande på plats. Om du vill ta bort eDiscovery-uppsättningen måste du släppa fri all håll på plats. </value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>Webbplatsen finns inte</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>Webbplatsens partitions-ID stämmer inte överens med håll på plats-åtgärdens partitions-ID.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Storlek</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Objekt</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Funktion:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Ta bort dubbletter</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>Ta bort RMS-skydd</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Inkludera versioner</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Inkludera objekt som det inte går att söka efter</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>Ladda ned</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Resultatrapport</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>Det uppskattade antalet objekt och den uppskattade storleken på objekten omfattar inte versioner eller avduplicering. Om du väljer dessa alternativ kommer det att påverka exportens totala storlek.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Stäng ärendet</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Öppna ärendet</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Stängning av ärende</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Det gick inte att hitta några resultat som matchade din adress. Ange en ny adress eller en mindre specifik adress.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Visa namn</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>E-postadress</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Uppskattad total storlek</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Antal objekt</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Objektens storlek</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Frågor</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Håll på plats</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Frigör håll på plats</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Uppdatera håll på plats</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Exportstatus</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Källstatus</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Ärendet stängdes den: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>eDiscovery-uppsättningar hålls fortfarande på plats. Släpp fria alla som hålls på plats eller stäng ärendet om du vill ta bort det.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>Princip för eDiscovery-ärenden</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Princip för hur stängning av ärenden ska hanteras.</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Nytt: eDiscovery-uppsättning</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Inställningar för konserveringsundantag</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Lista för lagring av undantagsinställningar för håll på plats.</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>Det gick inte att hämta en källa för källtypen {0} och filtret {1}</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Innehavaradministration av arkivhandlingshanteringen</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Innehavaradministration av arkivhandlingshanteringen.</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Häftning av innehavaradministrationen av arkivhandlingshanteringen</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Häftning av innehavaradministration av arkivhandlingshanteringen.</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Konfigurera Skicka till-anslutningar</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Fel vid hämtning</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>Saknas</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>{0} Fel</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>Det finns inga källor i eDiscovery-uppsättningen. Klicka på "{0}" om du vill lägga till källor.</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>Det finns inga källor av den här typen i frågan. Klicka på "{0}" om du vill lägga till källor.</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Aktiverad</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Inaktiverad</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Exportera: Ladda ned</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Stäng</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Uppdatera statistik</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Alternativ</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Välj namn och alternativ för export.  Exporter omfattar en EDRM-fil (Electronic Data Reference Model).</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Ladda ned resultat</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Ladda ned rapport</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>Exportera nedladdning</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Vill du ladda ned alla sökresultat nu, ladda ned en rapport med en lista över sökresultaten eller stänga och göra nedladdningen senare?</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Välj frågor</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Välj de frågor som du vill exportera.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Fel</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Sök i</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Försök att hålla på plats igen</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Matchningskälla</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>Den här källans URL eller adress har ändrats. Klicka här för att uppdatera till en ny URL eller adress.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>Det här är ett obligatoriskt fält.</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} – kopiera</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} – kopiera ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Den här platsen fungerar som rot till ett webbprogram eller en hanterad sökväg och innehåller flera webbplatssamlingar. Endast rotwebbplatssamlingen kommer att bevaras, men i sökresultat och exporter kommer alla webbplatssamlingar under den aktuella sökvägen att ingå.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>En plats är roten till ett webbprogram eller till en hanterad sökväg och innehåller flera webbplatssamlingar. Endast rotwebbplatssamlingen bevaras men sökresultat och exporter kommer att innehålla alla webbplatssamlingar under den här sökvägen. Välj OK för att acceptera platsen eller Avbryt om du vill ändra plats.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>Klicka för att {0}skapa{1} ett nytt ärende</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Ändrade {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Mål</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>Den här e-dataidentifieringsuppsättningen innehåller för många källor (gränsen är 100 SharePoint-källor eller 1 000 postlådor). Klicka på Lägg till och hantera källor och minska antalet källor så att statistik och resultat kan visas.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Den här frågan innehåller för många källor (gränsen är 100 SharePoint-källor eller 1 000 postlådor). Klicka på Ändra frågans omfattning och avgränsa sökfrågan så att resultaten kan visas.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Den här exporten innehåller för många källor (gränsen är 100 SharePoint-källor eller 1 000 postlådor). Om du vill genomföra exporten måste du minska antalet källor i de tillhörande frågorna eller välja färre frågor.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Igenkänning</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Avduplicering</value>
+  </data>
+</root>

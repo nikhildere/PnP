@@ -141,7 +141,7 @@ namespace Provisioning.Common.Data.SiteRequests
 
         //MDLZ - Is Confidential
         public const string
-            ISCONFIDENTIAL_NAME = "Mdlz_IsConfidential",
+            ISCONFIDENTIAL_NAME = "SP_IsConfidential",
             ISCONFIDENTIAL_DISPLAYNAME = "Is Confidential",
             ISCONFIDENTIAL_ATTRIB = "",
             ISCONFIDENTIAL_DESC = "IsConfidential";

@@ -1,260 +1,251 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<pnp:ProvisioningTemplate ID="Mdlz.ProjectSite" Version="1.0"
-  xmlns:pnp="http://schemas.dev.office.com/PnP/2015/05/ProvisioningSchema"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <pnp:CustomActions>
-    <pnp:SiteCustomActions>
-      <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE"
-                Description="Override new sub-site link"
-                Location="ScriptLink"
-                Title="CA_SITE_SUBSITE_OVERRIDE"
-                ScriptSrc=""
-                ScriptBlock="
-                    var SubSiteSettings_Web_Url = 'https://[RemoteWebHostNameToken]/pages/subsite/newsbweb.aspx?SPHostUrl=';
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
+  <pnp:Preferences/>
+  <pnp:Templates>
+    <pnp:ProvisioningTemplate ID="Mdlz.ProjectSite">
+      <pnp:CustomActions>
+        <pnp:SiteCustomActions>
+          <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Description="Override new sub-site link"
+                    Location="ScriptLink"
+                    Title="CA_SITE_SUBSITE_OVERRIDE"
+                    ScriptSrc=""
+                    ScriptBlock="
+                    var SubSiteSettings_Web_Url = '{{$RemoteWebHostNameToken}}/pages/subsite/newsbweb.aspx?SPHostUrl=';
                     var headID = document.getElementsByTagName('head')[0]; 
                     var subsiteScriptTag = document.createElement('script');
                     subsiteScriptTag.type = 'text/javascript';
                     subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
                     headID.appendChild(subsiteScriptTag);"/>
-    </pnp:SiteCustomActions>
-    <pnp:WebCustomActions>
-      <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
-                Description="Site Classification Application"
-                Group="SiteTasks"
-                Location="Microsoft.SharePoint.SiteSettings"
-                Title="Site Classification"
-                Sequence="1000"
-                Url="https://[RemoteWebHostNameToken]/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                Rights="31"/>
-      <pnp:CustomAction Name="CA_SITE_STDMENU_SITECLASSIFICATION"
-                Description="Site Classification Module"
-                Group="SiteActions"
-                Location="Microsoft.SharePoint.StandardMenu"
-                Title="Site Classification"
-                Sequence="1000"
-                Url="https://[RemoteWebHostNameToken]/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                Rights="31"/>
-      <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
-                Description="Mondelez Js Injections"
-                Group="SiteActions"
-                Location="ScriptLink"
-                Title="Mondelez Js Injections"
-                Sequence="1000"
-                ScriptBlock="var nl = new Date();
-                             var nlu = new Date(nl.getTime() + nl.getTimezoneOffset() * 60000);
-                             var onejan = new Date(nlu.getFullYear(), 0, 1);
-                             var verStr = Math.ceil( (((nlu - onejan) / 86400000) + onejan.getDay() + 1) / 7 ).toString() + nl.getFullYear().toString();
-                             var scr_elem = document.createElement('script');
-                             scr_elem.type = 'text/javascript';
-                             scr_elem.src = '/SiteAssets/PS/scripts/MDLZProjectSite.Init.js' + '?rev=' + verStr;
-                             var headElem = document.getElementsByTagName('head')[0];
-                             headElem.appendChild(scr_elem);"/>
-    </pnp:WebCustomActions>
-  </pnp:CustomActions>
-  <pnp:ComposedLook Name="Office"
-                    AlternateCSS="/SiteAssets/PS/Css/MDLZProjectSite.css"
-                    SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png"
-                    ColorFile="" FontFile="" BackgroundFile=""/>
-  <pnp:Lists>
-    <pnp:ListInstance Title="Announcements"
-                      Description="Use this list to track upcoming events, status updates or other team news."
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="104"
-                      Url="Lists/Announcements"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="false">
-      <pnp:DataRows>
-        <pnp:DataRow>
-          <pnp:DataValue FieldName="Title">Welcome To Your Team Site!</pnp:DataValue>
-          <pnp:DataValue FieldName="Body">
-            Please notice that there are a number of new and enhanced capabilities. If you'd like to learn more about how to leverage these capabilities, please visit the &lt;B&gt;IQ University&lt;/B&gt; where you can access a variety of learning resources.
-          </pnp:DataValue>
-        </pnp:DataRow>
-      </pnp:DataRows>
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="QuickLinks"
-                      Description="Use this list to track upcoming events, status updates or other team news."
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="103"
-                      Url="Lists/QuickLinks"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="MinutesOfMeeting"
-                      Description="Use this list to track minutes of meetings."
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="101"
-                      Url="/MinutesOfMeeting"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="WeeklyStatusReport"
-                      Description="Use this list to track minutes of meetings."
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="101"
-                      Url="/WeeklyStatusReport"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="QuickAppLinks"
-                      Description="Help Promoted Links"
-                      OnQuickLaunch="false"
-                      TemplateType="170"
-                      Url="Lists/QuickAppLinks"
-                      EnableVersioning="false"
-                      EnableFolderCreation="false"
-                      RemoveExistingContentTypes="true"
-                      TemplateFeatureID="192EFA95-E50C-475e-87AB-361CEDE5DD7F">
-      <pnp:DataRows>
-        <pnp:DataRow>
-          <pnp:DataValue FieldName="Title">Announcements</pnp:DataValue>
-          <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/07.png</pnp:DataValue>
-          <pnp:DataValue FieldName="LinkLocation">{site}/Lists/Announcements</pnp:DataValue>
-          <pnp:DataValue FieldName="TileOrder">1</pnp:DataValue>
-        </pnp:DataRow>
-        <pnp:DataRow>
-          <pnp:DataValue FieldName="Title">Quick Links</pnp:DataValue>
-          <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/06.png</pnp:DataValue>
-          <pnp:DataValue FieldName="LinkLocation">{site}/Lists/QuickLinks</pnp:DataValue>
-          <pnp:DataValue FieldName="TileOrder">2</pnp:DataValue>
-        </pnp:DataRow>
-        <pnp:DataRow>
-          <pnp:DataValue FieldName="Title">Minutes Of Meetings</pnp:DataValue>
-          <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/04.png</pnp:DataValue>
-          <pnp:DataValue FieldName="LinkLocation">{site}/MinutesOfMeeting</pnp:DataValue>
-          <pnp:DataValue FieldName="TileOrder">3</pnp:DataValue>
-        </pnp:DataRow>
-        <pnp:DataRow>
-          <pnp:DataValue FieldName="Title">Weekly Status Report</pnp:DataValue>
-          <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/05.png</pnp:DataValue>
-          <pnp:DataValue FieldName="LinkLocation">{site}/WeeklyStatusReport</pnp:DataValue>
-          <pnp:DataValue FieldName="TileOrder">4</pnp:DataValue>
-        </pnp:DataRow>
-      </pnp:DataRows>
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="FAQs"
-                      Description="Use this list for FAQs"
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="100"
-                      Url="Lists/FAQs"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="TeamMembers"
-                      Description="Use this list to track information about Team Members"
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="100"
-                      Url="Lists/TeamMembers"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="Calendar"
-                      Description="Use this list to track information about track events"
-                      EnableFolderCreation="false"
-                      OnQuickLaunch="false"
-                      TemplateType="106"
-                      Url="Lists/Calendar"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="Help"
-                      Description="Help Promoted Links"
-                      OnQuickLaunch="false"
-                      TemplateType="170"
-                      Url="Lists/Help"
-                      EnableFolderCreation="false"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true"
-                      TemplateFeatureID="192EFA95-E50C-475e-87AB-361CEDE5DD7F">
-      <pnp:DataRows>
-        <pnp:DataRow>
-          <pnp:DataValue FieldName="Title">FAQs</pnp:DataValue>
-          <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/01.png</pnp:DataValue>
-          <pnp:DataValue FieldName="LinkLocation">{site}/Lists/FAQs</pnp:DataValue>
-          <pnp:DataValue FieldName="TileOrder">1</pnp:DataValue>
-        </pnp:DataRow>
-        <pnp:DataRow>
-          <pnp:DataValue FieldName="Title">Team Members</pnp:DataValue>
-          <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/02.png</pnp:DataValue>
-          <pnp:DataValue FieldName="LinkLocation">{site}/Lists/TeamMembers</pnp:DataValue>
-          <pnp:DataValue FieldName="TileOrder">2</pnp:DataValue>
-        </pnp:DataRow>
-        <pnp:DataRow>
-          <pnp:DataValue FieldName="Title">Upcoming Events</pnp:DataValue>
-          <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/03.png</pnp:DataValue>
-          <pnp:DataValue FieldName="LinkLocation">{site}/Lists/Calendar</pnp:DataValue>
-          <pnp:DataValue FieldName="TileOrder">3</pnp:DataValue>
-        </pnp:DataRow>
-      </pnp:DataRows>
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="ProjectArtifacts"
-                      Description="Project Artifacts"
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="101"
-                      Url="/ProjectArtifacts"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-    <pnp:ListInstance Title="IssueList"
-                      Description="Use this list to track upcoming events, status updates or other team news."
-                      DocumentTemplate=""
-                      OnQuickLaunch="false"
-                      TemplateType="1100"
-                      Url="Lists/IssueList"
-                      EnableVersioning="false"
-                      RemoveExistingContentTypes="true">
-    </pnp:ListInstance>
-  </pnp:Lists>
-  <pnp:Files>
-    <pnp:File Src="Mdlz.ProjectSite\default.aspx" Folder="/" Overwrite="true">
-      <pnp:WebParts>
-        <pnp:WebPart Title="Project Overview &amp; FAQs" Order="1" Zone="Left">
-          <pnp:Contents>
-            <![CDATA[ <?xml version="1.0" encoding="utf-8"?>
-                      <WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
-                      <Title>Project Overview &amp; FAQs</Title>
-                      <FrameType>Default</FrameType>
-                      <Description>Use for formatted text, tables, and images.</Description>
-                      <IsIncluded>true</IsIncluded>
-                      <ZoneID>Left</ZoneID>
-                      <PartOrder>0</PartOrder>
-                      <FrameState>Normal</FrameState>
-                      <Height />
-                      <Width />
-                      <AllowRemove>true</AllowRemove>
-                      <AllowZoneChange>true</AllowZoneChange>
-                      <AllowMinimize>true</AllowMinimize>
-                      <AllowConnect>true</AllowConnect>
-                      <AllowEdit>true</AllowEdit>
-                      <AllowHide>true</AllowHide>
-                      <IsVisible>true</IsVisible>
-                      <DetailLink />
-                      <HelpLink />
-                      <HelpMode>Modeless</HelpMode>
-                      <Dir>Default</Dir>
-                      <PartImageSmall />
-                      <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
-                      <PartImageLarge />
-                      <IsIncludedFilter />
-                      <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
-                      <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
-                      <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
-                      <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">This will contain overview of projects and provides information regarding all projects and project artifacts</Content>
-                      <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
-                    </WebPart>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Title="Project Summary" Order="2" Zone="Left">
-          <pnp:Contents>
-            <![CDATA[<webParts>
+        </pnp:SiteCustomActions>
+        <pnp:WebCustomActions>
+          <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
+                    Description="Site Classification Application"
+                    Group="SiteTasks"
+                    Location="Microsoft.SharePoint.SiteSettings"
+                    Title="Site Classification"
+                    Sequence="1000"
+                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
+                    Rights="31"/>
+          <pnp:CustomAction Name="CA_SITE_STDMENU_SITECLASSIFICATION"
+                    Description="Site Classification Module"
+                    Group="SiteActions"
+                    Location="Microsoft.SharePoint.StandardMenu"
+                    Title="Site Classification"
+                    Sequence="1000"
+                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
+                    Rights="31"/>
+          <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Description="Mondelez Js Injections"
+                    Group="SiteActions"
+                    Location="ScriptLink"
+                    Title="Mondelez Js Injections"
+                    Sequence="1000"
+                    ScriptBlock="var scr_elem = document.createElement('script');
+                                 scr_elem.type = 'text/javascript';
+                                 scr_elem.src = '/SiteAssets/PS/scripts/MDLZProjectSite.Init.js' + '?rev=' + new Date().toISOString();
+                                 var headElem = document.getElementsByTagName('head')[0];
+                                 headElem.appendChild(scr_elem);"/>
+        </pnp:WebCustomActions>
+      </pnp:CustomActions>
+      <pnp:Lists>
+        <pnp:ListInstance Title="{res:announce_Folder}"
+                          Description="{res:announceList_Desc}"
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="104"
+                          Url="{res:lists_Folder}/{res:announce_Folder}"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="false">
+          <pnp:DataRows>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Welcome To Your Team Site!</pnp:DataValue>
+              <pnp:DataValue FieldName="Body">
+                Please notice that there are a number of new and enhanced capabilities. If you'd like to learn more about how to leverage these capabilities, please visit the &lt;B&gt;IQ University&lt;/B&gt; where you can access a variety of learning resources.
+              </pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="QuickLinks"
+                          Description="Use this list to track upcoming events, status updates or other team news."
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="103"
+                          Url="Lists/QuickLinks"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="MinutesOfMeeting"
+                          Description="Use this list to track minutes of meetings."
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="101"
+                          Url="/MinutesOfMeeting"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="WeeklyStatusReport"
+                          Description="Use this list to track minutes of meetings."
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="101"
+                          Url="/WeeklyStatusReport"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="QuickAppLinks"
+                          Description="Help Promoted Links"
+                          OnQuickLaunch="false"
+                          TemplateType="170"
+                          Url="Lists/QuickAppLinks"
+                          EnableVersioning="false"
+                          EnableFolderCreation="false"
+                          RemoveExistingContentTypes="true"
+                          TemplateFeatureID="192EFA95-E50C-475e-87AB-361CEDE5DD7F">
+          <pnp:DataRows>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Announcements</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/07.png</pnp:DataValue>
+              <pnp:DataValue FieldName="LinkLocation">{site}/Lists/Announcements</pnp:DataValue>
+              <pnp:DataValue FieldName="TileOrder">1</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Quick Links</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/06.png</pnp:DataValue>
+              <pnp:DataValue FieldName="LinkLocation">{site}/Lists/QuickLinks</pnp:DataValue>
+              <pnp:DataValue FieldName="TileOrder">2</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Minutes Of Meetings</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/04.png</pnp:DataValue>
+              <pnp:DataValue FieldName="LinkLocation">{site}/MinutesOfMeeting</pnp:DataValue>
+              <pnp:DataValue FieldName="TileOrder">3</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Weekly Status Report</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/05.png</pnp:DataValue>
+              <pnp:DataValue FieldName="LinkLocation">{site}/WeeklyStatusReport</pnp:DataValue>
+              <pnp:DataValue FieldName="TileOrder">4</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="FAQs"
+                          Description="Use this list for FAQs"
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="100"
+                          Url="Lists/FAQs"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="TeamMembers"
+                          Description="Use this list to track information about Team Members"
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="100"
+                          Url="Lists/TeamMembers"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="{res:calendar_Folder}"
+                          Description="{res:calendarList_Desc}"
+                          EnableFolderCreation="false"
+                          OnQuickLaunch="false"
+                          TemplateType="106"
+                          Url="{res:lists_Folder}/{res:calendar_Folder}"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Help"
+                          Description="Help Promoted Links"
+                          OnQuickLaunch="false"
+                          TemplateType="170"
+                          Url="Lists/Help"
+                          EnableFolderCreation="false"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true"
+                          TemplateFeatureID="192EFA95-E50C-475e-87AB-361CEDE5DD7F">
+          <pnp:DataRows>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">FAQs</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/01.png</pnp:DataValue>
+              <pnp:DataValue FieldName="LinkLocation">{site}/Lists/FAQs</pnp:DataValue>
+              <pnp:DataValue FieldName="TileOrder">1</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Team Members</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/02.png</pnp:DataValue>
+              <pnp:DataValue FieldName="LinkLocation">{site}/Lists/TeamMembers</pnp:DataValue>
+              <pnp:DataValue FieldName="TileOrder">2</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Upcoming Events</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/03.png</pnp:DataValue>
+              <pnp:DataValue FieldName="LinkLocation">{site}/Lists/Calendar</pnp:DataValue>
+              <pnp:DataValue FieldName="TileOrder">3</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="ProjectArtifacts"
+                          Description="Project Artifacts"
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="101"
+                          Url="/ProjectArtifacts"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="IssueList"
+                          Description="Use this list to track upcoming events, status updates or other team news."
+                          DocumentTemplate=""
+                          OnQuickLaunch="false"
+                          TemplateType="1100"
+                          Url="Lists/IssueList"
+                          EnableVersioning="false"
+                          RemoveExistingContentTypes="true">
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Files>
+        <pnp:File Src="Mdlz.ProjectSite\default.aspx" Folder="/" Overwrite="true">
+          <pnp:WebParts>
+            <pnp:WebPart Title="Project Overview &amp; FAQs" Order="1" Zone="Left">
+              <pnp:Contents>
+                <WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                  <Title>Project Overview &amp; FAQs</Title>
+                  <FrameType>Default</FrameType>
+                  <Description>Use for formatted text, tables, and images.</Description>
+                  <IsIncluded>true</IsIncluded>
+                  <ZoneID>Left</ZoneID>
+                  <PartOrder>0</PartOrder>
+                  <FrameState>Normal</FrameState>
+                  <Height />
+                  <Width />
+                  <AllowRemove>true</AllowRemove>
+                  <AllowZoneChange>true</AllowZoneChange>
+                  <AllowMinimize>true</AllowMinimize>
+                  <AllowConnect>true</AllowConnect>
+                  <AllowEdit>true</AllowEdit>
+                  <AllowHide>true</AllowHide>
+                  <IsVisible>true</IsVisible>
+                  <DetailLink />
+                  <HelpLink />
+                  <HelpMode>Modeless</HelpMode>
+                  <Dir>Default</Dir>
+                  <PartImageSmall />
+                  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+                  <PartImageLarge />
+                  <IsIncludedFilter />
+                  <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                  <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                  <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">This will contain overview of projects and provides information regarding all projects and project artifacts</Content>
+                  <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                </WebPart>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Project Summary" Order="2" Zone="Left">
+              <pnp:Contents>
+                <webParts>
                       <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
                         <metaData>
                           <type name="Microsoft.SharePoint.Portal.WebControls.ProjectSummaryWebPart, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
@@ -290,12 +281,12 @@
                           </properties>
                         </data>
                       </webPart>
-                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Title="Quick Links" Order="3" Zone="Left">
-          <pnp:Contents>
-            <![CDATA[<webParts>
+                    </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Quick Links" Order="3" Zone="Left">
+              <pnp:Contents>
+                <webParts>
                       <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
                         <metaData>
                           <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
@@ -309,12 +300,11 @@
                           </properties>
                         </data>
                       </webPart>
-                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Title="Promoted Link Styling" Order="4" Zone="Left">
-          <pnp:Contents>
-            <![CDATA[<?xml version="1.0" encoding="utf-8"?>
+                    </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Promoted Link Styling" Order="4" Zone="Left">
+              <pnp:Contents>
                     <WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
                       <Title>Promoted Link Styling</Title>
                       <FrameType>None</FrameType>
@@ -345,12 +335,12 @@
                       <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
                       <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">&lt;style type="text/css"&gt;DIV.ms-promlink-body {HEIGHT: 100px}DIV.ms-tileview-tile-root {WIDTH: 110px !important; HEIGHT: 110px !important}DIV.ms-tileview-tile-content {WIDTH: 100px !important; HEIGHT: 100px !important}DIV.ms-tileview-tile-detailsBox {WIDTH: 100px !important; HEIGHT: 100px !important}DIV.ms-tileview-tile-content &gt; A &gt; DIV &gt; SPAN {WIDTH: 100px !important; HEIGHT: 100px !important}DIV.ms-tileview-tile-content &gt; A &gt; DIV &gt; IMG {WIDTH: 100% !important; MAX-WIDTH: 100%;height: 64px !important;right: 0 !important;}DIV.ms-tileview-tile-content &gt; A &gt; IMG {height:64px !important;right: 0px !important;}UL.ms-tileview-tile-detailsListMedium {PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 100px; PADDING-TOP: 0px}LI.ms-tileview-tile-descriptionMedium {LINE-HEIGHT: 16px; FONT-SIZE: 11px}DIV.ms-tileview-tile-titleTextMediumExpanded {PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px}DIV.ms-tileview-tile-titleTextLargeCollapsed {PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px}DIV.ms-tileview-tile-titleTextLargeExpanded {PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px}DIV.ms-tileview-tile-titleTextMediumCollapsed {POSITION: absolute; MIN-WIDTH: 97px; LINE-HEIGHT: 16px; MIN-HEIGHT: 36px; PADDING-LEFT: 3px; BACKGROUND: #002e4f 0px 0px; FONT-SIZE: 12px; TOP: -36px}LI.ms-tileview-tile-descriptionMedium {PADDING-BOTTOM: 3px; LINE-HEIGHT: 14px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-SIZE: 11px; PADDING-TOP: 3px}&lt;/style&gt;</Content>
               <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
-              </WebPart>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Title="Help" Order="1" Zone="Right">
-          <pnp:Contents>
-            <![CDATA[<webParts>
+              </WebPart>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Help" Order="1" Zone="Right">
+              <pnp:Contents>
+                <webParts>
                       <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
                         <metaData>
                           <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
@@ -364,12 +354,12 @@
                           </properties>
                         </data>
                       </webPart>
-                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Title="Project Artifacts" Order="2" Zone="Right">
-          <pnp:Contents>
-            <![CDATA[<webParts>
+                    </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Project Artifacts" Order="2" Zone="Right">
+              <pnp:Contents>
+                <webParts>
                       <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
                         <metaData>
                           <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
@@ -383,12 +373,12 @@
                           </properties>
                         </data>
                       </webPart>
-                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-        <pnp:WebPart Title="Issues" Order="3" Zone="Right">
-          <pnp:Contents>
-            <![CDATA[<webParts>
+                    </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Issues" Order="3" Zone="Right">
+              <pnp:Contents>
+                <webParts>
                       <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
                         <metaData>
                           <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
@@ -402,14 +392,18 @@
                           </properties>
                         </data>
                       </webPart>
-                    </webParts>]]>
-          </pnp:Contents>
-        </pnp:WebPart>
-      </pnp:WebParts>
-    </pnp:File>
-  </pnp:Files>
-  <pnp:Providers>
-    <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzProjectSiteExtensibilityProvider, Provisioning.Job" Enabled="true">
-    </pnp:Provider>
-  </pnp:Providers>
-</pnp:ProvisioningTemplate>
+                    </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+          </pnp:WebParts>
+        </pnp:File>
+      </pnp:Files>
+      <pnp:Providers>
+        <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzProjectSiteExtensibilityProvider, Provisioning.Job" Enabled="true">
+        </pnp:Provider>
+      </pnp:Providers>
+      <pnp:WebSettings AlternateCSS="/SiteAssets/PS/Css/MDLZProjectSite.css"
+                       SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png"/>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

@@ -1,0 +1,3631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4569.1502" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>Αρχική σελίδα</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>Νέος SharePoint Server!</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>Αναζήτηση συζητήσεων</value>
+  </data>
+  <data name="SetupMySite">
+    <value>Ρύθμιση της σελίδας "Η τοποθεσία μου"</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>Κάντε κλικ για τις κατηγορίες</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>Κάντε κλικ για τις κορυφαίες τοποθεσίες</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>Κάντε κλικ για το χάρτη της τοποθεσίας</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>Κατηγορίες</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>Κορυφαίες τοποθεσίες</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>Χάρτης τοποθεσίας</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>Όλες οι τοποθεσίες</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>Κάντε κλικ για αποτελέσματα από όλες τις τοποθεσίες</value>
+  </data>
+  <data name="PeopleTab">
+    <value>Άτομα</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>Κάντε κλικ για αποτελέσματα ατόμων</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>Συζητήσεις</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>Αναφορά χρήσης του SharePoint Server</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>Έκθεση χρήσης</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>Εκθέσεις χρήσης αναζήτησης</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>Αναφορές χρήσης τοποθεσίας</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>Αναφορές χρήσης συλλογής τοποθεσιών</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>Βιβλιοθήκη εγγράφων</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>Παρέχει ένα σημείο αποθήκευσης εγγράφων για αυτήν την περιοχή.</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>Πρότυπο προφίλ επιχειρηματικών δεδομένων</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>Επάνω γραμμή περιήγησης του SharePoint</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>Εκθέσεις</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>Πίνακες εργαλείων</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>Δείγμα</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>Πόροι</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>Συνδέσεις δεδομένων</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>Ημερολόγιο εκθέσεων</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>Βιβλιοθήκη αναφορών</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>Βιβλιοθήκη εκθέσεων</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>Ένας χώρος όπου μπορείτε εύκολα να δημιουργείτε και να διαχειρίζεστε ιστοσελίδες και έγγραφα για την παρακολούθηση πληροφοριών μετρήσεων, στόχων και επιχειρηματικής πληροφόρησης. </value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>Λίστα κατάστασης</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>Μια λίστα για την παρακολούθηση και την εμφάνιση ενός συνόλου στόχων. Έγχρωμα εικονίδια εμφανίζονται για να υποδείξουν το βαθμό επίτευξης των στόχων.</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>Βιβλιοθήκη εγγράφων σελίδας τμήματος Web</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>Μια βιβλιοθήκη εγγράφων με πρότυπο σελίδας τμήματος Web.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>Βιβλιοθήκη εκθέσεων</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>Μια βιβλιοθήκη εκθέσεων παρέχει εμπλουτισμένη υποστήριξη για τη διαχείριση εκθέσεων που μπορούν να εμφανίσουν δείκτες κατάστασης και βιβλία εργασίας του Excel.</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>Βιβλιοθήκη αναφορών</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>Μια βιβλιοθήκη για πληροφορίες που περιγράφει τον τρόπο χρήσης αυτής της τοποθεσίας.</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>Ημερολόγιο εκθέσεων</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>Χρησιμοποιήστε το ημερολόγιο για να δημοσιεύσετε συμβάντα που σχετίζονται με αυτήν την περιοχή.</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>Συνδέσεις δεδομένων</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>Η βιβλιοθήκη σύνδεσης δεδομένων κάνει εύκολη την κοινή χρήση αρχείων που επιτρέπει στους χρήστες να συνδέονται σε εξωτερικές προελεύσεις δεδομένων.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>Ανακοινώσεις</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>Χρησιμοποιήστε τη λίστα "Ανακοινώσεις", για να δημοσιεύσετε μηνύματα σχετικά με αυτήν την περιοχή.</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>Καλώς ορίσατε στο Κέντρο εκθέσεων</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>Το Κέντρο εκθέσεων σάς επιτρέπει να δημιουργείτε, να διανέμετε και να διαχειρίζεστε επιχειρηματικές πληροφορίες.</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>Συλλογή προτύπων τοποθεσίας</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>Δείγματα δεικτών</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>Δείγματα δεικτών κατάστασης που εμφανίζονται από προεπιλογή στην αρχική σελίδα αυτού του Κέντρου εκθέσεων.</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>Ηθικό</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>Παραγωγικότητα</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>Έξοδα</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>Αυτό είναι ένα δείγμα δείκτη και μπορεί να διαγραφεί με ασφάλεια.</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>Κέντρο εκθέσεων</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>Χρήση του Κέντρου εκθέσεων</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>Χρησιμοποιείται για μορφοποιημένο κείμενο, πίνακες και εικόνες.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>Το Κέντρο αναφορών περιλαμβάνει τις εξής δυνατότητες:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;Οι βασικοί δείκτες απόδοσης&amp;lt;/A&amp;gt; (KPI) σάς επιτρέπουν να επικοινωνείτε στόχους και τάσεις καθώς και να παρακολουθείτε την πρόοδο.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;Οι πίνακες εργαλείων&amp;lt;/A&amp;gt; σάς επιτρέπουν να δίνετε μια πιο λεπτομερή εξήγηση των πληροφοριών σας χρησιμοποιώντας τα βιβλία εργασίας του Excel και τα KPI. Τα φίλτρα του πίνακα εργαλείων διευκολύνουν την επιλογή ενός εύρους πληροφοριών για προβολή. Για να δημιουργήσετε τον δικό σας πίνακα εργαλείων, μεταβείτε στην προβολή &amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;Πίνακες εργαλείων&amp;lt;/A&amp;gt; της βιβλιοθήκης αναφορών και κάντε κλικ στην επιλογή "Δημιουργία".</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>Η βιβλιοθήκη &amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;αναφορών&amp;lt;/A&amp;gt; έχει σχεδιαστεί ώστε να αποθηκεύει αρχεία που περιέχουν αναφορές και πίνακες εργαλείων και να επιτρέπει την εύκολη πρόσβαση σε πληροφορίες από προηγούμενες χρονικές περιόδους.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>Για να προετοιμάσετε αυτό το Κέντρο αναφορών για χρήση, προτείνονται οι ακόλουθες ενέργειες:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>Προβάλετε τον &amp;lt;A &amp;gt;πίνακα εργαλείων&amp;lt;/A&amp;gt; και το &amp;lt;A&amp;gt;βιβλίο εργασίας&amp;lt;/A&amp;gt; δείγματος για να κατανοήσετε ορισμένες από τις δυνατότητες αυτού του Κέντρου αναφορών</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>Εάν τα δείγματα δεν λειτουργούν σωστά, ζητήστε από ένα διαχειριστή να επιβεβαιώσει ότι είναι ενεργοποιημένες οι υπηρεσίες Excel Services και ότι αυτό το Κέντρο αναφορών είναι μια αξιόπιστη θέση</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>Εάν σχεδιάζετε να χρησιμοποιήσετε το Excel για την ανάλυση πληροφοριών από υπάρχοντες διακομιστές δεδομένων, δημιουργήστε και στείλτε αρχεία σύνδεσης δεδομένων (ODC), στη &amp;lt;A title="" href="../Data Connections" target="" &amp;gt;βιβλιοθήκη σύνδεσης δεδομένων&amp;lt;/A&amp;gt;. Εάν θέλετε οι χρήστες να δημιουργούν νέες λίστες KPI, προσθέσετε τους στην ομάδα "Κάτοχοι". Οι χρήστες που περιλαμβάνονται στην ομάδα "Μέλη" μπορούν να επεξεργάζονται σελίδες, αλλά δεν μπορούν να δημιουργούν λίστες KPI.</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>Ενημερώστε ή να καταργήστε περιεχόμενο δείγματος</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>Επισημάνσεις</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>Περισσότερες πληροφορίες</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>Γρήγορος οδηγός αναφοράς</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>Λεπτομέρειες επαφής</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>Χρησιμοποιήστε για την εμφάνιση λεπτομερειών σχετικά με μια επαφή για αυτήν τη σελίδα ή τοποθεσία.</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>Μελλοντικά συμβάντα</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>Σελίδα Κέντρου εκθέσεων</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>Δείκτες κατάστασης</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>Εκθέσεις</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>Η περιγραφή περιέχει πληροφορίες για το σκοπό του στόχου.</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>Σχόλια δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>Τα σχόλια περιγράφουν την τρέχουσα κατάσταση του δείκτη και μπορεί να παρέχουν πληροφορίες για αιτίες ή προβλήματα.</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>Τιμή δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>Όριο στόχου δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>Όριο προειδοποίησης δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>Σύνδεση λεπτομέρειας</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>Σύνδεση σελίδας για κλικ για λεπτομέρειες </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>Οι χαμηλότερες τιμές είναι καλύτερες</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>Οι χαμηλότερες ή οι υψηλότερες τιμές είναι καλύτερες</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>Αυτόματη ενημέρωση</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>Αν θα γίνεται λήψη των δεδομένων διακομιστή κάθε φορά</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>Σφάλμα ενημέρωσης</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>Περιέχει το μήνυμα σφάλματος από την τελευταία ενημέρωση, αν υπάρχει</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>Αρχείο προέλευσης δεδομένων</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>Διεύθυνση URL στο αρχείο προέλευσης δεδομένων</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>Προβολή Guid</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>Guid της προβολής</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>Όνομα προβολής</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>Όνομα της προβολής</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>Παράσταση τιμής</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>Παράσταση που χρησιμοποιείται για τον προσδιορισμό της τιμής του δείκτη.</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>Παράσταση ποσοστού</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>Καθορίστε αν η παράσταση χρησιμοποιείται για τον υπολογισμό του ποσοστού</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>Φύλλο τιμής</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>Όνομα του φύλλου για την τιμή</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>Κελί τιμής</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>Διεύθυνση ή όνομα του κελιού για την τιμή</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>Φύλλο στόχου</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>Όνομα του φύλλου για το στόχο</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>Κελί στόχου</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>Διεύθυνση ή όνομα του κελιού για το στόχο</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>Φύλλο προειδοποίησης</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>Όνομα του φύλλου για την προειδοποίηση</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>Κελί προειδοποίησης</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>Διεύθυνση ή όνομα του κελιού για την προειδοποίηση</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>Στόχος από βιβλίο εργασίας</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>Αν ο στόχος προέρχεται από το βιβλίο εργασίας ή από τον ορισμό του δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>Προειδοποίηση από το βιβλίο εργασίας</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>Αν η προειδοποίηση προέρχεται από το βιβλίο εργασίας ή από τον ορισμό του δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>Τάση</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>Η τάση του δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>Κατάσταση δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>Η κατάσταση του δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>Εμφανιζόμενος φάκελος</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>Ο εμφανιζόμενος φάκελος του δείκτη</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>Δείκτης</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Όνομα του KPI των υπηρεσιών ανάλυσης του Microsoft SQL Server 2005</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>Συμπερίληψη θυγατρικών δεικτών</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>Για συμπερίληψη θυγατρικών KPI ή όχι</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>Μορφοποιημένη τιμή ένδειξης</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>Η τιμή της ένδειξης, μορφοποιημένη από την υπηρεσία παροχής προέλευσης δεδομένων της</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>Μορφοποιημένος στόχος ένδειξης</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>Ο στόχος της ένδειξης, μορφοποιημένος από την υπηρεσία παροχής προέλευσης δεδομένων της</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>Μορφοποιημένη προειδοποίηση ένδειξης</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>Η τιμή προειδοποίησης της ένδειξης, μορφοποιημένη από την υπηρεσία παροχής προέλευσης δεδομένων της</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>Πιο πρόσφατη ενημερωμένη έκδοση των δεδομένων της ένδειξης</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>Η τελευταία ενημερωμένη έκδοση ένδειξης από την υπηρεσία παροχής προέλευσης δεδομένων της</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>Περιγραφή έκθεσης</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>Μια περιγραφή των περιεχομένων της έκθεσης</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>Αποθήκευση στο ιστορικό εκθέσεων</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>Κάθε φορά που αποθηκεύεται αυτό το έγγραφο, θα προστίθεται ένα αντίγραφο στο ιστορικό εκθέσεων.</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>Γονικό αναγνωριστικό</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>Το γονικό αναγνωριστικό αυτής της έκθεσης</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>Κάτοχος</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>Κάτοχος αυτού του εγγράφου</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>Κατηγορία έκθεσης</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>Κατηγορία της έκθεσης</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>Κατηγορία 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>Κατηγορία 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>Κατηγορία 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>Κατάσταση έκθεσης</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>Κατάσταση της έκθεσης</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>Τελική έκδοση</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>Προκαταρκτική έκδοση</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>Περίοδος μέχρι σήμερα</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>Ιστορικό</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>Προβολή ιστορικού</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>Όνομα</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>Όνομα</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>Δημιουργία</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>Τροποποιημένη σύνδεση έκθεσης</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>Η έκθεση δημιουργήθηκε</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(τιμή στιγμιότυπου)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>Η έκθεση δημιουργήθηκε από</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>Η έκθεση τροποποιήθηκε</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>Η έκθεση τροποποιήθηκε από</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>Γονικό όνομα έκθεσης</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(το όνομα του γονικού στοιχείου του στιγμιότυπου)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>Σύνδεση σε αναφορά</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(σύνδεση στην έκθεση με το μενού επεξεργασίας)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>Επιχειρηματική πληροφόρηση</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>Κοινές στήλες δείκτη</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>Δείκτης κατάστασης που βασίζεται σε σταθερή τιμή</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>Δημιουργία νέου δείκτη κατάστασης με χρήση πληροφοριών που έχουν εισαχθεί με μη αυτόματο τρόπο</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>Δείκτης κατάστασης που βασίζεται σε λίστα του SharePoint</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>Δημιουργία νέου δείκτη κατάστασης με χρήση δεδομένων από λίστες του SharePoint</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>Δείκτης κατάστασης που βασίζεται στο Excel</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>Δημιουργία νέου δείκτη κατάστασης με χρήση δεδομένων από τις υπηρεσίες Excel Services</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>Δείκτης κατάστασης που βασίζεται στις υπηρεσίες ανάλυσης του SQL Server</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>Δημιουργία νέου δείκτη κατάστασης με χρήση δεδομένων από τις Υπηρεσίες ανάλυσης του SQL Server</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>Έκθεση</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>Σελίδα τμήματος Web με λίστα κατάστασης</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>Δημιουργήστε μια σελίδα που εμφανίζει τους δείκτες κατάστασης και τα βιβλία εργασίας του Excel.</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Έκθεση του Excel</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>Πίνακες εργαλείων</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>Τρέχουσες εκθέσεις</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>Όλες οι εκθέσεις και οι πίνακες εργαλείων</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>Πρόσφατα ενημερωμένα</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Λεπτομερής έκθεση σελίδας για τα αρχεία του Excel.</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>Επάνω αριστερή ζώνη</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>Επάνω δεξιά ζώνη</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>Ζώνη φίλτρου</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>Προσθήκη φίλτρου</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>Κάτω αριστερή ζώνη</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>Κάτω μεσαία ζώνη</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>Κάτω δεξιά ζώνη</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>Επάνω ζώνη</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>Ζώνη στο κέντρο αριστερά</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>Ζώνη στο κέντρο δεξιά</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>Κάτω ζώνη</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>Όλα τα στοιχεία</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>Λίστα κατάστασης</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>Λίστα κατάστασης</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>Εμφανίζει μια λίστα των δεικτών κατάστασης. Οι δείκτες κατάστασης εμφανίζουν σημαντικά μέτρα για την επιχείρησή σας, καθώς και τις επιδόσεις της επιχείρησής σας ως προς τους στόχους σας.</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>Λεπτομέρειες δείκτη κατάστασης</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>Εμφανίζει τις λεπτομέρειες ενός μεμονωμένου δείκτη κατάστασης. Οι δείκτες κατάστασης εμφανίζουν ένα σημαντικό μέτρο για μια επιχείρηση και μπορούν να ληφθούν από άλλα αρχεία προέλευσης δεδομένων, περιλαμβανομένων των λιστών SharePoint, των βιβλίων εργασίας Excel και των KPI των υπηρεσιών ανάλυσης του SQL Server 2005.</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>Εταιρικά δεδομένα</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>Ναι</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>Όχι</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(Κενό)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(Όλα)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(Ενημέρωση)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>Ενημέρωση</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(Κενό)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>Αύξουσα ταξινόμηση</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>Φθίνουσα ταξινόμηση</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>Φιλτράρισμα κατά </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>Ταξινόμηση κατά </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>Προσδιορισμός ακροατηρίου</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>Ακροατήριο-στόχος (Ακροατήρια που βασίζονται σε κανόνες, Ομάδες SharePoint, Λίστες διανομής)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>Με στόχο</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>Χωρίς στόχο</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>Να επιτρέπονται τα καθολικά ακροατήρια</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>Να επιτρέπονται οι λίστες διανομής</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>Να επιτρέπονται οι ομάδες SharePoint</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>Κατάλογος τοποθεσιών</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>Χάρτης τοποθεσίας</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>Τοποθεσίες στην κατηγορία</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>Κορυφαίες τοποθεσίες</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>Ο Κατάλογος τοποθεσιών είναι ένας κατάλογος τοποθεσιών που μπορούν να ομαδοποιηθούν σε κατηγορίες. Για να υποβάλετε μια τοποθεσία στον Κατάλογο τοποθεσιών, επιλέξτε το στοιχείο "Δημιουργία τοποθεσίας" ή το στοιχείο "Προσθήκη σύνδεσης στην τοποθεσία" στην επάνω δεξιά γωνία αυτής της σελίδας.</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>Για να προσθέσετε κορυφαίες τοποθεσίες, προσθέστε μια σύνδεση στη λίστα καταλόγου τοποθεσιών και σημειώστε αυτήν τη σύνδεση ως "Κορυφαία τοποθεσία". Ξεκινήστε με την προσθήκη μιας σύνδεσης στον κατάλογο τοποθεσιών και την υποβολή της ως κορυφαίας τοποθεσίας.</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>Ρυθμίσεις εύρους σχετικών συνδέσεων</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>Άρθρο συζητήσεων με εικόνα</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>Σύνδεση στο άρθρο συζητήσεων</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>Ζώνες τμήματος Web</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>Αρχική σελίδα ειδήσεων</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>Αρχική σελίδα καταλόγου τοποθεσίας</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>Ενεργοποίηση δυνατοτήτων Enterprise</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>Προεπιλογή</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>Φίλτρα</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>Εταιρικά δεδομένα</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>Πίνακας εργαλείων</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>Τμήμα Web χρήστη WSRP</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>Τρέχων χρήστης</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>Φίλτρο τρέχοντος χρήστη</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>Φιλτράρει τα περιεχόμενα των τμημάτων Web χρησιμοποιώντας ιδιότητες του τρέχοντος χρήστη.</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>Φίλτρο κειμένου</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>Φιλτράρει τα περιεχόμενα των τμημάτων Web, επιτρέποντας στους χρήστες να εισαγάγουν μια τιμή κειμένου.</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>Φίλτρο λίστας SharePoint</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>Φιλτράρει τα περιεχόμενα των τμημάτων Web, χρησιμοποιώντας μια λίστα τιμών.</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>Συμβολοσειρά ερωτήματος</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>Φίλτρο συμβολοσειράς (URL) ερωτήματος</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>Φιλτράρει τα περιεχόμενα των τμημάτων Web, χρησιμοποιώντας τιμές που μεταβιβάζονται μέσω της συμβολοσειράς ερωτήματος.</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>Πεδίο σελίδας</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>Φίλτρο πεδίου σελίδας</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>Φιλτράρει τα περιεχόμενα των τμημάτων Web, χρησιμοποιώντας πληροφορίες για την τρέχουσα σελίδα.</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>Φίλτρο υπηρεσιών ανάλυσης του SQL Server</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>Φιλτράρει τα περιεχόμενα των τμημάτων Web, χρησιμοποιώντας μια λίστα τιμών από τους κύβους υπηρεσιών ανάλυσης του SQL Server.</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>Λίστα κατάστασης</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>Τμήμα Web IView</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>Λεπτομέρειες δείκτη</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>Ημερομηνία</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>Φίλτρο ημερομηνίας</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>Φιλτράρει τα περιεχόμενα των τμημάτων Web, επιτρέποντας στους χρήστες να εισάγουν ή να επιλέγουν ημερομηνία.</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>Λίστα εταιρικών δεδομένων</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>Εμφανίζει μια λίστα στοιχείων από ένα αρχείο προέλευσης δεδομένων στη συνδεσιμότητα εταιρικών δεδομένων.</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>Δεν είναι δυνατή η εισαγωγή αυτού του τμήματος Web.</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>Φίλτρο συνδεσιμότητας εταιρικών δεδομένων</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>Φιλτράρει τα περιεχόμενα των Τμημάτων Web, χρησιμοποιώντας μια λίστα τιμών από συνδεσιμότητα εταιρικών δεδομένων.</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>Στοιχείο εταιρικών δεδομένων</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>Εμφανίζει ένα στοιχείο από ένα αρχείο προέλευσης δεδομένων στη συνδεσιμότητα εταιρικών δεδομένων.</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>Σχετική λίστα εταιρικών δεδομένων</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>Εμφανίζει μια λίστα στοιχείων που σχετίζονται με ένα ή περισσότερα γονικά στοιχεία από ένα αρχείο προέλευσης δεδομένων στη συνδεσιμότητα εταιρικών δεδομένων.</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>Ενέργειες επιχειρηματικών δεδομένων</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>Εμφανίζει μια λίστα ενεργειών από τη συνδεσιμότητα εταιρικών δεδομένων.</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>Δημιουργία στοιχείου εταιρικών δεδομένων</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>Δημιουργεί ένα στοιχείο επιχειρηματικών δεδομένων από παραμέτρους στη συμβολοσειρά ερωτήματος και το παρέχει σε άλλα τμήματα Web.</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>Φίλτρο επιλογής</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>Φιλτράρει τα περιεχόμενα των τμημάτων Web, χρησιμοποιώντας μια λίστα τιμών που εισάγονται από το συντάκτη της σελίδας.</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>Τιμή 1&amp;Τιμή 2&amp;Τιμή 3=Περιγραφή 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>Κουμπί εφαρμογής φίλτρων</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>Προσθέστε αυτό το κουμπί σε μια σελίδα, ώστε οι χρήστες να μπορούν να αποφασίσουν πότε θα εφαρμόζονται οι επιλογές των φίλτρων τους. Διαφορετικά, κάθε φίλτρο εφαρμόζεται όταν αλλάζει η τιμή του.</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>Κορυφαίες τοποθεσίες</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>Εμφανίζει τις δημοφιλέστερες τοποθεσίες από τον κατάλογο τοποθεσιών.</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>Ειδήσεις</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>Πρόσφατες συζητήσεις</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>Συλλογή ενημερωμένων εκδόσεων συζητήσεων</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>Αυτή η εβδομάδα σε εικόνες</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>Εμφανίζει μια εικόνα από μια βιβλιοθήκη εικόνων και συνδέεται σε μια προβολή παρουσίασης όπου οι χρήστες μπορούν να δουν όλες τις εικόνες στη βιβλιοθήκη εικόνων.</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>Ειδήσεις</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>Άρθρο δειγμάτων συζητήσεων</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>Αυτή η σελίδα έμεινε σκόπιμα κενή.</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>Αρχειοθήκη συζητήσεων</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>Συζητήσεις βιομηχανίας</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>Περισσότερες συζητήσεις</value>
+  </data>
+  <data name="KPIList">
+    <value>Λίστα δεικτών κατάστασης</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>Μια λίστα δεικτών κατάστασης χρησιμοποιείται για την παρακολούθηση και την εμφάνιση ενός συνόλου στόχων. Τα έγχρωμα εικονίδια εμφανίζονται για να υποδείξουν το βαθμό επίτευξης των στόχων.</value>
+  </data>
+  <data name="EventsList">
+    <value>Συμβάντα</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>Χρησιμοποιήστε τη λίστα ''Συμβάντα'', για να δημοσιεύσετε πληροφορίες σχετικά με συσκέψεις, προθεσμίες και άλλα συμβάντα που σχετίζονται με αυτήν την περιοχή.</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>Δεν είναι δυνατή η εισαγωγή αυτού του τμήματος Web.</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>Αρχική</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>Τμήμα Web εικόνας αρχικής σελίδας</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>Εμφανίζει την εικόνα της αρχικής σελίδας</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>Εικόνα αρχικής σελίδας</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>Πρόγραμμα επεξεργασίας περιεχομένου</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>Επιτρέπει στους συντάκτες να εισάγουν περιεχόμενο εμπλουτισμένου κειμένου.</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>Χρειάζεται να...</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>Αναζήτηση υπαλλήλου</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>Αναζήτηση για υπαλλήλους</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>Πίνακας περιεχομένων</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>Ρυθμίσεις καταλόγου τοποθεσιών</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>Ρύθμιση παραμέτρων του καταλόγου τοποθεσιών</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>Σάρωση συνδέσεων καταλόγου τοποθεσιών</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>Σελίδες</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>Κοινόχρηστα έγγραφα</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>Προσωπικά έγγραφα</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>Κοινόχρηστες εικόνες</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>Φωτογραφίες χρήστη</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>Εδώ θα αποθηκευτούν εικόνες προφίλ για όλους τους χρήστες.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>Χρησιμοποιήστε αυτήν τη βιβλιοθήκη εγγράφων, για να αποθηκεύσετε τις σελίδες Τμημάτων Web. Αυτόματα θα γίνουν κοινόχρηστες στη δημόσια κεντρική σελίδα σας.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>Χρησιμοποιήστε αυτήν τη βιβλιοθήκη εγγράφων για να αποθηκεύσετε τα έγγραφά σας. Τα έγγραφα που είναι κοινόχρηστα εδώ θα εμφανιστούν στη δημόσια αρχική σελίδα σας.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>Χρησιμοποιήστε αυτήν τη βιβλιοθήκη εγγράφων για έγγραφα που θέλετε να διατηρήσετε για προσωπική χρήση. Θα είναι ορατά μόνο σε εσάς και τους διαχειριστές του διακομιστή.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>Μοιραστείτε εικόνες και φωτογραφίες με άλλους προσθέτοντάς τις σε αυτήν τη βιβλιοθήκη εικόνων. Οι εικόνες που αποθηκεύονται εδώ θα είναι κοινόχρηστες στη δημόσια κεντρική σελίδα σας.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>Γρήγορα αποτελέσματα με το στοιχείο "Η τοποθεσία μου"</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>Συνδέσεις σε διάφορες υποδείξεις και συμβουλές για τη χρήση του στοιχείου "Η τοποθεσία μου".</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>Τοποθεσίες SharePoint</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>Λεπτομέρειες για τις τοποθεσίες στις οποίες είναι μέλος ο χρήστης</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>Κύρια σελίδα της τοποθεσίας μου</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>Παρέχει τη μοναδική εμφάνιση και αίσθηση της τοποθεσίας μου.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>Πρόσφατες δημοσιεύσεις ιστολογίου</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>Οι πιο πρόσφατες δημοσιεύσεις ιστολογίου για το χρήστη</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>Προσθήκη νέας καταχώρησης</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>Κέντρο κοινής χρήσης</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>Το κεντρικό τμήμα Web που θα χρησιμοποιεί ο χρήστης για να μοιράζεται στοιχεία με άλλους χρήστες.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>Πρόσφατες δραστηριότητες</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>Το τμήμα Web που εμφανίζει τις πρόσφατες δραστηριότητές μου.</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>Να ερωτηθώ σχετικά με</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>Το τμήμα Web που εμφανίζει μια λίστα με λέξεις-κλειδιά σχετικά με τα οποία  μπορούν να με ρωτήσουν άλλοι χρήστες.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>Οι συνδέσεις μου</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>Εμφανίζει τις συνδέσεις που έχετε δημιουργήσει.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>Το ημερολόγιό μου</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>Εμφανίζει το ημερολόγιό σας χρησιμοποιώντας το Outlook Web Access για τον Microsoft Exchange Server 2003 ή νεότερη έκδοση.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>Παρακολούθηση συναδέλφων</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>Εμφανίζει μια λίστα των συναδέλφων σας και τις πρόσφατες αλλαγές τους.</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>Τα μέλη μου</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>Εμφανίζει τις ομάδες των οποίων είστε μέλος.</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>Προφίλ χρηστών και οι τοποθεσίες μου</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>Ακροατήρια</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>Προφίλ χρηστών και ιδιότητες</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>Ακροατήρια</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>Πολιτικές υπηρεσιών προφίλ</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>Ρυθμίσεις του στοιχείου "Η τοποθεσία μου"</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>Αξιόπιστες τοποθεσίες κεντρικού υπολογιστή "Η τοποθεσία μου"</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Δημοσιευμένες συνδέσεις σε εφαρμογές προγράμματος-πελάτη του Office</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>Συνδέσεις τοποθεσίας εξατομίκευσης</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>Δικαιώματα υπηρεσιών προσαρμογής</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>Ρυθμίσεις ανάθεσης οργανισμών</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>Στοιχείο επιχειρηματικών δεδομένων</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>Τμήμα Web για τις λεπτομέρειες στοιχείου επιχειρηματικών δεδομένων</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>Ενέργειες επιχειρηματικών δεδομένων</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>Τμήμα Web για την εμφάνιση ενεργειών επιχειρηματικών δεδομένων</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>Συνδεσιμότητα εταιρικών δεδομένων</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>Εισαγωγή ορισμού εφαρμογής</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>Προβολή εφαρμογών</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>Προβολή οντοτήτων</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>Επεξεργασία προτύπου σελίδας προφίλ</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>Δικαιώματα συνδεσιμότητας εταιρικών δεδομένων</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>Διαχείριση ρυθμίσεων για καθολική σύνδεση (SSO)</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>Όνομα καρτέλας</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>Αυτό είναι το κείμενο ετικέτας της καρτέλας.</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>Σελίδα</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>Πληκτρολογήστε το όνομα της σελίδας που πρέπει να εμφανίζεται ως μέρος αυτής της καρτέλας. Εάν δεν έχετε δημιουργήσει μια σελίδα, δημιουργήστε μια σελίδα χρησιμοποιώντας την επιλογή "Δημιουργία σελίδας" στις Ενέργειες τοποθεσίας.</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>Προσθήκη νέας σύνδεσης</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>Συμβουλή εργαλείου</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>Αυτή είναι η συμβουλή εργαλείου που θα εμφανίζεται όταν ένας χρήστης κινεί το δείκτη του ποντικιού επάνω από αυτήν την καρτέλα.</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>Όλες οι καρτέλες</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>Τίτλος</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>Διεύθυνση URL</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>Κάτοχος</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>Διεύθυνση</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>Περιοχή</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>Τοποθεσία ανάδειξης</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>Κορυφαία τοποθεσία</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>Εργασίες και εργαλεία</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>Κατάσταση σύνδεσης</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>ΟΚ</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>Κατεστραμμένη</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>Απροσδιόριστο</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>Κορυφαίες εργασίες</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>Διεθνείς ρυθμίσεις</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>Εθνικά</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>Τοπικά</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>Τεχνολογία πληροφορικής</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>Έρευνα &amp; ανάπτυξη</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>Πωλήσεις</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>Οικονομία</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>Όλες οι τοποθεσίες</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>Σύνοψη</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>Διαχείριση τοποθεσιών</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>Τοποθεσίες που έχουν υποβληθεί</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>Κατηγορίες</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>Απορριφθείσες τοποθεσίες</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>Κατηγορίες δημιουργίας τοποθεσίας</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>Κατεστραμμένες τοποθεσίες</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>Καλώς ορίσατε στο Microsoft® SharePoint® Server 2013 </value>
+  </data>
+  <data name="HomePageContent2">
+    <value>Γρήγορα αποτελέσματα με τη νέα έκδοση του Microsoft SharePoint Server 2013 :</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>Διαχείριση τοποθεσιών και περιεχομένου</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>Δημιουργία νέων &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;σελίδων&lt;/a&gt;, &lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;τοποθεσιών &lt;/a&gt; και &lt;a href="~SiteCollection/_layouts/create.aspx"&gt;λιστών &lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>&lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;Προσθήκη χρηστών &lt;/a&gt; στην ομάδα "Μέλη" για την επεξεργασία σελίδων</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>&lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;Δημιουργία προσωπικής τοποθεσίας&lt;/a&gt; με ένα κλικ στο κουμπί "Η τοποθεσία μου"</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>&lt;a href="~SiteCollection/SearchCenter"&gt;Αναζήτηση&lt;/a&gt; σε τοποθεσίες, έγγραφα και άτομα</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>Επιχειρηματικές λύσεις (απαιτεί Άδεια Χρήσης Enterprise)</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>Δημιουργία δεικτών κατάστασης και εκθέσεων</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>Προβολή βιβλίου εργασίας του Excel μέσω του τμήματος Web Excel Web Access</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>Ανάπτυξη φόρμας InfoPath σε μια βιβλιοθήκη εγγράφων</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>Επιλογή εργασίας</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>Λίστα τοποθεσιών</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>Χρησιμοποιήστε αυτό το πρότυπο λίστας, για να δημιουργήσετε λίστες τοποθεσιών.</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>Λίστα "Καρτέλες"</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>Χρησιμοποιήστε αυτό το πρότυπο λίστας για να δημιουργήσετε τη λίστα "Καρτέλες".</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>Δεν υπάρχουν στοιχεία προς εμφάνιση σε αυτήν την προβολή.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>Κατηγορίες</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>Χάρτης τοποθεσίας</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>Τοποθεσίες στην κατηγορία</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>Αρχική</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>Τοποθεσία αρχικής σελίδας πύλης</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>Θέματα</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>Περιεχόμενο Web θεμάτων</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>Τμήματα</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>Περιεχόμενο Web τμημάτων</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>Πωλήσεις</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>Περιεχόμενο Web πωλήσεων</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>Έρευνα &amp; ανάπτυξη</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>Περιεχόμενο Web RD</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>Ανθρώπινο δυναμικό</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>Περιεχόμενο Web ανθρώπινων πόρων</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>Προϊόντα</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>Περιεχόμενο Web προϊόντων</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>Συζητήσεις</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>Αρχική σελίδα συζητήσεων εταιρείας</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>Τοποθεσίες</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>Περιεχόμενο Web καταλόγου τοποθεσιών</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>Αναζήτηση</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>Το Κέντρο αναζήτησης εμφανίζει τα αποτελέσματα αναζήτησης</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>Εκθέσεις</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>Κέντρο εκθέσεων</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>Πρόγραμμα προβολής WSRP</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>Εμφανίζει τα portlet από τοποθεσίες Web χρησιμοποιώντας το WSRP 1.1.</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>Αυτό το τμήμα Web καταργήθηκε.</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>Τοποθεσίες</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>Χρησιμοποιήστε τη λίστα τοποθεσιών για να αποθηκεύσετε συνδέσεις σε τοποθεσίες και κατηγορίες τοποθεσιών.</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>Καρτέλες</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>Χρησιμοποιήστε τη λίστα "Καρτέλες", για να αποθηκεύσετε συνδέσεις σε σελίδες. Η λίστα "Καρτέλες" πρέπει να χρησιμοποιηθεί με το στοιχείο ελέγχου καρτελών στην τοποθεσία σας.</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>Μετάβαση</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>Προσδιορισμός ακροατηρίου</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>Προσδιορισμός ακροατηρίου</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>Να επιτρέπεται το καθολικό ακροατήριο</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>Να επιτρέπεται η λίστα διανομής</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>Να επιτρέπεται η ομάδα Sharepoint</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>Ναι</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>Όχι</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>Προσωπικό</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>Η τοποθεσία μου</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>Περιήγηση</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>Κατάλογος τοποθεσιών</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>Δημιουργία Κέντρου εκθέσεων</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>Δημιουργεί το Κέντρο εκθέσεων στις τοποθεσίες Premium.</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>Δυνατότητα διατάξεων πύλης</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>Δυνατότητα πύλης που στέλνει όλες τις διατάξεις στην κύρια συλλογή σελίδων.</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>Αναζήτηση στην αρχειοθήκη συζητήσεων</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>Διάταξη υποδοχής</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>Ως μέρος της αναβάθμισής σας, έχετε τώρα πρόσθετες δυνατότητες εγκατεστημένες στο σύμπλεγμα SharePoint. Αυτές οι δυνατότητες θα ενεργοποιηθούν στις τοποθεσίες που δημιουργήθηκαν πρόσφατα, αλλά δεν έχουν γίνει ακόμα διαθέσιμες στις υπάρχουσες τοποθεσίες. Μπορείτε να κάνετε αυτές τις δυνατότητες διαθέσιμες σε όλες τις υπάρχουσες τοποθεσίες σας, μεταβαίνοντας στη σελίδα 'Ενεργοποίηση δυνατοτήτων στις υπάρχουσες τοποθεσίες'. Εάν δεν θέλετε να κάνετε αυτές τις δυνατότητες διαθέσιμες σε όλες τις υπάρχουσες τοποθεσίες τώρα, μπορείτε να διαγράψετε αυτήν την εργασία. Μπορείτε να εκτελέσετε αυτήν την εργασία οποιαδήποτε στιγμή από τη σελίδα "Λειτουργίες" στην τοποθεσία Κεντρικής διαχείρισης. Μπορείτε επίσης να κάνετε αυτές τις δυνατότητες διαθέσιμες σε μεμονωμένες τοποθεσίες χρησιμοποιώντας το μενού "Ρυθμίσεις τοποθεσίας" για τη συγκεκριμένη τοποθεσία.</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>Ενεργοποίηση νέων δυνατοτήτων στις υπάρχουσες τοποθεσίες</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>Ενεργοποίηση δυνατοτήτων στις υπάρχουσες τοποθεσίες</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">Πρόσθετες εργασίες αναβάθμισης</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">Προώθηση δυνατοτήτων προς τα κάτω</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">Χρησιμοποιήστε την προώθηση δυνατοτήτων προς τα κάτω για να ενεργοποιήσετε νέες δυνατότητες σε υπάρχουσες τοποθεσίες.</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>Προβολή RSS</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>Εμφανίζει μια τροφοδοσία RSS.</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>Οι τοποθεσίες SharePoint μου</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>Χρησιμοποιήστε για να εμφανίσετε έγγραφα που έχετε συντάξει σε τοποθεσίες των οποίων είστε μέλος και τοποθεσίες της επιλογής σας.</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>Έγγραφα SharePoint</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>Χρησιμοποιήστε για να εμφανίσετε έγγραφα που συντάχθηκαν από το χρήστη, όπου ο χρήστης είναι μέλος μιας τοποθεσίας.</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>Συνάθροιση τοποθεσιών</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>Εμφανίζει τοποθεσίες της επιλογής σας.</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>Βιβλιοθήκη εγγράφων περιοχής</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>Οι βιβλιοθήκες εγγράφων περιοχής είναι φάκελοι που διευκολύνουν την κοινή χρήση εγγράφων με άλλους χρήστες. Κάθε βιβλιοθήκη εμφανίζει έγγραφα σε μια λίστα, η οποία μπορεί να φιλτραριστεί ή να ταξινομηθεί.</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>Τι νέο υπάρχει</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>Εμφανίζει μια λίστα των συναδέλφων σας και των πρόσφατων αλλαγών τους.</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>Παρακολούθηση ενδιαφερόντων</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>Εμφανίζει τις πρόσφατες δραστηριότητες στους τομείς που σας ενδιαφέρουν.</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>Λεπτομέρειες επαφής</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>Εμφανίζει λεπτομέρειες σχετικά με μια επαφή για αυτήν τη σελίδα ή τοποθεσία.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>Οι εικόνες μου</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>Εμφανίζει εικόνες από τη βιβλιοθήκη εικόνων σας, με μια επιλογή προβολής ως παρουσίασης.</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>Κοινόχρηστες εικόνες</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>Οι χώροι εργασίας μου</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>Εμφανίζει τις τοποθεσίες που έχουν δημιουργηθεί στο στοιχείο "Η τοποθεσία μου".</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>Φάκελος "Η αλληλογραφία μου"</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>Εμφανίζει το φάκελο αλληλογραφίας σας χρησιμοποιώντας το Outlook Web Access για τον Microsoft Exchange Server 2000.</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>Το ημερολόγιό μου</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>Εμφανίζει το ημερολόγιό σας χρησιμοποιώντας το Outlook Web Access για τον Microsoft Exchange Server 2003 ή νεότερη έκδοση.</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>Τα εισερχόμενά μου</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>Εμφανίζει τα εισερχόμενά σας χρησιμοποιώντας το Outlook Web Access για τον Microsoft Exchange Server 2003 ή νεότερη έκδοση.</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>Προσωπικές εργασίες</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>Εμφανίζει τις εργασίες σας χρησιμοποιώντας το Outlook Web Access για τον Microsoft Exchange Server 2003 ή νεότερη έκδοση.</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>Οι επαφές μου</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>Εμφανίζει τις επαφές σας χρησιμοποιώντας το Outlook Web Access για τον Microsoft Exchange Server 2003 ή νεότερη έκδοση.</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>Οι συνδέσεις μου</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>Χρησιμοποιείται για την εμφάνιση των συνδέσεών σας</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>Προεπιλεγμένες ομάδες προσθήκης τμήματος Web</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>Προσθέτει επιπλέον προεπιλεγμένες ομάδες στη στήλη QuickAddGroups στη συλλογή τμημάτων Web</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>Φόρτωση...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>Άνοιγμα μενού</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>Μέλη</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>Τμήμα Web για την εμφάνιση των μελών μιας ομάδας</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>Καθολικά τμήματα Web</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>Εγκαθιστά πρόσθετα τμήματα Web κοινά σε όλους τους τύπους τοποθεσιών.</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>Η τοποθεσία μου</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>Εγκαθιστά δυνατότητες που σχετίζονται με το στοιχείο "Η τοποθεσία μου" και με τα προφίλ χρηστών.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>Κεντρικός υπολογιστής Η τοποθεσία μου</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>Εγκαθιστά δυνατότητες που σχετίζονται με τη φιλοξενία των τοποθεσιών μου.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>Λογότυπα οργανισμού</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>Κοινόχρηστη βιβλιοθήκη εικόνων για λογότυπα οργανισμών</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>Χρησιμοποιήστε αυτήν τη βιβλιοθήκη εικόνων, για να αποθηκεύσετε λογότυπα για οργανισμούς.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>Πλοήγηση στο στοιχείο "Η τοποθεσία μου"</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>Εγκαθιστά υπηρεσίες παροχής πλοήγησης για το στοιχείο "Η τοποθεσία μου".</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>Ρύθμιση παραμέτρων της προσωπικής τοποθεσίας "Η τοποθεσία μου"</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>Ρυθμίζει τις παραμέτρους της προσωπικής τοποθεσίας ενός χρήστη.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>Συνδέσεις διαχείρισης προφίλ χρήστη</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>Εγκαθιστά συνδέσεις που σχετίζονται με τη διαχείριση της υπηρεσίας προφίλ χρήστη.</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>Βασικές συνδέσεις διαχείρισης προφίλ χρήστη</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>Εγκαθιστά συνδέσεις που σχετίζονται με τη βασική διαχείριση της υπηρεσίας προφίλ χρήστη.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>Στόχος περιεχομένου λίστας</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>Εγκαθιστά ένα κουμπί στη σελίδα "Ρυθμίσεις λίστας" για να ενεργοποιήσει το στόχο περιεχομένου με χρήση ακροατηρίων.</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>Ρυθμίσεις στόχου ακροατηρίου</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>Δυνατότητα συγχρονισμού προφίλ</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>Εγκαθιστά εργασία για το συγχρονισμό προφίλ χρηστών και μελών με τοποθεσίες ομάδων.</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>Πρόγραμμα μετεγκατάστασης χρήστη Υπηρεσίας παροχής κοινόχρηστων υπηρεσιών</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>Εγκαθιστά δυνατότητες που σχετίζονται με τη μετεγκατάσταση δεδομένων χρήστη, όταν αλλάζουν οι πληροφορίες λογαριασμού ενός χρήστη.</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>Αναζήτηση</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>Τι είναι οι τοποθεσίες εξατομίκευσης...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>Οι τοποθεσίες εξατομίκευσης έχουν σχεδιαστεί να σας βοηθήσουν να παρέχετε μια ξεχωριστή εμπειρία εξατομίκευσης χωρίς συμβιβασμούς, που συνδέει την πύλη σας με χρήστες του στοιχείου "Οι τοποθεσίες μου". Χρησιμοποιήστε αυτήν την τοποθεσία για να ωθήσετε εξατομικευμένες και στοχευμένες πληροφορίες στους χρήστες σας, με βάση το ποιοι είναι και γιατί επισκέπτονται την πύλη σας. Το πρότυπο τοποθεσίας εξατομίκευσης σας βοηθά να προσδιορίσετε τον τρέχοντα χρήστη και να χρησιμοποιήσετε το προφίλ του για να στοχεύσετε και να παρουσιάσετε με ακρίβεια πληροφορίες που αφορούν τον συγκεκριμένο χρήστη και τις ανάγκες του. Αυτό σας δίνει την ευκαιρία να προσφέρετε μια προβολή της πύλης σας με επίκεντρο τους χρήστες σας.</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>&lt;i&gt;Για παράδειγμα, μπορείτε να χρησιμοποιήσετε μια τοποθεσία εξατομίκευσης για να ξεκλειδώσετε πληροφορίες καταχωνιασμένες σε διάφορα επιχειρηματικά συστήματα από τη δομή της τοποθεσίας σας, για να παρέχετε μια εμπειρία "μίας στάσης" που επιτρέπει εύκολα στους χρήστες να προβάλλουν και να έχουν πρόσβαση στις πληροφορίες που χρειάζονται για να εκτελέσουν την εργασία τους.  Επίσης, θα μπορούσατε να προσφέρετε μια εμπειρία που συμβάλλει στην καλύτερη ευθυγράμμιση της εταιρείας σας με τους στόχους της, χρησιμοποιώντας την τοποθεσία εξατομίκευσής σας για να καθοδηγήσετε τη συμπεριφορά του χρήστη στους δείκτες και τις τιμές των επιδόσεων, που μπορούν να οριστούν ειδικά για έναν μεμονωμένο χρήστη με βάση το ρόλο του.&lt;/i&gt;</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>Όταν αναπτυχθεί η τοποθεσία εξατομίκευσής σας, για να την ορίσετε ως μόνιμη θέση στη γραμμή περιήγησης "Η τοποθεσία μου" των χρηστών σας, επικοινωνήστε με το διαχειριστή σας για να δηλώσετε την τοποθεσία εξατομίκευσης.</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>Ετικέτες κοινού και στοιχεία ελέγχου κορδέλας του πίνακα σημειώσεων</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>Προσθέτει σημεία εισόδου για προσθήκη ετικετών κοινού και σχολιασμό του πίνακα σημειώσεων στο περιβάλλον εργασίας χρήστη της κορδέλας.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>Ετικέτες και σημειώσεις</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>TagsAndNotes</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>Ετικέτες και σημειώσεις</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>Οι ετικέτες σάς βοηθούν να θυμάστε τις συνδέσεις και να ταξινομείτε το επιλεγμένο στοιχείο.  Οι σημειώσεις είναι δημόσια σχόλια.  Οι ετικέτες και οι σημειώσεις δημοσιεύονται στην τροφοδοσία ειδήσεών σας και εμφανίζονται σε πολλές διαφορετικές τοποθεσίες.</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>Μ' αρέσει</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>Τοποθετεί στα επιλεγμένα στοιχεία την ετικέτα "Μ' αρέσει".  Οι ετικέτες σάς βοηθούν να θυμάστε τις συνδέσεις και να καταχωρείτε στοιχεία στην τροφοδοσία ειδήσεών σας.</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>Κάτοχος</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>Κατάσταση</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>Εμφανίζει τις τοποθεσίες από τον κατάλογο τοποθεσιών εντός μιας συγκεκριμένης κατηγορίας.</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>Εμφανίζει κατηγορίες από τον κατάλογο τοποθεσιών.</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>Επιτρέπει στους χρήστες να επιλέγουν από μια λίστα επιλογών και τους μεταφέρει στη σχετική θέση.</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>Αρχειοθήκη συζητήσεων</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>Έγγραφα</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>Λεπτομέρειες για τις τοποθεσίες στις οποίες είναι μέλος ο χρήστης</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>Συνάδελφοι</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>Αυτό το τμήμα Web έχει σχεδιαστεί για να προστεθεί στη σελίδα προφίλ ενός ατόμου. Παρέχει μια λίστα με όλους τους συναδέλφους που έχει ορίσει ένας χρήστης ως κοινούς με άλλα άτομα. Παρέχει ένα σημείο εισόδου προκειμένου ο κάτοχος προφίλ να διαχειρίζεται τη λίστα συναδέλφων.</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>Πίνακας σημειώσεων</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>Να επιτρέπεται στους χρήστες να αφήνουν σύντομες σημειώσεις δημόσιας προβολής σχετικά με αυτήν τη σελίδα.</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>Στοιχεία με ετικέτες</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>Εμφάνιση των ατόμων που έχουν εφαρμόσει μια ετικέτα σε μια συγκεκριμένη διεύθυνση URL</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>Συνδεθείτε</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>Εμφανίζει άτομα που χρησιμοποιούν συχνά μια ετικέτα, που έχουν εκφράσει συγκεκριμένο ενδιαφέρον ή που έχουν σχετικές γνώσεις.</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>Σχετικές ετικέτες</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>Εμφανίζει ετικέτες που έχουν χρησιμοποιηθεί μαζί με έναν συγκεκριμένο όρο και επιτρέπει το φιλτράρισμα του τμήματος Web "Στοιχεία με ετικέτες"</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>Πληροφορίες για αυτή την ετικέτα</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>Εμφανίζει τα μετα-δεδομένα από μια διαχειριζόμενη ταξινόμηση σχετικά με συγκεκριμένους όρους</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>Πρόσφατη δραστηριότητα</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>Εμφάνιση των ατόμων που σχετίζονται με συγκεκριμένους όρους</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>Κοινά με εσάς</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>Εμφανίζει ό,τι κοινό υπάρχει ανάμεσα σε εσάς και το χρήστη</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>Το οργανόγραμμά μου</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>Εμφανίζει το οργανόγραμμά σας και την ιεραρχία αναφοράς</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>Μέλη</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>Εμφανίζει τα μέλη της τοποθεσίας και της λίστας διανομής σας.</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>Συνδέσεις</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>Εμφανίζει τις συνδέσεις που έχει μοιραστεί μαζί σας ο χρήστης</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>Ομάδα</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>Τμήμα Web για την εμφάνιση λεπτομερειών ομάδας</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>Μέλη</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>Τμήμα Web για την εμφάνιση των μελών μιας ομάδας</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>Ομάδες μελών</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>Τμήμα Web για την εμφάνιση ομάδων μελών</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>Δείγμα σύνδεσης 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>Δείγμα περιγραφής</value>
+  </data>
+  <data name="imglibList">
+    <value>Βιβλιοθήκη "Αυτή η εβδομάδα σε εικόνες"</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>Παρέχει ένα σημείο αποθήκευσης εικόνων για αυτήν την περιοχή.</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>Δείγμα σύνδεσης 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>Δείγμα σύνδεσης 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>Κέντρο εγγράφων</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>Τοποθεσία κέντρου εγγράφων</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(συνδεδεμένο με διεύθυνση URL)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(συνδεδεμένο με το μενού ''Επεξεργασία'')</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>Συνάθροιση περιεχομένου</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Εφαρμογές του προγράμματος-πελάτη του Office</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>Φόρμες</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>Διάφορα</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>Η τοποθεσία μου: Επάνω</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>Η τοποθεσία μου: στη μέση αριστερά</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>Η τοποθεσία μου: στη μέση δεξιά</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>Η τοποθεσία μου: κάτω</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>Ταξινόμηση κατά διεύθυνση Url</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>Ταξινόμηση κατά τίτλο</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>Δυνατότητα DiscoPage της πύλης</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>Δυνατότητα πύλης που ορίζει την ιδιότητα DiscoPage της προεπιλεγμένης υπηρεσίας Web σε spsdisco.aspx.</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>Σελίδα υποδοχής με ζώνες Τμημάτων Web</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>Φίλτρο ιδιότητας προφίλ</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>Στοιχείο ελέγχου λήψης κύριου καταλόγου τοποθεσιών του SharePoint Portal Server</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>Στοιχείο ελέγχου λήψης κύριου καταλόγου τοποθεσιών του SharePoint Portal Server.</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ένα πεδίο εικόνας στα αριστερά, ένα πεδίο εμπλουτισμένου κειμένου και ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια δεξιά στήλη, κεφαλίδα, υποσέλιδο και 2 στήλες.</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια κεφαλίδα, υποσέλιδο και 2 στήλες.</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια δεξιά στήλη, κεφαλίδα, υποσέλιδο και 2 στήλες.</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ένα στοιχείο ελέγχου καρτελών. Έχει ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια κεφαλίδα, υποσέλιδο και 2 στήλες. </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια κεφαλίδα, υποσέλιδο, 2 στήλες και 3 γραμμές.</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ένα στοιχείο ελέγχου καρτελών. Έχει ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια κεφαλίδα, υποσέλιδο και 2 στήλες.</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ένα στοιχείο ελέγχου καρτελών και ένα Τμήμα Web πλαισίου αναζήτησης. Έχει ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια κεφαλίδα και υποσέλιδο.</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ένα στοιχείο ελέγχου καρτελών και Τμήματα Web αναζήτησης. Έχει ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια δεξιά στήλη, κεφαλίδα, υποσέλιδο, 2 στήλες και 2 γραμμές.</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ένα στοιχείο ελέγχου καρτελών.  Έχει ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια δεξιά στήλη, κεφαλίδα, υποσέλιδο, 2 στήλες και 2 γραμμές.</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>Αυτή η διάταξη σελίδας περιέχει ζώνες Τμημάτων Web που έχουν τακτοποιηθεί σε μια δεξιά στήλη, κεφαλίδα, υποσέλιδο και 2 στήλες.</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>Άνδρας που εργάζεται σε υπολογιστή</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>Δυνατότητα διατάξεων της σελίδας "Η τοποθεσία μου"</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>Δυνατότητα της σελίδας "Η τοποθεσία μου" που αποστέλλει όλες τις διατάξεις στη συλλογή κύριας σελίδας.</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>Επιλέξτε μια εργασία που πρέπει να εκτελέσετε</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>Δυνατότητα διατάξεων της σελίδας "Η τοποθεσία μου"</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>Δυνατότητα της σελίδας "Η τοποθεσία μου" που αποστέλλει όλες τις διατάξεις στη συλλογή κύριας σελίδας</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>Δυνατότητα αποστολής αρχείου αναβάθμισης πύλης</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>Δυνατότητα πύλης που αποστέλλει αρχεία μόνο για αναβάθμιση.</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>Πρόκειται για ένα δείγμα δημοσίευσης ιστολογίου. Τυπικά θα συμπληρωθεί με μια δημοσίευση από το χρήστη.</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>Δείγμα δημοσίευσης</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>Δείγμα χρήστη</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>Δείγμα</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>Όλες οι ετικέτες</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>Εμφάνιση ετικετών που έχουν εφαρμοστεί από όλους τους χρήστες</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>Οι ετικέτες μου</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>Εμφάνιση ετικετών που έχουν εφαρμοστεί από τον τρέχοντα χρήστη</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>Σύννεφο ετικετών</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>Εμφανίζει τα πιο δημοφιλή θέματα στα οποία έχουν προστεθεί ετικέτες μέσα στον οργανισμό σας.</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>Ετικέτες όλων των χρηστών</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>Οι ετικέτες μου</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>Προτεινόμενες συνδέσεις (μόνο M1)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>Εμφανίζει τις πληροφορίες σελιδοδεικτών μου</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>Αναζήτηση οργανισμών</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>Αυτό το τμήμα Web εμφανίζει κάθε άτομο που υπάρχει στην αλυσίδα αναφοράς σε μια διαδραστική προβολή που έχει βελτιστοποιηθεί για την περιήγηση στα οργανογράμματα.</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>Χαρακτηρισμοί</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>Χρησιμοποιήστε αυτήν τη δυνατότητα για να επιτρέπετε στους χρήστες να χαρακτηρίζουν το περιεχόμενο.</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>Χαρακτηρισμός (0-5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>Μέση τιμή όλων των χαρακτηρισμών που έχουν υποβληθεί</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>Χαρακτηρισμοί</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>Αριθμός χαρακτηρισμών</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>Αριθμός χαρακτηρισμών που υποβλήθηκαν</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>Προσδιορίζετε τη θέση του καταλόγου για να παραθέσετε νέες τοποθεσίες.</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>Παροχή τοποθεσιών για συμπερίληψή τους στην εμβέλεια "Αυτή και οι σχετικές τοποθεσίες" των  αποτελεσμάτων αναζήτησης για αυτήν την τοποθεσία.</value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>Ρυθμίσεις χαρακτηρισμού</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>Άτομα</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>Διαχείριση ιδιοτήτων χρήστη</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>Διαχείριση προφίλ χρηστών</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>Διαχείριση δευτερευόντων τύπων χρήστη</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>Διαχείριση ακροατηρίων</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>Προγραμματισμός μεταγλώττισης ακροατηρίου</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>Μεταγλωττισμένα ακροατήρια</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>Διαχείριση δικαιωμάτων χρήστη</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>Συγχρονισμός</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>Ρύθμιση παραμέτρων συνδέσεων συγχρονισμού</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>Ρύθμιση παραμέτρων συγχρονισμού</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>Οργανισμοί</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>Διαχείριση ιδιοτήτων οργανισμού</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>Διαχείριση προφίλ οργανισμού</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>Διαχείριση δευτερευόντων τύπων οργανισμού</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>Ρυθμίσεις της σελίδας "Η τοποθεσία μου"</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>Ρύθμιση των τοποθεσιών μου</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>Ρύθμιση παραμέτρων θέσεων αξιόπιστων κεντρικών υπολογιστών</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>Ρύθμιση παραμέτρων τοποθεσίας εξατομίκευσης</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>Δημοσίευση συνδέσεων σε εφαρμογές προγράμματος-πελάτη του Office</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>Διαχείριση ετικετών κοινού και σημειώσεων</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>Ρύθμιση παραμέτρων ετικετών κοινού και ετικετών γνώσεων</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>Διαχείριση πολιτικών</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>Υπηρεσία παροχής αξιώσεων για άτομα και οργανισμούς</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>Εγκαθιστά υπηρεσία παροχής αξιώσεων για άτομα και οργανισμούς.</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>Υπηρεσία παροχής αξιώσεων ομάδων</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>Εγκαθιστά υπηρεσία παροχής αξιώσεων για ομάδες.</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>Υπηρεσία παροχής ιεραρχίας αξιώσεων οργανισμών</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>Εγκαθιστά την υπηρεσία παροχής ιεραρχίας αξιώσεων βάσει των οργανισμών.</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>Διαχείριση εφαρμογής προφίλ χρήστη</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>Εφαρμογή προφίλ χρήστη μισθωτών</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>Συνδέσεις σε δευτερεύουσες σελίδες για τη Διαχείριση της εφαρμογής προφίλ χρήστη μισθωτών</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>Συρραφή εφαρμογής προφίλ χρήστη μισθωτών</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>Συρραφή της δυνατότητας εφαρμογής προφίλ χρήστη μισθωτών στο πρότυπο TenantAdmin</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>Ρύθμιση παραμέτρων εργασίας χρονιστή συγχρονισμού</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>Έναρξη συγχρονισμού προφίλ</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>Αναπτυσσόμενη λίστα αναζήτησης</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>Παράλειψη κάρτας επαφής</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>Η τροφοδοσία ειδήσεών μου</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>Το περιεχόμενό μου</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>Το προφίλ μου</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>Επισκόπηση</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>Οργάνωση</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>Περιεχόμενο</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>Ετικέτες και σημειώσεις</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>Συνάδελφοι</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>Ιδιότητες μέλους</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>Πίνακας εργαλείων των εργασιών μου</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>Παρέχει έναν πίνακα εργαλείων στη σελίδα του χρήστη "Οι τοποθεσίες μου" από τον οποίο ο χρήστης μπορεί να διαχειρίζεται και να αλληλεπιδρά με εργασίες που βρίσκονται σε διάφορες τοποθεσίες και συστήματα.</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>Συρραφή πίνακα εργαλείων των εργασιών μου</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>Αυτή η δυνατότητα συρράπτει (συνδέει) τη δυνατότητα "Πίνακας εργαλείων των εργασιών μου" με το πρότυπο MySite.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>Κοινόχρηστα έγγραφα - ΠΑΛΑΙΑ</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>Προσωπικά έγγραφα - ΠΑΛΑΙΑ</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>Περιεχόμενο παρακολούθησης</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>Παρακολούθηση περιεχομένου</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>Η ρύθμιση "Παρακολούθηση περιεχομένου" επιτρέπει στους χρήστες να εγγράφονται για τη λήψη ενημερώσεων στην τροφοδοσία τους σχετικά με ένα συγκεκριμένο έγγραφο</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>Εγγραφή σε περιεχόμενο</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>Εντοπισμός περιεχομένου</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>Περιέχει αναφορά σε ένα στοιχείο του περιεχομένου παρακολούθησης</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>Αναγνωριστικό συστοιχίας</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>Αναγνωριστικό τοποθεσίας</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>Αναγνωριστικό περιεχομένου Web</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>Αναγνωριστικό λίστας</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>Μοναδικό αναγνωριστικό</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>Αναγνωριστικό στοιχείου</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>Διεύθυνση URL</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>Γονική διεύθυνση URL</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>Τύπος</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>Δευτερεύων τύπος</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>Διεύθυνση URL εικονιδίου</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>Μη ορατά στην τροφοδοσία</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>Έχει τροφοδοσία</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>Σημαίες</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>Αναγνωριστικό προγράμματος τύπου αρχείου</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>Αναγνωριστικό προγράμματος διεύθυνσης Url διακομιστή</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>Έγγραφα παρακολούθησης</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>Τοποθεσίες παρακολούθησης</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>Παρακολουθήστε ενδιαφέροντα έγγραφα, μεταβαίνοντας σε αυτά και κάνοντας κλικ στο εικονίδιο παρακολούθησης.</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>Δεν έχετε παρακολουθήσει καμία τοποθεσία ακόμη. Για να εμφανιστεί κάποιο στοιχείο σε αυτήν τη λίστα, μεταβείτε σε μια τοποθεσία και κάντε κλικ στο εικονίδιο "Παρακολούθηση".</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>Αυτή η βιβλιοθήκη εγγράφων προοριζόταν παλαιότερα για τα έγγραφα που θέλατε να είναι κοινόχρηστα με άλλα άτομα. Τώρα, σας συνιστούμε να χρησιμοποιείτε τη βιβλιοθήκη "Τα έγγραφά μου" για αυτόν το σκοπό.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>Αυτή η βιβλιοθήκη εγγράφων προοριζόταν παλαιότερα για τα έγγραφα που θέλατε να διατηρείτε για προσωπική χρήση. Τώρα, σας συνιστούμε να χρησιμοποιείτε τη βιβλιοθήκη "Τα έγγραφά μου" για αυτόν το σκοπό.</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>Αυτή η λίστα θα περιέχει όλα τα στοιχεία που έχετε επιλέξει να παρακολουθείτε.</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>Παρακολούθηση περιεχομένου</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>Να επιτρέπεται στους χρήστες να παρακολουθούν έγγραφα ή τοποθεσίες.</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>Συρραφή παρακολούθησης περιεχομένου</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>Ενεργοποιήστε τη δυνατότητα παρακολούθησης περιεχομένου σε όλες τις συλλογές τοποθεσιών.</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>Παρακολούθηση περιεχομένου</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>Να επιτρέπεται στους χρήστες να παρακολουθούν έγγραφα ή τοποθεσίες.</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>Λίστα παρακολούθησης περιεχομένου</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>Δυνατότητα συμπύκνωσης της λίστας, η οποία επιτρέπει στους χρήστες να παρακολουθούν περιεχόμενο στο SharePoint.</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>Παρακολούθηση περιεχομένου</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>Λίστα που επιτρέπει στους χρήστες να παρακολουθούν περιεχόμενο στο SharePoint.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>Δυνατότητα βιβλιοθήκης εγγράφων της τοποθεσίας μου</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>Βελτιώνει την υπάρχουσα βιβλιοθήκη εγγράφων του SharePoint για τη σελίδα "Η τοποθεσία μου". Επιτρέπει τη χρήση νέων προβολών, βελτιωμένων πληροφοριών βάσει περιεχομένου, τη διαχείριση εκδόσεων απλών δυνατοτήτων και την επιλογή κοινής χρήσης ανά στοιχείο.</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>Έγγραφα</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>Όλα</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>Κοινή χρήση με εμένα</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>Κοινή χρήση με όλους</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>Κοινή χρήση πεδίων</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>Κοινή χρήση</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>Κοινή χρήση</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>Τα έγγραφά μου</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>Τα έγγραφά μου</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>Κοινή χρήση με εσωτερικό</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>Κοινή χρήση με εσωτερικό</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>Διατήρηση των πρόσφατων αλλαγών επεξεργασίας</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>Δικαιώματα</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>Η αναζήτηση δεν είναι διαθέσιμη αυτήν τη στιγμή. Προσπαθήστε ξανά αργότερα. Εάν το πρόβλημα δεν επιλυθεί, επικοινωνήστε με το διαχειριστή συστήματος.</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>Η αναζήτηση είναι απενεργοποιημένη αυτήν τη στιγμή. Επικοινωνήστε με το διαχειριστή συστήματος.</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>Παρακολούθηση</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>Παρακολουθήστε αυτό το έγγραφο και λάβετε ενημερώσεις στην τροφοδοσία ειδήσεών σας.</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>Διαχείριση εργασίας</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>Αξιολογήθηκε από</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>Το στοιχείο αξιολογήθηκε από τους χρήστες.</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>Αξιολογήσεις χρηστών</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>Αξιολογήσεις χρηστών για το στοιχείο</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>Σχόλια για περιεχόμενο</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Documents</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>Λειτουργικότητα έργου</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>Αυτή η δυνατότητα προσθέτει λειτουργίες διαχείρισης έργου σε μια τοποθεσία. Στην κεντρική σελίδα της τοποθεσίας συμπεριλαμβάνονται εργασίες, ημερολόγιο και τμήματα Web.</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>Τα έργα μου</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>Άτομα</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>Τροφοδοσία ειδήσεων</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>Έγγραφα</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>Εργασίες</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>Άτομα</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>Τοποθεσίες</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>Προσωπικές πληροφορίες</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value>Σχετικά με {0}</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>Οι εφαρμογές μου</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>Μετάβαση στην τοποθεσία μου</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>Παρακολουθώ</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>Κοινή χρήση με εμένα</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>Τροφοδοσία ειδήσεων</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>Εφαρμογές</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>Περισσότερες εφαρμογές</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>Τροφοδοσία ειδήσεων</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>Εμφανίζει συνομιλίες και ειδοποιήσεις συμβάντων από περιεχόμενο και άτομα που παρακολουθείτε στις τοποθεσίες του SharePoint και επιτρέπει στους χρήστες να αποστέλλουν σύντομα μηνύματα που είναι ορατά σε όλους.</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>Τροφοδοσία δραστηριοτήτων</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>Εμφανίζει τις πιο πρόσφατες συνομιλίες και δραστηριότητες ενός χρήστη.</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>Microfeed</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>Λίστα μόνιμης αποθήκευσης microfeed στην τοποθεσία μου</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>Λίστα μόνιμης αποθήκευσης για δημοσιευμένες τροφοδοσίες της τοποθεσίας μου</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>Τύποι περιεχομένου microfeed</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>Αναβάθμιση προσωπικής τοποθεσίας "Η τοποθεσία μου" κατά την περιήγηση</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>Δημιουργεί ή αναβαθμίζει την προσωπική τοποθεσία ενός χρήστη με περιήγηση στην κεντρική τοποθεσία της σελίδας "Η τοποθεσία μου".</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>Εμπειρία πρώτης εκτέλεσης της σελίδας "Η τοποθεσία μου"</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>Hashtag τάσης</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>Αυτό το Τμήμα Web στον υπολογιστή-πελάτη βοηθά το χρήστη να βρει κοινωνικό περιεχόμενο</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>Πλήθος στοιχείων παρακολούθησης</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>Εμφανίζει το πλήθος χρηστών, περιεχομένου και ετικετών που έχει παρακολουθήσει ο τρέχων χρήστης.</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>Άτομα</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>Εμφανίζει τα άτομα που παρακολουθεί κάποιος χρήστης, καθώς και τα άτομα που παρακολουθούν το συγκεκριμένο χρήστη.</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>Λωρίδα χρόνου μη αυτόματης ρύθμισης παραμέτρων</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>Εμφανίζει δεδομένα που έχουν ρυθμιστεί με μη αυτόματο τρόπο σε μια προβολή λωρίδας χρόνου</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>Σύνοψη έργου</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>Εμφανίζει πληροφορίες σχετικά με ένα έργο σε μια ευανάγνωστη επισκόπηση</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>Συνδεδεμένη λωρίδα χρόνου</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>Χρησιμοποιήστε αυτήν τη λωρίδα χρόνου για να εμφανίσετε μια προβολή υψηλού επιπέδου των δεδομένων ενός άλλου τμήματος Web</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>Λωρίδες χρόνου</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>Λωρίδα χρόνου τοποθεσίας έργου</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>Χρησιμοποιήστε αυτήν τη λωρίδα χρόνου για να δημιουργήσετε μια προβολή υψηλού επιπέδου για τις εργασίες ενός έργου</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>Τμήματα Web τοποθεσίας έργου</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>Χρήσιμα τμήματα Web που απαιτούν την τοποθεσία έργου</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>Κέντρο εργασίας ομάδας</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>Το Κέντρο εργασίας ομάδας παρέχει μια συνεπτυγμένη προβολή όλων των τοποθεσιών έργων σε μία θέση. Το Κέντρο εργασίας ομάδας μπορεί να συνδεθεί με το τμήμα Web "Λωρίδα χρόνου" δημιουργώντας μια απεικόνιση για το χαρτοφυλάκιο των έργων σας.</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>Δυνατότητα σχετικών στοιχείων</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>Δυνατότητα σχετικών στοιχείων για την προσθήκη της λειτουργικότητας σχετικών και προτεινόμενων στοιχείων σε μια συλλογή τοποθεσιών.</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>Συστάσεις μορφής στοιχείου</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>Προσθέτει ένα στοιχείο ελέγχου CBS συστάσεων σε όλες τις μορφές εμφάνισης ενός στοιχείου.</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>Προτάσεις σελίδας "Η τοποθεσία μου"</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>Προτείνονται αυτόματα έγγραφα και τοποθεσίες που μπορούν να παρακολουθήσουν οι χρήστες των σελίδων "Οι τοποθεσίες μου" του SharePoint.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>Το τμήμα Web συστάσεων προτείνει στο χρήση περιεχόμενο που ενδεχομένως να θέλει να παρακολουθήσει σε μια συστοιχία.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>Προτεινόμενα έγγραφα για εμένα</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>Προτεινόμενες τοποθεσίες για εμένα</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>Προτεινόμενα άτομα για εμένα</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>Το τμήμα Web συστάσεων προτείνει στο χρήση περιεχόμενο που ενδεχομένως να θέλει να παρακολουθήσει σε μια συστοιχία.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>Προτεινόμενα έγγραφα για παρακολούθηση</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>Προτεινόμενες τοποθεσίες για παρακολούθηση</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>Προτεινόμενα άτομα για παρακολούθηση</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>Το τμήμα Web συστάσεων προτείνει στο χρήση περιεχόμενο που ενδεχομένως να θέλει να παρακολουθήσει σε μια συστοιχία.</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>Προτεινόμενα έγγραφα</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>Προτεινόμενες τοποθεσίες</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>Προτεινόμενα άτομα</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>Οι συστάσεις μου</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>Δεν είναι δυνατή η εισαγωγή του τμήματος Web "Οι συστάσεις μου".</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>Δεν είναι δυνατή η εισαγωγή του τμήματος Web "Σχετικά στοιχεία".</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>Σχετικά στοιχεία</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>Τμήμα Web "Σχετικά στοιχεία".</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>Προτάσεις σχετικών στοιχείων</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>Τμήμα Web "Προτάσεις σχετικών στοιχείων".</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>Σχετικά στοιχεία</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>Προτάσεις νέων στοιχείων</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>Τμήμα Web "Προτάσεις νέων στοιχείων"</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>Υπηρεσία παροχής ρυθμίσεων χρήστη για προφίλ χρήστη</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>Αυτή η δυνατότητα παρέχει την υπηρεσία παροχής ρυθμίσεων χρήστη για το προφίλ χρήστη.</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>Γραμματοκιβώτιο τοποθεσίας</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>Γραμματοκιβώτιο</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>Η εφαρμογή γραμματοκιβωτίου τοποθεσίας σάς βοηθά να έχετε συγκεντρωμένα τα μηνύματα ηλεκτρονικού ταχυδρομείου και τα έγγραφά σας, συνδέοντας την τοποθεσία σας με ένα γραμματοκιβώτιο του Exchange. Στη συνέχεια, μπορείτε να προβάλλετε το ηλεκτρονικό ταχυδρομείο σας στο SharePoint και τα έγγραφα τοποθεσίας στο Outlook.</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>Γραμματοκιβώτια τοποθεσιών</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>Επιτρέπει την παροχή ενός γραμματοκιβωτίου του Exchange για τις τοποθεσίες αυτής της συστοιχίας και συνδέει τα έγγραφα της τοποθεσίας με το Outlook.</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>Διατηρήστε το ηλεκτρονικό ταχυδρομείο στο περιβάλλον.</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>Κοινή χρήση ηλεκτρ. ταχυδρ. στην τοποθ. σας και σύνδεση έγγρ. με το Outlook.</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>Υποστήριξη τοποθεσίας έργου</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>Επιτρέπει τη δημιουργία τοποθεσιών έργων σε αυτήν τη συλλογή τοποθεσιών.</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>Στοιχείο ελέγχου ετικέτας για τοποθεσίες έργων</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>Αυτή η δυνατότητα παρέχει το τμήμα Web προσθήκης ετικετών της τοποθεσίας έργου.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>Δεν είναι δυνατή η εισαγωγή του τμήματος Web προσθήκης ετικετών.</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>Τμήμα Web "Ετικέτες"</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>Το τμήμα Web "Προσθήκη ετικετών" επιτρέπει στα μέλη μιας τοποθεσίας να προσθέτουν και να προβάλλουν ετικέτες σε σελίδες της τοποθεσίας.</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>Έργα</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>Έργο</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>Δημιουργία</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>Δημιουργήστε ένα νέο χώρο εργασίας έργου.</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>Άνοιγμα</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>Ανοίξτε το επιλεγμένο έργο.</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>Στο χώρο εργασίας έργου</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>Άνοιγμα στο χώρο εργασίας έργου</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>Στο Project Professional</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>Ανοίξτε το επιλεγμένο έργο στο Microsoft Project. Εάν κάποιος άλλος χρήστης έχει αναλάβει τον έλεγχο, το έργο θα ανοίξει μόνο για ανάγνωση. Σε περίπτωση που έχετε επιλέξει πολλαπλά έργα, θα ανοίξουν σε ένα νέο κύριο έργο.</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>Λωρίδα χρόνου</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>Προσθήκη στη λωρίδα χρόνου</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>Προσθέστε τα επιλεγμένα στοιχεία στη λωρίδα χρόνου.</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>Έργο</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>Κάτοχος</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>Ημερομηνία έναρξης</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>Ημερομηνία λήξης</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>Ανανέωση λίστας έργων...</value>
+  </data>
+  <data name="NextRefresh">
+    <value>Η λίστα έργων θα ενημερωθεί στις {0}</value>
+  </data>
+  <data name="RefreshNow">
+    <value>Άμεση ανανέωση</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>Αναζήτηση σε αυτήν τη λίστα...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>Εμβέλεια τοποθεσίας έργου</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>Τοποθεσία και παρακάτω</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>Συλλογή τοποθεσιών</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>Επιχειρηματική ευφυΐα</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>Είναι αναφορά</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>Το στοιχείο είναι αναφορά;</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>Είναι δεδομένα</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>Το στοιχείο είναι αρχείο προέλευσης δεδομένων;</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>Επιχειρηματική ευφυΐα</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>Έγγραφο αναφοράς</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>Δημιουργήστε ένα νέο έγγραφο αναφοράς.</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>Βιβλιοθήκη εγγράφων αναφοράς</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>Ένα χώρος όπου μπορείτε να δημιουργείτε και να διαχειρίζεστε έγγραφα αναφοράς.</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>Βιβλιοθήκη εγγράφων αναφοράς</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>Υποστήριξη αναφορών και αναζήτησης δεδομένων</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>Παρέχει τους τύπους περιεχομένου, τις στήλες τοποθεσίας και τα πρότυπα βιβλιοθήκης που απαιτούνται για την υποστήριξη αναφορών και αναζήτησης δεδομένων στο "Κέντρο αναζήτησης επιχειρήσεων".</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>Δυνατότητα πύλης κοινότητας</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>Η δυνατότητα αυτή προσθέτει τη λειτουργικότητα πύλης κοινότητας. Παρέχει επίσης σελίδες πύλης κοινότητας.</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>Δημοφιλείς κοινότητες</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>Τοποθεσία κοινότητας</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>Πληροφορίες για εμάς</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>Δυνατότητα τοποθεσίας κοινότητας</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>Αυτή η δυνατότητα προσθέτει λειτουργίες κοινότητας, όπως κατηγορίες συζητήσεων, υπόληψη περιεχομένου και ατόμων και λίστες μελών. Επίσης, παρέχει τις σελίδες τοποθεσίας της κοινότητας, οι οποίες περιέχουν αυτές τις λίστες και τις δυνατότητες.</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>Λίστα συζητήσεων</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>Χρησιμοποιήστε τη λίστα συζητήσεων για τη διεξαγωγή συνομιλιών, όπως σε οποιοδήποτε φόρουμ, και για την υποβολή ερωτήσεων και απαντήσεων για θέματα σχετικά με την ομάδα, το έργο ή την κοινότητά σας.</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>Συγκεντρωτικό πλήθος ενδείξεων "Μου αρέσει"</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>Συγκεντρωτικό πλήθος αξιολογήσεων</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>Αριθμός ενδείξεων "Μου αρέσει"</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>Αρέσει σε</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>Δημοτικότητα</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>Τελευταία ενημέρωση θέματος από</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>Βαθμολογία υπόληψης συντάκτη</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>Αριθμός απαντήσεων συντάκτη</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>Αριθμός δημοσιεύσεων συντάκτη</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>Αριθμός καλύτερων απαντήσεων συντάκτη</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>Ημερομηνία τελευταίας δραστηριότητας συντάκτη</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>Ημερομηνία ιδιότητα μέλους συντάκτη</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>Κατάσταση ιδιότητας μέλους συντάκτη</value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>Επίπεδο 1</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>Επίπεδο 2</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>Επίπεδο 3</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>Επίπεδο 4</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>Επίπεδο 5</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>Κατηγορία</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>Όνομα μέλους</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>Δημοσίευση από</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>Τελευταία ενημέρωση θέματος</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Categories</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>Υποδομή τοποθεσίας κοινότητας</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>Τα πεδία, οι τύποι περιεχομένου και τα τμήματα Web σε επίπεδο συλλογής τοποθεσιών που απαιτούνται για τις λίστες συζητήσεων, την υπόληψη, τις κατηγορίες και τη λίστα μελών σε μια κοινότητα.</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>Δυνατότητα λίστας κατηγοριών</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>Αυτή η δυνατότητα περιέχει το πρότυπο για τη λειτουργικότητα της λίστας κατηγοριών</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>Λίστα κατηγοριών</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>Λίστα κατηγοριών</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>Κατηγορία</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(Περιγραφή τύπου περιεχομένου κατηγορίας)</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>Λίστα κατηγοριών</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>Πλακίδια κατηγοριών</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>Προβολή διαχειριστή</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>Προβολή μεμονωμένης κατηγορίας</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>Όνομα κατηγορίας</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>Το όνομα της κατηγορίας.</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>Για ποιο θέμα θα μιλούν τα μέλη της κοινότητας σε αυτήν την κατηγορία;</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>Εικόνα κατηγορίας</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>Προσθέστε μια εικόνα που αντιπροσωπεύει αυτήν την κατηγορία.</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>Συζητήσεις</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>Απαντήσεις</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>Τελευταία δημοσίευση από</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>Ημερομηνία τελευταίας δημοσίευσης</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>Κατηγορίες</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>Χρησιμοποιήστε τη λίστα "Κατηγορίες" για να προσδιορίσετε τις κατηγορίες που θα είναι διαθέσιμες για δημοσιεύσεις στις λίστες συζητήσεων.</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>Γενικά</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>Εάν δεν γνωρίζετε πού να δημοσιεύσετε, ξεκινήστε εδώ.</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>Μέλος</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>Κατάσταση</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>Κατάσταση μέλους</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>Σε εκκρεμότητα</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>Ενεργό</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>Ανενεργό</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>Αποκλεισμένο</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>Αποχώρησε</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>Τύποι περιεχομένου κοινότητας</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>Μέλη τοποθεσίας</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>Προσθήκη νέου μέλους</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>Μέλη τοποθεσίας</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>Αυτή η δυνατότητα περιέχει το σχήμα και την παρουσία λίστας που χρησιμοποιείται για τη διαχείριση των μελών μιας τοποθεσίας, όπως των τοποθεσιών "Κοινότητα", "Έργο", "Ομάδα" και "Εκπαίδευση"</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>Πρότυπο λίστας μελών</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>Σχήμα προτύπου της λίστας μελών τοποθεσίας</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>Μέλη κοινότητας</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>Αυτή η λίστα διατηρεί ένα αρχείο των διαρκών δραστηριοτήτων των μελών και της υπόληψης που συγκεντρώνουν εντός της κοινότητας.</value>
+  </data>
+  <data name="members_Folder">
+    <value>Members</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Community Discussion</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>Αναφορές</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>Αυτή η δυνατότητα περιέχει το σχήμα και την παρουσία λίστας που χρησιμοποιείται για τη διαχείριση προσβλητικού περιεχομένου εντός της τοποθεσίας μιας κοινότητας</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>Πρότυπο λίστας αναφορών</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>Σχήμα προτύπου λίστας αναφορών</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>Λίστα αναφορών</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>Σε αυτήν τη λίστα αποθηκεύονται σχόλια για κάποιο στοιχείο συζήτησης που έχει υποβληθεί από άτομα, τα οποία το έχουν αναφέρει ως κακοηθές</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>AbuseReports</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>Αναφέρων</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>Σχόλια</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>Συζήτηση</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>Αναφορές</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>Αναζήτηση αναφορών</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>Αναζήτηση αναφερόντων</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>Αναζήτηση σχολίων</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>Δημοσίευση</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>Διεύθυνση URL σελίδας θέματος</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>Αναφορές</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>Επόπτευση</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>Αναθεώρηση αναφερόμενων δημοσιεύσεων</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>Αναθεώρηση αναφορών</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>Αναθεώρηση αναφορών</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>Αναθεωρήστε το περιεχόμενο που έχει αναφερθεί μαζί με τα σχόλια των μελών που ανέφεραν το περιεχόμενο ως προσβλητικό</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>Επεξεργασία δημοσίευσης</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>Επεξεργασία δημοσίευσης</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>Επεξεργαστείτε το στοιχείο συζήτησης που έχει αναφερθεί για να καταργήσετε πιθανώς προσβλητικό περιεχόμενο</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>Διαγραφή δημοσίευσης</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>Διαγραφή δημοσίευσης</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>Διαγράψτε το στοιχείο συζήτησης που έχει αναφερθεί ως προσβλητικό. Θα διαγραφούν επίσης τα συσχετισμένα σχόλια των μελών που υπέβαλαν παράπονα για το συγκεκριμένο στοιχείο</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>Ματαίωση αναφοράς</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>Ματαίωση αναφοράς</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>Ματαιώστε αναφορές που αφορούν κάποιο στοιχείο συζήτησης, εάν θεωρείτε ότι είναι κατάλληλο για την κοινότητα. Θα διαγραφούν επίσης τα συσχετισμένα σχόλια των μελών που θεώρησαν το συγκεκριμένο στοιχείο ως προσβλητικό</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>Κάρτες επιβράβευσης</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>Χορήγηση σήματος</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>Χορήγηση κάρτας σε μέλος</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>Χορήγηση κάρτας σε μέλος</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>Ημερομηνία συμμετοχής</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>Τελευταία δραστηριότητα</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>Καλύτερες απαντήσεις</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>Συζητήσεις</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>Απαντήσεις</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>Απαντήσεις για μετάβαση στο επόμενο επίπεδο</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>Βαθμολογία υπόληψης</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>Απόκρυψη υπόληψης</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>Κάρτα επιβράβευσης</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>Κείμενο κάρτας επιβράβευσης</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>Μέλος κοινότητας</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>Προσθήκη νέου μέλους κοινότητας</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Badges</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>Κάρτες</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>Σε αυτήν τη λίστα αποθηκεύονται οι κάρτες που δημιουργούν οι διαχειριστές ή επόπτες της κοινότητας.</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>Όνομα κάρτας</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>Ειδική</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>Επαγγελματική</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>Διαχείριση κοινότητας</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>Διαχείριση συζητήσεων</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>Διαχειριστείτε συζητήσεις σε μια κοινότητα.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>Διαχείριση κατηγοριών</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>Διαχειριστείτε κατηγορίες σε μια κοινότητα.</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>Διαχείριση μελών</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>Διαχειριστείτε μέλη σε μια κοινότητα.</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>Ρυθμίσεις κοινότητας</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>Ρυθμίσεις κοινότητας, όπως ημερομηνία δημιουργίας και δυνατότητα αναφοράς προσβλητικού περιεχομένου.</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>Διαχείριση αναφερόμενων δημοσιεύσεων</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>Διαχειριστείτε δημοσιεύσεις που αναφέρθηκαν ως προσβλητικές.</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>Ρυθμίσεις υπόληψης</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>Ρυθμίσεις υπόληψης της κοινότητας, όπως υπόληψη περιεχομένου και ατόμων.</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>Κοινότητα</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>Συμμετοχή</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>Παρέχει τη δυνατότητα σε άτομα που δεν είναι μέλη της τοποθεσίας μιας κοινότητας να συμμετέχουν στην κοινότητα. Το κουμπί αποκρύπτεται αυτόματα, εάν ο χρήστης είναι ήδη μέλος. Αυτό το τμήμα Web λειτουργεί σε τοποθεσίες κοινότητας ή σε οποιαδήποτε άλλη τοποθεσία είναι ενεργοποιημένες οι δυνατότητες κοινότητας.</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>Πληροφορίες για αυτήν την κοινότητα</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>Αυτό το τμήμα Web εμφανίζει την περιγραφή της κοινότητας, καθώς και άλλες ιδιότητες, όπως την ημερομηνία δημιουργίας. Το συγκεκριμένο τμήμα Web λειτουργεί σε τοποθεσίες κοινότητας ή σε οποιαδήποτε άλλη τοποθεσία είναι ενεργοποιημένες οι δυνατότητες κοινότητας.</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>Εργαλεία</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>Παρέχει στους κατόχους και τους διαχειριστές της κοινότητας γρήγορες συνδέσεις προς τις σελίδες κοινών ρυθμίσεων και τις λίστες περιεχομένου για τη διαχείριση μιας τοποθεσίας κοινότητας. Αυτό το τμήμα Web λειτουργεί σε τοποθεσίες κοινότητας ή σε οποιαδήποτε άλλη τοποθεσία είναι ενεργοποιημένες οι δυνατότητες κοινότητας.</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>Επιλογές συζητήσεων</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>Τι συμβαίνει</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>Εμφανίζει τον αριθμό των μελών, τα θέματα και τις απαντήσεις μιας τοποθεσίας κοινότητας. Αυτό το τμήμα Web λειτουργεί σε τοποθεσίες κοινότητας ή σε οποιαδήποτε άλλη τοποθεσία είναι ενεργοποιημένες οι δυνατότητες κοινότητας.</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>Η συμμετοχή μου</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>Εμφανίζει πληροφορίες σχετικά με την υπόληψη και την ιδιότητα μέλους για τον τρέχοντα επισκέπτη μιας τοποθεσίας κοινότητας. Αυτό το τμήμα Web λειτουργεί σε τοποθεσίες κοινότητας ή σε οποιαδήποτε άλλη τοποθεσία είναι ενεργοποιημένες οι δυνατότητες κοινότητας.</value>
+  </data>
+  <data name="MembersView">
+    <value>Προβολή μελών</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>Προβολή διαχειριστή</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>Προβολή μεμονωμένου μέλος</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>Κορυφαίοι συμβάλλοντες</value>
+  </data>
+  <data name="NewMembersView">
+    <value>Νέα μέλη</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>Κοινότητα</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>Κατηγορίες</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>Μέλη</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>Πληροφορίες</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>Κεντρική</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>Αναφερόμενες δημοσιεύσεις</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>Συζητήσεις ανά κατηγορία</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>Πλήρεις συζητήσεις ανά κατηγορία</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>Προεπισκόπηση συζητήσεων ανά κατηγορία</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>Δυνατότητα ειδοποιήσεων ιστολογίου</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>Αυτή η δυνατότητα προσθέτει ειδοποιήσεις σε ιστολόγια</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>Δυνατότητα συρραφής ειδοποιήσεων ιστολογίου</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>Αυτή η δυνατότητα συρράπτει ειδοποιήσεις ιστολογίου και ενδείξεις "Μου αρέσει" σε πρότυπα τοποθεσίας ιστολογίου</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>{0}επεξεργαστείτε{1} το προφίλ σας</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>Email</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>Τηλέφωνο</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>Γραφείο</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>Κοινά</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>Εμφανίζει τα κοινά στοιχεία που έχετε με το χρήστη</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>Οργανόγραμμα</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>Εμφανίζει το οργανόγραμμά σας και την ιεραρχία αναφορών</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>Διαχείριση παρακολούθησης</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>Ετικέτες και σημειώσεις</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>Εμφανίζει τα πιο δημοφιλή θέματα στα οποία έχουν προστεθεί ετικέτες μέσα στον οργανισμό σας.</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>Πληροφορίες προφίλ</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>Εμφανίζει πληροφορίες για το βασικό προφίλ του τρέχοντα χρήστη</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>Μετακίνηση εγγράφων</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>Μετακινήστε τα επιλεγμένα έγγραφα σε άλλη τοποθεσία ή σε ένα φάκελο της τρέχουσας βιβλιοθήκης.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>Μετακινήστε έγγραφα.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>Μετακινήστε τα επιλεγμένα έγγραφα σε άλλη τοποθεσία ή σε ένα φάκελο της τρέχουσας βιβλιοθήκης.</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>Μετακινήστε τα επιλεγμένα έγγραφα σε άλλη τοποθεσία ή σε ένα φάκελο της τρέχουσας βιβλιοθήκης.</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>Δικαιώματα τοποθεσίας μεταξύ συστοιχιών</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>Χρησιμοποιήστε τη δυνατότητα δικαιωμάτων τοποθεσίας μεταξύ συστοιχιών για να επιτρέπετε την πρόσβαση σε τοποθεσίες Web μεταξύ συστοιχιών από εσωτερικές εφαρμογές του SharePoint.</value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>Μόνο για εσωτερική χρήση</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>Κοινωνικά δίκτυα</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>Ιδιότητες μικροϊστολογίου</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>Μη αναγνωσμένες αναφορές</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>Τελευταία δημοσίευση</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>Κοινωνικές ιδιότητες</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>Στοιχείο παρακολούθησης</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>Τοποθεσία</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>Έγγραφο παρακολούθησης</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>Αποθήκευση δεδομένων κοινού</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>Παρέχει υποστήριξη δεδομένων σε κοινωνικές δυνατότητες</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>Κοινωνικά δίκτυα</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>Παρέχει υποστήριξη δεδομένων σε κοινωνικές δυνατότητες</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>Δυνατότητα κύριας σελίδας της τοποθεσίας μου</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>Δυνατότητα της σελίδας "Η τοποθεσία μου" που αποστέλλει την κύρια σελίδα στη συλλογή κύριων σελίδων.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>Δυνατότητα ενοποιημένης περιήγησης της τοποθεσίας μου</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>Δυνατότητα της σελίδας "Η τοποθεσία μου" που εμφανίζει την ίδια περιήγηση για την κεντρική και τις προσωπικές τοποθεσίες.</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>Δυνατότητα ενιαίας γρήγορης εκκίνησης της σελίδας "Η τοποθεσία μου"</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>Δυνατότητα της σελίδας "Η τοποθεσία μου" που εμφανίζει την ίδια γρήγορη εκκίνηση για την κεντρική και τις προσωπικές τοποθεσίες.</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>Κύρια σελίδα της τοποθεσίας μου</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>Παρέχει τη μοναδική εμφάνιση και αίσθηση της σελίδας "Η τοποθεσία μου".</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>Προβιβασμένες τοποθεσίες</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>Αποδίδει τις προβιβασμένες τοποθεσίες ως πλακίδια.</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>νέα τοποθεσία</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>Προβιβασμένες τοποθεσίες</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>Διαχείριση προβιβασμένων τοποθεσιών</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>Τροφοδοσία τοποθεσίας</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>Η τροφοδοσία τοποθεσίας περιέχει συνομιλίες μικροϊστολογίου σε μια τοποθεσία ομάδας.</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>Τροφοδοσία ειδήσεων</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>Τροφοδοσία τοποθεσίας</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>Επιτρέπει τη χρήση τροφοδοσιών τοποθεσίας.</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>Τροφοδοσία ειδήσεων</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>Ελεγκτής δυνατότητας τροφοδοσίας τοποθεσίας</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>Ελέγχει την ενεργοποίηση της δυνατότητας τροφοδοσίας της τοποθεσίας.</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>Συρραφή δυνατότητας τροφοδοσίας τοποθεσίας</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>Συρράπτει τη δυνατότητα τροφοδοσίας τοποθεσίας σε όλες τις νέες συλλογές τοποθεσιών ομάδας.</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>Επεξεργασία μικροϊστολογίου</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>Δυνατότητα προβολής, προσθήκης, ενημέρωσης και διαγραφής στοιχείων λίστας και εγγράφων.</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>Αλλάξτε τη φωτογραφία σας</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>Μόνο ο χρήστης {0} μπορεί να αλλάξει αυτήν τη φωτογραφία.</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>Δεν μπορείτε να αλλάξετε τη φωτογραφία αυτού του ατόμου, επειδή είναι συγχρονισμένη με το Microsoft Exchange.</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>Παρακολουθώ</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>άτομα</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>Δείτε τα άτομα που παρακολουθείτε</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>έγγραφα</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>Δείτε τα έγγραφα που παρακολουθείτε</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>τοποθεσίες</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>Δείτε τις τοποθεσίες που παρακολουθείτε</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>ετικέτες</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>Δείτε τις ετικέτες που παρακολουθείτε</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">Ο χρήστης {Assigner} σας ανέθεσε νέες εργασίες στο {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">Σας έχουν ανατεθεί μία ή περισσότερες εργασίες στο {TLNFSiteName} &gt; {TLNFListName}</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>ΠΡΟΒΟΛΗ ΤΩΝ ΕΡΓΑΣΙΩΝ ΜΟΥ</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>Το SkyDrive Pro είναι έτοιμο</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>Αποκτήστε πρόσβαση στα έγγραφά σας χωρίς σύνδεση</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>Συνδεθείτε από κινητές συσκευές!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>Εξατομικεύστε το προφίλ σας</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>Κρατήστε επαφή</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>Ενημερώστε τους άλλους χρήστες σχετικά με την εργασία σας</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>  &lt;a href="{0}"&gt;Ενημερώστε τις ρυθμίσεις του απορρήτου σας, &lt;/a&gt; ώστε άλλα άτομα να βλέπουν και να σχολιάζουν τις δραστηριότητές σας στην τροφοδοσία ειδήσεων του SharePoint.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>Τα έγγραφά σας στη σελίδα "Η τοποθεσία μου" μετακινήθηκαν στο &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;, το χώρο του SharePoint για την αποθήκευση, το συγχρονισμό και την κοινή χρήση των εργασιών σας.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>Μπορείτε να μεταφέρετε έγγραφα εκτός σύνδεσης, κάνοντας κλικ στο κουμπί "Συγχρονισμός" σε οποιαδήποτε βιβλιοθήκη. Δοκιμάστε το στο &lt;a href="{0}"&gt;OneDrive για επιχειρήσεις&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2">
+    <value>Μπορείτε να πάρετε έγγραφα εκτός σύνδεσης κάνοντας κλικ στο κουμπί "Συγχρονισμός" σε οποιαδήποτε βιβλιοθήκη. Δοκιμάστε το στο &lt;a href="{0}"&gt;{1} για επιχειρήσεις&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>Χρησιμοποιήστε το SharePoint από οπουδήποτε και αν βρίσκεστε, κάνοντας λήψη των {0}εφαρμογών για κινητά{1}.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>Αποστείλετε μια φωτογραφία και πείτε στους άλλους χρήστες περισσότερα πράγματα για τον εαυτό σας &lt;a href="{0}"&gt; εδώ&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>Οι άλλοι χρήστες μπορούν να βλέπουν και να σχολιάζουν τις δραστηριότητές σας στο SharePoint. Μπορείτε να αλλάξετε τις ρυθμίσεις &lt;a href="{0}"&gt;εδώ&lt;/a&gt;.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>&lt;a href="{0}"&gt;Παρακολουθήστε&lt;/a&gt; άτομα που σας ενδιαφέρουν.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>Η τροφοδοσία ειδήσεων του SharePoint είναι έτοιμη</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>Δείτε τι μπορείτε να κάνετε στη συνέχεια:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>Αξιοποιήστε στο έπακρο τις δυνατότητες του SharePoint</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>Οι υπόλοιποι χρήστες μπορούν να βλέπουν και να σχολιάζουν τις δραστηριότητές σας στο SharePoint. Μπορείτε να αλλάξετε τις ρυθμίσεις &lt;a href="{0}"&gt;εδώ&lt;/a&gt;.</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>OneDrive για επιχειρήσεις</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>Διαχείριση κοινόχρηστων εφαρμογών</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>Προβάλλετε όλες τις βιβλιοθήκες και τις λίστες αυτής της τοποθεσίας.</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>Τροφοδοσία ειδήσεων</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>Καλώς ορίσατε στο &lt;span id="skyDriveText"&gt;OneDrive για επιχειρήσεις&lt;/span&gt;, το χώρο αποθήκευσης, συγχρονισμού και κοινής χρήσης των εργασιών σας. Τα έγγραφα είναι ιδιωτικά μέχρι να επιλέξετε την κοινή χρήση τους. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Μάθετε περισσότερα εδώ&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText2">
+    <value>Καλώς ορίσατε στο &lt;span id="skyDriveText"&gt;{0} για επιχειρήσεις&lt;/span&gt;, το χώρο αποθήκευσης, συγχρονισμού και κοινής χρήσης των εργασιών σας. Τα έγγραφα είναι ιδιωτικά μέχρι να επιλέξετε την κοινή χρήση τους. &lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;Μάθετε περισσότερα εδώ&lt;/a&gt;.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated">
+    <value>Καλά νέα! Έχετε επίσης το {0} για επιχειρήσεις στο Office 365 και μπορείτε να αποκτήσετε πρόσβαση σε αρχεία εκεί από οποιοδήποτε σημείο. Απλώς κάντε κλικ στο στοιχείο {1} στην επάνω γραμμή περιήγησης για να ξεκινήσετε. Μην ανησυχείτε, τα αρχεία που έχετε εδώ θα συνεχίσουν να λειτουργούν επίσης. {2}Κάντε κλικ εδώ{3} για πληροφορίες σχετικά με τη μετακίνηση των αρχείων σας.</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated">
+    <value>Μην ανησυχείτε, τα αρχεία σας είναι ασφαλή. Τα μετακινήσαμε στο νέο σας {0} για επιχειρήσεις του Office 365, όπου θα μπορείτε να αποκτήσετε πρόσβαση σε αυτά από οπουδήποτε σε οποιαδήποτε συσκευή. Μπορείτε να έχετε πρόσβαση εκεί κάνοντας κλικ στο στοιχείο {1} στην επάνω γραμμή περιήγησης.</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>Ματαίωση</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>Όλοι οι χρήστες στην &lt;span id="skyDriveFolder"&gt;εταιρεία σας&lt;/span&gt; μπορούν να έχουν πρόσβαση στα έγγραφα εδώ.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>Ετοιμάζουμε το OneDrive για επιχειρήσεις. Αυτό μπορεί να διαρκέσει μερικά λεπτά, οπότε μπορείτε να περιηγηθείτε όπου θέλετε.</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2">
+    <value>Προετοιμασία του {0} για επιχειρήσεις. Η διαδικασία αυτή μπορεί να διαρκέσει λίγο, μπορείτε να περιηγηθείτε κάπου αλλού αν θέλετε.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription">
+    <value>Μετακινήστε τα υπάρχοντα έγγραφα του στοιχείου "Η τοποθεσία μου" στο OneDrive για επιχειρήσεις, τη θέση για την αποθήκευση, το συγχρονισμό και την κοινή χρήση της εργασίας σας.</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2">
+    <value>Μετακινήστε τα υπάρχοντα έγγραφα από την "Τοποθεσία μου" στο {0} για επιχειρήσεις, το μέρος για αποθήκευση, συγχρονισμό και κοινή χρήση της εργασίας σας.</value>
+  </data>
+</root>

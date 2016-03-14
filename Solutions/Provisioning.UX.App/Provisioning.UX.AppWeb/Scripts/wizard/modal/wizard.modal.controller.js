@@ -263,6 +263,10 @@
         }
 
         function isExternalSharingEnabled(request) {
+            //Mdlz - keeping external sharing disabled by default. Internally it will be enabled for Partner sites only.
+            $scope.siteConfiguration.externalSharingEnabled = false;
+            return;
+
             //get if external sharing is enabled for the tenant
             $.when($SharePointProvisioningService.isExternalSharingEnabled(request)).done(function (data) {
                 if (data != null) {

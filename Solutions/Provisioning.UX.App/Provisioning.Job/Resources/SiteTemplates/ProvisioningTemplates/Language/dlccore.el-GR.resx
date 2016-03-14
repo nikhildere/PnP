@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4442.1000" -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fldtypes_holds_name">
+    <value>Κατάσταση διατήρησης</value>
+  </data>
+  <data name="fldtypes_exempt_name">
+    <value>Εκτός πολιτικής</value>
+  </data>
+  <data name="fldtypes_holdstatus_name">
+    <value>Κατάσταση διατήρησης</value>
+  </data>
+  <data name="fldtypes_holdstatus_active">
+    <value>Ενεργό</value>
+  </data>
+  <data name="fldtypes_holdstatus_pending">
+    <value>Άρση σε εκκρεμότητα</value>
+  </data>
+  <data name="fldtypes_hold_onhold">
+    <value>Σε διατήρηση</value>
+  </data>
+  <data name="RelevantDocuments">
+    <value>Ανάληψη ελέγχου η τροποποίηση από εμένα</value>
+  </data>
+  <data name="RelevantDocsDesc">
+    <value>Χρησιμοποιήστε αυτό το Τμήμα Web για να εμφανίσετε έγγραφα που τροποποιούνται από τον τρέχοντα χρήστη και έχει γίνει ανάληψη ελέγχου από αυτόν.</value>
+  </data>
+  <data name="DocsModifiedByMe">
+    <value>Τροποποιήθηκε από εμένα</value>
+  </data>
+  <data name="DocsModifiedByMeDesc">
+    <value>Χρησιμοποιήστε αυτό το Τμήμα Web για την εμφάνιση εγγράφων που έχουν τροποποιηθεί από τον τρέχοντα χρήστη.</value>
+  </data>
+  <data name="UpcomingTasksDesc">
+    <value>Χρησιμοποιήστε αυτό το Τμήμα Web για να εμφανίσετε τις εργασίες που ανατίθενται στον τρέχοντα χρήστη.</value>
+  </data>
+  <data name="UpcomingTasks">
+    <value>Οι εργασίες μου</value>
+  </data>
+  <data name="HighRatingDocs">
+    <value>Έγγραφα με τον υψηλότερο χαρακτηρισμό</value>
+  </data>
+  <data name="HighRatingDocsDesc">
+    <value>Χρησιμοποιήστε αυτό το Τμήμα Web για την εμφάνιση των εγγράφων με τους υψηλότερους χαρακτηρισμούς σε αυτήν την τοποθεσία Web</value>
+  </data>
+  <data name="NewestDocuments">
+    <value>Νεότερα έγγραφα</value>
+  </data>
+  <data name="NewestDocumentsDesc">
+    <value>Χρησιμοποιήστε αυτό το Τμήμα Web για την εμφάνιση των πρώτων 10 νεότερων εγγράφων σε αυτήν την τοποθεσία</value>
+  </data>
+  <data name="DocumentsTitle">
+    <value>Έγγραφα</value>
+  </data>
+  <data name="DocumentsFolder">
+    <value>Έγγραφα</value>
+  </data>
+  <data name="BDRWebTitle">
+    <value>Κέντρο εγγράφων</value>
+  </data>
+  <data name="BDRFeatTitle">
+    <value>Βελτιώσεις Κέντρου εγγράφων</value>
+  </data>
+  <data name="BDRFeatDesc">
+    <value>Παρέχει περιήγηση προβολής δέντρου για μια τοποθεσία.</value>
+  </data>
+  <data name="DocumentCenterWelcome">
+    <value>Καλώς ορίσατε στο Κέντρο εγγράφων</value>
+  </data>
+  <data name="DocumentCenterWelcomeDesc">
+    <value>Χρησιμοποιήστε αυτήν την τοποθεσία για τη δημιουργία, αποθήκευση εγγράφων και εργασία σε αυτά. Αυτή η τοποθεσία μπορεί να γίνει ένα αποθετήριο δεδομένων συνεργασίας για τη σύνταξη εγγράφων σε μια ομάδα ή μια γνωσιακή βάση για έγγραφα σε πολλές ομάδες.</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser1">
+    <value>Συνεργάτες και επισκέπτες</value>
+  </data>
+  <data name="DocumentCenterWelcomeDescUser2">
+    <value>Διαχειριστές τοποθεσιών</value>
+  </data>
+  <data name="DocumentCenterUploadDoc">
+    <value>Αποστολή εγγράφου</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates">
+    <value>Πολιτικές συλλογής τοποθεσιών</value>
+  </data>
+  <data name="PolicyLinks_SiteSettings_PolicyTemplates_15">
+    <value>Πρότυπα πολιτικής τύπου περιεχομένου</value>
+  </data>
+  <data name="Reporting_AuditSettingsFeatureTitle">
+    <value>Ρυθμίσεις ελέγχου συλλογής τοποθεσιών</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyFeaturesConfig">
+    <value>Ρύθμιση παραμέτρων πολιτικής διαχείρισης πληροφοριών</value>
+  </data>
+  <data name="PolicyLinks_Operations_PolicyRptConfiguration">
+    <value>Αναθεώρηση αναφορών χρήσης πολιτικής διαχείρισης πληροφοριών</value>
+  </data>
+  <data name="PolicyLinks_ContentTypeSettings_PolicySettings">
+    <value>Ρυθμίσεις πολιτικής διαχείρισης πληροφοριών</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Name">
+    <value>Διατήρηση</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Description">
+    <value>Αυτόματος προγραμματισμός περιεχομένου για επεξεργασία και εκτέλεση μιας ενέργειας διατήρησης σε περιεχόμενο, η προθεσμία του οποίου έχει περάσει.</value>
+  </data>
+  <data name="PolicyFeature_Expiration_Instructions">
+    <value>Προγραμματίστε τον τρόπο διαχείρισης και διάθεσης του περιεχομένου με καθορισμό μιας ακολουθίας σταδίων διατήρησης. Εάν καθορίσετε πολλά στάδια, κάθε στάδιο θα λάβει χώρα το ένα μετά το άλλο, με τη σειρά με την οποία εμφανίζονται σε αυτήν τη σελίδα. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Σημείωση:&lt;/b&gt; Εάν η δυνατότητα διατήρησης που βασίζεται σε βιβλιοθήκη και φάκελο είναι ενεργοποιημένη, οι διαχειριστές λίστας μπορούν να αντικαταστήσουν πολιτικές τύπου περιεχομένου με τα δικά τους χρονοδιαγράμματα διατήρησης.  Για να το αποφύγετε, απενεργοποιήστε τη δυνατότητα στη συλλογή τοποθεσιών.</value>
+  </data>
+  <data name="PolicyFeature_Any_Publisher">
+    <value>Microsoft</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Name">
+    <value>Έλεγχος</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Description">
+    <value>Ελέγχει τις ενέργειες χρήστη σε έγγραφα και στοιχεία λίστας στο αρχείο καταγραφής ελέγχου.</value>
+  </data>
+  <data name="PolicyFeature_Auditing_Instructions">
+    <value>Καθορίστε τα συμβάντα που πρέπει να υποβάλλονται σε έλεγχο για έγγραφα και στοιχεία που διέπονται από αυτήν την πολιτική.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Name">
+    <value>Γραμμικοί κώδικες</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Description">
+    <value>Δημιουργεί μοναδικά αναγνωριστικά που μπορούν να εισαχθούν σε έγγραφα του Microsoft Office. Μπορείτε επίσης να χρησιμοποιήσετε γραμμικούς κώδικες για αναζήτηση εγγράφων.</value>
+  </data>
+  <data name="PolicyFeature_Barcodes_Instructions">
+    <value>Αντιστοιχίζει ένα γραμμικό κώδικα σε κάθε έγγραφο ή στοιχείο. Προαιρετικά, οι εφαρμογές του Microsoft Office μπορεί να ζητήσουν από τους χρήστες να εισαγάγουν αυτούς τους γραμμικούς κώδικες σε έγγραφα.</value>
+  </data>
+  <data name="Barcode_ColumnName_Preview">
+    <value>Γραμμικός κώδικας</value>
+  </data>
+  <data name="Barcode_ColumnName_Value">
+    <value>Τιμή γραμμικού κώδικα</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Preview">
+    <value>Ο γραμμικός κώδικας που έχει αντιστοιχιστεί σε αυτό το στοιχείο.</value>
+  </data>
+  <data name="Barcode_ColumnDescription_Value">
+    <value>Η τιμή του γραμμικού κώδικα που έχει αντιστοιχιστεί σε αυτό το στοιχείο.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Name">
+    <value>Ετικέτες</value>
+  </data>
+  <data name="PolicyFeature_Labels_Description">
+    <value>Δημιουργεί ετικέτες που μπορούν να εισαχθούν σε έγγραφα του Microsoft Office, ώστε να εξασφαλιστεί ότι οι ιδιότητες του εγγράφου ή άλλες σημαντικές πληροφορίες θα συμπεριληφθούν κατά την εκτύπωση των εγγράφων. Οι ετικέτες μπορούν επίσης να χρησιμοποιηθούν για αναζήτηση εγγράφων.</value>
+  </data>
+  <data name="PolicyFeature_Labels_Instructions">
+    <value>Μπορείτε να προσθέσετε μια ετικέτα σε ένα έγγραφο για να εξασφαλίσετε ότι οι σημαντικές πληροφορίες για αυτό το έγγραφο θα περιλαμβάνονται κατά την εκτύπωσή του. Για να καθορίσετε την ετικέτα, πληκτρολογήστε το κείμενο που θέλετε να χρησιμοποιήσετε στο πλαίσιο "Μορφή ετικέτας". Μπορείτε να χρησιμοποιήσετε οποιονδήποτε συνδυασμό σταθερού κειμένου ή ιδιοτήτων εγγράφου, εκτός από τις ιδιότητες υπολογισμών ή τις ενσωματωμένες ιδιότητες, όπως GUID ή CreatedBy. Για να ξεκινήσετε μια νέα γραμμή, χρησιμοποιήστε την ακολουθία χαρακτήρων \n.</value>
+  </data>
+  <data name="LabelColumn_DisplayName">
+    <value>Ετικέτα</value>
+  </data>
+  <data name="LabelColumn_Description">
+    <value>Αποθηκεύει την τρέχουσα τιμή της ετικέτας.</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Name">
+    <value>ANSI/AIM BC1-1995 (Κώδικας 39)</value>
+  </data>
+  <data name="PolicyResource_Barcodes39_Description">
+    <value>Δημιουργεί γραμμικούς κώδικες που κωδικοποιούνται με χρήση του προτύπου ANSI/AIM BC1-1995 (Κώδικας 39).</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Name">
+    <value>Ενέργεια λήξης Κέντρου φύλαξης εγγραφών</value>
+  </data>
+  <data name="PolicyResource_HoldingZoneExpirationAction_Description">
+    <value>Ορίζει τη λήξη των εγκαταλελειμμένων αρχείων που υποβάλλονται στο διακομιστή Κέντρου φύλαξης εγγραφών.</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Name">
+    <value>Διαγραφή πληροφοριών εγγραφής και υποβολής</value>
+  </data>
+  <data name="PolicyResource_RecordsRepositoryExpirationAction_Description">
+    <value>Διαγράφει τις εγγραφές που υποβλήθηκαν στο Κέντρο φύλαξης εγγραφών και όλες τις σχετιζόμενες ιδιότητες και το ιστορικό ελέγχου που περιλαμβάνεται στην υποβολή της αρχικής εγγραφής.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocContTypeName">
+    <value>Μεταφρασμένο έγγραφο</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocFieldName">
+    <value>Πρωτότυπο έγγραφο</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocVerFieldName">
+    <value>Έκδοση πρωτότυπου εγγράφου</value>
+  </data>
+  <data name="DM_MLangSchema_TranslationStatusFieldName">
+    <value>Κατάσταση μετάφρασης</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocBaseDocVerDescription">
+    <value>Εάν αυτό το έγγραφο είναι μετάφραση, υποδείξτε την έκδοση του πρωτότυπου εγγράφου που αντιπροσωπεύει. Αυτή η πληροφορία θα σταλεί αυτόματα κατά την ολοκλήρωση της ροής εργασίας, εάν χρησιμοποιείτε τη ροή εργασίας "Διαχείριση μεταφράσεων" για τη διαχείριση της μετάφρασης.</value>
+  </data>
+  <data name="DM_MLangSchema_TransDocTransStatusDescription">
+    <value>Εάν αυτό το έγγραφο είναι μετάφραση, υποδείξτε την κατάσταση της μετάφρασης. Αυτή η πληροφορία θα σταλεί αυτόματα κατά την ολοκλήρωση της ροής εργασίας, εάν χρησιμοποιείτε τη ροή εργασίας "Διαχείριση μεταφράσεων" για τη διαχείριση της μετάφρασης.</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusNotStarted">
+    <value>Δεν ξεκίνησε</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusInProgress">
+    <value>Σε εξέλιξη</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCompleted">
+    <value>Ολοκληρώθηκε</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusCancelled">
+    <value>Ακυρώθηκε</value>
+  </data>
+  <data name="DM_MLangSchema_TransStatusReqUpdates">
+    <value>Απαιτούνται ενημερώσεις</value>
+  </data>
+  <data name="DM_MLangSchema_BaseDocsViewName">
+    <value>Πρωτότυπα έγγραφα</value>
+  </data>
+  <data name="DM_XListSchema_XListName">
+    <value>Γλώσσες και μεταφραστές</value>
+  </data>
+  <data name="DM_XListSchema_TransFromFieldName">
+    <value>Μετάφραση από</value>
+  </data>
+  <data name="DM_XListSchema_TransToFieldName">
+    <value>Μετάφραση προς</value>
+  </data>
+  <data name="DM_XListSchema_TranslatorFieldName">
+    <value>Μεταφραστής</value>
+  </data>
+  <data name="DM_XListSchema_LanguagesViewName">
+    <value>Γλώσσες</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup">
+    <value>Διατήρηση και eDiscovery</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title">
+    <value>Διατήρηση και eDiscovery</value>
+  </data>
+  <data name="Hold_eDiscoveryLinksGroup15">
+    <value>Διατήρηση</value>
+  </data>
+  <data name="Hold_ECB_Feature_Title15">
+    <value>Διατήρηση</value>
+  </data>
+  <data name="Hold_ECB_Feature_Description">
+    <value>Αυτή η δυνατότητα χρησιμοποιείται για τον εντοπισμό εξωτερικών ενεργειών, όπως δικαστικών διενέξεων, ερευνών ή ελέγχων, οι οποίες απαιτούν την αναστολή διάθεσης των εγγράφων.</value>
+  </data>
+  <data name="Hold_ECB_Title">
+    <value>Διαχείριση διατηρήσεων</value>
+  </data>
+  <data name="Hold_ECB_Description">
+    <value>(TODO) Διαχείριση διατηρήσεων</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContent">
+    <value>Εντοπισμός και τοποθέτηση σε διατήρηση περιεχομένου</value>
+  </data>
+  <data name="HoldLinks_DiscoverAndHoldContentDescription">
+    <value>Εντοπισμός και τοποθέτηση σε διατήρηση περιεχομένου</value>
+  </data>
+  <data name="HoldLinks_HoldReports">
+    <value>Αναφορές διατήρησης</value>
+  </data>
+  <data name="HoldLinks_HoldReportsDescription">
+    <value>Αναφορές διατήρησης</value>
+  </data>
+  <data name="HoldLinks_HoldsList">
+    <value>Διατηρήσεις</value>
+  </data>
+  <data name="HoldLinks_HoldsListDescription">
+    <value>Διατηρήσεις</value>
+  </data>
+  <data name="HoldsListName">
+    <value>Διατηρήσεις</value>
+  </data>
+  <data name="HoldsListFolder">
+    <value>Holds</value>
+  </data>
+  <data name="HoldsListDescription">
+    <value>Χρησιμοποιήστε αυτήν τη σύνδεσης για την παρακολούθηση εξωτερικών ενεργειών όπως διενέξεων, ερευνών ή ελέγχων που απαιτούν να αναστείλετε τη διάταξη των στοιχείων. Η τοποθέτηση ενός στοιχεία σε μία ή περισσότερες διατηρήσεις θα διατηρήσει το στοιχείο και θα αναστείλει τη διάταξή του, έως ότου το στοιχείο πάψει να υπόκειται στη διαχείριση οποιασδήποτε διατήρησης.</value>
+  </data>
+  <data name="HoldReportsListName">
+    <value>Αναφορές διατήρησης</value>
+  </data>
+  <data name="HoldReportsListFolder">
+    <value>HoldReports</value>
+  </data>
+  <data name="HoldReportsListDescription">
+    <value>Αυτή η βιβλιοθήκη περιέχει αναφορές σχετικά με κάθε διατήρηση σε αυτήν την τοποθεσία.  Κάθε αναφορά περιέχει πληροφορίες, όπως τα στοιχεία που βρίσκονται σε διατήρηση και τα ερωτήματα αναζήτησης που έχουν πραγματοποιηθεί για τη διατήρηση.</value>
+  </data>
+  <data name="HoldDiscoveryQueriesFieldDisplayName">
+    <value>Ερωτήματα εντοπισμού διατήρησης</value>
+  </data>
+  <data name="HoldDiscoveryManagedByFieldDisplayName">
+    <value>Διαχείριση από</value>
+  </data>
+  <data name="HoldDiscoveryDescriptionFieldDisplayName">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="HoldDiscoveryHoldStatusFieldDisplayName">
+    <value>Κατάσταση διατήρησης</value>
+  </data>
+  <data name="HoldReports_SiteUrl">
+    <value>Διεύθυνση URL τοποθεσίας</value>
+  </data>
+  <data name="HoldReports_HoldItem">
+    <value>Διατηρήσεις</value>
+  </data>
+  <data name="HoldReports_HoldItemUrl">
+    <value>Διατήρηση διεύθυνσης Url</value>
+  </data>
+  <data name="HoldReports_HoldViewName">
+    <value>Ομαδοποίηση κατά διατηρήσεις</value>
+  </data>
+  <data name="ReportingFeatureTitle">
+    <value>Δημιουργία αναφοράς</value>
+  </data>
+  <data name="ReportingFeatureDescription">
+    <value>Δημιουργεί αναφορές σχετικά με πληροφορίες για το Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Reporting_AuditReportingFeatureTitle">
+    <value>Αναφορές αρχείου καταγραφής ελέγχου</value>
+  </data>
+  <data name="Reporting_WorkflowReportingFeatureTitle">
+    <value>Προβολή αναφορών ροής εργασίας</value>
+  </data>
+  <data name="Reporting_AnalyticsReportingFeatureTitle">
+    <value>Τάσεις δημοτικότητας</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteReportingFeatureTitle">
+    <value>Τάσεις δημοτικότητας</value>
+  </data>
+  <data name="Reporting_AnalyticsSiteCollectionReportingFeatureTitle">
+    <value>Δημοτικότητα και αναφορές αναζήτησης</value>
+  </data>
+  <data name="Reporting_TopReportFeatureTitle">
+    <value>Δημοφιλέστερα στοιχεία</value>
+  </data>
+  <data name="Reporting_MetadataListTitle">
+    <value>Μετα-δεδομένα αναφοράς</value>
+  </data>
+  <data name="Reporting_MetadataListDescription">
+    <value>Η συλλογή αναφορών αποθηκεύει τους τύπους αναφορών που είναι διαθέσιμοι σε αυτήν την τοποθεσία και σε όλες τις δευτερεύουσες τοποθεσίες.</value>
+  </data>
+  <data name="Reporting_MetadataListFolder">
+    <value>Reporting Metadata</value>
+  </data>
+  <data name="Reporting_TemplateListTitle">
+    <value>Πρότυπα αναφοράς</value>
+  </data>
+  <data name="Reporting_TemplateListDescription">
+    <value>Χρησιμοποιήστε τη βιβλιοθήκη αρχείων προτύπων αναφοράς για να αποθηκεύσετε αρχεία που χρησιμοποιούνται από τη Συλλογή προτύπων αναφοράς.</value>
+  </data>
+  <data name="Reporting_TemplateListFolder">
+    <value>Reporting Templates</value>
+  </data>
+  <data name="ListPolicyFeatureTitle">
+    <value>Διατήρηση που βασίζεται σε βιβλιοθήκη και φάκελο</value>
+  </data>
+  <data name="ListPolicyFeatureDescription">
+    <value>Επιτρέπει στους διαχειριστές λιστών να παρακάμψουν τα χρονοδιαγράμματα διατήρησης τύπου περιεχομένου και να ορίσουν χρονοδιαγράμματα σε βιβλιοθήκες και φακέλους.</value>
+  </data>
+  <data name="RecordsManagementFeatureTitle">
+    <value>Διαχείριση εγγραφών</value>
+  </data>
+  <data name="RecordsManagementFeatureDescription">
+    <value>Προσθέτει δυνατότητες πολιτικής διαχείρισης πληροφοριών και διαχείρισης εγγραφών στο Microsoft SharePoint Foundation.</value>
+  </data>
+  <data name="Preservation_FeatureTitle">
+    <value>Λίστα διατήρησης</value>
+  </data>
+  <data name="Preservation_FeatureDescription">
+    <value>Πρότυπο λίστας που χρησιμοποιείται για τη δημιουργία της λίστας διατήρησης.</value>
+  </data>
+  <data name="PreservationListTemplate_DisplayName">
+    <value>Πρότυπο λίστας διατήρησης του eDiscovery</value>
+  </data>
+  <data name="PreservationListTemplate_Description">
+    <value>Πρότυπο λίστας που χρησιμοποιείται για τη δημιουργία της λίστας διατήρησης.</value>
+  </data>
+  <data name="SearchAndProcessFeatureTitle">
+    <value>Αναζήτηση και επεξεργασία</value>
+  </data>
+  <data name="SearchAndProcessFeatureDescription">
+    <value>Παρέχει τις εργασίες χρονομέτρησης "Αναζήτηση και Επεξεργασία".</value>
+  </data>
+  <data name="OfficialFile_category_Top">
+    <value>Τοποθεσία Κέντρου φύλαξης εγγραφών</value>
+  </data>
+  <data name="OfficialFile_Welcome">
+    <value>Καλώς ορίσατε στο Κέντρο εγγραφών</value>
+  </data>
+  <data name="OfficialFile_WelcomeDesc">
+    <value>Χρησιμοποιήστε αυτή την τοποθεσία για την υποβολή και εύρεση σημαντικών εγγράφων, που θα πρέπει να αποθηκευτούν για μακροπρόθεσμη αρχειοθέτηση.  Οι εγγραφές που υποβάλλονται τοποθετούνται αυτόματα στη σωστή βιβλιοθήκη και το σωστό φάκελο, βάσει των ιδιοτήτων που συμπληρώνετε.</value>
+  </data>
+  <data name="OfficialFile_UploadDoc">
+    <value>Υποβολή εγγραφής</value>
+  </data>
+  <data name="OfficialFile_DropOffZoneWebPartTitle">
+    <value>Οι εγγραφές μου για τις οποίες εκκρεμεί υποβολή</value>
+  </data>
+  <data name="OfficialFile_HomePageTextTitle">
+    <value>Χρησιμοποιήστε αυτό το τμήμα Web για τη διδασκαλία επισκεπτών του Κέντρου εγγραφών σχετικά με τη διαχείριση εγγραφών και την εταιρική συμμόρφωση.</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader1">
+    <value>Προσθήκη πληροφοριών σχετικά με θέματα διαχείρισης εγγραφών, όπως:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstructionColumnHeader2">
+    <value>Προσθήκη συνδέσεων σε άλλες τοποθεσίες εταιρικής συμμόρφωσης, όπως:</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction11">
+    <value>Ο ορισμός μιας εγγραφής στην εταιρεία σας</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction12">
+    <value>Τι συμβαίνει σε μια εγγραφή αφού υποβληθεί στο Κέντρο εγγραφών</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction13">
+    <value>Βήματα που μπορούν να κάνουν οι χρήστες για συμμόρφωση με την εταιρική πολιτική</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction21">
+    <value>Η τοποθεσία εκπαίδευσης σχετικά με τη συμμόρφωση στην εταιρεία σας</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction22">
+    <value> Μια τοποθεσία σχετικά με τις εταιρικές πολιτικές διατήρησης</value>
+  </data>
+  <data name="OfficialFile_HomePageInstruction23">
+    <value> Μια λίστα επαφών διαχείρισης εγγραφών για κάθε τμήμα</value>
+  </data>
+  <data name="OfficialFile_SubmitRecords">
+    <value>Υποβολή εγγραφών</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Title">
+    <value>Καλώς ορίσατε στο Κέντρο εγγράφων.</value>
+  </data>
+  <data name="BDRTemplate_Announcements_Body">
+    <value>Καλώς ορίσατε στο νέο Κέντρο εγγράφων. Χρησιμοποιήστε αυτήν την τοποθεσία για να διαχειριστείτε κεντρικά τα έγγραφα της εταιρείας σας.</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationTitle">
+    <value>Διαχείριση χρονοδιαγράμματος διατήρησης</value>
+  </data>
+  <data name="PolicyLinks_ManageFolderExpirationDescription">
+    <value>Σημείο εισόδου για όλους τους φακέλους για διαχείριση χρονοδιαγράμματος λήξης</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationTitle">
+    <value>Λεπτομέρειες συμμόρφωσης</value>
+  </data>
+  <data name="PolicyLinks_ViewItemExpirationDescription">
+    <value>Σημείο εισόδου γραμμής εργαλείων για την προβολή της διατήρησης και των λοιπών λεπτομερειών συμμόρφωσης, κατά τον κύκλο ζωής του στοιχείου</value>
+  </data>
+  <data name="PolicyLinks_FilePlanReport">
+    <value>Δημιουργία αναφοράς σχεδίου αρχείων</value>
+  </data>
+  <data name="DocumentIdFeatureTitle">
+    <value>Υπηρεσία αναγνωριστικών εγγράφων</value>
+  </data>
+  <data name="DocumentIdFeatureDescription">
+    <value>Εκχωρεί αναγνωριστικά σε έγγραφα στη συλλογή τοποθεσιών, τα οποία μπορούν να χρησιμοποιηθούν για την ανάκτηση στοιχείων, ανεξάρτητα από την τρέχουσα θέση τους.</value>
+  </data>
+  <data name="Settings_DocId">
+    <value>Ρυθμίσεις αναγνωριστικών εγγράφων</value>
+  </data>
+  <data name="Settings_DocId_Tooltip">
+    <value>Διαχείριση των ρυθμίσεων αναγνωριστικού εγγράφου αυτής τη συλλογής τοποθεσιών</value>
+  </data>
+  <data name="DocIdLookupWebpart_Title">
+    <value>Εύρεση βάσει αναγνωριστικού εγγράφου</value>
+  </data>
+  <data name="DocIdLookupWebpart_Description">
+    <value>Βρίσκει ένα έγγραφο βάσει του αναγνωριστικού του εγγράφου.</value>
+  </data>
+  <data name="DocId_ColumnName_Value">
+    <value>Τιμή αναγνωριστικού εγγράφου</value>
+  </data>
+  <data name="DocId_ColumnDescription_Value">
+    <value>Η τιμή του αναγνωριστικού εγγράφου που έχει αντιστοιχιστεί σε αυτό το στοιχείο.</value>
+  </data>
+  <data name="DocId_ColumnName_URL">
+    <value>Αναγνωριστικό εγγράφου</value>
+  </data>
+  <data name="DocId_ColumnDescription_URL">
+    <value>Μόνιμη σύνδεση σε αυτό το έγγραφο.</value>
+  </data>
+  <data name="DropOffZone_ListTitle">
+    <value>Βιβλιοθήκη απόθεσης</value>
+  </data>
+  <data name="DropOffZone_ListFolder">
+    <value>DropOffLibrary</value>
+  </data>
+  <data name="DropOffZone_ListDescription">
+    <value>Αφού συμπληρωθούν οι ιδιότητές τους, τα αρχεία που αποστέλλονται σε αυτήν τη βιβλιοθήκη μετακινούνται αυτόματα στη σωστή βιβλιοθήκη ή το σωστό φάκελο, σύμφωνα με τους κανόνες που δημιουργήθηκαν από τον κάτοχο αυτής της τοποθεσίας.</value>
+  </data>
+  <data name="RoutingRuleList_ListTitle">
+    <value>Κανόνες οργάνωσης περιεχομένου</value>
+  </data>
+  <data name="RoutingRuleList_ListFolder">
+    <value>RoutingRules</value>
+  </data>
+  <data name="RoutingRuleList_ListDescription">
+    <value>Αυτή η λίστα σας βοηθάει να δημιουργήσετε ένα σχέδιο για τον τρόπο οργάνωσης του περιεχομένου σε αυτήν την τοποθεσία. Δημιουργήστε κανόνες, ώστε να εξασφαλίζεται ότι τα έγγραφα, τα οποία υποβάλλονται σε αυτήν την τοποθεσία, αποστέλλονται στη σωστή θέση και έχουν τις σωστές ιδιότητες.</value>
+  </data>
+  <data name="RoutingRuleContentType_Title">
+    <value>Κανόνας</value>
+  </data>
+  <data name="RoutingRuleContentType_Description">
+    <value>Δημιουργία κανόνα που μετακινεί το περιεχόμενο, το οποίο υποβάλλεται σε αυτήν την τοποθεσία, στη σωστή βιβλιοθήκη ή το σωστό φάκελο.</value>
+  </data>
+  <data name="DocumentRoutingFeatureTitle">
+    <value>Οργάνωση περιεχομένου</value>
+  </data>
+  <data name="DocumentRoutingFeatureDescription">
+    <value>Δημιουργήστε κανόνες που βασίζονται σε μετα-δεδομένα και οι οποίοι μετακινούν το περιεχόμενο, το οποίο υποβάλλεται σε αυτήν την τοποθεσία, στη σωστή βιβλιοθήκη ή το σωστό φάκελο.</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureTitle">
+    <value>Πόροι δρομολόγησης εγγράφων</value>
+  </data>
+  <data name="DocumentRoutingResourcesFeatureDescription">
+    <value>Πόροι όρων που απαιτούνται για τη δρομολόγηση εγγράφων σε τοποθεσίες, μέσα σε αυτήν τη συλλογή τοποθεσιών.</value>
+  </data>
+  <data name="RecordResourcesFeatureTitle">
+    <value>Πόροι εγγραφών</value>
+  </data>
+  <data name="RecordResourcesFeatureDescription">
+    <value>Πόροι όρων που απαιτούνται για τη δημιουργία εγγραφών ή διατηρήσεων σε τοποθεσίες, μέσα σε αυτήν τη συλλογή τοποθεσιών.</value>
+  </data>
+  <data name="InPlaceRecordsFeatureTitle">
+    <value>Διαχείριση επιτόπιων εγγραφών</value>
+  </data>
+  <data name="InPlaceRecordsFeatureDescription">
+    <value>Ενεργοποίηση του ορισμού και της δήλωσης επιτόπιων εγγραφών.</value>
+  </data>
+  <data name="RecordResourcesColumnGroup">
+    <value>Στήλες διαχείρισης εγγράφων και εγγραφών</value>
+  </data>
+  <data name="DocumentRoutingContentTypeGroup">
+    <value>Τύποι περιεχομένου οργάνωσης περιεχομένου</value>
+  </data>
+  <data name="DocumentRoutingRoutingPriority_DisplayName">
+    <value>Προτεραιότητα</value>
+  </data>
+  <data name="DocumentRoutingEnabled_DisplayName">
+    <value>Ενεργή</value>
+  </data>
+  <data name="DocumentRoutingRuleName_DisplayName">
+    <value>Όνομα κανόνα</value>
+  </data>
+  <data name="DocumentRoutingRuleDescription_DisplayName">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="DocumentRoutingContentType_DisplayName">
+    <value>Τύπος περιεχομένου υποβολής</value>
+  </data>
+  <data name="DocumentRoutingContentTypeInternal_DisplayName">
+    <value>Τύπος περιεχομένου υποβολής (εσωτερικά)</value>
+  </data>
+  <data name="DocumentRoutingConditions_DisplayName">
+    <value>XML συνθήκης</value>
+  </data>
+  <data name="DocumentRoutingConditionProperties_DisplayName">
+    <value>Ιδιότητες που χρησιμοποιούνται σε συνθήκες</value>
+  </data>
+  <data name="DocumentRoutingAliases_DisplayName">
+    <value>Ψευδώνυμα</value>
+  </data>
+  <data name="DocumentRoutingTargetLibrary_DisplayName">
+    <value>Βιβλιοθήκη προορισμού</value>
+  </data>
+  <data name="DocumentRoutingTargetFolder_DisplayName">
+    <value>Φάκελος προορισμού</value>
+  </data>
+  <data name="DocumentRoutingTargetPath_DisplayName">
+    <value>Διαδρομή προορισμού</value>
+  </data>
+  <data name="DocumentRoutingTargetWebUrl_DisplayName">
+    <value>Διεύθυνση URL τοποθεσίας προορισμού</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderProps_DisplayName">
+    <value>Ιδιότητα για αυτόματη δημιουργία φακέλων</value>
+  </data>
+  <data name="DocumentRoutingAutoFolderSettings_DisplayName">
+    <value>Δεδομένα αυτόματης ρύθμισης φακέλων</value>
+  </data>
+  <data name="DocumentRoutingCustomRouter_DisplayName">
+    <value>Προσαρμοσμένος δρομολογητής</value>
+  </data>
+  <data name="DocumentRoutingRuleExternal_DisplayName">
+    <value>Δρομολόγηση σε εξωτερική θέση</value>
+  </data>
+  <data name="DocumentRoutingExistingProperties_DisplayName">
+    <value>Αρχικές ιδιότητες</value>
+  </data>
+  <data name="EmailRoutingSubject_DisplayName">
+    <value>Θέμα</value>
+  </data>
+  <data name="EmailRoutingSubmitter_DisplayName">
+    <value>Υποβάλλων</value>
+  </data>
+  <data name="EmailRoutingTo_DisplayName">
+    <value>Έως</value>
+  </data>
+  <data name="EmailRoutingFrom_DisplayName">
+    <value>Από</value>
+  </data>
+  <data name="EmailRoutingCc_DisplayName">
+    <value>Κοιν.</value>
+  </data>
+  <data name="EmailRoutingBcc_DisplayName">
+    <value>Ιδιαίτ. κοιν.</value>
+  </data>
+  <data name="EmailRoutingSent_DisplayName">
+    <value>Ημερομηνία αποστολής</value>
+  </data>
+  <data name="EmailRoutingRecd_DisplayName">
+    <value>Ημερομηνία παραλαβής</value>
+  </data>
+  <data name="EmailRoutingColumns_GroupName">
+    <value>Στήλες υποβολής ηλεκτρονικού ταχυδρομείου</value>
+  </data>
+  <data name="EmailRoutingContentType_DisplayName">
+    <value>Υποβολή ηλεκτρονικού ταχυδρομείου</value>
+  </data>
+  <data name="EmailRouting_EmailListTitle">
+    <value>Εγγραφές ηλεκτρονικού ταχυδρομείου που υποβλήθηκαν</value>
+  </data>
+  <data name="EmailRouting_EmailListFolder">
+    <value>Submitted E-mail Records</value>
+  </data>
+  <data name="EmailRouting_EmailListDesc">
+    <value>Αυτή η λίστα χρησιμοποιείται από το δρομολογητή για την προσωρινή αποθήκευση εγγραφών ηλεκτρονικού ταχυδρομείου που έχει ληφθεί</value>
+  </data>
+  <data name="EmailRoutingContentType_Description">
+    <value>Αυτός ο τύπος περιεχομένου έχει στήλες οι οποίες αντιστοιχούν στις συνήθεις ιδιότητες που αποστέλλονται όταν υποβάλλεται ηλεκτρονικό ταχυδρομείο στην οργάνωση περιεχομένου.</value>
+  </data>
+  <data name="RecordResourcesItemIsLocked_DisplayName">
+    <value>Έχει κλειδωθεί για επεξεργασία</value>
+  </data>
+  <data name="RecordResourcesItemHoldRecordStatus_DisplayName">
+    <value>Κατάσταση διατήρησης και εγγραφής</value>
+  </data>
+  <data name="RecordResourcesItemDeclaredRecord_DisplayName">
+    <value>Δηλωμένη εγγραφή</value>
+  </data>
+  <data name="RecordResourcesItemExemptFromPolicy_DisplayName">
+    <value>Εξαίρεση από την πολιτική</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDate_DisplayName">
+    <value>Ημερομηνία λήξης</value>
+  </data>
+  <data name="RecordResourcesItemExpirationDateSaved_DisplayName">
+    <value>Αρχική ημερομηνία λήξης</value>
+  </data>
+  <data name="DocumentSetColumnGroup">
+    <value>Κύριες στήλες συνόλου εγγράφων</value>
+  </data>
+  <data name="DocumentSetDescription_DisplayName">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="DocumentSetDescription_Description">
+    <value>Μια περιγραφή του συνόλου εγγράφων</value>
+  </data>
+  <data name="DocSet_Feature_Title">
+    <value>Σύνολα εγγράφων</value>
+  </data>
+  <data name="DocSet_Feature_Description">
+    <value>Παρέχει τους τύπους περιεχομένου που απαιτούνται για τη δημιουργία και τη χρήση συνόλων εγγράφων. Δημιουργήστε ένα σύνολο εγγράφων, όταν θέλετε να διαχειρίζεστε πολλά έγγραφα ως ένα ενιαίο προϊόν εργασίας.</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Title">
+    <value>Συγχρονισμός μετα-δεδομένων συνόλων εγγράφων</value>
+  </data>
+  <data name="DocSetMetadataSync_Feature_Description">
+    <value>Παρέχει την υποδομή για το συγχρονισμό μετα-δεδομένων για σύνολα εγγράφων.</value>
+  </data>
+  <data name="DocSet_CT_Name">
+    <value>Σύνολο εγγράφων</value>
+  </data>
+  <data name="DocSet_CT_Group">
+    <value>Τύποι περιεχομένου συνόλου εγγράφων</value>
+  </data>
+  <data name="DocSet_CT_Description">
+    <value>Δημιουργία συνόλου εγγράφων, όταν θέλετε να διαχειρίζεστε πολλά έγγραφα ως ένα ενιαίο προϊόν εργασίας.</value>
+  </data>
+  <data name="DocSet_ECB_Title">
+    <value>Προβολή σελίδας υποδοχής</value>
+  </data>
+  <data name="DocSet_ECB_Description">
+    <value>Προβολή σελίδας υποδοχής για αυτό το σύνολο εγγράφων.</value>
+  </data>
+  <data name="DocSet_Link_Settings">
+    <value>Ρυθμίσεις συνόλου εγγράφων</value>
+  </data>
+  <data name="DocSet_ExportECB_Title">
+    <value>Λήψη αντιγράφου</value>
+  </data>
+  <data name="DocSet_ExportECB_Description">
+    <value>Λήψη αντιγράφου του συνόλου εγγράφων και των τρεχόντων περιεχομένων του</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Title">
+    <value>Αποστολή σε άλλη θέση</value>
+  </data>
+  <data name="DocSet_SendToRCECB_Description">
+    <value>Αποστολή αυτού του συνόλου εγγράφων και των τρεχόντων περιεχομένων του σε άλλη θέση</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Title">
+    <value>Καταγραφή έκδοσης</value>
+  </data>
+  <data name="DocSet_CreateVersionECB_Description">
+    <value>Καταγραφή μιας έκδοσης των τρεχόντων περιεχομένων του συνόλου εγγράφων</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Title">
+    <value>Ιστορικό εκδόσεων συνόλου εγγράφων</value>
+  </data>
+  <data name="DocSet_VersionHistoryECB_Description">
+    <value>Προβολή ιστορικού εκδόσεων συνόλου εγγράφων</value>
+  </data>
+  <data name="DocSetPropertiesWP_Title">
+    <value>Ιδιότητες συνόλου εγγράφων</value>
+  </data>
+  <data name="DocSetPropertiesWP_Description">
+    <value>Εμφανίζει τις ιδιότητες του συνόλου εγγράφων.</value>
+  </data>
+  <data name="DocSetContentWP_Title">
+    <value>Περιεχόμενα συνόλου εγγράφων</value>
+  </data>
+  <data name="DocSetContentWP_Description">
+    <value>Εμφανίζει τα περιεχόμενα του συνόλου εγγράφων.</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Title">
+    <value>Πολιτική τοποθεσίας</value>
+  </data>
+  <data name="ProjectBasedPolicy_Feature_Description">
+    <value>Επιτρέπει στους διαχειριστές συλλογών τοποθεσιών να καθορίζουν τα χρονοδιαγράμματα διατήρησης που εφαρμόζονται σε μια τοποθεσία και σε όλο το περιεχόμενό της.</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Name">
+    <value>Πολιτική έργου</value>
+  </data>
+  <data name="ProjectPolicy_ContentType_Description">
+    <value>Τύπος περιεχομένου κοντέινερ για ορισμούς πολιτικής έργου</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Title">
+    <value>Πολιτικές τοποθεσίας</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicies_Description">
+    <value>Οι πολιτικές τοποθεσίας καθορίζουν τον τρόπο διαχείρισης και διάθεσης μιας τοποθεσίας και του περιεχομένου της. Μπορεί να είναι διαθέσιμες για κοινή χρήση σε συλλογές τοποθεσιών μέσω του μηχανισμού δημοσίευσης τύπου περιεχομένου.</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Title">
+    <value>Κλείσιμο και διαγραφή τοποθεσίας</value>
+  </data>
+  <data name="SiteSettings_ProjectPolicyAndLifecycle_Description">
+    <value>Προβάλετε ή αλλάξτε την πολιτική διαχείρισης πληροφοριών που χρησιμοποιείται σε αυτήν την τοποθεσία και ρυθμίστε τις παραμέτρους των ημερομηνιών κατά τις οποίες θα εκτελούνται ενέργειες που αφορούν τον κύκλο ζωής της τοποθεσίας.</value>
+  </data>
+  <data name="ProjectPolicyItemListName">
+    <value>Λίστα στοιχείων πολιτικής έργου</value>
+  </data>
+  <data name="ProjectPolicyItemListDescription">
+    <value>Μια λίστα που δημιουργείται από τη διατήρηση βάσει έργου και χρησιμοποιείται για την αποθήκευση στοιχείων πολιτικής έργου.</value>
+  </data>
+  <data name="ProjectPolicyItemListUrl">
+    <value>ProjectPolicyItemList</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Title">
+    <value>Βίντεο και εμπλουτισμένο περιεχόμενο πολυμέσων</value>
+  </data>
+  <data name="VideoAndRichMedia_Feature_Description">
+    <value>Παρέχει βιβλιοθήκες, τύπους περιεχομένου και Τμήματα Web για την αποθήκευση, τη διαχείριση και την προβολή στοιχείων εμπλουτισμένου περιεχομένου πολυμέσων, όπως εικόνες, ηχητικά αποσπάσματα και βίντεο.</value>
+  </data>
+  <data name="VideoSet_Link_Settings">
+    <value>Ρυθμίσεις επεξεργασίας και αναπαραγωγής βίντεο</value>
+  </data>
+  <data name="VideoSet_ContentType_Name">
+    <value>Βίντεο</value>
+  </data>
+  <data name="VideoSet_ContentType_Description">
+    <value>Στείλτε ή δημιουργήστε συνδέσεις σε βίντεο.</value>
+  </data>
+  <data name="VideoSet_Description_DisplayName">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="VideoSet_Description_Description">
+    <value>Περίληψη του βίντεο</value>
+  </data>
+  <data name="VideoSet_Owner_DisplayName">
+    <value>Κάτοχος</value>
+  </data>
+  <data name="VideoSet_Owner_Description">
+    <value>Ο κάτοχος του βίντεο</value>
+  </data>
+  <data name="VideoSet_ThumbnailTimeIndex_DisplayName">
+    <value>Ευρετήριο ώρας μικρογραφιών</value>
+  </data>
+  <data name="VideoSet_DefaultEncoding_DisplayName">
+    <value>Προεπιλεγμένη κωδικοποίηση</value>
+  </data>
+  <data name="VideoSet_UserOverrideEncoding_DisplayName">
+    <value>Παράκαμψη προεπιλεγμένης κωδικοποίησης από το χρήστη</value>
+  </data>
+  <data name="VideoSet_ExternalLink_DisplayName">
+    <value>Εξωτερική σύνδεση</value>
+  </data>
+  <data name="VideoSet_EmbedCode_DisplayName">
+    <value>Κώδικας ενσωμάτωσης</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_DisplayName">
+    <value>Εμφάνιση σύνδεσης λήψης</value>
+  </data>
+  <data name="VideoSet_ShowDownloadLink_Description">
+    <value>Καθορίζει εάν θα εμφανίζεται ένα κουμπί στη σελίδα προγράμματος αναπαραγωγής βίντεο που επιτρέπει στο χρήστη τη λήψη του βίντεο που αναπαράγεται.</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_DisplayName">
+    <value>Εμφάνιση σύνδεσης ενσωμάτωσης</value>
+  </data>
+  <data name="VideoSet_ShowEmbedLink_Description">
+    <value>Καθορίζει εάν θα εμφανίζεται ένα κουμπί στο πρόγραμμα αναπαραγωγής βίντεο που επιτρέπει στο χρήστη τη λήψη ενός κώδικα ενσωμάτωσης για το βίντεο που αναπαράγεται.</value>
+  </data>
+  <data name="VideoSet_RenditionsInfo_DisplayName">
+    <value>Πληροφορίες αποδόσεων</value>
+  </data>
+  <data name="PeopleInMedia_DisplayName">
+    <value>Άτομα σε βίντεο</value>
+  </data>
+  <data name="PeopleInMedia_Description">
+    <value>Τα άτομα που εμφανίζονται στο βίντεο.</value>
+  </data>
+  <data name="MetadataNav_Feature_Title">
+    <value>Περιήγηση και φιλτράρισμα μετα-δεδομένων</value>
+  </data>
+  <data name="MetadataNav_Feature_Description">
+    <value>Παρέχει σε κάθε λίστα στην τοποθεσία μια σελίδα ρυθμίσεων για τη ρύθμιση των παραμέτρων αυτής της λίστας, ώστε να χρησιμοποιούνται ιεραρχίες προβολής δέντρου μετα-δεδομένων και στοιχεία ελέγχου φίλτρου για τη βελτίωση της περιήγησης και του φιλτραρίσματος των στοιχείων του περιεχόμενου.</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavSettingsLink">
+    <value>Ρυθμίσεις περιήγησης μετα-δεδομένων</value>
+  </data>
+  <data name="MetadataNav_Feature_MetadataNavPerNodeSettingsLink">
+    <value>Ρυθμίσεις προβολής ανά θέση</value>
+  </data>
+  <data name="AddToMyLinks_FeatureTitle">
+    <value>Στοιχεία ελέγχου κορδέλας "Σύνδεση με το Office"</value>
+  </data>
+  <data name="AddToMyLinks_FeatureDescription">
+    <value>Προσθήκη σημείων εισόδου στο περιβάλλον εργασίας χρήστη της κορδέλας, για τη δημιουργία συντομεύσεων βιβλιοθηκών στη λίστα τοποθεσιών του SharePoint του χρήστη, εάν έχουν εγκατεστημένη μια πρόσφατη έκδοση του Office.  Κατά περιόδους, το Office θα αποθηκεύει προσωρινά στον τοπικό υπολογιστή του χρήστη τα πρότυπα που είναι διαθέσιμα σε αυτές τις βιβλιοθήκες.</value>
+  </data>
+  <data name="cui_MyLinks_CustomAction_Title">
+    <value>Εισαγάγει ένα κουμπί στην καρτέλα "Βιβλιοθήκη/Ενέργειες".</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_Alt">
+    <value>Σύνδεση με το Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_LabelText">
+    <value>Σύνδεση με το Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipTitle">
+    <value>Σύνδεση με το Office</value>
+  </data>
+  <data name="cui_MyLinks_SplitButton_ToolTipDescription">
+    <value>Προσθήκη στις συντομεύσεις που εμφανίζονται κατά τη δημιουργία, το άνοιγμα και την αποθήκευση εγγράφων σε εφαρμογές του Microsoft Office όπως Word, Excel και PowerPoint.</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Alt">
+    <value>Προσθήκη στις τοποθεσίες του SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_LabelText">
+    <value>Προσθήκη στις τοποθεσίες του SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_AddButton_Description">
+    <value>Προσθήκη συντόμευσης σε αυτήν τη βιβλιοθήκη στο Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Alt">
+    <value>Κατάργηση από τοποθεσίες του SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_LabelText">
+    <value>Κατάργηση από τοποθεσίες του SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_DeleteButton_Description">
+    <value>Κατάργηση αυτής της βιβλιοθήκης από τη λίστα συντομεύσεων στο Microsoft Office.</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Alt">
+    <value>Διαχείριση τοποθεσιών του SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_LabelText">
+    <value>Διαχείριση τοποθεσιών του SharePoint</value>
+  </data>
+  <data name="cui_MyLinks_ManageButton_Description">
+    <value>Τροποποίηση της λίστας συντομεύσεων του Microsoft Office.</value>
+  </data>
+  <data name="EmailRoutingFeatureTitle">
+    <value>Ενσωμάτωση ηλεκτρονικού ταχυδρομείου με την Οργάνωση περιεχομένου</value>
+  </data>
+  <data name="EmailRoutingFeatureDescription">
+    <value>Επιτρέπει στην οργάνωση περιεχομένου μιας τοποθεσίας να αποδέχεται και να οργανώνει μηνύματα ηλεκτρονικού ταχυδρομείου.  Αυτή η δυνατότητα πρέπει να χρησιμοποιείται μόνο σε χώρο αποθήκευσης με υψηλή δραστηριότητα διαχείρισης, όπως ένα Κέντρο εγγραφών.</value>
+  </data>
+  <data name="DocumentRouting_RouterSettingsLink">
+    <value>Ρυθμίσεις οργάνωσης περιεχομένου</value>
+  </data>
+  <data name="DocumentRouting_RouterRulesLink">
+    <value>Κανόνες οργάνωσης περιεχομένου</value>
+  </data>
+  <data name="InPlaceRecords_SettingsLink">
+    <value>Ρυθμίσεις δήλωσης εγγραφής</value>
+  </data>
+  <data name="RecordsListTemplate_DisplayName">
+    <value>Βιβλιοθήκη εγγραφών</value>
+  </data>
+  <data name="RecordsListTemplate_Description">
+    <value>Δημιουργήστε μια βιβλιοθήκη εγγράφων για την αποθήκευση σημαντικών επιχειρηματικών εγγραφών.</value>
+  </data>
+  <data name="RecordsListTemplate_DefaultDescription">
+    <value>Στείλτε ολοκληρωμένα έγγραφα σε αυτήν τη βιβλιοθήκη. Τα έγγραφα που προστίθενται σε αυτήν τη βιβλιοθήκη θα δηλώνονται αυτόματα ως εγγραφές.</value>
+  </data>
+  <data name="RecordsCenterFeatureTitle">
+    <value>Ρύθμιση παραμέτρων Κέντρου εγγραφών</value>
+  </data>
+  <data name="RecordsCenterFeatureDescription">
+    <value>Ρυθμίζει τις παραμέτρους μιας τοποθεσίας ως Κέντρου εγγραφών.</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsole">
+    <value>Διαχείριση Κέντρου εγγραφών</value>
+  </data>
+  <data name="PolicyLinks_SiteActions_RecordsManagerConsoleDescription">
+    <value>Διαχειριστείτε ρυθμίσεις διατήρησης εγγραφών σε αυτήν την τοποθεσία.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Title">
+    <value>Εργασίες εγκατάστασης και δημιουργία σχεδίου αρχείων</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP">
+    <value>Χρησιμοποιήστε αυτές τις οδηγίες για την ολοκλήρωση της ρύθμισης παραμέτρων της τοποθεσίας Κέντρου εγγραφών.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP2">
+    <value>Για να είναι αυτή η τοποθεσία έτοιμη να αποδεχθεί εγγραφές, ρυθμίστε τις παραμέτρους της έτσι ώστε να ταιριάζουν με το σχέδιο αρχείων της εταιρείας σας:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrTitle">
+    <value>&lt;b&gt;Σημείωση:&lt;/b&gt; Δεν ήταν δυνατή η πλήρης ρύθμιση παραμέτρων αυτού του Κέντρου εγγραφών, διότι ορισμένες δυνατότητες συλλογής τοποθεσιών δεν είναι ενεργοποιημένες.  Επικοινωνήστε με το διαχειριστή συλλογής τοποθεσιών, εάν δεν έχετε πρόσβαση για να αντιμετωπίσετε αυτά τα ζητήματα:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrIPR">
+    <value>Δεν είναι δυνατή η σήμανση των εισερχόμενων εγγράφων ως εγγραφών. Ενεργοποιήστε τη δυνατότητα Επιτόπιων εγγραφών στη Συλλογή δυνατοτήτων συλλογής τοποθεσιών.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWPErrDoc">
+    <value>Δεν είναι δυνατή η εκχώρηση αναγνωριστικού εγγράφου σε εισερχόμενα έγγραφα. Ενεργοποιήστε την Υπηρεσία αναγνωριστικών εγγράφων στη Συλλογή δυνατοτήτων συλλογής τοποθεσιών.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet1">
+    <value>Βήμα 1:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet2">
+    <value>Βήμα 2:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet3">
+    <value>Βήμα 3:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Bullet4">
+    <value>Βήμα 4:</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCT">
+    <value>Δημιουργία τύπων περιεχομένου</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateCTDesc">
+    <value>Ορίστε τύπους εγγραφών και τις ιδιοτήτων σε κάθε τύπο.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLib">
+    <value>Δημιουργία βιβλιοθηκών εγγραφών</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateLibDesc">
+    <value>Δημιουργήστε μια ιεραρχία βιβλιοθηκών και φακέλων εγγραφών και εκχωρήστε ένα χρονοδιάγραμμα διατήρησης σε καθένα.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRules">
+    <value>Δημιουργία κανόνων οργάνωσης περιεχομένου</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_CreateRulesDesc">
+    <value>Ορίστε κανόνες που δρομολογούν τις υποβαλλόμενες εγγραφές στο σωστό φάκελο.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePage">
+    <value>Σχεδιασμός της σελίδας υποδοχής της τοποθεσίας</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_ConfigHomePageDesc">
+    <value>Επεξήγηση του σχεδίου αρχείων σας και των πολιτικών διαχείρισης εγγραφών στους χρήστες.</value>
+  </data>
+  <data name="RCConsoleInitialSetupWP_Close">
+    <value>Αφού τελειώσετε, μπορείτε να καταργήσετε αυτό το τμήμα Web.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Title">
+    <value>Κοινές εργασίες διαχείρισης εγγραφών</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLib">
+    <value>Δημιουργία νέας βιβλιοθήκης εγγραφών</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateLibDesc">
+    <value>Δημιουργήστε μια νέα βιβλιοθήκη για την αποθήκευση εγγραφών.</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngr">
+    <value>Διαχείριση περιεχομένου και δομής</value>
+  </data>
+  <data name="RCConsoleTasksWP_SiteMngrDesc">
+    <value>Χρησιμοποιήστε ένα εργαλείο διαχείρισης ιεραρχίας για την αναδιάταξη της δομής φακέλων της τοποθεσίας.</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRules">
+    <value>Δημιουργία κανόνων οργάνωσης περιεχομένου</value>
+  </data>
+  <data name="RCConsoleTasksWP_CreateRulesDesc">
+    <value>Διαχειριστείτε τη θέση αποθήκευσης των υποβαλλόμενων εγγραφών.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Hold">
+    <value>Εντοπισμός και διατήρηση εγγραφών</value>
+  </data>
+  <data name="RCConsoleTasksWP_HoldDesc">
+    <value>Αναζητήστε εγγραφές που πρέπει να διατηρούνται λόγω διενέξεων.</value>
+  </data>
+  <data name="RCConsoleTasksWP_FP">
+    <value>Δημιουργία αναφοράς σχεδίου αρχείου</value>
+  </data>
+  <data name="RCConsoleTasksWP_FPDesc">
+    <value>Προβάλετε ένα υπολογιστικό φύλλο σχετικά με τη δομή και τα χρονοδιαγράμματα διατήρησης της Βιβλιοθήκης εγγραφών.</value>
+  </data>
+  <data name="RCConsoleTasksWP_Audit">
+    <value>Δημιουργία αναφοράς ελέγχου</value>
+  </data>
+  <data name="RCConsoleTasksWP_AuditDesc">
+    <value>Αποκτήστε πρόσβαση σε ένα ιστορικό συμβάντων που έλαβαν χώρα σε εγγραφές (απαιτεί δικαιώματα διαχειριστή συλλογής τοποθεσιών).</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_AuditLogReports_Tooltip">
+    <value>Αναθεωρήστε τις διαθέσιμες αναφορές του αρχείου καταγραφής ελέγχου, οι οποίες παρέχουν ολοκληρωμένη παρακολούθηση συμβάντων για τη δραστηριότητα, την ασφάλεια, την πολιτική περιεχομένου ή άλλα φίλτρα.</value>
+  </data>
+  <data name="SiteSettings_AnalyticsReports_Tooltip">
+    <value>Εξετάστε τις αναφορές των τάσεων δημοτικότητας, οι οποίες παρέχουν χρήσιμα στοιχεία επίγνωσης σχετικά με τον τρόπο πρόσβασης και τα στοιχεία του περιεχομένου που προσπελάστηκαν.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionAuditSettings_Tooltip">
+    <value>Ρύθμιση παραμέτρων ελέγχου, ο οποίος παρακολουθεί τις ενέργειες χρηστών σε όλες τις τοποθεσίες αυτής της συλλογής τοποθεσιών.</value>
+  </data>
+  <data name="SiteSettings_SiteCollectionPolicies_Tooltip">
+    <value>Διαχείριση πολιτικών διαχείρισης πληροφοριών, οι οποίες παρέχουν δηλώσεις, ετικέτες, ελέγχους, λήξη και γραμμικούς κώδικες πολιτικής σε όλες τις τοποθεσίες αυτής της συλλογής τοποθεσιών.</value>
+  </data>
+  <data name="InPlaceRecords_ListSettingsLink">
+    <value>Ρυθμίσεις δήλωσης εγγραφής</value>
+  </data>
+  <data name="RecordsLib_ListFolder">
+    <value>Records</value>
+  </data>
+  <data name="MetadataDef_SettingsPageLink">
+    <value>Ρυθμίσεις προεπιλεγμένης τιμής στήλης</value>
+  </data>
+  <data name="MetadataDef_ECBLink">
+    <value>Αλλαγή προεπιλεγμένων τιμών για στήλες</value>
+  </data>
+  <data name="MetadataDef_SettingsPageDescription">
+    <value>Αλλαγή των προεπιλεγμένων τιμών στηλών για αυτόν το φάκελο.</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonText">
+    <value>Δήλωση εγγραφής</value>
+  </data>
+  <data name="InPlaceRecords_DeclareRecordButtonToolTipDescription">
+    <value>Δήλωση στοιχείου ως εγγραφής, η οποία ενδέχεται να προσθέσει περιορισμούς και πολιτικές εγγραφών που βασίζονται στις ρυθμίσεις συστήματος.</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonText">
+    <value>Κατάργηση δήλωσης εγγραφής</value>
+  </data>
+  <data name="InPlaceRecords_UndeclareRecordButtonToolTipDescription">
+    <value>Κατάργηση δήλωσης στοιχείου εγγραφής για κατάργηση των περιορισμών και των πολιτικών εγγραφών.</value>
+  </data>
+  <data name="MetadataPlv_ECBLink">
+    <value>Ρύθμιση προβολών για αυτήν τη θέση</value>
+  </data>
+  <data name="MetadataPlv_SettingsPageDescription">
+    <value>Αλλαγή διαθέσιμων προβολών για αυτόν το φάκελο.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ContextualTabName">
+    <value>Σύνολο εγγράφων</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_TabName">
+    <value>Διαχείριση</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ActionsGroupText">
+    <value>Ενέργειες</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Επεξεργασία ιδιοτήτων</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EditPropertiesButtonText">
+    <value>Επεξεργασία των ιδιοτήτων αυτού του συνόλου εγγράφων.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ExportButtonText">
+    <value>Λήψη αντιγράφου</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ExportButtonText">
+    <value>Λήψη αντιγράφου αυτού του συνόλου εγγράφων.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_PermissionsButtonText">
+    <value>Δικαιώματα</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_PermissionsButtonText">
+    <value>Μεταβείτε στη σελίδα δικαιωμάτων για να προσθέσετε, να αλλάξετε ή να καταργήσετε δικαιώματα για αυτό το σύνολο εγγράφων.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_DeleteButtonText">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="Ribbon_ManageQueries_TabName">
+    <value>Διαχείριση ερωτήματος</value>
+  </data>
+  <data name="Ribbon_ManageQueries_NewGroupText">
+    <value>Δημιουργία</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ManageGroupText">
+    <value>Διαχείριση</value>
+  </data>
+  <data name="Ribbon_ManageQueries_QueryGroupText">
+    <value>Ερώτημα</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryLabel">
+    <value>Αντιγραφή ερωτήματος</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipTitle">
+    <value>Αντιγραφή ερωτήματος</value>
+  </data>
+  <data name="Ribbon_ManageQueries_CopyQueryToolTipDescription">
+    <value>Δημιουργήστε ένα αντίγραφο του επιλεγμένου στοιχείου.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsLabel">
+    <value>Ενημέρωση στατιστικών</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipTitle">
+    <value>Ενημέρωση στατιστικών</value>
+  </data>
+  <data name="Ribbon_ManageQueries_UpdateStatisticsToolTipDescription">
+    <value>Εκτελέστε τα επιλεγμένα ερωτήματα για να ενημερώσετε τα στατιστικά τους στοιχεία.</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportLabel">
+    <value>Εξαγωγή</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipTitle">
+    <value>Εξαγωγή</value>
+  </data>
+  <data name="Ribbon_ManageQueries_ExportToolTipDescription">
+    <value>Εξαγάγετε τα αποτελέσματα των επιλεγμένων ερωτημάτων.</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_DeleteButtonText">
+    <value>Διαγραφή αυτού του συνόλου εγγράφων. Όλα τα έγγραφα σε αυτό το σύνολο εγγράφων θα διαγραφούν.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ShareGroupText">
+    <value>Κοινή χρήση</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_EmailLinkButtonText">
+    <value>Αποστολή σύνδεσης με ηλεκτρονικό ταχυδρομείο</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_EmailLinkButtonText">
+    <value>Αποστολή σύνδεσης με ηλεκτρονικό ταχυδρομείο σε αυτό το σύνολο εγγράφων.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_SendToButtonText">
+    <value>Αποστολή προς</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_SendToButtonText">
+    <value>Μεταβείτε στη σελίδα Αποστολή σε άλλη θέση για μετακίνηση ή αντιγραφή αυτού του συνόλου εγγράφων σε άλλη θέση.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageGroupText">
+    <value>Διαχείριση</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Καταγραφή έκδοσης</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_CaptureVersionButtonText">
+    <value>Αποθήκευση μιας έκδοσης των τρεχουσών ιδιοτήτων και των τρεχόντων εγγράφων σε αυτό το σύνολο εγγράφων.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Ιστορικό εκδόσεων</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_VersionHistoryButtonText">
+    <value>Προβολή και διαχείριση του ιστορικού εκδόσεων αυτού του συνόλου εγγράφων.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_WorkflowsButtonText">
+    <value>Ροές εργασίας</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_WorkflowsButtonText">
+    <value>Μεταβείτε στη σελίδα Ροές εργασιών για έναρξη ή διαχείριση ροών εργασιών που σχετίζονται με αυτό το σύνολο εγγράφων.</value>
+  </data>
+  <data name="Ribbon_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Διαχείριση αποδόσεων βίντεο</value>
+  </data>
+  <data name="Ribbon_TTDesc_ManageDocumentSet_ManageVideoRenditionsButtonText">
+    <value>Διαχειριστείτε τις αποδόσεις αυτού του βίντεο.</value>
+  </data>
+  <data name="Ribbon_MdnCustomActionTitle">
+    <value>Προσαρμοσμένη ενέργεια κορδέλας περιήγησης μετα-δεδομένων.</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesLabel">
+    <value>Ενημέρωση</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipTitle">
+    <value>Ενημέρωση κατάστασης προέλευσης</value>
+  </data>
+  <data name="Ribbon_ManageSources_UpdateSourcesToolTipDescription">
+    <value>Ενημερώνει την κατάσταση των επιλεγμένων προελεύσεων.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportLabel">
+    <value>Εξαγωγή σφάλματος</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipTitle">
+    <value>Δημιουργήστε μια λίστα εξαγωγής για όλα τα στοιχεία που παρουσιάζουν σφάλματα για να λάβετε μια αναφορά ή να πραγματοποιήσετε τη λήψη τους.</value>
+  </data>
+  <data name="Ribbon_ManageSources_ErrorExportToolTipDescription">
+    <value>
+    </value>
+  </data>
+  <data name="Ribbon_ManageSources_SourceGroupText">
+    <value>Ενέργειες προέλευσης</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogText">
+    <value>Αναζήτηση</value>
+  </data>
+  <data name="EDiscoveryWaitingDialogLROText">
+    <value>Αυτό μπορεί να διαρκέσει λίγη ώρα...</value>
+  </data>
+  <data name="EDiscoveryRelevanceSort">
+    <value>Συνάφεια</value>
+  </data>
+  <data name="EDiscoveryDateOldestSort">
+    <value>Ημερομηνία(παλαιότερο)</value>
+  </data>
+  <data name="EDiscoveryDateNewestSort">
+    <value>Ημερομηνία(νεότερο)</value>
+  </data>
+  <data name="EDiscoverySearchButton">
+    <value>Αναζήτηση</value>
+  </data>
+  <data name="EDiscoverySearchQuerySavedNotificationText">
+    <value>Το ερώτημα αποθηκεύτηκε</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureTitle">
+    <value>Πύλη eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleFeatureDescription">
+    <value>Δημιουργήστε και διαχειριστείτε υποθέσεις eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureTitle">
+    <value>Δυνατότητα υπόθεσης eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseResourcesFeatureDescription">
+    <value>Παρέχει τους απαραίτητους πόρους για μια υπόθεση eDiscovery.</value>
+  </data>
+  <data name="SourcesListUrl">
+    <value>Sources</value>
+  </data>
+  <data name="SavedSearchesListUrl">
+    <value>Queries</value>
+  </data>
+  <data name="CustodiansListUrl">
+    <value>Custodians</value>
+  </data>
+  <data name="SourceGroupsListUrl">
+    <value>DiscoverySets</value>
+  </data>
+  <data name="ExportsListUrl">
+    <value>Exports</value>
+  </data>
+  <data name="SourceInstancesListUrl">
+    <value>SourceInstances</value>
+  </data>
+  <data name="RootWebHoldListUrl">
+    <value>DiscoveryPreservationHolds</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryName">
+    <value>Όνομα</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationStatus">
+    <value>Κατάσταση επιτόπιας διατήρησης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreservationFiltered">
+    <value>Φιλτραρισμένη διατήρηση</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawStatus">
+    <value>Κατάσταση μη μεταφρασμένης επιτόπιας διατήρησης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryPreserve">
+    <value>Επιτόπια διατήρηση</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryErrorLog">
+    <value>Ιστορικό επιτόπιας διατήρησης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryLastIndexedTime">
+    <value>Τελευταία ώρα δημιουργίας ευρετηρίου</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItemErrors">
+    <value>Σφάλματα δημιουργίας ευρετηρίου - Στοιχεία</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySharePointSiteErrors">
+    <value>Σφάλματα δημιουργίας ευρετηρίου - Θέσεις του SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCrawlErrorPercent">
+    <value>Ποσοστό σφαλμάτων ανίχνευσης</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Title">
+    <value>Προελεύσεις</value>
+  </data>
+  <data name="EDiscoverySourcesContentType_Description">
+    <value>Προσθέστε μια νέα προέλευση.</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Title">
+    <value>Εξαγωγή</value>
+  </data>
+  <data name="EDiscoveryExportContentType_Description">
+    <value>Προσθέστε μια νέα εξαγωγή.</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Title">
+    <value>Ερώτημα</value>
+  </data>
+  <data name="EDiscoverySavedSearchContentType_Description">
+    <value>Δημιουργήστε μια νέα αποθηκευμένη αναζήτηση.</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Title">
+    <value>Κηδεμόνας</value>
+  </data>
+  <data name="EDiscoveryCustodianContentType_Description">
+    <value>Προσθέστε ένα νέο κηδεμόνα.</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Title">
+    <value>Γραμματοκιβώτιο</value>
+  </data>
+  <data name="EDiscoveryMailboxContentType_Description">
+    <value>Προσθέστε ένα νέο γραμματοκιβώτιο.</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Title">
+    <value>Θέση</value>
+  </data>
+  <data name="EDiscoveryLocationContentType_Description">
+    <value>Προσθέστε μια νέα θέση.</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Title">
+    <value>Σύνολο eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourcesGroupContentType_Description">
+    <value>Δημιουργήστε ένα νέο σύνολο eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Title">
+    <value>Διατηρούμενο στοιχείο</value>
+  </data>
+  <data name="EDiscoveryPreservedItemContentType_Description">
+    <value>Προσθέστε ένα νέο διατηρούμενο στοιχείο.</value>
+  </data>
+  <data name="EDiscoveryContentTypeGroup">
+    <value>Τύποι περιεχομένου eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryItems">
+    <value>Στοιχεία</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySize">
+    <value>Μέγεθος (MB)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQueryLookup">
+    <value>Ερωτήματα</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySiteId">
+    <value>Αναγνωριστικό τοποθεσίας</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceType">
+    <value>Τύπος προέλευσης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRawSourceType">
+    <value>Τύπος προέλευσης χωρίς επεξεργασία</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryWebId">
+    <value>Αναγνωριστικό Web</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryFederationId">
+    <value>Αναγνωριστικό ομοσπονδίας</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExternalFederationId">
+    <value>Αναγνωριστικό εξωτερικής ομοσπονδίας</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructure">
+    <value>Κατάργηση διπλοτύπων</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStructureDescription">
+    <value>Κατάργηση διπλότυπου περιεχομένου Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagement">
+    <value>Κατάργηση προστασίας διαχείρισης δικαιωμάτων</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryRightsManagementDescription">
+    <value>Κατάργηση της προστασίας υπηρεσιών διαχείρισης δικαιωμάτων (RMS) και της κρυπτογράφησης από δεδομένα του Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersions">
+    <value>Συμπερίληψη εκδόσεων</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryVersionsDescription">
+    <value>Συμπερίληψη εκδόσεων για έγγραφα του SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItems">
+    <value>Στοιχεία χωρίς δυνατότητα αναζήτησης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNonSearchedItemsDescription">
+    <value>Συμπερίληψη στοιχείων που είναι κρυπτογραφημένα ή έχουν μη αναγνωρίσιμη μορφή</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryExportStatus">
+    <value>Kατάσταση</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySearchProperty">
+    <value>Ιδιότητες eDiscovery</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryQuery">
+    <value>Ερώτημα</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryAuthor">
+    <value>Συντάκτης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryStartDate">
+    <value>Ημερομηνία έναρξης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEndDate">
+    <value>Ημερομηνία λήξης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDomainFilter">
+    <value>Φίλτρο τομέα (μόνο για το Exchange)</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySPRefiners">
+    <value>Συνδέσεις περιορισμού αναζήτησης του SharePoint</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryEXRefiners">
+    <value>Συνδέσεις περιορισμού αναζήτησης του Exchange</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceManagement">
+    <value>Τύπος διαχείρισης προέλευσης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryHoldId">
+    <value>Αναγνωριστικό διατήρησης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionId">
+    <value>Αναγνωριστικό ενέργειας</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryActionType">
+    <value>Τύπος ενέργειας</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryContainer">
+    <value>Αναγνωριστικό προέλευσης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryDisplayId">
+    <value>Αναγνωριστικό εμφάνισης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceLookup">
+    <value>Προελεύσεις</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceGroupLookup">
+    <value>Ομάδες προέλευσης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryCustodians">
+    <value>Κηδεμόνες</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryUser">
+    <value>Χρήστης</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoveryNotes">
+    <value>Σημειώσεις</value>
+  </data>
+  <data name="DlcFieldDisplayName_EDiscoverySourceId">
+    <value>Προέλευση</value>
+  </data>
+  <data name="PreservationVersion">
+    <value>Αριθμός έκδοσης διατήρησης</value>
+  </data>
+  <data name="PreservationOriginalURL">
+    <value>Αρχική θέση διατήρησης</value>
+  </data>
+  <data name="PreservationOriginalListId">
+    <value>Αναγνωριστικό αρχικής λίστας διατήρησης</value>
+  </data>
+  <data name="PreservationOriginalMetadata">
+    <value>Αρχικά μετα-δεδομένα διατήρησης</value>
+  </data>
+  <data name="PreservationDatePreserved">
+    <value>Ημερομηνία διατήρησης</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDisplayName">
+    <value>Τύπος λίστας κηδεμόνων</value>
+  </data>
+  <data name="EDiscoveryResourcesCustodiansListTemplateDescription">
+    <value>Τύπος λίστας για κηδεμόνες που χρησιμοποιούνται σε μια υπόθεση του eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDisplayName">
+    <value>Τύπος λίστας προελεύσεων</value>
+  </data>
+  <data name="EDiscoveryResourcesSourcesListTemplateDescription">
+    <value>Τύπος λίστας για προελεύσεις σε μια υπόθεση eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDisplayName">
+    <value>Τύπος λίστας ερωτημάτων</value>
+  </data>
+  <data name="EDiscoveryResourcesSavedSearchesListTemplateDescription">
+    <value>Τύπος λίστας για αποθηκευμένες αναζητήσεις σε μια υπόθεση eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDisplayName">
+    <value>Τύπος λίστας εξαγωγών</value>
+  </data>
+  <data name="EDiscoveryResourcesExportsListTemplateDescription">
+    <value>Τύπος λίστας για εξαγωγές σε μια υπόθεση eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDisplayName">
+    <value>Τύπος λίστας συνόλων eDiscovery</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceGroupsListTemplateDescription">
+    <value>Τύπος λίστας για σύνολα εντοπισμού σε μια υπόθεση eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDisplayName">
+    <value>Τύπος λίστας παρουσιών προέλευσης</value>
+  </data>
+  <data name="EDiscoveryResourcesSourceInstancesListTemplateDescription">
+    <value>Τύπος λίστας για παρουσίες προέλευσης σε μια υπόθεση eDiscovery.</value>
+  </data>
+  <data name="PreservationListUrl">
+    <value>PreservationHoldLibrary</value>
+  </data>
+  <data name="EDiscoveryConsoleSiteTitle">
+    <value>Πρότυπο τοποθεσίας πύλης eDiscovery</value>
+  </data>
+  <data name="EDiscoverySavedSearchListTitle">
+    <value>Ερωτήματα</value>
+  </data>
+  <data name="EDiscoverySavedSearchListDescription">
+    <value>Χρησιμοποιήστε ερωτήματα για μείωση και ανάλυση των αποτελεσμάτων αναζήτησης.</value>
+  </data>
+  <data name="EDiscoverySourcesListTitle">
+    <value>Προελεύσεις</value>
+  </data>
+  <data name="EDiscoverySourcesListDescription">
+    <value>Παρακολουθήστε την κατάσταση των γραμματοκιβωτίων και των θέσεων που σχετίζονται με την υπόθεση.</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListTitle">
+    <value>Σύνολα eDiscovery</value>
+  </data>
+  <data name="EDiscoverySourceGroupsListDescription">
+    <value>Δημιουργήστε και διαχειριστείτε ομάδες περιεχομένου που μπορούν να φιλτραριστούν και να τεθούν σε διατήρηση.</value>
+  </data>
+  <data name="EDiscoveryExportsNewItem">
+    <value>Εξαγωγή: Δημιουργία στοιχείου</value>
+  </data>
+  <data name="EDiscoveryExportsListTitle">
+    <value>Εξαγωγές</value>
+  </data>
+  <data name="EDiscoveryExportsListDescription">
+    <value>Χρησιμοποιήστε τη λίστα εξαγωγών για να διαχειριστείτε τη λήψη του περιεχομένου eDiscovery που έχει εξαχθεί.</value>
+  </data>
+  <data name="EDiscoverySourceInstancesListTitle">
+    <value>Παρουσίες προέλευσης</value>
+  </data>
+  <data name="EDiscoveryCasesListDescription">
+    <value>Παρακολουθήστε την κατάσταση των υποθέσεων.</value>
+  </data>
+  <data name="EDiscoveryCustodiansListTitle">
+    <value>Κηδεμόνες</value>
+  </data>
+  <data name="EDiscoveryCustodiansListDescription">
+    <value>Προσθέστε χρήστες στην υπόθεση που μπορούν να συσχετιστούν με προελεύσεις, όπως γραμματοκιβώτια και θέσεις.</value>
+  </data>
+  <data name="EDiscoverySourceStatus">
+    <value>Κατάσταση επιτόπιας διατήρησης</value>
+  </data>
+  <data name="EDiscoveryExportStatus">
+    <value>Κατάσταση εξαγωγής</value>
+  </data>
+  <data name="EDiscoveryDownloadNotStarted">
+    <value>Η λήψη δεν έχει ξεκινήσει</value>
+  </data>
+  <data name="EDiscoveryDownloadStarted">
+    <value>Η λήψη ξεκίνησε</value>
+  </data>
+  <data name="EDiscoveryDownloadComplete">
+    <value>Η λήψη ολοκληρώθηκε</value>
+  </data>
+  <data name="EDiscoveryDownloadFailed">
+    <value>Η εξαγωγή απέτυχε</value>
+  </data>
+  <data name="EDiscoveryPreserved">
+    <value>Σε διατήρηση</value>
+  </data>
+  <data name="EDiscoveryFilteredPreserved">
+    <value>Διατήρηση με φίλτρο</value>
+  </data>
+  <data name="EDiscoveryTimedOut">
+    <value>Λήξη χρονικού ορίου</value>
+  </data>
+  <data name="EDiscoveryCannotPreserve">
+    <value>Δεν είναι δυνατή η διατήρηση</value>
+  </data>
+  <data name="EDiscoveryNotPreserved">
+    <value>Εκτός διατήρησης</value>
+  </data>
+  <data name="EDiscoveryInProgress">
+    <value>Επεξεργασία</value>
+  </data>
+  <data name="EDiscoveryPartiallyPreserved">
+    <value>Μερική</value>
+  </data>
+  <data name="EDiscoveryFailedPreserve">
+    <value>Απέτυχε</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcome">
+    <value>Καλώς ορίσατε στο Κέντρο eDiscovery</value>
+  </data>
+  <data name="EDiscoveryConsoleWelcomeDescription">
+    <value>Χρησιμοποιήστε αυτήν την τοποθεσία για να δημιουργείτε, να διαχειρίζεστε και να εργάζεστε σε Υποθέσεις eDiscovery. Με τις Υποθέσεις eDiscovery, μπορείτε να διαχειρίζεστε την αναγνώριση και τη διατήρηση της αρχικής έκδοσης γραμματοκιβωτίων του Exchange, τοποθεσιών του SharePoint και άλλων προελεύσεων περιεχομένου. Επίσης, μπορείτε να δημιουργείτε και να διαχειρίζεστε ερωτήματα αναζήτησης για να προσδιορίζετε σχετικό περιεχόμενο και στη συνέχεια να εξάγετε τα αποτελέσματα αναζήτησης.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedLabel">
+    <value>Γρήγορα αποτελέσματα</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription1">
+    <value>Εκχωρήστε στους χρήστες του νομικού τμήματος δικαιώματα πρόσβασης σε περιεχόμενο της ανάπτυξης του SharePoint. Συνιστάμε τη δημιουργία μιας ομάδας ασφαλείας που θα περιλαμβάνει τα μέλη της νομικής σας ομάδας.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription2">
+    <value>Για να εντοπίσετε γραμματοκιβώτια του Exchange, βεβαιωθείτε ότι ο διαχειριστής σας έχει εγκαταστήσει το διαχειριζόμενο πρόγραμμα-πελάτη υπηρεσιών Web του Exchange σε όλους τους διακομιστές του SharePoint και ζητήστε από το διαχειριστή να ρυθμίσει τις παραμέτρους ελέγχου ταυτότητας ανάμεσα στο Exchange και το SharePoint. </value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription3">
+    <value>Δώστε στη νομική ομάδα σας δικαιώματα πολιτικής χρήστη ομάδας ασφαλείας για όλες τις κατάλληλες εφαρμογές Web του SharePoint με περιεχόμενο στο οποίο πρέπει να εκτελέσετε eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryConsoleGetStartedDescription4">
+    <value>Εκχωρήστε στους χρήστες του νομικού τμήματος δικαιώματα eDiscovery για τα γραμματοκιβώτια του Exchange στα οποία πρέπει να εκτελέσετε ενέργειες eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceLabel">
+    <value>Επιτόπια διατήρηση, αναζήτηση &amp; εξαγωγή</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription1">
+    <value>Με την επιτόπια διατήρηση μπορείτε να καθορίζετε τοποθεσίες και γραμματοκιβώτια του SharePoint που θέλετε να τοποθετήσετε σε αναμονή. Όταν κάποιο περιεχόμενο τροποποιηθεί ή διαγραφεί, αποθηκεύεται επιτόπου μέχρι να το εξαγάγετε.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription2">
+    <value>Η αναζήτηση eDiscovery την ίδια στιγμή επιτρέπει την αναζήτηση σε τοποθεσίες του SharePoint, κοινόχρηστους πόρους αρχείων και γραμματοκιβώτια του Exchange. Χρησιμοποιήστε επιλογές εγγύτητας, χαρακτήρες μπαλαντέρ, δυαδική λογική και συνδέσεις περιορισμού αναζήτησης, για να περιορίσετε τα αποτελέσματα στο περιεχόμενο που χρειάζεστε. Επειδή η αναζήτηση εκτελείται την ίδια στιγμή, τα αποτελέσματα είναι ζωντανά και ενημερωμένα, όπως ακριβώς εάν πραγματοποιούσατε μια κανονική αναζήτηση σε τοποθεσία του Outlook Web Access ή του SharePoint.</value>
+  </data>
+  <data name="EDiscoveryConsoleInplaceDescription3">
+    <value>Μόλις προσδιορίσετε το περιεχόμενο που χρειάζεστε, μπορείτε να πραγματοποιήσετε τη λήψη του στον τοπικό σκληρό δίσκο ή στον κοινόχρηστο πόρο αρχείων σε εγγενή μορφή φορητού αρχείου. Πραγματοποιήστε εύκολα λήψη σελίδων, εγγράφων και λιστών του SharePoint καθώς και δεδομένων γραμματοκιβωτίων του Exchange.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcome">
+    <value>Καλώς ορίσατε στην υπόθεσή σας.</value>
+  </data>
+  <data name="EDiscoveryCaseWelcomeDescription">
+    <value>Χρησιμοποιήστε την υπόθεσή σας για τον προσδιορισμό προελεύσεων περιεχομένου, όπως γραμματοκιβωτίων ή τοποθεσιών του SharePoint, και για τη διατήρηση του περιεχομένου με επιτόπια διατήρηση. Μόλις εντοπίσετε προελεύσεις περιεχομένου, μπορείτε να πραγματοποιείτε αναζήτηση σε αυτό το περιεχόμενο για τον προσδιορισμό και την εξαγωγή σχετικών στοιχείων.</value>
+  </data>
+  <data name="EDiscoveryConsoleNewCaseLink">
+    <value>Δημιουργία νέας υπόθεσης</value>
+  </data>
+  <data name="EDiscoveryAddNewLocation">
+    <value>Προσθήκη επιπλέον θέσης</value>
+  </data>
+  <data name="EDiscoveryAddNewMailbox">
+    <value>Προσθήκη επιπλέον γραμματοκιβωτίου</value>
+  </data>
+  <data name="EDiscoveryValidateAltText">
+    <value>Έλεγχος θέσης</value>
+  </data>
+  <data name="EDiscoveryMailboxValidateAltText">
+    <value>Έλεγχος γραμματοκιβωτίου</value>
+  </data>
+  <data name="EDiscoveryBrowseAltText">
+    <value>Αναζήτηση</value>
+  </data>
+  <data name="EDiscoveryAddNewLink">
+    <value>(Προσθήκη &amp; διαχείριση προελεύσεων)</value>
+  </data>
+  <data name="EDiscoveryQueriesAddNewLink">
+    <value>(Τροποποίηση εμβέλειας ερωτήματος)</value>
+  </data>
+  <data name="EDiscoveryEditSourcesDialogTitle">
+    <value>Προελεύσεις: Επεξεργασία στοιχείου</value>
+  </data>
+  <data name="EDiscoveryNewSourcesDialogTitle">
+    <value>Προελεύσεις: Δημιουργία στοιχείου</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogTitle">
+    <value>Προσθήκη &amp; διαχείριση προελεύσεων</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsHeader">
+    <value>Θέσεις</value>
+  </data>
+  <data name="EDiscoveryAddSourcesLocationsDescription">
+    <value>Εισαγάγετε διευθύνσεις URL για να καθορίσετε τις τοποθεσίες και τους κοινόχρηστους πόρους αρχείων του SharePoint που καταχωρούνται σε ευρετήρια από την αναζήτηση. Οι προελεύσεις τοποθεσιών του SharePoint θα περιλαμβάνουν όλες τις δευτερεύουσες τοποθεσίες.  Οι προελεύσεις κοινόχρηστων πόρων αρχείων θα περιλαμβάνουν όλους τους φακέλους που βρίσκονται στον καθορισμένο φάκελο.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesHeader">
+    <value>Γραμματοκιβώτια</value>
+  </data>
+  <data name="EDiscoveryAddSourcesMailboxesDescription">
+    <value>Καθορίστε τα γραμματοκιβώτια του Exchange χρησιμοποιώντας ονόματα ή διευθύνσεις ηλεκτρονικού ταχυδρομείου.</value>
+  </data>
+  <data name="EDiscoveryAddSourcesDialogOKButtonText">
+    <value>ΟΚ</value>
+  </data>
+  <data name="EDiscoveryCaseImageAlt">
+    <value>Άτομα που συνεργάζονται</value>
+  </data>
+  <data name="EDiscoveryExchangeSourceType">
+    <value>Γραμματοκιβώτιο Exchange</value>
+  </data>
+  <data name="EDiscoverySharePointLegacySourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoverySharePoint15SourceType">
+    <value>SharePoint</value>
+  </data>
+  <data name="EDiscoveryFileShareSourceType">
+    <value>Κοινόχρηστος πόρος αρχείων</value>
+  </data>
+  <data name="EDiscoveryCaseContent">
+    <value>Περιεχόμενο υπόθεσης</value>
+  </data>
+  <data name="EDiscoveryTotalCaseContent">
+    <value>Συνολικό περιεχόμενο υπόθεσης</value>
+  </data>
+  <data name="EDiscoveryPreservedCaseContent">
+    <value>Περιεχόμενο επιτόπιας διατήρησης</value>
+  </data>
+  <data name="EDiscoveryCaseItems">
+    <value>Στοιχεία: </value>
+  </data>
+  <data name="EDiscoveryCaseSize">
+    <value>Μέγεθος: </value>
+  </data>
+  <data name="EDiscoveryValidated">
+    <value>Επικυρώθηκε</value>
+  </data>
+  <data name="EDiscoveryFailedToConnectToSearch">
+    <value>Η σύνδεση με την εφαρμογή υπηρεσίας αναζήτησης απέτυχε.</value>
+  </data>
+  <data name="EDiscoveryValidationFailed">
+    <value>Παρουσιάστηκε αποτυχία κατά την προσπάθεια επικύρωσης της προέλευσης.</value>
+  </data>
+  <data name="EDiscoverySourceNotUnique">
+    <value>Η καθορισμένη προέλευση υπάρχει ήδη στην υπόθεση.</value>
+  </data>
+  <data name="EDiscoveryLocationValidationFailed">
+    <value>Δεν βρέθηκε ακριβής αντιστοιχία.  Ενδέχεται η διεύθυνση URL να μην είναι έγκυρη, να μην έχετε δικαιώματα πρόσβασης σε αυτήν τη θέση ή να μην έχει καταχωρηθεί αυτή η θέση σε ευρετήριο από την αναζήτηση.</value>
+  </data>
+  <data name="EDiscoveryMailboxValidationFailed">
+    <value>Δεν ήταν δυνατή η επικύρωση του γραμματοκιβωτίου. Το γραμματοκιβώτιο ενδέχεται να μην υπάρχει ή δεν έχετε το κατάλληλο επίπεδο δικαιωμάτων.</value>
+  </data>
+  <data name="EDiscoveryContentTypeDisplayName">
+    <value>Τύπος περιεχομένου</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsDialogName">
+    <value>Επιλογές ερωτημάτων για προχωρημένους</value>
+  </data>
+  <data name="EDiscoveryAdvancedQueryOptionsNoSourcesWarning" xml:space="preserve">
+    <value>Δεν υπάρχει καμία προέλευση σε αυτό το ερώτημα. Για να προσθέσετε προελεύσεις, επιστρέψτε στη σελίδα του ερωτήματος και κάντε κλικ στην επιλογή "{0}"</value>
+    
+  </data>
+  <data name="QBEFeatureTitle">
+    <value>Επιτόπια διατήρηση βάσει ερωτήματος</value>
+  </data>
+  <data name="QBEFeatureDescription">
+    <value>Όταν είναι ενεργοποιημένη η επιλογή διατήρησης βάσει ερωτήματος, το περιεχόμενο που είναι αποθηκευμένο στη βιβλιοθήκη διατήρησης και το οποίο δεν συμφωνεί με κανένα φίλτρο διατήρησης για αυτήν την τοποθεσία, λήγει. Αυτή η δυνατότητα πρέπει να χρησιμοποιείται γενικά για τοποθεσίες αρχειοθέτησης που θα διαθέτουν ταυτόχρονα πολλαπλά στοιχεία διατήρησης.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduled">
+    <value>{0} Έχει προγραμματιστεί διατήρηση όλου του περιεχομένου από το σύνολο eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiated">
+    <value>{0} Τώρα τίθεται σε διατήρηση όλο το περιεχόμενο για το σύνολο eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduled">
+    <value>{0} Προγραμματίστηκε ενημέρωση διατήρησης για το σύνολο eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiated">
+    <value>{0} Προετοιμάστηκε η ενημέρωση της διατήρησης της αρχικής έκδοσης για το σύνολο eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldScheduledFiltered">
+    <value>{0} Προγραμματίστηκε ενημέρωση διατήρησης από το σύνολο eDiscovery '{1}' με το φίλτρο '{2}'.</value>
+  </data>
+  <data name="EDiscoveryUpdateHoldInitiatedFiltered">
+    <value>{0} Προετοιμάστηκε η ενημέρωση διατήρησης για το σύνολο eDiscovery '{1}' με το φίλτρο '{2}'.</value>
+  </data>
+  <data name="EDiscoveryHoldScheduledFiltered">
+    <value>{0} Προγραμματίστηκε διατήρηση φιλτραρισμένου υποσυνόλου από το σύνολο eDiscovery '{1}' με το φίλτρο '{2}'.</value>
+  </data>
+  <data name="EDiscoveryHoldInitiatedFiltered">
+    <value>{0} Τώρα τίθεται σε διατήρηση ένα φιλτραρισμένο υποσύνολο περιεχομένου για το σύνολο eDiscovery '{1}' με το φίλτρο '{2}'.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedWithLeftovers">
+    <value>{0} Έγινε άρση της διατήρησης για το σύνολο eDiscovery '{1}'.  Αυτή η προέλευση εξακολουθεί να διατηρείται για άλλα σύνολα eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryReleaseScheduled">
+    <value>{0} Προγραμματίστηκε άρση της διατήρησης για όλο το περιεχόμενο από το σύνολο eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFull">
+    <value>{0} Έγινε άρση της διατήρησης για όλο το περιεχόμενο για το σύνολο eDiscovery '{1}'.</value>
+  </data>
+  <data name="EDiscoveryReleaseInitiatedFullNoCollection">
+    <value>{0} Έγινε άρση της διατήρησης της αρχικής έκδοσης για όλο το περιεχόμενο από ένα σύνολο eDiscovery που δεν υπάρχει πλέον.</value>
+  </data>
+  <data name="EDiscoveryPreservationFailed">
+    <value>{0} Η διατήρηση της προέλευσης για το σύνολο eDiscovery '{1}' απέτυχε. Μήνυμα σφάλματος: {3}</value>
+  </data>
+  <data name="EDiscoveryReleaseFailed">
+    <value>{0} Η άρση της διατήρησης για αυτήν την προέλευση για το σύνολο eDiscovery '{1}' απέτυχε. Μήνυμα σφάλματος: {3}</value>
+  </data>
+  <data name="EDiscoveryAuditEventName">
+    <value>Συμβάν ελέγχου eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartName">
+    <value>Περιεχόμενο υπόθεσης</value>
+  </data>
+  <data name="EDiscoveryCaseContentWebPartDescription">
+    <value>Εμφανίζει τα περιεχόμενα της υπόθεσης.</value>
+  </data>
+  <data name="EDiscoveryCaseContentNoCase">
+    <value>Το τμήμα Web του περιεχομένου υπόθεσης μπορεί να χρησιμοποιείται μόνο σε περιεχόμενα Web υποθέσεων του eDiscovery.</value>
+  </data>
+  <data name="EDiscoveryRequiredField">
+    <value>Πρέπει να καθορίσετε μια τιμή για αυτό το υποχρεωτικό πεδίο.</value>
+  </data>
+  <data name="EDiscoverySourceCannotBeDeleted">
+    <value xml:space="preserve">Αυτή η προέλευση βρίσκεται σε διατήρηση προς το παρόν. Για να διαγράψετε αυτήν την προέλευση, κάντε άρση όλων των διατηρήσεων. </value>
+  </data>
+  <data name="EDiscoverySourceGroupCannotBeDeleted">
+    <value xml:space="preserve">Αυτό το σύνολο eDiscovery έχει ενεργοποιημένη τη διατήρηση της αρχικής έκδοσης αυτήν τη στιγμή. Για να διαγράψετε αυτό το σύνολο eDiscovery, απενεργοποιήστε τη διατήρηση της αρχικής έκδοσης. </value>
+  </data>
+  <data name="EDiscoverySiteDoesNotExist">
+    <value>Η τοποθεσία δεν υπάρχει</value>
+  </data>
+  <data name="EDiscoveryPartitionIdDoesNotMatch">
+    <value>Το αναγνωριστικό διαμερίσματος αυτής της τοποθεσίας δεν συμφωνεί με το αναγνωριστικό διαμερίσματος της ενέργειας διατήρησης.</value>
+  </data>
+  <data name="EDiscoverySizeCount">
+    <value>Mέγεθος</value>
+  </data>
+  <data name="EDiscoveryItemCount">
+    <value>Στοιχεία</value>
+  </data>
+  <data name="EDiscoveryTotalsCount">
+    <value>Σύνολο:</value>
+  </data>
+  <data name="EDiscoveryExportDeduplicate">
+    <value>Κατάργηση διπλοτύπων</value>
+  </data>
+  <data name="EDiscoveryRightsManagementCheckbox">
+    <value>Κατάργηση προστασίας RMS</value>
+  </data>
+  <data name="EDiscoveryVersionsCheckbox">
+    <value>Συμπερίληψη εκδόσεων</value>
+  </data>
+  <data name="EDiscoveryNonSearchedItemsCheckbox">
+    <value>Συμπερίληψη στοιχείων χωρίς δυνατότητα αναζήτησης</value>
+  </data>
+  <data name="EDiscoveryExportDownloadLinkLabel">
+    <value>Λήψη</value>
+  </data>
+  <data name="EDiscoveryExportResultsReportLinkLabel">
+    <value>Αναφορά αποτελεσμάτων</value>
+  </data>
+  <data name="EDiscoveryExportPageFinePrint">
+    <value>Ο εκτιμώμενος αριθμός και το μέγεθος των στοιχείων δεν περιλαμβάνουν εκδόσεις ή κατάργηση διπλοτύπων. Η ενεργοποίηση αυτών των επιλογών θα επηρεάσει το συνολικό μέγεθος της εξαγωγής.</value>
+  </data>
+  <data name="EDiscoveryCloseCaseButtonText">
+    <value>Κλείσιμο αυτής της υπόθεσης</value>
+  </data>
+  <data name="EDiscoveryOpenCaseButtonText">
+    <value>Άνοιγμα αυτής της υπόθεσης</value>
+  </data>
+  <data name="EDiscoveryCaseClosureMenuText">
+    <value>Κλείσιμο υπόθεσης</value>
+  </data>
+  <data name="EDiscoveryNoMailboxesFound">
+    <value>Δεν βρέθηκαν αποτελέσματα που συμφωνούν με τη διεύθυνση.  Εισαγάγετε μια νέα ή μια λιγότερο συγκεκριμένη διεύθυνση.</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserDisplayName">
+    <value>Εμφανιζόμενο όνομα</value>
+  </data>
+  <data name="EDiscoveryExchangeBrowserEmailAddress">
+    <value>Διεύθυvση ηλεκτρονικού ταχυδρομείου</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsHeader">
+    <value>Εκτιμώμενο σύνολο</value>
+  </data>
+  <data name="EDiscoveryExportItemLabel">
+    <value>Αριθμός στοιχείων</value>
+  </data>
+  <data name="EDiscoveryExportSizeLabel">
+    <value>Μέγεθος στοιχείων</value>
+  </data>
+  <data name="EDiscoveryExportQueriesHeader">
+    <value>Ερωτήματα</value>
+  </data>
+  <data name="EDiscoveryCreateHold">
+    <value>Επιτόπια διατήρηση</value>
+  </data>
+  <data name="EDiscoveryReleaseHold">
+    <value>Άρση επιτόπιας διατήρησης</value>
+  </data>
+  <data name="EDiscoveryUpdateHold">
+    <value>Ενημέρωση επιτόπιας διατήρησης</value>
+  </data>
+  <data name="EDiscoveryExportStatisticsWebPartTitle">
+    <value>Κατάσταση εξαγωγής</value>
+  </data>
+  <data name="EDiscoverySourceStatisticsWebPartTitle">
+    <value>Κατάσταση προέλευσης</value>
+  </data>
+  <data name="EDiscoveryCaseClosedDateMessage">
+    <value>Αυτή η υπόθεση έκλεισε στις: {0}</value>
+  </data>
+  <data name="EDiscoveryBlockCaseDelete">
+    <value>Υπάρχουν ακόμη σύνολα eDiscovery που διατηρούνται. Απενεργοποιήστε τη διατήρηση ή κλείστε την υπόθεση για διαγραφή.</value>
+  </data>
+  <data name="EDiscoveryCasePolicyTitle">
+    <value>Πολιτική υποθέσεων eDiscovery</value>
+  </data>
+  <data name="EDiscoveryCasePolicyDescription">
+    <value>Πολιτική για το χειρισμό του κλεισίματος υποθέσεων.</value>
+  </data>
+  <data name="EDiscoverySourceGroupPageTitle">
+    <value>Νέο: Σύνολο eDiscovery</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListTitle">
+    <value>Ρυθμίσεις διατήρησης</value>
+  </data>
+  <data name="EDiscoveryPreservationHoldsListDescription">
+    <value>Λίστα για τις ρυθμίσεις αποθήκευσης των επιτόπιων διατηρήσεων.</value>
+  </data>
+  <data name="EDiscoveryErrorGetSource">
+    <value>Δεν ήταν δυνατή η λήψη προέλευσης για τον τύπο προέλευσης {0} και το φίλτρο {1}</value>
+  </data>
+  <data name="RMTenantAdminFeatureTitle">
+    <value>Διαχείριση μισθωτή διαχείρισης εγγραφών</value>
+  </data>
+  <data name="RMTenantAdminFeatureDesc">
+    <value>Διαχείριση μισθωτή διαχείρισης εγγραφών.</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureTitle">
+    <value>Συρραφή διαχείρισης μισθωτή διαχείρισης εγγραφών</value>
+  </data>
+  <data name="RMTenantAdminStaplingFeatureDesc">
+    <value>Συρραφή διαχείρισης μισθωτή διαχείρισης εγγραφών.</value>
+  </data>
+  <data name="tenantadmin_settings_externalconnections">
+    <value>Ρύθμιση παραμέτρων για συνδέσεις "Αποστολή προς"</value>
+  </data>
+  <data name="EDiscoveryCrawlLogReadError">
+    <value>Σφάλμα κατά την ανάκτηση</value>
+  </data>
+  <data name="EDiscoveryCrawlLogNotApplicable">
+    <value>Δ/Υ</value>
+  </data>
+  <data name="EDiscoveryErrorExportName">
+    <value>Σφάλματα {0}</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelected">
+    <value>Δεν υπάρχουν προελεύσεις σε αυτό το σύνολο eDiscovery.  Για να προσθέσετε προελεύσεις, κάντε κλικ στο "{0}".</value>
+  </data>
+  <data name="EDiscoveryNoSourcesSelectedQueries">
+    <value>Δεν υπάρχουν προελεύσεις αυτού του τύπου στο ερώτημα.  Για να προσθέσετε προελεύσεις, κάντε κλικ στο "{0}".</value>
+  </data>
+  <data name="EDiscoveryUniqueCustodianName">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="export_YesValue">
+    <value>Ενεργοποίηση</value>
+  </data>
+  <data name="export_NoValue">
+    <value>Απενεργοποίηση</value>
+  </data>
+  <data name="EDiscoveryExportPageTitle" xml:space="preserve">
+    <value>Εξαγωγή: Λήψη</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageClose" xml:space="preserve">
+    <value>Kλείσιμο</value>
+    
+  </data>
+  <data name="EDiscoveryExportPageUpdateStatistics" xml:space="preserve">
+    <value>Ενημέρωση στατιστικών</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsHeader" xml:space="preserve">
+    <value>Επιλογές</value>
+    
+  </data>
+  <data name="EDiscoveryExportOptionsDescription" xml:space="preserve">
+    <value>Επιλέξτε το όνομα και τις επιλογές για την εξαγωγή.  Οι εξαγωγές περιλαμβάνουν ένα αρχείο φόρτωσης του μοντέλου αναφοράς ηλεκτρονικών δεδομένων (EDRM).</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadResultsLink" xml:space="preserve">
+    <value>Λήψη αποτελεσμάτων</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadReportLink" xml:space="preserve">
+    <value>Λήψη αναφοράς</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadHeader" xml:space="preserve">
+    <value>Εξαγωγή λήψης</value>
+    
+  </data>
+  <data name="EDiscoveryExportDownloadDescription" xml:space="preserve">
+    <value>Θέλετε να πραγματοποιήσετε λήψη όλων των αποτελεσμάτων αναζήτησης και μιας αναφοράς με τη λίστα των αποτελεσμάτων αναζήτησης τώρα ή να κλείσετε αυτήν την οθόνη και να πραγματοποιήσετε λήψη αργότερα;</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewHeader" xml:space="preserve">
+    <value>Επιλογή ερωτημάτων</value>
+    
+  </data>
+  <data name="EDiscoveryExportNewDescription" xml:space="preserve">
+    <value>Επιλέξτε τα ερωτήματα που θέλετε να εξαγάγετε.</value>
+    
+  </data>
+  <data name="EDiscoveryExportEllipsis" xml:space="preserve">
+    <value>...</value>
+    
+  </data>
+  <data name="EDiscoveryExportStatisticsError" xml:space="preserve">
+    <value>Σφάλμα</value>
+    
+  </data>
+  <data name="EDiscoveryBrowseMailSearch">
+    <value>Αναζήτηση</value>
+  </data>
+  <data name="EDiscoveryRetryPreservation">
+    <value>Επανάληψη διατήρησης</value>
+  </data>
+  <data name="EDiscoveryRevalidateSource">
+    <value>Επίλυση προέλευσης</value>
+  </data>
+  <data name="EDiscoveryRevalidateSourceToolTip">
+    <value>Έχει αλλάξει η διεύθυνση URL ή η διεύθυνση για αυτήν την προέλευση. Κάντε κλικ εδώ, για να ενημερώσετε τη νέα διεύθυνση URL ή τη διεύθυνση.</value>
+  </data>
+  <data name="EDiscoverySourceRequiredFieldText">
+    <value>Αυτό το πεδίο είναι υποχρεωτικό.</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyName">
+    <value>{0} - Αντίγραφο</value>
+  </data>
+  <data name="EDiscoverySavedSearchCopyNameUnique">
+    <value>{0} - Αντίγραφο ({1})</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPaths">
+    <value>Αυτή η θέση είναι η ρίζα μιας εφαρμογής Web ή μια διαχειριζόμενη διαδρομή και περιέχει πολλαπλές συλλογές τοποθεσιών. Θα διατηρηθεί μόνο η ριζική συλλογή τοποθεσιών, ωστόσο τα αποτελέσματα αναζήτησης και οι εξαγωγές θα περιλαμβάνουν όλες τις συλλογές τοποθεσιών που βρίσκονται σε αυτήν τη διαδρομή.</value>
+  </data>
+  <data name="EDiscoveryRootSiteWithManagedPathsConfirmation">
+    <value>Η θέση είναι η ρίζα μιας εφαρμογής Web ή μια διαχειριζόμενη διαδρομή και περιέχει πολλαπλές συλλογές τοποθεσιών. Θα διατηρηθεί μόνο η ριζική συλλογή τοποθεσιών, ωστόσο τα αποτελέσματα αναζήτησης και οι εξαγωγές θα περιλαμβάνουν όλες τις συλλογές τοποθεσιών που βρίσκονται σε αυτήν τη διαδρομή. Επιλέξτε "OK" για να αποδεχθείτε τη θέση σας ή "Άκυρο" για να την αλλάξετε.</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLink">
+    <value>Κάντε κλικ για τη {0}δημιουργία{1} νέας υπόθεσης</value>
+  </data>
+  <data name="EDiscoveryCreateNewCaseLastModified">
+    <value>Τροποποίηση {0}</value>
+  </data>
+  <data name="EDiscoveryCasesQuickLaunchTitle">
+    <value>Υποθέσεις</value>
+  </data>
+  <data name="EDiscoveryCollectionsTooManySourcesWarning">
+    <value>Αυτό το σύνολο eDiscovery περιέχει περισσότερες από το όριο των προελεύσεων (100 προελεύσεις του SharePoint ή 1000 γραμματοκιβώτια).  Για να λάβετε στατιστικά στοιχεία και αποτελέσματα, κάντε κλικ στο κουμπί "Προσθήκη &amp; διαχείριση προελεύσεων" και μειώστε τον αριθμό των προελεύσεων.</value>
+  </data>
+  <data name="EDiscoveryQueriesTooManySourcesWarning">
+    <value>Αυτό το ερώτημα περιέχει περισσότερες από το όριο των προελεύσεων (100 προελεύσεις του SharePoint ή 1000 γραμματοκιβώτια).  Για να λάβετε αποτελέσματα, κάντε κλικ στην επιλογή "Τροποποίηση εμβέλειας ερωτήματος" και περιορίστε το ερώτημα αναζήτησης.</value>
+  </data>
+  <data name="EDiscoveryExportTooManySourcesWarning">
+    <value>Αυτή η εξαγωγή περιέχει περισσότερες από το όριο των προελεύσεων (100 προελεύσεις του SharePoint ή 1000 γραμματοκιβώτια).  Για να εκτελέσετε αυτήν την εξαγωγή, μειώστε τον αριθμό των προελεύσεων στα συσχετισμένα ερωτήματα ή επιλέξτε λιγότερα ερωτήματα.</value>
+  </data>
+  <data name="ediscoverysearch_stem">
+    <value>Αποκοπή καταλήξεων</value>
+  </data>
+  <data name="ediscoverysearch_dedup">
+    <value>Κατάργηση διπλοτύπων</value>
+  </data>
+</root>

@@ -1,0 +1,3631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- _version="15.0.4569.1502" -->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+  <data name="PortalTitle">
+    <value>主页</value>
+  </data>
+  <data name="SampleEventItem">
+    <value>全新 SharePoint Server!</value>
+  </data>
+  <data name="SearchDiscussions">
+    <value>搜索讨论</value>
+  </data>
+  <data name="SetupMySite">
+    <value>设置“我的网站”</value>
+  </data>
+  <data name="CategoriesTabComment">
+    <value>单击可查看类别</value>
+  </data>
+  <data name="TopSitesTabComment">
+    <value>单击可查看首要网站</value>
+  </data>
+  <data name="SiteMapTabComment">
+    <value>单击可查看网站地图</value>
+  </data>
+  <data name="CategoriesTab">
+    <value>类别</value>
+  </data>
+  <data name="TopSitesTab">
+    <value>首要网站</value>
+  </data>
+  <data name="SiteMapTab">
+    <value>网站地图</value>
+  </data>
+  <data name="DocumentsTab">
+    <value>所有网站</value>
+  </data>
+  <data name="DocumentsTabComment">
+    <value>单击可查看所有网站的结果</value>
+  </data>
+  <data name="PeopleTab">
+    <value>人员</value>
+  </data>
+  <data name="PeopleTabComment">
+    <value>单击可查看人员结果</value>
+  </data>
+  <data name="DiscussionsTab">
+    <value>讨论</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_UsageReportingTitle">
+    <value>SharePoint Server 使用率报告</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ConfigureUsageReporting">
+    <value>使用率报告</value>
+  </data>
+  <data name="AnalyticsSSPAdmin_ViewUsageData">
+    <value>搜索使用率报告</value>
+  </data>
+  <data name="Analytics_ViewSiteUsageData">
+    <value>网站使用率报告</value>
+  </data>
+  <data name="Analytics_ViewSiteCollectionUsageData">
+    <value>网站集使用率报告</value>
+  </data>
+  <data name="ProfilesOnet_DocLibTitle">
+    <value>文档库</value>
+  </data>
+  <data name="ProfilesOnet_DocLibDesc">
+    <value>提供一个存储此区域的文档的位置。</value>
+  </data>
+  <data name="ProfilesOnet_ModuleTitle">
+    <value>业务数据配置文件模板</value>
+  </data>
+  <data name="ReportCenterOnet_TopNavLink">
+    <value>SharePoint 顶部导航栏</value>
+  </data>
+  <data name="ReportCenterOnet_ReportsLink">
+    <value>报告</value>
+  </data>
+  <data name="ReportCenterOnet_DashboardsLink">
+    <value>仪表板</value>
+  </data>
+  <data name="ReportCenterOnet_SamplePageLink">
+    <value>示例</value>
+  </data>
+  <data name="ReportCenterOnet_ResourcesLink">
+    <value>资源</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsLink">
+    <value>数据连接</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarLink">
+    <value>报告日历</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryLink">
+    <value>引用库</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListName">
+    <value>报告库</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListDescription">
+    <value>可轻松创建和管理网页与文档以跟踪度量单位、目标和商务智能信息的位置。</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListName">
+    <value>状态列表</value>
+  </data>
+  <data name="ReportCenterOnet_KPIListDescription">
+    <value>跟踪和显示一组目标的位置。带颜色的图标显示目标实现的程度。</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListName">
+    <value>Web 部件页文档库</value>
+  </data>
+  <data name="ReportCenterOnet_WebPartPageListDescription">
+    <value>使用 Web 部件页模板的文档库。</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceName">
+    <value>报告库</value>
+  </data>
+  <data name="ReportCenterOnet_ReportListInstanceDescription">
+    <value>报告库可为报告管理提供增强支持，可以显示状态指标和 Excel 工作簿。</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceName">
+    <value>引用库</value>
+  </data>
+  <data name="ReportCenterOnet_ReferenceLibraryInstanceDescription">
+    <value>存储说明如何使用此网站的信息的库。</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceName">
+    <value>报告日历</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCalendarListInstanceDescription">
+    <value>使用日历可发布与此区域相关的事件。</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceName">
+    <value>数据连接</value>
+  </data>
+  <data name="ReportCenterOnet_DataConnectionsListInstanceDescription">
+    <value>通过数据连接库，可以轻松共享便于用户连接到外部数据源的文件。</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceName">
+    <value>通知</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListInstanceDescription">
+    <value>使用“通知”列表可发布与此区域相关的消息。</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListTitle">
+    <value>欢迎使用“报告中心”</value>
+  </data>
+  <data name="ReportCenterOnet_AnnouncementsListBody">
+    <value>报告中心使您可以创建、分发和管理业务信息。</value>
+  </data>
+  <data name="ReportCenterOnet_SiteTemplateGalleryListInstanceName">
+    <value>网站模板库</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceName">
+    <value>示例指标</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpisListInstanceDescription">
+    <value>默认情况下在此报告中心的主页上显示的示例状态指标。</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiMoraleTitle">
+    <value>活动费</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiProductivityTitle">
+    <value>工作效率</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiExpensesTitle">
+    <value>支出</value>
+  </data>
+  <data name="ReportCenterOnet_SampleKpiDescription">
+    <value>这是一个示例指标，可以安全地删除。</value>
+  </data>
+  <data name="ReportCenterOnet_DefaultPageName">
+    <value>报告中心</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Title">
+    <value>使用“报告中心”</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Description">
+    <value>用于带格式的文本、表格和图像。</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header1">
+    <value>报告中心功能包括:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line1">
+    <value>&amp;lt;a href="../Lists/Sample KPIs/KPIListViewPage.aspx" &amp;gt;关键绩效指标&amp;lt;/A&amp;gt; (KPI)使您可以传达目标和趋势，并跟踪进度。</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line2">
+    <value>&amp;lt;A&amp;gt;仪表板&amp;lt;/A&amp;gt;使您可以使用 Excel 工作簿和 KPI 对信息提供更详细的解释。通过仪表板筛选器可轻松选择要查看的一系列信息。若要创建自己的仪表板，请转到报告库的&amp;lt;A href="../ReportsLibrary/Forms/scsummpg.aspx" &amp;gt;仪表板&amp;lt;/A&amp;gt;视图，然后单击“新建”。</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line3">
+    <value>&amp;lt;A href="../ReportsLibrary/forms/current.aspx" &amp;gt;报告&amp;lt;/A&amp;gt;库设计用于存储包含报告和仪表板的文件，并可轻松访问以前各时间段的信息。</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Header2">
+    <value>若准备使用此报告中心，建议执行以下操作:</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line4">
+    <value>查看示例&amp;lt;A &amp;gt;仪表板&amp;lt;/A&amp;gt;和&amp;lt;A&amp;gt;工作簿&amp;lt;/A&amp;gt;，了解此报告中心的某些功能</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line5">
+    <value>如果示例无法正常工作，请咨询管理员，确保已启用 Excel Services 并且此报告中心是受信任的位置</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line6">
+    <value>如果计划使用 Excel 分析现有数据服务器中的信息，请创建数据连接(ODC)文件，并将其上载到&amp;lt;A title="" href="../Data Connections" target="" &amp;gt;数据连接库&amp;lt;/A&amp;gt;。如果希望用户新建 KPI 列表，则可将其添加到“所有者”组。“成员”组中的用户可以编辑页面，但无法创建 KPI 列表。</value>
+  </data>
+  <data name="ReportCenterOnet_CEWP_Line7">
+    <value>更新或删除示例内容</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Title">
+    <value>突出显示</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Group">
+    <value>其他信息</value>
+  </data>
+  <data name="ReportCenterOnet_SLWP_Link">
+    <value>快速参考指南</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Title">
+    <value>联系人详细信息</value>
+  </data>
+  <data name="ReportCenterOnet_CWP_Description">
+    <value>用于显示有关此网页或网站的联系人的详细信息。</value>
+  </data>
+  <data name="ReportCenterOnet_EventsWP_Title">
+    <value>即将发生的事件</value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutTitle">
+    <value>报告中心页面</value>
+  </data>
+  <data name="BizAppsFields_KpiGroup">
+    <value>状态指标</value>
+  </data>
+  <data name="BizAppsFields_ReportGroup">
+    <value>报告</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Name">
+    <value>说明</value>
+  </data>
+  <data name="BizAppsFields_KpiDescription_Description">
+    <value>此说明提供有关目标的目的信息。</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Name">
+    <value>指标备注</value>
+  </data>
+  <data name="BizAppsFields_KpiComments_Description">
+    <value>备注说明指标的当前状态，并且可能提供有关原因或问题的信息。</value>
+  </data>
+  <data name="BizAppsFields_KpiValue_Name">
+    <value>指标值</value>
+  </data>
+  <data name="BizAppsFields_KpiGoal_Name">
+    <value>指标目标阈值</value>
+  </data>
+  <data name="BizAppsFields_KpiWarning_Name">
+    <value>指标警告阈值</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Name">
+    <value>详细信息链接</value>
+  </data>
+  <data name="BizAppsFields_KpiDetailLink_Description">
+    <value>单击可查看详细信息的页面链接 </value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Name">
+    <value>值越小越好</value>
+  </data>
+  <data name="BizAppsFields_KpiLowerValuesAreBetter_Description">
+    <value>越小越好还是越大越好</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Name">
+    <value>自动更新</value>
+  </data>
+  <data name="BizAppsFields_KpiAutoUpdate_Description">
+    <value>是否每次都提取后端数据</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Name">
+    <value>更新错误</value>
+  </data>
+  <data name="BizAppsFields_KpiUpdateError_Description">
+    <value>包含来自上次更新的错误消息(如果存在)</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Name">
+    <value>数据源</value>
+  </data>
+  <data name="BizAppsFields_KpiDataSource_Description">
+    <value>指向数据源的 URL</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Name">
+    <value>视图 GUID</value>
+  </data>
+  <data name="BizAppsFields_KpiViewGuid_Description">
+    <value>视图的 GUID</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Name">
+    <value>视图名称</value>
+  </data>
+  <data name="BizAppsFields_KpiViewName_Description">
+    <value>视图的名称</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Name">
+    <value>值表达式</value>
+  </data>
+  <data name="BizAppsFields_KpiValueExpression_Description">
+    <value>用于确定指标值的表达式。</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Name">
+    <value>百分比表达式</value>
+  </data>
+  <data name="BizAppsFields_KpiPercentExpression_Description">
+    <value>确定是否使用此表达式来计算百分比</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Name">
+    <value>值工作表</value>
+  </data>
+  <data name="BizAppsFields_KpiValueSheet_Description">
+    <value>值工作表的名称</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Name">
+    <value>值单元格</value>
+  </data>
+  <data name="BizAppsFields_KpiValueCell_Description">
+    <value>值单元格的地址或名称</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Name">
+    <value>目标工作表</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalSheet_Description">
+    <value>目标工作表的名称</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Name">
+    <value>目标单元格</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalCell_Description">
+    <value>目标单元格的地址或名称</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Name">
+    <value>警告工作表</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningSheet_Description">
+    <value>警告工作表的名称</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Name">
+    <value>警告单元格</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningCell_Description">
+    <value>警告单元格的地址或名称</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Name">
+    <value>来自工作簿的目标</value>
+  </data>
+  <data name="BizAppsFields_KpiGoalFromWorkbook_Description">
+    <value>目标来自工作簿还是指标定义</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Name">
+    <value>来自工作簿的警告</value>
+  </data>
+  <data name="BizAppsFields_KpiWarningFromWorkbook_Description">
+    <value>警告来自工作簿还是指标定义</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Name">
+    <value>趋势</value>
+  </data>
+  <data name="BizAppsFields_KpiTrend_Description">
+    <value>指标的趋势</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Name">
+    <value>指标状态</value>
+  </data>
+  <data name="BizAppsFields_KpiStatus_Description">
+    <value>指标的状态</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Name">
+    <value>显示文件夹</value>
+  </data>
+  <data name="BizAppsFields_KpiDisplayFolder_Description">
+    <value>指标的显示文件夹</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Name">
+    <value>指标</value>
+  </data>
+  <data name="BizAppsFields_KpiASName_Description">
+    <value>Microsoft SQL Server 2005 Analysis Services KPI 的名称</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Name">
+    <value>包含子指标</value>
+  </data>
+  <data name="BizAppsFields_KpiIncludeHierarchy_Description">
+    <value>是否包含子 KPI</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Name">
+    <value>带格式的指标值</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedValue_Description">
+    <value>指标的值，已由其数据源提供程序设置了格式</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Name">
+    <value>带格式的指标目标</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedGoal_Description">
+    <value>指标的目标，已由其数据源提供程序设置了格式</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Name">
+    <value>带格式的指标警告</value>
+  </data>
+  <data name="BizAppsFields_KpiFormattedWarning_Description">
+    <value>指标的警告值，已由其数据源提供程序设置了格式</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Name">
+    <value>最新指标数据更新</value>
+  </data>
+  <data name="BizAppsFields_KpiLastUpdated_Description">
+    <value>来自指标数据源提供程序的最新指标更新</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Name">
+    <value>报告说明</value>
+  </data>
+  <data name="BizAppsFields_ReportDescription_Description">
+    <value>报告内容的说明</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Name">
+    <value>保存到报告历史记录</value>
+  </data>
+  <data name="BizAppsFields_ReportSaveToReportHistory_Description">
+    <value>每次保存此文档都会向报告历史记录中添加一份副本。</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Name">
+    <value>父 ID</value>
+  </data>
+  <data name="BizAppsFields_ReportParentID_Description">
+    <value>此报告的父 ID</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Name">
+    <value>所有者</value>
+  </data>
+  <data name="BizAppsFields_ReportOwner_Description">
+    <value>此文档的所有者</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Name">
+    <value>报告类别</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Description">
+    <value>报告的类别</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice1">
+    <value>类别 1</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice2">
+    <value>类别 2</value>
+  </data>
+  <data name="BizAppsFields_ReportCategory_Choice3">
+    <value>类别 3</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Name">
+    <value>报告状态</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Description">
+    <value>报告的状态</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Final">
+    <value>最终</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_Preliminary">
+    <value>初步</value>
+  </data>
+  <data name="BizAppsFields_ReportStatus_PeriodToDate">
+    <value>当前</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_Name">
+    <value>历史记录</value>
+  </data>
+  <data name="BizAppsFields_ReportHistory_ViewHistory">
+    <value>查看历史记录</value>
+  </data>
+  <data name="BizAppsFields_ReportName_Name">
+    <value>名称</value>
+  </data>
+  <data name="BizAppsFields_ReportDisplayName_Name">
+    <value>名称</value>
+  </data>
+  <data name="BizAppsFields_ReportName_New_AltText">
+    <value>新建</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedLink_Name">
+    <value>报告已修改的链接</value>
+  </data>
+  <data name="BizAppsFields_ReportCreated_Name">
+    <value>报告创建时间</value>
+  </data>
+  <data name="BizAppsFields_SnapshottedValue_AuthoringInfo">
+    <value>(快照值)</value>
+  </data>
+  <data name="BizAppsFields_ReportCreatedBy_Name">
+    <value>报告创建者</value>
+  </data>
+  <data name="BizAppsFields_ReportModified_Name">
+    <value>报告修改时间</value>
+  </data>
+  <data name="BizAppsFields_ReportModifiedBy_Name">
+    <value>报告修改者</value>
+  </data>
+  <data name="BizAppsFields_ParentName_Name">
+    <value>报告父级名称</value>
+  </data>
+  <data name="BizAppsFields_ParentName_AuthoringInfo">
+    <value>(快照父级的名称)</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_Name">
+    <value>链接到报告</value>
+  </data>
+  <data name="BizAppsFields_ReportLink_AuthoringInfo">
+    <value>(链接到带编辑菜单的报告)</value>
+  </data>
+  <data name="BizAppsContentTypes_BIGroup_Name">
+    <value>商务智能</value>
+  </data>
+  <data name="BizAppsContentTypes_CommonIndicatorColumns">
+    <value>公用指标列</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI">
+    <value>基于固定值的状态指标</value>
+  </data>
+  <data name="BizAppsContentTypes_StaticKPI_Desc">
+    <value>使用手动输入的信息创建新的状态指标</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI">
+    <value>基于 SharePoint 列表的状态指标</value>
+  </data>
+  <data name="BizAppsContentTypes_SharePointKPI_Desc">
+    <value>使用 SharePoint 列表中的数据创建新的状态指标</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI">
+    <value>基于 Excel 的状态指标</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelKPI_Desc">
+    <value>使用 Excel Services 中的数据创建新的状态指标</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI">
+    <value>基于 SQL Server Analysis Services 的状态指标</value>
+  </data>
+  <data name="BizAppsContentTypes_ASKPI_Desc">
+    <value>使用 SQL Server Analysis Services 中的数据创建新的状态指标</value>
+  </data>
+  <data name="BizAppsContentTypes_Report">
+    <value>报告</value>
+  </data>
+  <data name="BizAppsContentTypes_Dashboard">
+    <value>具有状态列表的 Web 部件页</value>
+  </data>
+  <data name="Dashboard_Description">
+    <value>创建用于显示状态指标和 Excel 工作簿的页面。</value>
+  </data>
+  <data name="BizAppsContentTypes_ExcelReport">
+    <value>Excel 报告</value>
+  </data>
+  <data name="ReportListTemplate_AllDashboardsView">
+    <value>仪表板</value>
+  </data>
+  <data name="ReportListTemplate_CurrentReportsView">
+    <value>当前报告</value>
+  </data>
+  <data name="ReportListTemplate_RecentlyUpdatedView">
+    <value>所有报告和仪表板</value>
+  </data>
+  <data name="ReportListTemplate_HistoryView">
+    <value>最近更新</value>
+  </data>
+  <data name="ReportListTemplate_ExcelProfilePageDescription">
+    <value>Excel 文件的详细报告页。</value>
+  </data>
+  <data name="DashboardTemplate_TopLeftZone">
+    <value>顶部左侧区域</value>
+  </data>
+  <data name="DashboardTemplate_TopRightZone">
+    <value>顶部右侧区域</value>
+  </data>
+  <data name="DashboardTemplate_FilterZone">
+    <value>筛选器区域</value>
+  </data>
+  <data name="DashboardTemplate_FilterZoneButtonText">
+    <value>添加筛选器</value>
+  </data>
+  <data name="DashboardTemplate_BottomLeftZone">
+    <value>底部左侧区域</value>
+  </data>
+  <data name="DashboardTemplate_BottomMiddleZone">
+    <value>底部中间区域</value>
+  </data>
+  <data name="DashboardTemplate_BottomRightZone">
+    <value>底部右侧区域</value>
+  </data>
+  <data name="ScorecardTemplate_TopZone">
+    <value>顶部区域</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleLeftZone">
+    <value>中部左侧区域</value>
+  </data>
+  <data name="ScorecardTemplate_MiddleRightZone">
+    <value>中部右侧区域</value>
+  </data>
+  <data name="ScorecardTemplate_BottomZone">
+    <value>底部区域</value>
+  </data>
+  <data name="KPIListTemplate_AllItemsView">
+    <value>所有项目</value>
+  </data>
+  <data name="KPIListTemplate_KPIListView">
+    <value>状态列表</value>
+  </data>
+  <data name="KPIListWebPart_Title">
+    <value>状态列表</value>
+  </data>
+  <data name="KPIListWebPart_Description">
+    <value>显示状态指标列表。状态指标显示组织的重要度量，并显示组织相对于您的目标的表现水平。</value>
+  </data>
+  <data name="IndicatorWebPart_Title">
+    <value>状态指标详细信息</value>
+  </data>
+  <data name="IndicatorWebPart_Description">
+    <value>显示单个状态指标的详细信息。状态指标显示组织的重要度量，这些度量可以从其他数据源获取，包括 SharePoint 列表、Excel 工作簿和 SQL Server 2005 Analysis Services KPI。</value>
+  </data>
+  <data name="BusinessDataField_BusinessData">
+    <value>业务数据</value>
+  </data>
+  <data name="BusinessDataField_Yes">
+    <value>是</value>
+  </data>
+  <data name="BusinessDataField_No">
+    <value>否</value>
+  </data>
+  <data name="BusinessDataField_Empty">
+    <value>(空)</value>
+  </data>
+  <data name="BusinessDataField_All">
+    <value>(全部)</value>
+  </data>
+  <data name="BusinessDataField_Update">
+    <value>(更新)</value>
+  </data>
+  <data name="BusinessDataField_UpdateImageAlt">
+    <value>更新</value>
+  </data>
+  <data name="BusinessDataField_Blank">
+    <value>(空白)</value>
+  </data>
+  <data name="BusinessDataField_Asc">
+    <value>升序</value>
+  </data>
+  <data name="BusinessDataField_Desc">
+    <value>降序</value>
+  </data>
+  <data name="BusinessDataField_Filterby">
+    <value>筛选依据 </value>
+  </data>
+  <data name="BusinessDataField_Sortby">
+    <value>排序依据 </value>
+  </data>
+  <data name="TargetToField_DisplayName">
+    <value>访问群体设定</value>
+  </data>
+  <data name="TargetToField_Description">
+    <value>目标访问群体(基于规则的访问群体；SharePoint 组；通讯组列表)</value>
+  </data>
+  <data name="TargetToField_Targeted">
+    <value>已设定目标</value>
+  </data>
+  <data name="TargetToField_NotTargeted">
+    <value>未设定目标</value>
+  </data>
+  <data name="TargetToField_AllowGlobalAudience">
+    <value>允许全局访问群体</value>
+  </data>
+  <data name="TargetToField_AllowDL">
+    <value>允许通讯组列表</value>
+  </data>
+  <data name="TargetToField_AllowSPGroup">
+    <value>允许 SharePoint 组</value>
+  </data>
+  <data name="SiteDirectoryPageTitle">
+    <value>网站目录</value>
+  </data>
+  <data name="SiteDirectorySiteMapPageTitle">
+    <value>网站地图</value>
+  </data>
+  <data name="SiteDirectoryCatResPageTitle">
+    <value>按类别划分的网站</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageTitle">
+    <value>首要网站</value>
+  </data>
+  <data name="SiteDirectoryPageDescription">
+    <value>“网站目录”是一种可按类别分组的网站编录。若要向“网站目录”提交网站，请选择此页面右上角的“创建网站”或“向网站添加链接”。</value>
+  </data>
+  <data name="SiteDirectoryTopSitesPageDescription">
+    <value>若要添加首要网站，请将链接添加至网站目录列表，然后将此链接标记为“首要网站”。请通过向网站目录添加链接并将其作为首要网站提交开始操作。</value>
+  </data>
+  <data name="RelatedLinksScopeSettingsLink_Text">
+    <value>相关链接范围设置</value>
+  </data>
+  <data name="NewsArticleWithPictTitle">
+    <value>包含图片的新闻文章</value>
+  </data>
+  <data name="ExternalNewsArticleTitle">
+    <value>链接到新闻文章</value>
+  </data>
+  <data name="DefaultLayoutTitle">
+    <value>Web 部件区域</value>
+  </data>
+  <data name="NewsHomeLayoutTitle">
+    <value>新闻主页</value>
+  </data>
+  <data name="TabViewPageLayoutTitle">
+    <value>网站目录主页</value>
+  </data>
+  <data name="OfficeServerUpgradeLink">
+    <value>启用企业版功能</value>
+  </data>
+  <data name="DefaultWebPartGroup">
+    <value>默认</value>
+  </data>
+  <data name="FiltersWebPartGroup">
+    <value>筛选器</value>
+  </data>
+  <data name="BusinessDataWebPartGroup">
+    <value>业务数据</value>
+  </data>
+  <data name="DashboardWebPartGroup">
+    <value>仪表板</value>
+  </data>
+  <data name="DwpWsrpConsumerTitle">
+    <value>WSRP Consumer Web 部件</value>
+  </data>
+  <data name="DwpCurrentUserFilterName">
+    <value>当前用户</value>
+  </data>
+  <data name="DwpCurrentUserFilterTitle">
+    <value>当前用户筛选器</value>
+  </data>
+  <data name="DwpCurrentUserFilterDescription">
+    <value>使用当前用户的属性来筛选 Web 部件的内容。</value>
+  </data>
+  <data name="DwpTextFilterTitle">
+    <value>文本筛选器</value>
+  </data>
+  <data name="DwpTextFilterDescription">
+    <value>通过允许用户输入文本值来筛选 Web 部件的内容。</value>
+  </data>
+  <data name="DwpSpListFilterTitle">
+    <value>SharePoint 列表筛选器</value>
+  </data>
+  <data name="DwpSpListFilterDescription">
+    <value>使用值列表来筛选 Web 部件的内容。</value>
+  </data>
+  <data name="DwpQueryStringFilterName">
+    <value>查询字符串</value>
+  </data>
+  <data name="DwpQueryStringFilterTitle">
+    <value>查询字符串(URL)筛选器</value>
+  </data>
+  <data name="DwpQueryStringFilterDescription">
+    <value>使用通过查询字符串传递的值来筛选 Web 部件的内容。</value>
+  </data>
+  <data name="DwpPageContextFilterName">
+    <value>页面字段</value>
+  </data>
+  <data name="DwpPageContextFilterTitle">
+    <value>页面字段筛选器</value>
+  </data>
+  <data name="DwpPageContextFilterDescription">
+    <value>使用有关当前页面的信息来筛选 Web 部件的内容。</value>
+  </data>
+  <data name="DwpOlapFilterTitle">
+    <value>SQL Server Analysis Services 筛选器</value>
+  </data>
+  <data name="DwpOlapFilterDescription">
+    <value>使用 SQL Server Analysis Services 多维数据集中的值列表来筛选 Web 部件的内容。</value>
+  </data>
+  <data name="DwpKpiListTitle">
+    <value>状态指标</value>
+  </data>
+  <data name="DwpIViewTitle">
+    <value>IView Web 部件</value>
+  </data>
+  <data name="DwpKpiTitle">
+    <value>指标详细信息</value>
+  </data>
+  <data name="DwpDateFilterName">
+    <value>日期</value>
+  </data>
+  <data name="DwpDateFilterTitle">
+    <value>日期筛选器</value>
+  </data>
+  <data name="DwpDateFilterDescription">
+    <value>通过允许用户输入或选取日期来筛选 Web 部件的内容。</value>
+  </data>
+  <data name="DwpBdlTitle">
+    <value>业务数据列表</value>
+  </data>
+  <data name="DwpBdlDesc">
+    <value>显示业务数据连接中数据源的项目列表。</value>
+  </data>
+  <data name="DwpBdlCannotImport">
+    <value>无法导入此 Web 部件。</value>
+  </data>
+  <data name="DwpBdcFilterTitle">
+    <value>业务数据连接筛选器</value>
+  </data>
+  <data name="DwpBdcFilterDescription">
+    <value>使用业务数据连接中的值列表来筛选 Web 部件的内容。</value>
+  </data>
+  <data name="DwpBdItemTitle">
+    <value>业务数据项</value>
+  </data>
+  <data name="DwpBdItemDesc">
+    <value>显示业务数据连接中数据源的一个项目。</value>
+  </data>
+  <data name="DwpBdAssociationTitle">
+    <value>与业务数据相关的列表</value>
+  </data>
+  <data name="DwpBdAssociationDesc">
+    <value>显示与业务数据连接中数据源的一个或多个父项相关的项目列表。</value>
+  </data>
+  <data name="DwpBdActionsTitle">
+    <value>业务数据操作</value>
+  </data>
+  <data name="DwpBdActionsDesc">
+    <value>显示业务数据连接中的操作列表。</value>
+  </data>
+  <data name="DwpBdItemBuilderTitle">
+    <value>业务数据项生成器</value>
+  </data>
+  <data name="DwpBdItemBuilderDesc">
+    <value>根据查询字符串中的参数创建业务数据项，然后将其提供给其他 Web 部件。</value>
+  </data>
+  <data name="DwpAuthoredListFilterTitle">
+    <value>选项筛选器</value>
+  </data>
+  <data name="DwpAuthoredListFilterDescription">
+    <value>使用网页作者输入的值列表来筛选 Web 部件的内容。</value>
+  </data>
+  <data name="DwpAuthoredListFilterSampleValues">
+    <value>值 1&amp;值 2&amp;值 3=说明 3</value>
+  </data>
+  <data name="DwpApplyFiltersTitle">
+    <value>“应用筛选器”按钮</value>
+  </data>
+  <data name="DwpApplyFiltersDescription">
+    <value>将此按钮添加到页面上以便用户可以决定何时应用筛选选项。否则，在筛选值发生改变时会应用每个筛选器。</value>
+  </data>
+  <data name="TopSitesWebpartTitle">
+    <value>首要网站</value>
+  </data>
+  <data name="TopSitesWebpartDescription">
+    <value>显示网站目录中的首要网站</value>
+  </data>
+  <data name="NewsHomeLandingPage_Title">
+    <value>新闻</value>
+  </data>
+  <data name="RecentNewsWP_Title">
+    <value>最新新闻</value>
+  </data>
+  <data name="NewsRollUpWP_Title">
+    <value>滚动新闻</value>
+  </data>
+  <data name="ThisWeekInPictWP_Title">
+    <value>本周图片</value>
+  </data>
+  <data name="ThisWeekInPictWP_Desc">
+    <value>显示图像库中的一个图像并链接到一个幻灯片放映，通过该幻灯片放映，用户可以查看该图像库中的所有图像。</value>
+  </data>
+  <data name="RelatedLinksWP_Title">
+    <value>新闻</value>
+  </data>
+  <data name="CompanyNewsArticle_Title">
+    <value>示例新闻文章</value>
+  </data>
+  <data name="CompanyNewsArticle_PageBody">
+    <value>此页面有意留为空白。</value>
+  </data>
+  <data name="NewsArchiveWP_Title">
+    <value>新闻存档</value>
+  </data>
+  <data name="IndustryNewsArticle_Title">
+    <value>业界新闻</value>
+  </data>
+  <data name="MoreNewsWP_Title">
+    <value>更多新闻</value>
+  </data>
+  <data name="KPIList">
+    <value>状态指标列表</value>
+  </data>
+  <data name="KPIList_Desc">
+    <value>状态指标列表用于跟踪和显示一组目标。所显示的带颜色图标用于表示目标实现的程度。</value>
+  </data>
+  <data name="EventsList">
+    <value>事件</value>
+  </data>
+  <data name="EventsList_Desc">
+    <value>使用“事件”列表可发布有关会议、时间期限以及与此区域相关的其他事件的信息。</value>
+  </data>
+  <data name="WPImportErrorMessage">
+    <value>无法导入此 Web 部件。</value>
+  </data>
+  <data name="HomeLandingPage_Title">
+    <value>主页</value>
+  </data>
+  <data name="HomePageImageWP_Title">
+    <value>主页图像 Web 部件</value>
+  </data>
+  <data name="HomePageImageWP_Desc">
+    <value>显示主页图像</value>
+  </data>
+  <data name="HomePageImageWP_ToolTip">
+    <value>主页图像</value>
+  </data>
+  <data name="ContentEditorWP_Title">
+    <value>内容编辑器</value>
+  </data>
+  <data name="ContentEditorWP_Desc">
+    <value>允许作者输入 RTF 格式文本内容。</value>
+  </data>
+  <data name="INeedToWP_Title">
+    <value>我需要...</value>
+  </data>
+  <data name="EmployeeLookupWP_Title">
+    <value>员工查找</value>
+  </data>
+  <data name="EmployeeLookupWP_Desc">
+    <value>搜索员工</value>
+  </data>
+  <data name="TOCWP_Title">
+    <value>目录</value>
+  </data>
+  <data name="LocalSiteDirectorySettingsLink">
+    <value>网站目录设置</value>
+  </data>
+  <data name="MasterSiteDirectorySettingsLink">
+    <value>配置网站目录</value>
+  </data>
+  <data name="LinksCheckerJobSettingsLink">
+    <value>扫描网站目录链接</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages">
+    <value>页面</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments">
+    <value>共享文档</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments">
+    <value>个人文档</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures">
+    <value>共享图片</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures">
+    <value>用户照片</value>
+  </data>
+  <data name="MySiteHostOnet_List_ProfilePictures_Description">
+    <value>将在此处存储所有用户的配置文件图片。</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPages_Description">
+    <value>使用此文档库可存储您的 Web 部件页。这些部件页将自动在您的公共主页上共享。</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description">
+    <value>使用此文档库可存储您的文档。此处共享的文档将显示在您的公共主页上。</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description">
+    <value>将此文档库用于供个人使用的文档。只有您本人和服务器管理员能看到这些文档。</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyPictures_Description">
+    <value>您可以通过将图片和照片添加到此图片库来与其他人共享。此处存储的图片和照片将共享在您的公共主页上。</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Welcome">
+    <value>“我的网站”入门</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Description">
+    <value>指向有关“我的网站”用法的各种提示的链接。</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments">
+    <value>SharePoint 网站</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_SiteDocuments_Description">
+    <value>有关该用户为其成员的网站的详细信息</value>
+  </data>
+  <data name="MySiteMaster_Title">
+    <value>我的网站母版页</value>
+  </data>
+  <data name="MySiteMaster_Description">
+    <value>提供我的网站的独特外观。</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog">
+    <value>最新博客文章</value>
+  </data>
+  <data name="MySiteOnet_WebPart_Blog_Description">
+    <value>该用户的最新博客文章</value>
+  </data>
+  <data name="BlogWebpart_CreatePost_Text">
+    <value>添加新文章</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter">
+    <value>共享中心</value>
+  </data>
+  <data name="MySiteOnet_WebPart_SharingCenter_Description">
+    <value>用户将用于共享项目的中心 Web 部件。</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Title">
+    <value>近期活动</value>
+  </data>
+  <data name="MySiteOnet_WebPart_MyActivityTracker_Description">
+    <value>显示我的近期活动的 Web 部件。</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Title">
+    <value>专业领域</value>
+  </data>
+  <data name="MySiteOnet_WebPart_AskMeAbout_Description">
+    <value>显示其他人可以询问我有关问题的关键字列表。</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks">
+    <value>我的链接</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_MyLinks_Description">
+    <value>显示已创建的链接。</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar">
+    <value>我的日历</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Calendar_Description">
+    <value>使用 Microsoft Exchange Server 2003 或更高版本的 Outlook Web Access 显示您的日历。</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues">
+    <value>同事跟踪程序</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Colleagues_Description">
+    <value>显示您的同事列表以及他们最近的更改。</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships">
+    <value>我的成员资格</value>
+  </data>
+  <data name="PersonalSiteOnet_WebPart_Memberships_Description">
+    <value>显示您作为其成员的组。</value>
+  </data>
+  <data name="ProfileAdminLinks_SectionTitle">
+    <value>用户配置文件和我的网站</value>
+  </data>
+  <data name="AudienceAdminLinks_SectionTitle">
+    <value>访问群体</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageProfiles">
+    <value>用户配置文件和属性</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageAudiences">
+    <value>访问群体</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePrivacyPolicy">
+    <value>配置文件服务策略</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePersonalSites">
+    <value>我的网站设置</value>
+  </data>
+  <data name="ProfileAdminLinks_TrustedPersonalSites">
+    <value>受信任的我的网站宿主位置</value>
+  </data>
+  <data name="ProfileAdminLinks_PublishedLinks">
+    <value>Office 客户端应用程序的已发布链接</value>
+  </data>
+  <data name="ProfileAdminLinks_PersonalizationLinks">
+    <value>个性化网站链接</value>
+  </data>
+  <data name="ProfileAdminLinks_ManagePermissions">
+    <value>个性化服务权限</value>
+  </data>
+  <data name="ProfileAdminLinks_ManageOrgsDelegationSettings">
+    <value>组织委托设置</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Title">
+    <value>业务数据项</value>
+  </data>
+  <data name="BusinessDataItemWebPart_Description">
+    <value>显示业务数据项详细信息的 Web 部件</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Title">
+    <value>业务数据操作</value>
+  </data>
+  <data name="BusinessDataActionWebPart_Description">
+    <value>用于显示业务数据操作的 Web 部件</value>
+  </data>
+  <data name="BDC_LinksTitle">
+    <value>业务数据连接</value>
+  </data>
+  <data name="BDC_AddApplicationLink">
+    <value>导入应用程序定义</value>
+  </data>
+  <data name="BDC_ViewApplicationsLink">
+    <value>查看应用程序</value>
+  </data>
+  <data name="BDC_ViewEntitiesLink">
+    <value>查看实体</value>
+  </data>
+  <data name="BDC_ProfilePageLink">
+    <value>编辑配置文件页面模板</value>
+  </data>
+  <data name="BDC_ManagePermissionsLink">
+    <value>业务数据连接权限</value>
+  </data>
+  <data name="SSO_ManageSsoLinkFromCentralAdmin">
+    <value>管理单一登录(SSO)的配置设置</value>
+  </data>
+  <data name="TabsList_TabName_Text">
+    <value>选项卡名称</value>
+  </data>
+  <data name="TabsList_TabName_Description">
+    <value>这是选项卡标签文本。</value>
+  </data>
+  <data name="TabsList_Page_Text">
+    <value>页面</value>
+  </data>
+  <data name="TabsList_Page_Description">
+    <value>键入将显示在该选项卡上的页面名称。如果尚未创建页面，请使用“网站操作”中的“创建页面”选项创建页面。</value>
+  </data>
+  <data name="TabsList_AddNewLink_Text">
+    <value>添加新链接</value>
+  </data>
+  <data name="TabsList_Notes_Text">
+    <value>工具提示</value>
+  </data>
+  <data name="TabsList_Notes_Description">
+    <value>这是用户在此选项卡上移动鼠标指针时将显示的工具提示。</value>
+  </data>
+  <data name="TabsList_AllTabsView_Text">
+    <value>所有选项卡</value>
+  </data>
+  <data name="SitesList_Title_Text">
+    <value>标题</value>
+  </data>
+  <data name="SitesList_Url_Text">
+    <value>URL</value>
+  </data>
+  <data name="SitesList_Description_Text">
+    <value>说明</value>
+  </data>
+  <data name="SitesList_Owner_Text">
+    <value>所有者</value>
+  </data>
+  <data name="SitesList_Division_Text">
+    <value>部门</value>
+  </data>
+  <data name="SitesList_Region_Text">
+    <value>区域</value>
+  </data>
+  <data name="SitesList_SpotlightSite_Text">
+    <value>聚焦网站</value>
+  </data>
+  <data name="SitesList_TopSite_Text">
+    <value>首要网站</value>
+  </data>
+  <data name="SitesList_TasksAndTools_Text">
+    <value>任务和工具</value>
+  </data>
+  <data name="SitesList_LinkStatus_Text">
+    <value>链接状态</value>
+  </data>
+  <data name="SitesList_StatusOk_Text">
+    <value>正常</value>
+  </data>
+  <data name="SitesList_StatusBroken_Text">
+    <value>中断</value>
+  </data>
+  <data name="SitesList_StatusIndeterminate_Text">
+    <value>不确定</value>
+  </data>
+  <data name="SitesList_TopTasks_Text">
+    <value>首要任务</value>
+  </data>
+  <data name="SitesList_International_Text">
+    <value>国际</value>
+  </data>
+  <data name="SitesList_National_Text">
+    <value>国内</value>
+  </data>
+  <data name="SitesList_Local_Text">
+    <value>本地</value>
+  </data>
+  <data name="SitesList_IT_Text">
+    <value>信息技术</value>
+  </data>
+  <data name="SitesList_ResearchAndDevelopment_Text">
+    <value>研发</value>
+  </data>
+  <data name="SitesList_Sales_Text">
+    <value>销售</value>
+  </data>
+  <data name="SitesList_Finance_Text">
+    <value>财务</value>
+  </data>
+  <data name="SitesList_AllSitesViewName_Text">
+    <value>所有网站</value>
+  </data>
+  <data name="SitesList_SummaryViewName_Text">
+    <value>摘要</value>
+  </data>
+  <data name="SitesList_ManageSitesViewName_Text">
+    <value>管理网站</value>
+  </data>
+  <data name="SitesList_SubmittedSitesViewName_Text">
+    <value>已提交的网站</value>
+  </data>
+  <data name="SitesList_CategoriesViewName_Text">
+    <value>类别</value>
+  </data>
+  <data name="SitesList_RejectedSitesViewName_Text">
+    <value>已拒绝的网站</value>
+  </data>
+  <data name="SitesList_CaptureViewName_Text">
+    <value>网站创建类别</value>
+  </data>
+  <data name="SitesList_BrokenSitesViewName_Text">
+    <value>断开的网站</value>
+  </data>
+  <data name="HomePageContent1">
+    <value>欢迎使用 Microsoft® SharePoint® Server 2013</value>
+  </data>
+  <data name="HomePageContent2">
+    <value>新版 Microsoft SharePoint Server 2013 入门:</value>
+  </data>
+  <data name="HomePageContent3">
+    <value>网站和内容管理</value>
+  </data>
+  <data name="HomePageContent4">
+    <value>新建 &lt;a href="~SiteCollection/_Layouts/CreatePage.aspx"&gt;页面&lt;/a&gt;、&lt;a href="~SiteCollection/_layouts/newsbweb.aspx"&gt;网站&lt;/a&gt;和&lt;a href="~SiteCollection/_layouts/create.aspx"&gt;列表&lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent5">
+    <value>&lt;a href="~SiteCollection/_layouts/aclinv.aspx"&gt;添加用户&lt;/a&gt;到“成员”组以编辑页面</value>
+  </data>
+  <data name="HomePageContent6">
+    <value>通过单击“我的网站”&lt;a href="~SiteCollection/_layouts/MySite.aspx?Redirect=1"&gt;创建个人网站&lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent7">
+    <value>在网站、文档和人员中&lt;a href="~SiteCollection/SearchCenter"&gt;搜索&lt;/a&gt;</value>
+  </data>
+  <data name="HomePageContent8">
+    <value>企业解决方案(需要企业版许可证)</value>
+  </data>
+  <data name="HomePageContent10">
+    <value>创建状态指标和报告</value>
+  </data>
+  <data name="HomePageContent11">
+    <value>通过 Excel Web Access Web 部件查看 Excel 工作簿</value>
+  </data>
+  <data name="HomePageContent12">
+    <value>将 InfoPath 表单部署到文档库</value>
+  </data>
+  <data name="INeedToDefaultChoice">
+    <value>选择任务</value>
+  </data>
+  <data name="SitesOnet_SitesListName">
+    <value>网站列表</value>
+  </data>
+  <data name="SitesOnet_SitesListDescription">
+    <value>使用此列表模板可创建网站列表。</value>
+  </data>
+  <data name="SitesOnet_TabsListName">
+    <value>选项卡列表</value>
+  </data>
+  <data name="SitesOnet_TabsListDescription">
+    <value>使用此列表模板可创建选项卡列表。</value>
+  </data>
+  <data name="EmptyViewText">
+    <value>此视图中没有可显示的项目。</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Title">
+    <value>类别</value>
+  </data>
+  <data name="SitesOnet_TOCWP_Title">
+    <value>网站地图</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Title">
+    <value>按类别划分的网站</value>
+  </data>
+  <data name="PortalManifest_Home_DisplayName">
+    <value>主页</value>
+  </data>
+  <data name="PortalManifest_Home_Description">
+    <value>门户主网站</value>
+  </data>
+  <data name="PortalManifest_Topics_DisplayName">
+    <value>主题</value>
+  </data>
+  <data name="PortalManifest_Topics_Description">
+    <value>主题网站</value>
+  </data>
+  <data name="PortalManifest_Divisions_DisplayName">
+    <value>部门</value>
+  </data>
+  <data name="PortalManifest_Divisions_Description">
+    <value>部门网站</value>
+  </data>
+  <data name="PortalManifest_Sales_DisplayName">
+    <value>销售</value>
+  </data>
+  <data name="PortalManifest_Sales_Description">
+    <value>销售网站</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_DisplayName">
+    <value>研发</value>
+  </data>
+  <data name="PortalManifest_ResearchDev_Description">
+    <value>RD 网站</value>
+  </data>
+  <data name="PortalManifest_HumanResources_DisplayName">
+    <value>人力资源</value>
+  </data>
+  <data name="PortalManifest_HumanResources_Description">
+    <value>人力资源网站</value>
+  </data>
+  <data name="PortalManifest_Products_DisplayName">
+    <value>产品</value>
+  </data>
+  <data name="PortalManifest_Products_Description">
+    <value>产品网站</value>
+  </data>
+  <data name="PortalManifest_News_DisplayName">
+    <value>新闻</value>
+  </data>
+  <data name="PortalManifest_News_Description">
+    <value>公司新闻主页</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_DisplayName">
+    <value>网站</value>
+  </data>
+  <data name="PortalManifest_SiteDirectory_Description">
+    <value>“网站目录”网站</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_DisplayName">
+    <value>搜索</value>
+  </data>
+  <data name="PortalManifest_SearchCenter_Description">
+    <value>搜索中心显示搜索结果</value>
+  </data>
+  <data name="PortalManifest_Reports_DisplayName">
+    <value>报告</value>
+  </data>
+  <data name="PortalManifest_Reports_Description">
+    <value>报告中心</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Title">
+    <value>WSRP 查看器</value>
+  </data>
+  <data name="WSRPConsumerWebPart_Description">
+    <value>使用 WSRP 1.1 显示网站中的 Portlet。</value>
+  </data>
+  <data name="IViewWebPart_Title">
+    <value>iView</value>
+  </data>
+  <data name="IViewWebPart_Description">
+    <value>不推荐使用此 Web 部件。</value>
+  </data>
+  <data name="SitesOnet_SitesList_Title">
+    <value>网站</value>
+  </data>
+  <data name="SitesOnet_SitesList_Description">
+    <value>使用“网站”列表可存储指向网站的链接和网站类别。</value>
+  </data>
+  <data name="SitesOnet_TabsList_Title">
+    <value>选项卡</value>
+  </data>
+  <data name="SitesOnet_TabsList_Description">
+    <value>使用“选项卡”列表可存储指向页面的链接。“选项卡”列表应与网站上的选项卡控件一起使用。</value>
+  </data>
+  <data name="TasksAndTools_GoImage_ToolTip">
+    <value>转到</value>
+  </data>
+  <data name="FieldTypes_Audience_DisplayName">
+    <value>访问群体设定</value>
+  </data>
+  <data name="FieldTypes_Audience_ShortDescription">
+    <value>访问群体设定</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowGlobalAudience">
+    <value>允许全局访问群体</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowDistributionList">
+    <value>允许通讯组列表</value>
+  </data>
+  <data name="FieldTypes_Audience_AllowSharepointGroup">
+    <value>允许 SharePoint 组</value>
+  </data>
+  <data name="FieldTypes_Audience_Targeted">
+    <value>是</value>
+  </data>
+  <data name="FieldTypes_Audience_NotTargeted">
+    <value>否</value>
+  </data>
+  <data name="PersonalWebPartGroup">
+    <value>个人</value>
+  </data>
+  <data name="MySiteQuickAddGroup">
+    <value>我的网站</value>
+  </data>
+  <data name="NavigationWebPartGroup">
+    <value>导航</value>
+  </data>
+  <data name="SiteDirectoryQuickAddGroup">
+    <value>网站目录</value>
+  </data>
+  <data name="ReportCenterCreationFeatureTitle">
+    <value>创建报告中心</value>
+  </data>
+  <data name="ReportCenterCreationFeatureDescription">
+    <value>在 Premium 网站上创建报告中心。</value>
+  </data>
+  <data name="PortalLayouts_Feature_Title">
+    <value>门户布局功能</value>
+  </data>
+  <data name="PortalLayouts_Feature_Description">
+    <value>将所有布局上载到母版页样式库的门户功能。</value>
+  </data>
+  <data name="BrowseNewsArchive_Link">
+    <value>浏览新闻存档</value>
+  </data>
+  <data name="WelcomeLayout2PageLayoutTitle">
+    <value>欢迎页面布局</value>
+  </data>
+  <data name="FeaturePushdownTaskDescription">
+    <value>作为升级的一部分，您已经在 SharePoint 服务器场中安装了附加功能。将在新创建的网站中启用这些功能，但对现有网站尚不可用。通过导航到“在现有网站上启用功能”页面，可以在所有现有网站中启用这些功能。如果现在不希望在所有现有网站启用这些功能，可以删除此任务。您可以在管理中心网站的“操作”页面上随时执行此任务，也可以通过对单个网站使用“网站设置”菜单，在该网站中启用这些功能。</value>
+  </data>
+  <data name="FeaturePushdownTaskTitle">
+    <value>在现有网站上启用新功能</value>
+  </data>
+  <data name="FeaturePushdownLink">
+    <value>在现有网站上启用功能</value>
+  </data>
+  <data name="FCW_FeaturePushdownGroupTitle">
+    <value xml:space="preserve">其他升级任务</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkTitle">
+    <value xml:space="preserve">功能下推</value>
+  </data>
+  <data name="FCW_FeaturePushdownLinkDescription">
+    <value xml:space="preserve">使用功能下推可在现有网站上启用新功能。</value>
+  </data>
+  <data name="RSSViewer_WebPart_Title">
+    <value>RSS 查看器</value>
+  </data>
+  <data name="RSSViewer_WebPart_Description">
+    <value>显示 RSS 源。</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Title_Text">
+    <value>我的 SharePoint 网站</value>
+  </data>
+  <data name="PeopleWebParts_MyDocs_Desc_Text">
+    <value>用于在所属网站和选择的网站上显示您编写的文档。</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Title_Text">
+    <value>SharePoint 文档</value>
+  </data>
+  <data name="PeopleWebParts_MembershipDocs_Desc_Text">
+    <value>用于在用户所属网站上显示其编写的文档。</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Title_Text">
+    <value>网站聚合器</value>
+  </data>
+  <data name="PeopleWebParts_SiteFramer_Desc_Text">
+    <value>显示您选择的网站。</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibTitle">
+    <value>区域文档库</value>
+  </data>
+  <data name="FeatureLegacyV2AreaDocLibDescription">
+    <value>区域文档库是一些文件夹，使您可以很容易地与其他人共享文档。每个库均在可以筛选或排序的列表中显示文档。</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Title_Text">
+    <value>新增功能</value>
+  </data>
+  <data name="PeopleWebParts_ColleagueTracker_Desc_Text">
+    <value>显示您的同事列表以及他们最近的更改。</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Title_Text">
+    <value>兴趣跟踪程序</value>
+  </data>
+  <data name="PeopleWebParts_InterestTracker_Desc_Text">
+    <value>显示您感兴趣领域的近期活动。</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Title_Text">
+    <value>联系人详细信息</value>
+  </data>
+  <data name="PeopleWebParts_ContactDetails_Desc_Text">
+    <value>显示有关此网页或网站的联系人的详细信息。</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Title_Text">
+    <value>我的图片</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_Desc_Text">
+    <value>显示您的图片库中的图片，并可选择以幻灯片放映格式查看。</value>
+  </data>
+  <data name="PeopleWebParts_MyPictures_ImgLib_Text">
+    <value>共享图片</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Title_Text">
+    <value>我的工作区</value>
+  </data>
+  <data name="PeopleWebParts_Workspaces_Desc_Text">
+    <value>显示在“我的网站”下创建的网站。</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Title_Text">
+    <value>我的邮件文件夹</value>
+  </data>
+  <data name="PeopleWebParts_OWA_Desc_Text">
+    <value>使用 Microsoft Exchange Server 2000 版本的 Outlook Web Access 显示您的邮件文件夹。</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Title_Text">
+    <value>我的日历</value>
+  </data>
+  <data name="PeopleWebParts_OWACalendar_Desc_Text">
+    <value>使用 Microsoft Exchange Server 2003 或更高版本的 Outlook Web Access 显示您的日历。</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Title_Text">
+    <value>我的收件箱</value>
+  </data>
+  <data name="PeopleWebParts_OWAInbox_Desc_Text">
+    <value>使用 Microsoft Exchange Server 2003 或更高版本的 Outlook Web Access 显示您的收件箱。</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Title_Text">
+    <value>我的任务</value>
+  </data>
+  <data name="PeopleWebParts_OWATasks_Desc_Text">
+    <value>使用 Microsoft Exchange Server 2003 或更高版本的 Outlook Web Access 显示您的任务。</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Title_Text">
+    <value>我的联系人</value>
+  </data>
+  <data name="PeopleWebParts_OWAContacts_Desc_Text">
+    <value>使用 Microsoft Exchange Server 2003 或更高版本的 Outlook Web Access 显示您的联系人。</value>
+  </data>
+  <data name="PeopleWebParts_Links_Title_Text">
+    <value>我的链接</value>
+  </data>
+  <data name="PeopleWebParts_Links_Desc_Text">
+    <value>用于显示您的链接</value>
+  </data>
+  <data name="WebpartAdderFeatureTitle">
+    <value>Web 部件添加器默认组</value>
+  </data>
+  <data name="WebpartAdderFeatureDescription">
+    <value>在 Web 部件库的 QuickAddGroups 列中添加其他默认组</value>
+  </data>
+  <data name="BDC_ActionMenuLoadingMessage">
+    <value>正在加载...</value>
+  </data>
+  <data name="BDC_ActionMenuAltText">
+    <value>打开菜单</value>
+  </data>
+  <data name="PeopleWebParts_Members_Title_Text">
+    <value>成员</value>
+  </data>
+  <data name="PeopleWebParts_MembersDesc_Title_Text">
+    <value>用于显示组成员的 Web 部件</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Text">
+    <value>全局 Web 部件</value>
+  </data>
+  <data name="PeopleFeatures_GlobalWP_Desc">
+    <value>安装适用于所有网站类型的其他 Web 部件。</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Text">
+    <value>我的网站</value>
+  </data>
+  <data name="PeopleFeatures_MySite_Desc">
+    <value>安装与“我的网站”和“用户配置文件”相关的功能。</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Text">
+    <value>我的网站宿主</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHost_Desc">
+    <value>安装与宿主“我的网站”相关的功能。</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Title">
+    <value>组织徽标</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Text">
+    <value>组织徽标的共享图片库</value>
+  </data>
+  <data name="PeopleFeatures_MySiteHostPictureLibrary_Desc">
+    <value>使用此图片库可存储组织徽标。</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Text">
+    <value>我的网站导航</value>
+  </data>
+  <data name="PeopleFeatures_MySiteNavigation_Desc">
+    <value>为“我的网站”安装导航提供程序。</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Text">
+    <value>我的网站个人网站配置</value>
+  </data>
+  <data name="PeopleFeatures_MySitePersonalSite_Desc">
+    <value>配置用户的个人网站。</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Text">
+    <value>用户配置文件管理链接</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdmin_Desc">
+    <value>安装与管理 User Profile service 相关的链接。</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Text">
+    <value>用户配置文件管理基本链接</value>
+  </data>
+  <data name="PeopleFeatures_ProfileAdminBasic_Desc">
+    <value>安装与基本管理 User Profile Service 相关的链接。</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Text">
+    <value>列表内容设定</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_Desc">
+    <value>在“列表设置”页面上安装按钮，以便启用使用访问群体的内容设定。</value>
+  </data>
+  <data name="PeopleFeatures_ListTargeting_ButtonText">
+    <value>访问群体目标设置</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Text">
+    <value>配置文件同步功能</value>
+  </data>
+  <data name="PeopleFeatures_ProfileSync_Desc">
+    <value>安装用于将用户配置文件和成员资格与工作组网站同步的作业。</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Text">
+    <value>共享服务提供程序用户迁移程序</value>
+  </data>
+  <data name="PeopleFeatures_UserMigrator_Desc">
+    <value>在用户的帐户信息发生更改时，安装与迁移用户数据相关的功能。</value>
+  </data>
+  <data name="SearchWebPartGroup">
+    <value>搜索</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome">
+    <value>什么是个性化网站...</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content1">
+    <value>个性化网站旨在帮助您提供将门户连接到用户“我的网站”的别具特色的个性化体验。使用此网站可根据用户身份及其访问您的门户的原因，向这些用户推出个性化的目标信息。个性化网站模板可帮助您确定当前用户和使用其配置文件，以准确设定和提供特定于该用户及其需求的信息。这样，您便有机会向用户提供您的门户的中心视图。</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content2">
+    <value>例如，您可以使用个性化网站解锁隐藏在各种业务系统中的信息，并通过网站结构提供一站式服务体验，从而使用户可以轻松查看和访问完成工作或任务所需的信息。或者也可以使用个性化网站，通过各种绩效指标和度量标准推动用户的行为，从而提供有助于使您的组织更好地迎合其目标的体验，这种情形尤其适用于基于角色的单个用户。</value>
+  </data>
+  <data name="PersonalizationSiteOnet_WebPart_Welcome_Content3">
+    <value>完成个性化网站的开发以后，若要使个性化网站成为您的用户“我的网站”导航栏上的一个永久位置，请与管理员联系，注册您的个性化网站。</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Text">
+    <value>社会性标签和记事板功能区控件</value>
+  </data>
+  <data name="SocialRibbonControlFeature_Desc">
+    <value>将社会性标签和记事板注释的入口点添加到功能区用户界面。</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlAction_Text">
+    <value>标签和备注</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_Text">
+    <value>TagsAndNotes</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Text">
+    <value>标签和备注</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_TagsAndNotes_Tooltip_Text">
+    <value>标签可帮助您记住链接及将所选项目分类。备注是公用注释。标签和备注发布到您的资讯订阅，并且可在不同网站使用。</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Text">
+    <value>我喜欢</value>
+  </data>
+  <data name="SocialRibbonControl_SocialRibbonControlGroup_ILikeIt_Tooltip_Text">
+    <value>将所选项目标记为“我喜欢”。标记后易于记住链接及将项目发布到您的资讯订阅。</value>
+  </data>
+  <data name="LegacyAreaDocLib_Owner_Text">
+    <value>所有者</value>
+  </data>
+  <data name="LegacyAreaDocLib_Description_Text">
+    <value>说明</value>
+  </data>
+  <data name="LegacyAreaDocLib_Status_Text">
+    <value>状态</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_Description">
+    <value>显示特定类别内网站目录中的网站。</value>
+  </data>
+  <data name="SitesOnet_CategoryWP_Description">
+    <value>显示网站目录中的类别。</value>
+  </data>
+  <data name="INeedToWP_Description">
+    <value>允许用户从选项列表中选取，并将它们导航到相关位置。</value>
+  </data>
+  <data name="NewsArchivePage_Title">
+    <value>新闻存档</value>
+  </data>
+  <data name="Documents_WebPart_Title">
+    <value>文档</value>
+  </data>
+  <data name="Documents_WebPart_Description">
+    <value>有关该用户为其成员的网站的详细信息</value>
+  </data>
+  <data name="Colleagues_WebPart_Title">
+    <value>同事</value>
+  </data>
+  <data name="Colleagues_WebPart_Description">
+    <value>此 Web 部件设计用于添加到人员的配置文件页面。它提供某个用户与其他人共同具有的所有同事的列表。它为配置文件所有者提供管理同事列表的入口点。</value>
+  </data>
+  <data name="SocialComment_WebPart_Title">
+    <value>记事板</value>
+  </data>
+  <data name="SocialComment_WebPart_Description">
+    <value>使用户可留下有关此页的可公开查看的简短注释。</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Title">
+    <value>已标记项目</value>
+  </data>
+  <data name="TaggedUrlList_WebPart_Description">
+    <value>显示已将标签应用到特定 URL 的人员</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Title">
+    <value>获取连接</value>
+  </data>
+  <data name="TaggedPeopleList_WebPart_Description">
+    <value>显示经常使用标签或在标签中表达兴趣或特长的人员。</value>
+  </data>
+  <data name="RelatedTags_WebPart_Title">
+    <value>相关标记</value>
+  </data>
+  <data name="RelatedTags_WebPart_Description">
+    <value>显示已与某个特定的词一起使用的标签，并能够筛选已标记项目 Web 部件</value>
+  </data>
+  <data name="TagInformation_WebPart_Title">
+    <value>关于此标签</value>
+  </data>
+  <data name="TagInformation_WebPart_Description">
+    <value>显示有关特定词的托管分类的元数据</value>
+  </data>
+  <data name="InterestExpert_WebPart_Title">
+    <value>近期活动</value>
+  </data>
+  <data name="InterestExpert_WebPart_Description">
+    <value>显示与特定词相关的人员</value>
+  </data>
+  <data name="InCommon_WebPart_Title">
+    <value>与您共有</value>
+  </data>
+  <data name="InCommon_WebPart_Description">
+    <value>显示您与用户之间的公有信息</value>
+  </data>
+  <data name="ProfileManages_WebPart_Title">
+    <value>我的组织结构图</value>
+  </data>
+  <data name="ProfileManages_WebPart_Description">
+    <value>显示您的组织结构图和报告层次结构</value>
+  </data>
+  <data name="Membership_WebPart_Title">
+    <value>成员资格</value>
+  </data>
+  <data name="Membership_WebPart_Description">
+    <value>显示网站和通讯组列表成员资格。</value>
+  </data>
+  <data name="Links_WebPart_Title">
+    <value>链接</value>
+  </data>
+  <data name="Links_WebPart_Description">
+    <value>显示用户与您共享的链接</value>
+  </data>
+  <data name="GroupDetail_WebPart_Title">
+    <value>组</value>
+  </data>
+  <data name="GroupDetail_WebPart_Description">
+    <value>用于显示组详细信息的 Web 部件</value>
+  </data>
+  <data name="Members_WebPart_Title">
+    <value>成员</value>
+  </data>
+  <data name="Members_WebPart_Description">
+    <value>用于显示组成员的 Web 部件</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Title">
+    <value>成员组</value>
+  </data>
+  <data name="RelatedGroups_WebPart_Description">
+    <value>用于显示成员组的 Web 部件</value>
+  </data>
+  <data name="SampleNewsArticle_LoremIspum">
+    <value>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem</value>
+  </data>
+  <data name="HomePage_SampleLink_1">
+    <value>示例链接 1</value>
+  </data>
+  <data name="HomePage_SampleLink_Description">
+    <value>示例说明</value>
+  </data>
+  <data name="imglibList">
+    <value>本周图像库</value>
+  </data>
+  <data name="imglibList_Desc">
+    <value>提供一个存储此区域的图像的位置。</value>
+  </data>
+  <data name="HomePage_SampleLink_2">
+    <value>示例链接 2</value>
+  </data>
+  <data name="HomePage_SampleLink_3">
+    <value>示例链接 3</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_DisplayName">
+    <value>文档中心</value>
+  </data>
+  <data name="PortalManifest_DocumentCenter_Description">
+    <value>文档中心网站</value>
+  </data>
+  <data name="SitesList_TitleField_WUrlAuthoringInfo">
+    <value>(链接到 URL)</value>
+  </data>
+  <data name="SitesList_TitleField_WMenuAuthoringInfo">
+    <value>(链接到编辑菜单)</value>
+  </data>
+  <data name="ContentRollupWebPartGroup">
+    <value>内容汇总</value>
+  </data>
+  <data name="AppViewerWebPartGroup">
+    <value>Office 客户端应用程序</value>
+  </data>
+  <data name="FormsWebPartGroup">
+    <value>表单</value>
+  </data>
+  <data name="MiscellaneousWebPartGroup">
+    <value>杂项</value>
+  </data>
+  <data name="MyInformationWebPartGroup">
+    <value>Outlook Web App</value>
+  </data>
+  <data name="MySiteTopQuickAddGroup">
+    <value>我的网站: 顶部</value>
+  </data>
+  <data name="MySiteMiddleLeftQuickAddGroup">
+    <value>我的网站: 中部左侧</value>
+  </data>
+  <data name="MySiteMiddleRightQuickAddGroup">
+    <value>我的网站: 中部右侧</value>
+  </data>
+  <data name="MySiteBottomQuickAddGroup">
+    <value>我的网站: 底部</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByUrl">
+    <value>按 URL 排序</value>
+  </data>
+  <data name="SitesOnet_CategoryResultsWP_SortByTitle">
+    <value>按标题排序</value>
+  </data>
+  <data name="SPSDisco_Feature_Title">
+    <value>门户 DiscoPage 功能</value>
+  </data>
+  <data name="SPSDisco_Feature_Description">
+    <value>用于将默认 Web 服务的 DiscoPage 属性设置为 spsdisco.aspx 的门户功能。</value>
+  </data>
+  <data name="WelcomeLayout2Title">
+    <value>包含 Web 部件区域的欢迎页面</value>
+  </data>
+  <data name="DwpProfilePropertyFilter">
+    <value>配置文件属性筛选器</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Title">
+    <value>SharePoint Portal Server 主网站目录捕获控制</value>
+  </data>
+  <data name="MastersiteDirectoryControl_Feature_Description">
+    <value>SharePoint Portal Server 主网站目录捕获控制。</value>
+  </data>
+  <data name="DefaultLayoutDescription">
+    <value>此页面布局包含左侧的图像字段、RTF 文本字段以及排列在右栏、页眉、页脚和 2 栏中的 Web 部件区域。</value>
+  </data>
+  <data name="TOCDefaultLayoutDescription">
+    <value>此页面布局包含的 Web 部件区域排列在页眉、页脚和 2 栏中。</value>
+  </data>
+  <data name="NewsHomeLayoutDescription">
+    <value>此页面布局包含的 Web 部件区域排列在右栏、页眉、页脚和 2 栏中。</value>
+  </data>
+  <data name="TabViewPageLayoutDescription">
+    <value>此页面布局包含选项卡控件，其中的 Web 部件区域排列在页眉、页脚和 2 栏中。 </value>
+  </data>
+  <data name="ReportCenterOnet_ReportCenterLayoutDescription">
+    <value>此页面布局包含的 Web 部件区域排列在页眉、页脚、2 栏和 3 行中。</value>
+  </data>
+  <data name="SearchCenterAdvancedSearchDescription">
+    <value>此页面布局包含选项卡控件，其中的 Web 部件区域排列在页眉、页脚和 2 栏中。</value>
+  </data>
+  <data name="SearchMainDescription">
+    <value>此页面布局包含选项卡控件和搜索框 Web 部件，其中的 Web 部件区域排列在页眉和页脚中。</value>
+  </data>
+  <data name="SearchResultsDescription">
+    <value>此页面布局包含选项卡控件和搜索 Web 部件，其中的 Web 部件区域排列在右栏、页眉、页脚、2 栏和 2 行中。</value>
+  </data>
+  <data name="PeopleSearchResultsDescription">
+    <value>此页面布局包含选项卡控件，其中的 Web 部件区域排列在右栏、页眉、页脚、2 栏和 2 行中。</value>
+  </data>
+  <data name="NewsCategoryLayoutDescription">
+    <value>此页面布局包含的 Web 部件区域排列在右栏、页眉、页脚和 2 栏中。</value>
+  </data>
+  <data name="HomePageImageAltText">
+    <value>正在使用计算机的用户</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Title">
+    <value>我的网站布局功能</value>
+  </data>
+  <data name="MySiteLayouts_Feature_Description">
+    <value>“我的网站”功能，可将所有布局上载到母版页样式库。</value>
+  </data>
+  <data name="INeedToDropDown_Title_Text">
+    <value>选择需要执行的任务</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Text">
+    <value>我的网站布局功能</value>
+  </data>
+  <data name="PeopleFeatures_MySiteQuickLaunch_Desc">
+    <value>“我的网站”功能，可将所有布局上载到母版页样式库</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Title">
+    <value>门户升级文件上载功能</value>
+  </data>
+  <data name="UpgradeOnlyFile_Feature_Description">
+    <value>门户功能，仅用于上载升级文件。</value>
+  </data>
+  <data name="Blog_SampleBody">
+    <value>这是一个示例博客文章。通常由用户填写文章。</value>
+  </data>
+  <data name="Blog_SampleTitle">
+    <value>示例文章</value>
+  </data>
+  <data name="Blog_SampleAuthor">
+    <value>示例用户</value>
+  </data>
+  <data name="Blog_SampleCategory">
+    <value>示例</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Title">
+    <value>所有标签</value>
+  </data>
+  <data name="TagExplorerWP_Everyone_Description">
+    <value>显示所有用户应用的标签</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Title">
+    <value>我的标签</value>
+  </data>
+  <data name="TagExplorerWP_CurrentUser_Description">
+    <value>显示当前用户应用的标签</value>
+  </data>
+  <data name="TagCloudWebPart_Title">
+    <value>标记云</value>
+  </data>
+  <data name="TagCloudWebPart_Description">
+    <value>显示您的组织内标记的最热门的主题。</value>
+  </data>
+  <data name="TagCloudWebPart_Title_PortalDefault">
+    <value>每个人的标签</value>
+  </data>
+  <data name="TagCloudWebPart_Title_MySiteDefault">
+    <value>我的标签</value>
+  </data>
+  <data name="MyBookmarkWebPart_Title">
+    <value>推荐链接(仅限 M1)</value>
+  </data>
+  <data name="MyBookmarkWebPart_Description">
+    <value>显示我的书签信息</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Title">
+    <value>组织浏览器</value>
+  </data>
+  <data name="ProfileBrowser_WebPart_Description">
+    <value>此 Web 部件在互动视图中显示报告链的每个人员。为浏览组织图表，已对该互动视图进行了优化。</value>
+  </data>
+  <data name="Ratings_Feature_Title">
+    <value>等级</value>
+  </data>
+  <data name="Ratings_Feature_Description">
+    <value>通过该功能，用户可以评定内容的等级。</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldName">
+    <value>等级(0-5)</value>
+  </data>
+  <data name="Ratings_AverageRatingFieldDescription">
+    <value>已提交的所有等级的平均值</value>
+  </data>
+  <data name="Ratings_FieldsGroup">
+    <value>等级名称</value>
+  </data>
+  <data name="Ratings_RatingCountFieldName">
+    <value>等级数</value>
+  </data>
+  <data name="Ratings_RatingCountFieldDescription">
+    <value>已提交的等级数</value>
+  </data>
+  <!-- SiteSettings Tooltips -->
+  <data name="SiteSettings_SiteDirectorySettings_Tooltip">
+    <value>定义列出新网站的目录位置。</value>
+  </data>
+  <data name="SiteSettings_RelatedLinksScopeSettings_Tooltip">
+    <value>提供要包括此网站的搜索结果的“此网站和相关网站”范围的网站。  </value>
+  </data>
+  <data name="Ratings_EnableLink">
+    <value>等级设置</value>
+  </data>
+  <!-- Manage Profile Service Application Page Links -->
+  <data name="ManageProfileService_People_Title">
+    <value>人员</value>
+  </data>
+  <data name="ManageProfileService_People_UserProperties_Title">
+    <value>管理用户属性</value>
+  </data>
+  <data name="ManageProfileService_People_UserProfiles_Title">
+    <value>管理用户配置文件</value>
+  </data>
+  <data name="ManageProfileService_People_UserSubtypes_Title">
+    <value>管理用户子类型</value>
+  </data>
+  <data name="ManageProfileService_People_Audiences_Title">
+    <value>管理访问群体</value>
+  </data>
+  <data name="ManageProfileService_People_ScheduleAudience_Comp_Title">
+    <value>计划访问群体搜集</value>
+  </data>
+  <data name="ManageProfileService_People_CompileAudience_Title">
+    <value>搜集访问群体</value>
+  </data>
+  <data name="ManageProfileService_People_ManageUserPermissions_Title">
+    <value>管理用户权限</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_Title">
+    <value>同步</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigConnection_Title">
+    <value>配置同步连接</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSettings_Title">
+    <value>配置同步设置</value>
+  </data>
+  <data name="ManageProfileService__Organization_Title">
+    <value>组织</value>
+  </data>
+  <data name="ManageProfileService_Organization_Properties">
+    <value>管理组织属性</value>
+  </data>
+  <data name="ManageProfileService_Organization_Profiles">
+    <value>管理组织配置文件</value>
+  </data>
+  <data name="ManageProfileService_Organization_Subtypes">
+    <value>管理组织子类型</value>
+  </data>
+  <data name="ManageProfileService_Mysite">
+    <value>我的网站设置</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Setup">
+    <value>设置“我的网站”</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Host">
+    <value>配置受信任主机位置</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Personalization">
+    <value>配置个性化网站</value>
+  </data>
+  <data name="ManageProfileService_Mysite_Publish">
+    <value>发布到 Office 客户端应用程序的链接</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageSocial">
+    <value>管理社会性标签和注释</value>
+  </data>
+  <data name="ManageProfileService_Mysite_SocialTagging">
+    <value>配置社会化和特长标记</value>
+  </data>
+  <data name="ManageProfileService_ManagePolicies_Title">
+    <value>管理策略</value>
+  </data>
+  <data name="ClaimProvider_People_Text">
+    <value>人员和组织声明提供程序</value>
+  </data>
+  <data name="ClaimProvider_People_Desc">
+    <value>为人员和组织安装声明提供程序。</value>
+  </data>
+  <data name="ClaimProvider_Groups_Text">
+    <value>组声明提供程序</value>
+  </data>
+  <data name="ClaimProvider_Groups_Desc">
+    <value>为组安装声明提供程序。</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Text">
+    <value>组织声明层次结构提供程序</value>
+  </data>
+  <data name="ClaimHierarchyProvider_Organization_Desc">
+    <value>安装组织声明层次结构提供程序。</value>
+  </data>
+  <data name="tenantadmin_userprofileapplication_manage">
+    <value>管理用户配置文件应用程序</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="tenantprofileadminFeatureTitle">
+    <value>出租用户配置文件应用程序</value>
+  </data>
+  <data name="tenantprofileadminFeatureDesc">
+    <value>到出租用户配置文件应用程序管理子页的链接</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="tenantprofileadminstaplingFeatureTitle">
+    <value>出租用户配置文件应用程序分类</value>
+  </data>
+  <data name="tenantprofileadminstaplingFeatureDesc">
+    <value>对 TenantAdmin 模板的出租用户配置文件应用程序分类功能</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_ConfigSchedule_Title">
+    <value>配置同步计时器作业</value>
+  </data>
+  <data name="ManageProfileService_Synchronization_SyncNow_Title">
+    <value>启动配置文件同步</value>
+  </data>
+  <data name="ScopeDisplayGroup_SearchDropdown_Name">
+    <value>搜索下拉列表</value>
+  </data>
+  <data name="SkipContactCard_Text">
+    <value>跳过联系人卡片</value>
+  </data>
+  <data name="GlobalNavTab_Network_Text">
+    <value>我的新闻源</value>
+  </data>
+  <data name="GlobalNavTab_Content_Text">
+    <value>我的内容</value>
+  </data>
+  <data name="GlobalNavTab_Profile_Text">
+    <value>我的配置文件</value>
+  </data>
+  <data name="SubNavTab_Overview_Text">
+    <value>概述</value>
+  </data>
+  <data name="SubNavTab_Organization_Text">
+    <value>组织</value>
+  </data>
+  <data name="SubNavTab_Content_Text">
+    <value>内容</value>
+  </data>
+  <data name="SubNavTab_Tags_Text">
+    <value>标签和注释</value>
+  </data>
+  <data name="SubNavTab_Colleagues_Text">
+    <value>同事</value>
+  </data>
+  <data name="SubNavTab_Memberships_Text">
+    <value>成员资格</value>
+  </data>
+  <data name="MyTasksDashboardFeatureTitle">
+    <value>我的任务仪表板</value>
+  </data>
+  <data name="MyTasksDashboardFeatureDescription">
+    <value>在用户的“我的网站”上提供仪表板以管理其跨网站和系统进行聚合的任务并与这些任务进行交互。</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingTitle">
+    <value>我的任务仪表板装订</value>
+  </data>
+  <data name="MyTasksDashboardFeatureStaplingDescription">
+    <value>此功能将“我的任务仪表板”功能装订(连接)到“我的网站”模板。</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Old">
+    <value>共享文档 - 旧</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Old">
+    <value>个人文档 - 旧</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent">
+    <value>关注的内容</value>
+  </data>
+  <data name="ContentFollowingOnet_ListTitle">
+    <value>内容关注</value>
+  </data>
+  <data name="ContentFollowingOnet_ListDescription">
+    <value>“内容关注”允许用户在其源中为特定文档订阅更新</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeTitle">
+    <value>内容订阅</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeGroup">
+    <value>内容跟踪</value>
+  </data>
+  <data name="ContentFollowingOnet_ContentTypeDescription">
+    <value>包含对关注的内容项目的引用</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FarmIdDisplayName">
+    <value>服务器场 ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SiteIdDisplayName">
+    <value>网站 ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_WebIdDisplayName">
+    <value>Web ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ListIdDisplayName">
+    <value>列表 ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UniqueIdDisplayName">
+    <value>唯一 ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ItemIdDisplayName">
+    <value>项目 ID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_UrlDisplayName">
+    <value>URL</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ParentUrlDisplayName">
+    <value>父 URL</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_TypeDisplayName">
+    <value>类型</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_SubtypeDisplayName">
+    <value>子类型</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_IconUrlDisplayName">
+    <value>图标 URL</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HiddenDisplayName">
+    <value>源中不可见</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_HasFeedDisplayName">
+    <value>具有源</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FlagsDisplayName">
+    <value>标志</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_FileTypeProgidDisplayName">
+    <value>文件类型 ProgID</value>
+  </data>
+  <data name="ContentFollowingOnet_Fields_ServerUrlProgidDisplayName">
+    <value>服务器 Url ProgID</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedDocumentsDisplayName">
+    <value>关注的文档</value>
+  </data>
+  <data name="ContentFollowingOnet_Views_FollowedSitesDisplayName">
+    <value>关注的网站</value>
+  </data>
+  <data name="FollowedDocuments_View_NoAnnouncements">
+    <value>通过转到感兴趣的文档并单击“关注”来关注它们。</value>
+  </data>
+  <data name="FollowedSites_View_NoAnnouncements">
+    <value>您尚未关注任何网站。要查看此列表中的内容，请转到网站，然后单击“关注”图标。</value>
+  </data>
+  <data name="PersonalSiteOnet_List_MyDocuments_Description_Old">
+    <value>此文档库以前曾用于您想要与其他人共享的文档。现在建议您为此目的使用新的“我的文档”库。</value>
+  </data>
+  <data name="PersonalSiteOnet_List_PersonalDocuments_Description_Old">
+    <value>此文档库以前曾用于您想要保留以供个人使用的文档。现在建议您为此目的使用新的“我的文档”库。</value>
+  </data>
+  <data name="PersonalSiteOnet_List_FollowedContent_Description">
+    <value>此列表将包含您选择关注的所有项目。</value>
+  </data>
+  <data name="FollowingContent_Feature_Title">
+    <value>关注内容</value>
+  </data>
+  <data name="FollowingContent_Feature_Description">
+    <value>使用户能够关注文档或网站。</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Title">
+    <value>内容关注装订</value>
+  </data>
+  <data name="ContentFollowingStapling_Feature_Description">
+    <value>在所有网站集上激活“关注内容”功能。</value>
+  </data>
+  <data name="ContentFollowing_Feature_Title">
+    <value>内容关注</value>
+  </data>
+  <data name="ContentFollowing_Feature_Description">
+    <value>使用户能够关注文档或网站。</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Title">
+    <value>内容关注列表</value>
+  </data>
+  <data name="ContentFollowingList_Feature_Description">
+    <value>用于封装列表以使用户能够关注 SharePoint 中的内容的功能。</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentTitle">
+    <value>内容关注</value>
+  </data>
+  <data name="ContentFollowingOnet_List_FollowedContentDesc">
+    <value>使用户能够关注 SharePoint 中的内容的列表。</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Text">
+    <value>我的网站文档库功能</value>
+  </data>
+  <data name="PeopleFeatures_MySiteDocumentLibrary_Desc">
+    <value>增强了“我的网站”的现有 SharePoint 文档库。启用新视图、轻型版本控制、增强的上下文信息以及每个项目共享。</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_Text">
+    <value>文档</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsAllView_Text">
+    <value>全部</value>
+  </data>
+  <data name="PeopleFeatures_DocumentsSharedWithMeView_Text">
+    <value>与我共享</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithEveryoneFolderName">
+    <value>与每个人共享</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldGroup">
+    <value>共享字段</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldName">
+    <value>共享</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithFieldDescription">
+    <value>共享</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldName">
+    <value>是我的文档</value>
+  </data>
+  <data name="PeopleFeatures_IsMyDocumentsFieldDescription">
+    <value>是我的文档</value>
+  </data>
+  <data name="SharedWithInternalFieldName">
+    <value>与内部共享</value>
+  </data>
+  <data name="SharedWithInternalFieldDescription">
+    <value>与内部共享</value>
+  </data>
+  <data name="PeopleFeatures_MyDocuments_KeepMyLastEdits">
+    <value>保留我的最后编辑内容</value>
+  </data>
+  <data name="SharingFeedPermissionsViewLinkName">
+    <value>权限</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorText">
+    <value>搜索当前不可用。请稍后再试。如果问题仍然存在，请与系统管理员联系。</value>
+  </data>
+  <data name="PeopleFeatures_SharedWithMeErrorSearchDisabledText">
+    <value>搜索当前被禁用。请与系统管理员联系。</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_Text">
+    <value>关注</value>
+  </data>
+  <data name="ContentFollowingOnet_Ribbon_Follow_TooltipText">
+    <value>关注本文档，并在您的新闻源中获取更新。</value>
+  </data>
+  <data name="WorkManagementWebPartGroup">
+    <value>工作管理</value>
+  </data>
+  <data name="Ratings_RatedByFieldName">
+    <value>评级者</value>
+  </data>
+  <data name="Ratings_RatedByFieldDescription">
+    <value>用户评定了该项目。</value>
+  </data>
+  <data name="Ratings_RatingsFieldName">
+    <value>用户评级</value>
+  </data>
+  <data name="Ratings_RatingsFieldDescription">
+    <value>项目的用户评级</value>
+  </data>
+  <data name="Ratings_FieldsGroup_15">
+    <value>内容反馈</value>
+  </data>
+  <!-- TenantProfileAdmin Strings -->
+  <data name="DocumentsListFolder">
+    <value>Documents</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureTitle">
+    <value>项目功能</value>
+  </data>
+  <data name="ProjectFunctionalityFeatureDescription">
+    <value>此功能向网站添加项目管理功能。它包括网站主页上的任务、日历和 Web 部件。</value>
+  </data>
+  <data name="General_ListTitleWithNumber">
+    <value>{0} {1}</value>
+  </data>
+  <data name="General_ListUrlWithNumber">
+    <value>{0}{1}</value>
+  </data>
+  <!-- TenantProfileAdminStapling Strings -->
+  <data name="GlobalNavTab_Projects_Text">
+    <value>我的项目</value>
+  </data>
+  <data name="SubNavTab_People_Text">
+    <value>人员</value>
+  </data>
+  <data name="GlobalQuickLaunch_Default_Text">
+    <value>新闻源</value>
+  </data>
+  <data name="GlobalQuickLaunch_Documents_Text">
+    <value>文档</value>
+  </data>
+  <data name="GlobalQuickLaunch_Tasks_Text">
+    <value>任务</value>
+  </data>
+  <data name="GlobalQuickLaunch_People_Text">
+    <value>人员</value>
+  </data>
+  <data name="GlobalQuickLaunch_Sites_Text">
+    <value>网站</value>
+  </data>
+  <data name="GlobalQuickLaunch_Profile_Text">
+    <value>关于我</value>
+  </data>
+  <data name="GlobalQuickLaunch_ProfileNotSelf_Text">
+    <value>关于 {0}</value>
+  </data>
+  <data name="GlobalQuickLaunch_UserLinks_Text">
+    <value>我的应用程序</value>
+  </data>
+  <data name="GlobalQuickLaunch_GoToMySite_Text">
+    <value>转到我的网站</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Followed__Text">
+    <value>我正在关注</value>
+  </data>
+  <data name="GlobalQuickLaunch_SubNav_Shared_Text">
+    <value>与我共享</value>
+  </data>
+  <data name="GlobalTopNav_MySite_Text">
+    <value>新闻源</value>
+  </data>
+  <!-- QuickLaunch Site Contents links for MySites -->
+  <data name="GlobalQuickLaunch_Apps_Text">
+    <value>应用程序</value>
+  </data>
+  <data name="MySiteQuickLaunch_Apps_Text">
+    <value>更多应用程序</value>
+  </data>
+  <!-- MySite MicroFeed resources start here -->
+  <data name="MicroFeed_WebPart_Title">
+    <value>新闻源</value>
+  </data>
+  <data name="MicroFeed_WebPart_Description">
+    <value>跨 SharePoint 站点显示您关注的内容和人员的对话和事件通知，并允许用户发送简短、可公开查看的消息。</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Title">
+    <value>活动源</value>
+  </data>
+  <data name="PublishedFeed_WebPart_Description">
+    <value>显示用户的最新对话和活动。</value>
+  </data>
+  <data name="MicroFeed_ListTitle">
+    <value>微源</value>
+  </data>
+  <data name="MicroFeed_ListDescription">
+    <value>我的网站微源持久存储列表</value>
+  </data>
+  <data name="MicroFeed_ListDisplayName">
+    <value>我的网站发布的源的持久存储列表</value>
+  </data>
+  <data name="MicroFeed_CT_GROUP">
+    <value>微馈送内容类型</value>
+  </data>
+  <!-- End MySite MicroFeed resources -->
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Title">
+    <value>导航上的 MySite 个人网站升级</value>
+  </data>
+  <data name="MySitePersonalSiteUpgradeOnNavigation_WebPart_Description">
+    <value>导航到“我的网站宿主”网站时创建或升级用户的个人网站。</value>
+  </data>
+  <data name="MySiteFirstRunExperienceWebPart_Title">
+    <value>我的网站首次运行体验</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Title">
+    <value>趋势井号标签</value>
+  </data>
+  <data name="AnalyticsHashTagWebPart_WebPart_Description">
+    <value>此客户端的 Web 部件可帮助用户查找新的社交内容</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Title">
+    <value>关注的计数</value>
+  </data>
+  <data name="FollowedCounts_WebPart_Description">
+    <value>显示当前用户的已关注用户、内容和标记的计数。</value>
+  </data>
+  <data name="People_WebPart_Title">
+    <value>人员</value>
+  </data>
+  <data name="People_WebPart_Description">
+    <value>显示某人正在关注的人员以及关注该人员的人员。</value>
+  </data>
+  <data name="StaticTimelineWebPart_Title">
+    <value>手动配置的日程表</value>
+  </data>
+  <data name="StaticTimelineWebPart_Description">
+    <value>在日程表视图中显示手动配置的数据</value>
+  </data>
+  <data name="ProjectSummaryWebPartTitle">
+    <value>项目摘要</value>
+  </data>
+  <data name="ProjectSummaryWebPartDescription">
+    <value>在易于阅读的概述中显示有关项目的信息</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Title">
+    <value>已连接的日程表</value>
+  </data>
+  <data name="ConnectedTimelineWebPart_Description">
+    <value>使用此日程表显示其他 Web 部件中数据的高级视图</value>
+  </data>
+  <data name="TimelineWebPart_Group">
+    <value>日程表</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Title">
+    <value>项目网站日程表</value>
+  </data>
+  <data name="ProjectTimelineWebPart_Description">
+    <value>使用此日程表创建项目中任务的高级视图</value>
+  </data>
+  <data name="ProjectSiteWebParts_Title">
+    <value>项目网站 Web 部件</value>
+  </data>
+  <data name="ProjectSiteWebParts_Description">
+    <value>用于和需要项目网站的 Web 部件</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Title">
+    <value>团队工作中心</value>
+  </data>
+  <data name="TeamWorkCenterWebPart_Description">
+    <value>团队工作中心在单个位置提供所有项目网站的总成视图。团队工作中心可以连接到日程表 Web 部件，以创建项目组合的可视化效果。</value>
+  </data>
+  <data name="RelatedItems_Feature_Title">
+    <value>相关项目功能</value>
+  </data>
+  <data name="RelatedItems_Feature_Description">
+    <value>用于向网站集添加相关项目和推荐的项目功能的相关项目功能。</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Title">
+    <value>项目窗体建议</value>
+  </data>
+  <data name="ItemFormRecommendations_Feature_Description">
+    <value>将建议 CBS 控件添加到所有项目显示窗体。</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Title">
+    <value>我的网站推荐</value>
+  </data>
+  <data name="ProjectDiscovery_Feature_Description">
+    <value>自动推荐文档和网站以便用户在其 SharePoint“我的网站”上关注。</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Description">
+    <value>推荐 Web 部件建议用户可能希望在服务器场内关注的内容。</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Document_Title">
+    <value>推荐给我的文档</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Site_Title">
+    <value>推荐给我的网站</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_AllRecommendations_Person_Title">
+    <value>推荐给我的人员</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Description">
+    <value>推荐 Web 部件建议用户可能希望在服务器场内关注的内容。</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Document_Title">
+    <value>建议关注的文档</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Site_Title">
+    <value>建议关注的网站</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_TopRecommendations_Person_Title">
+    <value>建议关注的人员</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Description">
+    <value>推荐 Web 部件建议用户可能希望在服务器场内关注的内容。</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Document_Title">
+    <value>推荐的文档</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Site_Title">
+    <value>推荐的网站</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_FeedRecommendations_Person_Title">
+    <value>推荐的人员</value>
+  </data>
+  <data name="ProjectDiscoveryWebpartGroup">
+    <value>我的推荐</value>
+  </data>
+  <data name="ProjectDiscovery_WebPart_ImportErrorMessage">
+    <value>无法导入“我的推荐” Web 部件。</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_ImportErrorMessage">
+    <value>无法导入相关项目 Web 部件。</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Title">
+    <value>相关项目</value>
+  </data>
+  <data name="RelatedItems_RelatedItemsWebPart_Description">
+    <value>相关项目 Web 部件。</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Title">
+    <value>相关项目建议</value>
+  </data>
+  <data name="RelatedItems_RelatedItemSuggestionsWebPart_Description">
+    <value>相关项目建议 Web 部件。</value>
+  </data>
+  <data name="RelatedItemsWebPartGroup">
+    <value>相关项目</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Title">
+    <value>新项目建议</value>
+  </data>
+  <data name="RelatedItems_NewItemSuggestionsWebPart_Description">
+    <value>新项目建议 Web 部件</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Title">
+    <value>用户配置文件用户设置提供程序</value>
+  </data>
+  <data name="UserProfileUserSettingsProvider_Feature_Description">
+    <value>此功能设置用户配置文件用户设置提供程序。</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Title">
+    <value>网站邮箱</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_QuickLaunch">
+    <value>邮箱</value>
+  </data>
+  <data name="CollaborationMailbox_Feature_Description">
+    <value>网站邮箱应用程序通过将您的网站连接到 Exchange 邮箱来聚集电子邮件和文档。然后，您可以在 SharePoint 上查看电子邮件，并在 Outlook 中查看网站文档。</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Title">
+    <value>网站邮箱</value>
+  </data>
+  <data name="CollaborationMailboxFarm_Feature_Description">
+    <value>为此服务器场上的站点启用 Exchange 邮箱设置，并将文档从站点连接到 Outlook。</value>
+  </data>
+  <data name="GS_SiteMailbox_Title">
+    <value>在上下文中保留电子邮件。</value>
+  </data>
+  <data name="GS_SiteMailbox_Description">
+    <value>在您的站点上共享电子邮件，并将文档连接到 Outlook。</value>
+  </data>
+  <data name="ProjectSite_Feature_Title">
+    <value>项目网站支持</value>
+  </data>
+  <data name="ProjectSite_Feature_Description">
+    <value>支持在此网站集中创建项目网站。</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Title">
+    <value>项目网站的标签控件</value>
+  </data>
+  <data name="ProjectSiteTagControl_Feature_Description">
+    <value>此功能设置项目网站添加标签 Web 部件。</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_ImportErrorMessage">
+    <value>无法导入添加标签 Web 部件。</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Title">
+    <value>标签 Web 部件</value>
+  </data>
+  <data name="ProjectSiteTagControl_TagControlWebPart_Description">
+    <value>“添加标签”Web 部件允许网站成员在网站的页面上添加和查看标签。</value>
+  </data>
+  <!-- Projects tab resources start here -->
+  <data name="ProjectsTabTitle">
+    <value>项目</value>
+  </data>
+  <data name="ProjectGroupTitle">
+    <value>项目</value>
+  </data>
+  <data name="ProjectNewLabel">
+    <value>新建</value>
+  </data>
+  <data name="ProjectNewToolTipDescription">
+    <value>创建新的项目工作区。</value>
+  </data>
+  <data name="ProjectOpenLabel">
+    <value>打开</value>
+  </data>
+  <data name="ProjectOpenToolTipDescription">
+    <value>打开选定项目。</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTitle">
+    <value>在项目工作区中</value>
+  </data>
+  <data name="ProjectOpenInWorkspaceMenuTooltip">
+    <value>在项目工作区中打开</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuTitle">
+    <value>在 Project Professional 中</value>
+  </data>
+  <data name="ProjectOpenInWinProjEditMenuToolTip">
+    <value>在 Microsoft Project 中打开选定项目。如果项目已签出给其他人，它将以只读方式打开。如果您有多个选定项目，则这些项目将在新的主项目中打开。</value>
+  </data>
+  <data name="TimelineGroupTitle">
+    <value>日程表</value>
+  </data>
+  <data name="AddToTimelineLabel">
+    <value>添加到日程表</value>
+  </data>
+  <data name="AddToTimelineToolTipDescription">
+    <value>将选定项目添加到日程表。</value>
+  </data>
+  <!-- End Projects tab resources -->
+  <!-- Team Work Center resources start here -->
+  <data name="ProjectNameColumn">
+    <value>项目</value>
+  </data>
+  <data name="OwnerColumn">
+    <value>所有者</value>
+  </data>
+  <data name="StartDateColumn">
+    <value>开始日期</value>
+  </data>
+  <data name="EndDateColumn">
+    <value>结束日期</value>
+  </data>
+  <data name="RefreshingCache">
+    <value>正在刷新项目列表...</value>
+  </data>
+  <data name="NextRefresh">
+    <value>将于 {0} 更新项目列表</value>
+  </data>
+  <data name="RefreshNow">
+    <value>立即刷新</value>
+  </data>
+  <data name="TWCSearchProject">
+    <value>搜索此列表...</value>
+  </data>
+  <data name="TWCProjectScope">
+    <value>项目网站范围</value>
+  </data>
+  <data name="TWCSiteAndBelow">
+    <value>网站和以下层级</value>
+  </data>
+  <data name="TWCSiteCollection">
+    <value>网站集</value>
+  </data>
+  <!-- End Team Work Center resources -->
+  <!-- BI Discovery Strings -->
+  <data name="ReportsAndDataFields_BusinessIntelligenceGroup">
+    <value>商业智能</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Name">
+    <value>是报告</value>
+  </data>
+  <data name="ReportsAndDataFields_IsReport_Description">
+    <value>该项目是报告吗?</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Name">
+    <value>是数据</value>
+  </data>
+  <data name="ReportsAndDataFields_IsData_Description">
+    <value>该项目是数据源吗?</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_BIGroup_Name">
+    <value>商业智能</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Name">
+    <value>报告文档</value>
+  </data>
+  <data name="ReportsAndDataContentTypes_ReportDocument_Description">
+    <value>创建新的报告文档。</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Name">
+    <value>报告文档库</value>
+  </data>
+  <data name="ReportsAndDataListTemplates_ReportDocumentLibrary_Description">
+    <value>您可以创建并管理报告文档的位置。</value>
+  </data>
+  <data name="ReportsAndDataListSchema_ReportDocumentLibrary_Title">
+    <value>报告文档库</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Title">
+    <value>报告和数据搜索支持</value>
+  </data>
+  <data name="ReportsAndDataListTemplate_Feature_Description">
+    <value>在企业搜索中心中支持报告和数据搜索需要提供内容类型、网站栏和库模板。</value>
+  </data>
+  <!-- End BI Discovery Strings -->
+  <!-- Community Portal Strings -->
+  <data name="CommunityPortalFeature_Text">
+    <value>社区门户功能</value>
+  </data>
+  <data name="CommunityPortalFeature_Desc">
+    <value>此功能可增加社区门户功能。它还提供社区门户页面。</value>
+  </data>
+  <data name="CommunityPortal_WebPart_Title">
+    <value>受欢迎的社区</value>
+  </data>
+  <!-- End Community Portal Strings -->
+  <!-- Community Site Strings -->
+  <data name="communitySiteTitle">
+    <value>社区网站</value>
+  </data>
+  <data name="communityAboutUs">
+    <value>关于我们</value>
+  </data>
+  <data name="CommunitySiteFeature_Text">
+    <value>社区网站功能</value>
+  </data>
+  <data name="CommunitySiteFeature_Desc">
+    <value>此功能添加了讨论类别、内容和人员信誉以及成员列表等社区功能。它还设置包含这些列表和功能的社区网站页面。</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Title">
+    <value>讨论列表</value>
+  </data>
+  <data name="CommunitySiteDiscussionsListInstance_Desc">
+    <value>使用讨论列表保存论坛风格的对话，包括与您的团队、项目或社区相关的主题的问题和回答。</value>
+  </data>
+  <data name="ContentReputation_DescendantLikesCountFieldName">
+    <value>聚合的赞计数</value>
+  </data>
+  <data name="ContentReputation_DescendantRatingsCountFieldName">
+    <value>聚合的评级计数</value>
+  </data>
+  <data name="ContentReputation_LikesCountFieldName">
+    <value>赞数目</value>
+  </data>
+  <data name="ContentReputation_LikedByFieldName">
+    <value>赞者</value>
+  </data>
+  <data name="ContentReputation_PopularityFieldName">
+    <value>热门程度</value>
+  </data>
+  <data name="Discussion_TopicLastUpdatedByFieldName">
+    <value>上次更新过的主题</value>
+  </data>
+  <data name="ContentReputation_AuthorReputationLookupFieldName">
+    <value>作者的信誉分数</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfRepliesLookupFieldName">
+    <value>作者的回复数</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfPostsLookupFieldName">
+    <value>作者的帖子数</value>
+  </data>
+  <data name="ContentReputation_AuthorNumOfBestResponsesLookupFieldName">
+    <value>作者的最佳回复数</value>
+  </data>
+  <data name="ContentReputation_AuthorLastActivityLookupFieldName">
+    <value>作者的上次活动日期</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberSinceLookupFieldName">
+    <value>作者的成员资格日期</value>
+  </data>
+  <data name="ContentReputation_AuthorMemberStatusIntLookupFieldName">
+    <value>作者的成员资格状态</value>
+  </data>
+  <data name="PeopleReputation_Level1Text">
+    <value>第 1 级</value>
+  </data>
+  <data name="PeopleReputation_Level2Text">
+    <value>第 2 级</value>
+  </data>
+  <data name="PeopleReputation_Level3Text">
+    <value>第 3 级</value>
+  </data>
+  <data name="PeopleReputation_Level4Text">
+    <value>第 4 级</value>
+  </data>
+  <data name="PeopleReputation_Level5Text">
+    <value>第 5 级</value>
+  </data>
+  <data name="Categories_CategoriesLookupFieldName">
+    <value>类别</value>
+  </data>
+  <data name="Members_TitleFieldName">
+    <value>成员名称</value>
+  </data>
+  <data name="Members_MemberLookupFieldName">
+    <value>发布者</value>
+  </data>
+  <data name="Discussion_TopicLastRatedOrLikedByFieldName">
+    <value>上次更新的主题</value>
+  </data>
+  <data name="categories_Folder">
+    <value>Categories</value>
+  </data>
+  <data name="SocialSite_Feature_Title">
+    <value>社区网站基础结构</value>
+  </data>
+  <data name="SocialSite_Feature_Desc">
+    <value>社区中的讨论列表、信誉、类别和成员资格所需的网站集级别字段、内容类型和 Web 部件。</value>
+  </data>
+  <data name="CategoriesListFeature_Text">
+    <value>类别列表功能</value>
+  </data>
+  <data name="CategoriesListFeature_Desc">
+    <value>此功能包含类别列表功能的模板</value>
+  </data>
+  <data name="CategoriesList_Disp">
+    <value>类别列表</value>
+  </data>
+  <data name="CategoriesList_Desc">
+    <value>类别列表</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeName">
+    <value>类别</value>
+  </data>
+  <data name="CategoriesList_CategoryContentTypeDescription">
+    <value>(类别内容类型说明)</value>
+  </data>
+  <data name="CategoriesList_CategoriesListView">
+    <value>类别列表</value>
+  </data>
+  <data name="CategoriesList_CategoriesTileView">
+    <value>类别平铺</value>
+  </data>
+  <data name="CategoriesList_AdminView">
+    <value>管理视图</value>
+  </data>
+  <data name="CategoriesList_SingleCategoryView">
+    <value>单个类别视图</value>
+  </data>
+  <data name="CategoriesList_TitleFieldName">
+    <value>类别名称</value>
+  </data>
+  <data name="CategoriesList_TitleFieldDescription">
+    <value>类别的名称。</value>
+  </data>
+  <data name="CategoriesList_DescFieldName">
+    <value>说明</value>
+  </data>
+  <data name="CategoriesList_DescFieldDescription">
+    <value>社区成员应在此类别中谈论什么内容?</value>
+  </data>
+  <data name="CategoriesList_ImageFieldName">
+    <value>类别图片</value>
+  </data>
+  <data name="CategoriesList_ImageFieldDescription">
+    <value>添加表示此类别的图片。</value>
+  </data>
+  <data name="CategoriesList_TopicCountFieldName">
+    <value>讨论</value>
+  </data>
+  <data name="CategoriesList_ReplyCountFieldName">
+    <value>答复</value>
+  </data>
+  <data name="CategoriesList_LastPostByFieldName">
+    <value>上次发布者</value>
+  </data>
+  <data name="CategoriesList_LastPostDateFieldName">
+    <value>上次发布日期</value>
+  </data>
+  <data name="CategoriesListInstance_Title">
+    <value>类别</value>
+  </data>
+  <data name="CategoriesListInstance_Desc">
+    <value>使用类别列表定义可用于讨论列表帖子的类别。</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Title">
+    <value>常规</value>
+  </data>
+  <data name="CategoriesList_DefaultCategory_Desc">
+    <value>如果您不知道发布位置，请从这里开始。</value>
+  </data>
+  <data name="SiteMembership_MemberFieldName">
+    <value>成员</value>
+  </data>
+  <data name="SiteMembership_StatusFieldName">
+    <value>状态</value>
+  </data>
+  <data name="SiteMembership_StatusIntFieldName">
+    <value>成员状态</value>
+  </data>
+  <data name="SiteMembership_Status_Pending">
+    <value>待定</value>
+  </data>
+  <data name="SiteMembership_Status_Active">
+    <value>活动</value>
+  </data>
+  <data name="SiteMembership_Status_Inactive">
+    <value>非活动</value>
+  </data>
+  <data name="SiteMembership_Status_Blocked">
+    <value>阻止</value>
+  </data>
+  <data name="SiteMembership_Status_Left">
+    <value>离开</value>
+  </data>
+  <data name="CommunityContentTypesGroupName">
+    <value>社区内容类型</value>
+  </data>
+  <data name="SiteMembership_ContentTypeName">
+    <value>网站成员身份</value>
+  </data>
+  <data name="SiteMembership_ContentTypeDescription">
+    <value>添加新成员</value>
+  </data>
+  <data name="SiteMembershipListFeature_Text">
+    <value>网站成员身份</value>
+  </data>
+  <data name="SiteMembershipListFeature_Desc">
+    <value>此功能包含可用于管理网站内的成员(例如，社区、项目、团队、教育站点)的列表架构和列表实例</value>
+  </data>
+  <data name="SiteMembership_ListName">
+    <value>成员资格列表模板</value>
+  </data>
+  <data name="SiteMembership_ListSchema_Title">
+    <value>网站成员资格列表模板架构</value>
+  </data>
+  <data name="SiteMembershipListInstance_Title">
+    <value>社区成员</value>
+  </data>
+  <data name="SiteMembershipListInstance_Desc">
+    <value>此列表按成员保存当前活动的记录以及成员在此社区中累积的信誉。</value>
+  </data>
+  <data name="members_Folder">
+    <value>Members</value>
+  </data>
+  <data name="communityDiscussions_Folder">
+    <value>Community Discussion</value>
+  </data>
+  <data name="AbuseReportsListFeature_Text">
+    <value>报告</value>
+  </data>
+  <data name="AbuseReportsListFeature_Desc">
+    <value>此功能包含用于管理社区站点内的攻击性内容的列表架构和列表实例</value>
+  </data>
+  <data name="AbuseReports_ListName">
+    <value>报告列表模板</value>
+  </data>
+  <data name="AbuseReports_ListSchema_Title">
+    <value>报告列表模板架构</value>
+  </data>
+  <data name="AbuseReportsListInstance_Title">
+    <value>报告列表</value>
+  </data>
+  <data name="AbuseReportsListInstance_Desc">
+    <value>此列表存储将某个讨论项目报告为滥用内容的人员提交的项目注释</value>
+  </data>
+  <data name="abuseReports_Folder">
+    <value>AbuseReports</value>
+  </data>
+  <data name="AbuseReports_ReporterFieldName">
+    <value>报告者</value>
+  </data>
+  <data name="AbuseReports_CommentsFieldName">
+    <value>注释</value>
+  </data>
+  <data name="AbuseReports_DiscussionItemIdFieldName">
+    <value>讨论</value>
+  </data>
+  <data name="AbuseReports_CountFieldName">
+    <value>报告</value>
+  </data>
+  <data name="AbuseReports_LookupFieldName">
+    <value>报告查阅</value>
+  </data>
+  <data name="AbuseReports_ReporterLookupFieldName">
+    <value>报告者查阅</value>
+  </data>
+  <data name="AbuseReports_CommentsLookupFieldName">
+    <value>注释查阅</value>
+  </data>
+  <data name="Discussion_TitleOrBody">
+    <value>帖子</value>
+  </data>
+  <data name="CommunityDiscussion_TopicPageUrl">
+    <value>主题页面 URL</value>
+  </data>
+  <data name="AbuseReportsView">
+    <value>报告</value>
+  </data>
+  <data name="ModerationTabTitle">
+    <value>审阅</value>
+  </data>
+  <data name="ModerationToolsGroupTitle">
+    <value>查看报告的帖子</value>
+  </data>
+  <data name="ModerationViewItem">
+    <value>查看报告</value>
+  </data>
+  <data name="ModerationViewItem_TooltipTitle">
+    <value>查看报告</value>
+  </data>
+  <data name="ModerationViewItem_TooltipDesc">
+    <value>查看报告的内容以及发现该内容具有攻击性的成员留下的注释</value>
+  </data>
+  <data name="ModerationEditItem">
+    <value>编辑帖子</value>
+  </data>
+  <data name="ModerationEditItem_TooltipTitle">
+    <value>编辑帖子</value>
+  </data>
+  <data name="ModerationEditItem_TooltipDesc">
+    <value>编辑报告的讨论项目以删除潜在具有攻击性的内容</value>
+  </data>
+  <data name="ModerationDeleteItem">
+    <value>删除帖子</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipTitle">
+    <value>删除帖子</value>
+  </data>
+  <data name="ModerationDeleteItem_TooltipDesc">
+    <value>删除已报告为攻击性内容的讨论项目。这也将删除由抱怨该项目的成员留下的相关联注释</value>
+  </data>
+  <data name="ModerationApproveItem">
+    <value>取消报告</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipTitle">
+    <value>取消报告</value>
+  </data>
+  <data name="ModerationApproveItem_TooltipDesc">
+    <value>如果您认为讨论项目适合于社区，则删除与其相关联的报告。这将删除发现该项目具有攻击性的人员留下的注释</value>
+  </data>
+  <data name="ManageMembersGroupTitle">
+    <value>奖励徽章</value>
+  </data>
+  <data name="Members_AssignBadge">
+    <value>授予徽章</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipTitle">
+    <value>授予成员徽章</value>
+  </data>
+  <data name="Members_AssignBadge_TooltipDesc">
+    <value>授予成员徽章</value>
+  </data>
+  <data name="Members_CreatedFieldName">
+    <value>加入</value>
+  </data>
+  <data name="CommunityMembership_LastActivity">
+    <value>最后一个活动</value>
+  </data>
+  <data name="CommunityMembership_NumBestResponses">
+    <value>最佳回复</value>
+  </data>
+  <data name="CommunityMembership_NumDiscussions">
+    <value>讨论</value>
+  </data>
+  <data name="CommunityMembership_NumReplies">
+    <value>答复</value>
+  </data>
+  <data name="CommunityMembership_NumRepliesToReachNextLevel">
+    <value>回复以达到下一级别</value>
+  </data>
+  <data name="CommunityMembership_ReputationScore">
+    <value>信誉得分</value>
+  </data>
+  <data name="CommunityMembership_HideReputation">
+    <value>隐藏信誉</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeLookup">
+    <value>奖励徽章</value>
+  </data>
+  <data name="CommunityMembership_GiftedBadgeText">
+    <value>奖励徽章文本</value>
+  </data>
+  <data name="CommunityMember_ContentTypeName">
+    <value>社区成员</value>
+  </data>
+  <data name="CommunityMember_ContentTypeDescription">
+    <value>添加新的社区成员</value>
+  </data>
+  <data name="badges_Folder">
+    <value>Badges</value>
+  </data>
+  <data name="BadgesListInstance_Title">
+    <value>徽章</value>
+  </data>
+  <data name="BadgesListInstance_Desc">
+    <value>此列表存储由此社区的管理员或审阅者创建的徽章。</value>
+  </data>
+  <data name="BadgesList_TitleFieldName">
+    <value>徽章名称</value>
+  </data>
+  <data name="BadgesList_DefaultBadge1">
+    <value>专家</value>
+  </data>
+  <data name="BadgesList_DefaultBadge2">
+    <value>专业人士</value>
+  </data>
+  <data name="SiteSettings_CommunitySettingsGroup_Title">
+    <value>社区管理</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Title">
+    <value>管理讨论</value>
+  </data>
+  <data name="SiteSettings_CommunityManageDiscussions_Tooltip">
+    <value>管理社区中的讨论。</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Title">
+    <value>管理类别</value>
+  </data>
+  <data name="SiteSettings_CommunityManageCategories_Tooltip">
+    <value>管理社区中的类别。</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Title">
+    <value>管理成员</value>
+  </data>
+  <data name="SiteSettings_CommunityManageMembers_Tooltip">
+    <value>管理社区中的成员。</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Title">
+    <value>社区设置</value>
+  </data>
+  <data name="SiteSettings_CommunitySettings_Tooltip">
+    <value>社区设置，例如建立日期和启用攻击性内容报告。</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Title">
+    <value>管理报告的帖子</value>
+  </data>
+  <data name="SiteSettings_ManageReportedContent_Tooltip">
+    <value>管理报告为攻击性内容的帖子。</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Title">
+    <value>信誉设置</value>
+  </data>
+  <data name="SiteSettings_CommunityReputationSettings_Tooltip">
+    <value>社区信誉设置，例如内容和人员信誉。</value>
+  </data>
+  <data name="CommunityWebPartGroup">
+    <value>社区</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Title">
+    <value>加入</value>
+  </data>
+  <data name="CommunityJoin_WebPart_Description">
+    <value>提供非社区网站成员加入社区的能力。如果用户已是成员，则该按钮会隐藏。此 Web 部件将在社区网站或者启用了社区功能的任何其他网站上工作。</value>
+  </data>
+  <data name="AboutUs_WebPart_Title">
+    <value>关于此社区</value>
+  </data>
+  <data name="AboutUs_WebPart_Description">
+    <value>此 Web 部件显示社区说明和建立日期等其他属性。此 Web 部件将在社区网站或启用了社区功能的任何其他网站上工作。</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Title">
+    <value>工具</value>
+  </data>
+  <data name="CommunityAdmin_WebPart_Description">
+    <value>向社区所有者和管理员提供常用设置页面和内容列表的快速链接，以用于管理社区网站。此 Web 部件将在社区网站和启用了社区功能的任何其他网站上工作。</value>
+  </data>
+  <data name="Communities_FeaturedDiscussions_WebPart_Title">
+    <value>专题讨论</value>
+  </data>
+  <data name="Dashboard_WebPart_Title">
+    <value>最新新闻</value>
+  </data>
+  <data name="Dashboard_WebPart_Description">
+    <value>显示社区网站内成员、主题和回复的数目。此 Web 部件将在社区网站和启用了社区功能的任何其他网站上工作。</value>
+  </data>
+  <data name="MyMembership_WebPart_Title">
+    <value>我的成员资格</value>
+  </data>
+  <data name="MyMembership_WebPart_Description">
+    <value>显示社区网站的当前访问者的信誉和成员身份信息。此 Web 部件将在社区网站和启用了社区功能的任何其他网站上工作。</value>
+  </data>
+  <data name="MembersView">
+    <value>成员视图</value>
+  </data>
+  <data name="MembersViewAdmin">
+    <value>管理视图</value>
+  </data>
+  <data name="SingleMemberView">
+    <value>单个成员视图</value>
+  </data>
+  <data name="TopContributorsView">
+    <value>最佳参与者</value>
+  </data>
+  <data name="NewMembersView">
+    <value>新成员</value>
+  </data>
+  <data name="Community_QuickLaunch">
+    <value>社区</value>
+  </data>
+  <data name="Categories_QuickLaunch">
+    <value>类别</value>
+  </data>
+  <data name="Members_QuickLaunch">
+    <value>成员</value>
+  </data>
+  <data name="About_QuickLaunch">
+    <value>关于</value>
+  </data>
+  <data name="Home_QuickLaunch">
+    <value>主页</value>
+  </data>
+  <data name="Communities_AbuseReportsViewName">
+    <value>报告的帖子</value>
+  </data>
+  <data name="Communities_DiscussionViewCategory">
+    <value>DiscussionsByCategory</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedFull">
+    <value>DiscussionsByCategoryFeaturedFull</value>
+  </data>
+  <data name="Communities_DiscussionViewCategoryFeaturedPreview">
+    <value>DiscussionsByCategoryFeaturedPreview</value>
+  </data>
+  <data name="SPSBlogFeature_Text">
+    <value>博客通知功能</value>
+  </data>
+  <data name="SPSBlogFeature_Desc">
+    <value>此功能将向博客添加通知</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Text">
+    <value>博客通知装订功能</value>
+  </data>
+  <data name="SPSBlogStaplingFeature_Desc">
+    <value>此功能可将博客通知和赞功能装订到博客网站模板</value>
+  </data>
+  <data name="ProfilePage_EditProfileLinkText">
+    <value>{0}编辑{1}您的配置文件</value>
+  </data>
+  <data name="ProfileProperties_Email">
+    <value>电子邮件</value>
+  </data>
+  <data name="ProfileProperties_Phone">
+    <value>电话</value>
+  </data>
+  <data name="ProfileProperties_Office">
+    <value>办公室</value>
+  </data>
+  <data name="InCommon_WebPart_15_Title">
+    <value>共有</value>
+  </data>
+  <data name="InCommon_WebPart_15_Description">
+    <value>显示您与用户之间共有的内容</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Title">
+    <value>组织结构图</value>
+  </data>
+  <data name="ProfileManages_WebPart_15_Description">
+    <value>显示您的组织结构图和报告层次结构</value>
+  </data>
+  <data name="ManageProfileService_Mysite_ManageFollowing">
+    <value>管理关注</value>
+  </data>
+  <data name="TagCloudWebPart_Title15">
+    <value>标签和注释</value>
+  </data>
+  <data name="TagCloudWebPart_Description15">
+    <value>显示您的组织内标记的最热门的主题。</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Title">
+    <value>配置文件信息</value>
+  </data>
+  <data name="ProfileInfo_WebPart_Description">
+    <value>显示当前用户的基本配置文件信息</value>
+  </data>
+  <data name="DocMove_MoveToUrl_LabelText">
+    <value>移动文档</value>
+  </data>
+  <data name="DocMove_MoveToUrl_Description">
+    <value>将选定文档移动到其他站点或者当前库中的文件夹。</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipTitle">
+    <value>移动文档。</value>
+  </data>
+  <data name="DocMove_MoveToUrl_ToolTipDescription">
+    <value>将选定文档移动到其他站点或者当前库中的文件夹。</value>
+  </data>
+  <data name="DocMove_MoveToUrl_AltText">
+    <value>将选定文档移动到其他站点或者当前库中的文件夹。</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureTitle">
+    <value>跨服务器场站点权限</value>
+  </data>
+  <data name="CrossFarmSitePermissionsFeatureDescription">
+    <value>使用跨服务器场站点权限功能可允许内部 SharePoint 应用程序跨服务器场访问网站。</value>
+  </data>
+  <data name="InternalUseOnly">
+    <value>仅供内部使用</value>
+  </data>
+  <data name="SocialCTGroup">
+    <value>社会</value>
+  </data>
+  <data name="MicrobloggingOnet_CTMBInfoTitle">
+    <value>微博属性</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_UnreadMentionsDisplayName">
+    <value>提及处未读</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_LastPostIdDisplayName">
+    <value>上次发布者</value>
+  </data>
+  <data name="MicrobloggingOnet_Fields_SocialPropsDisplayName">
+    <value>社会属性</value>
+  </data>
+  <data name="ContentFollowingOnet_CTBaseTitle">
+    <value>关注的项目</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedSiteTitle">
+    <value>网站</value>
+  </data>
+  <data name="ContentFollowingOnet_CTFollowedDocTitle">
+    <value>关注的文档</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Title">
+    <value>社会数据存储</value>
+  </data>
+  <data name="SocialDataStoreList_Feature_Description">
+    <value>提供对社交功能的数据支持</value>
+  </data>
+  <data name="SocialDataStoreList_List_Title">
+    <value>社交</value>
+  </data>
+  <data name="SocialDataStoreList_List_Description">
+    <value>提供对社交功能的数据支持</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Text">
+    <value>我的网站母版功能</value>
+  </data>
+  <data name="PeopleFeatures_MySiteMaster_Desc">
+    <value>将母版页上载到母版页库的“我的网站”功能。</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Text">
+    <value>我的网站统一导航功能</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedNavigation_Desc">
+    <value>为宿主和个人网站显示相同导航的“我的网站”功能。</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Text">
+    <value>我的网站单个快速启动功能</value>
+  </data>
+  <data name="PeopleFeatures_MySiteUnifiedQuickLaunch_Desc">
+    <value>为宿主和个人网站显示相同快速启动的“我的网站”功能。</value>
+  </data>
+  <data name="MySiteMaster15_Title">
+    <value>我的网站母版页</value>
+  </data>
+  <data name="MySiteMaster15_Description">
+    <value>提供我的网站的独特外观。</value>
+  </data>
+  <data name="PromotedSites_WebPartTitle">
+    <value>已升级的网站</value>
+  </data>
+  <data name="PromotedSites_WebParDescription">
+    <value>平铺呈现升级的网站。</value>
+  </data>
+  <data name="SitesPage_NewSiteLink">
+    <value>新网站</value>
+  </data>
+  <data name="ProfileAdminLinks_PromotedSites">
+    <value>已升级的网站</value>
+  </data>
+  <data name="ManageProfileService_MySite_PromotedSites">
+    <value>管理已升级的网站</value>
+  </data>
+  <data name="SiteFeed_WebPart_Title">
+    <value>网站源</value>
+  </data>
+  <data name="SiteFeed_WebPart_Description">
+    <value>网站源包含组网站上的微博对话。</value>
+  </data>
+  <data name="SiteFeed_PageTitle">
+    <value>新闻源</value>
+  </data>
+  <data name="SiteFeed_Feature_Title">
+    <value>网站源</value>
+  </data>
+  <data name="SiteFeed_Feature_Description">
+    <value>启用使用网站源。</value>
+  </data>
+  <data name="SiteFeed_NavBars_Newsfeed">
+    <value>新闻源</value>
+  </data>
+  <data name="SiteFeedController_Feature_Title">
+    <value>网站源功能控制器</value>
+  </data>
+  <data name="SiteFeedController_Feature_Description">
+    <value>控制网站源功能激活。</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Title">
+    <value>网站源功能装订</value>
+  </data>
+  <data name="SiteFeedStapling_Feature_Description">
+    <value>将网站源功能装订到所有新的工作组网站网站集。</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleName">
+    <value>微博编辑</value>
+  </data>
+  <data name="MicroBlogListFeature_ContributorRoleDescription">
+    <value>可以查看、添加、更新和删除列表项和文档。</value>
+  </data>
+  <data name="Profile_ChangePicture_Text">
+    <value>更改您的照片</value>
+  </data>
+  <data name="EditProfile_UserCannotChangePictureExternal_Text">
+    <value>仅 {0} 可以更改此照片。</value>
+  </data>
+  <data name="EditProfile_AdminCannotChangePictureExternal_Text">
+    <value>无法更改此人的照片，因为它已与 Microsoft Exchange 同步。</value>
+  </data>
+  <data name="FollowedCountsWebPart_Header_Text">
+    <value>我正在关注</value>
+  </data>
+  <data name="FollowedCountsWebPart_People_Text">
+    <value>人员</value>
+  </data>
+  <data name="FollowedCountsWebPart_PeopleTooltip_Text">
+    <value>查看您正在关注的人</value>
+  </data>
+  <data name="FollowedCountsWebPart_Documents_Text">
+    <value>文档</value>
+  </data>
+  <data name="FollowedCountsWebPart_DocumentsTooltip_Text">
+    <value>查看您正在关注的文档</value>
+  </data>
+  <data name="FollowedCountsWebPart_Sites_Text">
+    <value>网站</value>
+  </data>
+  <data name="FollowedCountsWebPart_SitesTooltip_Text">
+    <value>查看您正在关注的网站</value>
+  </data>
+  <data name="FollowedCountsWebPart_Tags_Text">
+    <value>标记</value>
+  </data>
+  <data name="FollowedCountsWebPart_TagsTooltip_Text">
+    <value>查看您正在关注的标记</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignment_Content">
+    <value xml:space="preserve">{Assigner} 在 {TLNFSiteName} &gt; {TLNFListName} 中向您分配了新任务</value>
+  </data>
+  <data name="Microsoft_Sharepoint_Portal_NewsFeedNewAssignmentFromSync_Content">
+    <value xml:space="preserve">在 {TLNFSiteName} &gt; {TLNFListName} 中向您分配了一个或多个任务</value>
+  </data>
+  <data name="ViewMyTasks_CustomAction_Name">
+    <value>查看我的任务</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SkyDriveReady">
+    <value>您的 SkyDrive Pro 已准备就绪</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Offline">
+    <value>脱机访问您的文档</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Mobile">
+    <value>保持移动!</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_Personalize">
+    <value>个性化您的配置文件</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_People">
+    <value>保持联系</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FoldeSync">
+    <value>让其他人了解您的动态</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditPrivacy">
+    <value>  &lt;a href="{0}"&gt;更新您的隐私设置&lt;/a&gt;以便其他人可以查看和评论您在 SharePoint 新闻源中的活动。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_DocMoved">
+    <value>已将您现有“我的网站”文档移动到您的 &lt;a href="{0}"&gt;SkyDrive Pro&lt;/a&gt;，SharePoint 中用于存储、同步和共享您的工作的位置。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline">
+    <value>您可以通过单击任何库上的“同步”按钮来将文档脱机。请在您的 &lt;a href="{0}"&gt;OneDrive for Business&lt;/a&gt;上尝试。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_TakeOffline2">
+    <value>您可以通过单击任何库上的“同步”按钮来将文档脱机。请在您的 &lt;a href="{0}"&gt;{1} for Business&lt;/a&gt;上尝试。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_GoMobile">
+    <value>通过下载{0}移动应用程序{1}来充分利用 SharePoint。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EditProfile">
+    <value>上载照片，并在&lt;a href="{0}"&gt;此处&lt;/a&gt;向其他人介绍有关您自己的更多信息。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_ChangeSetting">
+    <value>其他人可以在 SharePoint 中查看并评论您的一些活动。您可以&lt;a href="{0}"&gt;在此&lt;/a&gt;更改设置。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_FollowPeople">
+    <value>&lt;a href="{0}"&gt;关注&lt;/a&gt;您想关注的人。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NewsFeedReady">
+    <value>您的 SharePoint 新闻源已准备就绪</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_NextStep">
+    <value>以下是接下来可以执行的操作:</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_EmailTitle">
+    <value>充分利用 SharePoint</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_SetPrivacy">
+    <value>其他人可以在 SharePoint 中查看并评论您的活动。您可以&lt;a href="{0}"&gt;在此&lt;/a&gt;更改设置。</value>
+  </data>
+  <data name="SkyDrivePro">
+    <value>OneDrive for Business</value>
+  </data>
+  <data name="ManageSharedAppsDisplayName">
+    <value>管理共享的应用程序</value>
+  </data>
+  <data name="ManageSharedAppsDescription">
+    <value>查看此网站中的所有库和列表。</value>
+  </data>
+  <data name="MySiteHost_PageTitle">
+    <value>新闻源</value>
+  </data>
+  <data name="Mybrary_StatusBarText">
+    <value>欢迎使用 &lt;span id="skyDriveText"&gt;您的 OneDrive for Business&lt;/span&gt;，在这里您可以存储、同步并共享您的工作。文档在共享之前都是私有的。&lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;在此处了解详细信息&lt;/a&gt;。</value>
+  </data>
+  <data name="Mybrary_StatusBarText2">
+    <value>欢迎使用 &lt;span id="skyDriveText"&gt;您的 {0} for Business&lt;/span&gt;，在这里您可以存储、同步并共享您的工作。文档在共享之前都是私有的。&lt;a href=javascript:HelpWindowKey("WSSEndUser_SPAboutSkyDrivePro")&gt;在此处了解详细信息&lt;/a&gt;。</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Unmigrated">
+    <value>好消息! 您在 Office 365 上也有 {0} for Business，可以从任何位置访问文件。只需单击顶部导航栏中的 {1}。别担心，您在这里拥有的文件将继续工作。{2}单击此处{3}了解有关移动文件的信息。</value>
+  </data>
+  <data name="Mybrary_StatusBarText_BoxCutter_Migrated">
+    <value>别担心，您的文件是安全的。我们已将它们移动到 Office 365 上您的新 {0} for Business，在这里，您可以从任何设备上的任何位置访问它们。您可以通过单击顶部导航栏中的 {1} 进行访问。</value>
+  </data>
+  <data name="Mybrary_DismissStatusText">
+    <value>解除</value>
+  </data>
+  <data name="Mybrary_FolderStatusBarText">
+    <value>&lt;span id="skyDriveFolder"&gt;您的组织&lt;/span&gt;中的每个人均可访问此处的文档。</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText">
+    <value>正在准备您的 OneDrive for Business。这可能需要一段时间，请随意浏览。</value>
+  </data>
+  <data name="Mybrary_FirstRunProgressDialogText2">
+    <value>正在准备 {0} for Business。这可能需要一段时间，请随意浏览。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription">
+    <value>请将您现有的“我的网站”文档移动到 OneDrive for Business，在这里您可以存储、同步并共享您的工作。</value>
+  </data>
+  <data name="MySiteDocLibInitialSetup_MoveDocumentsDescription2">
+    <value>请将您现有的“我的网站”文档移动到 {0} for Business，在这里您可以存储、同步并共享您的工作。</value>
+  </data>
+</root>
