@@ -12,6 +12,10 @@
     function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService) {
         $scope.title = 'WizardModalInstanceController';
 
+        $scope.siteConfiguration = {};
+        $scope.siteConfiguration.properties = {};
+        var vm = this;
+
         var logSuccess = common.logger.getLogFn(controllerId, 'success');
         var logError = common.logger.getLogFn(controllerId, 'error');
         var getLogFn = common.logger.getLogFn;
@@ -31,6 +35,10 @@
             siteTemplate: function () { return $scope.siteConfiguration.template == null; }
         };
 
+
+        activate();
+
+        
         // Set language and time zone defaults
         for (var i = 0; i < $scope.appSettings.length; i++) {
             var setting = $scope.appSettings[i]
@@ -55,7 +63,7 @@
                     $scope.allFormsValid.sitePrivacy = true
                     break;
             }
-        
+
         }
         
         
@@ -69,11 +77,32 @@
             $modalInstance.dismiss('cancel');
         };
 
+        // Init responsibilities values
+        $scope.siteConfiguration.properties.termsaccepted = false;
+        $scope.siteConfiguration.properties.pursuelearningpathagreed = false;
+        $scope.siteConfiguration.properties.communityparticipationagreed = false;
+        $scope.siteConfiguration.properties.manageaccesstositeaccepted = false;
+        $scope.siteConfiguration.properties.maintenanceresponsibilityaccepted = false;
+
+        // Init misc prop values
+        $scope.siteConfiguration.properties.sponprem = false;
+        $scope.siteConfiguration.properties.externalsharing = false;
         
+        //Form validation object
+        $scope.allFormsValid = {
+            siteResponsibilities: false,
+            siteIntendedUse: false,
+            siteDetails: false,
+            sitePrivacy: false,
+            siteTemplate: function () { return $scope.siteConfiguration.template == null; }
+        };
 
         //Watching the forms of the specific views
         $scope.$watch('formWizard.$valid', function () {
             switch ($scope.getCurrentStep()) {
+                case 2:
+                    $scope.allFormsValid.siteResponsibilities = $scope.formWizard.siteResponsibilitiesform == null ? false : $scope.formWizard.siteResponsibilitiesform.$valid;
+                    break;
                 case 3:
                     $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
                     break;
@@ -84,6 +113,7 @@
                     $scope.allFormsValid.sitePrivacy = $scope.formWizard.siteprivacyform == null ? false : $scope.formWizard.siteprivacyform.$valid;
                     break;
             }
+
         });
 
         //submitcheck
@@ -92,8 +122,10 @@
 
         $scope.finished = function () {
 
+            $scope.siteConfiguration.properties.sponprem = $scope.siteConfiguration.spOnPrem;
+
             //checks if all mandatory forms are valid before submit
-            if (!$scope.allFormsValid.readAndAccept() ||
+            if (!$scope.allFormsValid.siteResponsibilities ||
                 !$scope.allFormsValid.siteIntendedUse ||
                 !$scope.allFormsValid.siteDetails ||
                 !$scope.allFormsValid.sitePrivacy ||
@@ -103,33 +135,33 @@
             }
             else {
 
-            //  save the site request when the wizard is complete
+                //  save the site request when the wizard is complete
 
-            var siteRequest = new Object();
-            siteRequest.title = $scope.siteConfiguration.details.title;
+                var siteRequest = new Object();
+                siteRequest.title = $scope.siteConfiguration.details.title;
                 if ($scope.siteConfiguration.allowCustomUrl) {
                     siteRequest.url = null
                 }
                 else 
                 {
-            siteRequest.url = $scope.siteConfiguration.spNewSitePrefix + $scope.siteConfiguration.details.url;
+                    siteRequest.url = $scope.siteConfiguration.spNewSitePrefix + $scope.siteConfiguration.details.url;
                 }
-            siteRequest.description = $scope.siteConfiguration.details.description;
-            siteRequest.lcid = $scope.siteConfiguration.language;
-            siteRequest.timeZoneId = $scope.siteConfiguration.timezone;
-            siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwner;
-            siteRequest.additionalAdministrators = $scope.siteConfiguration.secondaryOwners;
-            siteRequest.sharePointOnPremises = $scope.siteConfiguration.spOnPrem;
-            siteRequest.template = $scope.siteConfiguration.template.title;
-            siteRequest.sitePolicy = $scope.siteConfiguration.privacy.classification;
-            siteRequest.businessCase = $scope.siteConfiguration.purpose.description;
+                siteRequest.description = $scope.siteConfiguration.details.description;
+                siteRequest.lcid = $scope.siteConfiguration.language;
+                siteRequest.timeZoneId = $scope.siteConfiguration.timezone;
+                siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwner;
+                siteRequest.additionalAdministrators = $scope.siteConfiguration.secondaryOwners;
+                siteRequest.sharePointOnPremises = $scope.siteConfiguration.spOnPrem;
+                siteRequest.template = $scope.siteConfiguration.template.title;
+                siteRequest.sitePolicy = $scope.siteConfiguration.privacy.classification;
+                siteRequest.businessCase = $scope.siteConfiguration.purpose.description;
             siteRequest.enableExternalSharing = $scope.siteConfiguration.externalSharing;
             siteRequest.isConfidential = $scope.siteConfiguration.isConfidential;
-    
-            //property bag entries will enumerate all properties defined in siteConfiguration.properties
-            var props = {};
-            angular.forEach($scope.siteConfiguration.properties, function (value, key) {
-                    var data = value;
+
+                //property bag entries will enumerate all properties defined in siteConfiguration.properties
+                var props = {};
+                angular.forEach($scope.siteConfiguration.properties, function (value, key) {
+                    var data = encodeURIComponent(value);
                     var propData = "";
                     if ($.isArray(data)) {
                         angular.forEach(data, function (value, key) {
@@ -146,20 +178,20 @@
                     else {
                         props["_site_props_" + key] = data;
                     }
-            });
+                });
 
                 //add properties to javaScript object
-            siteRequest.properties = props;
+                siteRequest.properties = props;
 
                 //process the siterequest
                 if ($scope.siteConfiguration.allowCustomUrl) {
                     saveNewSiteRequest(siteRequest);
                 } else {
-            processNewSiteRequest(siteRequest);
+                    processNewSiteRequest(siteRequest);
                 }
                 
-            
-          
+                
+                
             }
         };
 
@@ -344,9 +376,15 @@
         function saveNewSiteRequest(request) {
             $.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
                 if (data != null) {
-                        logSuccess("Sweet!, Site Request has been submitted");
-                        $modalInstance.close($scope.siteConfiguration);
+                    if(data.success != true) {
+                        logSuccess("Success!, Site Request has been submitted");
+                    $modalInstance.close($scope.siteConfiguration);
+                }
+                    else {
+                        logError("Oops, something bad has occured.")
                     }
+
+                }
             }).fail(function (data, status) {
                 console.log(err);
             });
@@ -365,14 +403,14 @@
 
                         $.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
                             if (data != null) {
-                                logSuccess("Sweet!, Site Request has been submitted");
+                                logSuccess("Success!, Site Request has been submitted");
                                 $modalInstance.close($scope.siteConfiguration);
-                }
+                            }
                         }).fail(function (data, status) {
-                console.log(err);
-            });
-            console.log(request);
-        }
+                            console.log(err);
+                        });
+                        console.log(request);
+                    }
                 }
             });
             console.log(request);

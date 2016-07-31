@@ -28,7 +28,7 @@ namespace Provisioning.Job
         ISiteTemplateFactory _siteTemplateFactory;
         IAppSettingsManager _appManager;
         AppSettings _settings;
-
+        
         #endregion
 
         #region Constructors
@@ -56,7 +56,7 @@ namespace Provisioning.Job
             }
             else
             {
-                Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "There are no site requests pending in the repository");
+               Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "There are no site requests pending in the repository");
             }
             // End processing of approved requests
             #endregion
@@ -90,47 +90,54 @@ namespace Provisioning.Job
 
             foreach (var siteRequest in siteRequests)
             {
-                try
+                try 
                 {
                     // ****************************************************
                     // Step 1 - Get Template                   
                     // ****************************************************
-                    var _template = _tm.GetTemplateByName(siteRequest.Template);
+                    var _template = _tm.GetTemplateByName(siteRequest.Template);              
                     if (_template == null)
-                    {
+                    {   
                         //NO TEMPLATE FOUND THAT MATCHES WE CANNOT PROVISION A SITE
                         var _message = string.Format("Template: {0} was not found for site {1}. Ensure that the template file exits.", siteRequest.Template, siteRequest.Url);
                         Log.Error("Provisioning.Job.SiteProvisioningJob.ProvisionSites", _message);
                         throw new ConfigurationErrorsException(_message);
                     }
-
+                    
                     // ****************************************************
                     // Step 2 - Update request status                    
                     // ****************************************************
                     var _provisioningTemplate = _tm.GetProvisioningTemplate(_template.ProvisioningTemplate);
-                    _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Processing);
 
+                    //NO TEMPLATE FOUND THAT MATCHES WE CANNOT PROVISION A SITE
+                    if (_template == null)
+                    {
+                        Log.Warning("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Template {0} was not found for Site Url {1}.", siteRequest.Template, siteRequest.Url);
+                    }
+
+                    _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Processing);
+                   
                     SiteProvisioningManager _siteProvisioningManager = new SiteProvisioningManager(siteRequest, _template);
                     MdlzCommonCustomizations customizations = new MdlzCommonCustomizations(siteRequest, _provisioningTemplate, _template);
 
                     customizations.Apply(
                     () =>
                     {
-                        // ****************************************************
-                        // Step 3 - Create the site                    
-                        // ****************************************************
-                        Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Provisioning Site Request for Site Url {0}.", siteRequest.Url);
-                        _siteProvisioningManager.CreateSiteCollection(siteRequest, _template);
+                    // ****************************************************
+                    // Step 3 - Create the site                    
+                    // ****************************************************
+                    Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Provisioning Site Request for Site Url {0}.", siteRequest.Url);
+                    _siteProvisioningManager.CreateSiteCollection(siteRequest, _template);
                     },
                     () =>
                     {
-                        // ****************************************************
-                        // Step 4 - Apply provisioning template                    
-                        // ****************************************************
-                        Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Applying Provisioning Template for Site Url {0}.", siteRequest.Url);
-                        _siteProvisioningManager.ApplyProvisioningTemplate(_provisioningTemplate, siteRequest, _template);
+                    // ****************************************************
+                    // Step 4 - Apply provisioning template                    
+                    // ****************************************************
+                    Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Applying Provisioning Template for Site Url {0}.", siteRequest.Url);
+                    _siteProvisioningManager.ApplyProvisioningTemplate(_provisioningTemplate, siteRequest, _template);
                     });
-
+                    
                     // ****************************************************
                     // Step 5 - Update request access email                    
                     // ****************************************************
@@ -150,11 +157,11 @@ namespace Provisioning.Job
 
 
                     this.SendSuccessEmail(siteRequest);
-
+                    
                     // ****************************************************
                     // Step 8 - Set status to complete                    
                     // ****************************************************
-                    _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Complete);
+                    _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Complete, "");
 
                 }
                 catch (ProvisioningTemplateException _pte)
@@ -165,27 +172,43 @@ namespace Provisioning.Job
                 {
                     Log.Error("Provisioning.Job.SiteProvisioningJob.ProvisionSites", _ex.ToString());
                     _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Exception, _ex.Message);
-                    this.SendFailureEmail(siteRequest, _ex.Message);
+                  this.SendFailureEmail(siteRequest, _ex.Message, true);
                 }
             }
         }
 
-        /// <summary>
-        /// Check to see if site exists 
-        /// </summary>
-        /// <param name="siteRequest"></param>
-        protected void ActivatePublishingFeature(SiteInformation siteRequest)
+        protected string CheckReservedNamespaces(SiteInformation siteRequest)
         {
-            Uri siteUri = new Uri(siteRequest.Url);
-            string realm = TokenHelper.GetRealmFromTargetUrl(siteUri);
-            string accessToken = TokenHelper.GetAppOnlyAccessToken(TokenHelper.SharePointPrincipal, siteUri.Authority, realm).AccessToken;
+            string returnValue = string.Empty;
+            string siteUri = siteRequest.Url;
+            //   string realm = TokenHelper.GetRealmFromTargetUrl(siteUri);
+            //   string accessToken = TokenHelper.GetAppOnlyAccessToken(TokenHelper.SharePointPrincipal, siteUri.Authority, realm).AccessToken;
 
-            using (var clientContext = TokenHelper.GetClientContextWithAccessToken(siteRequest.Url, accessToken))
+            siteUri = siteUri.Replace("https://cocacola.sharepoint.com/teams", "https://teams.coca-cola.com/sites");
+            siteUri = siteUri.Replace("https://cocacola.sharepoint.com/sites", "https://partner.coca-cola.com/sites");
+
+
+            using (var ctx = new ClientContext("https://teams.coca-cola.com/sites/MTMigration"))
             {
-                // Push notifications feature activation 
-                // This needs to be here until another approach is found where it is not needed
-                clientContext.Web.ActivateFeature(new Guid("22a9ef51737b4ff29346694633fe4416"));
+                ctx.AuthenticationMode = ClientAuthenticationMode.Default;
+
+                System.Net.NetworkCredential cred = new System.Net.NetworkCredential("na\\X30965", "Friday$123456789");
+                ctx.Credentials = cred;
+                List oList = ctx.Web.Lists.GetByTitle("SiteInventory");
+
+                CamlQuery camlQuery = new CamlQuery();
+                camlQuery.ViewXml = "<View><Query><Where><And><Eq><FieldRef Name='Title' /><Value Type='Text'>" + siteUri.Trim() + "</Value></Eq><Eq><FieldRef Name='MigrateSite' /><Value Type='Boolean'>1</Value></Eq></And></Where></Query><RowLimit>1</RowLimit></View>";
+
+                ListItemCollection collListItem = oList.GetItems(camlQuery);
+                ctx.Load(collListItem);
+                ctx.Load(oList);
+                ctx.ExecuteQuery();
+                if (collListItem.Count > 0)
+            {
+                    returnValue = siteUri;
+                }
             }
+            return returnValue;
         }
 
         /// <summary>
@@ -196,7 +219,7 @@ namespace Provisioning.Job
         {
             //TODO CLEAN UP EMAILS
             try
-            {
+            { 
                 StringBuilder _admins = new StringBuilder();
                 SuccessEmailMessage _message = new SuccessEmailMessage();
                 _message.SiteUrl = info.Url;
@@ -216,10 +239,10 @@ namespace Provisioning.Job
             catch (Exception ex)
             {
                 Log.Error("Provisioning.Job.SiteProvisioningJob.SendSuccessEmail",
-                    "There was an error sending email. The Error Message: {0}, Exception: {1}",
+                    "There was an error sending email. The Error Message: {0}, Exception: {1}", 
                      ex.Message,
                      ex);
-
+         
             }
         }
 
@@ -228,7 +251,7 @@ namespace Provisioning.Job
         /// </summary>
         /// <param name="info"></param>
         /// <param name="errorMessage"></param>
-        protected void SendFailureEmail(SiteInformation info, string errorMessage)
+        protected void SendFailureEmail(SiteInformation info, string errorMessage, bool sendToAdmin)
         {
             try
             {
@@ -238,8 +261,10 @@ namespace Provisioning.Job
                 _message.SiteOwner = info.SiteOwner.Name;
                 _message.Subject = "Alert: Your new SharePoint site request had a problem.";
                 _message.ErrorMessage = errorMessage;
+                if (sendToAdmin)
+                {
                 _message.To.Add(info.SiteOwner.Name);
-
+                }
                 if (!string.IsNullOrEmpty(this._settings.SupportEmailNotification))
                 {
                     string[] supportAdmins = this._settings.SupportEmailNotification.Split(';');
@@ -251,7 +276,10 @@ namespace Provisioning.Job
                 }
                 foreach (var admin in info.AdditionalAdministrators)
                 {
+                    if (sendToAdmin)
+                    {
                     _message.Cc.Add(admin.Name);
+                    }
                     _admins.Append(admin.Name);
                     _admins.Append(" ");
                 }
@@ -265,7 +293,7 @@ namespace Provisioning.Job
                      ex.Message,
                      ex);
             }
-
+          
         }
 
     }
