@@ -181,3 +181,4 @@ FakesAssemblies/
 *.pubxml
 /Solutions/BusinessApps.HelpDesk/BusinessApps.HelpDesk
 /Samples/Provisioning.Cloud.Async.WebJob
+/Solutions/Provisioning.UX.App/Provisioning.Job/Provisioning.Job - Copy.csproj
