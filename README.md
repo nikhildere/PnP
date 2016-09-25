@@ -1,5 +1,5 @@
 # Patterns and Practices #
-This is the main repository for the community driven [Office 365 Developer Patterns and Practices](http://aka.ms/OfficeDevPnP) (PnP) initiative. If you are looking for latest news around PnP or related topics, please have a look on our one pager at http://aka.ms/OfficeDevPnP.
+This is the main repository for the community driven [Office 365 Developer Patterns and Practices](http://aka.ms/OfficeDevPnP) (PnP) initiative. If you are looking for latest news around PnP or related topics, please have a look on our one pager at http://aka.ms/OfficeDevPnP. 
 
 ![Office 365 Developer Patterns and Practices logo](http://i.imgur.com/l01hhvE.png)
 
@@ -26,6 +26,6 @@ You could be also interested on seeing all PnP resources in [one PowerPoint slid
 
 **Notice**. There are different kind of techniques shown in the PnP guidance for apps/add-ins targetted to store and also for apps targeted to be deployed or created more as enterprise developmented apps/add-ins. Any app/add-in which requires higher than **Manage** permission to the host web cannot be distributed using SharePoint store.*
 
-## "Sharing is caring" ##
+## "Sharing is caring" ## 
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
