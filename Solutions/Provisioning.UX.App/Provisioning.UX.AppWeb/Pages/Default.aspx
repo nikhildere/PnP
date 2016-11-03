@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="app">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8"/> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Dashboard</title>
@@ -27,7 +27,7 @@
         <div class="ms-fontWeight-semilight" style="padding: 8px 0px 0px 15px; color: white; font-size: 22px;">Office 365</div>
         <div class="NavLine"></div><div class="appTitle ms-fontWeight-semilight">Site Provisioning</div>
    </div>
-    <%--<div id="divSPChrome"></div> --%>           
+    <div id="divSPChrome"></div>            
         
     <!-- Include the Wizard View -->
     <div style="margin-top: 100px;" data-ng-include="'shell.html'"></div>
@@ -56,7 +56,7 @@
 
     <!-- common.bootstrap Modules -->
     <script src="../scripts/bootstrap.dialog.js"></script>
-
+    
     <!-- Chrome Loader -->
     <script src="../scripts/chromeloader.js?rev=1" type="text/javascript"></script>
 
@@ -79,8 +79,7 @@
     <script src="../scripts/data/metadata.factory.js"></script>
     <script src="../scripts/data/appsettings.factory.js"></script>
     <script src="../scripts/wizard/services/provisioningServices.js"></script>
-    <script src="../Scripts/sp.peoplepicker.js"></script>
-    <script src="../scripts/app.js"></script>    
+    <script src="../scripts/app.js"></script>
     <script type="text/javascript" src="../scripts/sp.peoplepicker.js"></script>    
 
     <script type="text/javascript">

@@ -1,25 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema" >
   <pnp:Preferences />
+  <pnp:Localizations>
+    <pnp:Localization LCID="2052" Name="core" ResourceFile="Language/mdlzbrandingresources.zh-CN.resx"/>
+    <pnp:Localization LCID="1029" Name="core" ResourceFile="Language/mdlzbrandingresources.cs-CZ.resx"/>
+    <pnp:Localization LCID="1030" Name="core" ResourceFile="Language/mdlzbrandingresources.da-DK.resx"/>
+    <pnp:Localization LCID="1033" Name="core" ResourceFile="Language/mdlzbrandingresources.en-US.resx"/>
+    <pnp:Localization LCID="1035" Name="core" ResourceFile="Language/mdlzbrandingresources.fi-FI.resx"/>
+    <pnp:Localization LCID="1036" Name="core" ResourceFile="Language/mdlzbrandingresources.fr-FR.resx"/>
+    <pnp:Localization LCID="1031" Name="core" ResourceFile="Language/mdlzbrandingresources.de-DE.resx"/>
+    <pnp:Localization LCID="1032" Name="core" ResourceFile="Language/mdlzbrandingresources.el-GR.resx"/>
+    <pnp:Localization LCID="1040" Name="core" ResourceFile="Language/mdlzbrandingresources.it-IT.resx"/>
+    <pnp:Localization LCID="1041" Name="core" ResourceFile="Language/mdlzbrandingresources.ja-JP.resx"/>
+    <pnp:Localization LCID="1042" Name="core" ResourceFile="Language/mdlzbrandingresources.ko-KR.resx"/>
+    <pnp:Localization LCID="1063" Name="core" ResourceFile="Language/mdlzbrandingresources.lt-LT.resx"/>
+    <pnp:Localization LCID="1044" Name="core" ResourceFile="Language/mdlzbrandingresources.no-NO.resx"/>
+    <pnp:Localization LCID="1045" Name="core" ResourceFile="Language/mdlzbrandingresources.pl-PL.resx"/>
+    <pnp:Localization LCID="1046" Name="core" ResourceFile="Language/mdlzbrandingresources.pt-BR.resx"/>
+    <pnp:Localization LCID="1048" Name="core" ResourceFile="Language/mdlzbrandingresources.ro-RO.resx"/>
+    <pnp:Localization LCID="1049" Name="core" ResourceFile="Language/mdlzbrandingresources.ru-RU.resx"/>
+    <pnp:Localization LCID="1051" Name="core" ResourceFile="Language/mdlzbrandingresources.sk-SK.resx"/>
+    <pnp:Localization LCID="3082" Name="core" ResourceFile="Language/mdlzbrandingresources.es-ES.resx"/>
+    <pnp:Localization LCID="1053" Name="core" ResourceFile="Language/mdlzbrandingresources.sv-SE.resx"/>
+    <pnp:Localization LCID="1054" Name="core" ResourceFile="Language/mdlzbrandingresources.th-TH.resx"/>
+    <pnp:Localization LCID="1055" Name="core" ResourceFile="Language/mdlzbrandingresources.tr-TR.resx"/>
+    <pnp:Localization LCID="1066" Name="core" ResourceFile="Language/mdlzbrandingresources.vi.resx"/>
+  </pnp:Localizations>
   <pnp:Templates>
     <pnp:ProvisioningTemplate ID="Mdlz.DocumentCenterSite">
       <pnp:CustomActions>
-        <pnp:SiteCustomActions>
+        <!--<pnp:SiteCustomActions>
           <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
                     Description="Override new sub-site link"
                     Location="ScriptLink"
                     Title="CA_SITE_SUBSITE_OVERRIDE"
                     ScriptSrc=""
                     ScriptBlock="
-                    var SubSiteSettings_Web_Url = '{{$RemoteWebHostNameToken}}/pages/subsite/newsbweb.aspx?SPHostUrl=';
+                    var SubSiteSettings_Web_Url = '{$RemoteWebHostNameToken}/pages/subsite/newsbweb.aspx?SPHostUrl=';
                     var headID = document.getElementsByTagName('head')[0]; 
                     var subsiteScriptTag = document.createElement('script');
                     subsiteScriptTag.type = 'text/javascript';
                     subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
                     headID.appendChild(subsiteScriptTag);"/>
-        </pnp:SiteCustomActions>
+        </pnp:SiteCustomActions>-->
         <pnp:WebCustomActions>
-          <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
+          <!--<pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
                     Description="Site Classification Application"
                     Group="SiteTasks"
                     Location="Microsoft.SharePoint.SiteSettings"
@@ -34,7 +59,7 @@
                     Title="Site Classification"
                     Sequence="1000"
                     Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>
+                    Rights="31"/>-->
           <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
                     Description="Mondelez Js Injections"
                     Group="SiteActions"

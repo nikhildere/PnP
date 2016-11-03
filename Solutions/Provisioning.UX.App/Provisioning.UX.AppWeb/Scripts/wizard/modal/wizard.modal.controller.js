@@ -87,7 +87,7 @@
         // Init misc prop values
         $scope.siteConfiguration.properties.sponprem = false;
         $scope.siteConfiguration.properties.externalsharing = false;
-        
+
         //Form validation object
         $scope.allFormsValid = {
             siteResponsibilities: false,
@@ -217,8 +217,8 @@
         }
 
         $scope.filterSiteTemplates = function (template) {
-            return true;
-            //return (template.rootTemplate != 'BLOG#0' && template.rootTemplate != 'ENTERWIKI#0');
+            //return true;
+            return (template.rootTemplate != 'BLOG#0' && template.rootTemplate != 'ENTERWIKI#0');
         }
 
         function activate() {
@@ -417,6 +417,8 @@
         }
 
         $scope.getCurrentUser = function () {
+            var isSPOD = (typeof O365 === "undefined");
+            var odataType = isSPOD ? "verbose" : "nometadata";
             var executor = new SP.RequestExecutor($utilservice.spAppWebUrl());
             executor.executeAsync(
                    {
@@ -424,11 +426,12 @@
                        method: "GET",
                        headers:
                        {
-                           "Accept": "application/json;odata=nometadata"
+                           "Accept": "application/json;odata=" + odataType
                    
                        },
                        success: function (data) {
                            var jsonResults = JSON.parse(data.body);
+                           jsonResults = isSPOD ? jsonResults.d : jsonResults;
                            $scope.siteConfiguration.primaryOwner = jsonResults.Email;
 
                        },

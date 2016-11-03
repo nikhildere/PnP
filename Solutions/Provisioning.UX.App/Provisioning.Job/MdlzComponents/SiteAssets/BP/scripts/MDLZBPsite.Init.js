@@ -5,6 +5,7 @@ function LoadMdlzBranding() {
     var scriptFiles = ["/SiteAssets/Common/scripts/jquery-1.11.0.min.js",
                         "/SiteAssets/BP/scripts/MDLZBPsite.js",
                         "/SiteAssets/Common/scripts/WebTrendsMDLZ/webtrends.load.js",
+                        "/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js",
                         "/SiteAssets/Common/scripts/MDLZ.SiteLifeCycle.js"];
 
     var cssFiles = [];

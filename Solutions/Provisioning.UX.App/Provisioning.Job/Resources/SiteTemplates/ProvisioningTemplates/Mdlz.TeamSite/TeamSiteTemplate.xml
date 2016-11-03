@@ -2,95 +2,49 @@
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
   <pnp:Preferences/>
   <pnp:Localizations>
-    <pnp:Localization LCID="2052" Name="core" ResourceFile="Language/core.zh-cn.resx"/>
-    <pnp:Localization LCID="1029" Name="core" ResourceFile="Language/core.cs.resx"/>
-    <pnp:Localization LCID="1030" Name="core" ResourceFile="Language/core.da.resx"/>
-    <pnp:Localization LCID="1033" Name="core" ResourceFile="Language/core.en-us.resx"/>
-    <pnp:Localization LCID="1035" Name="core" ResourceFile="Language/core.fi.resx"/>
-    <pnp:Localization LCID="1036" Name="core" ResourceFile="Language/core.fr-fr.resx"/>
-    <pnp:Localization LCID="1031" Name="core" ResourceFile="Language/core.de-de.resx"/>
-    <pnp:Localization LCID="1032" Name="core" ResourceFile="Language/core.el.resx"/>
-    <pnp:Localization LCID="1040" Name="core" ResourceFile="Language/core.it-it.resx"/>
-    <pnp:Localization LCID="1041" Name="core" ResourceFile="Language/core.ja.resx"/>
-    <pnp:Localization LCID="1042" Name="core" ResourceFile="Language/core.ko.resx"/>
-    <pnp:Localization LCID="1063" Name="core" ResourceFile="Language/core.lt.resx"/>
-    <pnp:Localization LCID="1044" Name="core" ResourceFile="Language/core.no-no.resx"/>
-    <pnp:Localization LCID="1045" Name="core" ResourceFile="Language/core.pl.resx"/>
-    <pnp:Localization LCID="1046" Name="core" ResourceFile="Language/core.pt-br.resx"/>
-    <pnp:Localization LCID="1048" Name="core" ResourceFile="Language/core.ro.resx"/>
-    <pnp:Localization LCID="1049" Name="core" ResourceFile="Language/core.ru.resx"/>
-    <pnp:Localization LCID="1051" Name="core" ResourceFile="Language/core.sk.resx"/>
-    <pnp:Localization LCID="3082" Name="core" ResourceFile="Language/core.es-es.resx"/>
-    <pnp:Localization LCID="1053" Name="core" ResourceFile="Language/core.sv-se.resx"/>
-    <pnp:Localization LCID="1054" Name="core" ResourceFile="Language/core.th.resx"/>
-    <pnp:Localization LCID="1055" Name="core" ResourceFile="Language/core.tr.resx"/>
-    <pnp:Localization LCID="1066" Name="core" ResourceFile="Language/core.vi.resx"/>
-    <pnp:Localization LCID="2052" Name="spscore" ResourceFile="Language/spscore.zh-cn.resx"/>
-    <pnp:Localization LCID="1029" Name="spscore" ResourceFile="Language/spscore.cs.resx"/>
-    <pnp:Localization LCID="1030" Name="spscore" ResourceFile="Language/spscore.da.resx"/>
-    <pnp:Localization LCID="1033" Name="spscore" ResourceFile="Language/spscore.en-us.resx"/>
-    <pnp:Localization LCID="1035" Name="spscore" ResourceFile="Language/spscore.fi.resx"/>
-    <pnp:Localization LCID="1036" Name="spscore" ResourceFile="Language/spscore.fr-fr.resx"/>
-    <pnp:Localization LCID="1031" Name="spscore" ResourceFile="Language/spscore.de-de.resx"/>
-    <pnp:Localization LCID="1032" Name="spscore" ResourceFile="Language/spscore.el.resx"/>
-    <pnp:Localization LCID="1040" Name="spscore" ResourceFile="Language/spscore.it-it.resx"/>
-    <pnp:Localization LCID="1041" Name="spscore" ResourceFile="Language/spscore.ja.resx"/>
-    <pnp:Localization LCID="1042" Name="spscore" ResourceFile="Language/spscore.ko.resx"/>
-    <pnp:Localization LCID="1063" Name="spscore" ResourceFile="Language/spscore.lt.resx"/>
-    <pnp:Localization LCID="1044" Name="spscore" ResourceFile="Language/spscore.no-no.resx"/>
-    <pnp:Localization LCID="1045" Name="spscore" ResourceFile="Language/spscore.pl.resx"/>
-    <pnp:Localization LCID="1046" Name="spscore" ResourceFile="Language/spscore.pt-br.resx"/>
-    <pnp:Localization LCID="1048" Name="spscore" ResourceFile="Language/spscore.ro.resx"/>
-    <pnp:Localization LCID="1049" Name="spscore" ResourceFile="Language/spscore.ru.resx"/>
-    <pnp:Localization LCID="1051" Name="spscore" ResourceFile="Language/spscore.sk.resx"/>
-    <pnp:Localization LCID="3082" Name="spscore" ResourceFile="Language/spscore.es-es.resx"/>
-    <pnp:Localization LCID="1053" Name="spscore" ResourceFile="Language/spscore.sv-se.resx"/>
-    <pnp:Localization LCID="1054" Name="spscore" ResourceFile="Language/spscore.th.resx"/>
-    <pnp:Localization LCID="1055" Name="spscore" ResourceFile="Language/spscore.tr.resx"/>
-    <pnp:Localization LCID="1066" Name="spscore" ResourceFile="Language/spscore.vi.resx"/>
-    <pnp:Localization LCID="2052" Name="dlcore" ResourceFile="Language/dlccore.zh-cn.resx"/>
-    <pnp:Localization LCID="1029" Name="dlcore" ResourceFile="Language/dlccore.cs.resx"/>
-    <pnp:Localization LCID="1030" Name="dlcore" ResourceFile="Language/dlccore.da.resx"/>
-    <pnp:Localization LCID="1033" Name="dlcore" ResourceFile="Language/dlccore.en-us.resx"/>
-    <pnp:Localization LCID="1035" Name="dlcore" ResourceFile="Language/dlccore.fi.resx"/>
-    <pnp:Localization LCID="1036" Name="dlcore" ResourceFile="Language/dlccore.fr-fr.resx"/>
-    <pnp:Localization LCID="1031" Name="dlcore" ResourceFile="Language/dlccore.de-de.resx"/>
-    <pnp:Localization LCID="1032" Name="dlcore" ResourceFile="Language/dlccore.el.resx"/>
-    <pnp:Localization LCID="1040" Name="dlcore" ResourceFile="Language/dlccore.it-it.resx"/>
-    <pnp:Localization LCID="1041" Name="dlcore" ResourceFile="Language/dlccore.ja.resx"/>
-    <pnp:Localization LCID="1042" Name="dlcore" ResourceFile="Language/dlccore.ko.resx"/>
-    <pnp:Localization LCID="1063" Name="dlcore" ResourceFile="Language/dlccore.lt.resx"/>
-    <pnp:Localization LCID="1044" Name="dlcore" ResourceFile="Language/dlccore.no-no.resx"/>
-    <pnp:Localization LCID="1045" Name="dlcore" ResourceFile="Language/dlccore.pl.resx"/>
-    <pnp:Localization LCID="1046" Name="dlcore" ResourceFile="Language/dlccore.pt-br.resx"/>
-    <pnp:Localization LCID="1048" Name="dlcore" ResourceFile="Language/dlccore.ro.resx"/>
-    <pnp:Localization LCID="1049" Name="dlcore" ResourceFile="Language/dlccore.ru.resx"/>
-    <pnp:Localization LCID="1051" Name="dlcore" ResourceFile="Language/dlccore.sk.resx"/>
-    <pnp:Localization LCID="3082" Name="dlcore" ResourceFile="Language/dlccore.es-es.resx"/>
-    <pnp:Localization LCID="1053" Name="dlcore" ResourceFile="Language/dlccore.sv-se.resx"/>
-    <pnp:Localization LCID="1054" Name="dlcore" ResourceFile="Language/dlccore.th.resx"/>
-    <pnp:Localization LCID="1055" Name="dlcore" ResourceFile="Language/dlccore.tr.resx"/>
-    <pnp:Localization LCID="1066" Name="dlcore" ResourceFile="Language/dlccore.vi.resx"/>
+    <pnp:Localization LCID="2052" Name="core" ResourceFile="Language/mdlzbrandingresources.zh-CN.resx"/>
+    <pnp:Localization LCID="1029" Name="core" ResourceFile="Language/mdlzbrandingresources.cs-CZ.resx"/>
+    <pnp:Localization LCID="1030" Name="core" ResourceFile="Language/mdlzbrandingresources.da-DK.resx"/>
+    <pnp:Localization LCID="1033" Name="core" ResourceFile="Language/mdlzbrandingresources.en-US.resx"/>
+    <pnp:Localization LCID="1035" Name="core" ResourceFile="Language/mdlzbrandingresources.fi-FI.resx"/>
+    <pnp:Localization LCID="1036" Name="core" ResourceFile="Language/mdlzbrandingresources.fr-FR.resx"/>
+    <pnp:Localization LCID="1031" Name="core" ResourceFile="Language/mdlzbrandingresources.de-DE.resx"/>
+    <pnp:Localization LCID="1032" Name="core" ResourceFile="Language/mdlzbrandingresources.el-GR.resx"/>
+    <pnp:Localization LCID="1040" Name="core" ResourceFile="Language/mdlzbrandingresources.it-IT.resx"/>
+    <pnp:Localization LCID="1041" Name="core" ResourceFile="Language/mdlzbrandingresources.ja-JP.resx"/>
+    <pnp:Localization LCID="1042" Name="core" ResourceFile="Language/mdlzbrandingresources.ko-KR.resx"/>
+    <pnp:Localization LCID="1063" Name="core" ResourceFile="Language/mdlzbrandingresources.lt-LT.resx"/>
+    <pnp:Localization LCID="1044" Name="core" ResourceFile="Language/mdlzbrandingresources.no-NO.resx"/>
+    <pnp:Localization LCID="1045" Name="core" ResourceFile="Language/mdlzbrandingresources.pl-PL.resx"/>
+    <pnp:Localization LCID="1046" Name="core" ResourceFile="Language/mdlzbrandingresources.pt-BR.resx"/>
+    <pnp:Localization LCID="1048" Name="core" ResourceFile="Language/mdlzbrandingresources.ro-RO.resx"/>
+    <pnp:Localization LCID="1049" Name="core" ResourceFile="Language/mdlzbrandingresources.ru-RU.resx"/>
+    <pnp:Localization LCID="1051" Name="core" ResourceFile="Language/mdlzbrandingresources.sk-SK.resx"/>
+    <pnp:Localization LCID="3082" Name="core" ResourceFile="Language/mdlzbrandingresources.es-ES.resx"/>
+    <pnp:Localization LCID="1053" Name="core" ResourceFile="Language/mdlzbrandingresources.sv-SE.resx"/>
+    <pnp:Localization LCID="1054" Name="core" ResourceFile="Language/mdlzbrandingresources.th-TH.resx"/>
+    <pnp:Localization LCID="1055" Name="core" ResourceFile="Language/mdlzbrandingresources.tr-TR.resx"/>
+    <pnp:Localization LCID="1066" Name="core" ResourceFile="Language/mdlzbrandingresources.vi.resx"/>
   </pnp:Localizations>
   <pnp:Templates>
     <pnp:ProvisioningTemplate ID="Mdlz.TeamSite">
       <pnp:CustomActions>
-        <pnp:SiteCustomActions>
+        <!--<pnp:SiteCustomActions>
           <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
                     Description="Override new sub-site link"
                     Location="ScriptLink"
                     Title="CA_SITE_SUBSITE_OVERRIDE"
                     ScriptSrc=""
                     ScriptBlock="
-                    var SubSiteSettings_Web_Url = '{{$RemoteWebHostNameToken}}/pages/subsite/newsbweb.aspx?SPHostUrl=';
+                    var SubSiteSettings_Web_Url = '{$RemoteWebHostNameToken}/pages/subsite/newsbweb.aspx?SPHostUrl=';
                     var headID = document.getElementsByTagName('head')[0]; 
                     var subsiteScriptTag = document.createElement('script');
                     subsiteScriptTag.type = 'text/javascript';
                     subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
                     headID.appendChild(subsiteScriptTag);"/>
-        </pnp:SiteCustomActions>
+        </pnp:SiteCustomActions>-->
         <pnp:WebCustomActions>
-          <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
+          <!--<pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
                     Description="Site Classification Application"
                     Group="SiteTasks"
                     Location="Microsoft.SharePoint.SiteSettings"
@@ -105,7 +59,7 @@
                     Title="Site Classification"
                     Sequence="1000"
                     Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>
+                    Rights="31"/>-->
           <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
                     Description="Mondelez Js Injections"
                     Group="SiteActions"
@@ -229,7 +183,7 @@
                 <webParts>
                   <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
                     <metaData>
-                      <type name="Microsoft.SharePoint.WebPartPages.GettingStartedWebPart, Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <type name="Microsoft.SharePoint.WebPartPages.GettingStartedWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
                       <importErrorMessage>{res:ImportErrorMessage}</importErrorMessage>
                     </metaData>
                     <data>
@@ -305,7 +259,7 @@
                         <property name="ChromeState" type="chromestate">Normal</property>
                         <property name="AllowHide" type="bool">True</property>
                         <property name="Title" type="string">{res:TagCloudWebPart_Title}</property>
-                        <property name="Description" type="string">{res:Displays the most popular subjects being tagged inside your organization.}</property>
+                        <property name="Description" type="string">{res:TagCloudWebPart_Description}</property>
                         <property name="HelpUrl" type="string" />
                         <property name="AllowMinimize" type="bool">True</property>
                         <property name="TitleUrl" type="string" />
@@ -346,7 +300,7 @@
       </pnp:Security>-->
       <pnp:Features>
         <pnp:WebFeatures>
-          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/>
+          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/><!--MDS Feature - Deactivate-->
         </pnp:WebFeatures>
       </pnp:Features>
     </pnp:ProvisioningTemplate>

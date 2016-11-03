@@ -10,7 +10,7 @@
 </head>
 <body style="display: none; overflow: auto;">
     <form id="form1" runat="server">
-    <div id="divSPChrome"></div>    
+        <div id="divSPChrome"></div>   
         <div class="page">
             <script type="text/javascript">
                 $(function () {
@@ -19,7 +19,7 @@
                     });
                 });
             </script>
-        <asp:ScriptManager ID="scriptManager" runat="server" EnableCdn="True" />
+        <asp:ScriptManager ID="scriptManager" runat="server" EnableCdn="True" AsyncPostBackTimeout="300"/>
         <asp:UpdateProgress ID="progress" runat="server" AssociatedUpdatePanelID="mainPanel" DynamicLayout="true">
             <ProgressTemplate>
                 <div id="divWaitingPanel" style="position: absolute; z-index: 3; background: rgb(255, 255, 255); width: 100%; bottom: 0px; top: 0px;">
@@ -99,7 +99,7 @@
                                 <td style="padding-left: 150px;" valign="top">
                                     <h3 class="ms-standardheader ms-inputformheader">Select Template:</h3>
                                     <div class="ms-input" style="padding-left: 15px;">
-                                        <asp:ListBox ID="listSites" runat="server" CssClass="ms-fullWidth"></asp:ListBox>                                 
+                                        <asp:ListBox ID="listSites" runat="server" CssClass="ms-fullWidth" DataTextField="Title" DataValueField="RootTemplate"></asp:ListBox>                                 
                                     </div>
                                 </td>
                             </tr>
@@ -122,18 +122,7 @@
                     </fieldset>
                 </ContentTemplate>
         </asp:UpdatePanel>
-    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <input id="Url" name="Url" type="hidden" value="" runat="server" />
-                    <p style="float: right">
-                        <asp:Button runat="server" ID="submit_button" Text="OK" OnClick="Submit_Click" />
-                        <input type="button" id="cancel_button" value="Cancel" />
-                    </p>
-                    <div class="clear"></div>
-                </fieldset>
+        </div>
     </form>
    <div id="MicrosoftOnlineRequired">
         <div style="float:left">

@@ -28,7 +28,7 @@
         <div class="ms-fontWeight-semilight" style="padding: 8px 0px 0px 15px; color: white; font-size: 22px;">Office 365</div>
         <div class="NavLine"></div><div class="appTitle ms-fontWeight-semilight">Site Classification</div>
    </div>
-    <%--<div id="divSPChrome"></div>--%>            
+    <div id="divSPChrome"></div>            
         
     <!-- Include the Wizard View -->
     <div style="margin-top: 100px;" data-ng-include="'siteedit.html'"></div>

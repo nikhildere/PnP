@@ -128,7 +128,8 @@
                                 </div>
                             </div>
                             <div class="panel-footer panel-footer-custom">
-                                <label class="requirements">All sites must have a security classification. Learn more about  <a href="https://www.contoso.com/sites/information-security/" style="color:white; font-size:small; text-decoration:underline;" target="_blank">information classification</a>.</label>
+                                <label class="requirements">All sites must have a security classification. 
+                                <!--Learn more about  <a href="https://www.contoso.com/sites/information-security/" style="color:white; font-size:small; text-decoration:underline;" target="_blank">information classification</a>.--></label>
                             </div>
                         </div>
                         <div class="panel panel-default">
@@ -136,7 +137,7 @@
                                 <h3 class="panel-title"><i class="ms-Icon ms-Icon--share" aria-hidden="true"></i>  {{'SITE_EDIT_EXTERNAL_SHARING' | translate}}</h3>
                                 <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
                             </div>
-                            <div class="panel-body">
+                            <div class="panel-body" style="display:none">
                                 <spinner name="externalSharingSpinner" img-src="" group="metadata" show="spinnersON">
                                     <div class="spinnertext">
                                         <label class="control-label" for="lblSpinnerLoadingText" ng-show="loading">{{ 'SITE_EDIT_LOADING_TEXT' | translate }}</label>

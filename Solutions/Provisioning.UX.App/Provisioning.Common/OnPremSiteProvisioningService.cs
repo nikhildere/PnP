@@ -24,7 +24,7 @@ namespace Provisioning.Common
     public class OnPremSiteProvisioningService : AbstractSiteProvisioningService, ISharePointClientService
     {
         #region Private Instance Members
-        
+
         #endregion
 
         #region Constructor
@@ -35,7 +35,7 @@ namespace Provisioning.Common
         {
         }
         #endregion
-       
+
         /// <summary>
         /// With on-premises builds default groups are not created during site provisioning 
         /// so we have to create them.
@@ -44,8 +44,8 @@ namespace Provisioning.Common
         public virtual void HandleDefaultGroups(SiteInformation properties)
         {
 
-            Log.Info("Provisioning.Common.OnPremSiteProvisioningService.HandleDefaultGroups", "Creating Groups for site {0} created" , properties.Url);
-            string _ownerGroupDisplayName =string.Format(PCResources.Site_Web_OwnerGroup_Title, properties.Title);
+            Log.Info("Provisioning.Common.OnPremSiteProvisioningService.HandleDefaultGroups", "Creating Groups for site {0} created", properties.Url);
+            string _ownerGroupDisplayName = string.Format(PCResources.Site_Web_OwnerGroup_Title, properties.Title);
             string _memberGroupDisplayName = string.Format(PCResources.Site_Web_MemberGroup_Title, properties.Title);
             string _vistorGroupDisplayName = string.Format(PCResources.Site_Web_VisitorGroup_Title, properties.Title);
 
@@ -66,26 +66,36 @@ namespace Provisioning.Common
                 Group _ownerGroup;
                 Group _memberGroup;
                 Group _visitorGroup;
-                if (web.AssociatedOwnerGroup.ServerObjectIsNull == true) {
+                if (web.AssociatedOwnerGroup.ServerObjectIsNull == true)
+                {
                     _ownerGroup = web.AddGroup(_ownerGroupDisplayName, PCResources.Site_Web_OwnerGroup_Description, true, false);
                 }
-                else {
+                else
+                {
                     _ownerGroup = web.AssociatedOwnerGroup;
                 }
-                if (web.AssociatedMemberGroup.ServerObjectIsNull == true) {
+                if (web.AssociatedMemberGroup.ServerObjectIsNull == true)
+                {
                     _memberGroup = web.AddGroup(_memberGroupDisplayName, PCResources.Site_Web_MemberGroup_Description, false, false);
                 }
-                else {
+                else
+                {
                     _memberGroup = web.AssociatedMemberGroup;
                 }
-                if (web.AssociatedVisitorGroup.ServerObjectIsNull == true) {
-                        _visitorGroup = web.AddGroup(_vistorGroupDisplayName, PCResources.Site_Web_VisitorGroup_Description, false, false );
+                if (web.AssociatedVisitorGroup.ServerObjectIsNull == true)
+                {
+                    _visitorGroup = web.AddGroup(_vistorGroupDisplayName, PCResources.Site_Web_VisitorGroup_Description, false, false);
                 }
-                else {
+                else
+                {
                     _visitorGroup = web.AssociatedVisitorGroup;
                 }
 
-                web.AssociateDefaultGroups(_ownerGroup, _memberGroup, _visitorGroup);
+                try
+                {
+                    web.AssociateDefaultGroups(_ownerGroup, _memberGroup, _visitorGroup);
+                }
+                catch { }
                 ctx.ExecuteQuery();
 
 
@@ -97,10 +107,10 @@ namespace Provisioning.Common
                     newSiteCtx.Web.AddPermissionLevelToGroup(_memberGroupDisplayName, RoleType.Editor);
                     newSiteCtx.Web.AddPermissionLevelToGroup(_vistorGroupDisplayName, RoleType.Reader);
                     newSiteCtx.ExecuteQuery();
-                   Log.Info("Provisioning.Common.OnPremSiteProvisioningService.HandleDefaultGroups", PCResources.Site_Web_Groups_Security_Permissions_Set, 
-                        _ownerGroupDisplayName, 
-                        _memberGroupDisplayName, 
-                        _vistorGroupDisplayName);
+                    Log.Info("Provisioning.Common.OnPremSiteProvisioningService.HandleDefaultGroups", PCResources.Site_Web_Groups_Security_Permissions_Set,
+                         _ownerGroupDisplayName,
+                         _memberGroupDisplayName,
+                         _vistorGroupDisplayName);
                 }
 
                 _timespan.Stop();
@@ -112,8 +122,8 @@ namespace Provisioning.Common
 
         public override void CreateSiteCollection(SiteInformation siteRequest, Template template)
         {
-           Log.Info("Provisioning.Common.OnPremSiteProvisioningService.CreateSiteCollection", PCResources.SiteCreation_Creation_Starting, siteRequest.Url);
-            
+            Log.Info("Provisioning.Common.OnPremSiteProvisioningService.CreateSiteCollection", PCResources.SiteCreation_Creation_Starting, siteRequest.Url);
+
             Web _web = null;
             try
             {
@@ -141,9 +151,9 @@ namespace Provisioning.Common
 
                     using (var _cloneCtx = site.Context.Clone(siteRequest.Url))
                     {
-                         _web = _cloneCtx.Site.RootWeb;
-                         _web.Description = siteRequest.Description;
-                         _web.Update();
+                        _web = _cloneCtx.Site.RootWeb;
+                        _web.Description = siteRequest.Description;
+                        _web.Update();
                         _cloneCtx.Load(_web);
                         _cloneCtx.ExecuteQuery();
                     }
@@ -153,16 +163,16 @@ namespace Provisioning.Common
                 }, 1200000);
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Log.Error("Provisioning.Common.OnPremSiteProvisioningService.CreateSiteCollection",
-                    PCResources.SiteCreation_Creation_Failure, 
-                    siteRequest.Url, 
+                    PCResources.SiteCreation_Creation_Failure,
+                    siteRequest.Url,
                     ex,
                     ex.InnerException);
                 throw;
             }
-           
+
             Log.Info("Provisioning.Common.OnPremSiteProvisioningService.CreateSiteCollection", PCResources.SiteCreation_Creation_Successful, siteRequest.Url);
             this.HandleDefaultGroups(siteRequest);
         }

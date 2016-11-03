@@ -97,6 +97,8 @@
         }
                
         $scope.getCurrentUser = function () {
+            var isSPOD = (typeof O365 === "undefined");
+            var odataType = isSPOD ? "verbose" : "nometadata";
             var executor = new SP.RequestExecutor($scope.spAppWebUrl);
             executor.executeAsync(
                    {
@@ -104,12 +106,11 @@
                        method: "GET",
                        headers:
                        {
-                           "Accept": "application/json;odata=nometadata"
-
+                           "Accept": "application/json;odata=" + odataType
                        },
                        success: function (data) {
                            var jsonResults = JSON.parse(data.body);
-                           
+                           jsonResults = isSPOD ? jsonResults.d : jsonResults;
                            $log.info('Current user email: ' + jsonResults.Email);                           
                            user.name = jsonResults.Email;
                            getRequestsByOwner(user);                          

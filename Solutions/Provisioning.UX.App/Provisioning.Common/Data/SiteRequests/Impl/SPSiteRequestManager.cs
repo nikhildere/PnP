@@ -39,21 +39,21 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
         }
         #endregion
 
-        #region Private Methods
+        #region Private Methods 
         /// <summary>
         /// Member to return SiteRequest from the SharePoint SiteRequest Repository
         /// </summary>
         /// <param name="camlQuery">Query Query to Execute</param>
         /// <returns></returns>
         private ICollection<SiteInformation> GetSiteRequestsByCaml(string camlQuery)
-        {
+        {   
             List<SiteInformation> _siteRequests = new List<SiteInformation>();
             UsingContext(ctx =>
             {
                 Stopwatch _timespan = Stopwatch.StartNew();
                 var _camlQuery = new CamlQuery();
                 _camlQuery.ViewXml = camlQuery;
-                
+
                Log.Info("SPSiteRequestManager.GetSiteRequestsByCaml",
                     "Querying SharePoint Request Repository {0}, Caml Query {1}",
                     SiteRequestList.LISTURL,
@@ -61,15 +61,15 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
 
                 var _web = ctx.Web;
                 ctx.Load(_web);
-    
+
                 if (!_web.ListExists(SiteRequestList.TITLE))
-        {
+                {
                     var _message = String.Format("The List {0} does not exist in Site {1}",
                          SiteRequestList.TITLE,
                          _web.Url);
                     Log.Fatal("SPSiteRequestManager.GetSiteRequestsByCaml", _message);
                     throw new DataStoreException(_message);
-        }
+                }
 
                 var _list = ctx.Web.Lists.GetByTitle(SiteRequestList.TITLE);
                 var _listItemCollection = _list.GetItems(_camlQuery);
@@ -129,7 +129,7 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
         {
             SiteInformation _siteRequest = null;
             UsingContext(ctx =>
-            { 
+            {
                 Stopwatch _timespan = Stopwatch.StartNew();
                 CamlQuery _camlQuery = new CamlQuery();
                 _camlQuery.ViewXml = string.Format(camlQuery, filter);
@@ -253,19 +253,19 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
 
             ICollection<SiteInformation> _returnResults = new List<SiteInformation>();
             UsingContext(ctx =>
-        {
+            {
                 Stopwatch _timespan = Stopwatch.StartNew();
                 try
-            {
-                var _user = ctx.Web.EnsureUser(email);
-                ctx.Load(_user);
-                ctx.ExecuteQuery();
+                {
+                    var _user = ctx.Web.EnsureUser(email);
+                    ctx.Load(_user);
+                    ctx.ExecuteQuery();
 
                     if (_user != null) 
-                {
-                    var _userID = _user.Id;
-                    var camlString = string.Format(CAML_GETREQUESTSBYOWNER, _userID);
-                    _returnResults = this.GetSiteRequestsByCaml(camlString);
+                    {
+                        var _userID = _user.Id;
+                        var camlString = string.Format(CAML_GETREQUESTSBYOWNER, _userID);
+                        _returnResults = this.GetSiteRequestsByCaml(camlString);
 
                         _timespan.Stop();
                         Log.TraceApi("SharePoint", "SPSiteRequestManager.GetOwnerRequests", _timespan.Elapsed);
@@ -406,7 +406,7 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                
                 var _web = ctx.Web;
                 ctx.Load(_web);
-               
+
                 if (!_web.ListExists(SiteRequestList.TITLE)) {
                     var _message = String.Format("The List {0} does not exist in Site {1}",
                          SiteRequestList.TITLE,
@@ -464,7 +464,7 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                 ListItemCollection _itemCollection = _list.GetItems(_query);
                 ctx.Load(_itemCollection);
                 ctx.ExecuteQuery();
-         
+
                 if (_itemCollection.Count != 0)
                 {
                     ListItem _item = _itemCollection.FirstOrDefault();

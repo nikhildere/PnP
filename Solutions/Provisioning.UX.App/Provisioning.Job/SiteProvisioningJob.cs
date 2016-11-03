@@ -68,18 +68,18 @@ namespace Provisioning.Job
 
             #region Process Failed or Incomplete Requests
             // Begin processing of failed requests (retry all that are not in approved or complete status)
-            Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "Beginning processing of the site request repository for failed or incomplete requests");
-            _siteManager = _requestFactory.GetSiteRequestManager();
-            _requests = _siteManager.GetIncompleteRequests();
-            Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "There are {0} failed site requests pending in the repository.", _requests.Count);
-            if (_requests.Count > 0)
-            {
-                this.ProvisionSites(_requests);
-            }
-            else
-            {
-                Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "There are no failed site requests pending in the repository");
-            }
+            //Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "Beginning processing of the site request repository for failed or incomplete requests");
+            //_siteManager = _requestFactory.GetSiteRequestManager();
+            //_requests = _siteManager.GetIncompleteRequests();
+            //Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "There are {0} failed site requests pending in the repository.", _requests.Count);
+            //if (_requests.Count > 0)
+            //{
+            //    this.ProvisionSites(_requests);
+            //}
+            //else
+            //{
+            //    Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "There are no failed site requests pending in the repository");
+            //}
             // End processing of failed requests
             #endregion
         }
@@ -199,10 +199,10 @@ namespace Provisioning.Job
                 _message.SiteOwner = info.SiteOwner.Name;
                 _message.Subject = "Notification: Your new SharePoint site is ready";
 
-                _message.To.Add(info.SiteOwner.Name);
+                _message.To.Add(info.SiteOwner.Email);
                 foreach (var admin in info.AdditionalAdministrators)
                 {
-                    _message.Cc.Add(admin.Name);
+                    _message.Cc.Add(admin.Email);
                     _admins.Append(admin.Name);
                     _admins.Append(" ");
                 }
@@ -236,7 +236,7 @@ namespace Provisioning.Job
                 _message.ErrorMessage = errorMessage;
                 if (sendToAdmin)
                 {
-                _message.To.Add(info.SiteOwner.Name);
+                _message.To.Add(info.SiteOwner.Email);
                 }
                 if (!string.IsNullOrEmpty(this._settings.SupportEmailNotification))
                 {
@@ -251,7 +251,7 @@ namespace Provisioning.Job
                 {
                     if (sendToAdmin)
                     {
-                    _message.Cc.Add(admin.Name);
+                    _message.Cc.Add(admin.Email);
                     }
                     _admins.Append(admin.Name);
                     _admins.Append(" ");

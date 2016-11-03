@@ -10,7 +10,7 @@
   "CONFIRMATION": "Confirmation",
   "CONFIRMATION_TEXT": "<p>Please review your site request information for accuracy.</p><p>Click the back arrow to make changes. To proceed, click the check mark.</p>",
   "DATA_PRIVACY": "Data Privacy and Security",
-  "DATA_PRIVACY_TEXT": "<p>How sensitive is your site content?</p><p>Contoso classifies all business information based on the impact that information might have on Contoso or relying parties if it were to be disclosed to unauthorized persons.</p><p>For information about privacy visit your privacy center.</p>",
+  "DATA_PRIVACY_TEXT": "<p>How sensitive is your site content?</p><p>Mondelēz classifies all business information based on the impact that information might have on Mondelēz or relying parties if it were to be disclosed to unauthorized persons.</p><p>For information about privacy visit your privacy center.</p>",
   "DETAILS": "Site Details",
   "DETAILS_CHECKING": "Checking for site availability...",
   "DETAILS_DESCRIPTION": "Give the site a description",
@@ -74,7 +74,7 @@
   "SITE_EDIT_SELECT_REGION": "Select Region:",
   "SITE_EDIT_SITE_EXPIRATION": "Site Expiration:",
   "SITE_OWNER_RESPONSIBILITIES": "Site Owner Responsibilities",
-  "SITE_OWNER_RESPONSIBILITIES_TEXT": "It is the responsibility of site owners to manage site user permissions to ensure that the information and data they create and have in their care is protected from unauthorized disclosure, exposure through enterprise search, destruction, alteration, or modification. Furthermore, any personal information, including any information that permits an individual to be identified or contacted (such as name, postal address, email address, phone number, financial information or account numbers, or any government-issued ID numbers) must be used for Contosoo business purposes only. Any use, transfer, or storage of personal information must be in accordance with our policies, the terms of any privacy statement(s) under which the information was originally collected, and any contact or other usage preferences expressed by the individual to whom the information relates.",
+  "SITE_OWNER_RESPONSIBILITIES_TEXT": "It is the responsibility of site owners to manage site user permissions to ensure that the information and data they create and have in their care is protected from unauthorized disclosure, exposure through enterprise search, destruction, alteration, or modification. Furthermore, any personal information, including any information that permits an individual to be identified or contacted (such as name, postal address, email address, phone number, financial information or account numbers, or any government-issued ID numbers) must be used for Mondelēz business purposes only. Any use, transfer, or storage of personal information must be in accordance with our policies, the terms of any privacy statement(s) under which the information was originally collected, and any contact or other usage preferences expressed by the individual to whom the information relates.",
   "SITE_PROVISIONING": "Get Started",
   "SITE_TEMPLATE": "Site Template",
   "SITE_TEMPLATE_ERR": "Site Template has not been selected",
@@ -89,5 +89,5 @@
   "WELCOME_TEXT": "Welcome to the Site Provisioning Wizard.",
   "WHAT_HAPPENS_NEXT": "What happens next?",
   "WHAT_HAPPENS_NEXT_1": "You will receive an email notification once we have created your site.",
-  "WIZARD_INTRO": "<p>Access, use of, and content stored on the SharePoint Online environment at Contoso may be monitored and reviewed by Contoso to manage performance, security, and compliance.</p><p>In general, remember to keep these terms of use in mind when using SharePoint Online: <p><b>Be aware</b> you can help us keep costs down by: Keeping customizations to a minimum by using built-in theming.</p><p><b>Be smart</b> the SharePoint service adheres to Consoto IT security policies.</p><p>Are you ready? If so, click the next arrow below.</p>"
+  "WIZARD_INTRO": "<p>Access, use of, and content stored on the SharePoint Online environment at Mondelēz may be monitored and reviewed by Mondelēz to manage performance, security, and compliance.</p><p>In general, remember to keep these terms of use in mind when using SharePoint Online: <p><b>Be aware</b> you can help us keep costs down by: Keeping customizations to a minimum by using built-in theming.</p><p><b>Be smart</b> the SharePoint service adheres to Mondelēz IT security policies.</p><p>Are you ready? If so, click the next arrow below.</p>"
 }

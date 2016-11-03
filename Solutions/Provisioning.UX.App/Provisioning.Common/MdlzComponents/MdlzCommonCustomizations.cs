@@ -1,4 +1,5 @@
 ﻿using Microsoft.SharePoint.Client;
+using OfficeDevPnP.Core.Enums;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
 using Provisioning.Common.Authentication;
@@ -55,7 +56,7 @@ namespace Provisioning.Common.MdlzComponents
             {
                 if (!request.IsConfidential)
                 {
-                    web.AddReaderAccess();
+                    web.AddReaderAccess(request.SharePointOnPremises ? BuiltInIdentity.Everyone : BuiltInIdentity.EveryoneButExternalUsers);
                 }
             }
             catch (Exception ex)
@@ -82,23 +83,26 @@ namespace Provisioning.Common.MdlzComponents
             }
         }
 
-        private void RemoveUnrequiredLocalizations()
-        {
-            provTemplate.Localizations.RemoveAll(x => x.LCID != request.Lcid);
-        }
+        
 
         #endregion
 
         #region Step Methods
         private void PreProvisionApply()
         {
-            RemoveUnrequiredLocalizations();
+            //RemoveUnrequiredLocalizations(provTemplate, request.Lcid);
 
             //Add hostname parameter for custom actions token replacement
-            provTemplate.Parameters.Add(cn_RemoteWebHostNameToken, 
+            provTemplate.Parameters.Add(cn_RemoteWebHostNameToken,
                 string.Format(cn_RemoteWebHostNameTokenFormat, ConfigurationFactory.GetInstance().GetAppSetingsManager().GetAppSettings().HostedAppHostNameOverride));
+            UsingContext(ctx =>
+            {
+                var owner = ctx.Web.EnsureUser(request.SiteOwner.Name);
+                ctx.Load(owner);
+                ctx.ExecuteQueryRetry();
+                request.SiteOwner.Email = owner.Email;
+            });
         }
-
         private void PostProvisioningApply()
         {
             UsingContext(ctx =>
@@ -108,6 +112,9 @@ namespace Provisioning.Common.MdlzComponents
                 {
                     SetAccessForAll(_web);
                 }
+
+
+
             });
         }
 
@@ -132,7 +139,7 @@ namespace Provisioning.Common.MdlzComponents
         #endregion
 
         #region Public Methods
-        
+
         public void Apply(Action siteCreation, Action siteProvision)
         {
             PreCreationApply();
@@ -143,33 +150,49 @@ namespace Provisioning.Common.MdlzComponents
             siteProvision();
             PostProvisioningApply();
         }
-        
+
         #endregion
 
         #region Public Static
-        public static void LocalizeElementsFix(string siteUrl, ProvisioningTemplate provTemplate, IAuthentication auth)
+        //public static void LocalizeElementsFix(string siteUrl, ProvisioningTemplate provTemplate, IAuthentication auth)
+        //{
+        //    using (ClientContext _ctx = auth.GetAuthenticatedContext())
+        //    {
+        //        _ctx.RequestTimeout = int.MaxValue;
+        //        LocalizeElementsFix(_ctx.Web, provTemplate);
+        //    }
+        //}
+
+        //public static void LocalizeElementsFix(Web web, ProvisioningTemplate provTemplate)
+        //{
+        //    var parser = new TokenParser(web, provTemplate);
+
+        //    foreach (var item in provTemplate.Lists)
+        //    {
+        //        item.Title = parser.ParseString(item.Title);
+        //        item.Url = parser.ParseString(item.Url);
+        //        item.Description = parser.ParseString(item.Description);
+        //    }
+
+        //    foreach (var item in provTemplate.Pages)
+        //    {
+        //        foreach (var webpart in item.WebParts)
+        //        {
+        //            webpart.Contents = parser.ParseString(webpart.Contents);
+        //            webpart.Title = parser.ParseString(webpart.Title);
+        //        }
+        //    }
+        //}
+
+        //public static void RemoveUnrequiredLocalizations(ProvisioningTemplate _provTemplate, uint currentLanguageID)
+        //{
+        //    _provTemplate.Localizations.RemoveAll(x => x.LCID != currentLanguageID);
+        //}
+
+        public static void AddCustomParametersToProvisioningTemplate(ProvisioningTemplate _provTemplate)
         {
-            using (ClientContext _ctx = auth.GetAuthenticatedContext())
-            {
-                _ctx.RequestTimeout = int.MaxValue;
-                var parser = new TokenParser(_ctx.Web, provTemplate);
-
-                foreach (var item in provTemplate.Lists)
-                {
-                    item.Title = parser.ParseString(item.Title);
-                    item.Url = parser.ParseString(item.Url);
-                    item.Description = parser.ParseString(item.Description);
-                }
-
-                foreach (var item in provTemplate.Pages)
-                {
-                    foreach (var webpart in item.WebParts)
-                    {
-                        webpart.Contents = parser.ParseString(webpart.Contents);
-                        webpart.Title = parser.ParseString(webpart.Title);
-                    }
-                }
-            }
+            _provTemplate.Parameters.Add(cn_RemoteWebHostNameToken,
+                string.Format(cn_RemoteWebHostNameTokenFormat, ConfigurationFactory.GetInstance().GetAppSetingsManager().GetAppSettings().HostedAppHostNameOverride));
         }
 
         #endregion

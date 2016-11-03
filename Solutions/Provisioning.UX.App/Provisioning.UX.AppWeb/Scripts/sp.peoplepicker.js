@@ -136,7 +136,7 @@
 
                 
 
-                $app.withSPContext(function (spContext) {
+                $app.withSPContext2(function (spContext) {
 
                     var queryTerm = '' + settings.searchPrefix + currentValue + settings.searchSuffix;
 
@@ -161,10 +161,11 @@
                     spContext.executeQueryAsync(
                         $app.getCtxCallback(searchCtx, methods.searchSuccess), 
                         $app.getCtxCallback(searchCtx, methods.searchFail));
-                }).fail(function () {
-                    controlContext.dropdown.empty();
-                    alert('There was a problem connecting to SharePoint. Please refresh the page to try again.');
-                });
+                })
+                //.fail(function () {
+                //    controlContext.dropdown.empty();
+                //    alert('There was a problem connecting to SharePoint. Please refresh the page to try again.');
+                //});
             },
 
             searchSuccess: function () {

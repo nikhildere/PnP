@@ -5,22 +5,22 @@
   <pnp:Templates ID="CONTAINER-Mdlz.Common">
     <pnp:ProvisioningTemplate ID="Mdlz.Common">
       <pnp:CustomActions>
-        <pnp:SiteCustomActions>
+        <!--<pnp:SiteCustomActions>
           <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
                     Description="Override new sub-site link"
                     Location="ScriptLink"
                     Title="CA_SITE_SUBSITE_OVERRIDE"
                     ScriptSrc=""
                     ScriptBlock="
-                    var SubSiteSettings_Web_Url = '{{$RemoteWebHostNameToken}}/pages/subsite/newsbweb.aspx?SPHostUrl=';
+                    var SubSiteSettings_Web_Url = '{$RemoteWebHostNameToken}/pages/subsite/newsbweb.aspx?SPHostUrl=';
                     var headID = document.getElementsByTagName('head')[0]; 
                     var subsiteScriptTag = document.createElement('script');
                     subsiteScriptTag.type = 'text/javascript';
                     subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
                     headID.appendChild(subsiteScriptTag);"/>
-        </pnp:SiteCustomActions>
+        </pnp:SiteCustomActions>-->
         <pnp:WebCustomActions>
-          <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
+          <!--<pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
                     Description="Site Classification Application"
                     Group="SiteTasks"
                     Location="Microsoft.SharePoint.SiteSettings"
@@ -35,7 +35,7 @@
                     Title="Site Classification"
                     Sequence="1000"
                     Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>
+                    Rights="31"/>-->
           
         </pnp:WebCustomActions>
       </pnp:CustomActions>

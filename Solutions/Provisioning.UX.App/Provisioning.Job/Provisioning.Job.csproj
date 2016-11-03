@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\Users\huy4230\Documents\Temp\2016-10-31\createit\Job\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -204,10 +204,6 @@
       <Project>{f2077977-8ebf-409d-bbf4-8efb328928a8}</Project>
       <Name>OfficeDevPnP.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\PnP-Sites-Core-Forked\PnP-Sites-Core\Core\OfficeDevPnP.Core\OfficeDevPnP.Core.csproj">
-      <Project>{f2077977-8ebf-409d-bbf4-8efb328928a8}</Project>
-      <Name>OfficeDevPnP.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Provisioning.Common\Provisioning.Common.csproj">
       <Project>{77447711-3ab3-4390-a22c-75bb5a97bb95}</Project>
       <Name>Provisioning.Common</Name>
@@ -321,6 +317,7 @@
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.BusinessPartner\BusinessPartnerTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.Common\CommonElementsTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -333,12 +330,14 @@
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\default.aspx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\ProjectSiteTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.TeamSite\TeamSiteTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\siteLogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -368,86 +367,89 @@
     <Folder Include="Filters\" />
     <Folder Include="MdlzComponents\LanguageResources\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.cs-cz.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.da-dk.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.de-DE.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.el-gr.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.en-US.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.es-es.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.fi-fi.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.fr-fr.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.hi-in.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.it-it.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.ja-JP.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.ko-KR.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.lt-lt.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.nb-no.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.pl-pl.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.pt-br.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.pt-pt.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.ro-ro.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.ru-ru.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.sk-sk.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.sv-se.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.th-th.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.tr-tr.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.zh-CN.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\core.zh-TW.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.cs-cz.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.da-dk.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.de-de.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.el-GR.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.en-US.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.es-es.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.fi-fi.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.fr-fr.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.hi-in.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.it-it.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.ja-jp.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.ko-kr.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.lt-LT.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.nb-no.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.pl-pl.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.pt-br.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.pt-PT.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.ro-RO.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.ru-ru.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.sk-SK.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.sv-se.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.th-th.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.tr-tr.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.zh-cn.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\dlccore.zh-tw.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.cs-CZ.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.da-DK.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.de-DE.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.el-GR.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.en-US.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.es-ES.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.fi-fI.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.fr-FR.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.hi-IN.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.it-IT.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.ja-JP.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.ko-KR.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.lt-LT.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.nb-NO.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.pl-PL.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.pt-BR.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.pt-PT.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.ro-RO.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.ru-RU.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.sk-SK.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.sv-SE.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.th-TH.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.tr-TR.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.zh-CN.resx" />
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\spscore.zh-TW.resx" />
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.cs-CZ.resx">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.da-DK.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.de-DE.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.el-GR.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.vi.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.en-US.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.es-ES.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.fi-FI.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.fr-FR.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.hi-IN.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.it-IT.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.ja-JP.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.ko-KR.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.lt-LT.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.nb-NO.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.pl-PL.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.pt-BR.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.pt-PT.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.ro-RO.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.ru-RU.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.sk-SK.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.sv-SE.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.th-TH.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.tr-TR.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.zh-CN.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.zh-TW.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Web.WebJobs.Publish.1.0.6\tools\webjobs.targets" Condition="Exists('..\packages\Microsoft.Web.WebJobs.Publish.1.0.6\tools\webjobs.targets')" />

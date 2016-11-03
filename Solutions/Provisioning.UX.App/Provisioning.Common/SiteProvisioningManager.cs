@@ -184,7 +184,7 @@ namespace Provisioning.Common
                 provisioningTemplate.Connector = this.GetProvisioningConnector();                
                 provisioningTemplate = new TemplateConversion().HandleProvisioningTemplate(provisioningTemplate, siteRequest, template);
                 
-                MdlzComponents.MdlzCommonCustomizations.LocalizeElementsFix(siteRequest.Url, provisioningTemplate, this._siteprovisioningService.Authentication);
+                //MdlzComponents.MdlzCommonCustomizations.LocalizeElementsFix(siteRequest.Url, provisioningTemplate, this._siteprovisioningService.Authentication);
 
                 ProvisioningTemplateApplyingInformation _pta = new ProvisioningTemplateApplyingInformation();
                 _pta.ProgressDelegate = (message, step, total) =>
@@ -227,7 +227,7 @@ namespace Provisioning.Common
                 clientContext.Load(clientContext.Web, w => w.RequestAccessEmail);
                 clientContext.ExecuteQuery();
 
-                clientContext.Web.RequestAccessEmail = siteRequest.SiteOwner.Name;
+                clientContext.Web.RequestAccessEmail = siteRequest.SiteOwner.Email;
                 clientContext.Web.Update();
                 clientContext.Load(clientContext.Web, w => w.RequestAccessEmail);
                 clientContext.ExecuteQuery();

@@ -43,6 +43,14 @@ var $app = {
         return $app.getContextPromise;
     },
 
+    withSPContext2: function (action) {
+        var appWebUrl = $app.getUrlParamByName('SPAppWebUrl');
+        $app.spContext = new SP.ClientContext(appWebUrl);
+        var factory = new SP.ProxyWebRequestExecutorFactory(appWebUrl);
+        $app.spContext.set_webRequestExecutorFactory(factory);
+        action($app.spContext);
+    },
+
     getUrlParamByName: function (name) {
         name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
         var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');

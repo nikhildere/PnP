@@ -27,7 +27,7 @@
         }
         }
 
-        var context;
+        //var context;
         var hostweburl = decodeURIComponent(getQueryStringParameter('SPHostUrl'));
         var appweburl = decodeURIComponent(getQueryStringParameter('SPAppWebUrl'));
         var spLanguage = decodeURIComponent(getQueryStringParameter('SPLanguage'));
@@ -37,28 +37,30 @@
         var scriptbase = hostweburl + "/_layouts/15/";
 
         // Load the js files and continue to the successHandler
-        $.getScript(scriptbase + "SP.Runtime.js",
-            function () {
-                $.getScript(scriptbase + "SP.js",
-                    function () {
-                        $.getScript(scriptbase + "SP.RequestExecutor.js",
-                             function () {
-                                 context = new SP.ClientContext(appweburl);
-                                 var factory = new SP.ProxyWebRequestExecutorFactory(appweburl);
-                                 context.set_webRequestExecutorFactory(factory);
+        //$.getScript(scriptbase + "SP.Runtime.js",
+        //    function () {
+        //        $.getScript(scriptbase + "SP.js",
+        //            function () {
+        //                $.getScript(scriptbase + "SP.RequestExecutor.js",
+        //                     function () {
+        //                         context = new SP.ClientContext(appweburl);
+        //                         var factory = new SP.ProxyWebRequestExecutorFactory(appweburl);
+        //                         context.set_webRequestExecutorFactory(factory);
 
-                                 activate();
+        //                         activate();
 
-                             }
-                        );
-                    }
-                );
-            }
-        );
+        //                     }
+        //                );
+        //            }
+        //        );
+        //    }
+        //);
+
+        activate();
 
         function activate() {
             $log.info($scope.title + ' Activated');
-            initSiteOwnersPeoplePickers(context);
+            initSiteOwnersPeoplePickers();
         }
 
         $scope.getEmailFromPicker = function (e) {
@@ -66,7 +68,7 @@
             alert(elem.val());
         }
 
-        function initSiteOwnersPeoplePickers(context) {
+        function initSiteOwnersPeoplePickers() {
             
             // setup people pickers
             $('#ppSecondaryOwners').spSecondaryOwnersPicker({
