@@ -94,7 +94,7 @@
         </pnp:WebFeatures>
       </pnp:Features>
       <pnp:Providers>
-        <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzDCSiteExtensibilityProvider, Provisioning.Job" Enabled="true">
+        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzDCSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
     </pnp:ProvisioningTemplate>

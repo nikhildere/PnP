@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
+  <pnp:Preferences/>
+  <pnp:Templates>
+    <pnp:ProvisioningTemplate ID="Mdlz.BlogSite">
+      <pnp:CustomActions>
+        <pnp:WebCustomActions>
+          <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Description="Mondelez Js Injections"
+                    Group="SiteActions"
+                    Location="ScriptLink"
+                    Title="Mondelez Js Injections"
+                    Sequence="1000"
+                    ScriptBlock="var scr_elem = document.createElement('script');
+                                 scr_elem.type = 'text/javascript';
+                                 scr_elem.src = '/SiteAssets/Blog/scripts/MDLZblogsite.Init.js' + '?rev=' + new Date().toISOString();
+                                 var headElem = document.getElementsByTagName('head')[0];
+                                 headElem.appendChild(scr_elem);"/>
+        </pnp:WebCustomActions>
+      </pnp:CustomActions>
+      <pnp:WebSettings AlternateCSS="/SiteAssets/Blog/Css/MDLZBlogSite.css"/>
+      <pnp:PropertyBagEntries>
+        <pnp:PropertyBagEntry Key="Mdlz_Site_Type" Value="Blog Site" Overwrite="true" />
+      </pnp:PropertyBagEntries>
+      <pnp:Features>
+        <pnp:WebFeatures>
+          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true" Description="Deactivate MDS Feature"/>
+          <pnp:Feature ID="f9abb243-adda-4085-b8fd-f7876847b465" Deactivate="true" Description="Deactivate MDLZ.BlogSiteApplyBranding"/>
+          <pnp:Feature ID="b6eae2b1-2ce2-4d14-ac70-1064b5dd1bd9" Deactivate="true" Description="Deactivate MDLZBlogSiteTemplateHomePageFeature"/>
+          <pnp:Feature ID="4c6ff113-6c3c-437b-a2b4-ea815584aa86" Deactivate="true" Description="Deactivate MondelezSubsiteCreation"/>
+        </pnp:WebFeatures>
+      </pnp:Features>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

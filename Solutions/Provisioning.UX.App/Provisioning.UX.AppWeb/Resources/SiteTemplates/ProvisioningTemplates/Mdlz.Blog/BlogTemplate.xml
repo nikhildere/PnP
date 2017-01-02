@@ -51,7 +51,7 @@
       <pnp:WebSettings AlternateCSS="/SiteAssets/Blog/Css/MDLZBlogSite.css"
                        SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png" />
       <pnp:Providers>
-        <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzBlogSiteExtensibilityProvider, Provisioning.Job" Enabled="true">
+        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzBlogSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
       <pnp:PropertyBagEntries>

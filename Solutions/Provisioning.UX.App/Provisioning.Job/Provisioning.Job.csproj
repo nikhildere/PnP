@@ -154,13 +154,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzCommonExtensibilityProvider.cs" />
-    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzWikiSiteExtensibilityProvider.cs" />
-    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBPSiteExtensibilityProvider.cs" />
-    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzDCSiteExtensibilityProvider.cs" />
-    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzProjectSiteExtensibilityProvider.cs" />
-    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBlogSiteExtensibilityProvider.cs" />
-    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzTeamSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\Utilities\LocalizationUtility.cs" />
     <Compile Include="MdlzComponents\Utilities\WebPartUtility.cs" />
     <Compile Include="Program.cs" />
@@ -333,6 +326,18 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\ProjectSiteTemplate.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.TeamSite\TeamSiteTemplate.Mdlz_T02.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.TeamSite\TeamSiteTemplate.Mdlz_T03.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.TeamSite\TeamSiteTemplate.Mdlz_T01.xml">
+      <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.TeamSite\TeamSiteTemplate.xml">

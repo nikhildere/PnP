@@ -51,7 +51,7 @@
       <pnp:WebSettings AlternateCSS="/SiteAssets/Wiki/Css/MDLZWikiSite.css"
                        SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png" />
       <pnp:Providers>
-        <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzWikiSiteExtensibilityProvider, Provisioning.Job" Enabled="true">
+        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzWikiSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
     </pnp:ProvisioningTemplate>

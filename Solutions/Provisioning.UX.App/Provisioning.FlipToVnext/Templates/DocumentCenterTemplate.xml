@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema" >
+  <pnp:Preferences />
+  <pnp:Templates>
+    <pnp:ProvisioningTemplate ID="Mdlz.DocumentCenterSite">
+      <pnp:CustomActions>
+        <pnp:WebCustomActions>
+          <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Description="Mondelez Js Injections"
+                    Group="SiteActions"
+                    Location="ScriptLink"
+                    Title="Mondelez Js Injections"
+                    Sequence="1000"
+                    ScriptBlock="var scr_elem = document.createElement('script');
+                                 scr_elem.type = 'text/javascript';
+                                 scr_elem.src = '/SiteAssets/DC/scripts/MDLZDocCenter.Init.js' + '?rev=' + new Date().toISOString();
+                                 var headElem = document.getElementsByTagName('head')[0];
+                                 headElem.appendChild(scr_elem);"/>
+        </pnp:WebCustomActions>
+      </pnp:CustomActions>
+      <pnp:WebSettings AlternateCSS="/SiteAssets/DC/Css/MDLZDCSite.css"/>
+      <pnp:PropertyBagEntries>
+        <pnp:PropertyBagEntry Key="Mdlz_Site_Type" Value="Document Center" Overwrite="true" />
+      </pnp:PropertyBagEntries>
+      <pnp:Features>
+        <pnp:WebFeatures>
+          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true" Description="Deactivate MDS Feature"/>
+          <pnp:Feature ID="a8ed42b3-4d9e-4ee8-b635-1451a2a0be24" Deactivate="true" Description="Deactivate MDLZ.DCSiteApplyBranding"/>
+          <pnp:Feature ID="2d40e16c-f128-46f2-b6df-05d889679371" Deactivate="true" Description="Deactivate MDLZDCSiteTemplateHomePageFeature"/>
+          <pnp:Feature ID="4c6ff113-6c3c-437b-a2b4-ea815584aa86" Deactivate="true" Description="Deactivate MondelezSubsiteCreation"/>
+        </pnp:WebFeatures>
+      </pnp:Features>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning> 
+

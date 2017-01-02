@@ -277,8 +277,17 @@
                 } else {
                     $scope.step += 1;
                 }
-            };          
+            };
+            $scope.showPreviewPopup = showPreviewPopup;
 
+        }
+
+        function showPreviewPopup(_templ)
+        {
+            var pvModal = $rootScope.PreviewModalPopup || {};
+            pvModal.ImageUrl = _templ.imageUrl.toLowerCase().replace("_png.jpg", ".png").replace("/_w/", "/");
+            pvModal.Visible = true;
+            $rootScope.PreviewModalPopup = pvModal;
         }
 
         function getTemplates() {

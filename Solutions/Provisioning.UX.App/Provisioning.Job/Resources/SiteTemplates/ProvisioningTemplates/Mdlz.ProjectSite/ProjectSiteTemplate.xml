@@ -424,7 +424,7 @@
         </pnp:Page>
       </pnp:Pages>
       <pnp:Providers>
-        <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzProjectSiteExtensibilityProvider, Provisioning.Job" Enabled="true">
+        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzProjectSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
       <pnp:WebSettings AlternateCSS="/SiteAssets/PS/Css/MDLZProjectSite.css"

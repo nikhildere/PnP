@@ -49,6 +49,24 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite {
         protected global::System.Web.UI.UpdatePanel mainPanel;
         
         /// <summary>
+        /// pnlErrMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlErrMsg;
+        
+        /// <summary>
+        /// ltlErrMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltlErrMsg;
+        
+        /// <summary>
         /// txtTitle control.
         /// </summary>
         /// <remarks>

@@ -8,4 +8,17 @@
         <div data-ng-include="'wizard.html'"></div>
         
     </section>
+    <div class="templ-preview-overlay" ng-show="PreviewModalPopup.Visible">
+
+    </div>
+    <div class="templ-preview-display" ng-show="PreviewModalPopup.Visible">
+        <div>
+            <div>
+                <h3>Template Preview</h3>
+                <a href="javascript:;" ng-click="PreviewModalPopup.Visible = false">X</a>    
+                <div class="clr"></div>
+            </div>
+            <img src="{{PreviewModalPopup.ImageUrl}}" alt="Template Preview" />
+        </div>
+    </div>
 </div>

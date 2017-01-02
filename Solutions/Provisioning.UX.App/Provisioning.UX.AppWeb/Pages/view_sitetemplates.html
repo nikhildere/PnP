@@ -5,8 +5,9 @@
 <div class="modal-right-body">
     <!--| filter: {rootTemplate: !+'BLOG' && rootTemplate: !+'ENTERWIKI'}-->
     <div class="media" ng-repeat="template in templates | filter: filterSiteTemplates" ng-click="selectTemplate(template)" ng-class="{ 'active': template == siteConfiguration.template }">
-        <div class=" media-left">
+        <div class=" media-left templ-thumb">
             <img class="media-object" ng-src="{{template.imageUrl}}" alt="{{ 'TEMPLATE_ICON' | translate }}">
+            <a href="javascript:;" ng-click="showPreviewPopup(template)">Show Preview</a>
         </div>
         <div class="media-body">
             <h4 class="media-heading">{{template.title}}</h4>

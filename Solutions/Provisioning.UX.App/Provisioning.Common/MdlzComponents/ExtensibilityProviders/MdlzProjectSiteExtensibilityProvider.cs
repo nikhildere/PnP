@@ -8,10 +8,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OfficeDevPnP.Core.Diagnostics;
+using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
+using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions;
 
 namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
 {
-    public class MdlzProjectSiteExtensibilityProvider : IProvisioningExtensibilityProvider
+    public class MdlzProjectSiteExtensibilityProvider : IProvisioningExtensibilityHandler
     {
         public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, string configurationData)
         {
@@ -26,9 +29,23 @@ namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
             }
             catch (Exception ex)
             {
-                Log.Error("MdlzProjectSiteExtensibilityProvider.ProcessRequest", ex.ToString());
+                Common.Utilities.Log.Error("MdlzProjectSiteExtensibilityProvider.ProcessRequest", ex.ToString());
                 throw;
             }
+        }
+
+        public ProvisioningTemplate Extract(ClientContext ctx, ProvisioningTemplate template, ProvisioningTemplateCreationInformation creationInformation, PnPMonitoredScope scope, string configurationData)
+        {
+            return template;
+        }
+
+        public IEnumerable<TokenDefinition> GetTokens(ClientContext ctx, ProvisioningTemplate template, string configurationData)
+        {
+            return null;
+        }
+        
+        public void Provision(ClientContext ctx, ProvisioningTemplate template, ProvisioningTemplateApplyingInformation applyingInformation, TokenParser tokenParser, PnPMonitoredScope scope, string configurationData)
+        {
         }
     }
 }

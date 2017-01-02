@@ -27,7 +27,7 @@
     <pnp:Localization LCID="1066" Name="core" ResourceFile="Language/mdlzbrandingresources.vi.resx"/>
   </pnp:Localizations>
   <pnp:Templates>
-    <pnp:ProvisioningTemplate ID="Mdlz.BusinessPartnerSite">
+    <pnp:ProvisioningTemplate ID="Mdlz.TeamSite.Mdlz_T01">
       <pnp:CustomActions>
         <!--<pnp:SiteCustomActions>
           <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
@@ -60,15 +60,14 @@
                     Sequence="1000"
                     Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
                     Rights="31"/>-->
-          <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
-                    Description="Mondelez Js Injections"
-                    Group="SiteActions"
+          <pnp:CustomAction Name="Mdlz_T02JS Template And CSS Template_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Description="Mdlz_T02JS Template And CSS Template_e22a344d-3e37-4593-b643-17b99e0b459e"
                     Location="ScriptLink"
-                    Title="Mondelez Js Injections"
-                    Sequence="1000"
+                    Title="Mdlz_T02JS Template And CSS Template_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Sequence="100"
                     ScriptBlock="var scr_elem = document.createElement('script');
                                  scr_elem.type = 'text/javascript';
-                                 scr_elem.src = '/SiteAssets/BP/scripts/MDLZBPsite.Init.js' + '?rev=' + new Date().toISOString();
+                                 scr_elem.src = '/SiteAssets/Team/Templates/Mdlz_T02/MasterJS.js' + '?rev=' + new Date().toISOString();
                                  var headElem = document.getElementsByTagName('head')[0];
                                  headElem.appendChild(scr_elem);"/>
         </pnp:WebCustomActions>
@@ -278,21 +277,19 @@
           </pnp:WebParts>
         </pnp:Page>
       </pnp:Pages>
-
       <pnp:Providers>
-        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzBPSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
+        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzDefaultNavigationNodesExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
-      <pnp:WebSettings AlternateCSS="/SiteAssets/BP/Css/MDLZBPsite.css"
-                              SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png"
-                              WelcomePage="SitePages/Welcome.aspx"/>
+      <pnp:WebSettings SiteLogo="/_layouts/15/images/siteIcon.png"
+                       WelcomePage="SitePages/Welcome.aspx" />
       <pnp:PropertyBagEntries>
         <pnp:PropertyBagEntry Key="allowdesigner" Value="0" Overwrite="true" />
         <pnp:PropertyBagEntry Key="allowmasterpageediting" Value="0" Overwrite="true" />
         <pnp:PropertyBagEntry Key="allowrevertfromtemplate" Value="0" Overwrite="true" />
         <pnp:PropertyBagEntry Key="showurlstructure" Value="0" Overwrite="true" />
         <pnp:PropertyBagEntry Key="__WebTemplates" Value="&lt;webtemplates&gt;&lt;lcid id=&quot;all&quot;&gt;&lt;webtemplate name=&quot;STS#0&quot; /&gt;&lt;webtemplate name=&quot;BLOG#0&quot; /&gt;&lt;webtemplate name=&quot;ENTERWIKI#0&quot; /&gt;&lt;/lcid&gt;&lt;/webtemplates&gt;" Overwrite="true" />
-        <pnp:PropertyBagEntry Key="Mdlz_Site_Type" Value="Business Partner" Overwrite="true" />
+        <pnp:PropertyBagEntry Key="Mdlz_Site_Type" Value="Team Site - Template 01" Overwrite="true" />
       </pnp:PropertyBagEntries>
       <!--<pnp:Security>
         <pnp:AdditionalAdministrators>
@@ -301,13 +298,11 @@
       </pnp:Security>-->
       <pnp:Features>
         <pnp:WebFeatures>
-          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/>
+          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/><!--MDS Feature - Deactivate-->
         </pnp:WebFeatures>
       </pnp:Features>
-      <pnp:Properties>
-        <pnp:Property Key="EnableExternalSharing" Value="true"/>
-      </pnp:Properties>
+      
     </pnp:ProvisioningTemplate>
-
+    
   </pnp:Templates>
 </pnp:Provisioning>

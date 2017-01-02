@@ -64,7 +64,8 @@
 
         $scope.cancel = function () {
             //alert($scope.hostUrl);
-            window.location = $scope.spHostWebUrl;
+            //window.location = $scope.spHostWebUrl;
+            window.close();
         };
 
         function loadSpinners() {

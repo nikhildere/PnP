@@ -279,7 +279,7 @@
         </pnp:Page>
       </pnp:Pages>
       <pnp:Providers>
-        <pnp:Provider HandlerType="Provisioning.Job.MdlzComponents.ExtensibilityProviders.MdlzTeamSiteExtensibilityProvider, Provisioning.Job" Enabled="true">
+        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzTeamSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
       <pnp:WebSettings AlternateCSS="/SiteAssets/Team/Css/MDLZTeamsite.css"

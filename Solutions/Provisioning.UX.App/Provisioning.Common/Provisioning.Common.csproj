@@ -207,6 +207,14 @@
     <Compile Include="Mail\FailureEmailMessage.cs" />
     <Compile Include="Mail\SuccessEmailMessage.cs" />
     <Compile Include="Mail\FileSizeFormatProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBlogSiteExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBPSiteExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzCommonExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzDCSiteExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzDefaultNavigationNodesExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzProjectSiteExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzTeamSiteExtensibilityProvider.cs" />
+    <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzWikiSiteExtensibilityProvider.cs" />
     <Compile Include="Metadata\SiteFunction.cs" />
     <Compile Include="MdlzComponents\MdlzCommonCustomizations.cs" />
     <Compile Include="Office365SiteProvisioningService.cs" />

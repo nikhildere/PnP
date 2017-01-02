@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Sub Site Creation</title>
+    <title>Create New Subsite</title>
      <link href="../../Styles/site.css" rel="stylesheet" type="text/css" />
      <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js" type="text/javascript" ></script>      
      <script src="../../Scripts/chromeloader.js?rev=1" type="text/javascript"></script>
@@ -32,12 +32,22 @@
         </asp:UpdateProgress> 
         <asp:UpdatePanel ID="mainPanel" runat="server" ChildrenAsTriggers="true">
             <ContentTemplate>
+                <div style="margin: 10px 10px;margin-top: -65px;"><img src="http://www.mondelezinternational.com/~/media/MondelezCorporate/images/logo.png" style="width: 200px;">
                     <fieldset>
-                    <legend>New SharePoint Site</legend>
+                    <legend>Create New Subsite</legend>
                     <br />
                     <br />
                     <table id="SiteInfoTable" width="15%">
-                        <tbody>                           
+                        <tbody> 
+                            <tr>
+                                <td>
+                                    <asp:Panel runat="server" ID="pnlErrMsg" Visible="false" 
+                                        style="color:red;padding: 5px;border: 1px solid silver;border-radius: 5px;background: lightyellow;">
+                                        <asp:Literal runat="server" ID="ltlErrMsg"></asp:Literal>
+                                    </asp:Panel>
+                                    
+                                </td>
+                            </tr>                          
                             <tr>
                                 <!-- Title and Description -->
                                 <td class="ms-sectionheader" style="padding-top: 4px;" height="22"  valign="top">
@@ -99,7 +109,7 @@
                                 <td style="padding-left: 150px;" valign="top">
                                     <h3 class="ms-standardheader ms-inputformheader">Select Template:</h3>
                                     <div class="ms-input" style="padding-left: 15px;">
-                                        <asp:ListBox ID="listSites" runat="server" CssClass="ms-fullWidth" DataTextField="Title" DataValueField="RootTemplate"></asp:ListBox>                                 
+                                        <asp:ListBox ID="listSites" runat="server" CssClass="ms-fullWidth" DataTextField="Title" DataValueField="Title"></asp:ListBox>                                 
                                     </div>
                                 </td>
                             </tr>
@@ -126,14 +136,16 @@
     </form>
    <div id="MicrosoftOnlineRequired">
         <div style="float:left">
-            <img style="position:relative;top:4px;"  src="../../images/MicrosoftLogo.png" alt="©2015 Microsoft Corporation"/>
-            <span id="copyright">©2015 Contoso Corporation</span>&nbsp;&nbsp;&nbsp;
-            <a id="legalUrl" href="https://yoururl/license" target="_blank">Legal</a> |
-            <a id="privacyUrl" href="https://yoururl/site/legal/privacy" target="_blank">Privacy</a>
+            <%--<img style="position:relative;top:4px;"  src="../../images/MicrosoftLogo.png" alt="©2015 Microsoft Corporation"/>--%>
+            <span id="copyright">&copy; <%= DateTime.Now.ToString("yyyy") %> Mondelez International</span>&nbsp;&nbsp;&nbsp;
+            <a href="https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/SLK.aspx">IQU University</a> |
+            <a href="https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/TrainingVideos.aspx">Training Videos</a> |
+            
         </div>
         <div style="float:right">
-            <a id="supportUrl" href="https://yoururl/" target="_blank">Community</a> |
-            <a id="feedbackUrl" href="https://yoururl" target="_blank">Feedback</a>
+            <%--<a id="supportUrl" href="https://yoururl/" target="_blank">Community</a> |
+            <a id="feedbackUrl" href="https://yoururl" target="_blank">Feedback</a>--%>
+            For Technical Assistance Contact SharePoint Support at <u><a href="mailto:DLKNAMSSharePointSupport@mdlz.com">DLKNAMSSharePointSupport@mdlz.com</a></u>
         </div>
         <div class="clear"></div>
     </div>

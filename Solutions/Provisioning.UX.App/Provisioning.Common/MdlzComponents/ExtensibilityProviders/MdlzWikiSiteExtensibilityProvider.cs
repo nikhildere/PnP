@@ -1,0 +1,38 @@
+﻿using Microsoft.SharePoint.Client;
+using OfficeDevPnP.Core.Diagnostics;
+using OfficeDevPnP.Core.Framework.Provisioning.Extensibility;
+using OfficeDevPnP.Core.Framework.Provisioning.Model;
+using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
+using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions;
+using Provisioning.Common.Utilities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
+{
+    public class MdlzWikiSiteExtensibilityProvider : IProvisioningExtensibilityHandler
+    {
+        public ProvisioningTemplate Extract(ClientContext ctx, ProvisioningTemplate template, ProvisioningTemplateCreationInformation creationInformation, PnPMonitoredScope scope, string configurationData)
+        {
+            return template;
+        }
+
+        public IEnumerable<TokenDefinition> GetTokens(ClientContext ctx, ProvisioningTemplate template, string configurationData)
+        {
+            return null;
+        }
+
+        public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, string configurationData)
+        {
+
+        }
+
+        public void Provision(ClientContext ctx, ProvisioningTemplate template, ProvisioningTemplateApplyingInformation applyingInformation, TokenParser tokenParser, PnPMonitoredScope scope, string configurationData)
+        {
+        }
+
+    }
+}

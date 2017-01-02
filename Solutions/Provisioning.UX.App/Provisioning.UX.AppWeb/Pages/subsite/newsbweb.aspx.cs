@@ -58,7 +58,7 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
 
         private void SetUI()
         {
-            
+
             // define initial script, needed to render the chrome control
             string script = @"
             function chromeLoaded() {
@@ -92,9 +92,9 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
             var _templates = _tm.GetAvailableTemplates();
 
             var pubTemplates = new[] { "ENTERWIKI#0" };
-            
+
             listSites.DataSource = _templates.Where(x => !x.RootWebOnly && x.Enabled
-                                        && availableWebTemplatesForWeb.Any(y=>y.Name ==  x.RootTemplate)
+                                        && availableWebTemplatesForWeb.Any(y => y.Name == x.RootTemplate)
                                         && (isPublishingWeb || !pubTemplates.Any(y => y == x.RootTemplate)));
             listSites.DataBind();
 
@@ -112,15 +112,30 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
 
         protected void btnCreate_Click(object sender, EventArgs e)
         {
-            var spContext = SharePointContextProvider.Current.GetSharePointContext(Context);
-
-            using (var ctx = spContext.CreateUserClientContextForSPHost())
+            try
             {
-                //Web newWeb = CreateSubSite(ctx, ctx.Web, txtUrl.Text, listSites.SelectedValue, txtTitle.Text, txtDescription.Text);
-                Web newWeb = CreateSubSiteAndApplyProvisioningTemplate(ctx, ctx.Web, txtUrl.Text, txtTitle.Text, txtDescription.Text);
+                pnlErrMsg.Visible = false;
+                ltlErrMsg.Text = "";
 
-                // Redirect to just created site
-                Response.Redirect(newWeb.Url);
+                var spContext = SharePointContextProvider.Current.GetSharePointContext(Context);
+                Web newWeb = null;
+                using (var ctx = spContext.CreateUserClientContextForSPHost())
+                {
+                    //Web newWeb = CreateSubSite(ctx, ctx.Web, txtUrl.Text, listSites.SelectedValue, txtTitle.Text, txtDescription.Text);
+                    newWeb = CreateSubSiteAndApplyProvisioningTemplate(ctx, ctx.Web, txtUrl.Text, txtTitle.Text, txtDescription.Text);
+                }
+
+                if (newWeb != null)
+                {
+                    // Redirect to just created site
+                    Response.Redirect(newWeb.Url);
+                }
+            }
+            catch (Exception ex)
+            {
+                pnlErrMsg.Visible = true;
+                ltlErrMsg.Text = "An error occurred while creating your site. Please try again.";
+                Log.Error($"{nameof(newsbweb)}:{nameof(btnCreate)}", ex.ToString());
             }
         }
 
@@ -177,32 +192,48 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
         public Web CreateSubSiteAndApplyProvisioningTemplate(ClientContext ctx, Web hostWeb, string txtUrl,
                                  string title, string description)
         {
-            // Create web creation configuration
-            WebCreationInformation information = new WebCreationInformation();
-            information.WebTemplate = listSites.SelectedItem.Value;
-            information.Description = description;
-            information.Title = title;
-            information.Url = txtUrl;
+            if (!hostWeb.WebExists(txtUrl))
+            {
+                var _siteTemplateFactory = SiteTemplateFactory.GetInstance();
+                var _tm = _siteTemplateFactory.GetManager();
+                var _template = _tm.GetTemplateByName(listSites.SelectedItem.Text);
 
-            Web newWeb = null;
-            newWeb = hostWeb.Webs.Add(information);
-            ctx.ExecuteQuery();
+                // Create web creation configuration
+                WebCreationInformation information = new WebCreationInformation();
+                information.WebTemplate = _template.RootTemplate;
+                information.Description = description;
+                information.Title = title;
+                information.Url = txtUrl;
 
-            ctx.Load(newWeb);
-            ctx.ExecuteQuery();
+                Web newWeb = null;
+                newWeb = hostWeb.Webs.Add(information);
+                ctx.ExecuteQuery();
 
-            ProvisioningTemplate _provisioningTemplate = GetProvTemplateAndMakeAdjustments(newWeb);
+                ctx.Load(newWeb);
+                ctx.ExecuteQuery();
 
-            newWeb.ApplyProvisioningTemplate(_provisioningTemplate);
+                ProvisioningTemplate _provisioningTemplate = GetProvTemplateAndMakeAdjustments(newWeb, _tm, _template);
 
-            return newWeb;
+                newWeb.ApplyProvisioningTemplate(_provisioningTemplate);
+
+                pnlErrMsg.Visible = false;
+                ltlErrMsg.Text = "";
+
+
+                return newWeb;
+            }
+            else
+            {
+                pnlErrMsg.Visible = true;
+                ltlErrMsg.Text = "Subsite with same url already exists, change the url and try again.";
+            }
+            return null;
         }
 
-        private ProvisioningTemplate GetProvTemplateAndMakeAdjustments(Web newWeb)
+
+        private ProvisioningTemplate GetProvTemplateAndMakeAdjustments(Web newWeb, ISiteTemplateManager _tm, Template _template)
         {
-            var _siteTemplateFactory = SiteTemplateFactory.GetInstance();
-            var _tm = _siteTemplateFactory.GetManager();
-            var _template = _tm.GetTemplateByName(listSites.SelectedItem.Text);
+
             //var templatePath = Server.MapPath(Path.Combine("~/Resources/SiteTemplates/ProvisioningTemplates", _template.ProvisioningTemplate));
             var _provisioningTemplate = _tm.GetProvisioningTemplate(_template.ProvisioningTemplate);
 
@@ -234,4 +265,4 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
             Response.Redirect(Page.Request["SPHostUrl"]);
         }
     }
-}
+}   
