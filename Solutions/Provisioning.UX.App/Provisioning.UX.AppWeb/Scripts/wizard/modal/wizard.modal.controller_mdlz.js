@@ -5,14 +5,14 @@
     angular
         .module('app.wizard')
         .controller('WizardModalInstanceController', WizardModalInstanceController);
-        //.value('urlparams', null);
+    //.value('urlparams', null);
 
-    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService'];
+    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService', '$q', '$http', '$filter'];
 
-    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService) {
+    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter) {
         $scope.title = 'WizardModalInstanceController';
 
-        $scope.siteConfiguration = {};
+        //$scope.siteConfiguration = {};
         $scope.siteConfiguration.properties = {};
         var vm = this;
 
@@ -24,22 +24,23 @@
         var spHostWebUrl = $scope.spHostWebUrl;
         var spAppWebUrl = $scope.spAppWebUrl;       
 
-        activate();
+        //activate();
 
         //Form validation object
         $scope.allFormsValid = {
             readAndAccept: function () { return $scope.siteConfiguration.responsibilities.read; },
-            siteIntendedUse: false,
+            //siteIntendedUse: false,
             siteDetails: false,
-            sitePrivacy: false,
+            //sitePrivacy: false,
             siteTemplate: function () { return $scope.siteConfiguration.template == null; }
         };
 
+        
 
         activate();
 
         
-        // Set language and time zone defaults
+        //Set language and time zone defaults
         for (var i = 0; i < $scope.appSettings.length; i++) {
             var setting = $scope.appSettings[i]
             switch (setting.Key) {
@@ -61,9 +62,6 @@
                 case 'DefaultSiteClassification':
                     $scope.siteConfiguration.privacy.classification = setting.Value
                     $scope.allFormsValid.sitePrivacy = true
-                    break;
-                case 'MdlzSiteCategories':
-                    $scope.siteConfiguration.MdlzSiteCategories = setting.Value
                     break;
             }
 
@@ -103,18 +101,18 @@
         //Watching the forms of the specific views
         $scope.$watch('formWizard.$valid', function () {
             switch ($scope.getCurrentStep()) {
-                case 2:
+                case 3:
                     $scope.allFormsValid.siteResponsibilities = $scope.formWizard.siteResponsibilitiesform == null ? false : $scope.formWizard.siteResponsibilitiesform.$valid;
                     break;
-                case 3:
-                    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
-                    break;
-                case 5:
+                //case 3:
+                //    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
+                //    break;
+                case 2:
                     $scope.allFormsValid.siteDetails = $scope.formWizard.sitedetailsform == null ? false : $scope.formWizard.sitedetailsform.$valid;
                     break;
-                case 7:
-                    $scope.allFormsValid.sitePrivacy = $scope.formWizard.siteprivacyform == null ? false : $scope.formWizard.siteprivacyform.$valid;
-                    break;
+                    //case 7:
+                    //    $scope.allFormsValid.sitePrivacy = $scope.formWizard.siteprivacyform == null ? false : $scope.formWizard.siteprivacyform.$valid;
+                    //    break;
             }
 
         });
@@ -122,6 +120,8 @@
         //submitcheck
         $scope.submitDenied = false;
 
+        //set confidential selected by default
+        $scope.siteConfiguration.isConfidential = 1;
 
         $scope.finished = function () {
 
@@ -129,15 +129,15 @@
 
             //checks if all mandatory forms are valid before submit
             if (!$scope.allFormsValid.siteResponsibilities ||
-                !$scope.allFormsValid.siteIntendedUse ||
+                //!$scope.allFormsValid.siteIntendedUse ||
                 !$scope.allFormsValid.siteDetails ||
-                !$scope.allFormsValid.sitePrivacy ||
+                //!$scope.allFormsValid.sitePrivacy ||
                 $scope.allFormsValid.siteTemplate()) {
 
                 $scope.submitDenied = true;
             }
             else {
-
+                
                 //  save the site request when the wizard is complete
 
                 var siteRequest = new Object();
@@ -153,21 +153,24 @@
                 siteRequest.lcid = $scope.siteConfiguration.language;
                 siteRequest.timeZoneId = $scope.siteConfiguration.timezone;
                 siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwner;
-                siteRequest.additionalAdministrators = $scope.siteConfiguration.secondaryOwners;
+                siteRequest.additionalAdministrators = $scope.siteConfiguration.secondaryOwners ? $scope.siteConfiguration.secondaryOwners.map(function (owner) { return owner.email; }) : [];
                 siteRequest.sharePointOnPremises = $scope.siteConfiguration.spOnPrem;
                 siteRequest.template = $scope.siteConfiguration.template.title;
-                siteRequest.sitePolicy = $scope.siteConfiguration.privacy.classification;
-                siteRequest.businessCase = $scope.siteConfiguration.purpose.description;
-            siteRequest.enableExternalSharing = $scope.siteConfiguration.externalSharing;
-            siteRequest.isConfidential = $scope.siteConfiguration.isConfidential;
+                //siteRequest.sitePolicy = $scope.siteConfiguration.privacy.classification;
+                //siteRequest.businessCase = $scope.siteConfiguration.purpose.description;
+                siteRequest.enableExternalSharing = $scope.siteConfiguration.externalSharing;
+                siteRequest.isConfidential = $scope.siteConfiguration.isConfidential;
 
                 //property bag entries will enumerate all properties defined in siteConfiguration.properties
+
                 var props = {};
                 angular.forEach($scope.siteConfiguration.properties, function (value, key) {
-                    var data = encodeURIComponent(value);
+                    var data = angular.isObject(value) ? value : encodeURIComponent(value);
                     var propData = "";
                     if ($.isArray(data)) {
                         angular.forEach(data, function (value, key) {
+                            if (value.Value != undefined)
+                                value = encodeURIComponent(value.Value);
                             if (propData == "") {
                                 propData = value;
                             }
@@ -221,7 +224,9 @@
 
         $scope.filterSiteTemplates = function (template) {
             //return true;
-            return (template.rootTemplate != 'BLOG#0' && template.rootTemplate != 'ENTERWIKI#0');
+            //return (template.rootTemplate != 'BLOG#0' && template.rootTemplate != 'ENTERWIKI#0');
+            return (template.subWebOnly == false) && template.mdlzSiteCategory == $scope.SelectedMdlzSiteCategory
+
         }
 
         function activate() {
@@ -233,8 +238,8 @@
 
             // Initialize modal dialog box information
             initModal();
-            getTemplates();
-            getBusinessMetadata();
+            //getTemplates();
+            //getBusinessMetadata();
 
             var promises = [];
             common.activateController(promises, controllerId)
@@ -246,7 +251,7 @@
 
         function initModal() {
 
-            $scope.steps = [1, 2, 3, 4, 5, 6, 7, 8];
+            $scope.steps = [1, 2, 3];
             $scope.step = 0;
             $scope.wizard = { tacos: 2 };
 
@@ -291,20 +296,11 @@
             pvModal.ImageUrl = _templ.imageUrl.toLowerCase().replace("_png.jpg", ".png").replace("/_w/", "/");
             pvModal.Visible = true;
             $rootScope.PreviewModalPopup = pvModal;
+            //$rootScope.$apply();
         }
 
-        function getTemplates() {
-            //get the site templates
-            $.when($SharePointProvisioningService.getSiteTemplates($scope)).done(function (data, status) {
-                if (data != null) {
-                    // Store returned templates 
-                    $scope.templates = data;
-                }
+        
 
-            }).fail(function (err) {
-                console.info(JSON.stringify(err));
-            });
-        }
 
         function isExternalSharingEnabled(request) {
             //Mdlz - keeping external sharing disabled by default. Internally it will be enabled for Partner sites only.
@@ -340,58 +336,15 @@
             });
         }
 
-        function getBusinessMetadata() {
-
-            // Use the metadata factory to retrieve a list of regions
-            BusinessMetadata.getRegions().then(function (regionsdata) {
-
-                // Store region data 
-                $scope.regions = regionsdata;
-            });
-
-            // Use the metadata factory to retrieve a list of functions
-            BusinessMetadata.getFunctions().then(function (functionsdata) {
-
-                // Store functions data 
-                $scope.functions = functionsdata;
-            });
-
-            // Use the metadata factory to retrieve a list of divisions
-            BusinessMetadata.getDivisions().then(function (divisionsdata) {
-
-                // Store divisions data 
-                $scope.divisions = divisionsdata;
-            });
-
-            // Use the metadata factory to retrieve a list of languages
-            BusinessMetadata.getLanguages().then(function (languagesdata) {
-
-                // Store langauges data 
-                $scope.languages = languagesdata;
-            });
-
-            // Use the metadata factory to retrieve a list of timezones
-            BusinessMetadata.getTimeZones().then(function (timezonesdata) {
-
-                // Store time zones data 
-                $scope.timezones = timezonesdata;
-            });
-
-            // Use the metadata factory to retrieve a list of site classifications
-            BusinessMetadata.getSiteClassifications().then(function (classificationdata) {
-
-                // Store site classification data 
-                $scope.siteclassifications = classificationdata;
-            });
-        }
+        
 
         function saveNewSiteRequest(request) {
             $.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
                 if (data != null) {
                     if(data.success != true) {
                         logSuccess("Success!, Site Request has been submitted");
-                    $modalInstance.close($scope.siteConfiguration);
-                }
+                        $modalInstance.close($scope.siteConfiguration);
+                    }
                     else {
                         logError("Oops, something bad has occured.")
                     }
@@ -399,6 +352,7 @@
                 }
             }).fail(function (data, status) {
                 console.log(err);
+                log.getLogFn
             });
             console.log(request);
         }
@@ -409,7 +363,7 @@
                 if (data != null) {
                     if (status == 200) {
                         //there is results dont save  the new site request
-                        logError("There is an existing site request with this url. Please choose a new url for your site.");
+                        logError("There is an existing site request with this url. Please choose a new url for your site.", null, true);
                     }
                     else if (status == 404) {
 
@@ -428,31 +382,80 @@
             console.log(request);
         }
 
-        $scope.getCurrentUser = function () {
-            var isSPOD = (typeof O365 === "undefined");
-            var odataType = isSPOD ? "verbose" : "nometadata";
-            var executor = new SP.RequestExecutor($utilservice.spAppWebUrl());
-            executor.executeAsync(
-                   {
-                       url: $utilservice.spAppWebUrl() + "/_api/web/currentuser",
-                       method: "GET",
-                       headers:
-                       {
-                           "Accept": "application/json;odata=" + odataType
+        //$scope.getCurrentUser = function () {
+        //    var isSPOD = (typeof O365 === "undefined");
+        //    var odataType = isSPOD ? "verbose" : "nometadata";
+        //    var executor = new SP.RequestExecutor($utilservice.spAppWebUrl());
+        //    executor.executeAsync(
+        //           {
+        //               url: $utilservice.spAppWebUrl() + "/_api/web/currentuser",
+        //               method: "GET",
+        //               headers:
+        //               {
+        //                   "Accept": "application/json;odata=" + odataType
                    
-                       },
-                       success: function (data) {
-                           var jsonResults = JSON.parse(data.body);
-                           jsonResults = isSPOD ? jsonResults.d : jsonResults;
-                           $scope.siteConfiguration.primaryOwner = jsonResults.Email;
+        //               },
+        //               success: function (data) {
+        //                   var jsonResults = JSON.parse(data.body);
+        //                   jsonResults = isSPOD ? jsonResults.d : jsonResults;
+        //                   $scope.siteConfiguration.primaryOwner = jsonResults.Email;
 
-                       },
-                       error: function () { alert("We are having problems retrieving specific information from the server. Please try again later") }
-                   }
-               );
-        }
+        //               },
+        //               error: function () { alert("We are having problems retrieving specific information from the server. Please try again later") }
+        //           }
+        //       );
+        //}
         
-        $scope.getCurrentUser();
+        //$scope.getCurrentUser();
 
+        $scope.siteConfiguration.primaryOwner = $scope.spUserEmail;
+
+        $scope.GetPeoplePickerSearchEntities = function (query)
+        {
+            var deferred = $q.defer();
+            
+            $app.withSPContext2(function (spContext) {
+                var queryParams = new SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters();
+                queryParams.set_allowEmailAddresses(true);
+                queryParams.set_allowMultipleEntities(false);
+                queryParams.set_maximumEntitySuggestions(10);
+                queryParams.set_principalType(1);
+                queryParams.set_principalSource(15);
+                queryParams.set_queryString(query);
+                queryParams.set_allUrlZones(false);
+
+                var result = SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface.clientPeoplePickerSearchUser(spContext, queryParams);
+                spContext.executeQueryAsync(function () {
+                    deferred.resolve(JSON.parse(result.m_value));
+                }, function (err) { deferred.reject(err) });
+            });
+
+            return deferred.promise
+        }
+
+        $scope.GetFilteredMetadataObjects = function (query, collection)
+        {
+            var retColl;
+            if (query == null || query == "")
+                retColl = collection;
+            else
+                retColl = $filter('filter')(collection, { Value: query });
+            var deferred = $q.defer();
+            deferred.resolve(retColl);
+            return deferred.promise
+        }
+        $scope.GetCsvForMetadataObject = function (mdObj)
+        {
+            return mdObj == null ? "" : mdObj.map(function (obj) { return obj.Value }).join(", ");
+        }
+
+        $scope.GetCsvForPeoplePicker = function (ppObj) {
+            return ppObj == null ? "" : ppObj.map(function (obj) { return obj.DisplayText; }).join("; ");
+        }
+
+        $scope.SetSelectedMdlzSiteCategory = function (sel)
+        {
+            $scope.SelectedMdlzSiteCategory = sel;
+        }
     }
 })();

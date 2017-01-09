@@ -18,8 +18,8 @@
                     subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
                     headID.appendChild(subsiteScriptTag);"/>
         </pnp:SiteCustomActions>-->
-        <pnp:WebCustomActions>
-          <!--<pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
+        <!--<pnp:WebCustomActions>
+          --><!--<pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
                     Description="Site Classification Application"
                     Group="SiteTasks"
                     Location="Microsoft.SharePoint.SiteSettings"
@@ -34,8 +34,8 @@
                     Title="Site Classification"
                     Sequence="1000"
                     Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>-->
-          <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Rights="31"/>--><!--
+          --><!--<pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
                     Description="Mondelez Js Injections"
                     Group="SiteActions"
                     Location="ScriptLink"
@@ -45,11 +45,11 @@
                                  scr_elem.type = 'text/javascript';
                                  scr_elem.src = '/SiteAssets/Blog/scripts/MDLZblogsite.Init.js' + '?rev=' + new Date().toISOString();
                                  var headElem = document.getElementsByTagName('head')[0];
-                                 headElem.appendChild(scr_elem);"/>
-        </pnp:WebCustomActions>
+                                 headElem.appendChild(scr_elem);"/>--><!--
+        </pnp:WebCustomActions>-->
       </pnp:CustomActions>
-      <pnp:WebSettings AlternateCSS="/SiteAssets/Blog/Css/MDLZBlogSite.css"
-                       SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png" />
+      <!--<pnp:WebSettings AlternateCSS="/SiteAssets/Blog/Css/MDLZBlogSite.css"
+                       SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png" />-->
       <pnp:Providers>
         <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzBlogSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>

@@ -32,6 +32,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -184,7 +185,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\bundle.css" />
+    <Content Include="assets\bundle.js" />
+    <Content Include="assets\bundle.min.css">
+      <DependentUpon>bundle.css</DependentUpon>
+    </Content>
+    <Content Include="assets\bundle.min.js" />
+    <Content Include="images\mdlz\banner.png" />
+    <Content Include="images\mdlz\bg_img.png" />
+    <Content Include="images\mdlz\box01.png" />
+    <Content Include="images\mdlz\box03.png" />
+    <Content Include="images\mdlz\box04.png" />
+    <Content Include="images\mdlz\box05.png" />
+    <Content Include="images\mdlz\mdlz-logo.png" />
     <Content Include="images\WizardLogo.png" />
+    <Content Include="Pages\mdlz\modal_myrequests.html" />
+    <Content Include="Pages\mdlz\wizard.html" />
     <Content Include="Pages\Shell.html" />
     <Content Include="Pages\SiteClassification\siteedit.html" />
     <Content Include="Pages\subsite\resources\custombg.jpg" />
@@ -193,12 +209,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Pages\subsite\resources\template-icon.png" />
+    <None Include="bundleconfig.json" />
     <None Include="Properties\PublishProfiles\PPE.pubxml" />
     <None Include="Properties\PublishProfiles\PROD.pubxml" />
     <None Include="Resources\SiteTemplates\ProvisioningTemplates\SubSiteTeamsTemplate.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="Pages\mdlz\view_confirmation.html" />
+    <Content Include="Pages\mdlz\view_sitedetails.html" />
+    <Content Include="Pages\mdlz\view_sitetemplates.html" />
+    <Content Include="Pages\mdlz\wizard.modal.html" />
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\EmptySubSiteTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -242,6 +263,10 @@
     <None Include="Properties\PublishProfiles\wwaz-pnp-provisioning - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\wwaz-pnp-provisioning - Web Deploy.pubxml" />
     <Content Include="Scripts\breadcrumb.js" />
+    <Content Include="Scripts\bundle.js" />
+    <Content Include="Scripts\bundle.min.js">
+      <DependentUpon>bundle.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\i18n\en-US.json" />
     <Content Include="Scripts\i18n\sv-SE.json" />
     <None Include="Resources\SiteTemplates\Templates.config">
@@ -262,7 +287,15 @@
     <Content Include="Scripts\vendor\angular-spinners\angular-spinners.js" />
     <Content Include="Scripts\vendor\angular-spinners\angular-spinners.min.js" />
     <Content Include="Scripts\vendor\jquery\jquery-2.2.1.min.js" />
+    <Content Include="Scripts\vendor\others\angular-animate.min.js" />
+    <Content Include="Scripts\vendor\others\angular-messages.js" />
+    <Content Include="Scripts\vendor\others\angular.js" />
+    <Content Include="Scripts\vendor\others\bootstrap.min.js" />
+    <Content Include="Scripts\vendor\others\MicrosoftAjax.js" />
+    <Content Include="Scripts\vendor\others\ng-tags-input.min.js" />
     <Content Include="Scripts\wizard\controllers\shell.js" />
+    <Content Include="Scripts\wizard\controllers\wizard.controller_mdlz.js" />
+    <Content Include="Scripts\wizard\modal\wizard.modal.controller_mdlz.js" />
     <Content Include="Scripts\wizard\modules\filter.js" />
     <Content Include="Scripts\wizard\services\siteMetadataEditService.js" />
     <Content Include="Styles\toastr.css" />
@@ -370,6 +403,12 @@
     <Content Include="Styles\font-awesome.min.css" />
     <Content Include="Styles\peoplepickercontrol.css" />
     <Content Include="Styles\site.css" />
+    <Content Include="Styles\vendor\bootstrap-theme.min.css" />
+    <Content Include="Styles\vendor\bootstrap.min.css" />
+    <Content Include="Styles\vendor\fabric.components.min.css" />
+    <Content Include="Styles\vendor\fabric.min.css" />
+    <Content Include="Styles\vendor\ng-tags-input.bootstrap.min.css" />
+    <Content Include="Styles\vendor\ng-tags-input.min.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

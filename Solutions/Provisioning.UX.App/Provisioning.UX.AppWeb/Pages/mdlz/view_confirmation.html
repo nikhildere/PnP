@@ -1,0 +1,86 @@
+﻿<div class="modal-right-heading">
+    <h1>{{ 'CONFIRMATION' | translate }}</h1>
+</div>
+<div class="modal-right-body">
+   <span ng-bind-html="'CONFIRMATION_TEXT' | translate"></span>
+    <div class="modal-right-body" ng-form="siteResponsibilitiesform">
+        <p>
+            {{ 'SITE_OWNER_RESPONSIBILITIES_TEXT' | translate }}
+
+        </p>
+
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="form-group">
+                    <div>
+                        <input type="checkbox" value="" ng-model="siteConfiguration.properties.termsaccepted" required="" class="ng-pristine ng-untouched ng-invalid ng-invalid-required">
+                        {{ 'ACCEPT' | translate }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <table class="table table-striped">
+        <tr ng-hide="siteConfiguration.allowCustomUrl">
+            <th><a href="#" ng-click="setCurrentStep(2)">{{ 'SITE_URL' | translate }}</a></th>
+            <td>{{ siteConfiguration.spNewSitePrefix +siteConfiguration.details.url }}<span ng-show="submitDenied && siteConfiguration.details.url === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'SITE_URL_ERR' | translate }}</span></td>
+        </tr>
+        <tr>
+            <th><a href="#" ng-click="setCurrentStep(2)">{{ 'PRIMARY_OWNER' | translate }}</a></th>
+            <td>{{siteConfiguration.primaryOwner}}<span ng-show="submitDenied && siteConfiguration.primaryOwner === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'PRIMARY_OWNER_ERR' | translate }}</span></td>
+        </tr>
+        <tr>
+            <th><a href="#" ng-click="setCurrentStep(2)">{{ 'SECONDARY_OWNER' | translate }}</a></th>
+            <td>{{GetCsvForPeoplePicker(siteConfiguration.secondaryOwners)}}</td>
+        </tr>
+        <tr>
+            <th><a href="#" ng-click="setCurrentStep(1)">{{ 'SITE_TEMPLATE' | translate }}</a></th>
+            <td>{{siteConfiguration.template.title}}<span ng-show="submitDenied && siteConfiguration.template.title === undefined" class="confirm-error-message" ng-click="setCurrentStep(1)">{{ 'SITE_TEMPLATE_ERR' | translate }}</span></td>
+        </tr>
+        <!--<tr ng-show="siteConfiguration.externalSharingEnabled">
+            <th><a href="#" ng-click="setCurrentStep(5)">{{ 'EXTERNAL_SHARING' | translate }}</a></th>
+            <td>{{siteConfiguration.properties.externalsharing | yesNo }}</td>
+        </tr>-->
+        <tr>
+            <th><a href="#" ng-click="setCurrentStep(2)">{{ 'DETAILS_REGION' | translate }}</a></th>
+            <td>{{GetCsvForMetadataObject(siteConfiguration.properties.region)}}<span ng-show="submitDenied && siteConfiguration.properties.region === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'DETAILS_REGION_ERR' | translate }}</span></td>
+        </tr>
+        <!--<tr>
+            <th><a href="#" ng-click="setCurrentStep(5)">{{ 'DETAILS_DIVISION' | translate }}</a></th>
+            <td>{{siteConfiguration.properties.division}}<span ng-show="submitDenied && siteConfiguration.properties.division === undefined" class="confirm-error-message" ng-click="setCurrentStep(5)">{{ 'DETAILS_DIVISION_ERR' | translate }}</span></td>
+        </tr>-->
+        <tr>
+            <th><a href="#" ng-click="setCurrentStep(2)">{{ 'DETAILS_FUNCTION' | translate }}</a></th>
+            <td>{{GetCsvForMetadataObject(siteConfiguration.properties.function)}}<span ng-show="submitDenied && siteConfiguration.properties.function === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'DETAILS_FUNCTION_ERR' | translate }}</span></td>
+        </tr>
+        <tr>
+            <th><a href="#" ng-click="setCurrentStep(2)">{{ 'DETAILS_LANGUAGE' | translate }}</a></th>
+            <td>{{siteConfiguration.language}}<span ng-show="submitDenied && siteConfiguration.language === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'DETAILS_LANGUAGE_ERR' | translate }}</span></td>
+        </tr>
+        <tr>
+            <th><a href="#" ng-click="setCurrentStep(2)">{{ 'DETAILS_TIMEZONE' | translate }}</a></th>
+            <td>{{siteConfiguration.timezone}}<span ng-show="submitDenied && siteConfiguration.timezone === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'DETAILS_TIMEZONE_ERR' | translate }}</span></td>
+        </tr>
+        <!--<tr>
+            <th><a href="#" ng-click="setCurrentStep(7)">{{ 'SITE_CLASSIFICATION' | translate }}</a></th>
+            <td>{{siteConfiguration.privacy.classification}}<span ng-show="submitDenied && siteConfiguration.privacy.classification === undefined" class="confirm-error-message" ng-click="setCurrentStep(7)">{{ 'SITE_CLASSIFICATION_ERR' | translate }}</span></td>
+        </tr>-->
+        <!--<tr>
+            <th><a href="#" ng-click="setCurrentStep(3)">{{ 'BUSINESS_PURPOSE' | translate }}</a></th>
+            <td>{{siteConfiguration.purpose.description}}<span ng-show="submitDenied && siteConfiguration.purpose.description === undefined" class="confirm-error-message" ng-click="setCurrentStep(3)">{{ 'BUSINESS_PURPOSE_ERR' | translate }}</span></td>
+        </tr>-->
+        <tr>
+            <th><a href="#" ng-click="setCurrentStep(3)">{{ 'RESPONSIBILITIES_ACCEPTED' | translate }}</a></th>
+            <td>
+                <span ng-hide="(submitDenied && siteConfiguration.properties.termsaccepted === undefined) || (submitDenied && siteConfiguration.properties.termsaccepted === false)">{{siteConfiguration.properties.termsaccepted | yesNo}}</span>
+                <span ng-show="(submitDenied && siteConfiguration.properties.termsaccepted === undefined) || (submitDenied && siteConfiguration.properties.termsaccepted === false)" class="confirm-error-message" ng-click="setCurrentStep(3)">{{ 'RESPONSIBILITIES_ACCEPTED_ERR' | translate }}</span>
+            </td>
+        </tr>
+    </table>
+    
+    <p>{{ 'WHAT_HAPPENS_NEXT' | translate }}</p>
+    <ul>
+        <li>{{ 'WHAT_HAPPENS_NEXT_1' | translate }}</li>
+    </ul>
+</div>

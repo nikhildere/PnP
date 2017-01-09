@@ -26,5 +26,7 @@ namespace Provisioning.Common.Data.Templates
         public const string SUBWEBONLY_NAME = "SP_SubWebOnly";
         public const string TTITLE_NAME = "Title";
         public const string USETEMPLATESITEPOLICY_NAME = "SP_UseTemplateSitePolicy";
+        public const string AutoApprove = "SP_AutoApprove";
+        public const string MdlzSiteCategory = "SP_MdlzSiteCategory";
     }
 }

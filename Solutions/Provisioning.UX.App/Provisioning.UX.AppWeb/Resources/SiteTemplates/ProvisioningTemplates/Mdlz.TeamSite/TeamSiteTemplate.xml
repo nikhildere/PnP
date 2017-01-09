@@ -43,8 +43,8 @@
                     subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
                     headID.appendChild(subsiteScriptTag);"/>
         </pnp:SiteCustomActions>-->
-        <pnp:WebCustomActions>
-          <!--<pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
+        <!--<pnp:WebCustomActions>
+          --><!--<pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
                     Description="Site Classification Application"
                     Group="SiteTasks"
                     Location="Microsoft.SharePoint.SiteSettings"
@@ -59,8 +59,8 @@
                     Title="Site Classification"
                     Sequence="1000"
                     Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>-->
-          <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
+                    Rights="31"/>--><!--
+          --><!--<pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
                     Description="Mondelez Js Injections"
                     Group="SiteActions"
                     Location="ScriptLink"
@@ -70,8 +70,8 @@
                                  scr_elem.type = 'text/javascript';
                                  scr_elem.src = '/SiteAssets/Team/scripts/MDLZTeamsite.Init.js' + '?rev=' + new Date().toISOString();
                                  var headElem = document.getElementsByTagName('head')[0];
-                                 headElem.appendChild(scr_elem);"/>
-        </pnp:WebCustomActions>
+                                 headElem.appendChild(scr_elem);"/>--><!--
+        </pnp:WebCustomActions>-->
       </pnp:CustomActions>
       <pnp:Lists>
         <pnp:ListInstance Title="{res:announce_Folder}"
@@ -282,9 +282,10 @@
         <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzTeamSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
-      <pnp:WebSettings AlternateCSS="/SiteAssets/Team/Css/MDLZTeamsite.css"
+      <!--<pnp:WebSettings AlternateCSS="/SiteAssets/Team/Css/MDLZTeamsite.css"
                        SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png"
-                       WelcomePage="SitePages/Welcome.aspx" />
+                       WelcomePage="SitePages/Welcome.aspx" />-->
+      <pnp:WebSettings WelcomePage="SitePages/Welcome.aspx" />
       <pnp:PropertyBagEntries>
         <pnp:PropertyBagEntry Key="allowdesigner" Value="0" Overwrite="true" />
         <pnp:PropertyBagEntry Key="allowmasterpageediting" Value="0" Overwrite="true" />

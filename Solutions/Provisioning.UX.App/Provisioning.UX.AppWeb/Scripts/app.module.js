@@ -10,6 +10,7 @@
         // Vendor Modules
         'ui.bootstrap',
         'angularSpinners',
+        'ngTagsInput',
         
         // Angular translate
         'pascalprecht.translate',

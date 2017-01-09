@@ -94,7 +94,7 @@ body {
 
     .modal-pnp .modal-left ul {
         position: absolute;
-        top: 50%;
+        top: 30%;
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
@@ -677,4 +677,152 @@ ul.sp-peoplepicker-dropdown li.divider {
     .clr {
         clear:both;
     }
+
+    /*Wizard - Starts*/
+    .progBar {
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background: #DC3C00;
+        top: 0px;
+    }
+
+    body {
+        background: url('/images/mdlz/bg_img.png') repeat;
+    }
+
+    .navBar, #divSPChrome {
+        display: none;
+    }
+
+    .center {
+        margin: 0 auto;
+        width: 1151px;
+        background: white;
+        padding-bottom: 20px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 1px 1px 1px 1px #888888;
+    }
+
+    .template-catalog {
+    }
+
+
+    .card {
+        margin-top: 20px;
+    padding: 0;
+    box-shadow: 2px 2px 1px #888888;
+    }
+
+        .card > div {
+            padding: 10px;
+            float: left;
+            width: 85%;
+        }
+
+        .card img {
+            
+        }
+
+    .content-section {
+        padding: 0 20px;
+        padding: 0 80px 0 80px;
+        margin: 0;
+    }
+
+    .btn-holder {
+        text-align: right;
+    }
+/*Wizard - Ends*/
+/*My Requests - Starts*/
+.requests-pnl {
+        height:250px;
+        overflow-y:auto
+    }
+    .my-req .btn-cancel {
+        position:absolute;
+        top:10px;
+        right:10px;
+    }
+/*My Requests - Ends*/
+
+/*Site Details - Starts*/
+
+.tag-item {
+        background: none !important;
+        border: none !important;
+    }
+
+        .tag-item span {
+            color: black;
+            text-decoration: underline;
+        }
+
+    tags-input[maxtags='1'].ng-valid-required .tags .input {
+        visibility: hidden;
+    }
+
+    .pp-ac-subdet {
+        color: #C0C0C0;
+        display: inline-block;
+        font-size: 10px;
+    }
+
+    .pp-ac-email {
+        color: #C0C0C0;
+        display: block;
+        font-size: 10px;
+    }
+.selected .pp-ac-subdet, .selected .pp-ac-name {
+    color:white;
+}
+    .pp-ac-name {
+        display: block;
+    }
+
+    tags-input .tags {
+        border-radius: 0 !important;
+    }
+
+    tags-input.ng-invalid .tags {
+        border-color: black !important;
+        box-shadow: none;
+    }
+    .site-det .row > div {
+    padding-left: 5px;
+}
+tags-input[name="tiFunction"] ul.suggestion-list {
+    max-height:200px;
+}
+/*Site Details - Ends*/
+/*Site Templates - Starts*/
+   .site-temp .tabs li {
+    display: inline-block;
+    padding: 5px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.site-temp .tabs > ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.site-temp .tabs li.categorySelected {
+    border-bottom: 3px solid black;
+    font-weight: bold;
+}
+/*Site Templates - Ends*/
+/*Modal - Starts*/
+.modal-right-footer span {
+    zoom:150%;
+}
+.modal-pnp .modal-right-footer {
+    right: 50%;
+}
+/*Modal - Ends*/
 /*#endregion Added by Nikhil - Mod*/

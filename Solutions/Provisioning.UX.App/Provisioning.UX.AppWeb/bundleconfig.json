@@ -1,0 +1,61 @@
+[
+  {
+    "outputFileName": "assets/bundle.js",
+    "inputFiles": [
+      "scripts/vendor/jquery/jquery-2.2.1.min.js",
+      "scripts/vendor/others/MicrosoftAjax.js",
+      "scripts/vendor/others/bootstrap.min.js",
+      "scripts/vendor/others/angular.js",
+      "scripts/vendor/others/angular-messages.js",
+      "scripts/vendor/others/angular-animate.js",
+      "scripts/vendor/angular-ui/ui-bootstrap-tpls-0.12.1.min.js",
+      "scripts/vendor/angular-spinners/angular-spinners.min.js",
+      "scripts/toastr.js",
+      "scripts/spin.js",
+      "scripts/angular-sanitize.min.js",
+      "scripts/angular-translate.min.js",
+      "scripts/angular-translate-loader-static-files.min.js",
+      "scripts/vendor/others/ng-tags-input.min.js",
+      "scripts/wizard/modules/common.js",
+      "scripts/wizard/modules/logger.js",
+      "scripts/wizard/modules/spinner.js",
+      "scripts/wizard/modules/filter.js",
+      "scripts/bootstrap.dialog.js",
+      "scripts/chromeloader.js",
+      "scripts/app.module.js",
+      "scripts/wizard/controllers/shell.js",
+      "scripts/config.js",
+      "scripts/config.exceptionHandler.js",
+      "scripts/wizard/modules/wizard.module.js",
+      "scripts/wizard/services/utilservice.js",
+      "scripts/wizard/controllers/wizard.controller_mdlz.js",
+      "scripts/wizard/services/siteQueryService.js",
+      "scripts/wizard/directives/restrict.js",
+      "scripts/wizard/directives/formDirectives.js",
+      "scripts/wizard/modal/wizard.modal.controller_mdlz.js",
+      "scripts/data/data.module.js",
+      "scripts/data/templates.factory.js",
+      "scripts/data/metadata.factory.js",
+      "scripts/data/appsettings.factory.js",
+      "scripts/wizard/services/provisioningServices.js",
+      "scripts/app.js"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFileName": "assets/bundle.css",
+    "inputFiles": [
+      "styles/vendor/fabric.min.css",
+      "styles/vendor/fabric.components.min.css",
+      "styles/vendor/bootstrap.min.css",
+      "styles/vendor/bootstrap-theme.min.css",
+      "styles/font-awesome.min.css",
+      "styles/toastr.css",
+      "styles/app.css",
+      "styles/vendor/ng-tags-input.bootstrap.min.css",
+      "styles/vendor/ng-tags-input.min.css"
+    ]
+  }
+]

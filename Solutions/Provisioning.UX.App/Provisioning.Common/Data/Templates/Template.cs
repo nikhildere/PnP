@@ -149,6 +149,12 @@ namespace Provisioning.Common.Data.Templates
         [XmlAttribute]
         [JsonProperty(PropertyName = "autoApprove")]
         public bool AutoApprove { get; set; }
+
+
+        [XmlAttribute]
+        [JsonProperty(PropertyName = "mdlzSiteCategory")]
+        public string MdlzSiteCategory { get; set; }
+
         #endregion
     }
 }

@@ -24,6 +24,7 @@
         <Field ID="{867FB9FF-8314-4244-9A2D-41B60C5DCE3F}" Type="Boolean" Name="SP_SubWebOnly" DisplayName="Sub web only" Group="SiteProvisioning" />
         <Field ID="{30BD94DA-4717-450D-BB96-A40D82C0413A}" Type="Boolean" Name="SP_UseTemplateSitePolicy" DisplayName="Use Site Policy defined in template" Group="SiteProvisioning" />
         <Field ID="{2F670C14-5465-4C35-8AC8-C4D90903BE57}" Type="Boolean" Name="SP_AutoApprove" DisplayName="Auto Approve" Group="SiteProvisioning" />
+        <Field ID="{10A898EB-871A-4657-AB5B-F96C7959A62C}" Type="Text" Name="SP_MdlzSiteCategory" DisplayName="Auto Approve" Group="SiteProvisioning" />
 
 
         <!--SITE REQUEST FIELDS-->
@@ -64,6 +65,7 @@
             <pnp:FieldRef ID="867FB9FF-8314-4244-9A2D-41B60C5DCE3F" Name="SP_SubWebOnly" />
             <pnp:FieldRef ID="30BD94DA-4717-450D-BB96-A40D82C0413A" Name="SP_UseTemplateSitePolicy" />
             <pnp:FieldRef ID="2F670C14-5465-4C35-8AC8-C4D90903BE57" Name="SP_AutoApprove" />
+            <pnp:FieldRef ID="{10A898EB-871A-4657-AB5B-F96C7959A62C}" Name="SP_MdlzSiteCategory" Required="true"/>
           </pnp:FieldRefs>
         </pnp:ContentType>
         <!--SITE REQUEST CONTENT TYPE-->
@@ -2031,6 +2033,11 @@
               <pnp:DataValue FieldName="SP_Key">DefaultTimeZone</pnp:DataValue>
               <pnp:DataValue FieldName="SP_Value">13</pnp:DataValue>
               <pnp:DataValue FieldName="SP_Description">(UTC-08:00) Pacific Time (US and Canada)</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="SP_Key">MdlzSiteCategories</pnp:DataValue>
+              <pnp:DataValue FieldName="SP_Value">Team;Enterprise;External</pnp:DataValue>
+              <pnp:DataValue FieldName="SP_Description">Categories/tabs to be shown in template selection view in the modal. Note that same order would be maintained.</pnp:DataValue>
             </pnp:DataRow>
           </pnp:DataRows>
           <pnp:ContentTypeBindings>

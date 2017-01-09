@@ -69,7 +69,7 @@
     <script src="../../scripts/wizard/services/utilservice.js"></script>
     <%--<script src="../../scripts/wizard/services/peoplepickerfactory.js"></script>--%>
     <script src="../../scripts/sitemetadata/sitemetadatacontroller.js"></script>
-    <script src="../../scripts/wizard/controllers/wizard.controller.js"></script>
+    <script src="../../scripts/wizard/controllers/wizard.controller_mdlz.js"></script>
     <script src="../../scripts/wizard/services/siteQueryService.js"></script>    
     <script src="../../scripts/wizard/services/siteMetadataEditService.js"></script>
     <%--<script src="../../scripts/wizard/directives/restrict.js"></script>    

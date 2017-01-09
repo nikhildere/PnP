@@ -77,8 +77,10 @@ namespace Provisioning.Common.Data.Templates.Impl
                      item => item[TemplateFields.ENABLED_NAME],
                     item => item[TemplateFields.ROOTWEBONLY_NAME],
                     item => item[TemplateFields.SUBWEBONLY_NAME],
-                    item => item[TemplateFields.USETEMPLATESITEPOLICY_NAME]
-
+                    item => item[TemplateFields.USETEMPLATESITEPOLICY_NAME],
+                    item => item[TemplateFields.AutoApprove],
+                    item => item[TemplateFields.MdlzSiteCategory]
+                    
                      ));
                 ctx.ExecuteQuery();
 
@@ -102,7 +104,9 @@ namespace Provisioning.Common.Data.Templates.Impl
                         UserCodeWarningLevel = item.BaseGetInt(TemplateFields.USERCODEWARN_NAME),
                         SharePointOnPremises = item.BaseGet<bool>(TemplateFields.ONPREM_NAME),
                         RootTemplate = item.BaseGet(TemplateFields.TEMPLATE_NAME),
-                        UseTemplateDefinedPolicy = item.BaseGet<bool>(TemplateFields.USETEMPLATESITEPOLICY_NAME)
+                        UseTemplateDefinedPolicy = item.BaseGet<bool>(TemplateFields.USETEMPLATESITEPOLICY_NAME),
+                        AutoApprove = item.BaseGet<bool>(TemplateFields.AutoApprove),
+                        MdlzSiteCategory = item.BaseGet(TemplateFields.MdlzSiteCategory)
                     });
 
                 }
