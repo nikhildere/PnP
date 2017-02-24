@@ -20,9 +20,9 @@
         var logError = common.logger.getLogFn(controllerId, 'error');
         var getLogFn = common.logger.getLogFn;
         var log = getLogFn(controllerId);
-        
+
         var spHostWebUrl = $scope.spHostWebUrl;
-        var spAppWebUrl = $scope.spAppWebUrl;       
+        var spAppWebUrl = $scope.spAppWebUrl;
 
         //activate();
 
@@ -35,11 +35,11 @@
             siteTemplate: function () { return $scope.siteConfiguration.template == null; }
         };
 
-        
+
 
         activate();
 
-        
+
         //Set language and time zone defaults
         for (var i = 0; i < $scope.appSettings.length; i++) {
             var setting = $scope.appSettings[i]
@@ -51,7 +51,7 @@
                     $scope.siteConfiguration.timezone = setting.Value
                     break;
                 case 'DefaultRegion':
-                    $scope.siteConfiguration.properties.region= setting.Value
+                    $scope.siteConfiguration.properties.region = setting.Value
                     break;
                 case 'DefaultDivision':
                     $scope.siteConfiguration.properties.division = setting.Value
@@ -66,16 +66,17 @@
             }
 
         }
-        
-        
-        
+
+
+
         $scope.siteConfiguration.spHostWebUrl = spHostWebUrl;
         $scope.siteConfiguration.spRootHostName = "https://" + $utilservice.spRootHostName(spHostWebUrl); // still need to capture proto
         $scope.siteConfiguration.responsibilities = { read: false };
         $scope.siteConfiguration.allowCustomUrl = true;
-      
+
         $scope.cancel = function () {
-            $modalInstance.dismiss('cancel');
+            if (confirm('This will clear your selection and close the dialog. Are you sure?'))
+                $modalInstance.dismiss('cancel');
         };
 
         // Init responsibilities values
@@ -104,9 +105,9 @@
                 case 3:
                     $scope.allFormsValid.siteResponsibilities = $scope.formWizard.siteResponsibilitiesform == null ? false : $scope.formWizard.siteResponsibilitiesform.$valid;
                     break;
-                //case 3:
-                //    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
-                //    break;
+                    //case 3:
+                    //    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
+                    //    break;
                 case 2:
                     $scope.allFormsValid.siteDetails = $scope.formWizard.sitedetailsform == null ? false : $scope.formWizard.sitedetailsform.$valid;
                     break;
@@ -122,6 +123,7 @@
 
         //set confidential selected by default
         $scope.siteConfiguration.isConfidential = 1;
+        $scope.siteConfiguration.isOnBehlafOf = 0;
 
         $scope.finished = function () {
 
@@ -137,7 +139,7 @@
                 $scope.submitDenied = true;
             }
             else {
-                
+
                 //  save the site request when the wizard is complete
 
                 var siteRequest = new Object();
@@ -145,15 +147,22 @@
                 if ($scope.siteConfiguration.allowCustomUrl) {
                     siteRequest.url = null
                 }
-                else 
-                {
+                else {
                     siteRequest.url = $scope.siteConfiguration.spNewSitePrefix + $scope.siteConfiguration.details.url;
                 }
                 siteRequest.description = $scope.siteConfiguration.details.description;
                 siteRequest.lcid = $scope.siteConfiguration.language;
                 siteRequest.timeZoneId = $scope.siteConfiguration.timezone;
+
+
                 siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwner;
                 siteRequest.additionalAdministrators = $scope.siteConfiguration.secondaryOwners ? $scope.siteConfiguration.secondaryOwners.map(function (owner) { return owner.email; }) : [];
+
+                if ($scope.siteConfiguration.primaryOwnerOnBehalf != null && $scope.siteConfiguration.primaryOwnerOnBehalf.length == 1) {
+                    siteRequest.additionalAdministrators.push(siteRequest.primaryOwner);
+                    siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwnerOnBehalf.email;
+                }
+
                 siteRequest.sharePointOnPremises = $scope.siteConfiguration.spOnPrem;
                 siteRequest.template = $scope.siteConfiguration.template.title;
                 //siteRequest.sitePolicy = $scope.siteConfiguration.privacy.classification;
@@ -195,15 +204,15 @@
                 } else {
                     processNewSiteRequest(siteRequest);
                 }
-                
-                
-                
+
+
+
             }
         };
 
         $scope.interacted = function (field) {
             return field.$dirty;
-        };               
+        };
 
         $scope.selectTemplate = function (template) {
 
@@ -290,8 +299,7 @@
 
         }
 
-        function showPreviewPopup(_templ)
-        {
+        function showPreviewPopup(_templ) {
             var pvModal = $rootScope.PreviewModalPopup || {};
             pvModal.ImageUrl = _templ.imageUrl.toLowerCase().replace("_png.jpg", ".png").replace("/_w/", "/");
             pvModal.Visible = true;
@@ -299,7 +307,7 @@
             //$rootScope.$apply();
         }
 
-        
+
 
 
         function isExternalSharingEnabled(request) {
@@ -336,12 +344,12 @@
             });
         }
 
-        
+
 
         function saveNewSiteRequest(request) {
             $.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
                 if (data != null) {
-                    if(data.success != true) {
+                    if (data.success != true) {
                         logSuccess("Success!, Site Request has been submitted");
                         $modalInstance.close($scope.siteConfiguration);
                     }
@@ -369,7 +377,7 @@
 
                         $.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
                             if (data != null) {
-                                logSuccess("Success!, Site Request has been submitted");
+                                logSuccess("Success!! You will receive an email notification once we have created your site.");
                                 $modalInstance.close($scope.siteConfiguration);
                             }
                         }).fail(function (data, status) {
@@ -393,7 +401,7 @@
         //               headers:
         //               {
         //                   "Accept": "application/json;odata=" + odataType
-                   
+
         //               },
         //               success: function (data) {
         //                   var jsonResults = JSON.parse(data.body);
@@ -405,15 +413,14 @@
         //           }
         //       );
         //}
-        
+
         //$scope.getCurrentUser();
 
         $scope.siteConfiguration.primaryOwner = $scope.spUserEmail;
 
-        $scope.GetPeoplePickerSearchEntities = function (query)
-        {
+        $scope.GetPeoplePickerSearchEntities = function (query) {
             var deferred = $q.defer();
-            
+
             $app.withSPContext2(function (spContext) {
                 var queryParams = new SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters();
                 queryParams.set_allowEmailAddresses(true);
@@ -433,8 +440,7 @@
             return deferred.promise
         }
 
-        $scope.GetFilteredMetadataObjects = function (query, collection)
-        {
+        $scope.GetFilteredMetadataObjects = function (query, collection) {
             var retColl;
             if (query == null || query == "")
                 retColl = collection;
@@ -444,18 +450,55 @@
             deferred.resolve(retColl);
             return deferred.promise
         }
-        $scope.GetCsvForMetadataObject = function (mdObj)
-        {
+        $scope.GetCsvForMetadataObject = function (mdObj) {
             return mdObj == null ? "" : mdObj.map(function (obj) { return obj.Value }).join(", ");
         }
 
         $scope.GetCsvForPeoplePicker = function (ppObj) {
-            return ppObj == null ? "" : ppObj.map(function (obj) { return obj.DisplayText; }).join("; ");
+            return !$.isArray(ppObj) ? ppObj : (ppObj == null ? "" : ppObj.map(function (obj) { return obj.DisplayText; }).join("; "));
         }
 
-        $scope.SetSelectedMdlzSiteCategory = function (sel)
-        {
+        $scope.SetSelectedMdlzSiteCategory = function (sel) {
             $scope.SelectedMdlzSiteCategory = sel;
+        }
+
+        $scope.GetSelectedValueForKey = function (collection, value) {
+            for (var i = 0; i < collection.length; i++) {
+                if (collection[i].Value == value)
+                    return collection[i].Key;
+            }
+            return "";
+        }
+
+        $scope.IsCurrentStepValid = function (_step) {
+            var step = _step || $scope.getCurrentStep();
+            var isValid = false;
+
+            switch (step) {
+                case 1:
+                    isValid = ($scope.siteConfiguration.template != null);
+                    break;
+                case 2:
+                    if (!$scope.formsTempStore_SiteDetails || $scope.formWizard.sitedetailsform != null) {
+                        if ($scope.formsTempStore_SiteDetails)
+                        {
+                            $scope.formWizard.sitedetailsform.$dirty = $scope.formsTempStore_SiteDetails.$dirty;
+                        }
+                        $scope.formsTempStore_SiteDetails = $scope.formWizard.sitedetailsform;
+                    }
+                    isValid = $scope.formsTempStore_SiteDetails && $scope.formsTempStore_SiteDetails.$dirty && $scope.formsTempStore_SiteDetails.$valid;
+                    break;
+                case 3:
+                    isValid = $scope.siteConfiguration.properties && $scope.siteConfiguration.properties.termsaccepted;
+                    break;
+            }
+
+            return isValid;
+        }
+
+        $scope.testClick = function () {
+            var s = $scope;
+
         }
     }
 })();

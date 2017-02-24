@@ -1,34 +1,17 @@
 ﻿<div class="modal-right-heading">
     <h1>{{ 'CONFIRMATION' | translate }}</h1>
 </div>
-<div class="modal-right-body">
-   <span ng-bind-html="'CONFIRMATION_TEXT' | translate"></span>
-    <div class="modal-right-body" ng-form="siteResponsibilitiesform">
-        <p>
-            {{ 'SITE_OWNER_RESPONSIBILITIES_TEXT' | translate }}
+<div class="modal-right-body vw-confim">
+    <span ng-bind-html="'CONFIRMATION_TEXT' | translate"></span>
 
-        </p>
-
-        <div class="row">
-            <div class="col-sm-9">
-                <div class="form-group">
-                    <div>
-                        <input type="checkbox" value="" ng-model="siteConfiguration.properties.termsaccepted" required="" class="ng-pristine ng-untouched ng-invalid ng-invalid-required">
-                        {{ 'ACCEPT' | translate }}
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
     <table class="table table-striped">
         <tr ng-hide="siteConfiguration.allowCustomUrl">
             <th><a href="#" ng-click="setCurrentStep(2)">{{ 'SITE_URL' | translate }}</a></th>
-            <td>{{ siteConfiguration.spNewSitePrefix +siteConfiguration.details.url }}<span ng-show="submitDenied && siteConfiguration.details.url === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'SITE_URL_ERR' | translate }}</span></td>
+            <td>{{ siteConfiguration.spNewSitePrefix + siteConfiguration.details.url }}<span ng-show="submitDenied && siteConfiguration.details.url === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'SITE_URL_ERR' | translate }}</span></td>
         </tr>
         <tr>
             <th><a href="#" ng-click="setCurrentStep(2)">{{ 'PRIMARY_OWNER' | translate }}</a></th>
-            <td>{{siteConfiguration.primaryOwner}}<span ng-show="submitDenied && siteConfiguration.primaryOwner === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'PRIMARY_OWNER_ERR' | translate }}</span></td>
+            <td>{{GetCsvForPeoplePicker(siteConfiguration.primaryOwner)}}<span ng-show="submitDenied && siteConfiguration.primaryOwner === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'PRIMARY_OWNER_ERR' | translate }}</span></td>
         </tr>
         <tr>
             <th><a href="#" ng-click="setCurrentStep(2)">{{ 'SECONDARY_OWNER' | translate }}</a></th>
@@ -56,11 +39,11 @@
         </tr>
         <tr>
             <th><a href="#" ng-click="setCurrentStep(2)">{{ 'DETAILS_LANGUAGE' | translate }}</a></th>
-            <td>{{siteConfiguration.language}}<span ng-show="submitDenied && siteConfiguration.language === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'DETAILS_LANGUAGE_ERR' | translate }}</span></td>
+            <td>{{GetSelectedValueForKey(languages, siteConfiguration.language)}}<span ng-show="submitDenied && siteConfiguration.language === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'DETAILS_LANGUAGE_ERR' | translate }}</span></td>
         </tr>
         <tr>
             <th><a href="#" ng-click="setCurrentStep(2)">{{ 'DETAILS_TIMEZONE' | translate }}</a></th>
-            <td>{{siteConfiguration.timezone}}<span ng-show="submitDenied && siteConfiguration.timezone === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'DETAILS_TIMEZONE_ERR' | translate }}</span></td>
+            <td>{{GetSelectedValueForKey(timezones, siteConfiguration.timezone)}}<span ng-show="submitDenied && siteConfiguration.timezone === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'DETAILS_TIMEZONE_ERR' | translate }}</span></td>
         </tr>
         <!--<tr>
             <th><a href="#" ng-click="setCurrentStep(7)">{{ 'SITE_CLASSIFICATION' | translate }}</a></th>
@@ -70,17 +53,47 @@
             <th><a href="#" ng-click="setCurrentStep(3)">{{ 'BUSINESS_PURPOSE' | translate }}</a></th>
             <td>{{siteConfiguration.purpose.description}}<span ng-show="submitDenied && siteConfiguration.purpose.description === undefined" class="confirm-error-message" ng-click="setCurrentStep(3)">{{ 'BUSINESS_PURPOSE_ERR' | translate }}</span></td>
         </tr>-->
-        <tr>
+        <!--<tr>
             <th><a href="#" ng-click="setCurrentStep(3)">{{ 'RESPONSIBILITIES_ACCEPTED' | translate }}</a></th>
             <td>
                 <span ng-hide="(submitDenied && siteConfiguration.properties.termsaccepted === undefined) || (submitDenied && siteConfiguration.properties.termsaccepted === false)">{{siteConfiguration.properties.termsaccepted | yesNo}}</span>
                 <span ng-show="(submitDenied && siteConfiguration.properties.termsaccepted === undefined) || (submitDenied && siteConfiguration.properties.termsaccepted === false)" class="confirm-error-message" ng-click="setCurrentStep(3)">{{ 'RESPONSIBILITIES_ACCEPTED_ERR' | translate }}</span>
             </td>
-        </tr>
+        </tr>-->
     </table>
-    
-    <p>{{ 'WHAT_HAPPENS_NEXT' | translate }}</p>
-    <ul>
-        <li>{{ 'WHAT_HAPPENS_NEXT_1' | translate }}</li>
-    </ul>
+
+    <div class="modal-right-body" ng-form="siteResponsibilitiesform">
+        <!--<p>
+            {{ 'SITE_OWNER_RESPONSIBILITIES_TEXT' | translate }}
+
+        </p>-->
+        <div class="row">
+            <div style="background: #32145a; color: white; font-weight: bold; padding: 5px;">Legal Terms and Conditions </div>
+            <p>Confidential information should not be posted unless you have appropriate confidentiality commitments from Mondelez and/or its business partners.</p>
+            <p>I agree to abide by the following Mondelez policies, which I have read and understood: Company Records and Financial Information section of the <a href="https://collaboration.mdlz.com/sites/PolicyCenter/Lists/Policies/PolicyView.aspx?List=61f8a66a%2D9d8b%2D4bf0%2D9a82%2Ddb24a1348c91&amp;ID=4&amp;ContentTypeId=0x0100C9E3B072213E304D8103FFE35701BC9F">Code of Conduct for Compliance and Integrity</a>, <a href="https://collaboration.mdlz.com/sites/PolicyCenter/Lists/Policies/PolicyView.aspx?List=61f8a66a%2D9d8b%2D4bf0%2D9a82%2Ddb24a1348c91&amp;ID=6&amp;ContentTypeId=0x0100C9E3B072213E304D8103FFE35701BC9F">Records and Information Compliance Policy</a>, <a href="https://collaboration.mdlz.com/sites/PolicyCenter/Lists/Policies/PolicyView.aspx?List=61f8a66a-9d8b-4bf0-9a82-db24a1348c91&amp;ID=8&amp;ContentTypeId=0x0100C9E3B072213E304D8103FFE35701BC9F">Data Protection and Privacy Policy</a> as found in the Mondelez Policy Center.</p>
+            <p>This site will only be used for non-personal, business purposes.</p>
+            <!--<div style="color: red; font-weight: bold; margin-top: 10px">
+                As a part of Mondelez Site Life Cycle Policy, site owners will receive periodic emails(once in 6-12 months) to re-certify the site being created.
+            </div>-->
+        </div>
+        <div class="row">
+            <div class="">
+                <div class="form-group">
+                    <div>
+                        <input type="checkbox" value="" ng-model="siteConfiguration.properties.termsaccepted" required="" class="radio-align ng-pristine ng-untouched ng-invalid ng-invalid-required" />
+                        <!--<em>{{ 'ACCEPT' | translate }}</em>-->
+                        <b>
+                            I agree to the Legal Terms and Conditions mentioned above.<em class="req"></em>
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<p
+        >{
+        { 'WHAT_HAPPENS_NEXT' | translate }}</p>
+        <ul>
+            <li>{{ 'WHAT_HAPPENS_NEXT_1' | translate }}</li>
+        </ul>-->
 </div>

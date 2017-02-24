@@ -185,12 +185,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\bundle.css" />
-    <Content Include="assets\bundle.js" />
-    <Content Include="assets\bundle.min.css">
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\scripts\bundle.js" />
+    <Content Include="assets\scripts\bundle.min.js">
+      <DependentUpon>bundle.js</DependentUpon>
+    </Content>
+    <Content Include="assets\styles\bundle.css" />
+    <Content Include="assets\styles\bundle.min.css">
       <DependentUpon>bundle.css</DependentUpon>
     </Content>
-    <Content Include="assets\bundle.min.js" />
     <Content Include="images\mdlz\banner.png" />
     <Content Include="images\mdlz\bg_img.png" />
     <Content Include="images\mdlz\box01.png" />
@@ -209,6 +212,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Pages\subsite\resources\template-icon.png" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="bundleconfig.json" />
     <None Include="Properties\PublishProfiles\PPE.pubxml" />
     <None Include="Properties\PublishProfiles\PROD.pubxml" />

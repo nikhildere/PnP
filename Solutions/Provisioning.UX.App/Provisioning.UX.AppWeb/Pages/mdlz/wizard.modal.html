@@ -11,16 +11,22 @@
         <div class="col-sm-3">
 
             <div class="modal-left">
-                <img src="../images/WizardLogo.png" class="img-responsive" alt="Site Provisioning" />
+                <!--<img src="../images/WizardLogo.png" class="img-responsive" alt="Site Provisioning" />-->
+                <i class="fa fa-cogs wm-logo"></i>
 
                 <ul class="nav nav-pills nav-stacked">
-                    <li ng-class="{'active': getCurrentStep() == 1}" ng-click="setCurrentStep(1)">
+                    <li ng-class="{'active': getCurrentStep() == 1}" 
+                        ng-click="setCurrentStep(1)">
                         <a href="#" class="leftnav">{{ 'TEMPLATE_SELECTION' | translate }}</a>
                     </li>
-                    <li ng-class="{'active': getCurrentStep() == 2}" ng-click="setCurrentStep(2)">
+                    <li ng-class="{'active': getCurrentStep() == 2}"
+                        ng-click="(!IsCurrentStepValid(1) && getCurrentStep() < 2) || setCurrentStep(2)" 
+                        ng-disabled="(!IsCurrentStepValid(1) && getCurrentStep() < 2)">
                         <a href="#" class="leftnav">{{ 'THE_DETAILS' | translate }}</a>
                     </li>
-                    <li ng-class="{'active': getCurrentStep() == 3}" ng-click="setCurrentStep(3)">
+                    <li ng-class="{'active': getCurrentStep() == 3}" 
+                        ng-click="(!IsCurrentStepValid(1) || !IsCurrentStepValid(2)) || setCurrentStep(3)"
+                        ng-disabled="(!IsCurrentStepValid(1) || !IsCurrentStepValid(2))">
                         <a href="#" class="leftnav">{{ 'CONFIRMATION' | translate }}</a>
                     </li>
                 </ul>
@@ -47,10 +53,19 @@
                         <div data-ng-include="'mdlz/view_confirmation.html'"></div>
                     </div>
                     <div class="modal-right-footer">
-                        <span class="btn-image btn-back" ng-if="!isFirstStep()" ng-click="handlePrevious()"></span>
-                        <span class="btn-image btn-next" ng-if="!isLastStep()" ng-click="handleNext()"></span>
-                        <span class="btn-image btn-check" ng-if="isLastStep()" ng-click="finished()"></span>
-                        <span class="btn-image btn-cancel" ng-click="cancel()"></span>
+                        <span class="btn-image" ng-if="!isFirstStep()" ng-click="handlePrevious()">
+                            <i class="fa fa-arrow-circle-left"></i>
+                        </span>
+                        <span class="btn-image" ng-if="!isLastStep()" ng-click="!IsCurrentStepValid() || handleNext()" ng-disabled="!IsCurrentStepValid()">
+                            <i class="fa fa-arrow-circle-right"></i>
+                        </span>
+                        <span class="btn-image" ng-if="isLastStep()" ng-click="!IsCurrentStepValid() || finished()" ng-disabled="!IsCurrentStepValid()">
+                            <i class="fa fa-check-circle"></i>
+                        </span>
+                        <span class="btn-image" ng-click="cancel()">
+                            <i class="fa fa-times-circle"></i>
+                        </span>
+                        <button ng-click="testClick()">Test</button>
                     </div>
 
                 </div><!--/.modal-right-->
@@ -62,3 +77,6 @@
     </div><!--/.row-->
 
 </div><!--/.modal-body-->
+<style>
+    
+</style>

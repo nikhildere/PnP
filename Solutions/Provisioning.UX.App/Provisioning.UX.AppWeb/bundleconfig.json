@@ -1,6 +1,6 @@
 [
   {
-    "outputFileName": "assets/bundle.js",
+    "outputFileName": "assets/scripts/bundle.js",
     "inputFiles": [
       "scripts/vendor/jquery/jquery-2.2.1.min.js",
       "scripts/vendor/others/MicrosoftAjax.js",
@@ -45,7 +45,7 @@
     }
   },
   {
-    "outputFileName": "assets/bundle.css",
+    "outputFileName": "assets/styles/bundle.css",
     "inputFiles": [
       "styles/vendor/fabric.min.css",
       "styles/vendor/fabric.components.min.css",

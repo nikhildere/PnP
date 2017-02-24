@@ -1,7 +1,7 @@
 ﻿
 <div class="col-sm-12 my-req">
     <h3>Existing Requests</h3><hr />
-    <span class="btn-image btn-cancel" ng-click="cancelExistingRequests()"></span>
+    <span class="btn-image btn-cancel-circle" ng-click="cancelExistingRequests()"><i class="fa fa-times"></i></span>
     <div class="row">
         <div class="form-group">
             <div class="panel panel-default">
@@ -52,14 +52,15 @@
                         <thead>
                             <tr>
                                 <th>{{ 'COLUMNHEADER_SITE_TITLE' | translate }}</th>
-                                <th>{{ 'COLUMNHEADER_DESCRIPTION' | translate }}</th>
+                                <th>{{ 'COLUMNHEADER_URL' | translate }}</th>
+                                <!--<th>{{ 'COLUMNHEADER_DESCRIPTION' | translate }}</th>-->
                                 <th>{{ 'COLUMNHEADER_REQUEST_STATUS' | translate }}</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="request in vm.existingRequests | filter:'Approved'">
                                 <td>{{ request.title }}</td>
-                                <td>{{ request.description }}</td>
+                                <td>{{ request.url }}</td>
                                 <td>{{ request.requestStatus }}</td>
                             </tr>
                         </tbody>

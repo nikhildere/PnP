@@ -96,7 +96,7 @@
                 modalInstance.result.then(function (configuration) {
                     $scope.completedConfiguration = configuration;
                     //getRequestsByOwner(user);
-                    logSuccess("Your site request was saved successfully!!", null, true);
+                    logSuccess("Request Saved!! <br>You will receive an email notification once we have created your site.", null, true);
                 }, function () {
                     $log.info('Modal dismissed at: ' + new Date());
                     //getRequestsByOwner(user);
@@ -175,10 +175,6 @@
 
 
         }
-
-        $(document).ready(function () {
-
-        });
 
         $scope.OpenMyRequestsModal = function () {
             getRequestsByOwner({name:$scope.spUserEmail});

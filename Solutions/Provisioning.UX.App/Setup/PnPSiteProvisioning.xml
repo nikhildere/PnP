@@ -1128,6 +1128,12 @@
               <pnp:DataValue FieldName="SP_DisplayOrder">18</pnp:DataValue>
               <pnp:DataValue FieldName="SP_Enabled">true</pnp:DataValue>
             </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="SP_Key">Global</pnp:DataValue>
+              <pnp:DataValue FieldName="SP_Value">Global</pnp:DataValue>
+              <pnp:DataValue FieldName="SP_DisplayOrder">100</pnp:DataValue>
+              <pnp:DataValue FieldName="SP_Enabled">true</pnp:DataValue>
+            </pnp:DataRow>
           </pnp:DataRows>
           <pnp:ContentTypeBindings>
             <pnp:ContentTypeBinding ContentTypeID="0x010062F4AEC213DF4050BD1D081E35AF93AD" Default="true"/>
@@ -1336,6 +1342,12 @@
               <pnp:DataValue FieldName="SP_Key">North America</pnp:DataValue>
               <pnp:DataValue FieldName="SP_Value">North America</pnp:DataValue>
               <pnp:DataValue FieldName="SP_DisplayOrder">5</pnp:DataValue>
+              <pnp:DataValue FieldName="SP_Enabled">true</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="SP_Key">Global</pnp:DataValue>
+              <pnp:DataValue FieldName="SP_Value">Global</pnp:DataValue>
+              <pnp:DataValue FieldName="SP_DisplayOrder">100</pnp:DataValue>
               <pnp:DataValue FieldName="SP_Enabled">true</pnp:DataValue>
             </pnp:DataRow>
           </pnp:DataRows>

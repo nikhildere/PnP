@@ -7,19 +7,19 @@
     <meta charset="utf-8"/> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Dashboard</title>
-    <link href="../assets/bundle.min.css" rel="stylesheet" />
+    <title>Create It - Site Provisioning</title>
+    <script type="text/javascript" src="../assets/scripts//bundle.js"></script>    
+    <link href="../assets/styles/bundle.css" rel="stylesheet" />
 </head>
 <body>    
-    <div class="navBar">
+    <%--<div class="navBar">
         <div class="ms-fontWeight-semilight" style="padding: 8px 0px 0px 15px; color: white; font-size: 22px;">Office 365</div>
         <div class="NavLine"></div><div class="appTitle ms-fontWeight-semilight">Site Provisioning</div>
-   </div>
-    <div id="divSPChrome"></div>            
+   </div>--%> 
+    <div id="divSPChrome"></div>           
         
     <!-- Include the Wizard View -->
     <div data-ng-include="'shell.html'"></div>
-    <script type="text/javascript" src="../assets/bundle.js"></script>    
 
     <script type="text/javascript">
         $(document).on('click', '.panel-heading span.clickable', function (e) {
