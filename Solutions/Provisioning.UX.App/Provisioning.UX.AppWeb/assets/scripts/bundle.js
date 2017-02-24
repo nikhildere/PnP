@@ -31569,7 +31569,8 @@ function getQueryStringParameter(paramToRetrieve) {
 
     angular.module('app.wizard', [
         'wizard.filters',
-        'ngSanitize'
+        'ngSanitize',
+        'ngAnimate'
     ]);
 
 })();

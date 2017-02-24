@@ -39,9 +39,9 @@
         </div>
         
     </div>
-    <div class="row" ng-if="siteConfiguration.isOnBehlafOf==1">
+    <div class="row animate-if" ng-if="siteConfiguration.isOnBehlafOf==1">
         <div class="col-sm-12">
-            <label class="control-label" for="ppSecondaryOwners">Choose primary owner(you will be added as a secondary owner by default)</label><em class="req"></em>
+            <label class="control-label" for="ppPrimaryOwnerOnBehalf">Choose primary owner(you will be added as a secondary owner by default)</label><em class="req"></em>
             <tags-input ng-model="siteConfiguration.primaryOwnerOnBehalf"
                         display-property="DisplayText"
                         add-from-autocomplete-only="true"
