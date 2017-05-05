@@ -7,12 +7,12 @@
 
                         if (index % 2 == 0) {
                             $(this).find(".ms-webpart-chrome-title").css("margin-bottom", "0px");
-                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/BP/Images/aqua_header_mdl.png)");
+                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/vNext/BP/Images/aqua_header_mdl.png)");
                             $(this).find(".ms-webpart-chrome-title").css("background-repeat", "repeat-x");
                         }
                         else {
                             $(this).find(".ms-webpart-chrome-title").css("margin-bottom", "0px");
-                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/BP/Images/blue_header_mdl.png)");
+                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/vNext/BP/Images/blue_header_mdl.png)");
                             $(this).find(".ms-webpart-chrome-title").css("background-repeat", "repeat-x");
                         }
                     }
@@ -61,12 +61,12 @@
                     if ($(this).find(".ms-webpart-chrome-title").length > 0) {
                         if (index % 2 == 0) {
                             $(this).css("border", "#08bece 1px solid");
-                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/BP/Images/aqua_header_mdl.png)");
+                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/vNext/BP/Images/aqua_header_mdl.png)");
                             $(this).find(".ms-webpart-chrome-title").css("background-repeat", "repeat-x");
                         }
                         else {
                             $(this).css("border", "#0034a5 1px solid");
-                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/BP/Images/blue_header_mdl.png)");
+                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/vNext/BP/Images/blue_header_mdl.png)");
                             $(this).find(".ms-webpart-chrome-title").css("background-repeat", "repeat-x");
                         }
                     }
@@ -82,17 +82,23 @@ function addSiteTitle() {
         // $("#s4-titlerow").prepend("<a href='javascript:goToSiteHome();'><span class='mondoleze-team-site-title'>" + _spPageContextInfo.webTitle + "</span></a>");
         $("#pageTitle").prepend("<a href='javascript:goToSiteHome();'><span class='mondoleze-team-site-title'>" + _spPageContextInfo.webTitle + "</span></a>");
     }
-    
-    var strHtml = ' <p style="text-align:center"><span lang="en-gb" style="color:red"><strong>'+
-    			  'Confidential information of either party should not be posted unless there are appropriate '+
+
+    var strHtml = ' <p style="text-align:center"><span lang="en-gb" style="color:red"><strong>' +
+    			  'Confidential information of either party should not be posted unless there are appropriate ' +
     			  'confidentiality obligations from Mondelēz International and its business partner.</strong></span></p>';
 
-	$(strHtml).insertAfter("a#mainContent");
+    $(strHtml).insertAfter("a#mainContent");
 }
 
 function goToSiteHome() {
     window.location = _spPageContextInfo.webAbsoluteUrl;
     return false;
+}
+
+function fixNavigation() {
+    if ($('div[id*="TopNavigationMenu"] > ul > li > ul').length > 0) {
+        $('div[id*="TopNavigationMenu"]').addClass('mdz-pubWithNodes');
+    }
 }
 
 //call function
@@ -102,21 +108,22 @@ runScriptAfterJqueryLoad();
 function runScriptAfterJqueryLoad() {
     if (window.$) {
         $(function () {
-		    Reinit();
-		    //Replacing Lookout with MyMix
-		    // $("[id*='ShellLookout']").text('MyMix');
-		       $("[id*='ShellLookout']>SPAN").text("MyMix");
-		    //setting set icon to prjsetng.aspx for Upgraded sites
-		    var seticonurl = _spPageContextInfo.webAbsoluteUrl + "/_layouts/15/prjsetng.aspx";
-		    $("[href*='_layouts/SiteMetaDataTagger/SiteMetaDataTagger.aspx']").attr("href", seticonurl);
-		
-		    applyWebPartStyles();
-		    addSiteTitle();
-		
-		    $('#O365_MainLink_Help').closest('div').on('click', function () {
-		        window.open("https://collaboration.kraft.com/sites/productivityhub/sharepoint/Pages/Home.aspx", null,
+            Reinit();
+            //Replacing Lookout with MyMix
+            // $("[id*='ShellLookout']").text('MyMix');
+            $("[id*='ShellLookout']>SPAN").text("MyMix");
+            //setting set icon to prjsetng.aspx for Upgraded sites
+            var seticonurl = _spPageContextInfo.webAbsoluteUrl + "/_layouts/15/prjsetng.aspx";
+            $("[href*='_layouts/SiteMetaDataTagger/SiteMetaDataTagger.aspx']").attr("href", seticonurl);
+
+    fixNavigation();
+    applyWebPartStyles();
+    addSiteTitle();
+
+            $('#O365_MainLink_Help').closest('div').on('click', function () {
+                window.open("https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/Home.aspx", null,
                 'top=1,left=1,center=yes,resizable=yes,Width=500px,Height= 400px,status=yes,titlebar=yes;toolbar=no,menubar=no,location=yes,scrollbars=no');
-		    }).addClass('o365cs-nav-button');
+            }).addClass('o365cs-nav-button');
         });
     } else {
         // wait 50 milliseconds and try again.
@@ -174,11 +181,11 @@ function Reinit() {
 
         //verify we have not already initialized the onload wrapper  
 
-       // if (_spBodyOnloadCalled == false) {
+        // if (_spBodyOnloadCalled == false) {
 
-            //initialize onload functions  
+        //initialize onload functions  
 
-            _spBodyOnLoadWrapper();
+        _spBodyOnLoadWrapper();
 
         //}
     }
@@ -192,3 +199,11 @@ function Reinit() {
 function InitTimer() {
     setTimeout(Reinit, 10);
 }
+
+//$(document).ready(function () {
+//    var strHtml = ' <p style="text-align:center"><span lang="en-gb" style="color:red"><strong>' +
+//                  'Confidential information of either party should not be posted unless there are appropriate ' +
+//                  'confidentiality obligations from Mondelēz International and its business partner.</strong></span></p>';
+
+//    $(strHtml).insertAfter("a#mainContent");
+//});

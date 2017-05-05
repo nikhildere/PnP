@@ -205,6 +205,9 @@
     <Compile Include="Mail\EmailConfig.cs" />
     <Compile Include="Mail\EmailHelper.cs" />
     <Compile Include="Mail\FailureEmailMessage.cs" />
+    <Compile Include="Mail\NewRequestReceivedForApprovalEmailMessage.cs" />
+    <Compile Include="Mail\SentForApprovalEmailMessage.cs" />
+    <Compile Include="Mail\RequestRejectedEmailMessage.cs" />
     <Compile Include="Mail\SuccessEmailMessage.cs" />
     <Compile Include="Mail\FileSizeFormatProvider.cs" />
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBlogSiteExtensibilityProvider.cs" />

@@ -67,5 +67,12 @@ namespace Provisioning.UX.AppWeb.Models
 
         [DataMember(Name = "isConfidential")]
         public bool IsConfidential { get; set; }
+        
+        [DataMember(Name = "requestedBy")]
+        public string RequestedBy { get; set; }
+
+        [DataMember(Name = "autoApprove")]
+        public bool AutoApprove { get; set; }
+
     }
 }

@@ -105,6 +105,8 @@ namespace Provisioning.UX.AppWeb.Controllers
                 var _manager = _srf.GetSiteRequestManager();
                 
                 _manager.CreateNewSiteRequest(_newRequest);
+                
+
                  return Request.CreateResponse<SiteRequest>(HttpStatusCode.Created, _data);
 
             }

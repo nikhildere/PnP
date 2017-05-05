@@ -207,7 +207,6 @@
     <Content Include="MdlzComponents\SiteAssets\Blog\images\BlogSiteBanner.png" />
     <Content Include="MdlzComponents\SiteAssets\Blog\images\red_header_mdl.png" />
     <Content Include="MdlzComponents\SiteAssets\Blog\scripts\MDLZblogsite.Init.js" />
-    <Content Include="MdlzComponents\SiteAssets\Blog\scripts\MDLZblogsite.Init.Legacy.js" />
     <Content Include="MdlzComponents\SiteAssets\Blog\scripts\mdlzblogsite.js" />
     <Content Include="MdlzComponents\SiteAssets\BP\css\BPdefaultcss.css" />
     <Content Include="MdlzComponents\SiteAssets\BP\css\MDLZBPsite.css" />
@@ -216,7 +215,6 @@
     <Content Include="MdlzComponents\SiteAssets\BP\images\BPSiteTopbanner.png" />
     <Content Include="MdlzComponents\SiteAssets\BP\images\BPSiteTopbannerOld.png" />
     <Content Include="MdlzComponents\SiteAssets\BP\scripts\MDLZBPsite.Init.js" />
-    <Content Include="MdlzComponents\SiteAssets\BP\scripts\MDLZBPsite.Init.Legacy.js" />
     <Content Include="MdlzComponents\SiteAssets\BP\scripts\MDLZBPsite.js" />
     <Content Include="MdlzComponents\SiteAssets\Common\images\MDLZSiteIcon.png" />
     <Content Include="MdlzComponents\SiteAssets\Common\ProvApp\scripts\SubSiteOverride.js" />
@@ -232,7 +230,6 @@
     <Content Include="MdlzComponents\SiteAssets\DC\images\bg_repeat01.png" />
     <Content Include="MdlzComponents\SiteAssets\DC\images\DocCenterBanner.png" />
     <Content Include="MdlzComponents\SiteAssets\DC\scripts\MDLZDocCenter.Init.js" />
-    <Content Include="MdlzComponents\SiteAssets\DC\scripts\MDLZDocCenter.Init.Legacy.js" />
     <Content Include="MdlzComponents\SiteAssets\DC\scripts\MDLZDocCenter.js" />
     <Content Include="MdlzComponents\SiteAssets\PS\css\MDLZProjectSite.css" />
     <Content Include="MdlzComponents\SiteAssets\PS\images\01.png" />
@@ -249,7 +246,6 @@
     <Content Include="MdlzComponents\SiteAssets\PS\images\red_header_mdl.png" />
     <Content Include="MdlzComponents\SiteAssets\PS\scripts\mdlzprojectsite.js" />
     <Content Include="MdlzComponents\SiteAssets\PS\scripts\MDLZProjectSite.Init.js" />
-    <Content Include="MdlzComponents\SiteAssets\PS\scripts\MDLZProjectSite.Init.Legacy.js" />
     <Content Include="MdlzComponents\SiteAssets\Team\css\MDLZTeamsite.css" />
     <Content Include="MdlzComponents\SiteAssets\Team\images\aqua_btm.png" />
     <Content Include="MdlzComponents\SiteAssets\Team\images\aqua_header_lt.png" />
@@ -289,17 +285,49 @@
     <Content Include="MdlzComponents\SiteAssets\Team\images\purple_rt.png" />
     <Content Include="MdlzComponents\SiteAssets\Team\images\TeamSitebanner.png" />
     <Content Include="MdlzComponents\SiteAssets\Team\scripts\MDLZTeamsite.Init.js" />
-    <Content Include="MdlzComponents\SiteAssets\Team\scripts\MDLZTeamsite.Init.Legacy.js" />
     <Content Include="MdlzComponents\SiteAssets\Team\scripts\MDLZTeamsite.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Google_Analytics\GoogleAnalytics_GlobalHotZoneCommunity.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Google_Analytics\GoogleAnalytics_OWOS.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Google_Analytics\GoogleAnalytics_PerfectStore.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T01\Images\breadcrumb icon.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T01\Images\Bubble-Template-Banner.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T01\Images\MDLZSiteIconTransparent.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T01\jquery-1.11.0.min.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T01\MasterJS.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T01\Mdlz_T01.css" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T01\Mdlz_T01.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T02\Images\breadcrumb icon.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T02\Images\MDLZSiteIconTransparent.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T02\Images\T02_banner.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T02\Images\TopHeader.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T02\jquery-1.11.0.min.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T02\MasterJS.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T02\MDLZ_T02.css" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T02\MDLZ_T02.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T03\Images\MDLZSiteIconTransparent.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T03\Images\T03_banner.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T03\Images\T03_page_bg.png" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T03\jquery-1.11.0.min.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T03\MasterJS.js" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T03\Mdlz_T03.css" />
+    <Content Include="MdlzComponents\SiteAssets\Team\Templates\Mdlz_T03\Mdlz_T03.js" />
     <Content Include="MdlzComponents\SiteAssets\Wiki\css\MDLZWikiSite.css" />
     <Content Include="MdlzComponents\SiteAssets\Wiki\images\WikiSiteBanner.png" />
     <Content Include="MdlzComponents\SiteAssets\Wiki\scripts\MDLZWikisite.Init.js" />
-    <Content Include="MdlzComponents\SiteAssets\Wiki\scripts\MDLZWikisite.Init.Legacy.js" />
     <Content Include="MdlzComponents\SiteAssets\Wiki\scripts\MDLZWikisite.js" />
     <Content Include="Resources\EmailContent\FailEmail.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\EmailContent\NewRequestReceivedForApprovalEmailMessage.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\EmailContent\RequestRejected.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\EmailContent\NewSiteEmail.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\EmailContent\SentForApprovalEmailMessage.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\custombg.jpg">
@@ -323,7 +351,6 @@
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\default.aspx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\ProjectSiteTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

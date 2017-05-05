@@ -16,7 +16,7 @@
                     var headID = document.getElementsByTagName('head')[0]; 
                     var subsiteScriptTag = document.createElement('script');
                     subsiteScriptTag.type = 'text/javascript';
-                    subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
+                    subsiteScriptTag.src = '/SiteAssets/vNext/Common/ProvApp/scripts/SubSiteOverride.js';
                     headID.appendChild(subsiteScriptTag);"/>
         </pnp:SiteCustomActions>-->
         <pnp:WebCustomActions>

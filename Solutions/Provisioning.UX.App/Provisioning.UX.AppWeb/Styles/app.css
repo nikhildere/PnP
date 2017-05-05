@@ -858,7 +858,7 @@ body {
         text-decoration: underline;
     }
 
-tags-input[maxtags='1'].ng-valid-required .tags .input {
+tags-input[max-tags='1'].ng-valid-required .tags .input {
     display: none;
 }
 
@@ -1002,4 +1002,14 @@ em.req:after {
 }
 
 /*ngIf animate - Ends*/
+
+/**/
+.control-label .fa-spinner {
+    margin-left:2px;
+}
+.ms-subtleEmphasis {
+    display:none;
+}
+/**/
+
 /*#endregion Added by Nikhil - Mod*/

@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Provisioning.Common.Utilities;
 using Provisioning.Common.Data.SiteRequests;
 using System.Diagnostics;
+using Provisioning.Common.Mail;
 
 namespace Provisioning.Common.Data.SiteRequests.Impl
 {
@@ -23,14 +24,16 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
         #region Private Instance Members
         private static readonly IConfigurationFactory _cf = ConfigurationFactory.GetInstance();
         private static readonly IAppSettingsManager _manager = _cf.GetAppSetingsManager();
-        const string LOGGING_SOURCE = "SPSiteRequestManagerImpl"; 
+        const string LOGGING_SOURCE = "SPSiteRequestManagerImpl";
         const string FIELD_XML_FORMAT = @"<Field Type=""{0}"" Name=""{1}"" StaticName=""{1}"" DisplayName=""{2}"" ID=""{3}"" {4}/>";
         const string CAML_NEWREQUEST_BY_URL = "<Query><Where><And><Eq><FieldRef Name=SP_Url'/><Value Type='Text'>{0}</Value></Eq><Eq><FieldRef Name='Status'/><Value Type='Text'>New</Value></Eq></And></Where></Query>";
         const string CAML_NEWREQUESTS = "<View><Query><Where><Eq><FieldRef Name='SP_ProvisioningStatus'/><Value Type='Text'>New</Value></Eq></Where></Query><RowLimit>100</RowLimit></View>";
         const string CAML_GETREQUEST_BY_URL = "<View><Query><Where><Eq><FieldRef Name='SP_Url'/><Value Type='Text'>{0}</Value></Eq></Where></Query><RowLimit>100</RowLimit></View>";
         const string CAML_APPROVEDREQUESTS = "<View><Query><Where><Eq><FieldRef Name='SP_ProvisioningStatus'/><Value Type='Text'>Approved</Value></Eq></Where></Query><RowLimit>100</RowLimit></View>";
-        const string CAML_GETREQUESTSBYOWNER = "<View><Query><Where><Eq><FieldRef Name='SP_Owner' LookupId='True'/><Value Type='Int'>{0}</Value></Eq></Where></Query></View>";
+        const string CAML_GETREQUESTSBYOWNER = "<View><Query><Where><Or><Eq><FieldRef Name='SP_Owner' LookupId='True'/><Value Type='Int'>{0}</Value></Eq><Eq><FieldRef Name='SP_RequestedBy' LookupId='True'/><Value Type='Int'>{0}</Value></Eq></Or></Where></Query></View>";
         const string CAML_INCOMPLETEREQUESTS = "<View><Query><Where><And><And><Neq><FieldRef Name='SP_ProvisioningStatus'/><Value Type='Text'>Complete</Value></Neq><Neq><FieldRef Name='SP_ProvisioningStatus'/><Value Type='Text'>Approved</Value></Neq></And><Neq><FieldRef Name='SP_ProvisioningStatus'/><Value Type='Text'>New</Value></Neq></And></Where></Query><RowLimit>100</RowLimit></View>";
+        const string CAML_APPROVALANDREJECTEDSITESFORNOTIFICATION = "<View> <Query> <Where> <And> <Or> <IsNull> <FieldRef Name='SP_NotificationStatus' /> </IsNull> <Neq> <FieldRef Name='SP_NotificationStatus'/> <Value Type='Text'>Rejected Mail Sent</Value> </Neq> </Or> <In> <FieldRef Name='SP_ProvisioningStatus'/> <Values> <Value Type='Text'>New</Value> <Value Type='Text'>Rejected</Value> </Values> </In> </And> </Where> </Query> <RowLimit>100</RowLimit> </View>";
+
         #endregion
 
         #region Constructor
@@ -46,7 +49,7 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
         /// <param name="camlQuery">Query Query to Execute</param>
         /// <returns></returns>
         private ICollection<SiteInformation> GetSiteRequestsByCaml(string camlQuery)
-        {   
+        {
             List<SiteInformation> _siteRequests = new List<SiteInformation>();
             UsingContext(ctx =>
             {
@@ -54,10 +57,10 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                 var _camlQuery = new CamlQuery();
                 _camlQuery.ViewXml = camlQuery;
 
-               Log.Info("SPSiteRequestManager.GetSiteRequestsByCaml",
-                    "Querying SharePoint Request Repository {0}, Caml Query {1}",
-                    SiteRequestList.LISTURL,
-                    _camlQuery.ViewXml);
+                Log.Info("SPSiteRequestManager.GetSiteRequestsByCaml",
+                     "Querying SharePoint Request Repository {0}, Caml Query {1}",
+                     SiteRequestList.LISTURL,
+                     _camlQuery.ViewXml);
 
                 var _web = ctx.Web;
                 ctx.Load(_web);
@@ -92,6 +95,8 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                      item => item[SiteRequestFields.BC_NAME],
                      item => item[SiteRequestFields.PROPS_NAME],
                      item => item[SiteRequestFields.STATUSMESSAGE_NAME],
+                     item => item[SiteRequestFields.ListItemID_NAME],
+                     item => item[SiteRequestFields.NOTIFICATIONSTATUS_NAME],
                      item => item[SiteRequestFields.ISCONFIDENTIAL_NAME]));
                 ctx.ExecuteQuery();
 
@@ -117,7 +122,9 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                         BusinessCase = _item.BaseGet(SiteRequestFields.BC_NAME),
                         SiteMetadataJson = _item.BaseGet(SiteRequestFields.PROPS_NAME),
                         RequestStatusMessage = _item.BaseGet(SiteRequestFields.STATUSMESSAGE_NAME),
-                        IsConfidential = _item.BaseGet<bool>(SiteRequestFields.ISCONFIDENTIAL_NAME)
+                        IsConfidential = _item.BaseGet<bool>(SiteRequestFields.ISCONFIDENTIAL_NAME),
+                        Id = _item.BaseGet(SiteRequestFields.ListItemID_NAME),
+                        NotificationStatus = _item.BaseGet(SiteRequestFields.NOTIFICATIONSTATUS_NAME),
                     };
                     _siteRequests.Add(_site);
                 }
@@ -134,10 +141,10 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                 CamlQuery _camlQuery = new CamlQuery();
                 _camlQuery.ViewXml = string.Format(camlQuery, filter);
 
-               Log.Info("SPSiteRequestManager.GetSiteRequestsByCaml", "Querying SharePoint Request Repository: {0}, Caml Query: {1} Filter: {2}",
-                  SiteRequestList.LISTURL,
-                  _camlQuery.ViewXml,
-                  filter);
+                Log.Info("SPSiteRequestManager.GetSiteRequestsByCaml", "Querying SharePoint Request Repository: {0}, Caml Query: {1} Filter: {2}",
+                   SiteRequestList.LISTURL,
+                   _camlQuery.ViewXml,
+                   filter);
 
                 var _web = ctx.Web;
                 ctx.Load(_web);
@@ -197,8 +204,8 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                         Lcid = _item.BaseGetUint(SiteRequestFields.LCID_NAME),
                         TimeZoneId = _item.BaseGetInt(SiteRequestFields.TIMEZONE_NAME),
                         SharePointOnPremises = _item.BaseGet<bool>(SiteRequestFields.ONPREM_REQUEST_NAME),
-                        BusinessCase = _item.BaseGet( SiteRequestFields.BC_NAME),
-                        SiteMetadataJson = _item.BaseGet( SiteRequestFields.PROPS_NAME),
+                        BusinessCase = _item.BaseGet(SiteRequestFields.BC_NAME),
+                        SiteMetadataJson = _item.BaseGet(SiteRequestFields.PROPS_NAME),
                         RequestStatusMessage = _item.BaseGet(SiteRequestFields.STATUSMESSAGE_NAME)
                     };
                 }
@@ -242,7 +249,7 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
             {
                 return new AppOnlyAuthenticationSite();
             }
-            
+
         }
         #endregion
 
@@ -261,7 +268,7 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                     ctx.Load(_user);
                     ctx.ExecuteQuery();
 
-                    if (_user != null) 
+                    if (_user != null)
                     {
                         var _userID = _user.Id;
                         var camlString = string.Format(CAML_GETREQUESTSBYOWNER, _userID);
@@ -275,9 +282,9 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                         Log.Warning("SPSiteRequestManager.GetOwnerRequests", "GetOwnerRequests email {0} not found", email);
                     }
                 }
-                catch (Exception _ex) 
+                catch (Exception _ex)
                 {
-                  //TODO LOG
+                    //TODO LOG
                 }
             });
             return _returnResults;
@@ -316,22 +323,26 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                 _record[SiteRequestFields.BC_NAME] = siteRequest.BusinessCase;
                 _record[SiteRequestFields.PROPS_NAME] = siteRequest.SiteMetadataJson;
                 _record[SiteRequestFields.ISCONFIDENTIAL_NAME] = siteRequest.IsConfidential;
+                if (!string.IsNullOrEmpty(siteRequest.RequestedBy))
+                {
+                    _record[SiteRequestFields.REQUESTEDBY_NAME] = FieldUserValue.FromUser(siteRequest.RequestedBy);
+                }
                 //If Settings are set to autoapprove then automatically approve the requests
-                if(_manager.GetAppSettings().AutoApprove) 
+                if (_manager.GetAppSettings().AutoApprove && siteRequest.AutoApprove)
                 {
                     _record[SiteRequestFields.PROVISIONING_STATUS_NAME] = SiteRequestStatus.Approved.ToString();
                     _record[SiteRequestFields.APPROVEDDATE_NAME] = DateTime.Now;
                 }
-                else 
+                else
                 {
                     _record[SiteRequestFields.PROVISIONING_STATUS_NAME] = SiteRequestStatus.New.ToString();
                 }
-                
+
                 FieldUserValue _siteOwner = FieldUserValue.FromUser(siteRequest.SiteOwner.Name);
                 _record[SiteRequestFields.OWNER_NAME] = _siteOwner;
-                
+
                 //Additional Admins
-                if(siteRequest.AdditionalAdministrators != null)
+                if (siteRequest.AdditionalAdministrators != null)
                 {
                     if (siteRequest.AdditionalAdministrators.Count > 0)
                     {
@@ -348,6 +359,7 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                 }
                 _record.Update();
                 ctx.ExecuteQuery();
+
                 _timespan.Stop();
 
                 Log.TraceApi("SharePoint", "SPSiteRequestManager.CreateNewSiteRequest", _timespan.Elapsed);
@@ -380,11 +392,17 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
             return this.GetSiteRequestsByCaml(CAML_INCOMPLETEREQUESTS);
         }
 
+        public ICollection<SiteInformation> GetApprovalAndRejectedSitesForNotification()
+        {
+            Log.Info("SPSiteRequestManager.GetIncompleteRequests", "Entering GetIncompleteRequests");
+            return this.GetSiteRequestsByCaml(CAML_APPROVALANDREJECTEDSITESFORNOTIFICATION);
+        }
+
         public bool DoesSiteRequestExist(string url)
         {
             Log.Info("SPSiteRequestManager.DoesSiteRequestExist", "Entering DoesSiteRequestExist url {0}", url);
             var _result = this.GetSiteRequestByUrl(url);
-            if(_result != null)
+            if (_result != null)
             {
                 return true;
             }
@@ -403,11 +421,12 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
             UsingContext(ctx =>
             {
                 Stopwatch _timespan = Stopwatch.StartNew();
-               
+
                 var _web = ctx.Web;
                 ctx.Load(_web);
 
-                if (!_web.ListExists(SiteRequestList.TITLE)) {
+                if (!_web.ListExists(SiteRequestList.TITLE))
+                {
                     var _message = String.Format("The List {0} does not exist in Site {1}",
                          SiteRequestList.TITLE,
                          _web.Url);
@@ -418,12 +437,13 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                 var _list = ctx.Web.Lists.GetByTitle(SiteRequestList.TITLE);
                 var _query = new CamlQuery();
                 _query.ViewXml = string.Format(CAML_GETREQUEST_BY_URL, url);
-                
-                ListItemCollection _itemCollection =_list.GetItems(_query);
+
+                ListItemCollection _itemCollection = _list.GetItems(_query);
                 ctx.Load(_itemCollection);
                 ctx.ExecuteQuery();
 
-                if (_itemCollection.Count != 0) {
+                if (_itemCollection.Count != 0)
+                {
                     ListItem _item = _itemCollection.FirstOrDefault();
                     _item[SiteRequestFields.PROVISIONING_STATUS_NAME] = status.ToString();
                     _item[SiteRequestFields.STATUSMESSAGE_NAME] = statusMessage;
@@ -470,7 +490,7 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                     ListItem _item = _itemCollection.FirstOrDefault();
                     _item[SiteRequestFields.URL_NAME] = newUrl;
 
-                    
+
                     _item.Update();
                     ctx.ExecuteQuery();
                 }
@@ -479,6 +499,81 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                 Log.Info("SPSiteRequestManager.UpdateRequestUrl", PCResources.SiteRequestUpdate_Successful, url, newUrl);
                 Log.TraceApi("SharePoint", "SPSiteRequestManager.UpdateRequestUrl", _timespan.Elapsed);
             });
+        }
+
+        public void UpdateNotificationStatus(string url, string notifStatusMessage)
+        {
+            Log.Info("SPSiteRequestManager.UpdateRequestStatus", "Entering UpdateRequestStatus url {0} status {1} status message", url, notifStatusMessage);
+            UsingContext(ctx =>
+            {
+                Stopwatch _timespan = Stopwatch.StartNew();
+
+                var _web = ctx.Web;
+                ctx.Load(_web);
+
+                if (!_web.ListExists(SiteRequestList.TITLE))
+                {
+                    var _message = String.Format("The List {0} does not exist in Site {1}",
+                         SiteRequestList.TITLE,
+                         _web.Url);
+                    Log.Fatal("SPSiteRequestManager.UpdateRequestStatus", _message);
+                    throw new DataStoreException(_message);
+                }
+
+                var _list = ctx.Web.Lists.GetByTitle(SiteRequestList.TITLE);
+                var _query = new CamlQuery();
+                _query.ViewXml = string.Format(CAML_GETREQUEST_BY_URL, url);
+
+                ListItemCollection _itemCollection = _list.GetItems(_query);
+                ctx.Load(_itemCollection);
+                ctx.ExecuteQuery();
+
+                if (_itemCollection.Count != 0)
+                {
+                    ListItem _item = _itemCollection.FirstOrDefault();
+                    _item[SiteRequestFields.NOTIFICATIONSTATUS_NAME] = notifStatusMessage;
+
+                    _item.Update();
+                    ctx.ExecuteQuery();
+                }
+
+                _timespan.Stop();
+                Log.Info("SPSiteRequestManager.UpdateNotificationStatus", PCResources.SiteRequestUpdate_Successful, url, notifStatusMessage.ToString());
+                Log.TraceApi("SharePoint", "SPSiteRequestManager.UpdateNotificationStatus", _timespan.Elapsed);
+            });
+        }
+
+        public IEnumerable<SiteUser> GetRequestApprovers()
+        {
+            IEnumerable<SiteUser> ret = null;
+            UsingContext(ctx =>
+            {
+                string strSiteRequestApproversGroupName = "Site Request Approvers";
+                try
+                {
+                    var approverGroup = ctx.Web.SiteGroups.GetByName(strSiteRequestApproversGroupName);
+                    ctx.Load(approverGroup, x => x.Users.Include(y => y.Title, y => y.Email));
+                    ctx.ExecuteQuery();
+                    ret = approverGroup?.Users.Select(x => new SiteUser { Email = x.Email, Name = x.Title });
+                }
+                catch (Exception ex)
+                {
+                    bool isGroupNotFoundException = false;
+                    if (ex is ServerException)
+                    {
+                        if (((ServerException)ex).ServerErrorCode == -2146232832 && ((ServerException)ex).ServerErrorTypeName.Equals("Microsoft.SharePoint.SPException", StringComparison.InvariantCultureIgnoreCase))
+                        {
+                            isGroupNotFoundException = true;
+                        }
+                    }
+                    if (isGroupNotFoundException)
+                        Log.Fatal("SPSiteRequestManager.GetRequestApprovers", $"{strSiteRequestApproversGroupName} group not found hence approval mails for new site requests will not be sent to approvers.");
+                    else
+                        Log.Fatal("SPSiteRequestManager.GetRequestApprovers", ex.ToString());
+
+                }
+            });
+            return ret ?? new List<SiteUser>();
         }
 
         #endregion

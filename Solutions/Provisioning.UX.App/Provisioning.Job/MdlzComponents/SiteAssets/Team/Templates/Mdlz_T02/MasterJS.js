@@ -1,0 +1,89 @@
+﻿function LoadMdlzBranding(templateName) {
+
+    //Form Loading div
+    var loadingDiv = '<div id="loader" style="display:table; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000; background: #fff;">'
+    + '<div style="display:table-cell; vertical-align:middle; text-align: center;">'
+    + 'loading...<br />'
+    + '</div></div>';
+
+    var isIframeElement = null;
+    var curURL = null;
+    var indexNintex = null;
+    var head = document.getElementsByTagName('head')[0];
+
+    //Call GetElementByClassName 
+    isIframeElement = GEBCN("ms-datepicker-html");
+    curURL = window.location.href;
+    indexNintex = (curURL.indexOf("_layouts/15/NintexWorkflow/WorkflowDesigner.aspx") != -1 || curURL.indexOf("_layouts/15/zoombldr.aspx?culture=en-US") != -1 || curURL.indexOf("_layouts/15/Chart/WebUI") != -1 || curURL.indexOf("Lists/Calendar/NewForm.aspx?RootFolder=Lists%2FCalendar&IsDlg=1") != -1) ? true : false;
+
+    //Dont append Mondelez JS and CSS to iframe head if iframe element is found
+    if (isIframeElement.length == 0 && indexNintex == false) {
+        //First hide default Sharepoint form element 
+        document.getElementsByTagName('form')[0].style.visibility = "hidden";
+        //Append Loading div to body
+        document.getElementsByTagName('body')[0].insertAdjacentHTML('afterbegin', loadingDiv);
+    }
+
+    var scriptFiles = [{ src: "/SiteAssets/vNext/Team/Templates/" + templateName + "/jquery-1.11.0.min.js" },
+                        { src: "/SiteAssets/vNext/Team/Templates/" + templateName + "/" + templateName + ".js" },
+						{ src: "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/webtrends.load.js", addOnlyIfTrue: function () { return (typeof wt_sp_globals == 'undefined' || !wt_sp_globals); } },
+                        { src: "/SiteAssets/vNext/Common/ProvApp/scripts/SubSiteOverride.js" },
+						{ src: "/SiteAssets/Common/scripts/MDLZ.SiteLifeCycle.js", addOnlyIfTrue: function () { return (typeof MdlzLifeCycle == 'undefined' || !MdlzLifeCycle); } }];
+
+
+    var cssFiles = ["/SiteAssets/vNext/Team/Templates/" + templateName + "/" + templateName + ".css"];
+
+    for (var i = 0; i < cssFiles.length; i++) {
+        var cssRef = document.createElement("link");
+        cssRef.type = "text/css";
+        cssRef.rel = "stylesheet";
+        cssRef.href = cssFiles[i];
+        if (isIframeElement.length == 0 && indexNintex == false)
+            head.appendChild(cssRef);
+    }
+
+    for (var i = 0; i < scriptFiles.length; i++) {
+        var sFile = scriptFiles[i];
+
+        if (!sFile.addOnlyIfTrue || (sFile.addOnlyIfTrue && sFile.addOnlyIfTrue())) {
+            var scriptRef = document.createElement("script");
+            scriptRef.type = "text/javascript";
+            scriptRef.src = sFile.src;
+            if (isIframeElement.length == 0 && indexNintex == false)
+                head.appendChild(scriptRef);
+        }
+    }
+}
+
+LoadMdlzBranding("Mdlz_T02");
+
+
+//Fix for IE8 as getElementsbyClassName doesnt work in IE8
+function GEBCN(cn) {
+    if (document.getElementsByClassName) // Returns NodeList here
+        return document.getElementsByClassName(cn);
+
+    cn = cn.replace(/ *$/, '');
+
+    if (document.querySelectorAll) // Returns NodeList here
+        return document.querySelectorAll((' ' + cn).replace(/ +/g, '.'));
+
+    cn = cn.replace(/^ */, '');
+
+    var classes = cn.split(/ +/), clength = classes.length;
+    var els = document.getElementsByTagName('*'), elength = els.length;
+    var results = [];
+    var i, j, match;
+
+    for (i = 0; i < elength; i++) {
+        match = true;
+        for (j = clength; j--;)
+            if (!RegExp(' ' + classes[j] + ' ').test(' ' + els[i].className + ' '))
+                match = false;
+        if (match)
+            results.push(els[i]);
+    }
+
+    // Returns Array here
+    return results;
+}

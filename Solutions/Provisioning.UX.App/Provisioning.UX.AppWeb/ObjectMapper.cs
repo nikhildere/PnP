@@ -42,9 +42,10 @@ namespace Provisioning.UX.AppWeb
             _newRequest.BusinessCase = request.BusinessCase;
             _newRequest.EnableExternalSharing = request.EnableExternalSharing;
             _newRequest.IsConfidential = request.IsConfidential;
+            _newRequest.RequestedBy = request.RequestedBy;
+            _newRequest.AutoApprove = request.AutoApprove;
 
-
-            if(request.Properties != null)
+            if (request.Properties != null)
             {
                 //Serialize Property Bag Entries
                 _newRequest.SiteMetadataJson = JsonConvert.SerializeObject(request.Properties);

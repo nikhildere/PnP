@@ -514,6 +514,21 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
         {
             throw new NotImplementedException();
         }
+
+        public ICollection<SiteInformation> GetApprovalAndRejectedSitesForNotification()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateNotificationStatus(string url, string notifStatusMessage)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<SiteUser> GetRequestApprovers()
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
 

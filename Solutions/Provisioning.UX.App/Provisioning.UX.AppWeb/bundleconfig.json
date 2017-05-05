@@ -57,5 +57,21 @@
       "styles/vendor/ng-tags-input.bootstrap.min.css",
       "styles/vendor/ng-tags-input.min.css"
     ]
+  },
+  {
+    "outputFileName": "assets/scripts/bundle-subsite.js",
+    "inputFiles": [
+      "scripts/vendor/jquery/jquery-2.2.1.min.js",
+      "scripts/chromeloader.js",
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFileName": "assets/styles/bundle-subsite.css",
+    "inputFiles": [
+      "styles/site.css"
+    ]
   }
 ]

@@ -70,5 +70,16 @@ namespace Provisioning.Common.Data.SiteRequests
 
 
         void UpdateRequestUrl(string url, string newUrl);
+
+        /// <summary>
+        /// Returns a collection of all Site Requests for which notification is yet to be sent
+        /// </summary>
+        /// <returns>Will return a collection of SiteRequests for which notification is yet to be sent or an empty collection will be returned</returns>
+        ICollection<SiteInformation> GetApprovalAndRejectedSitesForNotification();
+
+        void UpdateNotificationStatus(string url, string notifStatusMessage);
+
+        IEnumerable<SiteUser> GetRequestApprovers();
+
     }
 }

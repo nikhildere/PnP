@@ -90,6 +90,103 @@ namespace Provisioning.Common.Mail
                 Log.Fatal("Provisioning.Common.Mail.EmailHelper.SendFailEmail", "There was an error sending email. The exception is {0}", ex);
             }
         }
+
+        public static void SendSentForApprovalEmail(SentForApprovalEmailMessage message)
+        {
+            try
+            {
+                EmailConfig _emailConfig = new EmailConfig();
+                using (SmtpClient client = new SmtpClient())
+                {
+                    using (MailMessage emailMessage = new MailMessage())
+                    {
+                        emailMessage.Subject = message.Subject;
+
+                        foreach (string to in message.To)
+                        {
+                            emailMessage.To.Add(to);
+                        }
+
+                        foreach (string cc in message.Cc)
+                        {
+                            emailMessage.CC.Add(cc);
+                        }
+                        AlternateView htmlView = AlternateView.CreateAlternateViewFromString(_emailConfig.GetSentForApprovalEmailTemplateContent(message), null, "text/html");
+                        emailMessage.AlternateViews.Add(htmlView);
+                        client.Send(emailMessage);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal("Provisioning.Common.Mail.EmailHelper.SendFailEmail", "There was an error sending email. The exception is {0}", ex);
+            }
+        }
+
+        public static void SendNewRequestReceivedForApprovalEmailMessage(NewRequestReceivedForApprovalEmailMessage message)
+        {
+            try
+            {
+                EmailConfig _emailConfig = new EmailConfig();
+                using (SmtpClient client = new SmtpClient())
+                {
+                    using (MailMessage emailMessage = new MailMessage())
+                    {
+                        emailMessage.Subject = message.Subject;
+
+                        foreach (string to in message.To)
+                        {
+                            emailMessage.To.Add(to);
+                        }
+
+                        foreach (string cc in message.Cc)
+                        {
+                            emailMessage.CC.Add(cc);
+                        }
+                        AlternateView htmlView = AlternateView.CreateAlternateViewFromString(_emailConfig.GetNewRequestReceivedForApprovalEmailMessage(message), null, "text/html");
+                        emailMessage.AlternateViews.Add(htmlView);
+                        client.Send(emailMessage);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal("Provisioning.Common.Mail.EmailHelper.SendFailEmail", "There was an error sending email. The exception is {0}", ex);
+            }
+        }
+
+        public static void SendRequestRejectedEmailMessage(RequestRejectedEmailMessage message)
+        {
+            try
+            {
+                EmailConfig _emailConfig = new EmailConfig();
+                using (SmtpClient client = new SmtpClient())
+                {
+                    using (MailMessage emailMessage = new MailMessage())
+                    {
+                        emailMessage.Subject = message.Subject;
+
+                        foreach (string to in message.To)
+                        {
+                            emailMessage.To.Add(to);
+                        }
+
+                        foreach (string cc in message.Cc)
+                        {
+                            emailMessage.CC.Add(cc);
+                        }
+                        AlternateView htmlView = AlternateView.CreateAlternateViewFromString(_emailConfig.GetRequestRejectedEmailMessage(message), null, "text/html");
+                        emailMessage.AlternateViews.Add(htmlView);
+                        client.Send(emailMessage);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal("Provisioning.Common.Mail.EmailHelper.SendFailEmail", "There was an error sending email. The exception is {0}", ex);
+            }
+        }
+
         #endregion
     }
 }

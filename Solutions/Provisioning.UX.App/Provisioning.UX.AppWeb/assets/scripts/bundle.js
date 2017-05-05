@@ -31456,12 +31456,12 @@ function getQueryStringParameter(paramToRetrieve) {
         
         vm.translations ={};
         $translate(['SOLUTION_LOADED']).then(function (translations) {
-            vm.translations.HEADLINE = translations.SOLUTION_LOADED;
+            //vm.translations.HEADLINE = translations.SOLUTION_LOADED;
         }).then(activate)
 
 
         function activate() {
-            logSuccess(vm.translations.HEADLINE, null, true);
+            //logSuccess(vm.translations.HEADLINE, null, true);
             common.activateController([], controllerId);
         }
 
@@ -31569,8 +31569,7 @@ function getQueryStringParameter(paramToRetrieve) {
 
     angular.module('app.wizard', [
         'wizard.filters',
-        'ngSanitize',
-        'ngAnimate'
+        'ngSanitize'
     ]);
 
 })();
@@ -31682,7 +31681,7 @@ function getQueryStringParameter(paramToRetrieve) {
         $scope.spinnerService = spinnerService;
         $scope.loading = false;
         $scope.siteConfiguration = {};
-        var completedLoadRequests = 1, totalRequests = 7;
+        var completedLoadRequests = 0, totalRequests = 7;
         $scope.ProgressBar = 5;
 
         activate();
@@ -31767,7 +31766,7 @@ function getQueryStringParameter(paramToRetrieve) {
             var executor = new SP.RequestExecutor($scope.spAppWebUrl);
             executor.executeAsync(
                    {
-                       url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@t)/web/currentUser?$select=email&@t='" + $scope.spHostWebUrl + "'",
+                       url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@t)/web/currentUser?$select=email,loginname,title&@t='" + $scope.spHostWebUrl + "'",
                        method: "GET",
                        headers:
                        {
@@ -31778,10 +31777,10 @@ function getQueryStringParameter(paramToRetrieve) {
                            jsonResults = isSPOD ? jsonResults.d : jsonResults;
                            $log.info('Current user email: ' + jsonResults.Email);
                            user.name = jsonResults.Email;
-                           $scope.spUserEmail = jsonResults.Email;
-                           $scope.$apply();
+                           $scope.spUser = jsonResults;
                            //getRequestsByOwner(user);                          
                            incrementProgBar();
+                           $scope.$apply();
                        },
                        error: function () { alert("We are having problems retrieving specific information from the server. Please try again later"); }
                    }
@@ -31834,7 +31833,7 @@ function getQueryStringParameter(paramToRetrieve) {
         }
 
         $scope.OpenMyRequestsModal = function () {
-            getRequestsByOwner({name:$scope.spUserEmail});
+            getRequestsByOwner({ name: $scope.spUser.Email });
             $scope.miExistingRequests = $modal.open({
                 scope: $scope,
                 templateUrl: '/Pages/mdlz/modal_myrequests.html',
@@ -31850,7 +31849,7 @@ function getQueryStringParameter(paramToRetrieve) {
         };
 
         $scope.isDataLoading = function () {
-            return !($scope.spUserEmail != null && $scope.regions != null && $scope.functions != null && $scope.templates != null && $scope.languages != null && $scope.timezones != null);
+            return !($scope.spUser != null && $scope.regions != null && $scope.functions != null && $scope.templates != null && $scope.languages != null && $scope.timezones != null);
         }
 
         function getTemplates() {
@@ -31918,6 +31917,7 @@ function getQueryStringParameter(paramToRetrieve) {
         function incrementProgBar() {
             completedLoadRequests++;
             var x = completedLoadRequests / totalRequests * 100;
+
             $scope.ProgressBar = x >= 100 ? 100 : x;
 
         }
@@ -32235,7 +32235,7 @@ function getQueryStringParameter(paramToRetrieve) {
 
         //set confidential selected by default
         $scope.siteConfiguration.isConfidential = 1;
-        $scope.siteConfiguration.isOnBehlafOf = 0;
+        $scope.siteConfiguration.isOnBehalfOf = 0;
 
         $scope.finished = function () {
 
@@ -32267,16 +32267,18 @@ function getQueryStringParameter(paramToRetrieve) {
                 siteRequest.timeZoneId = $scope.siteConfiguration.timezone;
 
 
-                siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwner;
-                siteRequest.additionalAdministrators = $scope.siteConfiguration.secondaryOwners ? $scope.siteConfiguration.secondaryOwners.map(function (owner) { return owner.email; }) : [];
+                siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwner.LoginName;
+                siteRequest.additionalAdministrators = $scope.siteConfiguration.secondaryOwners ? $scope.siteConfiguration.secondaryOwners.map(function (owner) { return owner.Key; }) : [];
 
-                if ($scope.siteConfiguration.primaryOwnerOnBehalf != null && $scope.siteConfiguration.primaryOwnerOnBehalf.length == 1) {
+                if ($scope.siteConfiguration.isOnBehalfOf == 1 && $scope.siteConfiguration.primaryOwnerOnBehalf != null && $scope.siteConfiguration.primaryOwnerOnBehalf.length == 1) {
                     siteRequest.additionalAdministrators.push(siteRequest.primaryOwner);
-                    siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwnerOnBehalf.email;
+                    siteRequest.requestedBy = siteRequest.primaryOwner;
+                    siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwnerOnBehalf[0].Key;
                 }
 
                 siteRequest.sharePointOnPremises = $scope.siteConfiguration.spOnPrem;
                 siteRequest.template = $scope.siteConfiguration.template.title;
+                siteRequest.autoApprove = $scope.siteConfiguration.template.autoApprove;
                 //siteRequest.sitePolicy = $scope.siteConfiguration.privacy.classification;
                 //siteRequest.businessCase = $scope.siteConfiguration.purpose.description;
                 siteRequest.enableExternalSharing = $scope.siteConfiguration.externalSharing;
@@ -32528,9 +32530,10 @@ function getQueryStringParameter(paramToRetrieve) {
 
         //$scope.getCurrentUser();
 
-        $scope.siteConfiguration.primaryOwner = $scope.spUserEmail;
+        $scope.siteConfiguration.primaryOwner = $scope.spUser;
 
-        $scope.GetPeoplePickerSearchEntities = function (query) {
+        $scope.GetPeoplePickerSearchEntities = function (query, loadingProp) {
+            $scope.siteConfiguration[loadingProp] = true;
             var deferred = $q.defer();
 
             $app.withSPContext2(function (spContext) {
@@ -32545,6 +32548,7 @@ function getQueryStringParameter(paramToRetrieve) {
 
                 var result = SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface.clientPeoplePickerSearchUser(spContext, queryParams);
                 spContext.executeQueryAsync(function () {
+                    $scope.siteConfiguration[loadingProp] = false;
                     deferred.resolve(JSON.parse(result.m_value));
                 }, function (err) { deferred.reject(err) });
             });
@@ -32905,7 +32909,7 @@ var $app = {
                         });
                     });
                 });
-
+                 
             }).promise();
         }
 

@@ -29,49 +29,19 @@
   <pnp:Templates>
     <pnp:ProvisioningTemplate ID="Mdlz.TeamSite">
       <pnp:CustomActions>
-        <!--<pnp:SiteCustomActions>
-          <pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
-                    Description="Override new sub-site link"
-                    Location="ScriptLink"
-                    Title="CA_SITE_SUBSITE_OVERRIDE"
-                    ScriptSrc=""
-                    ScriptBlock="
-                    var SubSiteSettings_Web_Url = '{$RemoteWebHostNameToken}/pages/subsite/newsbweb.aspx?SPHostUrl=';
-                    var headID = document.getElementsByTagName('head')[0]; 
-                    var subsiteScriptTag = document.createElement('script');
-                    subsiteScriptTag.type = 'text/javascript';
-                    subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
-                    headID.appendChild(subsiteScriptTag);"/>
-        </pnp:SiteCustomActions>-->
-        <!--<pnp:WebCustomActions>
-          --><!--<pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
-                    Description="Site Classification Application"
-                    Group="SiteTasks"
-                    Location="Microsoft.SharePoint.SiteSettings"
-                    Title="Site Classification"
-                    Sequence="1000"
-                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>
-          <pnp:CustomAction Name="CA_SITE_STDMENU_SITECLASSIFICATION"
-                    Description="Site Classification Module"
-                    Group="SiteActions"
-                    Location="Microsoft.SharePoint.StandardMenu"
-                    Title="Site Classification"
-                    Sequence="1000"
-                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>--><!--
-          --><!--<pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
-                    Description="Mondelez Js Injections"
-                    Group="SiteActions"
-                    Location="ScriptLink"
-                    Title="Mondelez Js Injections"
-                    Sequence="1000"
-                    ScriptBlock="var scr_elem = document.createElement('script');
-                                 scr_elem.type = 'text/javascript';
-                                 scr_elem.src = '/SiteAssets/Team/scripts/MDLZTeamsite.Init.js' + '?rev=' + new Date().toISOString();
-                                 var headElem = document.getElementsByTagName('head')[0];
-                                 headElem.appendChild(scr_elem);"/>--><!--
-        </pnp:WebCustomActions>-->
+        <pnp:WebCustomActions>
+          <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
+          Description="Mondelez Js Injections"
+          Group="SiteActions"
+          Location="ScriptLink"
+          Title="Mondelez Js Injections"
+          Sequence="2"
+          ScriptBlock="var scr_elem = document.createElement('script');
+                      scr_elem.type = 'text/javascript';
+                      scr_elem.src = '/SiteAssets/vNext/Team/scripts/MDLZTeamsite.Init.js';
+                      var headElem = document.getElementsByTagName('head')[0];
+                      headElem.appendChild(scr_elem);"/>
+        </pnp:WebCustomActions>
       </pnp:CustomActions>
       <pnp:Lists>
         <pnp:ListInstance Title="{res:announce_Folder}"
@@ -282,10 +252,8 @@
         <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzTeamSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
-      <!--<pnp:WebSettings AlternateCSS="/SiteAssets/Team/Css/MDLZTeamsite.css"
-                       SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png"
-                       WelcomePage="SitePages/Welcome.aspx" />-->
-      <pnp:WebSettings WelcomePage="SitePages/Welcome.aspx" />
+      <pnp:WebSettings SiteLogo="/SiteAssets/vNext/Common/images/MDLZSiteIcon.png"
+                       WelcomePage="SitePages/Welcome.aspx" />
       <pnp:PropertyBagEntries>
         <pnp:PropertyBagEntry Key="allowdesigner" Value="0" Overwrite="true" />
         <pnp:PropertyBagEntry Key="allowmasterpageediting" Value="0" Overwrite="true" />
@@ -294,11 +262,6 @@
         <pnp:PropertyBagEntry Key="__WebTemplates" Value="&lt;webtemplates&gt;&lt;lcid id=&quot;all&quot;&gt;&lt;webtemplate name=&quot;STS#0&quot; /&gt;&lt;webtemplate name=&quot;BLOG#0&quot; /&gt;&lt;webtemplate name=&quot;ENTERWIKI#0&quot; /&gt;&lt;/lcid&gt;&lt;/webtemplates&gt;" Overwrite="true" />
         <pnp:PropertyBagEntry Key="Mdlz_Site_Type" Value="Team Site" Overwrite="true" />
       </pnp:PropertyBagEntries>
-      <!--<pnp:Security>
-        <pnp:AdditionalAdministrators>
-          <pnp:User Name="krft\s-shpt"/>
-        </pnp:AdditionalAdministrators>
-      </pnp:Security>-->
       <pnp:Features>
         <pnp:WebFeatures>
           <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/>

@@ -1,5 +1,8 @@
 ﻿#s4-titlerow {
-    background-image: url("/SiteAssets/BP/Images/BPSiteTopbanner.png");
+    background-color: #0083CB;
+    background-image: url("/SiteAssets/vNext/BP/Images/BPSiteTopbanner.png");
+    background-repeat: no-repeat;
+    height: auto !important;
 }
 
 .ms-core-brandingText {
@@ -34,7 +37,7 @@ left:210px;
     */
 
 .headerbckground {
-    background-image: url("/SiteAssets/BP/Images/blue_header_mdl.png");
+    background-image: url("/SiteAssets/vNext/BP/Images/blue_header_mdl.png");
     background-repeat:repeat-x;
     height:37px;
    color:white;
@@ -72,7 +75,7 @@ padding:10px;
 /*Change for Site Collection upgrade*/
 #layoutsTable tr td:first-child + td h2.ms-rteElement-H2
 {
-background-image:url("/SiteAssets/BP/Images/blue_header_mdl.png");
+background-image:url("/SiteAssets/vNext/BP/Images/blue_header_mdl.png");
 background-repeat:repeat-x;
 color:white;
 padding-left:5px;
@@ -87,7 +90,7 @@ border:1px solid #0038a5;
 
 /*Change for Site Collection upgrade*/
 #layoutsTable tr td:first-child + td div.ms-rte-wpbox{
-/*margin-top:15px;*/
+margin-top:15px;
 
 }
 
@@ -115,9 +118,28 @@ display:none;
 div[id*='TopNavigationMenu'] > ul > li
 {
 color:white !important;
+ float: left;
 } 
 
+/*Navigation Fix - Start*/
+.mdz-pubWithNodes > ul > li > a.static {
+    display: none;
+}
 
+.mdz-pubWithNodes > ul > li > ul > li {
+    float: left;
+}
+
+li.dynamic-children:hover span.dynamic-children span {
+    text-decoration: underline;
+}
+li.dynamic span:hover {
+    text-decoration: underline;
+}
+li.dynamic-children ul span {
+    color: black;
+}
+/*Navigation Fix - End*/
 div[id*='TopNavigationMenu']  ms-navedit-editLinksText > span > .ms-metadata,div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
 {
 
@@ -175,7 +197,7 @@ a[id*='ShellDocuments'] {
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(odd) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpart-chrome:nth-child(odd) .ms-webpart-chrome-title{
 margin-bottom:0px;
-	background-image:url(/SiteAssets/BP/Images/aqua_header_mdl.png);
+	background-image:url(/SiteAssets/vNext/BP/Images/aqua_header_mdl.png);
 	background-repeat:repeat-x;
 	
 }
@@ -188,7 +210,7 @@ margin-bottom:0px;
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(even) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpart-chrome:nth-child(even) .ms-webpart-chrome-title{
 	margin-bottom:0px;
-	background-image:url(/SiteAssets/BP/Images/blue_header_mdl.png);
+	background-image:url(/SiteAssets/vNext/BP/Images/blue_header_mdl.png);
 	background-repeat:repeat-x;
 }
 

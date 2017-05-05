@@ -1,5 +1,6 @@
 ﻿#s4-titlerow {
     background-image: url("../images/ProjectSitebanner.png");
+    height:auto !important;
 }
 
 .ms-core-brandingText {
@@ -87,8 +88,28 @@ display:none;
 div[id*='TopNavigationMenu'] > ul > li
 {
 color:white !important;
+float:left;
 } 
 
+/*Navigation Fix - Start*/
+.mdz-pubWithNodes > ul > li > a.static {
+    display: none;
+}
+
+.mdz-pubWithNodes > ul > li > ul > li {
+    float: left;
+}
+
+li.dynamic-children:hover span.dynamic-children span {
+    text-decoration: underline;
+}
+li.dynamic span:hover {
+    text-decoration: underline;
+}
+li.dynamic-children ul span {
+    color: black;
+}
+/*Navigation Fix - End*/
 
 div[id*='TopNavigationMenu']  ms-navedit-editLinksText > span > .ms-metadata,div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
 {
@@ -141,7 +162,7 @@ a[id*='ShellDocuments'] {
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(odd) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpartzone-cell:nth-child(odd) .ms-webpart-chrome-title{
 margin-bottom:0px;
-	background-image:url(/SiteAssets/PS/Images/grey_header_mdl.png);
+	background-image:url(/SiteAssets/vNext/PS/Images/grey_header_mdl.png);
 	background-repeat:repeat-x;
 	
 }
@@ -154,7 +175,7 @@ margin-bottom:0px;
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(even) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpartzone-cell:nth-child(even) .ms-webpart-chrome-title{
 	margin-bottom:0px;
-	background-image:url(/SiteAssets/PS/Images/red_header_mdl.png);
+	background-image:url(/SiteAssets/vNext/PS/Images/red_header_mdl.png);
 	background-repeat:repeat-x;
 }
 

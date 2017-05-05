@@ -25,7 +25,7 @@
         $scope.spinnerService = spinnerService;
         $scope.loading = false;
         $scope.siteConfiguration = {};
-        var completedLoadRequests = 1, totalRequests = 7;
+        var completedLoadRequests = 0, totalRequests = 7;
         $scope.ProgressBar = 5;
 
         activate();
@@ -110,7 +110,7 @@
             var executor = new SP.RequestExecutor($scope.spAppWebUrl);
             executor.executeAsync(
                    {
-                       url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@t)/web/currentUser?$select=email&@t='" + $scope.spHostWebUrl + "'",
+                       url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@t)/web/currentUser?$select=email,loginname,title&@t='" + $scope.spHostWebUrl + "'",
                        method: "GET",
                        headers:
                        {
@@ -121,10 +121,10 @@
                            jsonResults = isSPOD ? jsonResults.d : jsonResults;
                            $log.info('Current user email: ' + jsonResults.Email);
                            user.name = jsonResults.Email;
-                           $scope.spUserEmail = jsonResults.Email;
-                           $scope.$apply();
+                           $scope.spUser = jsonResults;
                            //getRequestsByOwner(user);                          
                            incrementProgBar();
+                           $scope.$apply();
                        },
                        error: function () { alert("We are having problems retrieving specific information from the server. Please try again later"); }
                    }
@@ -177,7 +177,7 @@
         }
 
         $scope.OpenMyRequestsModal = function () {
-            getRequestsByOwner({name:$scope.spUserEmail});
+            getRequestsByOwner({ name: $scope.spUser.Email });
             $scope.miExistingRequests = $modal.open({
                 scope: $scope,
                 templateUrl: '/Pages/mdlz/modal_myrequests.html',
@@ -193,7 +193,7 @@
         };
 
         $scope.isDataLoading = function () {
-            return !($scope.spUserEmail != null && $scope.regions != null && $scope.functions != null && $scope.templates != null && $scope.languages != null && $scope.timezones != null);
+            return !($scope.spUser != null && $scope.regions != null && $scope.functions != null && $scope.templates != null && $scope.languages != null && $scope.timezones != null);
         }
 
         function getTemplates() {
@@ -261,6 +261,7 @@
         function incrementProgBar() {
             completedLoadRequests++;
             var x = completedLoadRequests / totalRequests * 100;
+
             $scope.ProgressBar = x >= 100 ? 100 : x;
 
         }

@@ -186,9 +186,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\scripts\bundle-subsite.js" />
+    <Content Include="assets\scripts\bundle-subsite.min.js">
+      <DependentUpon>bundle-subsite.js</DependentUpon>
+    </Content>
     <Content Include="assets\scripts\bundle.js" />
     <Content Include="assets\scripts\bundle.min.js">
       <DependentUpon>bundle.js</DependentUpon>
+    </Content>
+    <Content Include="assets\styles\bundle-subsite.css" />
+    <Content Include="assets\styles\bundle-subsite.min.css">
+      <DependentUpon>bundle-subsite.css</DependentUpon>
     </Content>
     <Content Include="assets\styles\bundle.css" />
     <Content Include="assets\styles\bundle.min.css">

@@ -4,6 +4,10 @@
  *
  * v1.1
  * v1.2 - added in timer for search results -- added in people search url 8/22/2014
+ * V1.3 - added code to keep the user profile data in session storage to reduce the number of API calls
+ *        strengthen userProfile not available algorithm
+ * V1.4 - updated init function to remove timer
+ * V1.5 - updated loader
  *
  * simpler way to get the extended user information and start the tracking
  * when the user info it available
@@ -70,7 +74,7 @@
                                 d.WT.oss_r = '';
                                 d.WT.oss = '';
                             }})
-                    }, 2000)
+                    }, 2000);
                     wt_O365.SearchSent = true;
                 }
                 // this has to be on all instead of collect because we are not using .track()
@@ -195,7 +199,7 @@
                             "WT.nv", dcsObject.dcsNavigation(e, dcsObject.navigationtag),
                             "WT.dl", "SHP",
                             "WT.shp_doc_a", "DC",
-                            "WT.shp_doc",ttl);
+                            "WT.shp_doc", ttl);
                     },
                     finish: function (dcsObject, o) {
                         dcsObject._autoEvtCleanup();
@@ -328,8 +332,9 @@
 // worse case -- if jQuery fails to load trap for it
 wtTidFallback = setTimeout(function () {
     // we should never get here
-    wt_SP_O345_Init
-}, 20000);
+    wt_SP_O345_Init();
+}, 3000);
+/*
 wtTid = setInterval(function () {
     if (typeof _spBodyOnLoadWrapper != 'undefined' && typeof _spPageContextInfo != 'undefined' && typeof ExecuteOrDelayUntilScriptLoaded != 'undefined') {
         ExecuteOrDelayUntilScriptLoaded(window.wt_SP_O345_Init, "sp.js");
@@ -342,98 +347,145 @@ wtTid = setInterval(function () {
         //           _spBodyOnLoadFunctionNames.push("window.wt_SP_O345_Init");
         //       }
         clearInterval(wtTid);
-        clearTimeout(wtTidFallback);
+//        clearTimeout(wtTidFallback);
     }
 }, 10);
+*/
+/*
+ New version of the loader for SP2013
+ */
+// Function to load initial webtrends.js file after core.js has run
+window.wtLoadAfterCore = function () {
+    if (typeof SP !== "undefined" && typeof SP.SOD !== "undefined" && typeof SP.SOD.executeFunc !== "undefined" && typeof _spPageContextInfo !== "undefined") {
+        setTimeout(function () {
+            SP.SOD.executeFunc("core.js", "$_global_core", function () {
+                wt_SP_O345_Init();
+            });
+        }, 1000);
+    }
+    else {
+        setTimeout(window.wt_sp_globals.wtLoadAfterCore, 200);
+    }
+};
+
+// Run Load function
+window.wtLoadAfterCore();
+
 
 function wt_SP_O345_Init() {
+    try {
+//        clearInterval(wtTid);
+        clearTimeout(wtTidFallback);
+    }catch(ignore){}
+
+    // set up the defaults
+    // in case the userProfile call fails for some reason
+
+    window.wt_sp_user = [];
+    // user identifiable data we want to mask
+    window.wt_sp_user['WT.shp_uname'] = "Not Available";
+    window.wt_sp_user['WT.shp_login'] = "Not Available";
+    window.wt_sp_user['WT.ng_username'] = "Not Available";
+    window.wt_sp_user['WT.ng_useraccountname'] = "Not Available";
     //
     // this method is derived from the SP2013/O365 MSDN developers guide
     //
     try {
-        wtAjax({
-            type: 'GET',
-            url: _spPageContextInfo.siteAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetMyProperties",
-            headers: { Accept: "application/json;odata=verbose" },
-            success: function (data) {
-                if (typeof window.wt_sp_user == 'undefined') window.wt_sp_user = [];
-                /*
-                 Domain WT.shp_domain
-                 Location WT.shp_location
-                 Manager Name WT.shp_mgr
-                 Department WT.shp_dept
-                 Job Title WT.shp_title
-                 Office Location WT.shp_office
-                 Login Name WT.shp_login
-                 */
-                var wtData = {
-                    'SPS-Department': "WT.shp_dept",
-                    Manager: "WT.shp_mgr",
-                    PreferredName: "WT.shp_uname",
-                    Office: "WT.shp_office",
-                    AccountName: "WT.shp_login",
-                    'SPS-JobTitle': "WT.shp_title",
-                    Location: "WT.shp_location",
-                    Function: "WT.shp_function"
-                };
+        // if we already have the user profile data don't ping the API a second time
+        if (typeof JSON != 'undefined' && typeof JSON.parse != 'undefined' && getSessionData(Webtrends) != null && getSessionData(Webtrends) != 'null' && JSON.parse(getSessionData(Webtrends)).length > 0) {
+            window.wt_sp_user = JSON.parse(getSessionData(Webtrends));
+            Webtrends.registerPlugin("sp_O365", function (dsc, options) {
+                wt_O365.doWork(dsc, options)
+            });
+        } else {
+            wtAjax({
+                type: 'GET',
+                url: _spPageContextInfo.siteAbsoluteUrl + "/_api/SP.UserProfiles.PeopleManager/GetMyProperties",
+                headers: { Accept: "application/json;odata=verbose" },
+                success: function (data) {
 
-                if (Webtrends.plugins.sp_O365['userProfile']) {
-                    for (var p in Webtrends.plugins.sp_O365['userProfile']) {
-                        if (!~p.indexOf("WT.")) {
-                            // if the parameter is already defined - remove it from the array
-                            for (var q in wtData) {
-                                if (wtData[q] == Webtrends.plugins.sp_O365['userProfile'][p]) {
-                                    delete wtData[q];
+                    if (typeof window.wt_sp_user == 'undefined') window.wt_sp_user = {};
+                    /*
+                     Domain WT.shp_domain
+                     Location WT.shp_location
+                     Manager Name WT.shp_mgr
+                     Department WT.shp_dept
+                     Job Title WT.shp_title
+                     Office Location WT.shp_office
+                     Login Name WT.shp_login
+                     */
+                    var wtData = {
+                        'SPS-Department': "WT.shp_dept",
+                        Manager: "WT.shp_mgr",
+                        PreferredName: "WT.shp_uname",
+                        Office: "WT.shp_office",
+                        AccountName: "WT.shp_login",
+                        'SPS-JobTitle': "WT.shp_title",
+                        Location: "WT.shp_location",
+                        Function: "WT.shp_function"
+                    };
+
+                    if (Webtrends.plugins.sp_O365['userProfile']) {
+                        for (var p in Webtrends.plugins.sp_O365['userProfile']) {
+                            if (!~p.indexOf("WT.")) {
+                                // if the parameter is already defined - remove it from the array
+                                for (var q in wtData) {
+                                    if (wtData[q] == Webtrends.plugins.sp_O365['userProfile'][p]) {
+                                        delete wtData[q];
+                                    }
                                 }
+                                wtData[p] = Webtrends.plugins.sp_O365['userProfile'][p];
                             }
-                            wtData[p] = Webtrends.plugins.sp_O365['userProfile'][p];
                         }
                     }
-                }
 
-                var g = data.d.UserProfileProperties.results;
-                // move the user profile data into a simple array
-                // its easier to deal with this way and saves
-                // iterating through it multiple times
-                var userProfileDat = [];
-                for (var c = 0; c < g.length; c++) {
-                    if (g[c].Value && g[c].Value != '') userProfileDat[g[c].Key] = g[c].Value
-                }
+                    var g = data.d.UserProfileProperties.results;
+                    // move the user profile data into a simple array
+                    // its easier to deal with this way and saves
+                    // iterating through it multiple times
+                    var userProfileDat = [];
+                    for (var c = 0; c < g.length; c++) {
+                        if (g[c].Value && g[c].Value != '') userProfileDat[g[c].Key] = g[c].Value
+                    }
 
 
-                for (var k in wtData) {
-                    if (typeof userProfileDat[k] != 'undefined') {
-                        wt_sp_user[wtData[k]] = userProfileDat[k];
-                        if (wt_sp_user[wtData[k]]
-                            && wt_sp_user[wtData[k]].split('|').length > 0) {
-                            wt_sp_user[wtData[k]] = wt_sp_user[wtData[k]].split("|").pop();
+                    for (var k in wtData) {
+                        if (typeof userProfileDat[k] != 'undefined') {
+                            wt_sp_user[wtData[k]] = userProfileDat[k];
+                            if (wt_sp_user[wtData[k]]
+                                && wt_sp_user[wtData[k]].split('|').length > 0) {
+                                wt_sp_user[wtData[k]] = wt_sp_user[wtData[k]].split("|").pop();
+                            }
                         }
                     }
-                }
 
-                // reverse mapping cases
-                if (Webtrends.plugins.sp_O365['userProfile']) {
-                    for (var p in Webtrends.plugins.sp_O365['userProfile']) {
-                        if (~p.indexOf("WT.")) {
-                            // if the parameter is already defined - remove it from the array
-                            if (userProfileDat[Webtrends.plugins.sp_O365['userProfile'][p]] != undefined)
-                                wt_sp_user[p] = userProfileDat[Webtrends.plugins.sp_O365['userProfile'][p]];
-                            else wt_sp_user[p] = "";
+                    // reverse mapping cases
+                    if (Webtrends.plugins.sp_O365['userProfile']) {
+                        for (var p in Webtrends.plugins.sp_O365['userProfile']) {
+                            if (~p.indexOf("WT.")) {
+                                // if the parameter is already defined - remove it from the array
+                                if (userProfileDat[Webtrends.plugins.sp_O365['userProfile'][p]] != undefined)
+                                    wt_sp_user[p] = userProfileDat[Webtrends.plugins.sp_O365['userProfile'][p]];
+                                else wt_sp_user[p] = "";
+                            }
                         }
                     }
+                    // store the user profile data in session storage
+                    if (typeof JSON != 'undefined' && typeof JSON.stringify != 'undefined') {
+                        storeSessionData(Webtrends, JSON.stringify(wt_sp_user));
+                    }
+                    Webtrends.registerPlugin("sp_O365", function (dsc, options) {
+                        wt_O365.doWork(dsc, options)
+                    });
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    Webtrends.registerPlugin("sp_O365", function (dsc, options) {
+                        wt_O365.doWork(dsc, options)
+                    });
+                    Webtrends.multiTrack({argsa: ["WT.shp_err", errorThrown]});
                 }
-
-                Webtrends.registerPlugin("sp_O365", function (dsc, options) {
-                    wt_O365.doWork(dsc, options)
-                });
-            },
-            error: function (xhr, textStatus, errorThrown) {
-                Webtrends.registerPlugin("sp_O365", function (dsc, options) {
-                    wt_O365.doWork(dsc, options)
-                });
-                Webtrends.multiTrack({argsa: ["WT.shp_err", errorThrown]});
-            }
-        });
+            });
+        }
     } catch (e) {
         Webtrends.registerPlugin("sp_O365", function (dsc, options) {
             wt_O365.doWork(dsc, options)
@@ -460,7 +512,8 @@ function wtAjax(func) {
     oReq.onreadystatechange = function () {
         if (oReq.readyState == 4) {
             if (oReq.status == 200) {
-                func.success(JSON.parse(oReq.responseText));
+                if (typeof $ != 'undefined' && typeof $.parseJSON != 'undefined') func.success($.parseJSON(oReq.responseText));
+                else func.success(JSON.parse(oReq.responseText));
             } else func.error('', '', "XML Request status" + oReq.status)
         }
     };
@@ -485,3 +538,22 @@ if (!document.querySelectorAll) {
         }
     })()
 }
+
+//  Get the user profile data from sessionStorage or cookie
+getSessionData = function (dcsObject) {
+    if (sessionStorage && sessionStorage['userProfileInfo']) {
+        data = sessionStorage['userProfileInfo'];
+    } else {
+        data = decodeURI(dcsObject.dcsGetCookie('userProfileInfo'));
+    }
+    return data;
+};
+// store the data into sessionStorage or cookie
+storeSessionData = function (dcsObject, data) {
+    if (sessionStorage) {
+        sessionStorage['userProfileInfo'] = data;
+    } else {
+        document.cookie = 'userProfileInfo=' + encodeURI(data) + "; path=/";
+    }
+};
+

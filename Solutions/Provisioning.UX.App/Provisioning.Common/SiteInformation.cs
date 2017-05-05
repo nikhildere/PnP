@@ -240,6 +240,24 @@ namespace Provisioning.Common
         [DataMember]
         [JsonProperty(PropertyName = "isConfidential")]
         public bool IsConfidential { get; set; }
+
+        /// <summary>
+        /// Email ID of the user who is making the request on behalf of someone else.
+        /// Default value is false
+        /// </summary>
+        [DataMember]
+        [JsonProperty(PropertyName = "requestedBy")]
+        public string RequestedBy { get; set; }
+
+        /// <summary>
+        /// Indicates whether the request should be auto approved.
+        /// Default value is false
+        /// </summary>
+        [DataMember]
+        [JsonProperty(PropertyName = "autoApprove")]
+        public bool AutoApprove { get; set; }
+
+        public string NotificationStatus { get; set; }
         #endregion
     }
 }

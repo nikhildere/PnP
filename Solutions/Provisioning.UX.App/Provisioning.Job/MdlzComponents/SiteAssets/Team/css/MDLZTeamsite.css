@@ -1,5 +1,6 @@
 ﻿#s4-titlerow {
-    background-image: url("/SiteAssets/Team/Images/TeamSitebanner.png");
+    background-image: url("/SiteAssets/vNext/Team/Images/TeamSitebanner.png");
+    height: auto !important;
 }
 
 .ms-core-brandingText {
@@ -36,31 +37,35 @@ left:210px;
 
 
 /*Change for Site Collection upgrade*/
-.ms-wpContentDivSpace {
-    padding: 10px;
+.ms-wpContentDivSpace
+{
+padding:10px;
 }
 
 /*Change for Site Collection upgrade*/
-#layoutsTable tr td:first-child + td h2.ms-rteElement-H2 {
-    background-color: #52247b;
-    color: white;
-    padding-left: 5px;
+#layoutsTable tr td:first-child + td h2.ms-rteElement-H2
+{
+background-color:#52247b;
+color:white;
+padding-left:5px;
 }
 
 
 /*Change for Site Collection upgrade*/
-#layoutsTable tr td:first-child + td span table {
-    border: 1px solid #52247b;
+#layoutsTable tr td:first-child + td span table{
+border:1px solid #52247b;
+
 }
 
 /*Change for Site Collection upgrade*/
-#layoutsTable tr td:first-child + td div.ms-rte-wpbox {
-    /*margin-top:15px;*/
+#layoutsTable tr td:first-child + td div.ms-rte-wpbox{
+margin-top:15px;
+
 }
 
 
 .headerbckground {
-    background-image: url("/SiteAssets/Team/Images/purple_header_mdl.png");
+    background-image: url("/SiteAssets/vNext/Team/Images/purple_header_mdl.png");
     background-repeat: repeat-x;
     height: 37px;
     color: #f7f3f7;
@@ -90,22 +95,22 @@ background-color:#f7f3f7;
     */
 
 #RibbonContainer-TabRowRight {
-    display: none !important;
+    display:none !important;
 }
 
 
 
 
-div[id*='DeltaTopNavigation'] .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link {
-    color: white !important;
+div[id*='DeltaTopNavigation'] .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link{
+color:white !important;
 }
 
-div[id*='DeltaTopNavigation'] > .ms-core-listMenu-item:link {
-    color: white !important;
+div[id*='DeltaTopNavigation'] > .ms-core-listMenu-item:link{
+color:white !important;
 }
 
-#DeltaPlaceHolderPageTitleInTitleArea {
-    display: none;
+#DeltaPlaceHolderPageTitleInTitleArea{
+display:none;
 }
 /*
 
@@ -116,39 +121,68 @@ display:none;
 */
 
 
-div[id*='TopNavigationMenu'] > ul > li {
-    color: white !important;
+div[id*='TopNavigationMenu'] > ul > li
+{
+color:white !important;
+float: left;
+} 
+
+/*Navigation Fix - Start*/
+.mdz-pubWithNodes > ul > li > a.static {
+    display: none;
+}
+
+.mdz-pubWithNodes > ul > li > ul > li {
+    float: left;
+}
+
+li.dynamic-children:hover span.dynamic-children span {
+    text-decoration: underline;
+}
+li.dynamic span:hover {
+    text-decoration: underline;
+}
+li.dynamic-children ul span {
+    color: black;
+}
+/*Navigation Fix - End*/
+
+div[id*='TopNavigationMenu']  ms-navedit-editLinksText > span > .ms-metadata,div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
+{
+
+color:white !important;
+}
+
+a[id*='TopNavigationMenu_NavMenu_AddLink']
+{
+color:white !important;
 }
 
 
-div[id*='TopNavigationMenu'] ms-navedit-editLinksText > span > .ms-metadata, div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item {
-    color: white !important;
-}
-
-a[id*='TopNavigationMenu_NavMenu_AddLink'] {
-    color: white !important;
+div[id*='TopNavigationMenu'] .ms-core-listMenu-item,div[id*='TopNavigationMenu'] .ms-core-listMenu-item:link,div[id*='TopNavigationMenu'] .ms-core-listMenu-item:visited,div[id*='TopNavigationMenu'] .ms-tv-item:link,div[id*='TopNavigationMenu'] .ms-tv-item:visited,div[id*='TopNavigationMenu'] .ms-tv-header:link,div[id*='TopNavigationMenu'] .ms-tv-header:visited
+{
+color:white !important;
 }
 
 
-div[id*='TopNavigationMenu'] .ms-core-listMenu-item, div[id*='TopNavigationMenu'] .ms-core-listMenu-item:link, div[id*='TopNavigationMenu'] .ms-core-listMenu-item:visited, div[id*='TopNavigationMenu'] .ms-tv-item:link, div[id*='TopNavigationMenu'] .ms-tv-item:visited, div[id*='TopNavigationMenu'] .ms-tv-header:link, div[id*='TopNavigationMenu'] .ms-tv-header:visited {
-    color: white !important;
+div[id*='TopNavigationMenu'] .ms-navedit-editLinksText > span > .ms-metadata,div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
+{
+color:white !important;
 }
 
 
-div[id*='TopNavigationMenu'] .ms-navedit-editLinksText > span > .ms-metadata, div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item {
-    color: white !important;
-}
-
-
-.mondoleze-team-site-title {
-    color: #E5E2E2 !important;
-    font-family: Arial;
+.mondoleze-team-site-title{
+    color:#E5E2E2 !important;
+    font-family:Arial;
 }
 
 
 #siteIcon {
-    max-height: 64px;
-    width: 180px;
+
+max-height:64px;
+
+width:180px;
+
 }
 
 
@@ -160,7 +194,7 @@ a[id*='ShellDocuments'] {
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(odd) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpart-chrome:nth-child(odd) .ms-webpart-chrome-title {
     margin-bottom: 0px;
-    background-image: url(/SiteAssets/Team/Images/orange_header_mdl.png);
+    background-image: url(/SiteAssets/vNext/Team/Images/orange_header_mdl.png);
     background-repeat: repeat-x;
 }
 
@@ -172,7 +206,7 @@ a[id*='ShellDocuments'] {
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(even) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpart-chrome:nth-child(even) .ms-webpart-chrome-title {
     margin-bottom: 0px;
-    background-image: url(/SiteAssets/Team/Images/purple_header_mdl.png);
+    background-image: url(/SiteAssets/vNext/Team/Images/purple_header_mdl.png);
     background-repeat: repeat-x;
 }
 

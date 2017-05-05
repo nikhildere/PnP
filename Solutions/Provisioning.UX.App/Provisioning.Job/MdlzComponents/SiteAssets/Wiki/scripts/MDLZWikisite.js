@@ -6,12 +6,12 @@
                     if ($(this).find(".ms-webpart-chrome-title").length > 0) {
                         if (index % 2 == 0) {
                             $(this).css("border", "#ff6d21 1px solid");
-                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/Team/Images/orange_header_mdl.png)");
+                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/vNext/Team/Images/orange_header_mdl.png)");
                             $(this).find(".ms-webpart-chrome-title").css("background-repeat", "repeat-x");
                         }
                         else {
                             $(this).css("border", "#0045ad 1px solid");
-                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/Team/Images/blue_header_mdl.png)");
+                            $(this).find(".ms-webpart-chrome-title").css("background-image", "url(/SiteAssets/vNext/Team/Images/blue_header_mdl.png)");
                             $(this).find(".ms-webpart-chrome-title").css("background-repeat", "repeat-x");
                         }
                     }
@@ -32,6 +32,12 @@ function goToSiteHome() {
     return false;
 }
 
+function fixNavigation() {
+    if ($('div[id*="TopNavigationMenu"] > ul > li > ul').length > 0) {
+        $('div[id*="TopNavigationMenu"]').addClass('mdz-pubWithNodes');
+    }
+}
+
 //call function
 
 runScriptAfterJqueryLoad();
@@ -50,9 +56,10 @@ function runScriptAfterJqueryLoad() {
 		        var seticonurl = _spPageContextInfo.webAbsoluteUrl + "/_layouts/15/prjsetng.aspx";
 		        $("[href*='_layouts/SiteMetaDataTagger/SiteMetaDataTagger.aspx']").attr("href", seticonurl);
 		    
+			fixNavigation();
 		    addSiteTitle();
 		    $('#O365_MainLink_Help').closest('div').on('click', function () {
-		        window.open("https://collaboration.kraft.com/sites/productivityhub/sharepoint/Pages/Home.aspx", null,
+		        window.open("https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/Home.aspx", null,
                 'top=1,left=1,center=yes,resizable=yes,Width=500px,Height= 400px,status=yes,titlebar=yes;toolbar=no,menubar=no,location=yes,scrollbars=no');
 		    }).addClass('o365cs-nav-button');
         });

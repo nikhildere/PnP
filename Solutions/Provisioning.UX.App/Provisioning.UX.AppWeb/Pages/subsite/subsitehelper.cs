@@ -174,7 +174,7 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
             web.Context.Load(uploadFile);
 
             // Set custom image as the logo 
-            web.SiteLogoUrl = web.ServerRelativeUrl + "/SiteAssets/template-icon.png";
+            web.SiteLogoUrl = web.ServerRelativeUrl + "/SiteAssets/vNext/template-icon.png";
             web.Update();
             web.Context.ExecuteQuery();
         }

@@ -1,5 +1,6 @@
 ﻿#s4-titlerow {
-    background-image: url("/SiteAssets/Blog/Images/BlogSiteBanner.png");
+    background-image: url("/SiteAssets/vNext/Blog/Images/BlogSiteBanner.png");
+    height:auto !important;
 }
 
 .ms-core-brandingText {
@@ -33,7 +34,7 @@ left:210px;
 
 
 .headerbckground {
-    background-image: url("/SiteAssets/Team/Images/blue_header_mdl.png");
+    background-image: url("/SiteAssets/vNext/Team/Images/blue_header_mdl.png");
     background-repeat:repeat-x;
     height:37px;
    color:white;
@@ -96,8 +97,28 @@ display:none;
 div[id*='TopNavigationMenu'] > ul > li
 {
 color:white !important;
+float:left;
 } 
 
+/*Navigation Fix - Start*/
+.mdz-pubWithNodes > ul > li > a.static {
+    display: none;
+}
+
+.mdz-pubWithNodes > ul > li > ul > li {
+    float: left;
+}
+
+li.dynamic-children:hover span.dynamic-children span {
+    text-decoration: underline;
+}
+li.dynamic span:hover {
+    text-decoration: underline;
+}
+li.dynamic-children ul span {
+    color: black;
+}
+/*Navigation Fix - End*/
 
 div[id*='TopNavigationMenu']  ms-navedit-editLinksText > span > .ms-metadata,div[id*='TopNavigationMenu'] .ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
 {

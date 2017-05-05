@@ -25,12 +25,12 @@
         
         vm.translations ={};
         $translate(['SOLUTION_LOADED']).then(function (translations) {
-            vm.translations.HEADLINE = translations.SOLUTION_LOADED;
+            //vm.translations.HEADLINE = translations.SOLUTION_LOADED;
         }).then(activate)
 
 
         function activate() {
-            logSuccess(vm.translations.HEADLINE, null, true);
+            //logSuccess(vm.translations.HEADLINE, null, true);
             common.activateController([], controllerId);
         }
 

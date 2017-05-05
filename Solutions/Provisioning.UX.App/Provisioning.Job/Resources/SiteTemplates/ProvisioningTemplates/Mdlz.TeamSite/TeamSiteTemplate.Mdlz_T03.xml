@@ -29,49 +29,18 @@
   <pnp:Templates>
     <pnp:ProvisioningTemplate ID="Mdlz.TeamSite.Mdlz_T01">
       <pnp:CustomActions>
-        <pnp:SiteCustomActions>
-          <!--<pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
-                    Description="Override new sub-site link"
-                    Location="ScriptLink"
-                    Title="CA_SITE_SUBSITE_OVERRIDE"
-                    ScriptSrc=""
-                    ScriptBlock="
-                    var SubSiteSettings_Web_Url = '{$RemoteWebHostNameToken}/pages/subsite/newsbweb.aspx?SPHostUrl=';
-                    var headID = document.getElementsByTagName('head')[0]; 
-                    var subsiteScriptTag = document.createElement('script');
-                    subsiteScriptTag.type = 'text/javascript';
-                    subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
-                    headID.appendChild(subsiteScriptTag);"/>-->
+        <pnp:WebCustomActions>
           <pnp:CustomAction Name="Mdlz_T03JS Template And CSS Template_e22a344d-3e37-4593-b643-17b99e0b459e"
                               Description="Mdlz_T03JS Template And CSS Template_e22a344d-3e37-4593-b643-17b99e0b459e"
                               Location="ScriptLink"
                               Title="Mdlz_T03JS Template And CSS Template_e22a344d-3e37-4593-b643-17b99e0b459e"
-                              Sequence="100"
+                              Sequence="1"
                               ScriptBlock="var scr_elem = document.createElement('script');
-                                 scr_elem.type = 'text/javascript';
-                                 scr_elem.src = '/SiteAssets/Team/Templates/Mdlz_T03/MasterJS.js' + '?rev=' + new Date().toISOString();
-                                 var headElem = document.getElementsByTagName('head')[0];
-                                 headElem.appendChild(scr_elem);"/>
-        </pnp:SiteCustomActions>
-        <!--<pnp:WebCustomActions>
-          <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
-                    Description="Site Classification Application"
-                    Group="SiteTasks"
-                    Location="Microsoft.SharePoint.SiteSettings"
-                    Title="Site Classification"
-                    Sequence="1000"
-                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>
-          <pnp:CustomAction Name="CA_SITE_STDMENU_SITECLASSIFICATION"
-                    Description="Site Classification Module"
-                    Group="SiteActions"
-                    Location="Microsoft.SharePoint.StandardMenu"
-                    Title="Site Classification"
-                    Sequence="1000"
-                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>
-          
-        </pnp:WebCustomActions>-->
+                                          scr_elem.type = 'text/javascript';
+                                          scr_elem.src = '/SiteAssets/vNext/Team/Templates/Mdlz_T03/MasterJS.js';
+                                          var headElem = document.getElementsByTagName('head')[0];
+                                          headElem.appendChild(scr_elem);"/>
+        </pnp:WebCustomActions>
       </pnp:CustomActions>
       <pnp:Lists>
         <pnp:ListInstance Title="{res:announce_Folder}"
@@ -299,10 +268,11 @@
       </pnp:Security>-->
       <pnp:Features>
         <pnp:WebFeatures>
-          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/><!--MDS Feature - Deactivate-->
+          <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/>
+          <!--MDS Feature - Deactivate-->
         </pnp:WebFeatures>
       </pnp:Features>
     </pnp:ProvisioningTemplate>
-    
+
   </pnp:Templates>
 </pnp:Provisioning>

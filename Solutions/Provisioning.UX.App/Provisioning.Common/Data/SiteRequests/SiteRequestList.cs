@@ -217,6 +217,15 @@ namespace Provisioning.Common.Data.SiteRequests
                  SiteRequestFields.DEFAULT_FIELD_GROUP,
                  SiteRequestFields.ISCONFIDENTIAL_ATTRIB));
 
+            fieldsXml.Add(SiteRequestFields.REQUESTEDBY_NAME,
+                 FormatField(
+                 SiteRequestFields.REQUESTEDBY_ID,
+                 SiteRequestFields.REQUESTEDBY_NAME,
+                 SiteRequestFields.REQUESTEDBY_TYPE,
+                 SiteRequestFields.REQUESTEDBY_DISPLAYNAME,
+                 SiteRequestFields.REQUESTEDBY_DESC,
+                 SiteRequestFields.DEFAULT_FIELD_GROUP,
+                 SiteRequestFields.REQUESTEDBY_ATTRIB));
 
             TryCreateFields(web, fields, fieldsXml);
             return fields;

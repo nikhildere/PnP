@@ -123,7 +123,7 @@
 
         //set confidential selected by default
         $scope.siteConfiguration.isConfidential = 1;
-        $scope.siteConfiguration.isOnBehlafOf = 0;
+        $scope.siteConfiguration.isOnBehalfOf = 0;
 
         $scope.finished = function () {
 
@@ -155,16 +155,18 @@
                 siteRequest.timeZoneId = $scope.siteConfiguration.timezone;
 
 
-                siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwner;
-                siteRequest.additionalAdministrators = $scope.siteConfiguration.secondaryOwners ? $scope.siteConfiguration.secondaryOwners.map(function (owner) { return owner.email; }) : [];
+                siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwner.LoginName;
+                siteRequest.additionalAdministrators = $scope.siteConfiguration.secondaryOwners ? $scope.siteConfiguration.secondaryOwners.map(function (owner) { return owner.Key; }) : [];
 
-                if ($scope.siteConfiguration.primaryOwnerOnBehalf != null && $scope.siteConfiguration.primaryOwnerOnBehalf.length == 1) {
+                if ($scope.siteConfiguration.isOnBehalfOf == 1 && $scope.siteConfiguration.primaryOwnerOnBehalf != null && $scope.siteConfiguration.primaryOwnerOnBehalf.length == 1) {
                     siteRequest.additionalAdministrators.push(siteRequest.primaryOwner);
-                    siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwnerOnBehalf.email;
+                    siteRequest.requestedBy = siteRequest.primaryOwner;
+                    siteRequest.primaryOwner = $scope.siteConfiguration.primaryOwnerOnBehalf[0].Key;
                 }
 
                 siteRequest.sharePointOnPremises = $scope.siteConfiguration.spOnPrem;
                 siteRequest.template = $scope.siteConfiguration.template.title;
+                siteRequest.autoApprove = $scope.siteConfiguration.template.autoApprove;
                 //siteRequest.sitePolicy = $scope.siteConfiguration.privacy.classification;
                 //siteRequest.businessCase = $scope.siteConfiguration.purpose.description;
                 siteRequest.enableExternalSharing = $scope.siteConfiguration.externalSharing;
@@ -416,9 +418,10 @@
 
         //$scope.getCurrentUser();
 
-        $scope.siteConfiguration.primaryOwner = $scope.spUserEmail;
+        $scope.siteConfiguration.primaryOwner = $scope.spUser;
 
-        $scope.GetPeoplePickerSearchEntities = function (query) {
+        $scope.GetPeoplePickerSearchEntities = function (query, loadingProp) {
+            $scope.siteConfiguration[loadingProp] = true;
             var deferred = $q.defer();
 
             $app.withSPContext2(function (spContext) {
@@ -433,6 +436,7 @@
 
                 var result = SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface.clientPeoplePickerSearchUser(spContext, queryParams);
                 spContext.executeQueryAsync(function () {
+                    $scope.siteConfiguration[loadingProp] = false;
                     deferred.resolve(JSON.parse(result.m_value));
                 }, function (err) { deferred.reject(err) });
             });

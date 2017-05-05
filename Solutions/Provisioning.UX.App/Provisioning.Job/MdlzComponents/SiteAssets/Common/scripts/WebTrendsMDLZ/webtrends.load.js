@@ -15,9 +15,9 @@ window.webtrendsAsyncInit = function () {
         onsitedoms:new RegExp("kraft.com|mdlz.com"),
         downloadtypes:"xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip",
         plugins: {
-            sp: { src: "/SiteAssets/Common/scripts/WebTrendsMDLZ/webtrends.sp.js" },
-            mondelez_custom: { src: "/SiteAssets/Common/scripts/WebTrendsMDLZ/Mondelez_Customs.js" },
-            Preserve: { src: "/SiteAssets/Common/scripts/WebTrendsMDLZ/Preserve.js" },
+            sp: { src: "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/webtrends.sp.js" },
+            mondelez_custom: { src: "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/Mondelez_Customs.js" },
+            Preserve: { src: "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/Preserve.js" },
             hm: {
                 src: "//s.webtrends.com/js/webtrends.hm.js",
                 transform: function (dcs, options) {
@@ -30,7 +30,7 @@ window.webtrendsAsyncInit = function () {
                 }
             },
             sp_O365: {
-                src: "/SiteAssets/Common/scripts/WebTrendsMDLZ/sp_O365_Plugin.js",
+                src: "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/sp_O365_Plugin.js",
                 async:false,
                 DivList: ".*",
                 rightClick:true,
@@ -149,7 +149,7 @@ function loadScript() {
             (function () {
                 var s = document.createElement("script");
                 s.async = true;
-                s.src = "/SiteAssets/Common/scripts/WebTrendsMDLZ/webtrends.js";
+                s.src = "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/webtrends.js";
                 var s2 = document.getElementsByTagName("script")[0];
                 s2.parentNode.insertBefore(s, s2);
             })();

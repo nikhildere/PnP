@@ -11,7 +11,7 @@
         </tr>
         <tr>
             <th><a href="#" ng-click="setCurrentStep(2)">{{ 'PRIMARY_OWNER' | translate }}</a></th>
-            <td>{{GetCsvForPeoplePicker(siteConfiguration.primaryOwner)}}<span ng-show="submitDenied && siteConfiguration.primaryOwner === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'PRIMARY_OWNER_ERR' | translate }}</span></td>
+            <td>{{siteConfiguration.isOnBehalfOf == "1" ? GetCsvForPeoplePicker(siteConfiguration.primaryOwnerOnBehalf) : siteConfiguration.primaryOwner.Title}}<span ng-show="submitDenied && siteConfiguration.primaryOwner === undefined" class="confirm-error-message" ng-click="setCurrentStep(2)">{{ 'PRIMARY_OWNER_ERR' | translate }}</span></td>
         </tr>
         <tr>
             <th><a href="#" ng-click="setCurrentStep(2)">{{ 'SECONDARY_OWNER' | translate }}</a></th>

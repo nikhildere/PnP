@@ -24,7 +24,7 @@ namespace Provisioning.Common.MdlzComponents
         private bool isSubSite;
         private ProvisioningTemplate provTemplate;
         private SiteInformation request;
-        private string actualRequestOwner;
+        private SiteUser actualRequestOwner;
         private static AppSettings appSettings;
         IAuthentication Authentication;
         #endregion
@@ -83,7 +83,7 @@ namespace Provisioning.Common.MdlzComponents
             }
         }
 
-        
+
 
         #endregion
 
@@ -112,23 +112,20 @@ namespace Provisioning.Common.MdlzComponents
                 {
                     SetAccessForAll(_web);
                 }
-
-
-
             });
         }
 
         private void PreCreationApply()
         {
-            actualRequestOwner = request.SiteOwner.Name;
-            provTemplate.Security.AdditionalOwners.Add(new OfficeDevPnP.Core.Framework.Provisioning.Model.User() { Name = actualRequestOwner });
-            request.SiteOwner = new SiteUser() { Name = appSettings.DefaultScAdminLoginName };
+            actualRequestOwner = request.SiteOwner;
+            provTemplate.Security.AdditionalOwners.Add(new OfficeDevPnP.Core.Framework.Provisioning.Model.User() { Name = actualRequestOwner.Name });
+            request.SiteOwner = new SiteUser() { Name = appSettings.DefaultScAdminLoginName, Email = appSettings.DefaultScAdminLoginName };
             AdjustExternalSharing();
         }
 
         private void PostCreationApply()
         {
-            request.SiteOwner.Name = actualRequestOwner;
+            request.SiteOwner = actualRequestOwner;
 
             //Reinstantiate Authentication object as the request url might have been changed in case safe url is on
             this.Authentication = new AppOnlyAuthenticationSite();
@@ -143,8 +140,15 @@ namespace Provisioning.Common.MdlzComponents
         public void Apply(Action siteCreation, Action siteProvision)
         {
             PreCreationApply();
-            siteCreation();
-            PostCreationApply();
+
+            try
+            {
+                siteCreation();
+            }
+            finally
+            {
+                PostCreationApply();
+            }
 
             PreProvisionApply();
             siteProvision();

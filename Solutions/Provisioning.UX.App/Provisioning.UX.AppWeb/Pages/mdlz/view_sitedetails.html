@@ -34,14 +34,18 @@
     <div class="row">
         <div class="col-sm-12">
             <label class="control-label" for="detailsFunction">Are you creating this site on behalf of someone?</label>&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="radio" ng-model="siteConfiguration.isOnBehlafOf" ng-value="0" class="radio-align" /><b>No</b>&nbsp;&nbsp;
-            <input type="radio" ng-model="siteConfiguration.isOnBehlafOf" ng-value="1" class="radio-align" /><b>Yes</b>
+            <input type="radio" ng-model="siteConfiguration.isOnBehalfOf" ng-value="0" class="radio-align" /><b>No</b>&nbsp;&nbsp;
+            <input type="radio" ng-model="siteConfiguration.isOnBehalfOf" ng-value="1" class="radio-align" /><b>Yes</b>
         </div>
-        
+
     </div>
-    <div class="row animate-if" ng-if="siteConfiguration.isOnBehlafOf==1">
+    <div class="row animate-if" ng-if="siteConfiguration.isOnBehalfOf==1">
         <div class="col-sm-12">
-            <label class="control-label" for="ppPrimaryOwnerOnBehalf">Choose primary owner(you will be added as a secondary owner by default)</label><em class="req"></em>
+            <label class="control-label" for="ppPrimaryOwnerOnBehalf">
+                Choose primary owner(you will be added as a secondary owner by default)
+                <em class="req"></em>
+                <i class="fa fa-spinner fa-1" aria-hidden="true" ng-show="siteConfiguration.primaryOwnerLoading"></i>
+            </label>
             <tags-input ng-model="siteConfiguration.primaryOwnerOnBehalf"
                         display-property="DisplayText"
                         add-from-autocomplete-only="true"
@@ -52,22 +56,26 @@
                         name="ppPrimaryOwner"
                         min-tags="0"
                         max-tags="1"
-                        ng-required="siteConfiguration.isOnBehlafOf==1">
-                <auto-complete source="GetPeoplePickerSearchEntities($query)"
+                        ng-required="siteConfiguration.isOnBehalfOf==1">
+                <auto-complete source="GetPeoplePickerSearchEntities($query, 'primaryOwnerLoading')"
                                min-length="3"
                                load-on-down-arrow="true"
                                max-results-to-show="10"
                                template="picker-template-SecondaryOwners"
                                debounce-delay="1000"></auto-complete>
-                <div class="error-messages" ng-if="!sitedetailsform.ppPrimaryOwner.$pristine || submitDenied" ng-messages="sitedetailsform.ppPrimaryOwner.$error">
-                    <div ng-message="required">{{ 'You need to choose a primary owner if you are creating this site on behalf of someone' }}</div>
-                </div>
+            </tags-input>
+            <div class="error-messages" ng-if="!sitedetailsform.ppPrimaryOwner.$pristine || submitDenied" ng-messages="sitedetailsform.ppPrimaryOwner.$error">
+                <div ng-message="required">{{ 'You need to choose a primary owner if you are creating this site on behalf of someone' }}</div>
+            </div>
         </div>
     </div>
     <div class="row">
 
         <div class="col-sm-12">
-            <label class="control-label" for="ppSecondaryOwners">Add additional owner (backup)</label>
+            <label class="control-label" for="ppSecondaryOwners">
+                Add additional owner (backup)
+                <i class="fa fa-spinner fa-1" aria-hidden="true" ng-show="siteConfiguration.secondaryOwnersLoading"></i>
+            </label>
             <tags-input ng-model="siteConfiguration.secondaryOwners"
                         display-property="DisplayText"
                         add-from-autocomplete-only="true"
@@ -77,7 +85,7 @@
                         key-property="Key"
                         name="ppSecondaryOwners"
                         min-tags="0">
-                <auto-complete source="GetPeoplePickerSearchEntities($query)"
+                <auto-complete source="GetPeoplePickerSearchEntities($query, 'secondaryOwnersLoading')"
                                min-length="3"
                                load-on-down-arrow="true"
                                max-results-to-show="10"
@@ -97,67 +105,67 @@
                 </div>
             </script>
         </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group" ng-hide="regions.length == 1"
-                     ng-class="{ 'has-error' : sitedetailsform.tiRegion.$invalid && (!sitedetailsform.tiRegion.$pristine || submitDenied), 'has-success' : sitedetailsform.tiRegion.$valid && !sitedetailsform.tiRegion.$pristine }">
-                    <label class="control-label" for="detailsRegion">{{ 'DETAILS_REGION' | translate }}</label><em class="req"></em>
-                    <span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Region%20not%20listed&Body=Missing%20region%20name:">not listed?</a>)</span>
-                    <!--<select class="form-control" name="detailsRegion" id="detailsRegion"
-                            ng-model="siteConfiguration.properties.region"
-                            required
-                            ng-options="r.Value as r.Key for r in regions| orderBy: 'displayOrder'">
-                    </select>-->
-                    <tags-input ng-model="siteConfiguration.properties.region"
-                                display-property="Value"
-                                add-from-autocomplete-only="true"
-                                allow-leftover-text="false"
-                                replace-spaces-with-dashes="false"
-                                key-property="Id"
-                                maxTags="1"
-                                placeholder="enter region name"
-                                name="tiRegion" required>
-                        <auto-complete source="GetFilteredMetadataObjects($query, regions)"
-                                       load-on-down-arrow="true"
-                                       min-length="0"
-                                       max-results-to-show="10"></auto-complete>
-                        <div class="error-messages" ng-if="!sitedetailsform.tiRegion.$pristine || submitDenied" ng-messages="sitedetailsform.tiRegion.$error">
-                            <div ng-message="required">{{ 'You did not select a region this site belongs to' }}</div>
-                        </div>
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group" ng-hide="regions.length == 1"
+                 ng-class="{ 'has-error' : sitedetailsform.tiRegion.$invalid && (!sitedetailsform.tiRegion.$pristine || submitDenied), 'has-success' : sitedetailsform.tiRegion.$valid && !sitedetailsform.tiRegion.$pristine }">
+                <label class="control-label" for="detailsRegion">{{ 'DETAILS_REGION' | translate }}</label><em class="req"></em>
+                <span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Region%20not%20listed&Body=Missing%20region%20name:">not listed?</a>)</span>
+                <!--<select class="form-control" name="detailsRegion" id="detailsRegion"
+                        ng-model="siteConfiguration.properties.region"
+                        required
+                        ng-options="r.Value as r.Key for r in regions| orderBy: 'displayOrder'">
+                </select>-->
+                <tags-input ng-model="siteConfiguration.properties.region"
+                            display-property="Value"
+                            add-from-autocomplete-only="true"
+                            allow-leftover-text="false"
+                            replace-spaces-with-dashes="false"
+                            key-property="Id"
+                            max-tags="1"
+                            placeholder="enter region name"
+                            name="tiRegion" required>
+                    <auto-complete source="GetFilteredMetadataObjects($query, regions)"
+                                   load-on-down-arrow="true"
+                                   min-length="0"
+                                   max-results-to-show="10"></auto-complete>
+                    <div class="error-messages" ng-if="!sitedetailsform.tiRegion.$pristine || submitDenied" ng-messages="sitedetailsform.tiRegion.$error">
+                        <div ng-message="required">{{ 'You did not select a region this site belongs to' }}</div>
+                    </div>
+            </div>
 
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group" ng-hide="functions.length == 1"
-                     ng-class="{ 'has-error' : sitedetailsform.tiFunction.$invalid && (!sitedetailsform.tiFunction.$pristine || submitDenied), 'has-success' : sitedetailsform.tiFunction.$valid && !sitedetailsform.tiFunction.$pristine }">
-                    <label class="control-label" for="detailsFunction">{{ 'DETAILS_FUNCTION' | translate }}</label><em class="req"></em>
-                    <span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Function%20not%20listed&Body=Missing%20function%20name:">not listed?</a>)</span>
-                    <!--<select class="form-control" name="detailsFunction" id="detailsFunction"
-                            ng-model="siteConfiguration.properties.function"
-                            required
-                            ng-options="f.Value as f.Key for f in functions | orderBy: 'displayOrder'">
-                    </select>-->
-                    <tags-input ng-model="siteConfiguration.properties.function"
-                                display-property="Value"
-                                add-from-autocomplete-only="true"
-                                allow-leftover-text="false"
-                                replace-spaces-with-dashes="false"
-                                placeholder="enter function name"
-                                key-property="Id"
-                                maxTags="1"
-                                name="tiFunction"
-                                required>
-                        <auto-complete source="GetFilteredMetadataObjects($query, functions)"
-                                       load-on-down-arrow="true"
-                                       min-length="0"
-                                       max-results-to-show="50"></auto-complete>
-                        <div class="error-messages" ng-if="!sitedetailsform.tiFunction.$pristine || submitDenied" ng-messages="sitedetailsform.tiFunction.$error">
-                            <div ng-message="required">{{ 'You did not select a function that owns this site' }}</div>
-                        </div>
-                </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group" ng-hide="functions.length == 1"
+                 ng-class="{ 'has-error' : sitedetailsform.tiFunction.$invalid && (!sitedetailsform.tiFunction.$pristine || submitDenied), 'has-success' : sitedetailsform.tiFunction.$valid && !sitedetailsform.tiFunction.$pristine }">
+                <label class="control-label" for="detailsFunction">{{ 'DETAILS_FUNCTION' | translate }}</label><em class="req"></em>
+                <span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Function%20not%20listed&Body=Missing%20function%20name:">not listed?</a>)</span>
+                <!--<select class="form-control" name="detailsFunction" id="detailsFunction"
+                        ng-model="siteConfiguration.properties.function"
+                        required
+                        ng-options="f.Value as f.Key for f in functions | orderBy: 'displayOrder'">
+                </select>-->
+                <tags-input ng-model="siteConfiguration.properties.function"
+                            display-property="Value"
+                            add-from-autocomplete-only="true"
+                            allow-leftover-text="false"
+                            replace-spaces-with-dashes="false"
+                            placeholder="enter function name"
+                            key-property="Id"
+                            max-tags="1"
+                            name="tiFunction"
+                            required>
+                    <auto-complete source="GetFilteredMetadataObjects($query, functions)"
+                                   load-on-down-arrow="true"
+                                   min-length="0"
+                                   max-results-to-show="50"></auto-complete>
+                    <div class="error-messages" ng-if="!sitedetailsform.tiFunction.$pristine || submitDenied" ng-messages="sitedetailsform.tiFunction.$error">
+                        <div ng-message="required">{{ 'You did not select a function that owns this site' }}</div>
+                    </div>
             </div>
         </div>
+    </div>
 
     <div class="row">
         <div class="col-sm-6">

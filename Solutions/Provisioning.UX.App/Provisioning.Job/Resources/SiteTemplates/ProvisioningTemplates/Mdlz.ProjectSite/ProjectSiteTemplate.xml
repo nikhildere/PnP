@@ -29,51 +29,20 @@
   <pnp:Templates>
     <pnp:ProvisioningTemplate ID="Mdlz.ProjectSite">
       <pnp:CustomActions>
-        <pnp:SiteCustomActions>
-          <!--<pnp:CustomAction Name="CA_SITE_SUBSITE_OVERRIDE_e22a344d-3e37-4593-b643-17b99e0b459e"
-                    Description="Override new sub-site link"
-                    Location="ScriptLink"
-                    Title="CA_SITE_SUBSITE_OVERRIDE"
-                    ScriptSrc=""
-                    ScriptBlock="
-                    var SubSiteSettings_Web_Url = '{$RemoteWebHostNameToken}/pages/subsite/newsbweb.aspx?SPHostUrl=';
-                    var headID = document.getElementsByTagName('head')[0]; 
-                    var subsiteScriptTag = document.createElement('script');
-                    subsiteScriptTag.type = 'text/javascript';
-                    subsiteScriptTag.src = '/SiteAssets/Common/ProvApp/scripts/SubSiteOverride.js';
-                    headID.appendChild(subsiteScriptTag);"/>-->
+        <pnp:WebCustomActions>
           <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
                     Description="Mondelez Js Injections"
                     Group="SiteActions"
                     Location="ScriptLink"
                     Title="Mondelez Js Injections"
-                    Sequence="1000"
+                    Sequence="1"
                     ScriptBlock="var scr_elem = document.createElement('script');
-                                 scr_elem.type = 'text/javascript';
-                                 scr_elem.src = '/SiteAssets/PS/scripts/MDLZProjectSite.Init.js' + '?rev=' + new Date().toISOString();
-                                 var headElem = document.getElementsByTagName('head')[0];
-                                 headElem.appendChild(scr_elem);"/>
-        </pnp:SiteCustomActions>
-        <!--<pnp:WebCustomActions>
-          <pnp:CustomAction Name="CA_SITE_SETTINGS_SITECLASSIFICATION"
-                    Description="Site Classification Application"
-                    Group="SiteTasks"
-                    Location="Microsoft.SharePoint.SiteSettings"
-                    Title="Site Classification"
-                    Sequence="1000"
-                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>
-          <pnp:CustomAction Name="CA_SITE_STDMENU_SITECLASSIFICATION"
-                    Description="Site Classification Module"
-                    Group="SiteActions"
-                    Location="Microsoft.SharePoint.StandardMenu"
-                    Title="Site Classification"
-                    Sequence="1000"
-                    Url="{{$RemoteWebHostNameToken}}/pages/SiteClassification/SiteEdit.aspx?SPHostUrl={0}"
-                    Rights="31"/>
-          
-        </pnp:WebCustomActions>-->
-      </pnp:CustomActions>
+                        scr_elem.type = 'text/javascript';
+                        scr_elem.src = '/SiteAssets/vNext/PS/scripts/MDLZProjectSite.Init.js';
+                        var headElem = document.getElementsByTagName('head')[0];
+                        headElem.appendChild(scr_elem);"/>
+        </pnp:WebCustomActions>
+    </pnp:CustomActions>
       <pnp:Lists>
         <pnp:ListInstance Title="{res:announce_Folder}"
                           Description="{res:announceList_Desc}"
@@ -131,25 +100,25 @@
           <pnp:DataRows>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Announcements</pnp:DataValue>
-              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/07.png</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/vNext/PS/images/07.png</pnp:DataValue>
               <pnp:DataValue FieldName="LinkLocation">{site}/Lists/Announcements</pnp:DataValue>
               <pnp:DataValue FieldName="TileOrder">1</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Quick Links</pnp:DataValue>
-              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/06.png</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/vNext/PS/images/06.png</pnp:DataValue>
               <pnp:DataValue FieldName="LinkLocation">{site}/Lists/QuickLinks</pnp:DataValue>
               <pnp:DataValue FieldName="TileOrder">2</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Minutes Of Meetings</pnp:DataValue>
-              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/04.png</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/vNext/PS/images/04.png</pnp:DataValue>
               <pnp:DataValue FieldName="LinkLocation">{site}/MinutesOfMeeting</pnp:DataValue>
               <pnp:DataValue FieldName="TileOrder">3</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Weekly Status Report</pnp:DataValue>
-              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/05.png</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/vNext/PS/images/05.png</pnp:DataValue>
               <pnp:DataValue FieldName="LinkLocation">{site}/WeeklyStatusReport</pnp:DataValue>
               <pnp:DataValue FieldName="TileOrder">4</pnp:DataValue>
             </pnp:DataRow>
@@ -194,19 +163,19 @@
           <pnp:DataRows>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">FAQs</pnp:DataValue>
-              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/01.png</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/vNext/PS/images/01.png</pnp:DataValue>
               <pnp:DataValue FieldName="LinkLocation">{site}/Lists/FAQs</pnp:DataValue>
               <pnp:DataValue FieldName="TileOrder">1</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Team Members</pnp:DataValue>
-              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/02.png</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/vNext/PS/images/02.png</pnp:DataValue>
               <pnp:DataValue FieldName="LinkLocation">{site}/Lists/TeamMembers</pnp:DataValue>
               <pnp:DataValue FieldName="TileOrder">2</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Upcoming Events</pnp:DataValue>
-              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/PS/images/03.png</pnp:DataValue>
+              <pnp:DataValue FieldName="BackgroundImageLocation">/SiteAssets/vNext/PS/images/03.png</pnp:DataValue>
               <pnp:DataValue FieldName="LinkLocation">{site}/Lists/Calendar</pnp:DataValue>
               <pnp:DataValue FieldName="TileOrder">3</pnp:DataValue>
             </pnp:DataRow>
@@ -232,7 +201,7 @@
         </pnp:ListInstance>
       </pnp:Lists>
       <pnp:Pages>
-        <pnp:Page Layout="TwoColumnsHeader" Url="{site}/sitepages/default.aspx" Overwrite="true">
+        <pnp:Page Layout="TwoColumnsHeader" Url="{site}/SitePages/default.aspx" Overwrite="true">
           <pnp:WebParts>
             <pnp:WebPart Title="Project Overview &amp; FAQs" Row="2" Column="1">
               <pnp:Contents>
@@ -428,8 +397,8 @@
         <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzProjectSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
-      <pnp:WebSettings AlternateCSS="/SiteAssets/PS/Css/MDLZProjectSite.css"
-                       SiteLogo="/SiteAssets/Common/images/MDLZSiteIcon.png"/>
+      <pnp:WebSettings SiteLogo="/SiteAssets/vNext/Common/images/MDLZSiteIcon.png" 
+                       WelcomePage="SitePages/default.aspx"/>
       <pnp:PropertyBagEntries>
         <pnp:PropertyBagEntry Key="allowdesigner" Value="0" Overwrite="true" />
         <pnp:PropertyBagEntry Key="allowmasterpageediting" Value="0" Overwrite="true" />
@@ -441,8 +410,10 @@
       <pnp:Features>
         <pnp:WebFeatures>
           <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/>
+          <pnp:Feature ID="00bfea71-d8fe-4fec-8dad-01c19a6e4053" />
         </pnp:WebFeatures>
       </pnp:Features>
     </pnp:ProvisioningTemplate>
+    
   </pnp:Templates>
 </pnp:Provisioning>

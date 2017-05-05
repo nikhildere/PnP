@@ -148,7 +148,25 @@ namespace Provisioning.Common.Data.SiteRequests
         public const FieldType ISCONFIDENTIAL_TYPE = FieldType.Boolean;
         public static readonly Guid ISCONFIDENTIAL_ID = new Guid("{86424773-59B8-48DF-98BC-9A75DB00BE77}");
 
+        //MDLZ - Is Confidential
+        public const string
+            REQUESTEDBY_NAME = "SP_RequestedBy",
+            REQUESTEDBY_DISPLAYNAME = "Requested By",
+            REQUESTEDBY_ATTRIB = "",
+            REQUESTEDBY_DESC = "Requested By";
+        public const FieldType REQUESTEDBY_TYPE = FieldType.User;
+        public static readonly Guid REQUESTEDBY_ID = new Guid("{F301F13E-4965-40A2-973E-C966A17C2235}");
 
+        public const string
+           NOTIFICATIONSTATUS_NAME = "SP_NotificationStatus",
+           NOTIFICATIONSTATUS_DISPLAYNAME = "Notification Status",
+           NOTIFICATIONSTATUS_ATTRIB = "",
+           NOTIFICATIONSTATUS_DESC = "NotificationStatus";
+        public const FieldType NOTIFICATIONSTATUS_TYPE = FieldType.Text;
+        public static readonly Guid NOTIFICATIONSTATUS_ID = new Guid("{5742992C-4CD4-4D7C-BCC7-6A6E53D9C7A2}");
+
+        public const string
+          ListItemID_NAME = "ID";
         #endregion
     }
 }
