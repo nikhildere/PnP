@@ -185,12 +185,16 @@
                 size: 'lg',
                 windowClass: 'modal-pnp'
             });
-        }
+        } 
 
         $scope.cancelExistingRequests = function () {
             $scope.miExistingRequests.dismiss('cancel');
             $scope.spinnerService._unregisterAll();
         };
+
+        $scope.fnFilterPendingRequests = function (item) {
+            return item.requestStatus == "New" || item.requestStatus == "Approved";
+        }
 
         $scope.isDataLoading = function () {
             return !($scope.spUser != null && $scope.regions != null && $scope.functions != null && $scope.templates != null && $scope.languages != null && $scope.timezones != null);

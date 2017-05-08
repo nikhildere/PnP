@@ -31841,12 +31841,16 @@ function getQueryStringParameter(paramToRetrieve) {
                 size: 'lg',
                 windowClass: 'modal-pnp'
             });
-        }
+        } 
 
         $scope.cancelExistingRequests = function () {
             $scope.miExistingRequests.dismiss('cancel');
             $scope.spinnerService._unregisterAll();
         };
+
+        $scope.fnFilterPendingRequests = function (item) {
+            return item.requestStatus == "New" || item.requestStatus == "Approved";
+        }
 
         $scope.isDataLoading = function () {
             return !($scope.spUser != null && $scope.regions != null && $scope.functions != null && $scope.templates != null && $scope.languages != null && $scope.timezones != null);
@@ -32596,8 +32600,7 @@ function getQueryStringParameter(paramToRetrieve) {
                     break;
                 case 2:
                     if (!$scope.formsTempStore_SiteDetails || $scope.formWizard.sitedetailsform != null) {
-                        if ($scope.formsTempStore_SiteDetails)
-                        {
+                        if ($scope.formsTempStore_SiteDetails) {
                             $scope.formWizard.sitedetailsform.$dirty = $scope.formsTempStore_SiteDetails.$dirty;
                         }
                         $scope.formsTempStore_SiteDetails = $scope.formWizard.sitedetailsform;
@@ -32612,10 +32615,7 @@ function getQueryStringParameter(paramToRetrieve) {
             return isValid;
         }
 
-        $scope.testClick = function () {
-            var s = $scope;
-
-        }
+        
     }
 })();
 

@@ -90,7 +90,7 @@ border:1px solid #0038a5;
 
 /*Change for Site Collection upgrade*/
 #layoutsTable tr td:first-child + td div.ms-rte-wpbox{
-margin-top:15px;
+/*margin-top:15px;*/
 
 }
 

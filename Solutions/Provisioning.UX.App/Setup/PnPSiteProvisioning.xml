@@ -2074,3 +2074,9 @@
     </pnp:ProvisioningTemplate>
   </pnp:Templates>
 </pnp:Provisioning>
+<!---
+
+Apart from running the above setup, following things need to be done manually
+
+1. Add a SP group with contribute permissions named: Site Request Approvers
+-->

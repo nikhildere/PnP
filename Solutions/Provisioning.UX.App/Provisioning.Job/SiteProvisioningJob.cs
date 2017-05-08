@@ -50,25 +50,6 @@ namespace Provisioning.Job
 
         public void ProcessSiteRequests()
         {
-            //var sec = new SecureString();
-            //("nick@2017").ToCharArray().ToList().ForEach(x => sec.AppendChar(x));
-            //using (var ctx = new ClientContext("https://ndmdlz.sharepoint.com/sites/SPOVF3Team/") { Credentials = new SharePointOnlineCredentials("nd.mdlz@ndmdlz.onmicrosoft.com", sec) })
-            //{
-            //    var caColl = ctx.Web.GetCustomActions();
-            //    var ca = caColl.FirstOrDefault(x => x.Name == "MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e");
-
-            //    ca.Sequence = 100;
-            //    ca.ScriptBlock = @"var scr_elem = document.createElement('script');
-            //                     scr_elem.type = 'text/javascript';
-            //                    scr_elem.src = '/SiteAssets/Team/scripts/MDLZTeamsite.Init.js';
-            //                    var headElem = document.getElementsByTagName('head')[0];
-            //                    headElem.appendChild(scr_elem);";
-            //    ca.ScriptSrc = "";
-            //    ca.Update();
-            //    ctx.Load(ca);
-            //    ctx.ExecuteQuery();
-            //}
-
             #region Process Approved Requests
             // Begin processing of approved requests
             Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "Beginning Processing the site request repository");

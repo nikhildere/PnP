@@ -58,7 +58,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="request in vm.existingRequests | filter:'Approved'">
+                            <tr ng-repeat="request in vm.existingRequests | filter:fnFilterPendingRequests">
                                 <td>{{ request.title }}</td>
                                 <td>{{ request.url }}</td>
                                 <td>{{ request.requestStatus }}</td>

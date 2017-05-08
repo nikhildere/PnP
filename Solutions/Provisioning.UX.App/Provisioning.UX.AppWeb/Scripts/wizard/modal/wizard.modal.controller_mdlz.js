@@ -484,8 +484,7 @@
                     break;
                 case 2:
                     if (!$scope.formsTempStore_SiteDetails || $scope.formWizard.sitedetailsform != null) {
-                        if ($scope.formsTempStore_SiteDetails)
-                        {
+                        if ($scope.formsTempStore_SiteDetails) {
                             $scope.formWizard.sitedetailsform.$dirty = $scope.formsTempStore_SiteDetails.$dirty;
                         }
                         $scope.formsTempStore_SiteDetails = $scope.formWizard.sitedetailsform;
@@ -500,9 +499,6 @@
             return isValid;
         }
 
-        $scope.testClick = function () {
-            var s = $scope;
-
-        }
+        
     }
 })();

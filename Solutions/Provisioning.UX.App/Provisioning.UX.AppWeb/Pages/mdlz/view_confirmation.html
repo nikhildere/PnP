@@ -15,7 +15,7 @@
         </tr>
         <tr>
             <th><a href="#" ng-click="setCurrentStep(2)">{{ 'SECONDARY_OWNER' | translate }}</a></th>
-            <td>{{GetCsvForPeoplePicker(siteConfiguration.secondaryOwners)}}</td>
+            <td>{{GetCsvForPeoplePicker(siteConfiguration.secondaryOwners) + (siteConfiguration.isOnBehalfOf == "1"? (siteConfiguration.secondaryOwners && siteConfiguration.secondaryOwners.length > 0 ? " and " : "")+ "You":"")}}</td>
         </tr>
         <tr>
             <th><a href="#" ng-click="setCurrentStep(1)">{{ 'SITE_TEMPLATE' | translate }}</a></th>
@@ -82,8 +82,9 @@
                     <div>
                         <input type="checkbox" value="" ng-model="siteConfiguration.properties.termsaccepted" required="" class="radio-align ng-pristine ng-untouched ng-invalid ng-invalid-required" />
                         <!--<em>{{ 'ACCEPT' | translate }}</em>-->
+   <b>
                         <b>
-                            I agree to the Legal Terms and Conditions mentioned above.<em class="req"></em>
+                              I agree to the Legal Terms and Conditions mentioned above.<em class="req"></em>
                         </b>
                     </div>
                 </div>
