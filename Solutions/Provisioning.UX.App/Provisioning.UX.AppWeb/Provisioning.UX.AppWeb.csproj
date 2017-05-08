@@ -309,6 +309,7 @@
     <Content Include="Scripts\vendor\others\angular-animate.min.js" />
     <Content Include="Scripts\vendor\others\angular-messages.js" />
     <Content Include="Scripts\vendor\others\angular.js" />
+    <Content Include="Scripts\vendor\others\angular.min.js" />
     <Content Include="Scripts\vendor\others\bootstrap.min.js" />
     <Content Include="Scripts\vendor\others\MicrosoftAjax.js" />
     <Content Include="Scripts\vendor\others\ng-tags-input.min.js" />

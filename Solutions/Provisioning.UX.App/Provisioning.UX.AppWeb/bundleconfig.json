@@ -5,9 +5,9 @@
       "scripts/vendor/jquery/jquery-2.2.1.min.js",
       "scripts/vendor/others/MicrosoftAjax.js",
       "scripts/vendor/others/bootstrap.min.js",
-      "scripts/vendor/others/angular.js",
+      "scripts/vendor/others/angular.min.js",
       "scripts/vendor/others/angular-messages.js",
-      "scripts/vendor/others/angular-animate.js",
+      "scripts/vendor/others/angular-animate.min.js",
       "scripts/vendor/angular-ui/ui-bootstrap-tpls-0.12.1.min.js",
       "scripts/vendor/angular-spinners/angular-spinners.min.js",
       "scripts/toastr.js",
@@ -41,7 +41,7 @@
       "scripts/app.js"
     ],
     "minify": {
-      "enabled": true
+      "enabled": false
     }
   },
   {

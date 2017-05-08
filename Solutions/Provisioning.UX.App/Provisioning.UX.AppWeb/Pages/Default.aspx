@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Create It - Site Provisioning</title>
-    <script type="text/javascript" src="../assets/scripts//bundle.js"></script>    
+    <script type="text/javascript" src="../assets/scripts/bundle.js"></script>    
     <link href="../assets/styles/bundle.css" rel="stylesheet" />
 </head>
 <body>    
