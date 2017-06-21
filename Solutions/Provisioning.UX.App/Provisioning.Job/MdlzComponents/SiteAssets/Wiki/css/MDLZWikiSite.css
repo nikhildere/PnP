@@ -1,4 +1,4 @@
-﻿#s4-titlerow {
+#s4-titlerow {
     background-image: url("/SiteAssets/vNext/Wiki/Images/WikiSiteBanner.png");
     height:auto !important;
 }
@@ -164,3 +164,4 @@ a[id*='ShellDocuments'] {
     #O365_MainLink_Help > span {
         visibility: visible;
     }
+

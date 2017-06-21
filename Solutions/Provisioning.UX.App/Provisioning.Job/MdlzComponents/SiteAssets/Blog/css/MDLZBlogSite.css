@@ -1,4 +1,4 @@
-﻿#s4-titlerow {
+#s4-titlerow {
     background-image: url("/SiteAssets/vNext/Blog/Images/BlogSiteBanner.png");
     height:auto !important;
 }
@@ -20,6 +20,16 @@
     color: #4f2170 !important;
 }
 
+.ms-blog-MainArea .ms-webpart-chrome{
+    border: #0045ad 1px solid !important;
+    display:block
+}
+.ms-blog-MainArea .ms-webpart-chrome .ms-webpart-chrome-title{
+    background-image: url('/SiteAssets/vNext/Blog/Images/red_header_mdl.png')
+}
+.ms-blog-MainArea > tbody > tr > td:first-child .ms-webpart-chrome:first-child {
+    border: none !important;
+}
 /*
 .mondoleze-team-site-title {
     font-family:Arial;

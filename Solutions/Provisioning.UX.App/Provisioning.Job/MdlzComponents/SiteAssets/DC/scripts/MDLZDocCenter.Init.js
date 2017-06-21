@@ -1,4 +1,4 @@
-﻿
+
 function LoadMdlzBranding() {
     document.getElementsByTagName("body")[0].style.opacity = "0";
     var head = document.getElementsByTagName('head')[0];
@@ -21,17 +21,17 @@ function LoadMdlzBranding() {
         head.appendChild(cssRef);
     }
 
-    loadJsRecursive();
+    loadJsRecursive(2);
 
-    function loadJsRecursive() {
+    function loadJsRecursive(lastUIManipulationJsNum) {
         var y = -1;
         loadJsRecursiveInternal();
 
         function loadJsRecursiveInternal() {
             y++;
-            if (y == scriptFiles.length)
+            if (y == lastUIManipulationJsNum)
                 document.getElementsByTagName("body")[0].style.opacity = "1";
-            else
+            if(y < scriptFiles.length)
                 loadScript(scriptFiles[y], loadJsRecursiveInternal);
         }
     }

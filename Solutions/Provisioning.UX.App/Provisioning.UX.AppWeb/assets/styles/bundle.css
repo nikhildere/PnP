@@ -1039,11 +1039,12 @@ body {
 .c-addnew-pnl {
     text-align: center;
 }
+
 .progBar {
-    transition-delay:0s;
-    transition-duration:1s;
-    transition-property:width;
-    transition-timing-function:ease-in-out;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
 }
 /*Wizard - Ends*/
 /*My Requests - Starts*/
@@ -1057,9 +1058,10 @@ body {
     top: 10px;
     right: 10px;
 }
+
 .my-req .panel-heading {
-    background:#32145a;
-    color:white;
+    background: #32145a;
+    color: white;
 }
 /*My Requests - Ends*/
 
@@ -1111,30 +1113,46 @@ tags-input.ng-invalid .tags {
 .site-det .row > div {
     padding-left: 5px;
 }
+
 .site-det .row {
-    margin-top:10px;
+    margin-top: 10px;
 }
+
 tags-input[name="tiFunction"] ul.suggestion-list {
     max-height: 200px;
 }
 
-tags-input input[type=text]::-webkit-input-placeholder {font-style: italic;} /* Chrome/Opera/Safari */
-tags-input input[type=text]::-moz-placeholder{font-style: italic;} /* Firefox 19+ */
-tags-input input[type=text]:-ms-input-placeholder {font-style: italic;}/* IE 10+ */
-tags-input input[type=text]:-moz-placeholder {font-style: italic;}/* Firefox 18- */
+tags-input input[type=text]::-webkit-input-placeholder {
+    font-style: italic;
+}
+/* Chrome/Opera/Safari */
+tags-input input[type=text]::-moz-placeholder {
+    font-style: italic;
+}
+/* Firefox 19+ */
+tags-input input[type=text]:-ms-input-placeholder {
+    font-style: italic;
+}
+/* IE 10+ */
+tags-input input[type=text]:-moz-placeholder {
+    font-style: italic;
+}
+/* Firefox 18- */
 
 tags-input .tags {
     box-shadow: none !important;
 }
+
 .radio-align {
     margin-top: -3px !important;
     margin-right: 5px !important;
 }
+
 em.req:after {
-    content:"*";
-    color:red;
-    margin-left:5px;
-    font-weight:bold
+    content: "*";
+    color: red;
+    margin-left: 5px;
+    font-weight: bold;
 }
 /*Site Details - Ends*/
 /*Site Templates - Starts*/
@@ -1167,23 +1185,27 @@ em.req:after {
 .modal-pnp .modal-right-footer {
     right: 50%;
 }
+
 .wm-logo {
-    font-size:8em;
-    padding:15px;
-    color:#32145a;
+    font-size: 8em;
+    padding: 15px;
+    color: #32145a;
 }
+
 .modal-pnp .btn-image[disabled=disabled], .modal-pnp .btn-image[disabled=disabled]:hover {
     background-position: 0;
     opacity: 0.5;
     cursor: not-allowed;
 }
-    .nav-pills li[disabled=disabled] a {
-        opacity: 0.5;
-        cursor: not-allowed;
-    }
+
+.nav-pills li[disabled=disabled] a {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 .btn-image i {
-    font-size:3em;
-    color:#32145a;
+    font-size: 3em;
+    color: #32145a;
 }
 /*.modal-pnp .modal-left a {
     color: #32145a;
@@ -1195,37 +1217,48 @@ em.req:after {
 /*Modal - Ends*/
 /*Confirmation - Starts*/
 .vw-confim .row {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
-.vw-confim .row p {
-    margin:10px 0;
-}
+
+    .vw-confim .row p {
+        margin: 10px 0;
+    }
 /*Confirmation - Ends*/
 /*ngIf animate - Starts*/
 
 .animate-if.ng-enter, .animate-if.ng-leave {
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
 }
 
-.animate-if.ng-enter,
-.animate-if.ng-leave.ng-leave-active {
-  opacity:0;
-}
+    .animate-if.ng-enter,
+    .animate-if.ng-leave.ng-leave-active {
+        opacity: 0;
+    }
 
-.animate-if.ng-leave,
-.animate-if.ng-enter.ng-enter-active {
-  opacity:1;
-}
+        .animate-if.ng-leave,
+        .animate-if.ng-enter.ng-enter-active {
+            opacity: 1;
+        }
 
 /*ngIf animate - Ends*/
 
 /**/
-.control-label .fa-spinner {
-    margin-left:2px;
+.fa-c-loading {
+    position: relative;
+}
+
+    .fa-c-loading > .fa-spinner {
+        position: absolute;
+        right: -20px;
+        top: 3px;
+        z-index: 1;
+    }
+.fa-c-loading .fa-spinner.ng-hide-add-active {
+    display:none;
 }
 .ms-subtleEmphasis {
-    display:none;
+    display: none;
 }
 /**/
 

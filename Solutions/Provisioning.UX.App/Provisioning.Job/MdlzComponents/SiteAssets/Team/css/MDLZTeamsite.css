@@ -1,4 +1,4 @@
-﻿#s4-titlerow {
+#s4-titlerow {
     background-image: url("/SiteAssets/vNext/Team/Images/TeamSitebanner.png");
     height: auto !important;
 }
@@ -63,6 +63,10 @@ border:1px solid #52247b;
 
 }
 
+#layoutsTable > tbody > tr > td:nth-child(2) > div > div > span {
+    margin-bottom: 15px;
+    display: block;
+}
 
 .headerbckground {
     background-image: url("/SiteAssets/vNext/Team/Images/purple_header_mdl.png");
@@ -109,9 +113,7 @@ div[id*='DeltaTopNavigation'] > .ms-core-listMenu-item:link{
 color:white !important;
 }
 
-#DeltaPlaceHolderPageTitleInTitleArea{
-display:none;
-}
+#DeltaPlaceHolderPageTitleInTitleArea{display:none;}
 /*
 
 div[id$='DeltaTopNavigation'] > .ms-core-listMenu-horizontalBox > .ms-core-listMenu-root > .ms-listMenu-editLink

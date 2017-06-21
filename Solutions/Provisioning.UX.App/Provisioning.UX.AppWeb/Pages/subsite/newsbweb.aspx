@@ -86,7 +86,7 @@
                                 <td style="padding-left: 150px;" valign="top">
                                     <h3 class="ms-standardheader ms-inputformheader">URL name:</h3>
                                         <div style="float: left; white-space: nowrap; padding-bottom: 10px; padding-left: 15px; width: 450px;">
-                                            <div style="width: 320px; font-size: 13px; float: left; padding-top: 2px;" id="divBasePath">
+                                            <div style="width: 320px; font-size: 13px; float: left; padding-top: 2px; white-space: normal; word-break: break-all;" id="divBasePath">
                                                <asp:Label ID="lblBasePath" runat="server"></asp:Label>
                                             </div>
                                             <div class="ms-input" style="width: 130px; float: left;">
