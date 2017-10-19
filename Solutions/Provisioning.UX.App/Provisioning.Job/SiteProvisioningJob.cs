@@ -331,7 +331,7 @@ namespace Provisioning.Job
                             _message.SiteTemplate = info.Template;
                             _message.SiteTitle = info.Title;
                             _message.Subject = "Approval Required For Site Creation";
-                            _message.EditPageUrl = $"{_settings.SPHostUrl}/Lists/SiteRequests/EditForm.aspx?ID={info.Id}";
+                            _message.EditPageUrl = $"{_settings.SPHostUrl}/SitePages/RequestApproval.aspx?RequestID={info.Id}";
                             
                             _message.To.AddRange(approverEmailAddresses);
                             foreach (var admin in info.AdditionalAdministrators)

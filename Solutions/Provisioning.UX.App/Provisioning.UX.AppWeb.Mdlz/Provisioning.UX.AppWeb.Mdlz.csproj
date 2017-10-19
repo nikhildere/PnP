@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14839390-3D02-4093-A00A-204000FCB9E9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Provisioning.UX.AppWeb.Mdlz</RootNamespace>
+    <AssemblyName>Provisioning.UX.AppWeb.Mdlz</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteProvisioningTool\Bundle\scripts\bundle-subsite.js" />
+    <Content Include="SiteProvisioningTool\Bundle\scripts\bundle-subsite.min.js">
+      <DependentUpon>bundle-subsite.js</DependentUpon>
+    </Content>
+    <Content Include="SiteProvisioningTool\Bundle\scripts\bundle.js" />
+    <Content Include="SiteProvisioningTool\Bundle\styles\bundle-subsite.css" />
+    <Content Include="SiteProvisioningTool\Bundle\styles\bundle-subsite.min.css">
+      <DependentUpon>bundle-subsite.css</DependentUpon>
+    </Content>
+    <Content Include="SiteProvisioningTool\Bundle\styles\bundle.css" />
+    <Content Include="SiteProvisioningTool\Bundle\styles\bundle.min.css">
+      <DependentUpon>bundle.css</DependentUpon>
+    </Content>
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\services\CreateItDataService.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\services\cacheService.js" />
+    <Content Include="SiteProvisioningTool\Styles\App\app.css" />
+    <Content Include="SiteProvisioningTool\Styles\Vendor\bootstrap-theme.min.css" />
+    <Content Include="SiteProvisioningTool\Styles\Vendor\bootstrap.min.css" />
+    <Content Include="SiteProvisioningTool\Styles\Vendor\fabric.components.min.css" />
+    <Content Include="SiteProvisioningTool\Styles\Vendor\fabric.min.css" />
+    <Content Include="SiteProvisioningTool\Styles\Vendor\font-awesome.min.css" />
+    <Content Include="SiteProvisioningTool\Styles\Vendor\ng-tags-input.bootstrap.min.css" />
+    <Content Include="SiteProvisioningTool\Styles\Vendor\ng-tags-input.min.css" />
+    <Content Include="SiteProvisioningTool\Styles\App\site.css" />
+    <Content Include="SiteProvisioningTool\Styles\Vendor\toastr.css" />
+    <Content Include="SiteProvisioningTool\Templates\Tool\modal_myrequests.html" />
+    <Content Include="SiteProvisioningTool\Templates\Tool\view_confirmation.html" />
+    <Content Include="SiteProvisioningTool\Templates\Tool\view_sitedetails.html" />
+    <Content Include="SiteProvisioningTool\Templates\Tool\view_sitetemplates.html" />
+    <Content Include="SiteProvisioningTool\Templates\Tool\wizard.html" />
+    <Content Include="SiteProvisioningTool\Templates\Tool\wizard.modal.html" />
+    <None Include="App.config" />
+    <Content Include="SiteProvisioningTool\Scripts\App\i18n\en-US.json" />
+    <Content Include="SiteProvisioningTool\Scripts\App\i18n\sv-SE.json" />
+    <None Include="bundleconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteProvisioningTool\Templates\Subsite\newsbweb.aspx" />
+    <Content Include="SiteProvisioningTool\Templates\Tool\default.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\controllers\shell.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\controllers\wizard.controller_mdlz.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\directives\formDirectives.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\directives\restrict.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\modal\wizard.modal.controller_mdlz.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\modules\common.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\modules\filter.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\modules\logger.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\modules\spinner.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\modules\wizard.module.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\services\provisioningServices.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\services\siteQueryService.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\wizard\services\utilservice.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\angular-sanitize.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\angular-spinners\angular-spinners.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\angular-translate-loader-static-files.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\angular-translate.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\app.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\app.module.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\data\appsettings.factory.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\data\data.module.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\data\metadata.factory.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\data\templates.factory.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\angular-ui\ui-bootstrap-tpls-0.12.1.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\bootstrap.dialog.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\chromeloader.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\config.exceptionHandler.js" />
+    <Content Include="SiteProvisioningTool\Scripts\App\config.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\jquery\jquery-2.2.1.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\others\angular-animate.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\others\angular-messages.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\others\angular.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\others\bootstrap.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\others\MicrosoftAjax.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\others\ng-tags-input.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\spin.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\spin.min.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\toastr.js" />
+    <Content Include="SiteProvisioningTool\Scripts\Vendor\toastr.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SiteProvisioningTool\JSON\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

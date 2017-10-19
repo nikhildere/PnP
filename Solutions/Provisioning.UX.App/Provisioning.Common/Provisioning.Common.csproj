@@ -210,6 +210,7 @@
     <Compile Include="Mail\RequestRejectedEmailMessage.cs" />
     <Compile Include="Mail\SuccessEmailMessage.cs" />
     <Compile Include="Mail\FileSizeFormatProvider.cs" />
+    <Compile Include="MdlzComponents\DailyTraceListener.cs" />
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBlogSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzBPSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzCommonExtensibilityProvider.cs" />

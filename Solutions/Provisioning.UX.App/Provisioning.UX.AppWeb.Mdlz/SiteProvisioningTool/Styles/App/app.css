@@ -1,0 +1,1048 @@
+﻿/* CSS for the PnP User Interface Prototype */
+body {
+    overflow: visible;
+}
+
+.container {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+/*#region Bootstrap Overrides */
+.modal {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-pnp .nav-pills > li > a {
+    border-radius: 0;
+    text-align: center;
+}
+
+.modal-pnp .nav-pills > li.active > a,
+.modal-pnp .nav-pills > li.active > a:hover,
+.modal-pnp .nav-pills > li.active > a:focus {
+    color: #FFF;
+    background-color: #32145a;
+    /*color: #0070c0;
+    background-color: #FFF;*/
+}
+
+.modal-pnp .nav > li > a:hover,
+.modal-pnp .nav > li > a:focus {
+    background-color: #DDD;
+    color: #32145a;
+}
+
+.modal-pnp .form-control {
+    border-radius: 0;
+}
+/*#endregion*/
+
+
+/*#region Layout */
+.modal-pnp .modal-dialog {
+    height: 725px;
+    overflow: hidden;
+}
+
+.modal-pnp .modal-content {
+    position: relative;
+    font-family: 'Segoe UI', Segoe, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    border-radius: 0;
+}
+
+.modal-pnp .modal-content,
+.modal-pnp .modal-body,
+.modal-pnp .modal-body > .row,
+.modal-pnp .modal-body > .row > div[class^="col-"],
+.modal-pnp .modal-body > .row > div[class^="col-"] > form,
+.modal-pnp .modal-body > .row > div[class^="col-"] .modal-left,
+.modal-pnp .modal-body > .row > div[class^="col-"] .modal-right {
+    height: 100%;
+}
+
+.modal-pnp .modal-body {
+    padding: 0 15px;
+}
+
+    .modal-pnp .modal-body > .row > div[class^="col-"] {
+        padding: 0;
+    }
+
+.modal-pnp .step {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+/*#endregion*/
+
+.modal-pnp table a {
+    color: #000;
+}
+
+/*#region Left Column */
+.modal-pnp .modal-left {
+    background-color: #FFF;
+}
+
+    .modal-pnp .modal-left img {
+        padding: 20px 10px 10px;
+    }
+
+    .modal-pnp .modal-left a {
+        color: #32145a;
+    }
+
+    .modal-pnp .modal-left ul {
+        position: absolute;
+        top: 30%;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+    }
+/*#endregion*/
+
+
+/*#region Right Column */
+.modal-pnp .modal-right {
+    background: #FFF;
+    padding: 20px 20px 80px;
+    position: relative;
+}
+
+    .modal-pnp .modal-right h1 {
+        font-weight: 100;
+        font-size: 30px;
+        margin: 0 0 20px;
+        padding: 0;
+    }
+
+.modal-pnp .modal-right-footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.modal-pnp .modal-right textarea {
+    resize: none;
+}
+
+/*#endregion*/
+
+
+/*#region Templates */
+.modal-pnp .media:hover,
+.modal-pnp .media.active {
+    background-color: #DDD;
+    cursor: pointer;
+}
+
+.modal-pnp .media-body {
+    padding-top: 5px;
+}
+/*#endregion*/
+
+
+/*#region Buttons */
+.modal-pnp .btn-image {
+    width: 34px;
+    height: 34px;
+    display: block;
+    float: left;
+    margin-left: 5px;
+}
+
+    .modal-pnp .btn-image:hover {
+        background-position-x: -64px;
+        cursor: pointer;
+    }
+
+    .modal-pnp .btn-image:active {
+        background-position-x: -128px;
+    }
+
+.modal-pnp .btn-back {
+    background-image: url(../images/button-back.png);
+}
+
+.modal-pnp .btn-next {
+    background-image: url(../images/button-next.png);
+}
+
+.modal-pnp .btn-check {
+    background-image: url(../images/button-check.png);
+}
+
+.modal-pnp .btn-cancel {
+    background-image: url(../images/button-cancel.png);
+}
+/*#endregion*/
+
+
+/*#region Animations */
+.modal-pnp .step.ng-enter {
+    -moz-animation: fadeInRight 0.3s;
+    -o-animation: fadeInRight 0.3s;
+    -webkit-animation: fadeInRight 0.3s;
+    animation: fadeInRight 0.3s;
+}
+
+@-moz-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+/*#endregion*/
+
+/*region Validation Messages*/
+.error-messages.ng-active {
+    background: #DC3C00; /* #DC3C00 */
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    position: relative;
+}
+
+    .error-messages.ng-active:after {
+        position: absolute;
+        top: -10px;
+        content: "";
+        left: 20px;
+        border-style: solid;
+        border-color: transparent transparent #DC3C00;
+        border-width: 5px;
+    }
+/*endregion Validation Messages*/
+
+/*region Other bootstrap overrides*/
+.has-feedback .form-control {
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+.has-feedback-externalSharing {
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    display: none;
+}
+
+.form-control {
+    height: 28px;
+    font-size: 11px;
+}
+
+.control-label {
+    font-size: 11px;
+}
+
+.btn btn-default {
+    background: #DC3C00;
+    color: white;
+    float: right;
+}
+
+.table table-striped {
+    font-size: 11px;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 4px 4px;
+    line-height: 1.0;
+    vertical-align: top;
+}
+
+.table.table-bordered.table-striped {
+    font-size: 11px;
+}
+
+a {
+    font-size: 11px;
+}
+
+.leftnav {
+    font-size: 14px;
+}
+
+.panel-default > .panel-heading-custom {
+    background: #0072c6;
+    color: #fff;
+}
+
+.panel-footer-custom {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 11px;
+    background-color: gray !important;
+}
+
+.row {
+    margin-top: 0px;
+    padding: 0 10px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+/*div.col-sm-6.col {
+    margin-left: 0px;
+    float: left;
+}*/
+/*endregion Other bootstrap overrides*/
+
+/* Chrome Control Override
+-----------------------------------------------------------*/
+div#chromeControl_bottomheader {
+    height: 96px !important;
+}
+
+div#chromeControl_navigation {
+    height: 50px !important;
+}
+
+div#chromeControl_bottomheader_appicon {
+    padding: 24px 20px 24px 20px !important;
+}
+
+    div#chromeControl_bottomheader_appicon img {
+        width: 180px !important;
+        max-height: 64px;
+    }
+
+div#chromeControl_topheader_appicon img {
+    width: 45px !important;
+    max-height: 16px;
+}
+
+img#chromeControl_topheader_arrowimage {
+    display: none;
+}
+
+span#chromeControl_topheader_sitetitle {
+    color: #fff !important;
+    font-size: 12px;
+}
+
+
+.shortcut-message {
+    color: white;
+    vertical-align: middle;
+    background-color: #007aff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.confirm-error-message {
+    cursor: pointer;
+    background: #DC3C00;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    position: relative;
+}
+
+/* Begin spinner classes */
+.spinner {
+    margin: 50px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.spinnertext {
+    margin: 50px auto 0;
+    width: 150px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 14px;
+    height: 14px;
+    background-color: darkslategrey;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+
+/* Begin People Picker Styles */
+
+.sp-peoplepicker-editDiv {
+    overflow: hidden;
+}
+
+span.sp-peoplepicker-chosen {
+    margin-right: 10px;
+}
+
+span.sp-peoplepicker-removeChosen {
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+li.sp-peoplepicker-foundItem {
+    cursor: pointer;
+}
+
+    li.sp-peoplepicker-foundItem:hover {
+        background-color: #f5f5f5;
+    }
+
+ul.sp-peoplepicker-dropdown li {
+    padding: 4px;
+}
+
+    /* maintain small divider line from bootstrap */
+    ul.sp-peoplepicker-dropdown li.divider {
+        padding: 0px !important;
+    }
+
+/* Site Edit CSS*/
+.ms-Button {
+    background-color: #002050 !important;
+    color: white !important;
+}
+
+    .ms-Button:hover {
+        background-color: #26416a !important;
+        color: white !important;
+    }
+
+.selected {
+    background-color: rgba(243, 243, 243, 1);
+    color: black !important;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.navlink {
+    color: #0072c6;
+    height: 35px;
+    padding: 10px 0px 0px 16px;
+    margin-top: 50px;
+}
+
+.leftNav {
+    display: block;
+    height: 100%;
+    width: 232px;
+    background-color: #FFF;
+    position: fixed;
+    z-index: 1;
+}
+
+.navBar {
+    height: 50px;
+    width: 100%;
+    background-color: #0072c6;
+    padding: 0px;
+    display: block;
+    border-spacing: 0;
+    line-height: normal;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+
+hidd html, body {
+    margin: 0;
+    background-color: rgba(243, 243, 243, 1);
+}
+
+.appTitle {
+    position: absolute;
+    top: 0px;
+    left: 153px;
+    color: white;
+    font-size: 22px;
+    font-family: Segoe UI;
+    padding: 8px 0px 0px 10px;
+}
+
+
+.TileContainer {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.TileContent {
+    width: 371px;
+    height: 625px;
+    border: 1px;
+    background-color: #fff;
+    border-color: #fff;
+    border-style: solid;
+    overflow: hidden;
+    position: absolute;
+    top: 97px;
+}
+
+.TextPostion {
+    margin: 10px 10px 10px 10px;
+}
+
+.NavLine {
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    width: 1px;
+    background: #fff;
+    background-color: rgba(255,255,255,.4);
+    position: absolute;
+    top: 5px;
+    left: 135px;
+}
+
+.o365cs-nav-button {
+    display: block;
+    vertical-align: middle;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 50px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: normal;
+    overflow: visible;
+    cursor: pointer;
+    outline-offset: -1px;
+    content: icon;
+}
+
+.o365cs-nav-navMenuBeak {
+    position: absolute;
+    bottom: -8px;
+    left: 14px;
+    z-index: 2100;
+}
+
+.requirements {
+    color: #FFF;
+    font-family: "Segoe UI", "Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.O15_editor_field_head {
+}
+/*#region Added by Nikhil - Mod*/
+.templ-preview-overlay, .templ-preview-display {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.templ-preview-overlay {
+    background: black;
+    opacity: 0.8;
+    z-index: 1100;
+}
+
+.templ-preview-display {
+    padding: 20px;
+    z-index: 1101;
+    width: 100%;
+}
+
+    .templ-preview-display img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .templ-preview-display a {
+        /*position:absolute;
+    top:10px;
+    right:10px;*/
+        font-size: 18px;
+        font-weight: bold;
+        border: 1px solid silver;
+        padding: 0 10px;
+        text-decoration: none;
+        color: darkgray;
+        float: right;
+    }
+
+.templ-thumb {
+    position: relative;
+}
+
+    .templ-thumb > img {
+        width: 200px;
+        border: 3px solid grey;
+    }
+
+    .templ-thumb a {
+        display: none;
+        background: black;
+        opacity: 0.7;
+        color: white;
+        width: 95%;
+        padding: 3px 0;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+    }
+
+.templ-preview-display > div {
+    background: white;
+    padding: 20px;
+    /*position:relative;*/
+    border-radius: 5px;
+}
+
+    .templ-preview-display > div h3 {
+        float: left;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+.templ-thumb:hover a {
+    display: block;
+}
+
+.clr {
+    clear: both;
+}
+
+/*Wizard - Starts*/
+.progBar {
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #DC3C00;
+    top: 0px;
+}
+
+body {
+    background: url('/images/mdlz/bg_img.png') repeat;
+}
+
+.navBar, #divSPChrome {
+    display: none;
+}
+
+.center {
+    margin: 0 auto;
+    width: 1151px;
+    background: #fff;
+    padding-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 1px 1px 1px #888;
+}
+
+.template-catalog > .row:first-child > .card {
+    margin-bottom: 0;
+}
+
+.card {
+    margin: 20px;
+    box-shadow: 2px 2px 2px 2px #888;
+    float: left;
+    position: relative;
+    background: #eaeaea;
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+}
+
+    .card:hover .card-pullout, .card:hover .card-pullout-text {
+        height: 60%;
+    }
+
+        .card:hover .card-pullout-text > div {
+            display: block;
+        }
+
+    .card img {
+    }
+
+    .card .card-pullout, .card .card-pullout-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-property: height;
+        transition-timing-function: ease-out;
+        padding: 10px 20px;
+        overflow: hidden;
+    }
+
+    .card .card-pullout {
+        background: #000;
+        opacity: 0.8;
+    }
+
+    .card .card-pullout-text * {
+        color: white;
+    }
+
+.template-catalog .row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-pullout-text > b {
+    display: block;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.btn-holder {
+    text-align: right;
+}
+
+.fa-tile {
+    font-size: 12em;
+    text-align: center;
+    color: #32145a;
+    width: 100%;
+}
+
+.c-addnew-pnl i {
+    font-size: 5em;
+    display: inline;
+}
+
+.c-addnew-pnl {
+    text-align: center;
+}
+
+.progBar {
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+}
+/*Wizard - Ends*/
+/*My Requests - Starts*/
+.requests-pnl {
+    height: 250px;
+    overflow-y: auto;
+}
+
+.my-req .btn-cancel-circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.my-req .panel-heading {
+    background: #32145a;
+    color: white;
+}
+/*My Requests - Ends*/
+
+/*Site Details - Starts*/
+
+.tag-item {
+    background: none !important;
+    border: none !important;
+}
+
+    .tag-item span {
+        color: black;
+        text-decoration: underline;
+    }
+
+tags-input[max-tags='1'].ng-valid-required .tags .input {
+    display: none;
+}
+
+.pp-ac-subdet {
+    color: #C0C0C0;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.pp-ac-email {
+    color: #C0C0C0;
+    display: block;
+    font-size: 10px;
+}
+
+.selected .pp-ac-subdet, .selected .pp-ac-name {
+    color: white;
+}
+
+.pp-ac-name {
+    display: block;
+}
+
+tags-input .tags {
+    border-radius: 0 !important;
+}
+
+tags-input.ng-invalid .tags {
+    border-color: black !important;
+    box-shadow: none;
+}
+
+.site-det .row > div {
+    padding-left: 5px;
+}
+
+.site-det .row {
+    margin-top: 10px;
+}
+
+tags-input[name="tiFunction"] ul.suggestion-list {
+    max-height: 200px;
+}
+
+tags-input input[type=text]::-webkit-input-placeholder {
+    font-style: italic;
+}
+/* Chrome/Opera/Safari */
+tags-input input[type=text]::-moz-placeholder {
+    font-style: italic;
+}
+/* Firefox 19+ */
+tags-input input[type=text]:-ms-input-placeholder {
+    font-style: italic;
+}
+/* IE 10+ */
+tags-input input[type=text]:-moz-placeholder {
+    font-style: italic;
+}
+/* Firefox 18- */
+
+tags-input .tags {
+    box-shadow: none !important;
+}
+
+.radio-align {
+    margin-top: -3px !important;
+    margin-right: 5px !important;
+}
+
+em.req:after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+    font-weight: bold;
+}
+/*Site Details - Ends*/
+/*Site Templates - Starts*/
+.site-temp .tabs li {
+    display: inline-block;
+    padding: 5px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.site-temp .tabs > ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.site-temp .tabs li.categorySelected {
+    border-bottom: 3px solid black;
+    font-weight: bold;
+}
+/*Site Templates - Ends*/
+/*Modal - Starts*/
+.modal-right-footer span {
+    zoom: 150%;
+}
+
+.modal-pnp .modal-right-footer {
+    right: 50%;
+}
+
+.wm-logo {
+    font-size: 8em;
+    padding: 15px;
+    color: #32145a;
+}
+
+.modal-pnp .btn-image[disabled=disabled], .modal-pnp .btn-image[disabled=disabled]:hover {
+    background-position: 0;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nav-pills li[disabled=disabled] a {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-image i {
+    font-size: 3em;
+    color: #32145a;
+}
+/*.modal-pnp .modal-left a {
+    color: #32145a;
+}
+.modal-pnp .nav-pills > li.active > a {
+    color: #FFF;
+    background-color: #32145a;
+}*/
+/*Modal - Ends*/
+/*Confirmation - Starts*/
+.vw-confim .row {
+    padding: 0;
+    margin: 0;
+}
+
+    .vw-confim .row p {
+        margin: 10px 0;
+    }
+/*Confirmation - Ends*/
+/*ngIf animate - Starts*/
+
+.animate-if.ng-enter, .animate-if.ng-leave {
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+    .animate-if.ng-enter,
+    .animate-if.ng-leave.ng-leave-active {
+        opacity: 0;
+    }
+
+        .animate-if.ng-leave,
+        .animate-if.ng-enter.ng-enter-active {
+            opacity: 1;
+        }
+
+/*ngIf animate - Ends*/
+
+/**/
+.fa-c-loading {
+    position: relative;
+}
+
+    .fa-c-loading > .fa-spinner {
+        position: absolute;
+        right: -20px;
+        top: 3px;
+        z-index: 1;
+    }
+.fa-c-loading .fa-spinner.ng-hide-add-active {
+    display:none;
+}
+.ms-subtleEmphasis {
+    display: none;
+}
+/**/
+
+/*#endregion Added by Nikhil - Mod*/

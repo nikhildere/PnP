@@ -9,8 +9,9 @@ using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using OfficeDevPnP.Core.Diagnostics;
 using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
 using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions;
+using Provisioning.Common.MdlzComponents;
 
-namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
+namespace Provisioning.Common.MdlzComponents.ExtensibilityProviders
 {
     public class MdlzTeamSiteExtensibilityProvider : IProvisioningExtensibilityHandler
     {
@@ -24,14 +25,17 @@ namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
             return null;
         }
 
-        public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, string configurationData)
-        {
-
-        }
-
         public void Provision(ClientContext ctx, ProvisioningTemplate template, ProvisioningTemplateApplyingInformation applyingInformation, TokenParser tokenParser, PnPMonitoredScope scope, string configurationData)
         {
-
+            try
+            {
+                MdlzCommonCustomizations.RemoveRecentFromQuickLaunch(ctx);
+            }
+            catch (Exception ex)
+            {
+                Common.Utilities.Log.Error("MdlzTeamSiteExtensibilityProvider.Provision", ex.ToString());
+                throw;
+            }
         }
     }
 

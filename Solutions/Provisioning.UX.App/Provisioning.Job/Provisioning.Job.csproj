@@ -203,6 +203,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MdlzComponents\RequestApproval\index.html" />
     <Content Include="MdlzComponents\SiteAssets\Blog\css\MDLZBlogSite.css" />
     <Content Include="MdlzComponents\SiteAssets\Blog\images\BlogSiteBanner.png" />
     <Content Include="MdlzComponents\SiteAssets\Blog\images\red_header_mdl.png" />
@@ -349,8 +350,9 @@
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.EnterpriseWiki\EnterpriseWikiTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\default.aspx">
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\Welcome.aspx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\ProjectSiteTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

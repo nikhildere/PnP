@@ -452,7 +452,7 @@ div#title
     margin-left:630px;
 }
 
-input[type=password], input[type=text], textarea
+input[type=password], input[type=text], textarea, select
 {
     margin-left: 20px;
 }

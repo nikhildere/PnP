@@ -26,12 +26,7 @@ namespace Provisioning.Common.MdlzComponents.ExtensibilityProviders
         {
             return null;
         }
-
-        public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, string configurationData)
-        {
-
-        }
-
+        
         public void Provision(ClientContext ctx, ProvisioningTemplate template, ProvisioningTemplateApplyingInformation applyingInformation, TokenParser tokenParser, PnPMonitoredScope scope, string configurationData)
         {
             Web web = ctx.Web;

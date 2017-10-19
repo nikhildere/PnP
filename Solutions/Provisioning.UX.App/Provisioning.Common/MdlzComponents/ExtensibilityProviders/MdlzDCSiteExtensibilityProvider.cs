@@ -10,9 +10,9 @@ using OfficeDevPnP.Core.Diagnostics;
 using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
 using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.TokenDefinitions;
 
-namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
+namespace Provisioning.Common.MdlzComponents.ExtensibilityProviders
 {
-    public class MdlzBPSiteExtensibilityProvider : IProvisioningExtensibilityHandler
+    public class MdlzDCSiteExtensibilityProvider : IProvisioningExtensibilityHandler
     {
         public ProvisioningTemplate Extract(ClientContext ctx, ProvisioningTemplate template, ProvisioningTemplateCreationInformation creationInformation, PnPMonitoredScope scope, string configurationData)
         {
@@ -23,11 +23,7 @@ namespace Provisioning.Job.MdlzComponents.ExtensibilityProviders
         {
             return null;
         }
-
-        public void ProcessRequest(ClientContext ctx, ProvisioningTemplate template, string configurationData)
-        {
-
-        }
+        
         public void Provision(ClientContext ctx, ProvisioningTemplate template, ProvisioningTemplateApplyingInformation applyingInformation, TokenParser tokenParser, PnPMonitoredScope scope, string configurationData)
         {
 

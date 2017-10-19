@@ -277,6 +277,5 @@
         <pnp:Property Key="EnableExternalSharing" Value="true"/>
       </pnp:Properties>
     </pnp:ProvisioningTemplate>
-
   </pnp:Templates>
 </pnp:Provisioning>

@@ -98,6 +98,12 @@ namespace Provisioning.Common.MdlzComponents
             UsingContext(ctx =>
             {
                 var owner = ctx.Web.EnsureUser(request.SiteOwner.Name);
+
+                ctx.Web.AssociatedMemberGroup.Owner = ctx.Web.AssociatedOwnerGroup;
+                ctx.Web.AssociatedMemberGroup.Update();
+                ctx.Web.AssociatedVisitorGroup.Owner = ctx.Web.AssociatedOwnerGroup;
+                ctx.Web.AssociatedVisitorGroup.Update();
+
                 ctx.Load(owner);
                 ctx.ExecuteQueryRetry();
                 request.SiteOwner.Email = owner.Email;
@@ -199,6 +205,21 @@ namespace Provisioning.Common.MdlzComponents
                 string.Format(cn_RemoteWebHostNameTokenFormat, ConfigurationFactory.GetInstance().GetAppSetingsManager().GetAppSettings().HostedAppHostNameOverride));
         }
 
+        public static void RemoveRecentFromQuickLaunch(ClientContext ctx)
+        {
+            ctx.Load(ctx.Web.Navigation.QuickLaunch);
+            ctx.ExecuteQueryRetry();
+
+            var nav = ctx.Web.Navigation.QuickLaunch.Where(x => x.Url == string.Empty || x.Url.EndsWith("SitePages/Forms/ByAuthor.aspx"));
+
+            if (nav != null)
+                for (int i = nav.Count() - 1; i >= 0; i--)
+                {
+                    nav.ElementAt(i).DeleteObject();
+                }
+            if (ctx.HasPendingRequest)
+                ctx.ExecuteQueryRetry();
+        }
         #endregion
     }
 }

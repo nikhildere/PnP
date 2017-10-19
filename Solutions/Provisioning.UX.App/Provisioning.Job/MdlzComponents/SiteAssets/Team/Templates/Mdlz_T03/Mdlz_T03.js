@@ -3,17 +3,49 @@
 //Initiates call to on load funcionality on page load.
 //_spBodyOnLoadFunctionNames.push("OnloadTemplatefunctions");
 
-window.onload = function () {
-	//Disable Loading Div after the Mondelez branding is applied
-   $('#loader').fadeOut("Slow");
-   $('#loader').remove();
-    document.getElementsByTagName('form')[0].style.visibility = "visible";
-    OnloadTemplatefunctions();
+/*curWindowURL = window.location.href.toLowerCase();
 	
-   //Fix for ribbon overlapping
-   if($('.ms-cui-tabContainer').length)
-        $('#s4-ribbonrow').css("cssText","height:126px;");
-};
+if(curWindowURL.indexOf("/_layouts/15/start.aspx#/") > -1){
+	var strArray = curWindowURL.split("/_layouts/15/start.aspx#");
+	if(strArray[0] == undefined || strArray[0] == null){
+		strArray[0] = "";
+	}
+	if(strArray[1] == undefined || strArray[1] == null){
+		strArray[1] = "";
+	}
+	curWindowURL = strArray[0] + strArray[1];
+}*/
+
+function checkVariable(){
+	if(window.jQuery){
+		try{
+	//window.onload = function() {
+	$(document).ready(function(){
+		//Disable Loading Div after the Mondelez branding is applied
+		//$('#loader').fadeOut("Slow");
+		//document.getElementsByTagName('body')[0].style.visibility = 'visible';
+		//document.getElementsByTagName('form')[0].style.visibility = "visible";
+		//document.getElementsByTagName('body')[0].style.display="";
+		document.getElementsByTagName('form')[0].style.visibility = "visible";
+		OnloadTemplatefunctions();
+		
+		//Fix for ribbon overlapping
+	   if($('.ms-cui-tabContainer').length)
+			$('#s4-ribbonrow').css("cssText","height:126px;");
+	});
+}catch(e){
+	/*document.getElementById('loader').style.display = 'none';
+	document.getElementsByTagName('body')[0].style.visibility = 'visible';
+	document.getElementsByTagName('form')[0].style.visibility = "visible";
+	OnloadTemplatefunctions();*/
+	window.setTimeout("checkVariable();",100);
+}
+	}
+	else{
+	window.setTimeout("checkVariable();",100);
+	}
+}
+checkVariable();
 
 
 //check IE Version

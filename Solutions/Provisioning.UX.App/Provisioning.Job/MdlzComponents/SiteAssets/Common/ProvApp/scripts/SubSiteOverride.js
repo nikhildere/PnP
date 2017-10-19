@@ -22,15 +22,15 @@ SubO_ExecuteWhenJqueryReady(function ()
             link.href = url;
         }
 
-        if (window.location.pathname.toLowerCase().endsWith("newsbweb.aspx")) {
+        /*if (window.location.pathname.toLowerCase().endsWith("newsbweb.aspx")) {
             window.location = SubSiteSettings_Web_Url;
-        }
+        }*/
 
         //Make list url clickable on list settings page
         if (window.location.pathname.toLowerCase().endsWith('listedit.aspx')) {
             var listEditUrlElem = $('td.ms-listeditheader > table#idItemHoverTable tr:nth-child(3) > td:last-child');
-            if (listEditUrlElem) {
-                var listEditUrl = listEditUrlElem.text().trim();
+            if (listEditUrlElem && listEditUrlElem.length > 0) {
+                var listEditUrl = listEditUrlElem.first().text().trim();
                 if (listEditUrl.toLowerCase().startsWith('https://')) {
                     listEditUrlElem.html('<a href="' + listEditUrl + '">' + listEditUrl + '</a>');
                 }

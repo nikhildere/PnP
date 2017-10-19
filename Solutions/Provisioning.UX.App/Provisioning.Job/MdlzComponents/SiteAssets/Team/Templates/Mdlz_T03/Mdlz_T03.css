@@ -78,7 +78,7 @@ body #DeltaTopNavigation ul[class*="static"][class*="templateDARKGRAYNAV"]   {ba
 
 
 /* MPW Add body backgrund image - REMOVE after Margherita Requested removal - pages too busy */
-zzzzzz___MPW___body {background-image: url("https://collaboration.mdlz.com/sites/UITemplates/Template%20Assets%20Library/Mdlz_T03/Images/T03_page_bg.png") !important; } 
+/*zzzzzz___MPW___body {background-image: url("https://ppecollaboration.mdlz.com/sites/UITemplates/Template%20Assets%20Library/Mdlz_T03/Images/T03_page_bg.png") !important; } */
 
 
 
@@ -182,14 +182,18 @@ END of remove delta top navigation lines */
 /* Position each Topnav div to fit the top image for each combination of top nav settings */
 
 #zz10_TopNavigationMenuV4 {margin-left: -3px !important}     /* Non Publishing Site Settings Date 20th Jan 2016*/
-#zz10_TopNavigationMenu     {margin-left: -2.5px !important}     /* This option appears for JVK no idea why Date 21th Jan 2016*/
-#zz11_TopNavigationMenu     {margin-left:  -2.5px !important}     /* Publishing Site Contents */
-#zz12_TopNavigationMenu     {margin-left: -1.5px !important}     /* Publishing Site except Site Settings AND webpart pages Infosys- Date 20th Jan 2016*/
-#zz12_TopNavigationMenuV4 {margin-left: -2.5px !important}     /* Publishing Site Settings Date 20th Jan 2016*/
-#zz13_TopNavigationMenu     {margin-left:  -2.5px !important}     /* Non Publishing Wiki Home Page and Publishing Webpart Pages*/
-#zz14_TopNavigationMenu     {margin-left: -2px !important}     /* Non Publishing Webpart Pages and Doclib - Date 20th Jan 2016*/
-#zz14_TopNavigationMenuV4 {margin-left: -2.5px !important}     /* Non Publishing Site Settings Date 20th Jan 2016*/
-#zz15_TopNavigationMenu     {margin-left:  -2px !important}     /* Cant ref-find where this was used - but it IS required */
+/*#zz10_TopNavigationMenu     {margin-left: -2.5px !important}     /* This option appears for JVK no idea why Date 21th Jan 2016*/
+#zz10_TopNavigationMenu     {margin-left: 1.2px !important}     /* This option appears for JVK no idea why Date 21th Jan 2016*/ /*Top navigation fix 21July2017*/
+#zz11_TopNavigationMenu     {margin-left:  1.2px !important}     /* Publishing Site Contents *//*Udated for navigation fix 21July2017*/
+#zz12_TopNavigationMenu     {margin-left: 2px !important}     /* Publishing Site except Site Settings AND webpart pages Infosys- Date 20th Jan 2016*//*Udated for navigation fix 21July2017*/
+#zz12_TopNavigationMenuV4 {margin-left: 1.2px !important}     /* Publishing Site Settings Date 20th Jan 2016*//*Udated for navigation fix 21July2017*/
+/*#zz13_TopNavigationMenu     {margin-left:  -2.5px !important}     /* Non Publishing Wiki Home Page and Publishing Webpart Pages*/
+#zz13_TopNavigationMenu     {margin-left:  1.2px !important}     /* Non Publishing Wiki Home Page and Publishing Webpart Pages*//*Udated for navigation fix 21July2017*/
+/*#zz14_TopNavigationMenu     {margin-left: -2px !important}     /* Non Publishing Webpart Pages and Doclib - Date 20th Jan 2016*/
+#zz14_TopNavigationMenu     {margin-left: 1px !important}     /* Non Publishing Webpart Pages and Doclib - Date 20th Jan 2016*/ /*Udated for navigation fix 21July2017*/
+/*#zz14_TopNavigationMenuV4 {margin-left: -2.5px !important}     /* Non Publishing Site Settings Date 20th Jan 2016*/
+#zz14_TopNavigationMenuV4 {margin-left: 1px !important}     /* Non Publishing Site Settings Date 20th Jan 2016*/ /*Udated for navigation fix 21July2017*/
+#zz15_TopNavigationMenu     {margin-left:  1px !important}     /* Cant ref-find where this was used - but it IS required */ /*Udated for navigation fix 21July2017*/
 #zz16_TopNavigationMenu     {margin-left: -2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz17_TopNavigationMenu     {margin-left: -2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz18_TopNavigationMenu     {margin-left: -2px !important}     /* Added this option just in case it exists  Date 20th Jan 2016*/
@@ -199,11 +203,13 @@ END of remove delta top navigation lines */
 #zz2_TopNavigationMenu       {margin-left: -2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz3_TopNavigationMenu       {margin-left:  -2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz4_TopNavigationMenu       {margin-left: -2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
-#zz5_TopNavigationMenu       {margin-left:  -2.5px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
+/*#zz5_TopNavigationMenu       {margin-left:  -2.5px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
+#zz5_TopNavigationMenu       {margin-left:  1.2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*//*Update for top navigation fix 21July2017*/
 #zz6_TopNavigationMenu       {margin-left: -2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz7_TopNavigationMenu       {margin-left: -2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz8_TopNavigationMenu       {margin-left: -2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
-#zz9_TopNavigationMenu       {margin-left: -2.5px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
+/*#zz9_TopNavigationMenu       {margin-left: -2.5px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
+#zz9_TopNavigationMenu       {margin-left: 1.2px !important}     /* Added this option just in case it exists Date 20th Jan 2016*//*Update for top navigation fix 21July2017*/
 
 
     

@@ -249,8 +249,7 @@
         </pnp:Page>
       </pnp:Pages>
       <pnp:Providers>
-        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzTeamSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
-        </pnp:Provider>
+        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzTeamSiteExtensibilityProvider, Provisioning.Common" Enabled="true"></pnp:Provider>
       </pnp:Providers>
       <pnp:WebSettings SiteLogo="/SiteAssets/vNext/Common/images/MDLZSiteIcon.png"
                        WelcomePage="SitePages/Welcome.aspx" />

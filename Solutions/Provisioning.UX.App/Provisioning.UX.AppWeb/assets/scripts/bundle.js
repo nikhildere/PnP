@@ -2149,6 +2149,7 @@ $(document).ready(function () {
 
     // Load the js file and continue to the 
     //   success handler
+    $.ajaxSetup({ cache: true });
     $.getScript(scriptbase + "SP.UI.Controls.js", renderChrome)
 });
 
@@ -2469,6 +2470,7 @@ function getQueryStringParameter(paramToRetrieve) {
         activate();
 
         function activate() {
+
 
             $log.info($scope.title + ' Activated');
             $scope.appSettings = {};

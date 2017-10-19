@@ -73,6 +73,7 @@ namespace Provisioning.Common
                 else
                 {
                     _ownerGroup = web.AssociatedOwnerGroup;
+                    _ownerGroupDisplayName = _ownerGroup.Title;
                 }
                 if (web.AssociatedMemberGroup.ServerObjectIsNull == true)
                 {
@@ -81,6 +82,7 @@ namespace Provisioning.Common
                 else
                 {
                     _memberGroup = web.AssociatedMemberGroup;
+                    _memberGroupDisplayName = _memberGroup.Title;
                 }
                 if (web.AssociatedVisitorGroup.ServerObjectIsNull == true)
                 {
@@ -89,6 +91,7 @@ namespace Provisioning.Common
                 else
                 {
                     _visitorGroup = web.AssociatedVisitorGroup;
+                    _vistorGroupDisplayName = _visitorGroup.Title;
                 }
 
                 try

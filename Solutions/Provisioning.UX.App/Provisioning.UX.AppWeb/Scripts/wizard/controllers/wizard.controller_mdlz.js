@@ -32,6 +32,7 @@
 
         function activate() {
 
+
             $log.info($scope.title + ' Activated');
             $scope.appSettings = {};
             $scope.loading = true;
@@ -77,7 +78,7 @@
         function loadSpinners() {
             $scope.spinnerService.showGroup('requests');
         }
-
+        
         function initModal() {
 
             // Set event handler to open the modal dialog window

@@ -159,13 +159,13 @@ zzzzzz___MPW___.mondoleze-template-site-title {
 #zz12_TopNavigationMenu_NavMenu_Edit {
 	display: none !important;
 }
-zzzzzz___MPW___#s4-titlerow {
-	width: 1152px !important; height: 137px !important; padding-bottom: 50px !important; background-image: url("https://collaboration.mdlz.com/sites/CSC/PublishingImages/banner.png"); background-repeat: no-repeat !important;
+/*zzzzzz___MPW___#s4-titlerow {
+	width: 1152px !important; height: 137px !important; padding-bottom: 50px !important; background-image: url("https://ppecollaboration.mdlz.com/sites/CSC/PublishingImages/banner.png"); background-repeat: no-repeat !important;
 	}
 
 xxxxxx___MPW___#s4-titlerow {
-	width: 1152px !important; min-height:320px !important; height: 320px !important; margin-top:50px !important; padding-bottom: 50px !important; background-image: url("https://collaboration.mdlz.com/sites/CSC/PublishingImages/banner.png"); background-repeat: no-repeat !important;
-	}
+	width: 1152px !important; min-height:320px !important; height: 320px !important; margin-top:50px !important; padding-bottom: 50px !important; background-image: url("https://ppecollaboration.mdlz.com/sites/CSC/PublishingImages/banner.png"); background-repeat: no-repeat !important;
+	}*/
 
 /* NB height = 270 = 320 required height MINUS 50 px margin top,  so making nett 270.   If height is set to 320 leaves too much empty space underneath the image and nav menu etc */
 #s4-titlerow {
@@ -204,15 +204,23 @@ body > form > div#s4-workspace > div > div > div#s4-topheader2 > div > table.s4-
 /*#zz12_RootAspMenu {margin-left: -3px !important}      Publishing Navigation UL Date 20th Jan 2016*/
 /*#zz14_RootAspMenu {margin-left: -3px !important}      Non Publishing Navigation UL Date 20th Jan 2016*/
 /* Position each Topnav div to fit the top image for each combination of top nav settings */
-#zz10_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: -4px !important}     /* This option appears for JVK no idea why Date 20th Jan 2016*/
-#zz11_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left:  -3px !important}     /* Publishing Site Contents */
-#zz12_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: -2.5px !important}     /* Publishing Site except Site Settings AND webpart pages Infosys- Date 20th Jan 2016*/
-#zz12_TopNavigationMenuV4 { position:relative !important; top:284px !important;margin-left: -3px !important}     /* Publishing Site Settings Date 20th Jan 2016*/
-#zz13_TopNavigationMenu     { position:relative !important; top:284px !important; margin-left:  -3.5px !important}     /* Non Publishing Wiki Home Page and Publishing Webpart Pages*/
-#zz13_TopNavigationMenuV4 { position:relative !important; top:284px !important;margin-left: -3px !important}     /* Publishing Site Settings Date 20th Jan 2016*/
-#zz14_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: -3.5px !important}     /* Non Publishing Webpart Pages and Doclib - Date 20th Jan 2016*/
-#zz14_TopNavigationMenuV4 {position:relative !important; top:284px !important; margin-left: -3.5px !important}     /* Non Publishing Site Settings Date 20th Jan 2016*/
-#zz15_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left:  -3.5px !important}     /* Cant ref-find where this was used - but it IS required */
+/*#zz10_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: -4px !important}     /* This option appears for JVK no idea why Date 20th Jan 2016*/
+#zz10_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Non Publishing site pages Member Access 22 July,2017 */
+/*#zz11_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left:  -3px !important}  */   /* Publishing Site Contents */
+#zz11_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left:  0px !important}     /* Publishing Site Contents 22 July,2017*/
+/*#zz12_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: -2.5px !important} */    /* Publishing Site except Site Settings AND webpart pages Infosys- Date 20th Jan 2016*/
+#zz12_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: 0.5px !important}     /* Publishing Site except Site Settings AND webpart pages Infosys- 22 July,2017*/
+/*#zz12_TopNavigationMenuV4   { position:relative !important; top:284px !important;margin-left: -3px !important}     /* Publishing Site Settings Date 20th Jan 2016*/
+#zz12_TopNavigationMenuV4   { position:relative !important; top:284px !important;margin-left: 0px !important}     /* Publishing Site Settings 22 July,2017*/
+/*#zz13_TopNavigationMenu   { position:relative !important; top:284px !important; margin-left:  -3.5px !important} */    /* Non Publishing Wiki Home Page and Publishing Webpart Pages*/
+#zz13_TopNavigationMenu     { position:relative !important; top:284px !important; margin-left:  0px !important}     /* Top navigation issue fix Date 22 July,2017*/
+/*#zz13_TopNavigationMenuV4   { position:relative !important; top:284px !important;margin-left: -3px !important}     /* Publishing Site Settings Date 20th Jan 2016*/
+#zz13_TopNavigationMenuV4   { position:relative !important; top:284px !important;margin-left: 0px !important}     /* Publishing Site Settings Date 20th Jan 2016*/
+#zz14_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Non Publishing Webpart Pages and Doclib - Date 20th Jan 2016*//* Top navigation issue fix Date 22 July,2017*/
+/*#zz14_TopNavigationMenuV4 {position:relative !important; top:284px !important; margin-left: -3.5px !important}*/     /* Non Publishing Site Settings Date 20th Jan 2016*/
+#zz14_TopNavigationMenuV4   {position:relative !important; top:284px !important; margin-left:  0px !important}     /* Top navigation issue fix Date 22 July,2017*/
+/*#zz15_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left:  -3.5px !important}     /* Cant ref-find where this was used - but it IS required */
+#zz15_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left:  0px !important}     /* Non Publishing Webpart Page - 22 July,2017 */
 #zz16_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz17_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz18_TopNavigationMenu     {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Added this option just in case it exists  Date 20th Jan 2016*/
@@ -222,11 +230,13 @@ body > form > div#s4-workspace > div > div > div#s4-topheader2 > div > table.s4-
 #zz2_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz3_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left:  0px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz4_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
-#zz5_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left:  -3.5px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
+/*#zz5_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left:  -3.5px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
+#zz5_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left:  0px !important}     /* Publishing Site-Visitor Access, 22 July,2017*/
 #zz6_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz7_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
 #zz8_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
-#zz9_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left: -3.5px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
+/*#zz9_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left: -3.5px !important}     /* Added this option just in case it exists Date 20th Jan 2016*/
+#zz9_TopNavigationMenu       {position:relative !important; top:284px !important; margin-left: 0px !important}     /* Non Publishing Site pages Read access 22 July,2017*/
 
 
 

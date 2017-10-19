@@ -200,7 +200,199 @@
                           RemoveExistingContentTypes="true">
         </pnp:ListInstance>
       </pnp:Lists>
-      <pnp:Pages>
+      <pnp:Files>
+        <pnp:File Folder="/" Overwrite="true" Src="Mdlz.ProjectSite\Welcome.aspx">
+          <pnp:WebParts>
+            <pnp:WebPart Title="Project Overview &amp; FAQs" Order="10" Zone="Left">
+              <pnp:Contents>
+                <WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                  <Title>Project Overview &amp; FAQs</Title>
+                  <FrameType>Default</FrameType>
+                  <Description>Use for formatted text, tables, and images.</Description>
+                  <IsIncluded>true</IsIncluded>
+                  <ZoneID>Left</ZoneID>
+                  <PartOrder>0</PartOrder>
+                  <FrameState>Normal</FrameState>
+                  <Height />
+                  <Width />
+                  <AllowRemove>true</AllowRemove>
+                  <AllowZoneChange>true</AllowZoneChange>
+                  <AllowMinimize>true</AllowMinimize>
+                  <AllowConnect>true</AllowConnect>
+                  <AllowEdit>true</AllowEdit>
+                  <AllowHide>true</AllowHide>
+                  <IsVisible>true</IsVisible>
+                  <DetailLink />
+                  <HelpLink />
+                  <HelpMode>Modeless</HelpMode>
+                  <Dir>Default</Dir>
+                  <PartImageSmall />
+                  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+                  <PartImageLarge />
+                  <IsIncludedFilter />
+                  <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                  <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                  <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">This will contain overview of projects and provides information regarding all projects and project artifacts</Content>
+                  <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                </WebPart>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Project Summary" Order="20" Zone="Left">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.Portal.WebControls.ProjectSummaryWebPart, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>Cannot import this web part.</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ChromeType" type="chrometype">Default</property>
+                        <property name="Height" type="string" />
+                        <property name="ExportMode" type="exportmode">All</property>
+                        <property name="AllowZoneChange" type="bool">True</property>
+                        <property name="AllowEdit" type="bool">True</property>
+                        <property name="CatalogIconImageUrl" type="string" />
+                        <property name="PrimaryTaskListUrl" type="string">Lists/Tasks</property>
+                        <property name="AllowConnect" type="bool">True</property>
+                        <property name="AllowClose" type="bool">True</property>
+                        <property name="HelpMode" type="helpmode">Modeless</property>
+                        <property name="Hidden" type="bool">False</property>
+                        <property name="ChromeState" type="chromestate">Normal</property>
+                        <property name="AllowHide" type="bool">True</property>
+                        <property name="ShowTimeline" type="bool">True</property>
+                        <property name="TitleUrl" type="string" />
+                        <property name="Title" type="string">Project Summary</property>
+                        <property name="Description" type="string">Displays information about a project in an easy to read overview</property>
+                        <property name="AllowMinimize" type="bool">True</property>
+                        <property name="Width" type="string" />
+                        <property name="Panels" type="System.Collections.Generic.IList`1[[Microsoft.SharePoint.Portal.WebControls.ProjectSummaryPanelConfig, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">[{"IsLatePanel":true,"Title":"late","Enabled":true,"DaysToSearch":0,"ListUrls":null,"UpgradedPersistedProperties":null},{"IsLatePanel":false,"Title":"upcoming","Enabled":true,"DaysToSearch":14,"ListUrls":["Lists/Calendar"],"UpgradedPersistedProperties":null}]</property>
+                        <property name="Direction" type="direction">NotSet</property>
+                        <property name="HelpUrl" type="string" />
+                        <property name="TitleIconImageUrl" type="string" />
+                        <property name="MissingAssembly" type="string">Cannot import this web part.</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Quick Links" Order="30" Zone="Left">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ListUrl" type="string">Lists/QuickAppLinks</property>
+                        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                        <property name="Title" type="string">Quick Links</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Promoted Link Styling" Order="40" Zone="Left">
+              <pnp:Contents>
+                <WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
+                  <Title>Promoted Link Styling</Title>
+                  <FrameType>None</FrameType>
+                  <Description>Use for formatted text, tables, and images.</Description>
+                  <IsIncluded>true</IsIncluded>
+                  <ZoneID>Left</ZoneID>
+                  <PartOrder>500</PartOrder>
+                  <FrameState>Minimized</FrameState>
+                  <Height />
+                  <Width />
+                  <AllowRemove>true</AllowRemove>
+                  <AllowZoneChange>true</AllowZoneChange>
+                  <AllowMinimize>true</AllowMinimize>
+                  <AllowConnect>true</AllowConnect>
+                  <AllowEdit>true</AllowEdit>
+                  <AllowHide>true</AllowHide>
+                  <IsVisible>true</IsVisible>
+                  <DetailLink />
+                  <HelpLink />
+                  <HelpMode>Modeless</HelpMode>
+                  <Dir>Default</Dir>
+                  <PartImageSmall />
+                  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+                  <PartImageLarge />
+                  <IsIncludedFilter />
+                  <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                  <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+                  <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">&lt;style type="text/css"&gt;DIV.ms-promlink-body {HEIGHT: 100px}DIV.ms-tileview-tile-root {WIDTH: 110px !important; HEIGHT: 110px !important}DIV.ms-tileview-tile-content {WIDTH: 100px !important; HEIGHT: 100px !important}DIV.ms-tileview-tile-detailsBox {WIDTH: 100px !important; HEIGHT: 100px !important}DIV.ms-tileview-tile-content &gt; A &gt; DIV &gt; SPAN {WIDTH: 100px !important; HEIGHT: 100px !important}DIV.ms-tileview-tile-content &gt; A &gt; DIV &gt; IMG {WIDTH: 100% !important; MAX-WIDTH: 100%;height: 64px !important;right: 0 !important;}DIV.ms-tileview-tile-content &gt; A &gt; IMG {height:64px !important;right: 0px !important;}UL.ms-tileview-tile-detailsListMedium {PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 100px; PADDING-TOP: 0px}LI.ms-tileview-tile-descriptionMedium {LINE-HEIGHT: 16px; FONT-SIZE: 11px}DIV.ms-tileview-tile-titleTextMediumExpanded {PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px}DIV.ms-tileview-tile-titleTextLargeCollapsed {PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px}DIV.ms-tileview-tile-titleTextLargeExpanded {PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px}DIV.ms-tileview-tile-titleTextMediumCollapsed {POSITION: absolute; MIN-WIDTH: 97px; LINE-HEIGHT: 16px; MIN-HEIGHT: 36px; PADDING-LEFT: 3px; BACKGROUND: #002e4f 0px 0px; FONT-SIZE: 12px; TOP: -36px}LI.ms-tileview-tile-descriptionMedium {PADDING-BOTTOM: 3px; LINE-HEIGHT: 14px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-SIZE: 11px; PADDING-TOP: 3px}&lt;/style&gt;</Content>
+                  <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+                </WebPart>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Help" Order="10" Zone="Right">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ListUrl" type="string">Lists/Help</property>
+                        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                        <property name="Title" type="string">Help</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Project Artifacts" Order="20" Zone="Right">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ListUrl" type="string">ProjectArtifacts</property>
+                        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                        <property name="Title" type="string">Project Artifacts</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+            <pnp:WebPart Title="Issues" Order="30" Zone="Right">
+              <pnp:Contents>
+                <webParts>
+                  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                    <metaData>
+                      <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+                    </metaData>
+                    <data>
+                      <properties>
+                        <property name="ListUrl" type="string">Lists/IssueList</property>
+                        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+                        <property name="Title" type="string">Issues</property>
+                      </properties>
+                    </data>
+                  </webPart>
+                </webParts>
+              </pnp:Contents>
+            </pnp:WebPart>
+          </pnp:WebParts>
+        </pnp:File>
+      </pnp:Files>
+      <!--<pnp:Pages>
         <pnp:Page Layout="TwoColumnsHeader" Url="{site}/SitePages/default.aspx" Overwrite="true">
           <pnp:WebParts>
             <pnp:WebPart Title="Project Overview &amp; FAQs" Row="2" Column="1">
@@ -259,14 +451,13 @@
                         <property name="AllowClose" type="bool">True</property>
                         <property name="HelpMode" type="helpmode">Modeless</property>
                         <property name="Hidden" type="bool">False</property>
-                        <property name="ListId" type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">380a8c99-65ab-47e7-b5d8-a2d11f3df65d</property>
                         <property name="ChromeState" type="chromestate">Normal</property>
                         <property name="AllowHide" type="bool">True</property>
                         <property name="ShowTimeline" type="bool">True</property>
+                        <property name="TitleUrl" type="string" />
                         <property name="Title" type="string">Project Summary</property>
                         <property name="Description" type="string">Displays information about a project in an easy to read overview</property>
                         <property name="AllowMinimize" type="bool">True</property>
-                        <property name="TitleUrl" type="string">Lists/Tasks</property>
                         <property name="Width" type="string" />
                         <property name="Panels" type="System.Collections.Generic.IList`1[[Microsoft.SharePoint.Portal.WebControls.ProjectSummaryPanelConfig, Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">[{"IsLatePanel":true,"Title":"late","Enabled":true,"DaysToSearch":0,"ListUrls":null,"UpgradedPersistedProperties":null},{"IsLatePanel":false,"Title":"upcoming","Enabled":true,"DaysToSearch":14,"ListUrls":["Lists/Calendar"],"UpgradedPersistedProperties":null}]</property>
                         <property name="Direction" type="direction">NotSet</property>
@@ -392,13 +583,13 @@
             </pnp:WebPart>
           </pnp:WebParts>
         </pnp:Page>
-      </pnp:Pages>
+      </pnp:Pages>-->
       <pnp:Providers>
         <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzProjectSiteExtensibilityProvider, Provisioning.Common" Enabled="true">
         </pnp:Provider>
       </pnp:Providers>
-      <pnp:WebSettings SiteLogo="/SiteAssets/vNext/Common/images/MDLZSiteIcon.png" 
-                       WelcomePage="SitePages/default.aspx"/>
+      <pnp:WebSettings SiteLogo="/SiteAssets/vNext/Common/images/MDLZSiteIcon.png"
+                       WelcomePage="Welcome.aspx"/>
       <pnp:PropertyBagEntries>
         <pnp:PropertyBagEntry Key="allowdesigner" Value="0" Overwrite="true" />
         <pnp:PropertyBagEntry Key="allowmasterpageediting" Value="0" Overwrite="true" />
@@ -410,7 +601,6 @@
       <pnp:Features>
         <pnp:WebFeatures>
           <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/>
-          <pnp:Feature ID="00bfea71-d8fe-4fec-8dad-01c19a6e4053" />
         </pnp:WebFeatures>
       </pnp:Features>
     </pnp:ProvisioningTemplate>

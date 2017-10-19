@@ -248,8 +248,7 @@
         </pnp:Page>
       </pnp:Pages>
       <pnp:Providers>
-        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzDefaultNavigationNodesExtensibilityProvider, Provisioning.Common" Enabled="true">
-        </pnp:Provider>
+        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzDefaultNavigationNodesExtensibilityProvider, Provisioning.Common" Enabled="true"></pnp:Provider>
       </pnp:Providers>
       <pnp:WebSettings SiteLogo="/_layouts/15/images/siteIcon.png"
                        WelcomePage="SitePages/Welcome.aspx" />

@@ -1,0 +1,77 @@
+[
+  {
+    "outputFileName": "SiteProvisioningTool/Bundle/scripts/bundle.js",
+    "inputFiles": [
+      "SiteProvisioningTool/Scripts/Vendor/jquery/jquery-2.2.1.min.js",
+      "SiteProvisioningTool/Scripts/Vendor/others/MicrosoftAjax.js",
+      "SiteProvisioningTool/Scripts/Vendor/others/bootstrap.min.js",
+      "SiteProvisioningTool/Scripts/Vendor/others/angular.min.js",
+      "SiteProvisioningTool/Scripts/Vendor/others/angular-messages.js",
+      "SiteProvisioningTool/Scripts/Vendor/others/angular-animate.min.js",
+      "SiteProvisioningTool/Scripts/Vendor/angular-ui/ui-bootstrap-tpls-0.12.1.min.js",
+      "SiteProvisioningTool/Scripts/Vendor/angular-spinners/angular-spinners.min.js",
+      "SiteProvisioningTool/Scripts/Vendor/toastr.js",
+      "SiteProvisioningTool/Scripts/Vendor/spin.js",
+      "SiteProvisioningTool/Scripts/Vendor/angular-sanitize.min.js",
+      "SiteProvisioningTool/Scripts/Vendor/angular-translate.min.js",
+      "SiteProvisioningTool/Scripts/Vendor/angular-translate-loader-static-files.min.js",
+      "SiteProvisioningTool/Scripts/Vendor/others/ng-tags-input.min.js",
+      "SiteProvisioningTool/Scripts/App/wizard/modules/common.js",
+      "SiteProvisioningTool/Scripts/App/wizard/modules/logger.js",
+      "SiteProvisioningTool/Scripts/App/wizard/modules/spinner.js",
+      "SiteProvisioningTool/Scripts/App/wizard/modules/filter.js",
+      "SiteProvisioningTool/Scripts/Vendor/bootstrap.dialog.js",
+      "SiteProvisioningTool/Scripts/App/chromeloader.js",
+      "SiteProvisioningTool/Scripts/App/app.module.js",
+      "SiteProvisioningTool/Scripts/App/wizard/controllers/shell.js",
+      "SiteProvisioningTool/Scripts/App/config.js",
+      "SiteProvisioningTool/Scripts/App/config.exceptionHandler.js",
+      "SiteProvisioningTool/Scripts/App/wizard/modules/wizard.module.js",
+      "SiteProvisioningTool/Scripts/App/wizard/services/utilservice.js",
+      "SiteProvisioningTool/Scripts/App/wizard/controllers/wizard.controller_mdlz.js",
+      "SiteProvisioningTool/Scripts/App/wizard/services/siteQueryService.js",
+      "SiteProvisioningTool/Scripts/App/wizard/directives/restrict.js",
+      "SiteProvisioningTool/Scripts/App/wizard/directives/formDirectives.js",
+      "SiteProvisioningTool/Scripts/App/wizard/modal/wizard.modal.controller_mdlz.js",
+      "SiteProvisioningTool/Scripts/App/data/data.module.js",
+      "SiteProvisioningTool/Scripts/App/data/templates.factory.js",
+      "SiteProvisioningTool/Scripts/App/data/metadata.factory.js",
+      "SiteProvisioningTool/Scripts/App/data/appsettings.factory.js",
+      "SiteProvisioningTool/Scripts/App/wizard/services/provisioningServices.js",
+      "SiteProvisioningTool/Scripts/App/app.js"
+    ],
+    "minify": {
+      "enabled": false
+    }
+  },
+  {
+    "outputFileName": "SiteProvisioningTool/Bundle/styles/bundle.css",
+    "inputFiles": [
+      "SiteProvisioningTool/Styles/Vendor/fabric.min.css",
+      "SiteProvisioningTool/Styles/Vendor/fabric.components.min.css",
+      "SiteProvisioningTool/Styles/Vendor/bootstrap.min.css",
+      "SiteProvisioningTool/Styles/Vendor/bootstrap-theme.min.css",
+      "SiteProvisioningTool/Styles/Vendor/font-awesome.min.css",
+      "SiteProvisioningTool/Styles/Vendor/toastr.css",
+      "SiteProvisioningTool/Styles/App/app.css",
+      "SiteProvisioningTool/Styles/Vendor/ng-tags-input.bootstrap.min.css",
+      "SiteProvisioningTool/Styles/Vendor/ng-tags-input.min.css"
+    ]
+  },
+  {
+    "outputFileName": "SiteProvisioningTool/Bundle/scripts/bundle-subsite.js",
+    "inputFiles": [
+      "SiteProvisioningTool/Scripts/Vendor/jquery/jquery-2.2.1.min.js",
+      "SiteProvisioningTool/Scripts/App/chromeloader.js"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFileName": "SiteProvisioningTool/Bundle/styles/bundle-subsite.css",
+    "inputFiles": [
+      "SiteProvisioningTool/Styles/App/site.css"
+    ]
+  }
+]

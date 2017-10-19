@@ -317,6 +317,9 @@
     <Content Include="Scripts\wizard\controllers\wizard.controller_mdlz.js" />
     <Content Include="Scripts\wizard\modal\wizard.modal.controller_mdlz.js" />
     <Content Include="Scripts\wizard\modules\filter.js" />
+    <Content Include="Scripts\wizard\services\mdlz\provisioningServices.js" />
+    <Content Include="Scripts\wizard\services\mdlz\siteMetadataEditService.js" />
+    <Content Include="Scripts\wizard\services\mdlz\siteQueryService.js" />
     <Content Include="Scripts\wizard\services\siteMetadataEditService.js" />
     <Content Include="Styles\toastr.css" />
     <Content Include="Styles\toastr.min.css" />

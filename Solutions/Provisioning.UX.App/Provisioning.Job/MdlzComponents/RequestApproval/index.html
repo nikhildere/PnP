@@ -1,0 +1,208 @@
+﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+
+<script type="text/javascript">
+    (function () {
+
+        var appID = "app.at";
+        var app = angular.module(appID, []);
+
+        (function () {
+
+            var controllerID = "ctrl.at";
+            app.controller(controllerID, controllerFunc);
+            controllerFunc.$inject = ["$scope", "$sce", "$spService"];
+
+            function controllerFunc($scope, $sce, $spService) {
+
+                init();
+
+                function init() {
+                    $scope.ItemStatusOptions = [{ name: 'Approve', value: 'Approved' }, { name: 'Reject', value: 'Rejected' }]
+                    var itemID = getQueryStringParameter('requestid');
+                    $scope.ErrorCode = 0;
+                    $spService.GetItemByID(itemID).then(function (data) {
+                        $scope.ItemData = data;
+                        $scope.FrameSrc = _spPageContextInfo.webAbsoluteUrl + '/Lists/SiteRequests/DispForm.aspx?ID=' + itemID + '&IsDlg=1'
+                        if ($scope.ItemData) {
+                            if ($scope.ItemData.SP_ProvisioningStatus != "New") {
+                                $scope.ErrorCode = 1;
+                            }
+                        }
+                        else {
+                            $scope.ErrorCode = 2;
+                        }
+                    });
+                }
+
+                function getQueryStringParameter(paramToRetrieve) {
+                    var params =
+                        document.URL.split("?")[1].split("&");
+                    var strParams = "";
+                    for (var i = 0; i < params.length; i = i + 1) {
+                        var singleParam = params[i].split("=");
+                        if (singleParam[0].toLowerCase() == paramToRetrieve)
+                            return singleParam[1];
+                    }
+                }
+
+                $scope.SaveAprrovalStatus = function () {
+                    return $spService.SaveAprrovalStatus($scope.ItemStatus.value).then(function (data) {
+                        if (data && data.status == 412) {
+                            console.log(data);
+                            alert("Your changes could not be saved. This page might been modified in some other window hence may not have your latest changes. Click OK to pull your changes.");
+                            window.location = window.location;
+                            //init();
+                        }
+                        else {
+                            alert('Status has been saved successfully!!');
+                            window.close();
+                        }
+                    });
+                }
+            }
+        })();
+
+        (function () {
+
+            var serviceID = "$spService";
+
+            app.service(serviceID, function ($q, $http) {
+                //Constants
+                var ApiUrlConstants = {
+                    SiteUrl: window.location.pathname.substr(0, window.location.pathname.indexOf('/', 7) + 1),
+                    SiteRequests: "Site Requests",
+                    JsonHeader: { "accept": "application/json;odata=verbose" }
+                };
+
+                //Private Variables
+                var existingUserSettingsSpMetadata;
+                var promise_GetFormDigestValue;
+                var fdExpiry;
+
+                //Public Methods
+                this.GetFormDigestValue = function () {
+                    if (promise_GetFormDigestValue && fdExpiry && (new Date() < fdExpiry)) {
+                        return promise_GetFormDigestValue;
+                    }
+
+                    var apiUrl_ContextInfo = ApiUrlConstants.SiteUrl + "_api/contextinfo";
+
+                    promise_GetFormDigestValue = $http({
+                        method: "POST",
+                        url: apiUrl_ContextInfo,
+                        headers: ApiUrlConstants.JsonHeader,
+                    }).then(function (_response) {
+                        fdExpiry = new Date((new Date().getTime() + ((_response.data.d.GetContextWebInformation.FormDigestTimeoutSeconds - 30) * 1000)));
+                        return {
+                            FormDigest: _response.data.d.GetContextWebInformation.FormDigestValue,
+                            Expiry: fdExpiry
+                        };
+                    }, function (data, status) {
+                        return data;
+                    });
+
+                    return promise_GetFormDigestValue;
+                }
+
+                this.GetItemByID = function (itemID) {
+
+                    var apiUrl_OrgApps = ApiUrlConstants.SiteUrl + "_api/web/lists/GetByTitle('" + ApiUrlConstants.SiteRequests + "')/items(" + itemID + ")?$select=ID,SP_ProvisioningStatus";
+
+                    return $http({
+                        method: "GET",
+                        url: apiUrl_OrgApps,
+                        headers: ApiUrlConstants.JsonHeader,
+                    }).then(function (_response) {
+                        if (_response.data.d) {
+                            existingUserSettingsSpMetadata = _response.data.d;
+                        }
+                        return existingUserSettingsSpMetadata;
+                    }, function (data, status) {
+                        return data;
+                    });
+                }
+
+                this.SaveAprrovalStatus = function (approvalStatus) {
+                    return this.GetFormDigestValue().then(function (fd) {
+                        if (existingUserSettingsSpMetadata) {
+                            existingUserSettingsSpMetadata.SP_ProvisioningStatus = approvalStatus;
+                            return $http({
+                                method: "MERGE",
+                                url: existingUserSettingsSpMetadata.__metadata.uri,
+                                data: JSON.stringify(existingUserSettingsSpMetadata),
+                                headers: {
+                                    "accept": "application/json;odata=verbose",
+                                    "X-RequestDigest": fd.FormDigest,
+                                    "content-Type": "application/json;odata=verbose",
+                                    "X-Http-Method": "PATCH",
+                                    "If-Match": existingUserSettingsSpMetadata.__metadata.etag
+                                },
+                            }).then(function (_response) {
+                                existingUserSettingsSpMetadata.__metadata.etag = _response.headers('ETag');
+                            }, function (data) {
+                                return data;
+                            })
+                        }
+                    });
+                }
+
+            })
+        })();
+
+    })();
+
+</script>
+
+<style>
+    div#s4-ribbonrow, #suiteBar, #s4-titlerow, #sideNavBox {
+        display: none !important;
+    }
+
+    .frame-cont {
+        border-right: 1px solid silver;
+        margin-right: 2em;
+    }
+
+    #contentBox {
+        margin-left: 0 !important;
+    }
+
+    .at-container {
+        margin: 20px !important;
+    }
+
+    #hidZone {
+        display: block !important;
+    }
+</style>
+
+<div ng-app="app.at" ng-controller="ctrl.at" ng-cloak>
+    <div class="at-container">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-9 frame-cont">
+                    <iframe style="overflow:visible" scrolling="yes" width="100%" height="600" ng-show="FrameSrc" src="{{FrameSrc}}"></iframe>
+                </div>
+                <div class="col-sm-2">
+                    <div class="row" ng-if="ErrorCode == 0">
+                        <div class="form-group">
+                            <label>Status:</label>
+                            <select ng-model="$parent.ItemStatus" ng-options="status as status.name for status in ItemStatusOptions"></select>
+                        </div>
+                        <div class="form-group">
+                            <button ng-show="ItemStatus && ItemStatus.value!=''" type="button" class="btn btn-default" ng-click="SaveAprrovalStatus()">Save</button>
+                        </div>
+                    </div>
+                    <h3 ng-if="ErrorCode == 1">This item has already been moderated</h3>
+                    <h3 ng-if="ErrorCode == 2">Items with this ID does not exist</h3>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>

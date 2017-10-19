@@ -13,12 +13,13 @@ using Provisioning.Common.MdlzComponents;
 using Provisioning.Common.Utilities;
 using Provisioning.Common.Configuration;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
+using Provisioning.Common.Data.Metadata;
 
 namespace Provisioning.UX.AppWeb.Pages.SubSite
 {
     public partial class newsbweb : System.Web.UI.Page
     {
-        private ClientContext _ctx;
+        private ClientContext _ctxCurrentWeb;
         private string remoteUrl = string.Empty;
 
         protected void Page_PreInit(object sender, EventArgs e)
@@ -43,7 +44,7 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
             remoteUrl = HttpContext.Current.Request.Url.Host;
 
             var _spContext = SharePointContextProvider.Current.GetSharePointContext(Context);
-            _ctx = _spContext.CreateUserClientContextForSPHost();
+            _ctxCurrentWeb = _spContext.CreateUserClientContextForSPHost();
 
             if (!Page.IsPostBack)
             {
@@ -83,10 +84,36 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
 
             lblBasePath.Text = Request["SPHostUrl"] + "/";
 
-            var availableWebTemplatesForWeb = _ctx.Web.GetAvailableWebTemplates(1033, true);
-            _ctx.Load(availableWebTemplatesForWeb);
-            bool isPublishingWeb = _ctx.Web.IsPublishingWeb();
 
+            BindSiteTemplates();
+
+            var languages = MetadataFactory.GetInstance().GetManager().GetAvailableLanguages();
+            ddlLanguages.DataSource = languages;
+            ddlLanguages.DataBind();
+            if (languages.Any(x => x.Value == _ctxCurrentWeb.Web.Language.ToString()))
+            {
+                var itemToSelect = ddlLanguages.Items.Cast<System.Web.UI.WebControls.ListItem>().FirstOrDefault(x => x.Value == _ctxCurrentWeb.Web.Language.ToString());
+                if (itemToSelect != null)
+                    itemToSelect.Selected = true;
+            }
+
+
+
+        }
+
+        private void BindSiteTemplates()
+        {
+            if (string.IsNullOrEmpty(ddlLanguages.SelectedValue))
+            {
+                _ctxCurrentWeb.Load(_ctxCurrentWeb.Web, x => x.Language);
+                _ctxCurrentWeb.ExecuteQueryRetry();
+            }
+
+            var availableWebTemplatesForWeb = _ctxCurrentWeb.Web.GetAvailableWebTemplates(string.IsNullOrEmpty(ddlLanguages.SelectedValue) ? _ctxCurrentWeb.Web.Language : uint.Parse(ddlLanguages.SelectedValue), true);
+
+            _ctxCurrentWeb.Load(availableWebTemplatesForWeb);
+            bool isPublishingWeb = _ctxCurrentWeb.Web.IsPublishingWeb();
+            
             var _siteFactory = SiteTemplateFactory.GetInstance();
             var _tm = _siteFactory.GetManager();
             var _templates = _tm.GetAvailableTemplates();
@@ -97,7 +124,6 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
                                         && availableWebTemplatesForWeb.Any(y => y.Name == x.RootTemplate)
                                         && (isPublishingWeb || !pubTemplates.Any(y => y == x.RootTemplate)));
             listSites.DataBind();
-
             listSites.SelectedIndex = 0;
         }
 
@@ -105,8 +131,8 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
         {
             BasePermissions perms = new BasePermissions();
             perms.Set(PermissionKind.ManageSubwebs);
-            ClientResult<bool> _permResult = _ctx.Web.DoesUserHavePermissions(perms);
-            _ctx.ExecuteQuery();
+            ClientResult<bool> _permResult = _ctxCurrentWeb.Web.DoesUserHavePermissions(perms);
+            _ctxCurrentWeb.ExecuteQuery();
             return _permResult.Value;
         }
 
@@ -145,49 +171,6 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
             this.Url.Value = _url;
         }
 
-        public Web CreateSubSite(ClientContext ctx, Web hostWeb, string txtUrl,
-                                string template, string title, string description)
-        {
-            // Create web creation configuration
-            WebCreationInformation information = new WebCreationInformation();
-            information.WebTemplate = template;
-            information.Description = description;
-            information.Title = title;
-            information.Url = txtUrl;
-            // Currently all English, could be extended to be configurable based on language pack usage
-
-
-
-            Web newWeb = null;
-            newWeb = hostWeb.Webs.Add(information);
-            ctx.ExecuteQuery();
-
-            ctx.Load(newWeb);
-            ctx.ExecuteQuery();
-
-            // Add sub site link override
-            new subsitehelper().AddJsLink(ctx, newWeb, this.Request);
-
-            // Let's first upload the custom theme to host web
-            new subsitehelper().DeployThemeToWeb(hostWeb, "MyCustomTheme",
-                            HostingEnvironment.MapPath(string.Format("~/{0}", "Pages/subsite/resources/custom.spcolor")),
-                            string.Empty,
-                            HostingEnvironment.MapPath(string.Format("~/{0}", "Pages/subsite/resources/custombg.jpg")),
-                            string.Empty);
-
-            // Setting the Custom theme to host web
-            new subsitehelper().SetThemeBasedOnName(ctx, newWeb, hostWeb, "MyCustomTheme");
-
-            // Set logo to the site
-
-            // Get the path to the file which we are about to deploy
-            new subsitehelper().UploadAndSetLogoToSite(ctx.Web, HostingEnvironment.MapPath(
-                                                            string.Format("~/{0}", "Pages/subsite/resources/template-icon.png")));
-
-            // All done, let's return the newly created site
-            return newWeb;
-        }
-
 
         public Web CreateSubSiteAndApplyProvisioningTemplate(ClientContext ctx, Web hostWeb, string txtUrl,
                                  string title, string description)
@@ -204,21 +187,24 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
                 information.Description = description;
                 information.Title = title;
                 information.Url = txtUrl;
+                information.Language = ddlLanguages.SelectedValue.ToInt32();
 
                 Web newWeb = null;
                 newWeb = hostWeb.Webs.Add(information);
                 ctx.ExecuteQuery();
-
+                
                 ctx.Load(newWeb);
                 ctx.ExecuteQuery();
 
-                ProvisioningTemplate _provisioningTemplate = GetProvTemplateAndMakeAdjustments(newWeb, _tm, _template);
-
-                newWeb.ApplyProvisioningTemplate(_provisioningTemplate);
+                using (var ctxNewWeb = ctx.Clone(newWeb.Url))
+                {
+                    newWeb = ctxNewWeb.Web;
+                    ProvisioningTemplate _provisioningTemplate = GetProvTemplateAndMakeAdjustments(newWeb, _tm, _template);
+                    newWeb.ApplyProvisioningTemplate(_provisioningTemplate);
+                }
 
                 pnlErrMsg.Visible = false;
                 ltlErrMsg.Text = "";
-
 
                 return newWeb;
             }
@@ -264,5 +250,10 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
         {
             Response.Redirect(Page.Request["SPHostUrl"]);
         }
+
+        protected void ddlLanguages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BindSiteTemplates();
+        }
     }
-}   
+}

@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Provisioning.UX.AppWeb", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeDevPnP.Core", "..\..\..\PnP-Sites-Core-Forked\PnP-Sites-Core\Core\OfficeDevPnP.Core\OfficeDevPnP.Core.csproj", "{F2077977-8EBF-409D-BBF4-8EFB328928A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Provisioning.UX.AppWeb.Mdlz", "Provisioning.UX.AppWeb.Mdlz\Provisioning.UX.AppWeb.Mdlz.csproj", "{14839390-3D02-4093-A00A-204000FCB9E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,18 @@ Global
 		{F2077977-8EBF-409D-BBF4-8EFB328928A8}.Release15|Any CPU.Build.0 = Release15|Any CPU
 		{F2077977-8EBF-409D-BBF4-8EFB328928A8}.Release16|Any CPU.ActiveCfg = Release16|Any CPU
 		{F2077977-8EBF-409D-BBF4-8EFB328928A8}.Release16|Any CPU.Build.0 = Release16|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Debug15|Any CPU.ActiveCfg = Debug|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Debug15|Any CPU.Build.0 = Debug|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Debug16|Any CPU.ActiveCfg = Debug|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Debug16|Any CPU.Build.0 = Debug|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Release15|Any CPU.ActiveCfg = Release|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Release15|Any CPU.Build.0 = Release|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Release16|Any CPU.ActiveCfg = Release|Any CPU
+		{14839390-3D02-4093-A00A-204000FCB9E9}.Release16|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
