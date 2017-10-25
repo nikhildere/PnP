@@ -2517,7 +2517,7 @@ function getQueryStringParameter(paramToRetrieve) {
         function loadSpinners() {
             $scope.spinnerService.showGroup('requests');
         }
-
+        
         function initModal() {
 
             // Set event handler to open the modal dialog window
@@ -2717,23 +2717,42 @@ function getQueryStringParameter(paramToRetrieve) {
     angular
         .module('app.wizard')
         .service('$SharePointJSOMService', function ($q, $http) {
-            this.checkUrlREST = function ($scope, value) {
-                var deferred = $.Deferred();                
+            this.checkUrlREST = function (request) {
+                //var deferred = $.Deferred();                
 
-                var executor = new SP.RequestExecutor($scope.spAppWebUrl);
-                executor.executeAsync({
-                    url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@target)/web/url" + "?@target='" + $scope.siteConfiguration.spNewSitePrefix + value + "'",
-                    method: "GET",
-                    headers: { "Accept": "application/json; odata=verbose" },                    
-                    success: function (data, textStatus, xhr) {                       
 
-                        deferred.resolve(data);
-                    },
-                    error: function (xhr, textStatus, errorThrown) {
-                        deferred.reject(JSON.stringify(xhr));
-                    }
+
+                //var executor = new SP.RequestExecutor($scope.spAppWebUrl);
+                //executor.executeAsync({
+                //    url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@target)/web/url" + "?@target='" + $scope.siteConfiguration.spNewSitePrefix + value + "'",
+                //    method: "GET",
+                //    headers: { "Accept": "application/json; odata=verbose" },                    
+                //    success: function (data, textStatus, xhr) {                       
+
+                //        deferred.resolve(data);
+                //    },
+                //    error: function (xhr, textStatus, errorThrown) {
+                //        deferred.reject(JSON.stringify(xhr));
+                //    }
+                //});
+                //return deferred;
+
+                var deferred = $.Deferred();
+                var formData = JSON.stringify(request);
+                $http({
+                    method: 'POST',
+                    data: "=" + formData,
+                    url: '/api/provisioning/doesSiteExists',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+                }).success(function (data, status, headers, config) {
+                    deferred.resolve(data);
+                    console.log("api/provisioning/checkUrlREST result is " + data);
+                }).error(function (data, status) {
+                    deferred.reject(data);
+                    console.log("api/provisioning/checkUrlREST " + data);
                 });
                 return deferred;
+
             };
 
            
@@ -2768,7 +2787,7 @@ function getQueryStringParameter(paramToRetrieve) {
 })();
 (function () {
     //'use strict';
-        
+
     var app = angular.module('app');
 
     app.directive('siteAvailabilityValidator', ['$http', '$SharePointJSOMService', function ($http, $SharePointJSOMService) {
@@ -2779,18 +2798,20 @@ function getQueryStringParameter(paramToRetrieve) {
 
                 function setAsLoading(bool) {
                     ngModel.$setValidity('site-loading', !bool);
-                    scope.$apply();
+                    //scope.$apply();
                 }
 
                 function setAsAvailable(bool) {
                     ngModel.$setValidity('site-available', bool);
-                    scope.$apply();
+                    //scope.$apply();
                 }
 
                 ngModel.$parsers.push(function (value) {
                     if (!value || value.length == 0) return;  // removed this for custom url checks -> "|| !scope.allowCustomUrl"
                     setAsLoading(true);
                     setAsAvailable(false);
+                    //scope.$apply();
+
 
                     if (value === undefined)
                         return ''
@@ -2802,28 +2823,39 @@ function getQueryStringParameter(paramToRetrieve) {
                     }
 
                     setTimeout(function () {
+                        var request = { tenantAdminUrl: scope.siteConfiguration.template.tenantAdminUrl, siteUrl: scope.siteConfiguration.template.hostPath + cleanInputValue };
+                        //scope.siteConfiguration.template.tenantAdminUrl
                         // use the SP service to query for the user's inputted site URL
-                        $.when($SharePointJSOMService.checkUrlREST(scope, cleanInputValue))
+                        $.when($SharePointJSOMService.checkUrlREST(request))
                             .done(function (data) {
 
                                 // web service call was successful - site already exists
                                 // double check its status code and set as unavailable
-                                if (data.statusCode == 200) {
+                                //if (data.statusCode == 200) {
+                                //    console.log(data);
+                                //    setAsLoading(false);
+                                //    setAsAvailable(false);
+                                //}
+
+                                if (data.success) {
                                     console.log(data);
                                     setAsLoading(false);
                                     setAsAvailable(false);
                                 }
-
+                                else {
+                                    setAsLoading(false);
+                                    setAsAvailable(true);
+                                }
                             })
                             .fail(function (err) {
 
                                 // web service call failed - site does not already exist
                                 // set as a valid site
-                                setAsLoading(false);
-                                setAsAvailable(true);
+                                //setAsLoading(false);
+                                //setAsAvailable(true);
 
                             });
-                    }, 2000);
+                    }, 1200);
 
                     return value;
 

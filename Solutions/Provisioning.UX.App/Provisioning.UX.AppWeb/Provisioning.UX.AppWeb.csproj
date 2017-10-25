@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
     <!--<TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>-->
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -556,7 +557,7 @@
     <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.lt-LT.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.nb-NO.resx">
+    <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.no-NO.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\SiteTemplates\ProvisioningTemplates\Language\mdlzbrandingresources.pl-PL.resx">

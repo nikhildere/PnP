@@ -110,9 +110,40 @@ namespace Provisioning.UX.AppWeb.Controllers
 
             return _request;
         }
+        
 
+        [Route("api/provisioning/doesSiteExists")]
+        [WebAPIContextFilter]
+        [HttpPost]
+        public ExternalSharingRequest DoesSiteExists([FromBody]string value)
+        {
+            var _request = JsonConvert.DeserializeObject<ExternalSharingRequest>(value);
+            _request.Success = false;
 
+            try
+            {
+                AppOnlyAuthenticationTenant _auth = new AppOnlyAuthenticationTenant();
+                _auth.TenantAdminUrl = _request.TenantAdminUrl;
+                var _service = new Office365SiteProvisioningService();
+                _service.Authentication = _auth;
+                _request.Success = _service.SiteExists(_request.SiteUrl);
+                if (!_request.Success)
+                {
+                    _request.Success = SiteRequestFactory.GetInstance().GetSiteRequestManager().DoesSiteRequestExist(_request.SiteUrl);
+                }
 
+                return _request;
+            }
+            catch (Exception _ex)
+            {
+                _request.ErrorMessage = _ex.Message;
+                OfficeDevPnP.Core.Diagnostics.Log.Error("ProvisioningController.DoesSiteExists",
+                   "There was an error processing the request. Exception: {0}",
+                   _ex);
+                return _request;
+            }
+
+        }
 
     }
 }

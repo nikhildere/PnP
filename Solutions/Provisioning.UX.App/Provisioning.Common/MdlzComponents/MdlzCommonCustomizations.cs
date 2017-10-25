@@ -105,7 +105,16 @@ namespace Provisioning.Common.MdlzComponents
                 ctx.Web.AssociatedVisitorGroup.Update();
 
                 ctx.Load(owner);
+                ctx.Load(ctx.Web, x => x.RegionalSettings.TimeZone, x=>x.RegionalSettings.TimeZones);
                 ctx.ExecuteQueryRetry();
+
+                if(ctx.Web.RegionalSettings.TimeZone.Id != request.TimeZoneId)
+                {
+                    ctx.Web.RegionalSettings.TimeZone = ctx.Web.RegionalSettings.TimeZones.FirstOrDefault(x=>x.Id == request.TimeZoneId);
+                    ctx.Web.RegionalSettings.Update();
+                    ctx.ExecuteQueryRetry();
+                }
+
                 request.SiteOwner.Email = owner.Email;
             });
         }
