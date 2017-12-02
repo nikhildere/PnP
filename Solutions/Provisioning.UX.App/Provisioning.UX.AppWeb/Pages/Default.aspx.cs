@@ -35,10 +35,12 @@ namespace Provisioning.UX.AppWeb
 
             using (var clientContext = spContext.CreateUserClientContextForSPHost())
             {
-                clientContext.Load(clientContext.Web, web => web.Title);
+                clientContext.Load(clientContext.Web.CurrentUser);
                 clientContext.ExecuteQuery();
                 //Response.Write(clientContext.Web.Title);
             }
+
+
 
             if (this.Request.Cookies[WebAPIHelper.SERVICES_TOKEN] == null)
             {

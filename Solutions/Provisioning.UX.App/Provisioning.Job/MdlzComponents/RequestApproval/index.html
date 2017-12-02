@@ -51,10 +51,15 @@
 
                 $scope.SaveAprrovalStatus = function () {
                     return $spService.SaveAprrovalStatus($scope.ItemStatus.value).then(function (data) {
-                        if (data && data.status == 412) {
+                        if (data && (data.status == 412 || data.status == 400)) {
                             console.log(data);
-                            alert("Your changes could not be saved. This page might been modified in some other window hence may not have your latest changes. Click OK to pull your changes.");
-                            window.location = window.location;
+                            if (data.status == 412) {
+                                alert("Your changes could not be saved. This page might been modified in some other window hence may not have your latest changes. Click OK to pull your changes.");
+                                window.location = window.location;
+                            }
+                            else if (data.status == 400)
+                                alert("Tere was some issue in saving your changes. Check console for details.");
+                            
                             //init();
                         }
                         else {
@@ -130,6 +135,7 @@
                     return this.GetFormDigestValue().then(function (fd) {
                         if (existingUserSettingsSpMetadata) {
                             existingUserSettingsSpMetadata.SP_ProvisioningStatus = approvalStatus;
+                            existingUserSettingsSpMetadata.SP_ApprovedDate = new Date();
                             return $http({
                                 method: "MERGE",
                                 url: existingUserSettingsSpMetadata.__metadata.uri,

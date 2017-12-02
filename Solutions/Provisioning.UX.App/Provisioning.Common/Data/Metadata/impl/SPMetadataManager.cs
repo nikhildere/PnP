@@ -30,7 +30,7 @@ namespace Provisioning.Common.Data.Metadata.Impl
 
         #region instance Members
         const string CAML_GET_ENABLED_CLASSIFICATIONS = "<View><Query><Where><Eq><FieldRef Name='SP_Enabled'/><Value Type='Text'>True</Value></Eq></Where></Query><RowLimit>100</RowLimit></View>";
-        const string CAML_GET_ENABLED_SITEMETADATA = "<View><Query><Where><Eq><FieldRef Name='SP_Enabled'/><Value Type='Text'>True</Value></Eq></Where></Query><RowLimit>100</RowLimit></View>";
+        const string CAML_GET_ENABLED_SITEMETADATA = "<View><Query><Where><Eq><FieldRef Name='SP_Enabled'/><Value Type='Text'>True</Value></Eq></Where><OrderBy><FieldRef Name='SP_DisplayOrder'/></OrderBy></Query><RowLimit>100</RowLimit></View>";
 
         #endregion
 

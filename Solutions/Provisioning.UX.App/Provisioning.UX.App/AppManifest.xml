@@ -12,7 +12,7 @@
   </Properties>
 
   <AppPrincipal>
-    <RemoteWebApplication ClientId="*" />
+    <RemoteWebApplication ClientId="N34j7j3hOV8absSqudGesnh9BOE23QmL1F34AMIijE4=" />
   </AppPrincipal>
   <AppPermissionRequests AllowAppOnlyPolicy="true">
     <AppPermissionRequest Scope="http://sharepoint/content/tenant" Right="FullControl" />

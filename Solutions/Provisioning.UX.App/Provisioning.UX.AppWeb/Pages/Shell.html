@@ -1,4 +1,4 @@
-﻿<div data-ng-controller="shell as vm">    
+﻿<div data-ng-controller="shell as vm">
     <section id="content" class="content">
         <div data-ng-show="vm.isBusy" class="page-splash dissolve-animation">
             <div data-cc-spinner="vm.spinnerOptions"></div>
@@ -6,7 +6,7 @@
         </div>
 
         <div data-ng-include="'mdlz/wizard.html'"></div>
-        
+
     </section>
     <div class="templ-preview-overlay" ng-if="PreviewModalPopup.Visible">
 
@@ -15,10 +15,17 @@
         <div>
             <div>
                 <h3>Template Preview</h3>
-                <a href="javascript:;" ng-click="PreviewModalPopup.Visible = false">X</a>    
+                <a href="javascript:;" ng-click="PreviewModalPopup.Visible = false">X</a>
                 <div class="clr"></div>
             </div>
-            <img ng-src="{{PreviewModalPopup.ImageUrl}}" alt="Template Preview" />
+            <div class="templ-preview-img-cont">
+                <div class="loader">
+                    <i class="fa fa-spinner fa-spin fa-3x fa-fw" style=""></i>
+                </div>
+                <div class="templ-preview-img">
+                    <img ng-src="{{PreviewModalPopup.ImageUrl}}" alt="Template Preview" />
+                </div>
+            </div>
         </div>
     </div>
 </div>

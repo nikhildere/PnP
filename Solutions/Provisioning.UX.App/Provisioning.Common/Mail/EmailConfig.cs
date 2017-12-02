@@ -36,6 +36,7 @@ namespace Provisioning.Common.Mail
         private const string TOKEN_SITETITLE = "[SITETITLE]";
         private const string TOKEN_EDITPAGEURL = "[EDITPAGEURL]";
         private const string TOKEN_SITETEMPLATE = "[SITETEMPLATE]";
+        private const string TOKEN_SITEDESCRIPTION = "[SITEDESCRIPTION]";
         private const string TOKEN_STORAGELIMIT = "[STORAGELIMIT]";
         private const string TOKEN_ERROR_MESSAGE = "[ERRORMESSAGE]";
 
@@ -162,6 +163,7 @@ namespace Provisioning.Common.Mail
             template = template.Replace(TOKEN_SITETITLE, message.SiteTitle);
             template = template.Replace(TOKEN_SITETEMPLATE, message.SiteTemplate);
             template = template.Replace(TOKEN_EDITPAGEURL, message.EditPageUrl);
+            template = template.Replace(TOKEN_SITEDESCRIPTION, message.SiteDescription);
 
             //template = template.Replace(TOKEN_STORAGELIMIT,
             //    String.Format(new FileSizeFormatProvider(), "{0:fs}", message.StorageLimit));

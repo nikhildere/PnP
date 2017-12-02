@@ -143,6 +143,10 @@ body {
 .modal-pnp .media-body {
     padding-top: 5px;
 }
+
+.modal-pnp .media {
+    margin-top: 14px;
+}
 /*#endregion*/
 
 
@@ -289,8 +293,9 @@ body {
 }
 
 .form-control {
-    height: 28px;
-    font-size: 11px;
+    /*height: 28px;
+    font-size: 11px;*/
+    width: 98.5%;
 }
 
 .control-label {
@@ -659,6 +664,7 @@ hidd html, body {
         max-width: 100%;
         margin: 0 auto;
         display: block;
+        max-height: 100%;
     }
 
     .templ-preview-display a {
@@ -673,6 +679,24 @@ hidd html, body {
         color: darkgray;
         float: right;
     }
+.templ-preview-img-cont {
+    min-height: 600px;
+    position: relative;
+}
+.templ-preview-img {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+}
+.templ-preview-img-cont .loader {
+    margin-top: 14%;
+    font-size: 2.5em;
+    color: #f5f4f4;
+    position: absolute;
+    z-index: 0;
+    left: 19em;
+}
 
 .templ-thumb {
     position: relative;
@@ -680,7 +704,8 @@ hidd html, body {
 
     .templ-thumb > img {
         width: 200px;
-        border: 3px solid grey;
+        border: 2px solid #c5c3c3;
+        border-radius: 5px;
     }
 
     .templ-thumb a {
@@ -865,13 +890,13 @@ tags-input[max-tags='1'].ng-valid-required .tags .input {
 }
 
 .pp-ac-subdet {
-    color: #C0C0C0;
+    color: #777;
     display: inline-block;
     font-size: 10px;
 }
 
 .pp-ac-email {
-    color: #C0C0C0;
+    color: #777;
     display: block;
     font-size: 10px;
 }
@@ -901,7 +926,15 @@ tags-input.ng-invalid .tags {
     margin-top: 10px;
 }
 
-tags-input[name="tiFunction"] ul.suggestion-list {
+.site-det .form-group {
+    margin-bottom: 10px;
+}
+
+tags-input[name="tiFunction"] ul.suggestion-list, tags-input[name="tiRegion"] ul.suggestion-list {
+    max-height: 130px;
+}
+
+tags-input[name="ppPrimaryOwner"] ul.suggestion-list, tags-input[name="ppSecondaryOwners"] ul.suggestion-list {
     max-height: 200px;
 }
 
@@ -936,6 +969,13 @@ em.req:after {
     color: red;
     margin-left: 5px;
     font-weight: bold;
+}
+li.suggestion-item *, .tag-item *, .form-control {
+    font-size: 12px !important;
+}
+
+.form-control, .error-messages.ng-active {
+    width: 98.5%
 }
 /*Site Details - Ends*/
 /*Site Templates - Starts*/
@@ -1046,3 +1086,14 @@ em.req:after {
 /**/
 
 /*#endregion Added by Nikhil - Mod*/
+
+.modal-pnp .step::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgba(192, 192, 192, 0.2);
+    margin-bottom: 5em;
+}
+
+.modal-pnp .step::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.52);
+}
+

@@ -108,7 +108,7 @@ div#s4-workspace {
 	margin: auto !important; width: 100% !important; min-width: 320px !important;
 }
 div#s4-ribbonrow {
-	margin: auto !important; width: 100% !important; min-width: 320px !important;
+	margin: auto !important; width: 100% !important; min-width: 320px !important; height: auto !important;
 }
 
 /* Update for this template */

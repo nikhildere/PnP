@@ -14,6 +14,7 @@ namespace Provisioning.Common.Mail
 
         public string Subject { get; set; }
         public string SiteUrl { get; set; }
+        public string SiteDescription { get; set; }
         public string SiteOwner { get; set; }
         public string SiteAdmin { get; set; }
         public string SiteTitle { get; set; }

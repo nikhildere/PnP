@@ -183,7 +183,7 @@ namespace Provisioning.Job
                     Log.Error("Provisioning.Job.SiteProvisioningJob.ProvisionSites", _ex.ToString());
                     _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Exception, _ex.Message);
                     var siteOwner = (siteRequest.SiteOwner ?? (siteRequest.SiteOwner = new SiteUser()));
-                    siteOwner.Name = siteOwnerName;
+                    siteOwner.Name = siteOwnerEmail;
                     siteOwner.Email = siteOwnerEmail;
                     this.SendFailureEmail(siteRequest, _ex.Message, true);
                 }
@@ -204,7 +204,7 @@ namespace Provisioning.Job
                 StringBuilder _admins = new StringBuilder();
                 SuccessEmailMessage _message = new SuccessEmailMessage();
                 _message.SiteUrl = info.Url;
-                _message.SiteOwner = info.SiteOwner.Name;
+                _message.SiteOwner = info.SiteOwner.Email;
                 _message.Subject = "Notification: Your new SharePoint site is ready";
 
                 _message.To.Add(info.SiteOwner.Email);
@@ -293,7 +293,7 @@ namespace Provisioning.Job
                         StringBuilder _admins = new StringBuilder();
                         SentForApprovalEmailMessage _message = new SentForApprovalEmailMessage();
                         _message.SiteUrl = info.Url;
-                        _message.SiteOwner = info.SiteOwner.Name;
+                        _message.SiteOwner = info.SiteOwner.Email;
                         _message.SiteTemplate = info.Template;
                         _message.SiteTitle = info.Title;
                         _message.Subject = "Notification: Your new SharePoint site request is being reviewed";
@@ -327,11 +327,12 @@ namespace Provisioning.Job
                             StringBuilder _admins = new StringBuilder();
                             NewRequestReceivedForApprovalEmailMessage _message = new NewRequestReceivedForApprovalEmailMessage();
                             _message.SiteUrl = info.Url;
-                            _message.SiteOwner = info.SiteOwner.Name;
+                            _message.SiteOwner = info.SiteOwner.Email;
                             _message.SiteTemplate = info.Template;
                             _message.SiteTitle = info.Title;
                             _message.Subject = "Approval Required For Site Creation";
                             _message.EditPageUrl = $"{_settings.SPHostUrl}/SitePages/RequestApproval.aspx?RequestID={info.Id}";
+                            _message.SiteDescription = info.Description;
                             
                             _message.To.AddRange(approverEmailAddresses);
                             foreach (var admin in info.AdditionalAdministrators)
@@ -360,7 +361,7 @@ namespace Provisioning.Job
                         StringBuilder _admins = new StringBuilder();
                         RequestRejectedEmailMessage _message = new RequestRejectedEmailMessage();
                         _message.SiteUrl = info.Url;
-                        _message.SiteOwner = info.SiteOwner.Name;
+                        _message.SiteOwner = info.SiteOwner.Email;
                         _message.SiteTemplate = info.Template;
                         _message.SiteTitle = info.Title;
                         _message.Subject = "Alert: Your new SharePoint site request has been rejected.";
