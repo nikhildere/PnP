@@ -2476,36 +2476,39 @@ function getQueryStringParameter(paramToRetrieve) {
             $scope.appSettings = {};
             $scope.loading = true;
 
-            // web_url/_layouts/15/resource
-            var scriptbase = hostweburl + "/_layouts/15/";
-            // Load the js files and continue to the successHandler
-            $.getScript(scriptbase + "SP.Runtime.js",
-                function () {
-                    $.getScript(scriptbase + "SP.js",
-                        function () {
-                            $.getScript(scriptbase + "SP.RequestExecutor.js",
-                                 function () {
-                                     $scope.spHostWebUrl = $utilservice.spHostUrl();
-                                     $scope.spAppWebUrl = $utilservice.spAppWebUrl();
-                                     $scope.getCurrentUser();
-                                 }
-                            );
-                        }
-                    );
-                }
-            );
+            getInitialData($scope);
 
-            getAppSettings();
+
+            //// web_url/_layouts/15/resource
+            //var scriptbase = hostweburl + "/_layouts/15/";
+            //// Load the js files and continue to the successHandler
+            //$.getScript(scriptbase + "SP.Runtime.js",
+            //    function () {
+            //        $.getScript(scriptbase + "SP.js",
+            //            function () {
+            //                $.getScript(scriptbase + "SP.RequestExecutor.js",
+            //                    function () {
+            //                        $scope.spHostWebUrl = $utilservice.spHostUrl();
+            //                        $scope.spAppWebUrl = $utilservice.spAppWebUrl();
+            //                        $scope.getCurrentUser();
+            //                    }
+            //                );
+            //            }
+            //        );
+            //    }
+            //);
+
+            //getAppSettings();
             initModal();
-            getBusinessMetadata();
-            getTemplates();
+            //getBusinessMetadata();
+            //getTemplates();
 
             var promises = [];
             common.activateController(promises, controllerId)
-                               .then(function () {
-                                   log('Activated Dashboard View');
-                                   log('Retrieving request history from source');
-                               });
+                .then(function () {
+                    log('Activated Dashboard View');
+                    log('Retrieving request history from source');
+                });
         }
 
         $scope.cancel = function () {
@@ -2517,7 +2520,7 @@ function getQueryStringParameter(paramToRetrieve) {
         function loadSpinners() {
             $scope.spinnerService.showGroup('requests');
         }
-        
+
         function initModal() {
 
             // Set event handler to open the modal dialog window
@@ -2549,29 +2552,30 @@ function getQueryStringParameter(paramToRetrieve) {
             var odataType = isSPOD ? "verbose" : "nometadata";
             var executor = new SP.RequestExecutor($scope.spAppWebUrl);
             executor.executeAsync(
-                   {
-                       url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@t)/web/currentUser?$select=email,loginname,title&@t='" + $scope.spHostWebUrl + "'",
-                       method: "GET",
-                       headers:
-                       {
-                           "Accept": "application/json;odata=" + odataType
-                       },
-                       success: function (data) {
-                           var jsonResults = JSON.parse(data.body);
-                           jsonResults = isSPOD ? jsonResults.d : jsonResults;
-                           $log.info('Current user email: ' + jsonResults.Email);
-                           user.name = jsonResults.Email;
-                           $scope.spUser = jsonResults;
-                           //getRequestsByOwner(user);                          
-                           incrementProgBar();
-                           $scope.$apply();
-                       },
-                       error: function () { alert("We are having problems retrieving specific information from the server. Please try again later"); }
-                   }
-               );
+                {
+                    url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@t)/web/currentUser?$select=email,loginname,title&@t='" + $scope.spHostWebUrl + "'",
+                    method: "GET",
+                    headers:
+                    {
+                        "Accept": "application/json;odata=" + odataType
+                    },
+                    success: function (data) {
+                        var jsonResults = JSON.parse(data.body);
+                        jsonResults = isSPOD ? jsonResults.d : jsonResults;
+                        $log.info('Current user email: ' + jsonResults.Email);
+                        user.name = jsonResults.Email;
+                        $scope.spUser = jsonResults;
+                        //getRequestsByOwner(user);                          
+                        incrementProgBar();
+                        $scope.$apply();
+                    },
+                    error: function () { alert("We are having problems retrieving specific information from the server. Please try again later"); }
+                }
+            );
         }
 
         function getRequestsByOwner(request) {
+            $scope.loading = true;
             if (request.name == 'undefined' || request.name == "") {
                 log('Attempting to retrieve user data...');
                 $scope.getCurrentUser();
@@ -2582,9 +2586,11 @@ function getQueryStringParameter(paramToRetrieve) {
                         vm.existingRequests = data;
                         $scope.spinnerService.hideGroup('requests');
                         logSuccess('Retrieved user request history');
+                        $scope.loading = false;
                     }
                 }).fail(function (err) {
                     console.info(JSON.stringify(err));
+                    $scope.loading = false;
                 });
             }
         }
@@ -2625,7 +2631,7 @@ function getQueryStringParameter(paramToRetrieve) {
                 size: 'lg',
                 windowClass: 'modal-pnp'
             });
-        } 
+        }
 
         $scope.cancelExistingRequests = function () {
             $scope.miExistingRequests.dismiss('cancel');
@@ -2709,6 +2715,35 @@ function getQueryStringParameter(paramToRetrieve) {
             $scope.ProgressBar = x >= 100 ? 100 : x;
 
         }
+
+        function getInitialData($scope) {
+            user.name = initialData.User.Email;
+            $scope.spUser = initialData.User;
+
+            $scope.regions = initialData.Data.BusinessMetadata.Regions;
+            $scope.functions = initialData.Data.BusinessMetadata.Functions;
+            $scope.languages = initialData.Data.BusinessMetadata.Languages;
+            $scope.timezones = initialData.Data.BusinessMetadata.TimeZones;
+            $scope.templates = templatesData;
+            $scope.appSettings = initialData.Data.AppSettings;
+
+            // Set MdlzSiteCategories
+            for (var i = 0; i < $scope.appSettings.length; i++) {
+                var setting = $scope.appSettings[i]
+                switch (setting.Key) {
+                    case 'MdlzSiteCategories':
+                        $scope.MdlzSiteCategories = setting.Value.split(';');
+                        $scope.SelectedMdlzSiteCategory = $scope.MdlzSiteCategories[0];
+                        break;
+                }
+
+            }
+
+            completedLoadRequests = totalRequests;
+            $scope.ProgressBar = 100;
+            $scope.loading = false;
+        }
+
     }
 })();
 (function () {
@@ -2754,6 +2789,26 @@ function getQueryStringParameter(paramToRetrieve) {
                 return deferred;
 
             };
+
+            this.GetPeoplePickerSearchEntities = function (searchTerm)
+            {
+                var deferred = $.Deferred();
+                var formData = searchTerm;
+                $http({
+                    method: 'POST',
+                    data: "=" + formData,
+                    url: '/api/provisioning/getPeoplePickerSearchEntities',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+                }).success(function (data, status, headers, config) {
+                    deferred.resolve(data);
+                    console.log("api/provisioning/GetPeoplePickerSearchEntities result is " + data);
+                }).error(function (data, status) {
+                    deferred.reject(data);
+                    console.log("api/provisioning/GetPeoplePickerSearchEntities " + data);
+                });
+                return deferred;
+            }
+
 
            
         });
@@ -2855,7 +2910,7 @@ function getQueryStringParameter(paramToRetrieve) {
                                 //setAsAvailable(true);
 
                             });
-                    }, 1200);
+                    }, 0);
 
                     return value;
 
@@ -2939,9 +2994,9 @@ function getQueryStringParameter(paramToRetrieve) {
         .controller('WizardModalInstanceController', WizardModalInstanceController);
     //.value('urlparams', null);
 
-    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService', '$q', '$http', '$filter'];
+    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService', '$q', '$http', '$filter', '$SharePointJSOMService'];
 
-    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter) {
+    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter, $SharePointJSOMService) {
         $scope.title = 'WizardModalInstanceController';
 
         //$scope.siteConfiguration = {};
@@ -3037,15 +3092,15 @@ function getQueryStringParameter(paramToRetrieve) {
                 case 3:
                     $scope.allFormsValid.siteResponsibilities = $scope.formWizard.siteResponsibilitiesform == null ? false : $scope.formWizard.siteResponsibilitiesform.$valid;
                     break;
-                    //case 3:
-                    //    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
-                    //    break;
+                //case 3:
+                //    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
+                //    break;
                 case 2:
                     $scope.allFormsValid.siteDetails = $scope.formWizard.sitedetailsform == null ? false : $scope.formWizard.sitedetailsform.$valid;
                     break;
-                    //case 7:
-                    //    $scope.allFormsValid.sitePrivacy = $scope.formWizard.siteprivacyform == null ? false : $scope.formWizard.siteprivacyform.$valid;
-                    //    break;
+                //case 7:
+                //    $scope.allFormsValid.sitePrivacy = $scope.formWizard.siteprivacyform == null ? false : $scope.formWizard.siteprivacyform.$valid;
+                //    break;
             }
 
         });
@@ -3186,9 +3241,9 @@ function getQueryStringParameter(paramToRetrieve) {
 
             var promises = [];
             common.activateController(promises, controllerId)
-                               .then(function () {
-                                   logSuccess('Wizard Activated');
-                               });
+                .then(function () {
+                    logSuccess('Wizard Activated');
+                });
 
         }
 
@@ -3354,26 +3409,41 @@ function getQueryStringParameter(paramToRetrieve) {
 
         $scope.GetPeoplePickerSearchEntities = function (query, loadingProp) {
             $scope.siteConfiguration[loadingProp] = true;
+            //var deferred = $q.defer();
+
+            //$app.withSPContext2(function (spContext) {
+            //    var queryParams = new SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters();
+            //    queryParams.set_allowEmailAddresses(true);
+            //    queryParams.set_allowMultipleEntities(false);
+            //    queryParams.set_maximumEntitySuggestions(10);
+            //    queryParams.set_principalType(1);
+            //    queryParams.set_principalSource(15);
+            //    queryParams.set_queryString(query);
+            //    queryParams.set_allUrlZones(false);
+
+            //    var result = SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface.clientPeoplePickerSearchUser(spContext, queryParams);
+            //    spContext.executeQueryAsync(function () {
+            //        $scope.siteConfiguration[loadingProp] = false;
+            //        deferred.resolve(JSON.parse(result.m_value));
+            //    }, function (err) { deferred.reject(err) });
+            //});
+
+            //return deferred.promise
+
             var deferred = $q.defer();
-
-            $app.withSPContext2(function (spContext) {
-                var queryParams = new SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters();
-                queryParams.set_allowEmailAddresses(true);
-                queryParams.set_allowMultipleEntities(false);
-                queryParams.set_maximumEntitySuggestions(10);
-                queryParams.set_principalType(1);
-                queryParams.set_principalSource(15);
-                queryParams.set_queryString(query);
-                queryParams.set_allUrlZones(false);
-
-                var result = SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface.clientPeoplePickerSearchUser(spContext, queryParams);
-                spContext.executeQueryAsync(function () {
-                    $scope.siteConfiguration[loadingProp] = false;
-                    deferred.resolve(JSON.parse(result.m_value));
-                }, function (err) { deferred.reject(err) });
+            $.when($SharePointJSOMService.GetPeoplePickerSearchEntities(query)).done(function (data, status) {
+                if (data != null) {
+                    deferred.resolve(JSON.parse(data).filter(function (e) { return e && e.EntityData && e.EntityData.Email }));
+                }
+                $scope.siteConfiguration[loadingProp] = false;
+            }).fail(function (err) {
+                console.info(JSON.stringify(err));
+                deferred.reject(err);
+                $scope.siteConfiguration[loadingProp] = false;
             });
 
             return deferred.promise
+
         }
 
         $scope.GetFilteredMetadataObjects = function (query, collection) {
@@ -3431,7 +3501,7 @@ function getQueryStringParameter(paramToRetrieve) {
             return isValid;
         }
 
-        
+
     }
 })();
 

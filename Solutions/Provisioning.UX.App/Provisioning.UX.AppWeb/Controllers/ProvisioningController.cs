@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.SharePoint.ApplicationPages.ClientPickerQuery;
+using Newtonsoft.Json;
 using OfficeDevPnP.Core.Utilities;
 using OfficeDevPnP.Core.WebAPI;
 using Provisioning.Common;
@@ -143,6 +144,46 @@ namespace Provisioning.UX.AppWeb.Controllers
                 return _request;
             }
 
+        }
+
+        [Route("api/provisioning/getPeoplePickerSearchEntities")]
+        [WebAPIContextFilter]
+        [HttpPost]
+        public HttpResponseMessage GetPeoplePickerSearchEntities([FromBody] string searchTerm)
+        {
+            try
+            {
+                var appSettings = ConfigurationFactory.GetInstance().GetAppSetingsManager().GetAppSettings();
+
+                AppOnlyAuthenticationTenant _auth = new AppOnlyAuthenticationTenant();
+                _auth.TenantAdminUrl = appSettings.SPHostUrl;
+
+                var _service = new Office365SiteProvisioningService();
+                _service.Authentication = _auth;
+
+                string result = _service.GetPeoplePickerSearchEntities(searchTerm);
+                
+                return Request.CreateResponse((HttpStatusCode)200, result);
+            }
+            catch (JsonSerializationException _ex)
+            {
+                var _message = string.Format("There was an error with the data. Exception {0}", _ex.Message);
+
+                Log.Error("SiteRequestController.GetOwnerRequestsByEmail",
+                     "There was an error get site requests by email. Error Message {0} Error Stack {1}",
+                     _ex.Message,
+                     _ex);
+
+                HttpResponseMessage _response = Request.CreateResponse(HttpStatusCode.BadRequest, _message);
+                throw new HttpResponseException(_response);
+            }
+            catch (Exception _ex)
+            {
+                var _message = string.Format("There was an error processing the request. {0}", _ex.Message);
+                Log.Error("SiteRequestController.GetOwnerRequestsByEmail", "There was an error processing the request. Exception: {0}", _ex);
+                HttpResponseMessage _response = Request.CreateResponse(HttpStatusCode.InternalServerError, _message);
+                throw new HttpResponseException(_response);
+            }
         }
 
     }

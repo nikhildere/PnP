@@ -62,7 +62,7 @@
                                load-on-down-arrow="true"
                                max-results-to-show="10"
                                template="picker-template-SecondaryOwners"
-                               debounce-delay="1000"></auto-complete>
+                               debounce-delay="500"></auto-complete>
             </tags-input>
             <div class="error-messages" ng-if="!sitedetailsform.ppPrimaryOwner.$pristine || submitDenied" ng-messages="sitedetailsform.ppPrimaryOwner.$error">
                 <div ng-message="required">{{ 'You need to choose a primary owner if you are creating this site on behalf of someone' }}</div>
@@ -90,7 +90,7 @@
                                load-on-down-arrow="true"
                                max-results-to-show="10"
                                template="picker-template-SecondaryOwners"
-                               debounce-delay="1000"></auto-complete>
+                               debounce-delay="500"></auto-complete>
             </tags-input>
             <script type="text/ng-template" id="picker-template-SecondaryOwners">
                 <div class="left-panel">

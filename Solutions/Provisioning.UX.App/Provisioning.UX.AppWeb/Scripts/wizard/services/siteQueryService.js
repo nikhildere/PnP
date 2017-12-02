@@ -42,6 +42,26 @@
 
             };
 
+            this.GetPeoplePickerSearchEntities = function (searchTerm)
+            {
+                var deferred = $.Deferred();
+                var formData = searchTerm;
+                $http({
+                    method: 'POST',
+                    data: "=" + formData,
+                    url: '/api/provisioning/getPeoplePickerSearchEntities',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+                }).success(function (data, status, headers, config) {
+                    deferred.resolve(data);
+                    console.log("api/provisioning/GetPeoplePickerSearchEntities result is " + data);
+                }).error(function (data, status) {
+                    deferred.reject(data);
+                    console.log("api/provisioning/GetPeoplePickerSearchEntities " + data);
+                });
+                return deferred;
+            }
+
+
            
         });
 })();

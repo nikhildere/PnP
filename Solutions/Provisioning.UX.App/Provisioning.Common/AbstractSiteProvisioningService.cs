@@ -15,7 +15,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Provisioning.Common.Data.Templates;
 using System.Diagnostics;
-
+using Microsoft.SharePoint.ApplicationPages.ClientPickerQuery;
 
 namespace Provisioning.Common
 {
@@ -50,11 +50,11 @@ namespace Provisioning.Common
                 Tenant _tenant = new Tenant(ctx);
                 ctx.Load(_tenant);
                 try
-                { 
+                {
                     //IF CALLING SP ONPREM THIS WILL FAIL
                     ctx.ExecuteQuery();
                     //check sharing capabilities
-                    if(_tenant.SharingCapability == SharingCapabilities.Disabled)
+                    if (_tenant.SharingCapability == SharingCapabilities.Disabled)
                     {
                         _returnResult = false;
                     }
@@ -66,11 +66,11 @@ namespace Provisioning.Common
                     Log.TraceApi("SharePoint", "AbstractSiteProvisioningService.IsTenantExternalSharingEnabled", _timespan.Elapsed);
 
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
-                    Log.Error("Provisioning.Common.AbstractSiteProvisioningService.IsTenantExternalSharingEnabled", 
-                        PCResources.ExternalSharing_Enabled_Error_Message, 
-                        tenantUrl, 
+                    Log.Error("Provisioning.Common.AbstractSiteProvisioningService.IsTenantExternalSharingEnabled",
+                        PCResources.ExternalSharing_Enabled_Error_Message,
+                        tenantUrl,
                         ex);
                 }
             });
@@ -150,7 +150,7 @@ namespace Provisioning.Common
                 Stopwatch _timespan = Stopwatch.StartNew();
                 var _web = ctx.Web;
                 _appliedSitePolicy = _web.GetAppliedSitePolicy();
-               
+
                 _timespan.Stop();
                 Log.TraceApi("SharePoint", "AbstractSiteProvisioningService.IsTenantExternalSharingEnabled", _timespan.Elapsed);
             });
@@ -165,7 +165,7 @@ namespace Provisioning.Common
                 Stopwatch _timespan = Stopwatch.StartNew();
                 var _web = ctx.Web;
                 bool _policyApplied = _web.ApplySitePolicy(policyName);
-                
+
                 _timespan.Stop();
                 Log.TraceApi("SharePoint", "AbstractSiteProvisioningService.SetSitePolicy", _timespan.Elapsed);
             });
@@ -181,7 +181,7 @@ namespace Provisioning.Common
             });
             return _results;
         }
-  
+
         public Web GetWebByUrl(string url)
         {
             Log.Info("AbstractSiteProvisioningService.GetWebByUrl", "Entering GetWebByUrl Url {0}", url);
@@ -195,7 +195,7 @@ namespace Provisioning.Common
 
             return _web;
         }
-     
+
         /// <summary>
         /// Returns the Site Collection ID
         /// </summary>
@@ -214,7 +214,7 @@ namespace Provisioning.Common
             return _siteID;
         }
         #endregion
-     
+
         /// <summary>
         /// Checks to see if a site already exists.
         /// </summary>
@@ -269,7 +269,28 @@ namespace Provisioning.Common
                 action(_ctx);
             }
         }
+
+        public string GetPeoplePickerSearchEntities(string searchTerm)
+        {
+            ClientResult<string> result = null;
+            UsingContext(ctx =>
+            {
+                result = ClientPeoplePickerWebServiceInterface.ClientPeoplePickerSearchUser(ctx, new ClientPeoplePickerQueryParameters
+                {
+                    QueryString = searchTerm,
+                    AllowMultipleEntities = false,
+                    AllowEmailAddresses = true,
+                    AllUrlZones = false,
+                    MaximumEntitySuggestions = 10,
+                    PrincipalSource = Microsoft.SharePoint.Client.Utilities.PrincipalSource.All,
+                    PrincipalType = Microsoft.SharePoint.Client.Utilities.PrincipalType.User,
+                });
+                ctx.ExecuteQuery();
+            });
+
+            return result!=null && !string.IsNullOrEmpty(result.Value) ? result.Value : string.Empty;
+        }
         #endregion
-      
+
     }
 }

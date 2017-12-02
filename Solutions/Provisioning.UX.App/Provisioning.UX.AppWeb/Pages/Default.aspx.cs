@@ -1,10 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using OfficeDevPnP.Core.WebAPI;
+using Provisioning.Common.MdlzComponents;
+using Microsoft.SharePoint.Client;
+using System.Runtime.Serialization.Json;
+using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using System.Collections.Generic;
+using Provisioning.Common.Metadata;
+using System.Runtime.Serialization;
+using System.Reflection;
+using Provisioning.Common.Data.AppSettings;
+using Provisioning.Common.Data.Templates;
 
 namespace Provisioning.UX.AppWeb
 {
@@ -31,15 +40,8 @@ namespace Provisioning.UX.AppWeb
         {
             // The following code gets the client context and Title property by using TokenHelper.
             // To access other properties, the app may need to request permissions on the host web.
-            var spContext = SharePointContextProvider.Current.GetSharePointContext(Context);
-
-            using (var clientContext = spContext.CreateUserClientContextForSPHost())
-            {
-                clientContext.Load(clientContext.Web.CurrentUser);
-                clientContext.ExecuteQuery();
-                //Response.Write(clientContext.Web.Title);
-            }
-
+            
+            ltlInitialData.Text = new InitialData().GetData(Context);
 
 
             if (this.Request.Cookies[WebAPIHelper.SERVICES_TOKEN] == null)
@@ -47,8 +49,8 @@ namespace Provisioning.UX.AppWeb
                 //Register provisioning service
                 Page.RegisterWebAPIService("api/provisioning");
             }
-
-            
         }
     }
+
+    
 }

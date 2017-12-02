@@ -68,7 +68,7 @@
                                 //setAsAvailable(true);
 
                             });
-                    }, 1200);
+                    }, 0);
 
                     return value;
 

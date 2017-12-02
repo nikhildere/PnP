@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Create It - Site Provisioning</title>
-    <script type="text/javascript" src="../assets/scripts/bundle.js"></script>    
-    <link href="../assets/styles/bundle.css" rel="stylesheet" />
+    <script type="text/javascript" src="../assets/scripts/bundle.js?v=2.2"></script>    
+    <link type="text/css" rel="stylesheet" href="../assets/styles/bundle.css?v=2.2"/>
 </head>
 <body>    
     <%--<div class="navBar">
@@ -35,5 +35,6 @@
             }
         })
     </script>
+    <asp:Literal runat="server" ID="ltlInitialData" ClientIDMode="Static"></asp:Literal>
 </body>
 </html>

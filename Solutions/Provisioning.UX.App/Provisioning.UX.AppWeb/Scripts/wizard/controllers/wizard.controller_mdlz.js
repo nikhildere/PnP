@@ -37,36 +37,39 @@
             $scope.appSettings = {};
             $scope.loading = true;
 
-            // web_url/_layouts/15/resource
-            var scriptbase = hostweburl + "/_layouts/15/";
-            // Load the js files and continue to the successHandler
-            $.getScript(scriptbase + "SP.Runtime.js",
-                function () {
-                    $.getScript(scriptbase + "SP.js",
-                        function () {
-                            $.getScript(scriptbase + "SP.RequestExecutor.js",
-                                 function () {
-                                     $scope.spHostWebUrl = $utilservice.spHostUrl();
-                                     $scope.spAppWebUrl = $utilservice.spAppWebUrl();
-                                     $scope.getCurrentUser();
-                                 }
-                            );
-                        }
-                    );
-                }
-            );
+            getInitialData($scope);
 
-            getAppSettings();
+
+            //// web_url/_layouts/15/resource
+            //var scriptbase = hostweburl + "/_layouts/15/";
+            //// Load the js files and continue to the successHandler
+            //$.getScript(scriptbase + "SP.Runtime.js",
+            //    function () {
+            //        $.getScript(scriptbase + "SP.js",
+            //            function () {
+            //                $.getScript(scriptbase + "SP.RequestExecutor.js",
+            //                    function () {
+            //                        $scope.spHostWebUrl = $utilservice.spHostUrl();
+            //                        $scope.spAppWebUrl = $utilservice.spAppWebUrl();
+            //                        $scope.getCurrentUser();
+            //                    }
+            //                );
+            //            }
+            //        );
+            //    }
+            //);
+
+            //getAppSettings();
             initModal();
-            getBusinessMetadata();
-            getTemplates();
+            //getBusinessMetadata();
+            //getTemplates();
 
             var promises = [];
             common.activateController(promises, controllerId)
-                               .then(function () {
-                                   log('Activated Dashboard View');
-                                   log('Retrieving request history from source');
-                               });
+                .then(function () {
+                    log('Activated Dashboard View');
+                    log('Retrieving request history from source');
+                });
         }
 
         $scope.cancel = function () {
@@ -78,7 +81,7 @@
         function loadSpinners() {
             $scope.spinnerService.showGroup('requests');
         }
-        
+
         function initModal() {
 
             // Set event handler to open the modal dialog window
@@ -110,29 +113,30 @@
             var odataType = isSPOD ? "verbose" : "nometadata";
             var executor = new SP.RequestExecutor($scope.spAppWebUrl);
             executor.executeAsync(
-                   {
-                       url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@t)/web/currentUser?$select=email,loginname,title&@t='" + $scope.spHostWebUrl + "'",
-                       method: "GET",
-                       headers:
-                       {
-                           "Accept": "application/json;odata=" + odataType
-                       },
-                       success: function (data) {
-                           var jsonResults = JSON.parse(data.body);
-                           jsonResults = isSPOD ? jsonResults.d : jsonResults;
-                           $log.info('Current user email: ' + jsonResults.Email);
-                           user.name = jsonResults.Email;
-                           $scope.spUser = jsonResults;
-                           //getRequestsByOwner(user);                          
-                           incrementProgBar();
-                           $scope.$apply();
-                       },
-                       error: function () { alert("We are having problems retrieving specific information from the server. Please try again later"); }
-                   }
-               );
+                {
+                    url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@t)/web/currentUser?$select=email,loginname,title&@t='" + $scope.spHostWebUrl + "'",
+                    method: "GET",
+                    headers:
+                    {
+                        "Accept": "application/json;odata=" + odataType
+                    },
+                    success: function (data) {
+                        var jsonResults = JSON.parse(data.body);
+                        jsonResults = isSPOD ? jsonResults.d : jsonResults;
+                        $log.info('Current user email: ' + jsonResults.Email);
+                        user.name = jsonResults.Email;
+                        $scope.spUser = jsonResults;
+                        //getRequestsByOwner(user);                          
+                        incrementProgBar();
+                        $scope.$apply();
+                    },
+                    error: function () { alert("We are having problems retrieving specific information from the server. Please try again later"); }
+                }
+            );
         }
 
         function getRequestsByOwner(request) {
+            $scope.loading = true;
             if (request.name == 'undefined' || request.name == "") {
                 log('Attempting to retrieve user data...');
                 $scope.getCurrentUser();
@@ -143,9 +147,11 @@
                         vm.existingRequests = data;
                         $scope.spinnerService.hideGroup('requests');
                         logSuccess('Retrieved user request history');
+                        $scope.loading = false;
                     }
                 }).fail(function (err) {
                     console.info(JSON.stringify(err));
+                    $scope.loading = false;
                 });
             }
         }
@@ -186,7 +192,7 @@
                 size: 'lg',
                 windowClass: 'modal-pnp'
             });
-        } 
+        }
 
         $scope.cancelExistingRequests = function () {
             $scope.miExistingRequests.dismiss('cancel');
@@ -270,5 +276,34 @@
             $scope.ProgressBar = x >= 100 ? 100 : x;
 
         }
+
+        function getInitialData($scope) {
+            user.name = initialData.User.Email;
+            $scope.spUser = initialData.User;
+
+            $scope.regions = initialData.Data.BusinessMetadata.Regions;
+            $scope.functions = initialData.Data.BusinessMetadata.Functions;
+            $scope.languages = initialData.Data.BusinessMetadata.Languages;
+            $scope.timezones = initialData.Data.BusinessMetadata.TimeZones;
+            $scope.templates = templatesData;
+            $scope.appSettings = initialData.Data.AppSettings;
+
+            // Set MdlzSiteCategories
+            for (var i = 0; i < $scope.appSettings.length; i++) {
+                var setting = $scope.appSettings[i]
+                switch (setting.Key) {
+                    case 'MdlzSiteCategories':
+                        $scope.MdlzSiteCategories = setting.Value.split(';');
+                        $scope.SelectedMdlzSiteCategory = $scope.MdlzSiteCategories[0];
+                        break;
+                }
+
+            }
+
+            completedLoadRequests = totalRequests;
+            $scope.ProgressBar = 100;
+            $scope.loading = false;
+        }
+
     }
 })();

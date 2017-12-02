@@ -7,9 +7,9 @@
         .controller('WizardModalInstanceController', WizardModalInstanceController);
     //.value('urlparams', null);
 
-    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService', '$q', '$http', '$filter'];
+    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService', '$q', '$http', '$filter', '$SharePointJSOMService'];
 
-    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter) {
+    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter, $SharePointJSOMService) {
         $scope.title = 'WizardModalInstanceController';
 
         //$scope.siteConfiguration = {};
@@ -105,15 +105,15 @@
                 case 3:
                     $scope.allFormsValid.siteResponsibilities = $scope.formWizard.siteResponsibilitiesform == null ? false : $scope.formWizard.siteResponsibilitiesform.$valid;
                     break;
-                    //case 3:
-                    //    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
-                    //    break;
+                //case 3:
+                //    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
+                //    break;
                 case 2:
                     $scope.allFormsValid.siteDetails = $scope.formWizard.sitedetailsform == null ? false : $scope.formWizard.sitedetailsform.$valid;
                     break;
-                    //case 7:
-                    //    $scope.allFormsValid.sitePrivacy = $scope.formWizard.siteprivacyform == null ? false : $scope.formWizard.siteprivacyform.$valid;
-                    //    break;
+                //case 7:
+                //    $scope.allFormsValid.sitePrivacy = $scope.formWizard.siteprivacyform == null ? false : $scope.formWizard.siteprivacyform.$valid;
+                //    break;
             }
 
         });
@@ -254,9 +254,9 @@
 
             var promises = [];
             common.activateController(promises, controllerId)
-                               .then(function () {
-                                   logSuccess('Wizard Activated');
-                               });
+                .then(function () {
+                    logSuccess('Wizard Activated');
+                });
 
         }
 
@@ -422,26 +422,41 @@
 
         $scope.GetPeoplePickerSearchEntities = function (query, loadingProp) {
             $scope.siteConfiguration[loadingProp] = true;
+            //var deferred = $q.defer();
+
+            //$app.withSPContext2(function (spContext) {
+            //    var queryParams = new SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters();
+            //    queryParams.set_allowEmailAddresses(true);
+            //    queryParams.set_allowMultipleEntities(false);
+            //    queryParams.set_maximumEntitySuggestions(10);
+            //    queryParams.set_principalType(1);
+            //    queryParams.set_principalSource(15);
+            //    queryParams.set_queryString(query);
+            //    queryParams.set_allUrlZones(false);
+
+            //    var result = SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface.clientPeoplePickerSearchUser(spContext, queryParams);
+            //    spContext.executeQueryAsync(function () {
+            //        $scope.siteConfiguration[loadingProp] = false;
+            //        deferred.resolve(JSON.parse(result.m_value));
+            //    }, function (err) { deferred.reject(err) });
+            //});
+
+            //return deferred.promise
+
             var deferred = $q.defer();
-
-            $app.withSPContext2(function (spContext) {
-                var queryParams = new SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters();
-                queryParams.set_allowEmailAddresses(true);
-                queryParams.set_allowMultipleEntities(false);
-                queryParams.set_maximumEntitySuggestions(10);
-                queryParams.set_principalType(1);
-                queryParams.set_principalSource(15);
-                queryParams.set_queryString(query);
-                queryParams.set_allUrlZones(false);
-
-                var result = SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface.clientPeoplePickerSearchUser(spContext, queryParams);
-                spContext.executeQueryAsync(function () {
-                    $scope.siteConfiguration[loadingProp] = false;
-                    deferred.resolve(JSON.parse(result.m_value));
-                }, function (err) { deferred.reject(err) });
+            $.when($SharePointJSOMService.GetPeoplePickerSearchEntities(query)).done(function (data, status) {
+                if (data != null) {
+                    deferred.resolve(JSON.parse(data).filter(function (e) { return e && e.EntityData && e.EntityData.Email }));
+                }
+                $scope.siteConfiguration[loadingProp] = false;
+            }).fail(function (err) {
+                console.info(JSON.stringify(err));
+                deferred.reject(err);
+                $scope.siteConfiguration[loadingProp] = false;
             });
 
             return deferred.promise
+
         }
 
         $scope.GetFilteredMetadataObjects = function (query, collection) {
@@ -499,6 +514,6 @@
             return isValid;
         }
 
-        
+
     }
 })();
