@@ -154,7 +154,7 @@ display:none;
 
 
 /*Hiding OneDrive*/
-a[id*='ShellDocuments'] {
+a[id*='ShellDocuments'], a[id*='ShellNewsfeed'], a[id*='ShellSites'] {
     display: none !important;
 }
 

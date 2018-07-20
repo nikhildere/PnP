@@ -108,7 +108,10 @@ div#s4-workspace {
 	margin: auto !important; width: 100% !important; min-width: 320px !important;
 }
 div#s4-ribbonrow {
-	margin: auto !important; width: 100% !important; min-width: 320px !important; /*height: auto !important;*/
+	margin: auto !important;
+	width: 100% !important;
+	min-width: 320px !important;
+	/* height: auto !important; */
 }
 
 /* Update for this template */
@@ -422,9 +425,8 @@ margin-top:-8px;
 }
 
 /* Hiding OneDrive*/
-a[id*='ShellDocuments']
-{
-	display:none !important;
+a[id*='ShellDocuments'], a[id*='ShellNewsfeed'], a[id*='ShellSites'] {
+    display: none !important;
 }
 
 /* Removing Options in Right ot Follow,share,Sync*/

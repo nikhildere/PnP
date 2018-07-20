@@ -450,9 +450,8 @@ margin-top:-8px;
 }
 
 /* Hiding OneDrive*/
-a[id*='ShellDocuments']
-{
-	display:none !important;
+a[id*='ShellDocuments'], a[id*='ShellNewsfeed'], a[id*='ShellSites'] {
+    display: none !important;
 }
 
 /* Removing Options in Right ot Follow,share,Sync*/
