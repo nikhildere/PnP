@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Online.SharePoint.TenantManagement;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -20,7 +21,7 @@ namespace Provisioning.Common
         private int _timeZoneId = 13;
         private uint _lcid = 1033;
         private List<SiteUser> _additionalAdmins = new List<SiteUser>();
-        private bool _externalSharingEnabled = false;
+        private SharingCapabilities _externalSharingEnabled = SharingCapabilities.Disabled;
         private bool _sharePointOnPrem = false;
         #endregion
 
@@ -201,7 +202,7 @@ namespace Provisioning.Common
         /// </summary>
         [DataMember]
         [JsonProperty(PropertyName = "enableExternalSharing")]
-        public bool EnableExternalSharing
+        public SharingCapabilities EnableExternalSharing
         {
             get { return this._externalSharingEnabled; }
             set { this._externalSharingEnabled = value; }

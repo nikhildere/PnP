@@ -206,8 +206,9 @@
                 <div>
                     <input type="radio" ng-model="siteConfiguration.isConfidential" ng-value="1" class="radio-align" /><b>Confidential (recommended): </b>Site will be created with access only to primary and secondary owner. Site owners can provide access to others as needed.
                 </div>
-                <div>
-                    <input type="radio" ng-model="siteConfiguration.isConfidential" ng-value="0" class="radio-align" /><b>Open to all: </b>Site will be created with read access to all employees /contractors with a lan id.
+                <div style="color:red">
+                    <input type="radio" ng-model="siteConfiguration.isConfidential" ng-value="0" class="radio-align" 
+                           onclick="alert('Please be aware that if you choose to keep this site Open to All, content within this site will be accessible and will appear in Search and Delve for all users with a MDLZ account, including contractors.')" /><b>Open to all: </b>Site will be created with read access to all employees /contractors with a lan id.
                 </div>
             </div>
         </div>

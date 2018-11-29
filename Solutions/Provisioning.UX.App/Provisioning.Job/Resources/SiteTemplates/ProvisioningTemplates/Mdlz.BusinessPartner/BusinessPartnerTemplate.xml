@@ -274,7 +274,7 @@
         </pnp:WebFeatures>
       </pnp:Features>
       <pnp:Properties>
-        <pnp:Property Key="EnableExternalSharing" Value="true"/>
+        <pnp:Property Key="ExternalSharingMode" Value="ExistingExternalUserSharingOnly"/>
       </pnp:Properties>
     </pnp:ProvisioningTemplate>
   </pnp:Templates>

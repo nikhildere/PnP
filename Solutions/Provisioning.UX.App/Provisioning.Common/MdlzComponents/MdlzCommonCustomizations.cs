@@ -1,4 +1,5 @@
-﻿using Microsoft.SharePoint.Client;
+﻿using Microsoft.Online.SharePoint.TenantManagement;
+using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Enums;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
@@ -17,7 +18,7 @@ namespace Provisioning.Common.MdlzComponents
 {
     public class MdlzCommonCustomizations
     {
-        private const string cn_EnableExternalSharing = "EnableExternalSharing",
+        private const string cn_EnableExternalSharing = "ExternalSharingMode",
             cn_RemoteWebHostNameToken = "RemoteWebHostNameToken",
             cn_RemoteWebHostNameTokenFormat = "https://{0}";
         #region Fields
@@ -70,7 +71,8 @@ namespace Provisioning.Common.MdlzComponents
         {
             if (provTemplate.Properties.ContainsKey(cn_EnableExternalSharing))
             {
-                request.EnableExternalSharing = Convert.ToBoolean(provTemplate.Properties[cn_EnableExternalSharing]);
+                if(provTemplate.Properties.ContainsKey(cn_EnableExternalSharing))
+                    request.EnableExternalSharing =  provTemplate.Properties[cn_EnableExternalSharing].ToEnum<SharingCapabilities>();
             }
         }
 

@@ -27,7 +27,7 @@ namespace Provisioning.Common.Data.Templates
         private void HandleExternalSharing(ProvisioningTemplate provisioningTemplate, SiteInformation siteRequest)
         {
             //EXTERNAL SHARING CUSTOM ACTION MUST BE DEFINED IN TEMPLATE. IF THE SITE REQUEST DOES NOT HAVE EXTERNAL SHARING ENABLE WE WILL REMOVE THE CUSTOM ACCTION
-            if(!siteRequest.EnableExternalSharing)
+            if(siteRequest.EnableExternalSharing == Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities.Disabled)
             {
                 if(provisioningTemplate.CustomActions != null)
                 {

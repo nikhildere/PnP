@@ -344,16 +344,16 @@ namespace Provisioning.Common.Data.Metadata.Impl
 
                     SiteInformation _srInfo = new SiteInformation();
                     _srInfo.Url = metadata.Url;
-                    if (metadata.EnableExternalSharing)
-                    {
-                        _srInfo.EnableExternalSharing = true;
-                        _sharingStatus = "true";
-                    }
-                    else
-                    {
-                        _srInfo.EnableExternalSharing = false;
-                        _sharingStatus = "false";
-                    }
+                    //if (metadata.EnableExternalSharing)
+                    //{
+                    //    _srInfo.EnableExternalSharing = true;
+                    //    _sharingStatus = "true";
+                    //}
+                    //else
+                    //{
+                    //    _srInfo.EnableExternalSharing = false;
+                    //    _sharingStatus = "false";
+                    //}
 
                     _siteService.SetExternalSharing(_srInfo);
 

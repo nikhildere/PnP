@@ -259,7 +259,7 @@ namespace Provisioning.Common
                     var _siteSharingCapability = _siteProps.SharingCapability;
                     var _targetSharingCapability = SharingCapabilities.Disabled;
 
-                    if(!siteInfo.EnableExternalSharing && _tenantSharingCapability != SharingCapabilities.Disabled)
+                    if(siteInfo.EnableExternalSharing == SharingCapabilities.Disabled  && _tenantSharingCapability != SharingCapabilities.Disabled)
                     {
                         _targetSharingCapability = SharingCapabilities.Disabled;                        
 
@@ -268,9 +268,9 @@ namespace Provisioning.Common
                         ctx.ExecuteQuery();
                         Log.Info("Provisioning.Common.Office365SiteProvisioningService.SetExternalSharing", PCResources.ExternalSharing_Successful, siteInfo.Url);
                     }
-                    if (siteInfo.EnableExternalSharing && _tenantSharingCapability != SharingCapabilities.Disabled)
+                    if (siteInfo.EnableExternalSharing != SharingCapabilities.Disabled && _tenantSharingCapability != SharingCapabilities.Disabled)
                     {
-                        _targetSharingCapability = SharingCapabilities.ExternalUserSharingOnly;                        
+                        _targetSharingCapability = siteInfo.EnableExternalSharing;                        
 
                         _siteProps.SharingCapability = _targetSharingCapability;
                         _siteProps.Update();

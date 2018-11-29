@@ -105,7 +105,7 @@ namespace Provisioning.Common
             if (!siteExists)
             {
                 _siteprovisioningService.CreateSiteCollection(siteRequest, template);
-                if (siteRequest.EnableExternalSharing)
+                if (siteRequest.EnableExternalSharing != Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities.Disabled)
                 {
                     _siteprovisioningService.SetExternalSharing(siteRequest);
                 }
