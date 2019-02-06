@@ -696,6 +696,7 @@ hidd html, body {
     position: absolute;
     z-index: 0;
     left: 19em;
+    display:none;
 }
 
 .templ-thumb {
