@@ -377,14 +377,25 @@
                     }
                     else if (status == 404) {
 
-                        $.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
+                        $SharePointProvisioningService.createNewSiteRequest(request).promise.then(function (data, status) {
                             if (data != null) {
                                 logSuccess("Success!! You will receive an email notification once we have created your site.");
                                 $modalInstance.close($scope.siteConfiguration);
                             }
-                        }).fail(function (data, status) {
-                            console.log(err);
+                        }, function (data, status) {
+                            console.log(data);
+                            logError(data, null, true);
+                            
                         });
+
+                        //$.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
+                        //    if (data != null) {
+                        //        logSuccess("Success!! You will receive an email notification once we have created your site.");
+                        //        $modalInstance.close($scope.siteConfiguration);
+                        //    }
+                        //}).fail(function (data, status) {
+                        //    console.log(err);
+                        //});
                         console.log(request);
                     }
                 }
