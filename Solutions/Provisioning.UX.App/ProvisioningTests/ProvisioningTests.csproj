@@ -201,6 +201,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\PnP-Sites-Core-Forked\PnP-Sites-Core\Core\OfficeDevPnP.Core\OfficeDevPnP.Core.csproj">
+      <Project>{f2077977-8ebf-409d-bbf4-8efb328928a8}</Project>
+      <Name>OfficeDevPnP.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Provisioning.Common\Provisioning.Common.csproj">
       <Project>{77447711-3ab3-4390-a22c-75bb5a97bb95}</Project>
       <Name>Provisioning.Common</Name>
