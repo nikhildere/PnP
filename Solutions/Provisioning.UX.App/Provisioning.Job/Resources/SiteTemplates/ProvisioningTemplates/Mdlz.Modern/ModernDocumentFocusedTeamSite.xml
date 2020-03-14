@@ -1,0 +1,30 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.14.1910.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-44372A3A40A2463796F2B53509669512">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-44372A3A40A2463796F2B53509669512" Version="1" BaseSiteTemplate="STS#3" Scope="RootSite">
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="" PageName="Home.aspx" LCID="0">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;416a4c58-61fc-4166-aa19-1099fad50545&quot;, &quot;title&quot;: &quot;Document library&quot;, &quot;description&quot;: &quot;&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:true,&quot;showDefaultDocumentLibrary&quot;:false,&quot;webpartHeightKey&quot;:4,&quot;selectedListUrl&quot;:&quot;{site}/Shared Documents&quot;,&quot;hideCommandBar&quot;:false,&quot;selectedListId&quot;:&quot;{listid:Documents}&quot;,&quot;webRelativeListUrl&quot;:&quot;/Shared Documents&quot;,&quot;selectedViewId&quot;:&quot;{viewid:Documents,All Documents}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Documents&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="SiteActivity" JsonControlData="{&quot;id&quot;: &quot;eb95c819-ab8f-4689-bd03-0c2d65d47b1f&quot;, &quot;instanceId&quot;: &quot;f2a8650b-5ea0-4ac2-9cde-56e0fd0279b0&quot;, &quot;title&quot;: &quot;Site activity&quot;, &quot;description&quot;: &quot;&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;maxItems&quot;:9}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="eb95c819-ab8f-4689-bd03-0c2d65d47b1f" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;:&quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;,&quot;instanceId&quot;:&quot;e63fe960-3a14-4c60-99f3-5528a1d5b769&quot;,&quot;title&quot;:&quot;People&quot;,&quot;description&quot;:&quot;Display selected people and their profiles&quot;,&quot;dataVersion&quot;:&quot;1.3&quot;,&quot;properties&quot;:{&quot;layout&quot;:1,&quot;persons&quot;:{parameter:PersonsWebpartPersonArray}},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{parameter:PersonsWebpartSearchablePlainTexts},&quot;imageSources&quot;:{},&quot;links&quot;:{}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>        
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Compact" BackgroundEmphasis="Strong" />
+      <pnp:Providers>
+        <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzModernCommonExtensibilityProvider, Provisioning.Common" Enabled="true"></pnp:Provider>
+      </pnp:Providers>
+      <pnp:Theme Name="MDLZ World"></pnp:Theme>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

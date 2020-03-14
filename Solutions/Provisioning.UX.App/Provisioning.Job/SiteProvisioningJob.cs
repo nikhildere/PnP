@@ -185,7 +185,7 @@ namespace Provisioning.Job
                     var siteOwner = (siteRequest.SiteOwner ?? (siteRequest.SiteOwner = new SiteUser()));
                     siteOwner.Name = siteOwnerEmail;
                     siteOwner.Email = siteOwnerEmail;
-                    this.SendFailureEmail(siteRequest, _ex.Message, true);
+                    this.SendFailureEmail(siteRequest, _ex.Message, false);
                 }
             }
         }

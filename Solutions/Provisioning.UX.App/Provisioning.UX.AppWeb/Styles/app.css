@@ -665,6 +665,7 @@ hidd html, body {
         margin: 0 auto;
         display: block;
         max-height: 100%;
+        box-shadow: 0 0 10px 0;
     }
 
     .templ-preview-display a {
@@ -679,16 +680,19 @@ hidd html, body {
         color: darkgray;
         float: right;
     }
+
 .templ-preview-img-cont {
     min-height: 600px;
     position: relative;
 }
+
 .templ-preview-img {
     position: absolute;
     width: 100%;
-    z-index: 1;
-    height: 100%;
+    z-index: 10;
+    padding: 15px 0;
 }
+
 .templ-preview-img-cont .loader {
     margin-top: 14%;
     font-size: 2.5em;
@@ -696,7 +700,7 @@ hidd html, body {
     position: absolute;
     z-index: 0;
     left: 19em;
-    display:none;
+    display: none;
 }
 
 .templ-thumb {
@@ -723,10 +727,10 @@ hidd html, body {
     }
 
 .templ-preview-display > div {
-    background: white;
-    padding: 20px;
-    /*position:relative;*/
-    border-radius: 5px;
+    background: #ece9e9;
+    padding: 10px;
+    overflow-y: auto;
+    height: 98%;
 }
 
     .templ-preview-display > div h3 {
@@ -954,6 +958,7 @@ tags-input input[type=text]:-ms-input-placeholder {
 tags-input input[type=text]:-moz-placeholder {
     font-style: italic;
 }
+
 tags-input input[type=text] {
     font-size: 12px !important;
 }
@@ -975,6 +980,7 @@ em.req:after {
     margin-left: 5px;
     font-weight: bold;
 }
+
 li.suggestion-item *, .tag-item *, .form-control {
     font-size: 12px !important;
 }
@@ -990,7 +996,7 @@ li.suggestion-item *, .tag-item *, .form-control {
     font-size: 16px;
     cursor: pointer;
     margin-right: 5px;
-    width: 150px;
+    width: 135px;
     text-align: center;
 }
 
@@ -1000,10 +1006,37 @@ li.suggestion-item *, .tag-item *, .form-control {
     padding-bottom: 10px;
 }
 
+.site-temp .tabs li:after {
+    content: "(legacy)";
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+    margin-left: 5px;
+}
+
+.site-temp .tabs li.new-categ:after {
+    content: "(new)";
+    color: green;
+}
+
 .site-temp .tabs li.categorySelected {
     border-bottom: 3px solid black;
     font-weight: bold;
 }
+
+.site-temp .tabs-legacy-warn {
+    padding: 3px;
+    background: #ffb3b3;
+    visibility: hidden;
+    margin-right: 1em;
+}
+
+    .site-temp .tabs-legacy-warn.tab-legacy {
+        visibility: visible;
+    }
+    .site-temp .tabs-legacy-warn > i {
+        padding: 0 5px;
+    }
 /*Site Templates - Ends*/
 /*Modal - Starts*/
 .modal-right-footer span {
@@ -1082,9 +1115,11 @@ li.suggestion-item *, .tag-item *, .form-control {
         top: 3px;
         z-index: 1;
     }
-.fa-c-loading .fa-spinner.ng-hide-add-active {
-    display:none;
-}
+
+    .fa-c-loading .fa-spinner.ng-hide-add-active {
+        display: none;
+    }
+
 .ms-subtleEmphasis {
     display: none;
 }
@@ -1101,4 +1136,3 @@ li.suggestion-item *, .tag-item *, .form-control {
 .modal-pnp .step::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.52);
 }
-

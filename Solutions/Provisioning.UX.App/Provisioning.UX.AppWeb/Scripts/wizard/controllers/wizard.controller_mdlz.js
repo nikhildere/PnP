@@ -20,6 +20,7 @@
         var log = getLogFn(controllerId);
         var user = new Object();
 
+
         $rootScope.userContext = [];
         $scope.user;
         $scope.spinnerService = spinnerService;
@@ -293,7 +294,7 @@
                 var setting = $scope.appSettings[i]
                 switch (setting.Key) {
                     case 'MdlzSiteCategories':
-                        $scope.MdlzSiteCategories = setting.Value.split(';');
+                        $scope.MdlzSiteCategories = JSON.parse(setting.Value);
                         $scope.SelectedMdlzSiteCategory = $scope.MdlzSiteCategories[0];
                         break;
                 }

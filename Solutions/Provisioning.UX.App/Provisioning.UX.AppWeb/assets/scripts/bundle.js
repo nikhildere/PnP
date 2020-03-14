@@ -2459,6 +2459,7 @@ function getQueryStringParameter(paramToRetrieve) {
         var log = getLogFn(controllerId);
         var user = new Object();
 
+
         $rootScope.userContext = [];
         $scope.user;
         $scope.spinnerService = spinnerService;
@@ -2732,7 +2733,7 @@ function getQueryStringParameter(paramToRetrieve) {
                 var setting = $scope.appSettings[i]
                 switch (setting.Key) {
                     case 'MdlzSiteCategories':
-                        $scope.MdlzSiteCategories = setting.Value.split(';');
+                        $scope.MdlzSiteCategories = JSON.parse(setting.Value);
                         $scope.SelectedMdlzSiteCategory = $scope.MdlzSiteCategories[0];
                         break;
                 }
@@ -3223,7 +3224,7 @@ function getQueryStringParameter(paramToRetrieve) {
         $scope.filterSiteTemplates = function (template) {
             //return true;
             //return (template.rootTemplate != 'BLOG#0' && template.rootTemplate != 'ENTERWIKI#0');
-            return (template.subWebOnly == false) && template.mdlzSiteCategory == $scope.SelectedMdlzSiteCategory
+            return (template.subWebOnly == false) && template.mdlzSiteCategory == $scope.SelectedMdlzSiteCategory.Title
 
         }
 
@@ -3364,14 +3365,25 @@ function getQueryStringParameter(paramToRetrieve) {
                     }
                     else if (status == 404) {
 
-                        $.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
+                        $SharePointProvisioningService.createNewSiteRequest(request).promise.then(function (data, status) {
                             if (data != null) {
                                 logSuccess("Success!! You will receive an email notification once we have created your site.");
                                 $modalInstance.close($scope.siteConfiguration);
                             }
-                        }).fail(function (data, status) {
-                            console.log(err);
+                        }, function (data, status) {
+                            console.log(data);
+                            logError(data, null, true);
+                            
                         });
+
+                        //$.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {
+                        //    if (data != null) {
+                        //        logSuccess("Success!! You will receive an email notification once we have created your site.");
+                        //        $modalInstance.close($scope.siteConfiguration);
+                        //    }
+                        //}).fail(function (data, status) {
+                        //    console.log(err);
+                        //});
                         console.log(request);
                     }
                 }

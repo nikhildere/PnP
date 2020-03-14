@@ -86,7 +86,7 @@ namespace Provisioning.Common.MdlzComponents
                         item => item[TemplateFields.AutoApprove],
                         item => item[TemplateFields.MdlzSiteCategory]));
 
-                    ctx.ExecuteQuery();
+                    ctx.ExecuteQueryRetry();
                     #endregion
 
                     _timespan.Stop();

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Online.SharePoint.TenantManagement;
 using Microsoft.SharePoint.Client;
+using Newtonsoft.Json;
 using OfficeDevPnP.Core.Enums;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers;
@@ -71,8 +72,8 @@ namespace Provisioning.Common.MdlzComponents
         {
             if (provTemplate.Properties.ContainsKey(cn_EnableExternalSharing))
             {
-                if(provTemplate.Properties.ContainsKey(cn_EnableExternalSharing))
-                    request.EnableExternalSharing =  provTemplate.Properties[cn_EnableExternalSharing].ToEnum<SharingCapabilities>();
+                //if(provTemplate.Properties.ContainsKey(cn_EnableExternalSharing))
+                request.EnableExternalSharing = provTemplate.Properties[cn_EnableExternalSharing].ToEnum<SharingCapabilities>();
             }
         }
 
@@ -97,6 +98,9 @@ namespace Provisioning.Common.MdlzComponents
             //Add hostname parameter for custom actions token replacement
             provTemplate.Parameters.Add(cn_RemoteWebHostNameToken,
                 string.Format(cn_RemoteWebHostNameTokenFormat, ConfigurationFactory.GetInstance().GetAppSetingsManager().GetAppSettings().HostedAppHostNameOverride));
+
+            
+
             UsingContext(ctx =>
             {
                 var owner = ctx.Web.EnsureUser(request.SiteOwner.Name);
@@ -107,18 +111,45 @@ namespace Provisioning.Common.MdlzComponents
                 ctx.Web.AssociatedVisitorGroup.Update();
 
                 ctx.Load(owner);
-                ctx.Load(ctx.Web, x => x.RegionalSettings.TimeZone, x=>x.RegionalSettings.TimeZones);
+                ctx.Load(ctx.Web, x => x.RegionalSettings.TimeZone, x => x.RegionalSettings.TimeZones);
                 ctx.ExecuteQueryRetry();
 
-                if(ctx.Web.RegionalSettings.TimeZone.Id != request.TimeZoneId)
+                if (ctx.Web.RegionalSettings.TimeZone.Id != request.TimeZoneId)
                 {
-                    ctx.Web.RegionalSettings.TimeZone = ctx.Web.RegionalSettings.TimeZones.FirstOrDefault(x=>x.Id == request.TimeZoneId);
+                    ctx.Web.RegionalSettings.TimeZone = ctx.Web.RegionalSettings.TimeZones.FirstOrDefault(x => x.Id == request.TimeZoneId);
                     ctx.Web.RegionalSettings.Update();
                     ctx.ExecuteQueryRetry();
                 }
 
                 request.SiteOwner.Email = owner.Email;
             });
+
+
+            #region Adjustments for Modern Templates
+            {
+                //Add parameters for Modern UI
+                provTemplate.Parameters.Add("CountdownTimer", DateTime.Now.AddDays(90).AddHours(1).ToUniversalTime().ToString("r"));
+                if (provTemplate.Footer != null && provTemplate.Footer.Enabled)
+                    provTemplate.Footer.Name = "© " + request.Title;
+
+                var listOfOwners = request.AdditionalAdministrators.Select(x => x.Name).ToList();
+                listOfOwners.Insert(0, request.SiteOwner.Name);
+                listOfOwners = listOfOwners.Distinct().ToList();
+                provTemplate.Parameters.Add("PersonsWebpartPersonArray", JsonConvert.SerializeObject(listOfOwners.Select(x => new { id = x, role = string.Empty, firstName = string.Empty, lastName = string.Empty, upn = string.Empty, phone = string.Empty, sip = string.Empty, department = string.Empty })));
+                var searchableTextsString = listOfOwners.Select((x, i) => $"\"persons[{i}].name\": \"{x}\",\"persons[0].email\": \"{x}\"");
+                string str = $"{{\"title\": \"Key site contacts\",{string.Join(",", searchableTextsString)}}}";
+                provTemplate.Parameters.Add("PersonsWebpartSearchablePlainTexts", str);
+
+                //Apply Theme
+                if (provTemplate.Theme != null && !string.IsNullOrEmpty(provTemplate.Theme.Name) && string.IsNullOrEmpty(provTemplate.Theme.Palette))
+                {
+                    AbstractSiteProvisioningService _siteprovisioningService = new Office365SiteProvisioningService { Authentication = new AppOnlyAuthenticationTenant() };
+                    _siteprovisioningService.SetWebTheme(request.Url, provTemplate.Theme.Name);
+                    provTemplate.Theme = null;
+                }
+            }
+            #endregion
+
         }
         private void PostProvisioningApply()
         {

@@ -6,9 +6,10 @@
     <!--| filter: {rootTemplate: !+'BLOG' && rootTemplate: !+'ENTERWIKI'}-->
     <div class="tabs">
         <ul>
-            <li ng-repeat="category in MdlzSiteCategories" ng-click="SetSelectedMdlzSiteCategory(category)" ng-class="SelectedMdlzSiteCategory == category?'categorySelected':''">{{category}}</li>
+            <li ng-repeat="category in MdlzSiteCategories" ng-click="SetSelectedMdlzSiteCategory(category)" ng-class="{'categorySelected':(SelectedMdlzSiteCategory.Title == category.Title), 'new-categ': category.IsNew}">{{category.Title}}</li>
         </ul>
     </div>
+    <div ng-class="{'tab-legacy': !SelectedMdlzSiteCategory.IsNew}" class="tabs-legacy-warn">Choosing one of the legacy templates is not recommended as they will be deprecated soon.</div>
     <div class="media" ng-repeat="template in templates | filter: filterSiteTemplates" ng-click="selectTemplate(template)" ng-class="{ 'active': template == siteConfiguration.template }">
         <div class="media-left templ-thumb">
             <img class="media-object" ng-src="{{template.imageUrl}}" alt="{{ 'TEMPLATE_ICON' | translate }}">

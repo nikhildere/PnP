@@ -12,11 +12,10 @@
   </Properties>
 
   <AppPrincipal>
-    <RemoteWebApplication ClientId="N34j7j3hOV8absSqudGesnh9BOE23QmL1F34AMIijE4=" />
+    <RemoteWebApplication ClientId="*" />
   </AppPrincipal>
   <AppPermissionRequests AllowAppOnlyPolicy="true">
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection" Right="FullControl" />
     <AppPermissionRequest Scope="http://sharepoint/content/tenant" Right="FullControl" />
-    <AppPermissionRequest Scope="http://sharepoint/taxonomy" Right="Write" />
-    <AppPermissionRequest Scope="http://sharepoint/search" Right="QueryAsUserIgnoreAppPrincipal" />
   </AppPermissionRequests>
 </App>

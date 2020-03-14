@@ -236,7 +236,7 @@
         $scope.filterSiteTemplates = function (template) {
             //return true;
             //return (template.rootTemplate != 'BLOG#0' && template.rootTemplate != 'ENTERWIKI#0');
-            return (template.subWebOnly == false) && template.mdlzSiteCategory == $scope.SelectedMdlzSiteCategory
+            return (template.subWebOnly == false) && template.mdlzSiteCategory == $scope.SelectedMdlzSiteCategory.Title
 
         }
 

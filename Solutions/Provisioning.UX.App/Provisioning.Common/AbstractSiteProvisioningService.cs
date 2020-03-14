@@ -247,6 +247,16 @@ namespace Provisioning.Common
             return _doesSiteExist;
         }
 
+        public void SetWebTheme(string siteUrl, string themeName)
+        {
+            UsingContext(ctx =>
+            {
+                var tenant = new Tenant(ctx);
+                tenant.SetWebTheme(themeName, siteUrl);
+                ctx.ExecuteQueryRetry();
+            });
+        }
+
         #region ISharePointService Members
         /// <summary>
         /// Delegate that is used to handle creation of ClientContext that is authenticated

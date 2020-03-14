@@ -66,7 +66,6 @@ namespace Provisioning.Common
                     _newsite.UserCodeMaximumLevel = template.UserCodeMaximumLevel;
                     _newsite.UserCodeMaximumLevel = template.UserCodeWarningLevel;
 
-
                     try
                     {
                         SpoOperation _spoOperation = _tenant.CreateSite(_newsite);
