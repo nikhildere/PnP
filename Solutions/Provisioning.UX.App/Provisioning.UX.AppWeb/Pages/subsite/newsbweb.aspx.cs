@@ -14,6 +14,9 @@ using Provisioning.Common.Utilities;
 using Provisioning.Common.Configuration;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using Provisioning.Common.Data.Metadata;
+using OfficeDevPnP.Core.Utilities.Themes;
+using Provisioning.Common;
+using Provisioning.Common.Authentication;
 
 namespace Provisioning.UX.AppWeb.Pages.SubSite
 {
@@ -113,7 +116,7 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
 
             _ctxCurrentWeb.Load(availableWebTemplatesForWeb);
             bool isPublishingWeb = _ctxCurrentWeb.Web.IsPublishingWeb();
-            
+
             var _siteFactory = SiteTemplateFactory.GetInstance();
             var _tm = _siteFactory.GetManager();
             var _templates = _tm.GetAvailableTemplates();
@@ -191,16 +194,32 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
 
                 Web newWeb = null;
                 newWeb = hostWeb.Webs.Add(information);
-                ctx.ExecuteQuery();
-                
-                ctx.Load(newWeb);
-                ctx.ExecuteQuery();
+                ctx.ExecuteQueryRetry();
+
+                ctx.Load(newWeb, x => x.Url, x => x.CurrentUser);
+                ctx.Load(ctx.Site, x => x.Url);
+                ctx.ExecuteQueryRetry();
+
+                string currentUserLoginName = newWeb.CurrentUser.LoginName;
+                string newWebUrl = newWeb.Url;
+                string siteUrl = ctx.Site.Url;
 
                 using (var ctxNewWeb = ctx.Clone(newWeb.Url))
                 {
                     newWeb = ctxNewWeb.Web;
-                    ProvisioningTemplate _provisioningTemplate = GetProvTemplateAndMakeAdjustments(newWeb, _tm, _template);
+                    ProvisioningTemplate _provisioningTemplate = GetProvTemplateAndMakeAdjustments(newWeb, _tm, _template, currentUserLoginName);
                     newWeb.ApplyProvisioningTemplate(_provisioningTemplate);
+
+                    if (_provisioningTemplate.Properties.ContainsKey("IsModern") && _provisioningTemplate.Properties["IsModern"] == "1")
+                    {
+                        AbstractSiteProvisioningService service = new Office365SiteProvisioningService();
+                        service.Authentication = new AppOnlyAuthenticationTenant();
+                        service.Authentication.TenantAdminUrl = _template.TenantAdminUrl;
+
+                        //bool isPartners = new Uri(newWebUrl).Host.ToLower() == "partners.mdlz.com";
+                        bool isPartners = service.isSiteExternalSharingEnabled(siteUrl);
+                        service.SetWebTheme(newWebUrl, isPartners ? _provisioningTemplate.Properties["Theme_PartnersSite"] : _provisioningTemplate.Properties["Theme_CollabSite"]);
+                    }
                 }
 
                 pnlErrMsg.Visible = false;
@@ -217,7 +236,7 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
         }
 
 
-        private ProvisioningTemplate GetProvTemplateAndMakeAdjustments(Web newWeb, ISiteTemplateManager _tm, Template _template)
+        private ProvisioningTemplate GetProvTemplateAndMakeAdjustments(Web newWeb, ISiteTemplateManager _tm, Template _template, string currentUserLoginName)
         {
 
             //var templatePath = Server.MapPath(Path.Combine("~/Resources/SiteTemplates/ProvisioningTemplates", _template.ProvisioningTemplate));
@@ -228,7 +247,7 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
 
             //MdlzCommonCustomizations.RemoveUnrequiredLocalizations(_provisioningTemplate, newWeb.Language);
             //MdlzCommonCustomizations.LocalizeElementsFix(newWeb, _provisioningTemplate);
-            MdlzCommonCustomizations.AddCustomParametersToProvisioningTemplate(_provisioningTemplate);
+            MdlzCommonCustomizations.AddCustomParametersToProvisioningTemplate(_provisioningTemplate, currentUserLoginName);
 
             //Handle Custom actions
 

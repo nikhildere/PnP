@@ -201,7 +201,7 @@
         };
 
         $scope.fnFilterPendingRequests = function (item) {
-            return item.requestStatus == "New" || item.requestStatus == "Approved";
+            return item.requestStatus == "New" || item.requestStatus == "Approved" || item.requestStatus == "Processing";
         }
 
         $scope.isDataLoading = function () {

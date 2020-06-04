@@ -162,9 +162,9 @@ a[id*='ShellDocuments'], a[id*='ShellNewsfeed'], a[id*='ShellSites'] {
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(odd) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpartzone-cell:nth-child(odd) .ms-webpart-chrome-title{
 margin-bottom:0px;
-	background-image:url(/SiteAssets/vNext/PS/Images/grey_header_mdl.png);
-	background-repeat:repeat-x;
-	
+	/* background-image:url(/SiteAssets/vNext/PS/Images/grey_header_mdl.png);
+	background-repeat:repeat-x; */
+	background: #666666;
 }
 
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(odd) .ms-webpart-chrome,
@@ -175,8 +175,9 @@ margin-bottom:0px;
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(even) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpartzone-cell:nth-child(even) .ms-webpart-chrome-title{
 	margin-bottom:0px;
-	background-image:url(/SiteAssets/vNext/PS/Images/red_header_mdl.png);
-	background-repeat:repeat-x;
+	/* background-image:url(/SiteAssets/vNext/PS/Images/red_header_mdl.png);
+	background-repeat:repeat-x; */
+    background: #A52323;
 }
 
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(even) .ms-webpart-chrome, 

@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\huy4230\Documents\Temp\2016-10-31\createit\Job\</PublishUrl>
+    <PublishUrl>C:\N\Job\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -205,6 +205,8 @@
     <Content Include="MdlzComponents\SiteAssets\Common\ProvApp\scripts\SubSiteOverride.js" />
     <Content Include="MdlzComponents\SiteAssets\Common\scripts\jquery-1.11.0.min.js" />
     <Content Include="MdlzComponents\SiteAssets\Common\scripts\MDLZ.SiteLifeCycle.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\NintexMigration-InternalMovement.js" />
+    <Content Include="MdlzComponents\SiteAssets\Common\scripts\NintexMigration.js" />
     <Content Include="MdlzComponents\SiteAssets\Common\scripts\WebTrendsMDLZ\Mondelez_Customs.js" />
     <Content Include="MdlzComponents\SiteAssets\Common\scripts\WebTrendsMDLZ\Preserve.js" />
     <Content Include="MdlzComponents\SiteAssets\Common\scripts\WebTrendsMDLZ\sp_O365_Plugin.js" />
@@ -216,6 +218,13 @@
     <Content Include="MdlzComponents\SiteAssets\DC\images\DocCenterBanner.png" />
     <Content Include="MdlzComponents\SiteAssets\DC\scripts\MDLZDocCenter.Init.js" />
     <Content Include="MdlzComponents\SiteAssets\DC\scripts\MDLZDocCenter.js" />
+    <Content Include="MdlzComponents\SiteAssets\Modern\Communication\Images\2019_MDLZ_Consumer_Milka_Coco_Wafer_5355.JPG" />
+    <Content Include="MdlzComponents\SiteAssets\Modern\Communication\Images\2019_MDLZ_Consumer_Oreo_USA_1710.JPG" />
+    <Content Include="MdlzComponents\SiteAssets\Modern\Communication\Images\Mindful Snacking Consumer Group Man Woman Child 001.jpeg" />
+    <Content Include="MdlzComponents\SiteAssets\Modern\Communication\Images\Supply Chain Biscuit 010.jpg" />
+    <Content Include="MdlzComponents\SiteAssets\Modern\Communication\Scripts\MDLZModernCommunicationSite.Init.js" />
+    <Content Include="MdlzComponents\SiteAssets\Modern\Team\Images\2019_MDLZ_Consumer_Belvita_China_1393.JPG" />
+    <Content Include="MdlzComponents\SiteAssets\Modern\Team\MDLZModernTeamsite.Init.js" />
     <Content Include="MdlzComponents\SiteAssets\PS\css\MDLZProjectSite.css" />
     <Content Include="MdlzComponents\SiteAssets\PS\images\01.png" />
     <Content Include="MdlzComponents\SiteAssets\PS\images\02.png" />
@@ -337,6 +346,11 @@
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.Modern\CommunicationSite.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.Modern\ModernDocumentFocusedTeamSitePartners.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.Modern\ModernDocumentFocusedTeamSite.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -344,6 +358,7 @@
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.Modern\ModernProjectFocusedTeamSite.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.ProjectSite\Welcome.aspx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

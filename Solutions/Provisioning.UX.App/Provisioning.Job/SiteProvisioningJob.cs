@@ -1,4 +1,5 @@
 ﻿using Microsoft.SharePoint.Client;
+using Newtonsoft.Json;
 using Provisioning.Common;
 using Provisioning.Common.Authentication;
 using Provisioning.Common.Configuration;
@@ -255,14 +256,14 @@ namespace Provisioning.Job
 
                     }
                 }
-                foreach (var admin in info.AdditionalAdministrators)
+                if (sendToAdmin)
                 {
-                    if (sendToAdmin)
+                    foreach (var admin in info.AdditionalAdministrators)
                     {
                         _message.Cc.Add(admin.Email);
+                        _admins.Append(admin.Name);
+                        _admins.Append(" ");
                     }
-                    _admins.Append(admin.Name);
-                    _admins.Append(" ");
                 }
                 _message.SiteAdmin = _admins.ToString();
                 EmailHelper.SendFailEmail(_message);
@@ -280,7 +281,7 @@ namespace Provisioning.Job
         protected void SendPendingAndRejectedEmail(ISiteRequestManager mgr)
         {
             ICollection<SiteInformation> infoColl = mgr.GetApprovalAndRejectedSitesForNotification();
-            var approverEmailAddresses = mgr.GetRequestApprovers().Where(x=> !string.IsNullOrEmpty(x.Email)).Select(x=>x.Email);
+            var approverEmailAddresses = mgr.GetRequestApprovers().Where(x => !string.IsNullOrEmpty(x.Email)).Select(x => x.Email);
 
             infoColl.ToList().ForEach(info =>
             {
@@ -333,7 +334,7 @@ namespace Provisioning.Job
                             _message.Subject = "Approval Required For Site Creation";
                             _message.EditPageUrl = $"{_settings.SPHostUrl}/SitePages/RequestApproval.aspx?RequestID={info.Id}";
                             _message.SiteDescription = info.Description;
-                            
+
                             _message.To.AddRange(approverEmailAddresses);
                             foreach (var admin in info.AdditionalAdministrators)
                             {
@@ -365,6 +366,10 @@ namespace Provisioning.Job
                         _message.SiteTemplate = info.Template;
                         _message.SiteTitle = info.Title;
                         _message.Subject = "Alert: Your new SharePoint site request has been rejected.";
+
+                        var spProps = JsonConvert.DeserializeObject<Dictionary<string, string>>(info.SiteMetadataJson);
+                        if (spProps.ContainsKey("_site_props_reasonForRejection"))
+                            _message.ReasonForRejection = spProps["_site_props_reasonForRejection"];
 
                         _message.To.Add(info.SiteOwner.Email);
                         foreach (var admin in info.AdditionalAdministrators)

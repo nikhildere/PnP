@@ -135,13 +135,16 @@ namespace Provisioning.Common.MdlzComponents
 
                     using (var clientContext = spContext.CreateUserClientContextForSPHost())
                     {
-                        clientContext.Load(clientContext.Web.CurrentUser, x => x.Email, x => x.LoginName, x => x.Title);
+                        clientContext.Load(clientContext.Web.CurrentUser, x => x.Email, x => x.LoginName, x => x.Title, x=>x.Groups.IncludeWithDefaultProperties(y=>y.Title));
                         clientContext.ExecuteQuery();
                         loggedInUser = clientContext.Web.CurrentUser;
                     }
 
                     var obj = new { Data = initialData, User = new { Email = loggedInUser.Email, LoginName = loggedInUser.LoginName, Title = loggedInUser.Title } };
-                    
+
+                    if(!loggedInUser.Groups.Any(x=>x.Title.Contains("Create It Beta Users")))
+                        siteTemplates = siteTemplates.Where(x => x.Enabled).ToList();
+
                     var settings = new JsonSerializerSettings();
                     settings.DateFormatString = "YYYY-MM-DD";
                     settings.ContractResolver = new CustomContractResolver();

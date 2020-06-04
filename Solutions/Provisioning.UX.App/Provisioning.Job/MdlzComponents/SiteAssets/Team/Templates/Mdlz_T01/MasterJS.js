@@ -19,9 +19,9 @@
     //Dont append Mondelez JS and CSS to iframe head if iframe element is found
     if (isIframeElement.length == 0 && indexNintex == false) {
         //First hide default Sharepoint form element 
-        document.getElementsByTagName('form')[0].style.visibility = "hidden";
+        document.getElementsByTagName('body')[0].style.visibility = "hidden";
         //Append Loading div to body
-        document.getElementsByTagName('body')[0].insertAdjacentHTML('afterbegin', loadingDiv);
+        //document.getElementsByTagName('body')[0].insertAdjacentHTML('afterbegin', loadingDiv);
     }
 
     var scriptFiles = [{ src: "/SiteAssets/vNext/Team/Templates/" + templateName + "/jquery-1.11.0.min.js" },

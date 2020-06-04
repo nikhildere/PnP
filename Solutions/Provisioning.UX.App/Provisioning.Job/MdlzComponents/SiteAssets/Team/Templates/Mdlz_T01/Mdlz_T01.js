@@ -2,18 +2,25 @@
 
 //Initiates call to on load funcionality on page load.
 //_spBodyOnLoadFunctionNames.push("OnloadTemplatefunctions");
+var xc = 0;
+function executeWhenJqueryReady(f)
+{
+    console.log(xc++);
+    (typeof($) == "function") ? f() : setTimeout(function () { executeWhenJqueryReady(f); }, 50); 
+}
 
-
-window.onload = function () {
+executeWhenJqueryReady(function () {
 	//Disable Loading Div after the Mondelez branding is applied
-    $('#loader').fadeOut("Slow");
-    document.getElementsByTagName('form')[0].style.visibility = "visible";
-    OnloadTemplatefunctions();
-	
-	//Fix for ribbon overlapping
-   if($('.ms-cui-tabContainer').length)
-        $('#s4-ribbonrow').css("cssText","height:126px;");
-};
+    //$('#loader').fadeOut("Slow");
+    $(function(){
+        document.getElementsByTagName('body')[0].style.visibility = "visible";
+        OnloadTemplatefunctions();
+        
+        //Fix for ribbon overlapping
+    if($('.ms-cui-tabContainer').length)
+            $('#s4-ribbonrow').css("cssText","height:126px;");
+    });
+});
 
 //Calls template funcionalities on page load.
 function OnloadTemplatefunctions() {

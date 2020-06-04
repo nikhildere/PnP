@@ -302,7 +302,7 @@ body > form > div#s4-workspace > div > div > div#s4-topheader2 > div > table.s4-
 	display: none !important;
 }
 #DeltaTopNavigation ul.static {
-	width: 1152px !important; background-color: rgb(188, 21, 43);
+	width: 1152px !important; background-color: #A52323;
 }
 li.static > .ms-core-listMenu-item {
 	margin-right: 0px !important;
@@ -423,10 +423,13 @@ li.dynamic {
 	border-color: rgb(0, 183, 198) !important;
 }*/
 #contentBox .ms-webpart-chrome-title {
-	background-color: rgb(0, 183, 198);
+	background-color: #2D6EAA;
 }
 #contentBox .ms-webpart-titleText.ms-webpart-titleText {
 	color: rgb(255, 255, 255); padding-left: 5px;
+}
+.ms-viewlsts h2.ms-webpart-titleText {
+    color: #444 !important;
 }
 #contentBox .ms-webpart-titleText > a {
 	color: rgb(255, 255, 255); padding-left: 5px;

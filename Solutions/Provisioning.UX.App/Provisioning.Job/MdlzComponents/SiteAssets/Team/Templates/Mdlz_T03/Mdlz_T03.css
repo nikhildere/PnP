@@ -6,13 +6,13 @@ html > zzzzzz {color:white}
 
 
 /* set side borders background colour if requested via Site Icon Description (element s4-workspace)*/
-body #s4-workspace[class*="templateMINTYSIDES"]    {background-color: #00B7C6 !important}
-body #s4-workspace[class*="templateBOLDBLUESIDES"] {background-color: #0036A3 !important}
-body #s4-workspace[class*="templateGREENSIDES"]    {background-color: #BAC405 !important}
+body #s4-workspace[class*="templateMINTYSIDES"]    {background-color: #2D6EAA !important}
+body #s4-workspace[class*="templateBOLDBLUESIDES"] {background-color: #666666 !important}
+body #s4-workspace[class*="templateGREENSIDES"]    {background-color: #287819 !important}
 body #s4-workspace[class*="templatePURPLESIDES"]   {background-color: #4F2170 !important}
-body #s4-workspace[class*="templateYELLOWSIDES"]   {background-color: #FCD116 !important}
-body #s4-workspace[class*="templateREDSIDES"]      {background-color: #CE1126 !important}
-body #s4-workspace[class*="templateORANGESIDES"]   {background-color: #F95602 !important}
+body #s4-workspace[class*="templateYELLOWSIDES"]   {background-color: #E6AF23 !important}
+body #s4-workspace[class*="templateREDSIDES"]      {background-color: #A52323 !important}
+body #s4-workspace[class*="templateORANGESIDES"]   {background-color: #E18719 !important}
 body #s4-workspace[class*="templateLIGHTGRAYSIDES"]   {background-color: #CCCCCC !important}
 body #s4-workspace[class*="templateDARKGRAYSIDES"]   {background-color: #666666 !important}
 body #s4-workspace[class*="templateWHITESIDES"]   {background-color: #FFFFFF !important}
@@ -20,13 +20,13 @@ body #s4-workspace[class*="templateTRANSPARENTSIDES"]   {background-color: trans
 body #s4-workspace[class*="templateBLACKSIDES"]   {background-color: #000000 !important}
 
 /* set page area background colour if requested via Site Icon Description (element s4-bodyContainer)*/
-body #s4-bodyContainer[class*="templateMINTYPAGE"]    {background-color: #00B7C6 !important}
-body #s4-bodyContainer[class*="templateBOLDBLUEPAGE"] {background-color: #0036A3 !important}
-body #s4-bodyContainer[class*="templateGREENPAGE"]    {background-color: #BAC405 !important}
+body #s4-bodyContainer[class*="templateMINTYPAGE"]    {background-color: #2D6EAA !important}
+body #s4-bodyContainer[class*="templateBOLDBLUEPAGE"] {background-color: #666666 !important}
+body #s4-bodyContainer[class*="templateGREENPAGE"]    {background-color: #287819 !important}
 body #s4-bodyContainer[class*="templatePURPLEPAGE"]   {background-color: #4F2170 !important}
-body #s4-bodyContainer[class*="templateYELLOWPAGE"]   {background-color: #FCD116 !important}
-body #s4-bodyContainer[class*="templateREDPAGE"]      {background-color: #CE1126 !important}
-body #s4-bodyContainer[class*="templateORANGEPAGE"]   {background-color: #F95602 !important}
+body #s4-bodyContainer[class*="templateYELLOWPAGE"]   {background-color: #E6AF23 !important}
+body #s4-bodyContainer[class*="templateREDPAGE"]      {background-color: #A52323 !important}
+body #s4-bodyContainer[class*="templateORANGEPAGE"]   {background-color: #E18719 !important}
 body #s4-bodyContainer[class*="templateLIGHTGRAYPAGE"]   {background-color: #CCCCCC !important}
 body #s4-bodyContainer[class*="templateDARKGRAYPAGE"]   {background-color: #666666 !important}
 body #s4-bodyContainer[class*="templateWHITEPAGE"]   {background-color: #FFFFFF !important}
@@ -35,13 +35,13 @@ body #s4-bodyContainer[class*="templateTRANSPARENTPAGE"]   {background-color: tr
 
 
 /* set site title colour if requested via Site Icon Description (element mondeleze-template-sitetitle added by Infosys Script)*/
-body #mondeleze-template-sitetitle[class*="templateMINTYSITENAME"]    {color: #00B7C6 !important}
-body #mondeleze-template-sitetitle[class*="templateBOLDBLUESITENAME"] {color: #0036A3 !important}
-body #mondeleze-template-sitetitle[class*="templateGREENSITENAME"]    {color: #BAC405 !important}
+body #mondeleze-template-sitetitle[class*="templateMINTYSITENAME"]    {color: #2D6EAA !important}
+body #mondeleze-template-sitetitle[class*="templateBOLDBLUESITENAME"] {color: #666666 !important}
+body #mondeleze-template-sitetitle[class*="templateGREENSITENAME"]    {color: #287819 !important}
 body #mondeleze-template-sitetitle[class*="templatePURPLESITENAME"]   {color: #4F2170 !important}
-body #mondeleze-template-sitetitle[class*="templateYELLOWSITENAME"]   {color: #FCD116 !important}
-body #mondeleze-template-sitetitle[class*="templateREDSITENAME"]      {color: #CE1126 !important}
-body #mondeleze-template-sitetitle[class*="templateORANGESITENAME"]   {color: #F95602 !important}
+body #mondeleze-template-sitetitle[class*="templateYELLOWSITENAME"]   {color: #E6AF23 !important}
+body #mondeleze-template-sitetitle[class*="templateREDSITENAME"]      {color: #A52323 !important}
+body #mondeleze-template-sitetitle[class*="templateORANGESITENAME"]   {color: #E18719 !important}
 body #mondeleze-template-sitetitle[class*="templateLIGHTGRAYSITENAME"]   {color: #CCCCCC !important}
 body #mondeleze-template-sitetitle[class*="templateDARKGRAYSITENAME"]   {color: #666666 !important}
 body #mondeleze-template-sitetitle[class*="templateWHITESITENAME"]   {color: #FFFFFF !important}
@@ -53,13 +53,13 @@ body #mondeleze-template-sitetitle[class*="templateBLACKSITENAME"]   {color: #00
 body div#DeltaTopNavigation[class*="templateNONAV"] {display:none !important}
 
 /* set topnav background colour if requested via Site Icon Description */
-body #DeltaTopNavigation ul[class*="static"][class*="templateMINTYNAV"]    {background-color: #00B7C6 !important}
-body #DeltaTopNavigation ul[class*="static"][class*="templateBOLDBLUENAV"] {background-color: #0036A3 !important}
-body #DeltaTopNavigation ul[class*="static"][class*="templateGREENNAV"]    {background-color: #BAC405 !important}
+body #DeltaTopNavigation ul[class*="static"][class*="templateMINTYNAV"]    {background-color: #2D6EAA !important}
+body #DeltaTopNavigation ul[class*="static"][class*="templateBOLDBLUENAV"] {background-color: #666666 !important}
+body #DeltaTopNavigation ul[class*="static"][class*="templateGREENNAV"]    {background-color: #287819 !important}
 body #DeltaTopNavigation ul[class*="static"][class*="templatePURPLENAV"]   {background-color: #4F2170 !important}
-body #DeltaTopNavigation ul[class*="static"][class*="templateYELLOWNAV"]   {background-color: #FCD116 !important}
-body #DeltaTopNavigation ul[class*="static"][class*="templateREDNAV"]      {background-color: #CE1126 !important}
-body #DeltaTopNavigation ul[class*="static"][class*="templateORANGENAV"]   {background-color: #F95602 !important}
+body #DeltaTopNavigation ul[class*="static"][class*="templateYELLOWNAV"]   {background-color: #E6AF23 !important}
+body #DeltaTopNavigation ul[class*="static"][class*="templateREDNAV"]      {background-color: #A52323 !important}
+body #DeltaTopNavigation ul[class*="static"][class*="templateORANGENAV"]   {background-color: #E18719 !important}
 body #DeltaTopNavigation ul[class*="static"][class*="templateLIGHTGRAYNAV"]   {background-color: #CCCCCC !important}
 body #DeltaTopNavigation ul[class*="static"][class*="templateDARKGRAYNAV"]   {background-color: #666666 !important}
 
@@ -398,10 +398,13 @@ li.dynamic {
 	border-color: rgb(0, 183, 198) !important;
 }*/
 #contentBox .ms-webpart-chrome-title {
-	background-color: rgb(0, 183, 198);
+	background-color: #2D6EAA;
 }
 #contentBox .ms-webpart-titleText.ms-webpart-titleText {
 	color: rgb(255, 255, 255); padding-left: 5px;
+}
+.ms-viewlsts h2.ms-webpart-titleText {
+    color: #444 !important;
 }
 #contentBox .ms-webpart-titleText > a {
 	color: rgb(255, 255, 255); padding-left: 5px;
@@ -459,35 +462,35 @@ ul[class^="static"] > li {border-right-color: #FFFFFF !important; }
 ul[class*="static"] > li {border-right-color: #FFFFFF !important; }      /* this line fixes a micro issue with cascading ULs */
 
 /* Each LI in sequence - non publishing wiki pages*/
-#zz14_RootAspMenu > li:first-child {background-color:#F95602 !important;}
-#zz14_RootAspMenu > li:first-child + li {background-color:#BAC405 !important;}
-#zz14_RootAspMenu > li:first-child + li + li {background-color:#FCD116 !important;}
-#zz14_RootAspMenu > li:first-child + li + li + li {background-color:#00B7C6 !important;}
-#zz14_RootAspMenu > li:first-child + li + li + li + li {background-color:#0036A3 !important;}
-#zz14_RootAspMenu > li:first-child + li + li + li + li + li {background-color:#CE1126 !important;}
+#zz14_RootAspMenu > li:first-child {background-color:#E18719 !important;}
+#zz14_RootAspMenu > li:first-child + li {background-color:#287819 !important;}
+#zz14_RootAspMenu > li:first-child + li + li {background-color:#E6AF23 !important;}
+#zz14_RootAspMenu > li:first-child + li + li + li {background-color:#2D6EAA !important;}
+#zz14_RootAspMenu > li:first-child + li + li + li + li {background-color:#666666 !important;}
+#zz14_RootAspMenu > li:first-child + li + li + li + li + li {background-color:#A52323 !important;}
 #zz14_RootAspMenu > li:first-child + li + li + li + li + li + li {background-color:#4F2170 !important;}
-#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li {background-color:#F95602 !important;}
-#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li {background-color:#BAC405 !important;}
-#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li + li {background-color:#FCD116 !important;}
-#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li + li + li {background-color:#00B7C6 !important;}
-#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li + li + li + li {background-color:#0036A3 !important;}
-#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li + li + li + li + li {background-color:#CE1126 !important;}
+#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li {background-color:#E18719 !important;}
+#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li {background-color:#287819 !important;}
+#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li + li {background-color:#E6AF23 !important;}
+#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li + li + li {background-color:#2D6EAA !important;}
+#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li + li + li + li {background-color:#666666 !important;}
+#zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li + li + li + li + li {background-color:#A52323 !important;}
 #zz14_RootAspMenu > li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li {background-color:#4F2170 !important;}
 
 /* Each LI in sequence - PUBLISHING wiki pages*/
-ul[class*="static"] > li:first-child {background-color:#F95602 !important;}
-ul[class*="static"] > li:first-child + li {background-color:#BAC405 !important;}
-ul[class*="static"] > li:first-child + li + li {background-color:#FCD116 !important;}
-ul[class*="static"] > li:first-child + li + li + li {background-color:#00B7C6 !important;}
-ul[class*="static"] > li:first-child + li + li + li + li {background-color:#0036A3 !important;}
-ul[class*="static"] > li:first-child + li + li + li + li + li {background-color:#CE1126 !important;}
+ul[class*="static"] > li:first-child {background-color:#E18719 !important;}
+ul[class*="static"] > li:first-child + li {background-color:#287819 !important;}
+ul[class*="static"] > li:first-child + li + li {background-color:#E6AF23 !important;}
+ul[class*="static"] > li:first-child + li + li + li {background-color:#2D6EAA !important;}
+ul[class*="static"] > li:first-child + li + li + li + li {background-color:#666666 !important;}
+ul[class*="static"] > li:first-child + li + li + li + li + li {background-color:#A52323 !important;}
 ul[class*="static"] > li:first-child + li + li + li + li + li + li {background-color:#4F2170 !important;}
-ul[class*="static"] > li:first-child + li + li + li + li + li + li + li {background-color:#F95602 !important;}
-ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li {background-color:#BAC405 !important;}
-ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li + li {background-color:#FCD116 !important;}
-ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li + li + li {background-color:#00B7C6 !important;}
-ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li + li + li + li {background-color:#0036A3 !important;}
-ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li + li + li + li + li {background-color:#CE1126 !important;}
+ul[class*="static"] > li:first-child + li + li + li + li + li + li + li {background-color:#E18719 !important;}
+ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li {background-color:#287819 !important;}
+ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li + li {background-color:#E6AF23 !important;}
+ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li + li + li {background-color:#2D6EAA !important;}
+ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li + li + li + li {background-color:#666666 !important;}
+ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li + li + li + li + li {background-color:#A52323 !important;}
 ul[class*="static"] > li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li {background-color:#4F2170 !important;}
 
 
@@ -577,13 +580,13 @@ ul[class*="static"] > li {background-color: #FFFFFF !important; } */
 }
 
 /* classes to set topnav FONT colour if requested via Site Icon Description @Anand*/
-.templateMINTYTOPLINKFONT  {color: #00B7C6 !important;}
-.templateBOLDBLUETOPLINKFONT {color: #0036A3 !important;}
-.templateGREENTOPLINKFONT   {color: #BAC405 !important;}
+.templateMINTYTOPLINKFONT  {color: #2D6EAA !important;}
+.templateBOLDBLUETOPLINKFONT {color: #666666 !important;}
+.templateGREENTOPLINKFONT   {color: #287819 !important;}
 .templatePURPLETOPLINKFONT {color: #4F2170 !important;}
-.templateYELLOWTOPLINKFONT {color: #FCD116 !important;}
-.templateREDTOPLINKFONT {color: #CE1126 !important;}
-.templateORANGETOPLINKFONT {color: #F95602 !important;}
+.templateYELLOWTOPLINKFONT {color: #E6AF23 !important;}
+.templateREDTOPLINKFONT {color: #A52323 !important;}
+.templateORANGETOPLINKFONT {color: #E18719 !important;}
 .templateLIGHTGRAYTOPLINKFONT {color: #CCCCCC !important;}
 .templateDARKGRAYTOPLINKFONT {color: #666666 !important;}
 .templateBLACKTOPLINKFONT {color: #000000 !important;}

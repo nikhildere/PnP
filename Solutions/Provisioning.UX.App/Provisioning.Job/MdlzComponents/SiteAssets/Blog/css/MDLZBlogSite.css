@@ -25,7 +25,8 @@
     display:block
 }
 .ms-blog-MainArea .ms-webpart-chrome .ms-webpart-chrome-title{
-    background-image: url('/SiteAssets/vNext/Blog/Images/red_header_mdl.png')
+    /* background-image: url('/SiteAssets/vNext/Blog/Images/red_header_mdl.png') */
+    background: #A52323;
 }
 .ms-blog-MainArea > tbody > tr > td:first-child .ms-webpart-chrome:first-child {
     border: none !important;

@@ -501,7 +501,7 @@ function wt_SP_O345_Init() {
 function wtAjax(func) {
     var oReq = new XMLHttpRequest();
 
-    oReq.open(func.type, func.url, false);
+    oReq.open(func.type, func.url, true);
     if (func.headers) {
         for (var h in func.headers) {
             oReq.setRequestHeader(h, func.headers[h]);

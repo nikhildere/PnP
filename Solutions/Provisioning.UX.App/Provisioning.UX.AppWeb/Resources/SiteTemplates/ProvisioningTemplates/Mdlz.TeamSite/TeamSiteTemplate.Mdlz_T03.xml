@@ -270,6 +270,8 @@
         <pnp:WebFeatures>
           <pnp:Feature ID="87294c72-f260-42f3-a41b-981a2ffce37a" Deactivate="true"/>
           <!--MDS Feature - Deactivate-->
+          <pnp:Feature ID="b6917cb1-93a0-4b97-a84d-7cf49975d4ec" Deactivate="true"/>
+          <!--Site Pages Feature For MOdern UI - Deactivate-->
         </pnp:WebFeatures>
       </pnp:Features>
     </pnp:ProvisioningTemplate>

@@ -1,7 +1,7 @@
 ﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
 
 <script type="text/javascript">
@@ -50,7 +50,7 @@
                 }
 
                 $scope.SaveAprrovalStatus = function () {
-                    return $spService.SaveAprrovalStatus($scope.ItemStatus.value).then(function (data) {
+                    return $spService.SaveAprrovalStatus($scope.ItemStatus.value, $scope.ReasonForRejection).then(function (data) {
                         if (data && (data.status == 412 || data.status == 400)) {
                             console.log(data);
                             if (data.status == 412) {
@@ -58,7 +58,7 @@
                                 window.location = window.location;
                             }
                             else if (data.status == 400)
-                                alert("Tere was some issue in saving your changes. Check console for details.");
+                                alert("There was some issue in saving your changes. Check console for details.");
                             
                             //init();
                         }
@@ -115,7 +115,7 @@
 
                 this.GetItemByID = function (itemID) {
 
-                    var apiUrl_OrgApps = ApiUrlConstants.SiteUrl + "_api/web/lists/GetByTitle('" + ApiUrlConstants.SiteRequests + "')/items(" + itemID + ")?$select=ID,SP_ProvisioningStatus";
+                    var apiUrl_OrgApps = ApiUrlConstants.SiteUrl + "_api/web/lists/GetByTitle('" + ApiUrlConstants.SiteRequests + "')/items(" + itemID + ")?$select=ID,SP_ProvisioningStatus,SP_Props";
 
                     return $http({
                         method: "GET",
@@ -131,11 +131,17 @@
                     });
                 }
 
-                this.SaveAprrovalStatus = function (approvalStatus) {
+                this.SaveAprrovalStatus = function (approvalStatus, reasonForRejection) {
                     return this.GetFormDigestValue().then(function (fd) {
                         if (existingUserSettingsSpMetadata) {
                             existingUserSettingsSpMetadata.SP_ProvisioningStatus = approvalStatus;
                             existingUserSettingsSpMetadata.SP_ApprovedDate = new Date();
+
+                            if (approvalStatus == "Rejected") {
+                                var reqProps = JSON.parse(existingUserSettingsSpMetadata.SP_Props);
+                                reqProps._site_props_reasonForRejection = reasonForRejection;
+                                existingUserSettingsSpMetadata.SP_Props = JSON.stringify(reqProps);
+                            }
                             return $http({
                                 method: "MERGE",
                                 url: existingUserSettingsSpMetadata.__metadata.uri,
@@ -199,8 +205,12 @@
                             <label>Status:</label>
                             <select ng-model="$parent.ItemStatus" ng-options="status as status.name for status in ItemStatusOptions"></select>
                         </div>
+                        <div class="form-group" ng-show="($parent.ItemStatus && $parent.ItemStatus.value == 'Rejected')">
+                            <label>Reason for rejection:</label>
+                            <textarea ng-model="$parent.ReasonForRejection"></textarea>
+                        </div>
                         <div class="form-group">
-                            <button ng-show="ItemStatus && ItemStatus.value!=''" type="button" class="btn btn-default" ng-click="SaveAprrovalStatus()">Save</button>
+                            <button ng-show="ItemStatus && ItemStatus.value!='' && (ItemStatus.value!='Rejected' || $parent.ReasonForRejection)" type="button" class="btn btn-default" ng-click="SaveAprrovalStatus()">Save</button>
                         </div>
                     </div>
                     <h3 ng-if="ErrorCode == 1">This item has already been moderated</h3>

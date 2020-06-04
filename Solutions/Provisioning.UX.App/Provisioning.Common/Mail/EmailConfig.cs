@@ -39,6 +39,7 @@ namespace Provisioning.Common.Mail
         private const string TOKEN_SITEDESCRIPTION = "[SITEDESCRIPTION]";
         private const string TOKEN_STORAGELIMIT = "[STORAGELIMIT]";
         private const string TOKEN_ERROR_MESSAGE = "[ERRORMESSAGE]";
+        private const string TOKEN_REASONFORREJECTION = "[REASONFORREJECTION]";
 
         #endregion
         #region Constructor
@@ -179,7 +180,9 @@ namespace Provisioning.Common.Mail
             template = template.Replace(TOKEN_SITEADMIN, message.SiteAdmin);
             template = template.Replace(TOKEN_SITETITLE, message.SiteTitle);
             template = template.Replace(TOKEN_SITETEMPLATE, message.SiteTemplate);
+            template = template.Replace(TOKEN_REASONFORREJECTION, message.ReasonForRejection);
             
+
             //template = template.Replace(TOKEN_STORAGELIMIT,
             //    String.Format(new FileSizeFormatProvider(), "{0:fs}", message.StorageLimit));
             return template;

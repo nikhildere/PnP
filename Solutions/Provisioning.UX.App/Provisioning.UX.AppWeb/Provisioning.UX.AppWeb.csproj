@@ -234,6 +234,10 @@
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.EnterpriseWiki\EnterpriseWikiTemplate.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.Modern\ModernDocumentFocusedTeamSite.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\SiteTemplates\ProvisioningTemplates\Mdlz.TeamSite\TeamSiteTemplate.Mdlz_T01.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

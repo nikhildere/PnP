@@ -3,7 +3,7 @@
         if (window.jQuery) {
             codeToExecute();
         } else {
-            SubO_ExecuteWhenJqueryReady();
+            SubO_ExecuteWhenJqueryReady(codeToExecute);
         }
     }, 300);
 }
@@ -12,19 +12,14 @@ SubO_ExecuteWhenJqueryReady(function ()
     $(document).ready(function () {
 
         //Update create new site link point to our custom page.
-
-        var SubSiteSettings_Web_Url = (window.location.hostname.toLowerCase().startsWith('ppe') ? 'https://createitdev.mdlzaddins.com' : 'https://createit.mdlzaddins.com') + '/pages/subsite/newsbweb.aspx?SPHostUrl='
-        var url = SubSiteSettings_Web_Url + encodeURIComponent(_spPageContextInfo.webAbsoluteUrl);
-
         var link = document.getElementById('createnewsite');
         if (link != undefined) {
+            var SubSiteSettings_Web_Url = (window.location.hostname.toLowerCase().startsWith('ndmdlz') ? 'https://localhost:44365' : 'https://createit.mdlzaddins.com') + '/pages/subsite/newsbweb.aspx?SPHostUrl='
+            var url = SubSiteSettings_Web_Url + encodeURIComponent(_spPageContextInfo.webAbsoluteUrl);
+
             // Could be get from SPSite root web property bag - now hard coded for demo purposes
             link.href = url;
         }
-
-        /*if (window.location.pathname.toLowerCase().endsWith("newsbweb.aspx")) {
-            window.location = SubSiteSettings_Web_Url;
-        }*/
 
         //Make list url clickable on list settings page
         if (window.location.pathname.toLowerCase().endsWith('listedit.aspx')) {
@@ -39,4 +34,11 @@ SubO_ExecuteWhenJqueryReady(function ()
     });
 });
 
-
+(function () {
+    if (window.location.pathname.toLowerCase().endsWith("newsbweb.aspx")) {
+        var SubSiteSettings_Web_Url = (window.location.hostname.toLowerCase().startsWith('ndmdlz') ? 'https://localhost:44365' : 'https://createit.mdlzaddins.com') + '/pages/subsite/newsbweb.aspx?SPHostUrl='
+        var url = SubSiteSettings_Web_Url + encodeURIComponent(_spPageContextInfo.webAbsoluteUrl);
+        document.getElementsByTagName("body")[0].style.display = "none";
+        window.location = url;
+    }
+})();

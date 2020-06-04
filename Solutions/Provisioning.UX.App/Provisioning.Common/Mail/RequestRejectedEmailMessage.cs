@@ -17,6 +17,7 @@ namespace Provisioning.Common.Mail
         public string SiteOwner { get; set; }
         public string SiteAdmin { get; set; }
         public string SiteTitle { get; set; }
+        public string ReasonForRejection { get; set; }
         public string SiteTemplate { get; set; }
         public int StorageLimit { get; set; }
         public List<string> To

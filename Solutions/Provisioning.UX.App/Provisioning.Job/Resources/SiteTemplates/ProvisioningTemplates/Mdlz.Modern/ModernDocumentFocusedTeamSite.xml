@@ -2,19 +2,40 @@
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.14.1910.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
   <pnp:Templates ID="CONTAINER-TEMPLATE-44372A3A40A2463796F2B53509669512">
     <pnp:ProvisioningTemplate ID="TEMPLATE-44372A3A40A2463796F2B53509669512" Version="1" BaseSiteTemplate="STS#3" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Documents" TemplateType="101" Url="Shared Documents">
+          <pnp:Views>
+            <View Name="{52DE829B-C5D4-4E7C-839D-2CBEE3F7D11B}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="FileSizeDisplay" />
+              </ViewFields>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+      </pnp:Lists>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="" PageName="Home.aspx" LCID="0">
           <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
           <pnp:Sections>
-            <pnp:Section Order="1" Type="OneColumn">
+            <pnp:Section Order="1" Type="OneColumnVerticalSection">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;416a4c58-61fc-4166-aa19-1099fad50545&quot;, &quot;title&quot;: &quot;Document library&quot;, &quot;description&quot;: &quot;&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:true,&quot;showDefaultDocumentLibrary&quot;:false,&quot;webpartHeightKey&quot;:4,&quot;selectedListUrl&quot;:&quot;{site}/Shared Documents&quot;,&quot;hideCommandBar&quot;:false,&quot;selectedListId&quot;:&quot;{listid:Documents}&quot;,&quot;webRelativeListUrl&quot;:&quot;/Shared Documents&quot;,&quot;selectedViewId&quot;:&quot;{viewid:Documents,All Documents}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Documents&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;cdc08781-c6fa-431a-9150-82237d6f9295&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;CompactCard&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Quick Links&quot;,&quot;items[0].title&quot;:&quot;Learn about a team site&quot;,&quot;items[1].title&quot;:&quot;Learn how to add a page&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;https://go.microsoft.com/fwlink/p/?linkid=827918&quot;,&quot;items[1].sourceItem.url&quot;:&quot;https://go.microsoft.com/fwlink/p/?linkid=827919&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;:&quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;,&quot;instanceId&quot;:&quot;e63fe960-3a14-4c60-99f3-5528a1d5b769&quot;,&quot;title&quot;:&quot;People&quot;,&quot;description&quot;:&quot;Display selected people and their profiles&quot;,&quot;dataVersion&quot;:&quot;1.3&quot;,&quot;properties&quot;:{&quot;layout&quot;:1,&quot;persons&quot;:{parameter:PersonsWebpartPersonArray}},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{parameter:PersonsWebpartSearchablePlainTexts},&quot;imageSources&quot;:{},&quot;links&quot;:{}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="2" Column="2" />
               </pnp:Controls>
             </pnp:Section>
-            <pnp:Section Order="2" Type="TwoColumnLeft">
+            <pnp:Section Order="2" Type="OneColumn">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="SiteActivity" JsonControlData="{&quot;id&quot;: &quot;eb95c819-ab8f-4689-bd03-0c2d65d47b1f&quot;, &quot;instanceId&quot;: &quot;f2a8650b-5ea0-4ac2-9cde-56e0fd0279b0&quot;, &quot;title&quot;: &quot;Site activity&quot;, &quot;description&quot;: &quot;&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;maxItems&quot;:9}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="eb95c819-ab8f-4689-bd03-0c2d65d47b1f" Order="1" Column="1" />
-                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;:&quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;,&quot;instanceId&quot;:&quot;e63fe960-3a14-4c60-99f3-5528a1d5b769&quot;,&quot;title&quot;:&quot;People&quot;,&quot;description&quot;:&quot;Display selected people and their profiles&quot;,&quot;dataVersion&quot;:&quot;1.3&quot;,&quot;properties&quot;:{&quot;layout&quot;:1,&quot;persons&quot;:{parameter:PersonsWebpartPersonArray}},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{parameter:PersonsWebpartSearchablePlainTexts},&quot;imageSources&quot;:{},&quot;links&quot;:{}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="1" Column="2" />
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
@@ -25,6 +46,24 @@
         <pnp:Provider HandlerType="Provisioning.Common.MdlzComponents.ExtensibilityProviders.MdlzModernCommonExtensibilityProvider, Provisioning.Common" Enabled="true"></pnp:Provider>
       </pnp:Providers>
       <pnp:Theme Name="MDLZ World"></pnp:Theme>
+      <pnp:PropertyBagEntries>
+        <pnp:PropertyBagEntry Key="__WebTemplates" Value="&lt;webtemplates&gt;&lt;lcid id=&quot;all&quot;&gt;&lt;webtemplate name=&quot;STS#3&quot; /&gt;&lt;/lcid&gt;&lt;/webtemplates&gt;"/>
+      </pnp:PropertyBagEntries>
+      <pnp:CustomActions>
+        <pnp:WebCustomActions>
+          <pnp:CustomAction Name="MondelezJsInjections_e22a344d-3e37-4593-b643-17b99e0b459e"
+          Description="Mondelez Js Injections"
+          Group="SiteActions"
+          Location="ScriptLink"
+          Title="Mondelez Js Injections"
+          Sequence="1"
+          ScriptBlock="var scr_elem = document.createElement('script');
+                      scr_elem.type = 'text/javascript';
+                      scr_elem.src = '/SiteAssets/vNext/Modern/Team/scripts/MDLZModernTeamSite.Init.js';
+                      var headElem = document.getElementsByTagName('head')[0];
+                      headElem.appendChild(scr_elem);"/>
+        </pnp:WebCustomActions>
+      </pnp:CustomActions>
     </pnp:ProvisioningTemplate>
   </pnp:Templates>
 </pnp:Provisioning>

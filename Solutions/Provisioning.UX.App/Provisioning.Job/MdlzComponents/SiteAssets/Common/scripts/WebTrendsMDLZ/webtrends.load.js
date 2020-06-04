@@ -18,7 +18,7 @@ window.webtrendsAsyncInit = function () {
             sp: { src: "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/webtrends.sp.js" },
             mondelez_custom: { src: "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/Mondelez_Customs.js" },
             Preserve: { src: "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/Preserve.js" },
-            hm: {
+            /*hm: {
                 src: "//s.webtrends.com/js/webtrends.hm.js",
                 transform: function (dcs, options) {
                     //args has already been merged into argsa so we need to modify that
@@ -28,7 +28,7 @@ window.webtrendsAsyncInit = function () {
                         if (pageInfo.hasOwnProperty(key))
                             options.argsa.push(key, pageInfo[key]);
                 }
-            },
+            },*/
             sp_O365: {
                 src: "/SiteAssets/vNext/Common/scripts/WebTrendsMDLZ/sp_O365_Plugin.js",
                 async:false,

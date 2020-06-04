@@ -112,8 +112,9 @@ namespace Provisioning.Common.Data.Templates.Impl
                 }
             });
 
-            
-            return _templates.Where(t => t.Enabled).ToList();
+
+            return _templates.ToList();
+            //return _templates.Where(t => t.Enabled).ToList();
         }
 
         public List<Template> GetSubSiteTemplates()

@@ -70,11 +70,8 @@ namespace Provisioning.Common.MdlzComponents
 
         private void AdjustExternalSharing()
         {
-            if (provTemplate.Properties.ContainsKey(cn_EnableExternalSharing))
-            {
-                //if(provTemplate.Properties.ContainsKey(cn_EnableExternalSharing))
-                request.EnableExternalSharing = provTemplate.Properties[cn_EnableExternalSharing].ToEnum<SharingCapabilities>();
-            }
+            request.EnableExternalSharing = provTemplate.Properties.ContainsKey(cn_EnableExternalSharing) ? 
+                provTemplate.Properties[cn_EnableExternalSharing].ToEnum<SharingCapabilities>() : SharingCapabilities.Disabled;
         }
 
         private void UsingContext(Action<ClientContext> action)
@@ -130,15 +127,16 @@ namespace Provisioning.Common.MdlzComponents
                 //Add parameters for Modern UI
                 provTemplate.Parameters.Add("CountdownTimer", DateTime.Now.AddDays(90).AddHours(1).ToUniversalTime().ToString("r"));
                 if (provTemplate.Footer != null && provTemplate.Footer.Enabled)
+                {
                     provTemplate.Footer.Name = "© " + request.Title;
+                    foreach (var fLink in provTemplate.Footer.FooterLinks)
+                        fLink.Url = request.Url + fLink.Url;
+                }
 
+                //Owner Details for People WebPart
                 var listOfOwners = request.AdditionalAdministrators.Select(x => x.Name).ToList();
                 listOfOwners.Insert(0, request.SiteOwner.Name);
-                listOfOwners = listOfOwners.Distinct().ToList();
-                provTemplate.Parameters.Add("PersonsWebpartPersonArray", JsonConvert.SerializeObject(listOfOwners.Select(x => new { id = x, role = string.Empty, firstName = string.Empty, lastName = string.Empty, upn = string.Empty, phone = string.Empty, sip = string.Empty, department = string.Empty })));
-                var searchableTextsString = listOfOwners.Select((x, i) => $"\"persons[{i}].name\": \"{x}\",\"persons[0].email\": \"{x}\"");
-                string str = $"{{\"title\": \"Key site contacts\",{string.Join(",", searchableTextsString)}}}";
-                provTemplate.Parameters.Add("PersonsWebpartSearchablePlainTexts", str);
+                AddListOfOwnersToProvTemplate(provTemplate, listOfOwners.ToArray());
 
                 //Apply Theme
                 if (provTemplate.Theme != null && !string.IsNullOrEmpty(provTemplate.Theme.Name) && string.IsNullOrEmpty(provTemplate.Theme.Palette))
@@ -241,10 +239,11 @@ namespace Provisioning.Common.MdlzComponents
         //    _provTemplate.Localizations.RemoveAll(x => x.LCID != currentLanguageID);
         //}
 
-        public static void AddCustomParametersToProvisioningTemplate(ProvisioningTemplate _provTemplate)
+        public static void AddCustomParametersToProvisioningTemplate(ProvisioningTemplate _provTemplate, params string[] listOfOwners)
         {
             _provTemplate.Parameters.Add(cn_RemoteWebHostNameToken,
                 string.Format(cn_RemoteWebHostNameTokenFormat, ConfigurationFactory.GetInstance().GetAppSetingsManager().GetAppSettings().HostedAppHostNameOverride));
+            AddListOfOwnersToProvTemplate(_provTemplate, listOfOwners);
         }
 
         public static void RemoveRecentFromQuickLaunch(ClientContext ctx)
@@ -261,6 +260,15 @@ namespace Provisioning.Common.MdlzComponents
                 }
             if (ctx.HasPendingRequest)
                 ctx.ExecuteQueryRetry();
+        }
+
+        public static void AddListOfOwnersToProvTemplate(ProvisioningTemplate provTemplate, params string[] listOfOwners)
+        {
+            listOfOwners = listOfOwners.Distinct().ToArray();
+            provTemplate.Parameters.Add("PersonsWebpartPersonArray", JsonConvert.SerializeObject(listOfOwners.Select(x => new { id = x, role = string.Empty, firstName = string.Empty, lastName = string.Empty, upn = string.Empty, phone = string.Empty, sip = string.Empty, department = string.Empty })));
+            var searchableTextsString = listOfOwners.Select((x, i) => $"\"persons[{i}].name\": \"{x}\",\"persons[0].email\": \"{x}\"");
+            string str = $"{{\"title\": \"Key site contacts\",{string.Join(",", searchableTextsString)}}}";
+            provTemplate.Parameters.Add("PersonsWebpartSearchablePlainTexts", str);
         }
         #endregion
     }

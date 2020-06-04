@@ -197,26 +197,27 @@ a[id*='ShellDocuments'], a[id*='ShellNewsfeed'], a[id*='ShellSites'] {
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(odd) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpart-chrome:nth-child(odd) .ms-webpart-chrome-title{
 margin-bottom:0px;
-	background-image:url(/SiteAssets/vNext/BP/Images/aqua_header_mdl.png);
-	background-repeat:repeat-x;
-	
+	/* background-image:url(/SiteAssets/vNext/BP/Images/aqua_header_mdl.png);
+	background-repeat:repeat-x; */
+	background: #666666;
 }
 
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(odd) .ms-webpart-chrome,
 .ms-webpart-zone .ms-webpart-chrome:nth-child(odd) .ms-wpContentDivSpace{
-		border:#08bece 1px solid;
+		border:#666666 1px solid;
 }
 
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(even) .ms-webpart-chrome-title,
 .ms-webpart-zone .ms-webpart-chrome:nth-child(even) .ms-webpart-chrome-title{
 	margin-bottom:0px;
-	background-image:url(/SiteAssets/vNext/BP/Images/blue_header_mdl.png);
-	background-repeat:repeat-x;
+	/* background-image:url(/SiteAssets/vNext/BP/Images/blue_header_mdl.png);
+	background-repeat:repeat-x; */
+    background: #2D6EAA;
 }
 
 .ms-rte-layoutszone-outer .ms-rte-wpbox:nth-child(even) .ms-webpart-chrome, 
 .ms-webpart-zone .ms-webpart-chrome:nth-child(even) .ms-wpContentDivSpace{
-		border:#0034a5 1px solid;	
+		border:#2D6EAA 1px solid;	
 }
 
 body{

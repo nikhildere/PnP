@@ -35,7 +35,7 @@
             <asp:UpdatePanel ID="mainPanel" runat="server" ChildrenAsTriggers="true">
                 <ContentTemplate>
                     <div style="margin: 10px 10px; margin-top: -65px;">
-                        <img src="http://www.mondelezinternational.com/~/media/MondelezCorporate/images/logo.png" style="width: 200px;">
+                        <img src="https://www.mondelezinternational.com/-/media/Mondelez/Images/mdlz-logo.png" style="width: 200px;">
                         <fieldset>
                             <legend>Create New Subsite</legend>
                             <br />
