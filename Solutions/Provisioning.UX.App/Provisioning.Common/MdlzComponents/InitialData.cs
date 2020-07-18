@@ -140,9 +140,10 @@ namespace Provisioning.Common.MdlzComponents
                         loggedInUser = clientContext.Web.CurrentUser;
                     }
 
-                    var obj = new { Data = initialData, User = new { Email = loggedInUser.Email, LoginName = loggedInUser.LoginName, Title = loggedInUser.Title } };
+                    var obj = new { Data = initialData, User = new { Email = loggedInUser.Email, LoginName = loggedInUser.LoginName, Title = loggedInUser.Title, IsBetaUser = loggedInUser.Groups.Any(x => x.Title.Contains("Create It Beta Users")) } };
 
-                    if(!loggedInUser.Groups.Any(x=>x.Title.Contains("Create It Beta Users")))
+
+                    if(!obj.User.IsBetaUser)
                         siteTemplates = siteTemplates.Where(x => x.Enabled).ToList();
 
                     var settings = new JsonSerializerSettings();

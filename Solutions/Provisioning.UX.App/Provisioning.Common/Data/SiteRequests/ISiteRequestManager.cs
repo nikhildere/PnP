@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Provisioning.Common.MdlzComponents.TeamsProvisioning;
 
 namespace Provisioning.Common.Data.SiteRequests
 {
@@ -81,5 +82,6 @@ namespace Provisioning.Common.Data.SiteRequests
 
         IEnumerable<SiteUser> GetRequestApprovers();
 
+        void UpdateRequestMetadataForTeamsAndMarkAsCompleted(SiteInformation request, CreatedTeam team);
     }
 }

@@ -46,11 +46,12 @@
                     </div>
                     <!-- Step 2 - Site Details  -->
                     <div class="step" ng-switch-when="2">
-                        <div data-ng-include="'mdlz/view_sitedetails.html'"></div>
+                        <!--<div>Category: {{SelectedMdlzSiteCategory.Title}}</div>-->
+                        <div data-ng-include="'mdlz/'+ SelectedMdlzSiteCategory.ViewFolder + 'view_sitedetails.html'"></div>
                     </div>
                     <!-- Step 3 - Confirmation -->
                     <div class="step" ng-switch-when="3">
-                        <div data-ng-include="'mdlz/view_confirmation.html'"></div>
+                        <div data-ng-include="'mdlz/'+ SelectedMdlzSiteCategory.ViewFolder + 'view_confirmation.html'"></div>
                     </div>
                     <div class="modal-right-footer">
                         <span class="btn-image" ng-if="!isFirstStep()" ng-click="handlePrevious()">

@@ -1,0 +1,25 @@
+Dear Create IT Approver,
+
+Please review the request and either approve/reject:
+
+**Request Type:** @{variables('strRequestType')}
+
+**Title:** @{triggerBody()?['Title']}
+
+**Description:** @{triggerBody()?['SP_Description']}
+
+**Template:** @{triggerBody()?['SP_Template']}
+
+**Was External Sharing Requested:** @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_externalsharing']}
+
+**Site Owner:** @{triggerBody()?['SP_Owner']?['Email']}
+
+**Additional Administrators:** @{variables('strAdditionalAdminEmailCsv')}
+
+**Region:** @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_region']}
+
+**Function:** @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_function']}
+
+
+
+

@@ -2105,7 +2105,8 @@ angular.module("pascalprecht.translate",["ng"]).run(["$translate",function(a){va
             var modalOptions = {
                 templateUrl: 'modalDialog.tpl.html',
                 controller: ModalInstance,
-                keyboard: true,
+                keyboard: false,
+                backdrop: 'static',
                 resolve: {
                     options: function () {
                         return {
@@ -2533,7 +2534,9 @@ function getQueryStringParameter(paramToRetrieve) {
                     templateUrl: '/Pages/mdlz/Wizard.modal.html',
                     controller: 'WizardModalInstanceController',
                     size: 'lg',
-                    windowClass: 'modal-pnp'
+                    windowClass: 'modal-pnp',
+                    keyboard: false,
+                    backdrop: 'static'
                 });
 
                 // Process the data returned from the modal after it is successfuly completed
@@ -2630,7 +2633,9 @@ function getQueryStringParameter(paramToRetrieve) {
                 templateUrl: '/Pages/mdlz/modal_myrequests.html',
                 //controller: 'WizardModalInstanceController',
                 size: 'lg',
-                windowClass: 'modal-pnp'
+                windowClass: 'modal-pnp',
+                keyboard: false,
+                backdrop: 'static'
             });
         }
 
@@ -2733,7 +2738,7 @@ function getQueryStringParameter(paramToRetrieve) {
                 var setting = $scope.appSettings[i]
                 switch (setting.Key) {
                     case 'MdlzSiteCategories':
-                        $scope.MdlzSiteCategories = JSON.parse(setting.Value);
+                        $scope.MdlzSiteCategories = JSON.parse(setting.Value).filter(x => !x.IsBetaOnly || initialData.User.IsBetaUser);
                         $scope.SelectedMdlzSiteCategory = $scope.MdlzSiteCategories[0];
                         break;
                 }
@@ -2867,11 +2872,13 @@ function getQueryStringParameter(paramToRetrieve) {
                     setAsLoading(true);
                     setAsAvailable(false);
                     //scope.$apply();
-
+                    var isTeamsTemplate = scope.siteConfiguration.template.rootTemplate == "TEAMS";
 
                     if (value === undefined)
                         return ''
-                    cleanInputValue = value.replace(/[^\w\s]/gi, '').replace(/\s+/g, '');
+                    //cleanInputValue = value.replace(/[^\w\s]/gi, '');
+                    cleanInputValue = value.replace(/[^a-zA-Z0-9\s]/gi, '');
+                    cleanInputValue = isTeamsTemplate ? cleanInputValue.replace(/\s+/g, ' ') : cleanInputValue.replace(/\s+/g, '');
 
                     if (cleanInputValue != value) {
                         ngModel.$setViewValue(cleanInputValue);
@@ -2879,7 +2886,7 @@ function getQueryStringParameter(paramToRetrieve) {
                     }
 
                     setTimeout(function () {
-                        var request = { tenantAdminUrl: scope.siteConfiguration.template.tenantAdminUrl, siteUrl: scope.siteConfiguration.template.hostPath + cleanInputValue };
+                        var request = { tenantAdminUrl: scope.siteConfiguration.template.tenantAdminUrl, hostPath: scope.siteConfiguration.template.hostPath, rootTemplate: scope.siteConfiguration.template.rootTemplate, inputValue: cleanInputValue };
                         //scope.siteConfiguration.template.tenantAdminUrl
                         // use the SP service to query for the user's inputted site URL
                         $.when($SharePointJSOMService.checkUrlREST(request))
@@ -2901,6 +2908,8 @@ function getQueryStringParameter(paramToRetrieve) {
                                 else {
                                     setAsLoading(false);
                                     setAsAvailable(true);
+                                    if (isTeamsTemplate)
+                                        scope.siteConfiguration.details.url = data.siteUrl;
                                 }
                             })
                             .fail(function (err) {
@@ -3206,6 +3215,9 @@ function getQueryStringParameter(paramToRetrieve) {
 
         $scope.selectTemplate = function (template) {
 
+            if ($scope.siteConfiguration.template != template)
+                $scope.siteConfiguration.details = {};
+
             // Add the selected template to the configuration object
             $scope.siteConfiguration.template = template;
             // Add the Path to the configuration object to store the url
@@ -3319,19 +3331,24 @@ function getQueryStringParameter(paramToRetrieve) {
         }
 
         function isSiteUrlProviderUsed(request) {
-            //get if external sharing is enabled for the tenant
-            $.when($SharePointProvisioningService.isSiteUrlProviderUsed(request)).done(function (data) {
+            $scope.siteConfiguration.allowCustomUrl = false;
+            return;
 
-                if (data != null) {
-                    if (data.UsesCustomProvider == true) {
-                        $scope.siteConfiguration.allowCustomUrl = false
-                        return
-                    }
-                }
-                $scope.siteConfiguration.allowCustomUrl = true
-            }).fail(function (err) {
-                console.info(JSON.stringify(err));
-            });
+            //get if external sharing is enabled for the tenant
+
+
+            //$.when($SharePointProvisioningService.isSiteUrlProviderUsed(request)).done(function (data) {
+
+            //    if (data != null) {
+            //        if (data.UsesCustomProvider == true) {
+            //            $scope.siteConfiguration.allowCustomUrl = false
+            //            return
+            //        }
+            //    }
+            //    $scope.siteConfiguration.allowCustomUrl = true
+            //}).fail(function (err) {
+            //    console.info(JSON.stringify(err));
+            //});
         }
 
 

@@ -1,6 +1,6 @@
 ﻿
 <div class="col-sm-12 my-req">
-    <h3>Existing Requests</h3><hr />
+    <h3>Recent Requests</h3><hr />
     <span class="btn-image btn-cancel-circle" ng-click="cancelExistingRequests()"><i class="fa fa-times"></i></span>
     <div class="row">
         <div class="form-group">
@@ -20,16 +20,28 @@
                     <table class="table table-bordered table-striped" ng-show="!loading">
                         <thead>
                             <tr>
+                                <th></th>
                                 <th>{{ 'COLUMNHEADER_SITE_TITLE' | translate }}</th>
                                 <th>{{ 'COLUMNHEADER_URL' | translate }}</th>
-                                <th>{{ 'COLUMNHEADER_REQUEST_STATUS' | translate }}</th>
+                                <th>{{ 'COLUMNHEADER_TEMPLATE' | translate }}</th>
+                                <th>{{ 'COLUMNHEADER_SUBMITTEDDATE' | translate }}</th>
+                                <!--<th>{{ 'COLUMNHEADER_REQUEST_STATUS' | translate }}</th>-->
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="request in vm.existingRequests | filter:'Complete'">
+                            <tr ng-repeat="request in vm.existingRequests | filter:'Complete' | orderBy:'-submitDate'">
+                                <td>
+                                    <img class="template-ico" src="/images/mdlz/spo-icon.ico" alt="SPO" ng-if="request.baseTemplate != 'TEAMS'" />
+                                    <img class="template-ico" src="/images/mdlz/teams-icon-16x16.png" alt="Teams" ng-if="request.baseTemplate == 'TEAMS'" />
+                                </td>
                                 <td>{{ request.title }}</td>
-                                <td><a href="{{ request.url }}" target="_blank">{{ request.url }}</a></td>
-                                <td>{{ request.requestStatus }}</td>
+                                <td>
+                                    <a href="{{ request.url }}" target="_blank" ng-if="request.baseTemplate != 'TEAMS'">{{ request.url }}</a>
+                                    <span class="teams-no-url" ng-if="request.baseTemplate == 'TEAMS'" title="This is a teams template">-</span>
+                                </td>
+                                <td>{{ request.template }}</td>
+                                <td>{{ request.submitDate | date:"shortDate" }}</td>
+                                <!--<td>{{ request.requestStatus }}</td>-->
                             </tr>
                         </tbody>
                     </table>
@@ -40,7 +52,7 @@
                     <h3 class="panel-title">{{'MY_PENDING_REQUESTS' | translate}}</h3>
                     <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
                 </div>
-                <div class="panel-body requests-pnl" ng-model="vm.existingRequests">
+                <div class="panel-body requests-pnl-pending" ng-model="vm.existingRequests">
                     <spinner name="pendingRequestsSpinner" img-src="" group="requests" show="loading">
                         <div class="spinner">
                             <div class="bounce1"></div>
@@ -51,16 +63,27 @@
                     <table class="table table-bordered table-striped" ng-show="!loading">
                         <thead>
                             <tr>
+                                <th></th>
                                 <th>{{ 'COLUMNHEADER_SITE_TITLE' | translate }}</th>
                                 <th>{{ 'COLUMNHEADER_URL' | translate }}</th>
-                                <!--<th>{{ 'COLUMNHEADER_DESCRIPTION' | translate }}</th>-->
+                                <th>{{ 'COLUMNHEADER_TEMPLATE' | translate }}</th>
+                                <th>{{ 'COLUMNHEADER_SUBMITTEDDATE' | translate }}</th>
                                 <th>{{ 'COLUMNHEADER_REQUEST_STATUS' | translate }}</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="request in vm.existingRequests | filter:fnFilterPendingRequests">
+                            <tr ng-repeat="request in vm.existingRequests | filter:fnFilterPendingRequests | orderBy:'-submitDate'">
+                                <td>
+                                    <img class="template-ico" src="/images/mdlz/spo-icon.ico" alt="SPO" ng-if="request.baseTemplate != 'TEAMS'" />
+                                    <img class="template-ico" src="/images/mdlz/teams-icon-16x16.png" alt="Teams" ng-if="request.baseTemplate == 'TEAMS'" />
+                                </td>
                                 <td>{{ request.title }}</td>
-                                <td>{{ request.url }}</td>
+                                <td>
+                                    <span ng-if="request.baseTemplate != 'TEAMS'">{{ request.url }}</span>
+                                    <span class="teams-no-url" ng-if="request.baseTemplate == 'TEAMS'" title="This is a teams template">-</span>
+                                </td>
+                                <td>{{ request.template }}</td>
+                                <td>{{ request.submitDate | date:"shortDate" }}</td>
                                 <td>{{ request.requestStatus }}</td>
                             </tr>
                         </tbody>
@@ -71,13 +94,13 @@
         </div>
     </div>
 </div>
-<div class="row">
+<!--<div class="row">
     <div class="col-sm-9"> </div>
 </div>
 
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-6">-->
         <!--<p>Once wizard completes, data is returned and shown here:</p>
         <pre data-ng-show="completedConfiguration">{{completedConfiguration | json}}</pre>-->
-    </div>
-</div>
+    <!--</div>
+</div>-->

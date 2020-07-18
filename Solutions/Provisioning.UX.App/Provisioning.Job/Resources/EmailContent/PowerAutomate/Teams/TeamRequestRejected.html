@@ -1,8 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Site Provisioning Notification"&gt;</title>
     <style type="text/css">
+
+
         body {
             font-size: 90%;
             font-family: "Segoe UI";
@@ -42,7 +44,7 @@
                                 <font face="Calibri,sans-serif" size="2">
                                     <span style="FONT-SIZE: 11pt">
                                         <font color="white" face="Segoe UI Light,sans-serif" size="7">
-                                            <span style="FONT-SIZE: 32pt">Sent for Approval</span>
+                                            <span style="FONT-SIZE: 32pt">Sorry!</span>
                                         </font>
                                     </span>
                                 </font>
@@ -73,7 +75,7 @@
                                 <font face="Calibri,sans-serif" size="2"><span style="FONT-SIZE: 11pt"><font color="white" face="Segoe UI Light,sans-serif" size="1"><span style="FONT-SIZE: 6pt">&nbsp;</span></font></span></font>
                             </div>
                             <div style="MARGIN: 0px">
-                                <font face="Calibri,sans-serif" size="2"><span style="FONT-SIZE: 11pt"><font face="Segoe UI Light,sans-serif" size="6" color="white"><span style="FONT-SIZE: 26pt">Hang on, we are reviewing your request</span></font></span></font>
+                                <font face="Calibri,sans-serif" size="2"><span style="FONT-SIZE: 11pt"><font face="Segoe UI Light,sans-serif" size="6" color="white"><span style="FONT-SIZE: 26pt">Your request was rejected</span></font></span></font>
                             </div>
                         </span>
                     </td>
@@ -92,38 +94,25 @@
                 </tr>
             </tbody>
         </table>
-
-        <b>Your request for the new site is being reviewed</b>
-        <a href="[SITEURL]">[SITEURL]</a>
-        <p>
-            We will notify you once the request has been approved and your site is created.
-        </p>
-
-        Here are some important details about your new site:
+        <br><br>
+        Your request for the team <b>@{triggerBody()?['Title']}</b> has been rejected.<br>
+        Here are the details about your team and rejection:
+        <br><br>
         <ul>
-            <li>Site owner: [SITEOWNER]</li>
-            <li>Site Title: [SITETITLE]</li>
-            <li>Site Template: [SITETEMPLATE]</li>
+            <li><b>Reason for rejection:</b> @{items('Apply_to_each_-_Send_rejection_email_to_owners_with_reason_for_rejection')?['comments']}</li>
+            <li><b>Name:</b> @{triggerBody()?['Title']}</li>
+            <li><b>Description:</b> @{triggerBody()?['SP_Description']}</li>
+            <li><b>Template:</b> @{triggerBody()?['SP_Template']}</li>
+            <li><b>Owner:</b> @{triggerBody()?['SP_Owner']?['Email']}</li>
+            <li><b>Additional Administrators:</b> @{variables('strAdditionalAdminEmailCsv')}</li>
+            <li><b>External Sharing Requested:<b /> @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_externalsharing']}</li>
+            <li><b>Region:</b> @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_region']}</li>
+            <li><b>Function:</b> @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_function']}</li>
         </ul>
+        <br><br>
+        Thank you,<br>
+        Mondelez IBS Digital Workplace Team
 
-        Site Information &amp; Support
-        <ul>
-            <!--<li>Get Started - Check out the <a href="http://yoururl/AS-EMAIL-SPO101">SharePoint Work Smart Guide </a></li>-->
-            <!--<li>Learn More - Visit <a href="https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/SLK.aspx">IQU University</a>and discover more information about SharePoint.</li>-->
-            <!--<li><a href="https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/TrainingVideos.aspx">Training Videos</a></li>-->
-            <!--<li>Give Feedback - Join the conversation on the <a href="http://aka.ms/officedevpnpYammer">Office365 Community Site </a>, <a href="http://youryammer/AS-EMAIL-SPOYammer">SharePoint Online Yammer group </a> or send us an email: <a href="mailto:youremail.com"> PnP </a></li>-->
-            <li>For Technical Assistance Contact SharePoint Support at <a href="mailto:DLKNAMSSharePointSupport@mdlz.com">DLKNAMSSharePointSupport@mdlz.com</a></li>
-        </ul>
-        <p>
-            Thank you,
-        </p>
-
-        Mondelez SharePoint Team
-        <p>
-            <!--<a href="http://aka.ms/OfficeDevPnP">PnP</a>-->
-        </p>
     </div>
-
-
 </body>
 </html>

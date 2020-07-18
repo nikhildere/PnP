@@ -880,10 +880,13 @@ body {
 /*Wizard - Ends*/
 /*My Requests - Starts*/
 .requests-pnl {
-    height: 250px;
+    height: 350px;
     overflow-y: auto;
 }
-
+.requests-pnl-pending {
+    height: 150px;
+    overflow-y: auto;
+}
 .my-req .btn-cancel-circle {
     position: absolute;
     top: 10px;
@@ -894,10 +897,16 @@ body {
     background: #32145a;
     color: white;
 }
+.my-req .teams-no-url {
+    display:block;
+    text-align:center;
+}
+.my-req .template-ico {
+    width: 16px;
+    height: 16px;
+}
 /*My Requests - Ends*/
-
 /*Site Details - Starts*/
-
 .tag-item {
     background: none !important;
     border: none !important;

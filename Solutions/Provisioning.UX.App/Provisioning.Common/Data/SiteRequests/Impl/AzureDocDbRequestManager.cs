@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Provisioning.Common.MdlzComponents.TeamsProvisioning;
 
 namespace Provisioning.Common.Data.SiteRequests.Impl
 {
@@ -529,6 +530,12 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
         {
             throw new NotImplementedException();
         }
+
+        public void UpdateRequestMetadataForTeamsAndMarkAsCompleted(SiteInformation request, CreatedTeam team)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
 

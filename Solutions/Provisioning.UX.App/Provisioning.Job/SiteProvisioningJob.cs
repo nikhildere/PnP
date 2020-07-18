@@ -126,54 +126,65 @@ namespace Provisioning.Job
                         Log.Warning("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Template {0} was not found for Site Url {1}.", siteRequest.Template, siteRequest.Url);
                     }
 
-                    _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Processing);
+                    //_requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Processing);
 
-                    SiteProvisioningManager _siteProvisioningManager = new SiteProvisioningManager(siteRequest, _template);
-                    MdlzCommonCustomizations customizations = new MdlzCommonCustomizations(siteRequest, _provisioningTemplate, _template);
-
-                    customizations.Apply(
-                    () =>
+                    if (_template.RootTemplate != "TEAMS")
                     {
+                        SiteProvisioningManager _siteProvisioningManager = new SiteProvisioningManager(siteRequest, _template);
+                        MdlzCommonCustomizations customizations = new MdlzCommonCustomizations(siteRequest, _provisioningTemplate, _template);
+
+                        customizations.Apply(
+                        () =>
+                        {
+                            // ****************************************************
+                            // Step 3 - Create the site                    
+                            // ****************************************************
+                            Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Provisioning Site Request for Site Url {0}.", siteRequest.Url);
+                            _siteProvisioningManager.CreateSiteCollection(siteRequest, _template);
+                        },
+                        () =>
+                        {
+                            // ****************************************************
+                            // Step 4 - Apply provisioning template                    
+                            // ****************************************************
+                            Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Applying Provisioning Template for Site Url {0}.", siteRequest.Url);
+                            _siteProvisioningManager.ApplyProvisioningTemplate(_provisioningTemplate, siteRequest, _template);
+                        });
+
+
                         // ****************************************************
-                        // Step 3 - Create the site                    
+                        // Step 5 - Update request access email                    
                         // ****************************************************
-                        Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Provisioning Site Request for Site Url {0}.", siteRequest.Url);
-                        _siteProvisioningManager.CreateSiteCollection(siteRequest, _template);
-                    },
-                    () =>
+                        Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Updating Request Access Email Address for Site Url {0}.", siteRequest.Url);
+                        _siteProvisioningManager.UpdateRequestAccessEmail(siteRequest);
+
+                        // ****************************************************
+                        // Step 6 - Update site description                   
+                        // ****************************************************
+                        Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Updating site description for Site Url {0}.", siteRequest.Url);
+                        _siteProvisioningManager.UpdateSiteDescription(siteRequest);
+
+                        // ****************************************************
+                        // Step 7 - Send success email                    
+                        // ****************************************************
+                        Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Sending Success Email for Site Url {0}.", siteRequest.Url);
+
+
+                        this.SendSuccessEmail(siteRequest);
+
+                        // ****************************************************
+                        // Step 8 - Set status to complete                    
+                        // ****************************************************
+                        _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Complete, "");
+                    }
+                    else if(_template.RootTemplate == "TEAMS")
                     {
-                        // ****************************************************
-                        // Step 4 - Apply provisioning template                    
-                        // ****************************************************
-                        Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Applying Provisioning Template for Site Url {0}.", siteRequest.Url);
-                        _siteProvisioningManager.ApplyProvisioningTemplate(_provisioningTemplate, siteRequest, _template);
-                    });
+                        TeamsProvisioning t = new TeamsProvisioning();
+                        var newTeam = t.CreateTeam(siteRequest, _template);
 
-                    // ****************************************************
-                    // Step 5 - Update request access email                    
-                    // ****************************************************
-                    Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Updating Request Access Email Address for Site Url {0}.", siteRequest.Url);
-                    _siteProvisioningManager.UpdateRequestAccessEmail(siteRequest);
-
-                    // ****************************************************
-                    // Step 6 - Update site description                   
-                    // ****************************************************
-                    Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Updating site description for Site Url {0}.", siteRequest.Url);
-                    _siteProvisioningManager.UpdateSiteDescription(siteRequest);
-
-                    // ****************************************************
-                    // Step 7 - Send success email                    
-                    // ****************************************************
-                    Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Sending Success Email for Site Url {0}.", siteRequest.Url);
-
-
-                    this.SendSuccessEmail(siteRequest);
-
-                    // ****************************************************
-                    // Step 8 - Set status to complete                    
-                    // ****************************************************
-                    _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Complete, "");
-
+                        Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Sending Success Email for Site Url {0}.", siteRequest.Url);
+                        _requestManager.UpdateRequestMetadataForTeamsAndMarkAsCompleted(siteRequest, newTeam);
+                    }
                 }
                 catch (ProvisioningTemplateException _pte)
                 {

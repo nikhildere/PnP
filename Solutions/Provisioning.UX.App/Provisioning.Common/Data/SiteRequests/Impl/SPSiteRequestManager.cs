@@ -13,6 +13,9 @@ using Provisioning.Common.Utilities;
 using Provisioning.Common.Data.SiteRequests;
 using System.Diagnostics;
 using Provisioning.Common.Mail;
+using Provisioning.Common.Data.Templates;
+using static Provisioning.Common.MdlzComponents.TeamsProvisioning;
+using Newtonsoft.Json;
 
 namespace Provisioning.Common.Data.SiteRequests.Impl
 {
@@ -62,17 +65,17 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                      SiteRequestList.LISTURL,
                      _camlQuery.ViewXml);
 
-                var _web = ctx.Web;
-                ctx.Load(_web);
+                //var _web = ctx.Web;
+                //ctx.Load(_web);
 
-                if (!_web.ListExists(SiteRequestList.TITLE))
-                {
-                    var _message = String.Format("The List {0} does not exist in Site {1}",
-                         SiteRequestList.TITLE,
-                         _web.Url);
-                    Log.Fatal("SPSiteRequestManager.GetSiteRequestsByCaml", _message);
-                    throw new DataStoreException(_message);
-                }
+                //if (!_web.ListExists(SiteRequestList.TITLE))
+                //{
+                //    var _message = String.Format("The List {0} does not exist in Site {1}",
+                //         SiteRequestList.TITLE,
+                //         _web.Url);
+                //    Log.Fatal("SPSiteRequestManager.GetSiteRequestsByCaml", _message);
+                //    throw new DataStoreException(_message);
+                //}
 
                 var _list = ctx.Web.Lists.GetByTitle(SiteRequestList.TITLE);
                 var _listItemCollection = _list.GetItems(_camlQuery);
@@ -97,11 +100,85 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                      item => item[SiteRequestFields.STATUSMESSAGE_NAME],
                      item => item[SiteRequestFields.ListItemID_NAME],
                      item => item[SiteRequestFields.NOTIFICATIONSTATUS_NAME],
+                     item => item[SiteRequestFields.TEMPLATE_NAME],
+                     item => item[SiteRequestFields.ListItemCREATED_NAME],
                      item => item[SiteRequestFields.ISCONFIDENTIAL_NAME]));
+
+                var lc_Templates = ctx.Web.Lists.GetByTitle("Templates").GetItems(CamlQuery.CreateAllItemsQuery());
+                ctx.Load(lc_Templates,
+                     eachItem => eachItem.Include(
+                    // item => item,
+                    item => item[TemplateFields.TTILE_NAME],
+                    item => item[TemplateFields.TEMPLATE_NAME]
+                    // item => item[TemplateFields.DESCRIPTION_NAME],
+                    // item => item[TemplateFields.TEMPLATEIMAGE_NAME],
+                    //item => item[TemplateFields.HOSTPATH_NAME],
+                    //item => item[TemplateFields.TENANTURL_NAME],
+                    //item => item[TemplateFields.ONPREM_NAME],
+                    //item => item[TemplateFields.STORAGEMAX_NAME],
+                    //item => item[TemplateFields.STORAGEWARN_NAME],
+                    //item => item[TemplateFields.USERCODEMAX_NAME],
+                    //item => item[TemplateFields.USERCODEWARN_NAME],
+                    // item => item[TemplateFields.ENABLED_NAME],
+                    //item => item[TemplateFields.ROOTWEBONLY_NAME],
+                    //item => item[TemplateFields.SUBWEBONLY_NAME],
+                    //item => item[TemplateFields.USETEMPLATESITEPOLICY_NAME],
+                    //item => item[TemplateFields.AutoApprove],
+                    //item => item[TemplateFields.PROVISIONINGTEMPLATE_NAME],
+                    //item => item[TemplateFields.MdlzSiteCategory]
+                    ));
                 ctx.ExecuteQuery();
 
                 _timespan.Stop();
                 Log.TraceApi("SharePoint", "SPSiteRequestManager.GetSiteRequestsByCaml", _timespan.Elapsed);
+
+                var provTemplates = lc_Templates.Select(x => new { BaseTemplate = x.BaseGet(TemplateFields.TEMPLATE_NAME), TemplateTitle = x.BaseGet(TemplateFields.TTILE_NAME) });
+
+                Dictionary<int, User> list = new Dictionary<int, User>();
+
+                foreach (var item in _listItemCollection)
+                {
+                    var _fieldUser = ((FieldUserValue)(item[SiteRequestFields.OWNER_NAME]));
+                    var _user = ctx.Web.GetUserById(_fieldUser.LookupId);
+                    ctx.Load(_user, u => u.LoginName, u => u.Email, u => u.Id);
+                    list[_fieldUser.LookupId] = _user;
+
+                    var addAdmins = (item[SiteRequestFields.ADD_ADMINS_NAME] as FieldUserValue[]);
+
+                    if (addAdmins != null)
+                    {
+                        foreach (var c in addAdmins)
+                        {
+                            var _u = ctx.Web.GetUserById(c.LookupId);
+                            ctx.Load(_u, u => u.LoginName, u => u.Email, u => u.Id);
+                            list[c.LookupId] = _u;
+                        }
+                    }
+                }
+
+                ctx.ExecuteQuery();
+
+                Func<ListItem, SiteUser> getUserObj = (item) =>
+                {
+                    SiteUser _owner = new SiteUser();
+                    var _fieldUser = ((FieldUserValue)(item[SiteRequestFields.OWNER_NAME]));
+                    var u = list[_fieldUser.LookupId];
+                    return new SiteUser { Name = u.LoginName, Email = u.Email };
+                };
+
+                Func<ListItem, List<SiteUser>> getUserArray = (item) =>
+                {
+                    List<SiteUser> users = new List<SiteUser>();
+                    var _fieldUser = item[SiteRequestFields.ADD_ADMINS_NAME] as FieldUserValue[];
+                    if (_fieldUser != null && _fieldUser.Length > 0)
+                        users = _fieldUser.Select(x =>
+                        {
+                            var u = list[x.LookupId];
+                            return new SiteUser { Name = u.LoginName, Email = u.Email };
+                        }).ToList();
+
+                    return users;
+                };
 
                 foreach (ListItem _item in _listItemCollection)
                 {
@@ -112,8 +189,10 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                         Template = _item.BaseGet(SiteRequestFields.TEMPLATE_NAME),
                         SitePolicy = _item.BaseGet(SiteRequestFields.POLICY_NAME),
                         Url = _item.BaseGet(SiteRequestFields.URL_NAME),
-                        SiteOwner = _item.BaseGetUser(SiteRequestFields.OWNER_NAME),
-                        AdditionalAdministrators = _item.BaseGetUsers(SiteRequestFields.ADD_ADMINS_NAME),
+                        //SiteOwner = _item.BaseGetUser(SiteRequestFields.OWNER_NAME),
+                        //AdditionalAdministrators = _item.BaseGetUsers(SiteRequestFields.ADD_ADMINS_NAME),
+                        SiteOwner = getUserObj(_item),
+                        AdditionalAdministrators = getUserArray(_item),
                         //EnableExternalSharing = _item.BaseGet<bool>(SiteRequestFields.EXTERNALSHARING_NAME),
                         RequestStatus = _item.BaseGet(SiteRequestFields.PROVISIONING_STATUS_NAME),
                         Lcid = _item.BaseGetUint(SiteRequestFields.LCID_NAME),
@@ -125,7 +204,10 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                         IsConfidential = _item.BaseGet<bool>(SiteRequestFields.ISCONFIDENTIAL_NAME),
                         Id = _item.BaseGet(SiteRequestFields.ListItemID_NAME),
                         NotificationStatus = _item.BaseGet(SiteRequestFields.NOTIFICATIONSTATUS_NAME),
+                        SubmitDate = _item.BaseGet<DateTime>(SiteRequestFields.ListItemCREATED_NAME),
                     };
+
+                    _site.BaseTemplate = provTemplates.FirstOrDefault(x => x.TemplateTitle == _site.Template)?.BaseTemplate;
                     _siteRequests.Add(_site);
                 }
             });
@@ -574,6 +656,40 @@ namespace Provisioning.Common.Data.SiteRequests.Impl
                 }
             });
             return ret ?? new List<SiteUser>();
+        }
+
+        public void UpdateRequestMetadataForTeamsAndMarkAsCompleted(SiteInformation request, CreatedTeam team)
+        {
+            Log.Info("SPSiteRequestManager.UpdateRequestMetadataForTeams", "Entering UpdateRequestMetadataForTeams url {0}", team.SharePointSiteUrl);
+            UsingContext(ctx =>
+            {
+                Stopwatch _timespan = Stopwatch.StartNew();
+
+                var _web = ctx.Web;
+                ctx.Load(_web);
+
+                var _item = ctx.Web.Lists.GetByTitle(SiteRequestList.TITLE).GetItemById(request.Id);
+                ctx.Load(_item);
+                ctx.ExecuteQuery();
+
+                if (_item != null)
+                {
+                    var spProps = !string.IsNullOrEmpty(request.SiteMetadataJson) ? JsonConvert.DeserializeObject<Dictionary<string, string>>(request.SiteMetadataJson) : new Dictionary<string, string>() ;
+                    spProps["_site_props_team_url"] = team.TeamUrl;
+                    spProps["_site_props_group_id"] = team.GroupID;
+                    spProps["_site_props_mail_nickname"] = team.Mail;
+
+                    _item[SiteRequestFields.PROPS_NAME] = JsonConvert.SerializeObject(spProps);
+                    _item[SiteRequestFields.URL_NAME] = team.SharePointSiteUrl;
+                    _item[SiteRequestFields.PROVISIONING_STATUS_NAME] = SiteRequestStatus.Complete.ToString();
+                    _item.Update();
+                    ctx.ExecuteQuery();
+                }
+
+                _timespan.Stop();
+                Log.Info("SPSiteRequestManager.UpdateRequestMetadataForTeams", PCResources.SiteRequestUpdate_Successful, team.SharePointSiteUrl, "Microsoft Team Created");
+                Log.TraceApi("SharePoint", "SPSiteRequestManager.UpdateRequestMetadataForTeams", _timespan.Elapsed);
+            });
         }
 
         #endregion

@@ -94,7 +94,9 @@
                     templateUrl: '/Pages/mdlz/Wizard.modal.html',
                     controller: 'WizardModalInstanceController',
                     size: 'lg',
-                    windowClass: 'modal-pnp'
+                    windowClass: 'modal-pnp',
+                    keyboard: false,
+                    backdrop: 'static'
                 });
 
                 // Process the data returned from the modal after it is successfuly completed
@@ -191,7 +193,9 @@
                 templateUrl: '/Pages/mdlz/modal_myrequests.html',
                 //controller: 'WizardModalInstanceController',
                 size: 'lg',
-                windowClass: 'modal-pnp'
+                windowClass: 'modal-pnp',
+                keyboard: false,
+                backdrop: 'static'
             });
         }
 
@@ -294,7 +298,7 @@
                 var setting = $scope.appSettings[i]
                 switch (setting.Key) {
                     case 'MdlzSiteCategories':
-                        $scope.MdlzSiteCategories = JSON.parse(setting.Value);
+                        $scope.MdlzSiteCategories = JSON.parse(setting.Value).filter(x => !x.IsBetaOnly || initialData.User.IsBetaUser);
                         $scope.SelectedMdlzSiteCategory = $scope.MdlzSiteCategories[0];
                         break;
                 }

@@ -41,7 +41,8 @@
             var modalOptions = {
                 templateUrl: 'modalDialog.tpl.html',
                 controller: ModalInstance,
-                keyboard: true,
+                keyboard: false,
+                backdrop: 'static',
                 resolve: {
                     options: function () {
                         return {

@@ -1,0 +1,60 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema https://raw.githubusercontent.com/OfficeDev/PnP-Provisioning-Schema/master/OfficeDevPnP.ProvisioningSchema/ProvisioningSchema-2019-09.xsd">
+  <pnp:Preferences Author="Blade Runner" Version="1.0">
+    <pnp:Parameters>
+      <pnp:Parameter Key="ExternalSharingMode">ExistingExternalUserSharingOnly</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Teams>
+    <pnp:Team DisplayName="" Description="" Classification="" Visibility="Private">
+      <pnp:FunSettings AllowGiphy="true" GiphyContentRating="Moderate"
+                       AllowStickersAndMemes="true" AllowCustomMemes="true"/>
+      <pnp:GuestSettings AllowCreateUpdateChannels="true" AllowDeleteChannels="false"/>
+      <pnp:MembersSettings AllowCreateUpdateChannels="true" AllowDeleteChannels="false" 
+                           AllowAddRemoveApps="true"
+                           AllowCreateUpdateRemoveConnectors="true"
+                           AllowCreateUpdateRemoveTabs="false" />
+      <pnp:MessagingSettings AllowUserEditMessages="true" AllowUserDeleteMessages="true"
+                             AllowOwnerDeleteMessages="false"
+                             AllowTeamMentions="true"
+                             AllowChannelMentions="true"/>
+      <!--<pnp:Security>
+        <pnp:Owners ClearExistingItems="true"></pnp:Owners>
+        <pnp:Members ClearExistingItems="false"></pnp:Members>
+      </pnp:Security>-->
+    </pnp:Team>
+    <!--<pnp:Team DisplayName="Tech Consultants" Description="This is just a team for Technical consultants" Classification=""
+                Visibility="Public" Archived="false">
+      <pnp:FunSettings AllowGiphy="true" GiphyContentRating="Moderate"
+                       AllowStickersAndMemes="true" AllowCustomMemes="true"/>
+      <pnp:GuestSettings AllowCreateUpdateChannels="true" AllowDeleteChannels="false"/>
+      <pnp:MembersSettings AllowCreateUpdateChannels="true" AllowDeleteChannels="false"
+                           AllowAddRemoveApps="true"
+                           AllowCreateUpdateRemoveConnectors="true"
+                           AllowCreateUpdateRemoveTabs="false" />
+      <pnp:MessagingSettings AllowUserEditMessages="true" AllowUserDeleteMessages="true"
+                             AllowOwnerDeleteMessages="false"
+                             AllowTeamMentions="true"
+                             AllowChannelMentions="true"/>
+      <pnp:Security>
+        <pnp:Owners ClearExistingItems="true">
+          <pnp:User UserPrincipalName="admin@tenant.onmicrosoft.com" />
+        </pnp:Owners>
+        <pnp:Members ClearExistingItems="false">
+          <pnp:User UserPrincipalName="meganb@tenant.onmicrosoft.com" />
+        </pnp:Members>
+      </pnp:Security>
+      <pnp:Channels>
+        <pnp:Channel DisplayName="Sample Channel 01"
+                     Description="This is just a Sample Channel"
+                     IsFavoriteByDefault="true">
+        </pnp:Channel>
+        <pnp:Channel DisplayName="Sample Channel 02"
+                     Description="This is just a Sample Channel"
+                     IsFavoriteByDefault="false" />
+        <pnp:Channel DisplayName="Sample Channel 03"
+                     Description="This is just a Sample Channel"
+                     IsFavoriteByDefault="false" />
+      </pnp:Channels>
+    </pnp:Team>-->
+  </pnp:Teams>  
+</pnp:Provisioning>

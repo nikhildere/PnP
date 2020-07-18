@@ -1,8 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Site Provisioning Notification"&gt;</title>
+    <title></title>
     <style type="text/css">
+
+
+
         body {
             font-size: 90%;
             font-family: "Segoe UI";
@@ -23,10 +26,6 @@
         h3 {
             font-weight: 600;
             font-weight: bolder;
-        }
-
-        a {
-            font-weight: 600;
         }
     </style>
 </head>
@@ -92,38 +91,27 @@
                 </tr>
             </tbody>
         </table>
-
-        <b>Your request for the new site is being reviewed</b>
-        <a href="[SITEURL]">[SITEURL]</a>
-        <p>
-            We will notify you once the request has been approved and your site is created.
-        </p>
-
-        Here are some important details about your new site:
+        <br><br>Your request for a new team named <b>@{triggerBody()?['Title']}</b> is being reviewed.<br>
+        We will notify you once the request has been approved and your team is created.<br>
+        Here are some important details about your new team:<br>
+        <br><br>
         <ul>
-            <li>Site owner: [SITEOWNER]</li>
-            <li>Site Title: [SITETITLE]</li>
-            <li>Site Template: [SITETEMPLATE]</li>
+            <li><b>Name:</b> @{triggerBody()?['Title']}</li>
+            <li><b>Description:</b> @{triggerBody()?['SP_Description']}</li>
+            <li><b>Template:</b> @{triggerBody()?['SP_Template']}</li>
+            <li><b>Owner:</b> @{triggerBody()?['SP_Owner']?['Email']}</li>
+            <li><b>Additional Administrators:</b> @{variables('strAdditionalAdminEmailCsv')}</li>
+            <li><b>External Sharing Requested:</b> @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_externalsharing']}</li>
+            <li><b>Region:</b> @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_region']}</li>
+            <li><b>Function:</b> @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_function']}</li>
         </ul>
+        <br>            Find out more about Teams at <a href="https://teams.mdlz.com/sites/msteams">Teams Central</a>
 
-        Site Information &amp; Support
-        <ul>
-            <!--<li>Get Started - Check out the <a href="http://yoururl/AS-EMAIL-SPO101">SharePoint Work Smart Guide </a></li>-->
-            <!--<li>Learn More - Visit <a href="https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/SLK.aspx">IQU University</a>and discover more information about SharePoint.</li>-->
-            <!--<li><a href="https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/TrainingVideos.aspx">Training Videos</a></li>-->
-            <!--<li>Give Feedback - Join the conversation on the <a href="http://aka.ms/officedevpnpYammer">Office365 Community Site </a>, <a href="http://youryammer/AS-EMAIL-SPOYammer">SharePoint Online Yammer group </a> or send us an email: <a href="mailto:youremail.com"> PnP </a></li>-->
-            <li>For Technical Assistance Contact SharePoint Support at <a href="mailto:DLKNAMSSharePointSupport@mdlz.com">DLKNAMSSharePointSupport@mdlz.com</a></li>
-        </ul>
-        <p>
-            Thank you,
-        </p>
+        <br><br><br>
+        Thank you,<br>
+        Mondelez IBS Digital Workplace Team
 
-        Mondelez SharePoint Team
-        <p>
-            <!--<a href="http://aka.ms/OfficeDevPnP">PnP</a>-->
-        </p>
+
     </div>
-
-
 </body>
 </html>

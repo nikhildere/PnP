@@ -1,0 +1,225 @@
+﻿<div class="modal-right-heading">
+    <h1>{{ 'THE_DETAILS' | translate }}</h1>
+</div>
+<div class="modal-right-body site-det" ng-form="sitedetailsform">
+    <div class="form-group has-feedback" ng-class="{ 'has-error' : sitedetailsform.detailsName.$invalid && (!sitedetailsform.detailsName.$pristine || submitDenied), 'has-success' : sitedetailsform.detailsName.$valid && !sitedetailsform.detailsName.$pristine }">
+        <label class="control-label" for="detailsName">{{ 'DETAILS_TEAMS_TITLE' | translate }}</label><em class="req"></em>
+        <input type="text" name="detailsName" class="form-control" id="detailsName" ng-model="siteConfiguration.details.title" ng-minlength="3" ng-maxlength="50" ng-model-options="{ debounce: 2000 }" required site-availability-validator />
+        <div class="error-messages" ng-if="!sitedetailsform.detailsName.$pristine || submitDenied" ng-messages="sitedetailsform.detailsName.$error">
+            <div ng-message="required">{{ 'DETAILS_TEAMS_TITLE_ERR' | translate }}</div>
+            <div ng-message="minlength">{{ 'ERR_TO_SHORT' | translate }}</div>
+            <div ng-message="maxlength">{{ 'ERR_TO_LONG' | translate }}</div>
+            <div ng-message="site-loading">{{ 'DETAILS_TEAMS_CHECKING' | translate }}</div>
+            <div ng-message="site-available">{{ 'DETAILS_TEAMS_URL_TAKEN' | translate }}</div>
+        </div>
+    </div>
+    <!--<div class="form-group form-inline has-feedback"
+         ng-class="{ 'has-error' : sitedetailsform.detailsUrl.$invalid  && (!sitedetailsform.detailsUrl.$pristine || submitDenied), 'has-success' : sitedetailsform.detailsUrl.$valid && !sitedetailsform.detailsUrl.$pristine }"
+         ng-hide="siteConfiguration.allowCustomUrl">
+        <label class="control-label" for="detailsUrl">{{ 'DETAILS_TEAMS_TITLE_URL' | translate }}</label><em class="req"></em><br />
+        <span>{{siteConfiguration.spNewSitePrefix}} </span><span ng-show="siteConfiguration.spNewSitePrefix === undefined" ng-click="setCurrentStep(1)" class="shortcut-message">{{ 'SITE_TEMPLATE_ERR' | translate }}</span>
+        <input type="text" name="detailsUrl" class="form-control" id="detailsUrl" ng-model="siteConfiguration.details.url" ng-minlength="3" ng-maxlength="50" ng-model-options="{ debounce: 2000 }" ng-required="!siteConfiguration.allowCustomUrl" site-availability-validator />
+        <div class="error-messages" ng-if="!sitedetailsform.detailsUrl.$pristine || submitDenied" ng-messages="sitedetailsform.detailsUrl.$error">
+            <div ng-message="required">{{ 'DETAILS_TEAMS_TITLE_URL_ERR' | translate }}</div>
+        </div>
+    </div>-->
+    <div class="form-group has-feedback" ng-class="{ 'has-error' : sitedetailsform.detailsDescription.$invalid && (!sitedetailsform.detailsDescription.$pristine || submitDenied), 'has-success' : sitedetailsform.detailsDescription.$valid && !sitedetailsform.detailsDescription.$pristine }">
+        <label class="control-label" for="detailsDescription">{{ 'DETAILS_TEAMS_DESCRIPTION' | translate }}</label><em class="req"></em>
+        <textarea class="form-control" rows="3" name="detailsDescription" id="detailsDescription" ng-model="siteConfiguration.details.description" special-chars-validator required></textarea>
+        <div class="error-messages" ng-if="!sitedetailsform.detailsDescription.$pristine || submitDenied" ng-messages="sitedetailsform.detailsDescription.$error">
+            <div ng-message="required">{{ 'DETAILS_TEAMS_DESCRIPTION_ERR' | translate }}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <label class="control-label" for="detailsFunction">Are you creating this site on behalf of someone?</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" ng-model="siteConfiguration.isOnBehalfOf" ng-value="0" class="radio-align" /><b>No</b>&nbsp;&nbsp;
+            <input type="radio" ng-model="siteConfiguration.isOnBehalfOf" ng-value="1" class="radio-align" /><b>Yes</b>
+        </div>
+
+    </div>
+    <div class="row animate-if" ng-if="siteConfiguration.isOnBehalfOf==1">
+        <div class="col-sm-12">
+            <label class="control-label fa-c-loading" for="ppPrimaryOwnerOnBehalf">
+                Choose primary owner(you will be added as a secondary owner by default)
+                <em class="req"></em>
+                <i class="fa fa-spinner fa-spin fa-1x fa-fw" aria-hidden="true" ng-show="siteConfiguration.primaryOwnerLoading"></i>
+            </label>
+            <tags-input ng-model="siteConfiguration.primaryOwnerOnBehalf"
+                        display-property="DisplayText"
+                        add-from-autocomplete-only="true"
+                        allow-leftover-text="false"
+                        placeholder="select user"
+                        replace-spaces-with-dashes="false"
+                        key-property="Key"
+                        name="ppPrimaryOwner"
+                        min-tags="0"
+                        max-tags="1"
+                        ng-required="siteConfiguration.isOnBehalfOf==1">
+                <auto-complete source="GetPeoplePickerSearchEntities($query, 'primaryOwnerLoading')"
+                               min-length="3"
+                               load-on-down-arrow="true"
+                               max-results-to-show="10"
+                               template="picker-template-SecondaryOwners"
+                               debounce-delay="500"></auto-complete>
+            </tags-input>
+            <div class="error-messages" ng-if="!sitedetailsform.ppPrimaryOwner.$pristine || submitDenied" ng-messages="sitedetailsform.ppPrimaryOwner.$error">
+                <div ng-message="required">{{ 'You need to choose a primary owner if you are creating this site on behalf of someone' }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-12">
+            <label class="control-label fa-c-loading" for="ppSecondaryOwners">
+                Add additional owner (backup)
+                <em class="req" ng-if="siteConfiguration.isOnBehalfOf==0"></em>
+                <i class="fa fa-spinner fa-spin fa-1x fa-fw" aria-hidden="true" ng-show="siteConfiguration.secondaryOwnersLoading"></i>
+            </label>
+            <tags-input ng-model="siteConfiguration.secondaryOwners"
+                        display-property="DisplayText"
+                        add-from-autocomplete-only="true"
+                        allow-leftover-text="false"
+                        placeholder="select user(s)"
+                        replace-spaces-with-dashes="false"
+                        key-property="Key"
+                        name="ppSecondaryOwners"
+                        min-tags="0"
+                        ng-required="siteConfiguration.isOnBehalfOf==0">
+                <auto-complete source="GetPeoplePickerSearchEntities($query, 'secondaryOwnersLoading')"
+                               min-length="3"
+                               load-on-down-arrow="true"
+                               max-results-to-show="10"
+                               template="picker-template-SecondaryOwners"
+                               debounce-delay="500"></auto-complete>
+            </tags-input>
+            <div class="error-messages" ng-if="!sitedetailsform.ppSecondaryOwners.$pristine || submitDenied" ng-messages="sitedetailsform.ppSecondaryOwners.$error">
+                <div ng-message="required">{{ 'You need to choose a secondary owner' }}</div>
+            </div>
+            <script type="text/ng-template" id="picker-template-SecondaryOwners">
+                <div class="left-panel">
+                    <!--<img ng-src="{{}}" />-->
+                </div>
+                <div class="right-panel" title="{{data.Key}}">
+                    <span class="pp-ac-name" ng-bind-html="$highlight($getDisplayText())"></span>
+                    <span class="pp-ac-subdet" ng-if="data.EntityData.Department">{{data.EntityData.Department}}</span>
+                    <span class="pp-ac-subdet" ng-if="data.EntityData.Department && data.EntityData.Title">, </span>
+                    <span class="pp-ac-subdet" ng-if="data.EntityData.Title">{{data.EntityData.Title}}</span>
+                    <span class="pp-ac-subdet pp-ac-email" ng-if="data.EntityData.Email">Email: {{data.EntityData.Email}}</span>
+                </div>
+            </script>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group" ng-hide="regions.length == 1"
+                 ng-class="{ 'has-error' : sitedetailsform.tiRegion.$invalid && (!sitedetailsform.tiRegion.$pristine || submitDenied), 'has-success' : sitedetailsform.tiRegion.$valid && !sitedetailsform.tiRegion.$pristine }">
+                <label class="control-label" for="detailsRegion">{{ 'DETAILS_TEAMS_REGION' | translate }}</label><em class="req"></em>
+                <span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Region%20not%20listed&Body=Missing%20region%20name:">not listed?</a>)</span>
+                <!--<select class="form-control" name="detailsRegion" id="detailsRegion"
+                        ng-model="siteConfiguration.properties.region"
+                        required
+                        ng-options="r.Value as r.Key for r in regions| orderBy: 'displayOrder'">
+                </select>-->
+                <tags-input ng-model="siteConfiguration.properties.region"
+                            display-property="Value"
+                            add-from-autocomplete-only="true"
+                            allow-leftover-text="false"
+                            replace-spaces-with-dashes="false"
+                            key-property="Id"
+                            max-tags="1"
+                            placeholder="enter region name"
+                            name="tiRegion" required>
+                    <auto-complete source="GetFilteredMetadataObjects($query, regions)"
+                                   load-on-down-arrow="true"
+                                   min-length="0"
+                                   max-results-to-show="10"></auto-complete>
+                    <div class="error-messages" ng-if="!sitedetailsform.tiRegion.$pristine || submitDenied" ng-messages="sitedetailsform.tiRegion.$error">
+                        <div ng-message="required">{{ 'You did not select a region this site belongs to' }}</div>
+                    </div>
+            </div>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group" ng-hide="functions.length == 1"
+                 ng-class="{ 'has-error' : sitedetailsform.tiFunction.$invalid && (!sitedetailsform.tiFunction.$pristine || submitDenied), 'has-success' : sitedetailsform.tiFunction.$valid && !sitedetailsform.tiFunction.$pristine }">
+                <label class="control-label" for="detailsFunction">{{ 'DETAILS_TEAMS_FUNCTION' | translate }}</label><em class="req"></em>
+                <span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Function%20not%20listed&Body=Missing%20function%20name:">not listed?</a>)</span>
+                <!--<select class="form-control" name="detailsFunction" id="detailsFunction"
+                        ng-model="siteConfiguration.properties.function"
+                        required
+                        ng-options="f.Value as f.Key for f in functions | orderBy: 'displayOrder'">
+                </select>-->
+                <tags-input ng-model="siteConfiguration.properties.function"
+                            display-property="Value"
+                            add-from-autocomplete-only="true"
+                            allow-leftover-text="false"
+                            replace-spaces-with-dashes="false"
+                            placeholder="enter function name"
+                            key-property="Id"
+                            max-tags="1"
+                            name="tiFunction"
+                            required>
+                    <auto-complete source="GetFilteredMetadataObjects($query, functions)"
+                                   load-on-down-arrow="true"
+                                   min-length="0"
+                                   max-results-to-show="50"></auto-complete>
+                    <div class="error-messages" ng-if="!sitedetailsform.tiFunction.$pristine || submitDenied" ng-messages="sitedetailsform.tiFunction.$error">
+                        <div ng-message="required">{{ 'You did not select a function that owns this site' }}</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="row">
+        <div class="col-sm-6">
+            <div class="form-group" ng-hide="languages.length == 1">
+                <label class="control-label" for="detailsLanguage">{{ 'DETAILS_TEAMS_LANGUAGE' | translate }}</label><em class="req"></em>
+                <select class="form-control" name="detailsLanguage" id="detailsLanguage"
+                        ng-model="siteConfiguration.language"
+                        ng-options="l.Value as l.Key for l in languages | orderBy: 'displayOrder'"
+                        required></select>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group has-feedback" ng-hide="timezones.length == 1">
+                <label class="control-label" for="detailsTimezone">{{ 'DETAILS_TEAMS_TIMEZONE' | translate }}</label><em class="req"></em>
+                <select class="form-control" name="detailsTimezone" id="detailsTimezone"
+                        ng-model="siteConfiguration.timezone"
+                        ng-options="tz.Value as tz.Key for tz in timezones | orderBy: 'displayOrder'"
+                        required></select>
+            </div>
+        </div>
+    </div>-->
+    <!--<div class="row">
+        <div class="col-sm-12">
+            <label class="control-label">Access Level</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="has-feedback">
+                <div>
+                    <input type="radio" ng-model="siteConfiguration.isConfidential" ng-value="1" class="radio-align" /><b>Confidential (recommended): </b>Site will be created with access only to primary and secondary owner. Site owners can provide access to others as needed.
+                </div>
+                <div style="color:red">
+                    <input type="radio" ng-model="siteConfiguration.isConfidential" ng-value="0" class="radio-align"
+                           onclick="alert('Please be aware that if you choose to keep this site Open to All, content within this site will be accessible and will appear in Search and Delve for all users with a MDLZ account, including contractors.')" /><b>Open to all: </b>Site will be created with read access to all employees /contractors with a lan id.
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="row">
+        <div class="col-sm-12">
+            <!--<div class="form-group has-feedback" ng-hide="!siteConfiguration.externalSharingEnabled">-->
+            <div class="form-group has-feedback">
+                <label class="control-label" for="detailsName">{{ 'EXTERNAL_SHARING' | translate }}</label>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="enableExternalSharing" ng-model="siteConfiguration.properties.externalsharing" /> Enable external sharing for this team. If you select this, group owners will be able to add users registered as partners with MDLZ to this team. Invite external partners using the <a target='_blank' href='https://irequest.mdlz.com/sc/catalog.product.aspx?product_id=appacc_bp_invitebp'>partner invitation from in iRequest</a>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

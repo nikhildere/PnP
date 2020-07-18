@@ -157,6 +157,7 @@ namespace Provisioning.Common.Data.SiteRequests
         public const FieldType REQUESTEDBY_TYPE = FieldType.User;
         public static readonly Guid REQUESTEDBY_ID = new Guid("{F301F13E-4965-40A2-973E-C966A17C2235}");
 
+
         public const string
            NOTIFICATIONSTATUS_NAME = "SP_NotificationStatus",
            NOTIFICATIONSTATUS_DISPLAYNAME = "Notification Status",
@@ -165,8 +166,11 @@ namespace Provisioning.Common.Data.SiteRequests
         public const FieldType NOTIFICATIONSTATUS_TYPE = FieldType.Text;
         public static readonly Guid NOTIFICATIONSTATUS_ID = new Guid("{5742992C-4CD4-4D7C-BCC7-6A6E53D9C7A2}");
 
+
+
         public const string
-          ListItemID_NAME = "ID";
+          ListItemID_NAME = "ID",
+          ListItemCREATED_NAME = "Created";
         #endregion
     }
 }

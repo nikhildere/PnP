@@ -218,6 +218,9 @@
 
         $scope.selectTemplate = function (template) {
 
+            if ($scope.siteConfiguration.template != template)
+                $scope.siteConfiguration.details = {};
+
             // Add the selected template to the configuration object
             $scope.siteConfiguration.template = template;
             // Add the Path to the configuration object to store the url
@@ -331,19 +334,24 @@
         }
 
         function isSiteUrlProviderUsed(request) {
-            //get if external sharing is enabled for the tenant
-            $.when($SharePointProvisioningService.isSiteUrlProviderUsed(request)).done(function (data) {
+            $scope.siteConfiguration.allowCustomUrl = false;
+            return;
 
-                if (data != null) {
-                    if (data.UsesCustomProvider == true) {
-                        $scope.siteConfiguration.allowCustomUrl = false
-                        return
-                    }
-                }
-                $scope.siteConfiguration.allowCustomUrl = true
-            }).fail(function (err) {
-                console.info(JSON.stringify(err));
-            });
+            //get if external sharing is enabled for the tenant
+
+
+            //$.when($SharePointProvisioningService.isSiteUrlProviderUsed(request)).done(function (data) {
+
+            //    if (data != null) {
+            //        if (data.UsesCustomProvider == true) {
+            //            $scope.siteConfiguration.allowCustomUrl = false
+            //            return
+            //        }
+            //    }
+            //    $scope.siteConfiguration.allowCustomUrl = true
+            //}).fail(function (err) {
+            //    console.info(JSON.stringify(err));
+            //});
         }
 
 

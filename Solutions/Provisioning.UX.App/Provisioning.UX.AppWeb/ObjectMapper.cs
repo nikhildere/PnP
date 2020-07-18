@@ -40,7 +40,7 @@ namespace Provisioning.UX.AppWeb
             _newRequest.AdditionalAdministrators = _additionalAdmins;
             _newRequest.SharePointOnPremises = request.SharePointOnPremises;
             _newRequest.BusinessCase = request.BusinessCase;
-            //_newRequest.EnableExternalSharing = request.EnableExternalSharing;
+            _newRequest.EnableExternalSharing = request.EnableExternalSharing ? Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities.ExistingExternalUserSharingOnly : Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities.Disabled;
             _newRequest.IsConfidential = request.IsConfidential;
             _newRequest.RequestedBy = request.RequestedBy;
             _newRequest.AutoApprove = request.AutoApprove;

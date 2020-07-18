@@ -8,6 +8,7 @@ using Provisioning.Common.Configuration;
 using Provisioning.Common.Data;
 using Provisioning.Common.Data.SiteRequests;
 using Provisioning.Common.Data.Templates;
+using Provisioning.Common.MdlzComponents;
 using Provisioning.Common.Utilities;
 using Provisioning.UX.AppWeb.Models;
 using System;
@@ -25,14 +26,14 @@ namespace Provisioning.UX.AppWeb.Controllers
     /// </summary>
     public class ProvisioningController : ApiController
     {
-     
+
         #region Public Members
         [HttpPut]
         public void Register(WebAPIContext sharePointServiceContext)
         {
             WebAPIHelper.AddToCache(sharePointServiceContext);
         }
-      
+
         /// <summary>
         /// Returns a list of available site policies
         /// </summary>
@@ -50,7 +51,7 @@ namespace Provisioning.UX.AppWeb.Controllers
             _auth.SiteUrl = _manager.GetAppSettingsKey("SPHost");
 
             var _sitePolicies = _siteService.GetAvailablePolicies();
-            foreach(var _sitePolicyEntity in _sitePolicies)
+            foreach (var _sitePolicyEntity in _sitePolicies)
             {
                 var _policy = new SitePolicyResults();
                 _policy.Key = _sitePolicyEntity.Name;
@@ -79,15 +80,15 @@ namespace Provisioning.UX.AppWeb.Controllers
                 _request.Success = true;
                 return _request;
             }
-            catch(Exception _ex)
+            catch (Exception _ex)
             {
-               _request.ErrorMessage = _ex.Message;
-                OfficeDevPnP.Core.Diagnostics.Log.Error("ProvisioningController.IsExternalSharingEnabled", 
-                   "There was an error processing the request. Exception: {0}", 
+                _request.ErrorMessage = _ex.Message;
+                OfficeDevPnP.Core.Diagnostics.Log.Error("ProvisioningController.IsExternalSharingEnabled",
+                   "There was an error processing the request. Exception: {0}",
                    _ex);
-               return _request;
+                return _request;
             }
-    
+
         }
 
         [Route("api/provisioning/isSiteUrlProviderUsed")]
@@ -111,26 +112,44 @@ namespace Provisioning.UX.AppWeb.Controllers
 
             return _request;
         }
-        
+
 
         [Route("api/provisioning/doesSiteExists")]
         [WebAPIContextFilter]
         [HttpPost]
-        public ExternalSharingRequest DoesSiteExists([FromBody]string value)
+        public SiteCheckRequest DoesSiteExists([FromBody]string value)
         {
-            var _request = JsonConvert.DeserializeObject<ExternalSharingRequest>(value);
+            var _request = JsonConvert.DeserializeObject<SiteCheckRequest>(value);
             _request.Success = false;
+            string groupID = string.Empty;
 
             try
             {
-                AppOnlyAuthenticationTenant _auth = new AppOnlyAuthenticationTenant();
-                _auth.TenantAdminUrl = _request.TenantAdminUrl;
-                var _service = new Office365SiteProvisioningService();
-                _service.Authentication = _auth;
-                _request.Success = _service.SiteExists(_request.SiteUrl);
+                string siteUrl = _request.HostPath;
+
+                if (_request.RootTemplate == "TEAMS")
+                {
+                    string token = TeamsProvisioning.AcquireToken();
+                    _request.Success = TeamsProvisioning.DoesGroupWithNameExists(_request.InputValue, token, out groupID);
+                    if (!_request.Success)
+                    {
+                        _request.SiteUrl = TeamsProvisioning.CreateMailNicknameFromDisplayName(_request.InputValue);
+                        siteUrl = siteUrl + _request.SiteUrl;
+                    }
+                }
+                else
+                    siteUrl = siteUrl + _request.InputValue;
+
                 if (!_request.Success)
                 {
-                    _request.Success = SiteRequestFactory.GetInstance().GetSiteRequestManager().DoesSiteRequestExist(_request.SiteUrl);
+                    AppOnlyAuthenticationTenant _auth = new AppOnlyAuthenticationTenant();
+                    _auth.TenantAdminUrl = _request.TenantAdminUrl;
+                    var _service = new Office365SiteProvisioningService();
+                    _service.Authentication = _auth;
+                    _request.Success = _service.SiteExists(siteUrl);
+
+                    if (!_request.Success)
+                        _request.Success = SiteRequestFactory.GetInstance().GetSiteRequestManager().DoesSiteRequestExist(siteUrl); 
                 }
 
                 return _request;
@@ -162,7 +181,7 @@ namespace Provisioning.UX.AppWeb.Controllers
                 _service.Authentication = _auth;
 
                 string result = _service.GetPeoplePickerSearchEntities(searchTerm);
-                
+
                 return Request.CreateResponse((HttpStatusCode)200, result);
             }
             catch (JsonSerializationException _ex)

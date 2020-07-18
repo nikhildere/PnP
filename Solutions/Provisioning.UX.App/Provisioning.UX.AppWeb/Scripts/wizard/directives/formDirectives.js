@@ -24,11 +24,13 @@
                     setAsLoading(true);
                     setAsAvailable(false);
                     //scope.$apply();
-
+                    var isTeamsTemplate = scope.siteConfiguration.template.rootTemplate == "TEAMS";
 
                     if (value === undefined)
                         return ''
-                    cleanInputValue = value.replace(/[^\w\s]/gi, '').replace(/\s+/g, '');
+                    //cleanInputValue = value.replace(/[^\w\s]/gi, '');
+                    cleanInputValue = value.replace(/[^a-zA-Z0-9\s]/gi, '');
+                    cleanInputValue = isTeamsTemplate ? cleanInputValue.replace(/\s+/g, ' ') : cleanInputValue.replace(/\s+/g, '');
 
                     if (cleanInputValue != value) {
                         ngModel.$setViewValue(cleanInputValue);
@@ -36,7 +38,7 @@
                     }
 
                     setTimeout(function () {
-                        var request = { tenantAdminUrl: scope.siteConfiguration.template.tenantAdminUrl, siteUrl: scope.siteConfiguration.template.hostPath + cleanInputValue };
+                        var request = { tenantAdminUrl: scope.siteConfiguration.template.tenantAdminUrl, hostPath: scope.siteConfiguration.template.hostPath, rootTemplate: scope.siteConfiguration.template.rootTemplate, inputValue: cleanInputValue };
                         //scope.siteConfiguration.template.tenantAdminUrl
                         // use the SP service to query for the user's inputted site URL
                         $.when($SharePointJSOMService.checkUrlREST(request))
@@ -58,6 +60,8 @@
                                 else {
                                     setAsLoading(false);
                                     setAsAvailable(true);
+                                    if (isTeamsTemplate)
+                                        scope.siteConfiguration.details.url = data.siteUrl;
                                 }
                             })
                             .fail(function (err) {
