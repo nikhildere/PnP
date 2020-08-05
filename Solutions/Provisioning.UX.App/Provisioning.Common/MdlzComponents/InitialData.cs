@@ -23,9 +23,32 @@ namespace Provisioning.Common.MdlzComponents
     {
         const string CAML_GET_ENABLED_SITEMETADATA = "<View><Query><Where><Eq><FieldRef Name='SP_Enabled'/><Value Type='Text'>True</Value></Eq></Where><OrderBy><FieldRef Name='SP_DisplayOrder'/></OrderBy></Query><RowLimit>100</RowLimit></View>";
 
+        class CachedData
+        {
+            public CachedMetadataAndAppSettings MetadataAndAppSettings { get; set; }
+            public List<Template> Templates { get; set; }
+        }
+
+        class CachedBusinessMetadata
+        {
+            public List<SiteMetadata> Regions { get; set; }
+            public List<SiteMetadata> Functions { get; set; }
+            public List<SiteMetadata> Languages { get; set; }
+            public List<SiteMetadata> TimeZones { get; set; }
+        }
+
+        class CachedMetadataAndAppSettings
+        {
+            public List<AppSetting> AppSettings { get; set; }
+            public CachedBusinessMetadata BusinessMetadata { get; set; }
+
+        }
+
         public string GetData(HttpContext Context)
         {
-            string retVal = null;
+            string retVal = null,
+                cachedDataApplicationKey = nameof(cachedDataApplicationKey);
+            CachedData cachedData = null;
             System.Linq.Expressions.Expression<Func<ListItemCollection, object>>[] exp = new System.Linq.Expressions.Expression<Func<ListItemCollection, object>>[]
             { (eachItem) => eachItem.Include(item => item, item => item["ID"], item => item["SP_Key"], item => item["SP_Value"], item => item["SP_DisplayOrder"], item => item["SP_Enabled"]) };
 
@@ -38,131 +61,133 @@ namespace Provisioning.Common.MdlzComponents
                 Enabled = _item.BaseGet<bool>("SP_Enabled")
             }).ToList();
 
-            UsingContext(ctx =>
+
+
+
+            Stopwatch _timespan = Stopwatch.StartNew();
+            try
             {
-                Stopwatch _timespan = Stopwatch.StartNew();
-                try
+                if (Context.Request.Url.Query.Contains("resetcache") || !Context.Application.AllKeys.Contains(cachedDataApplicationKey) || Context.Application[cachedDataApplicationKey] == null)
                 {
-                    //var _web = ctx.Web;
-                    //ctx.Load(_web);
-
-                    #region SP Queries
-                    var lc_AppSettings = ctx.Web.Lists.GetByTitle(SPDataConstants.LIST_TITLE_APPSETTINGS).GetItems(CamlQuery.CreateAllItemsQuery());
-                    ctx.Load(lc_AppSettings,
-                        eachItem => eachItem.Include(item => item, item => item["ID"], item => item["SP_Key"], item => item["SP_Value"], item => item["SP_Description"]));
-
-                    var lc_Regions = ctx.Web.Lists.GetByTitle("Regions").GetItems(new CamlQuery { ViewXml = CAML_GET_ENABLED_SITEMETADATA });
-                    ctx.Load(lc_Regions, exp);
-
-                    var lc_Functions = ctx.Web.Lists.GetByTitle("Functions").GetItems(new CamlQuery { ViewXml = CAML_GET_ENABLED_SITEMETADATA });
-                    ctx.Load(lc_Functions, exp);
-
-                    var lc_Languages = ctx.Web.Lists.GetByTitle("Languages").GetItems(new CamlQuery { ViewXml = CAML_GET_ENABLED_SITEMETADATA });
-                    ctx.Load(lc_Languages, exp);
-
-                    var lc_Timezones = ctx.Web.Lists.GetByTitle("TimeZone").GetItems(new CamlQuery { ViewXml = CAML_GET_ENABLED_SITEMETADATA });
-                    ctx.Load(lc_Timezones, exp);
-
-                    var lc_Templates = ctx.Web.Lists.GetByTitle("Templates").GetItems(CamlQuery.CreateAllItemsQuery());
-                    ctx.Load(lc_Templates,
-                         eachItem => eachItem.Include(
-                         item => item,
-                         item => item[TemplateFields.TTILE_NAME],
-                         item => item[TemplateFields.DESCRIPTION_NAME],
-                         item => item[TemplateFields.TEMPLATEIMAGE_NAME],
-                        item => item[TemplateFields.HOSTPATH_NAME],
-                        item => item[TemplateFields.TENANTURL_NAME],
-                        item => item[TemplateFields.ONPREM_NAME],
-                        item => item[TemplateFields.TEMPLATE_NAME],
-                        item => item[TemplateFields.STORAGEMAX_NAME],
-                        item => item[TemplateFields.STORAGEWARN_NAME],
-                        item => item[TemplateFields.USERCODEMAX_NAME],
-                        item => item[TemplateFields.USERCODEWARN_NAME],
-                         item => item[TemplateFields.PROVISIONINGTEMPLATE_NAME],
-                         item => item[TemplateFields.ENABLED_NAME],
-                        item => item[TemplateFields.ROOTWEBONLY_NAME],
-                        item => item[TemplateFields.SUBWEBONLY_NAME],
-                        item => item[TemplateFields.USETEMPLATESITEPOLICY_NAME],
-                        item => item[TemplateFields.AutoApprove],
-                        item => item[TemplateFields.MdlzSiteCategory]));
-
-                    ctx.ExecuteQueryRetry();
-                    #endregion
-
-                    _timespan.Stop();
-                    Log.TraceApi("SharePoint", "InitialData.GetData", _timespan.Elapsed);
-
-                    var initialData = new
+                    UsingContext(ctx =>
                     {
-                        AppSettings = lc_AppSettings.Cast<ListItem>().Select(_item => new AppSetting
-                        { Id = _item.BaseGetInt("ID"), Key = _item.BaseGet("SP_Key"), Value = _item.BaseGet("SP_Value"), Description = _item.BaseGet("SP_Description") }).ToList(),
+                        var lc_AppSettings = ctx.Web.Lists.GetByTitle(SPDataConstants.LIST_TITLE_APPSETTINGS).GetItems(CamlQuery.CreateAllItemsQuery());
+                        ctx.Load(lc_AppSettings,
+                            eachItem => eachItem.Include(item => item, item => item["ID"], item => item["SP_Key"], item => item["SP_Value"], item => item["SP_Description"]));
 
-                        BusinessMetadata = new
+                        var lc_Regions = ctx.Web.Lists.GetByTitle("Regions").GetItems(new CamlQuery { ViewXml = CAML_GET_ENABLED_SITEMETADATA });
+                        ctx.Load(lc_Regions, exp);
+
+                        var lc_Functions = ctx.Web.Lists.GetByTitle("Functions").GetItems(new CamlQuery { ViewXml = CAML_GET_ENABLED_SITEMETADATA });
+                        ctx.Load(lc_Functions, exp);
+
+                        var lc_Languages = ctx.Web.Lists.GetByTitle("Languages").GetItems(new CamlQuery { ViewXml = CAML_GET_ENABLED_SITEMETADATA });
+                        ctx.Load(lc_Languages, exp);
+
+                        var lc_Timezones = ctx.Web.Lists.GetByTitle("TimeZone").GetItems(new CamlQuery { ViewXml = CAML_GET_ENABLED_SITEMETADATA });
+                        ctx.Load(lc_Timezones, exp);
+
+                        var lc_Templates = ctx.Web.Lists.GetByTitle("Templates").GetItems(CamlQuery.CreateAllItemsQuery());
+                        ctx.Load(lc_Templates,
+                             eachItem => eachItem.Include(
+                             item => item,
+                             item => item[TemplateFields.TTILE_NAME],
+                             item => item[TemplateFields.DESCRIPTION_NAME],
+                             item => item[TemplateFields.TEMPLATEIMAGE_NAME],
+                            item => item[TemplateFields.HOSTPATH_NAME],
+                            item => item[TemplateFields.TENANTURL_NAME],
+                            item => item[TemplateFields.ONPREM_NAME],
+                            item => item[TemplateFields.TEMPLATE_NAME],
+                            item => item[TemplateFields.STORAGEMAX_NAME],
+                            item => item[TemplateFields.STORAGEWARN_NAME],
+                            item => item[TemplateFields.USERCODEMAX_NAME],
+                            item => item[TemplateFields.USERCODEWARN_NAME],
+                             item => item[TemplateFields.PROVISIONINGTEMPLATE_NAME],
+                             item => item[TemplateFields.ENABLED_NAME],
+                            item => item[TemplateFields.ROOTWEBONLY_NAME],
+                            item => item[TemplateFields.SUBWEBONLY_NAME],
+                            item => item[TemplateFields.USETEMPLATESITEPOLICY_NAME],
+                            item => item[TemplateFields.AutoApprove],
+                            item => item[TemplateFields.MdlzSiteCategory]));
+
+                        ctx.ExecuteQueryRetry();
+                        
+
+                        _timespan.Stop();
+                        Log.TraceApi("SharePoint", "InitialData.GetData", _timespan.Elapsed);
+
+                        cachedData = new CachedData
                         {
-                            Regions = f(lc_Regions),
-                            Functions = f(lc_Functions),
-                            Languages = f(lc_Languages),
-                            TimeZones = f(lc_Timezones)
-                        }
+                            MetadataAndAppSettings = new CachedMetadataAndAppSettings
+                            {
+                                AppSettings = lc_AppSettings.Cast<ListItem>().Select(_item => new AppSetting
+                                { Id = _item.BaseGetInt("ID"), Key = _item.BaseGet("SP_Key"), Value = _item.BaseGet("SP_Value"), Description = _item.BaseGet("SP_Description") }).ToList(),
 
+                                BusinessMetadata = new CachedBusinessMetadata
+                                {
+                                    Regions = f(lc_Regions),
+                                    Functions = f(lc_Functions),
+                                    Languages = f(lc_Languages),
+                                    TimeZones = f(lc_Timezones)
+                                }
+                            },
 
-                    };
-                    var siteTemplates = lc_Templates.Cast<ListItem>().Select(item => new Template()
-                    {
-                        Title = item.BaseGet(TemplateFields.TTILE_NAME),
-                        Description = item.BaseGet(TemplateFields.DESCRIPTION_NAME),
-                        Enabled = item.BaseGet<bool>(TemplateFields.ENABLED_NAME),
-                        ProvisioningTemplate = item.BaseGet(TemplateFields.PROVISIONINGTEMPLATE_NAME),
-                        // ManagedPath = item.BaseGet(TemplateFields.MANAGEDPATH_NAME),
-                        ImageUrl = item.BaseGet<FieldUrlValue>(TemplateFields.TEMPLATEIMAGE_NAME).Url,
-                        TenantAdminUrl = item.BaseGet<FieldUrlValue>(TemplateFields.TENANTURL_NAME).Url,
-                        HostPath = item.BaseGet<FieldUrlValue>(TemplateFields.HOSTPATH_NAME).Url,
-                        RootWebOnly = item.BaseGet<bool>(TemplateFields.ROOTWEBONLY_NAME),
-                        SubWebOnly = item.BaseGet<bool>(TemplateFields.SUBWEBONLY_NAME),
-                        StorageMaximumLevel = item.BaseGetInt(TemplateFields.STORAGEMAX_NAME),
-                        StorageWarningLevel = item.BaseGetInt(TemplateFields.STORAGEWARN_NAME),
-                        UserCodeMaximumLevel = item.BaseGetInt(TemplateFields.USERCODEMAX_NAME),
-                        UserCodeWarningLevel = item.BaseGetInt(TemplateFields.USERCODEWARN_NAME),
-                        SharePointOnPremises = item.BaseGet<bool>(TemplateFields.ONPREM_NAME),
-                        RootTemplate = item.BaseGet(TemplateFields.TEMPLATE_NAME),
-                        UseTemplateDefinedPolicy = item.BaseGet<bool>(TemplateFields.USETEMPLATESITEPOLICY_NAME),
-                        AutoApprove = item.BaseGet<bool>(TemplateFields.AutoApprove),
-                        MdlzSiteCategory = item.BaseGet(TemplateFields.MdlzSiteCategory)
-                    }).ToList();
-
-                    var spContext = SharePointContextProvider.Current.GetSharePointContext(Context);
-                    User loggedInUser = null;
-
-                    using (var clientContext = spContext.CreateUserClientContextForSPHost())
-                    {
-                        clientContext.Load(clientContext.Web.CurrentUser, x => x.Email, x => x.LoginName, x => x.Title, x=>x.Groups.IncludeWithDefaultProperties(y=>y.Title));
-                        clientContext.ExecuteQuery();
-                        loggedInUser = clientContext.Web.CurrentUser;
-                    }
-
-                    var obj = new { Data = initialData, User = new { Email = loggedInUser.Email, LoginName = loggedInUser.LoginName, Title = loggedInUser.Title, IsBetaUser = loggedInUser.Groups.Any(x => x.Title.Contains("Create It Beta Users")) } };
-
-
-                    if(!obj.User.IsBetaUser)
-                        siteTemplates = siteTemplates.Where(x => x.Enabled).ToList();
-
-                    var settings = new JsonSerializerSettings();
-                    settings.DateFormatString = "YYYY-MM-DD";
-                    settings.ContractResolver = new CustomContractResolver();
-                    string strTemplatesData = JsonConvert.SerializeObject(siteTemplates, settings);
-
-                    System.Web.Script.Serialization.JavaScriptSerializer j = new System.Web.Script.Serialization.JavaScriptSerializer();
-                    string strInitialData = j.Serialize(obj);
-
-                    retVal = $"<script type=\"text/javascript\"> var initialData = {strInitialData}; var templatesData ={strTemplatesData}; </script>";
+                            Templates = lc_Templates.Cast<ListItem>().Select(item => new Template()
+                            {
+                                Title = item.BaseGet(TemplateFields.TTILE_NAME),
+                                Description = item.BaseGet(TemplateFields.DESCRIPTION_NAME),
+                                Enabled = item.BaseGet<bool>(TemplateFields.ENABLED_NAME),
+                                ProvisioningTemplate = item.BaseGet(TemplateFields.PROVISIONINGTEMPLATE_NAME),
+                                // ManagedPath = item.BaseGet(TemplateFields.MANAGEDPATH_NAME),
+                                ImageUrl = item.BaseGet<FieldUrlValue>(TemplateFields.TEMPLATEIMAGE_NAME).Url,
+                                TenantAdminUrl = item.BaseGet<FieldUrlValue>(TemplateFields.TENANTURL_NAME).Url,
+                                HostPath = item.BaseGet<FieldUrlValue>(TemplateFields.HOSTPATH_NAME).Url,
+                                RootWebOnly = item.BaseGet<bool>(TemplateFields.ROOTWEBONLY_NAME),
+                                SubWebOnly = item.BaseGet<bool>(TemplateFields.SUBWEBONLY_NAME),
+                                StorageMaximumLevel = item.BaseGetInt(TemplateFields.STORAGEMAX_NAME),
+                                StorageWarningLevel = item.BaseGetInt(TemplateFields.STORAGEWARN_NAME),
+                                UserCodeMaximumLevel = item.BaseGetInt(TemplateFields.USERCODEMAX_NAME),
+                                UserCodeWarningLevel = item.BaseGetInt(TemplateFields.USERCODEWARN_NAME),
+                                SharePointOnPremises = item.BaseGet<bool>(TemplateFields.ONPREM_NAME),
+                                RootTemplate = item.BaseGet(TemplateFields.TEMPLATE_NAME),
+                                UseTemplateDefinedPolicy = item.BaseGet<bool>(TemplateFields.USETEMPLATESITEPOLICY_NAME),
+                                AutoApprove = item.BaseGet<bool>(TemplateFields.AutoApprove),
+                                MdlzSiteCategory = item.BaseGet(TemplateFields.MdlzSiteCategory)
+                            }).ToList()
+                        };
+                        Context.Application[cachedDataApplicationKey] = cachedData;
+                    });
                 }
-                catch (Exception _ex)
+                else
                 {
-                    var _message = string.Format(PCResources.TemplateProviderBase_Exception_Message, _ex.Message);
-                    Log.Error("Provisioning.Common.MdlzComponents.GetData", _ex.ToString());
-                    throw new DataStoreException(_message, _ex);
+                    cachedData = Context.Application[cachedDataApplicationKey] as CachedData;
                 }
-            });
+
+                var spContext = SharePointContextProvider.Current.GetSharePointContext(Context);
+                User loggedInUser = null;
+
+                using (var clientContext = spContext.CreateUserClientContextForSPHost())
+                {
+                    clientContext.Load(clientContext.Web.CurrentUser, x => x.Email, x => x.LoginName, x => x.Title, x => x.Groups.IncludeWithDefaultProperties(y => y.Title));
+                    clientContext.ExecuteQuery();
+                    loggedInUser = clientContext.Web.CurrentUser;
+                }
+
+                var obj = new { Data = cachedData.MetadataAndAppSettings, User = new { loggedInUser.Email, loggedInUser.LoginName, loggedInUser.Title, IsBetaUser = loggedInUser.Groups.Any(x => x.Title.Contains("Create It Beta Users")) } };
+                var siteTemplates = (!obj.User.IsBetaUser) ? cachedData.Templates.Where(x => x.Enabled).ToList() : cachedData.Templates;
+
+                string strTemplatesData = JsonConvert.SerializeObject(siteTemplates, new JsonSerializerSettings { DateFormatString = "YYYY-MM-DD", ContractResolver = new CustomContractResolver() });
+                string strInitialData = new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(obj);
+
+                retVal = $"<script type=\"text/javascript\"> var initialData = {strInitialData}; var templatesData ={strTemplatesData}; </script>";
+            }
+            catch (Exception _ex)
+            {
+                var _message = string.Format(PCResources.TemplateProviderBase_Exception_Message, _ex.Message);
+                Log.Error("Provisioning.Common.MdlzComponents.GetData", _ex.ToString());
+                throw new DataStoreException(_message, _ex);
+            }
+
             return retVal;
         }
 
