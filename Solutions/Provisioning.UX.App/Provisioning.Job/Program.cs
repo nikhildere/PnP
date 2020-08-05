@@ -21,7 +21,6 @@ namespace Provisioning.Job
             //new TeamsTest().GetTeam();
             //TeamsTest.CreateTeamsInProd();
 
-            string s = "";
 
         }
 
