@@ -21,7 +21,7 @@ body {
 .modal-pnp .nav-pills > li.active > a:hover,
 .modal-pnp .nav-pills > li.active > a:focus {
     color: #FFF;
-    background-color: #32145a;
+    background-color: #4F2170;
     /*color: #0070c0;
     background-color: #FFF;*/
 }
@@ -29,7 +29,7 @@ body {
 .modal-pnp .nav > li > a:hover,
 .modal-pnp .nav > li > a:focus {
     background-color: #DDD;
-    color: #32145a;
+    color: #4F2170;
 }
 
 .modal-pnp .form-control {
@@ -90,7 +90,7 @@ body {
     }
 
     .modal-pnp .modal-left a {
-        color: #32145a;
+        color: #4F2170;
     }
 
     .modal-pnp .modal-left ul {
@@ -785,15 +785,32 @@ body {
     /*margin-top: 25px;*/
 }
 
-.home-tool-desc, .home-tool-desc > a {
-    color: #32145a;
-    font-weight: bold;
-    font-size: 14px;
+    .home-tool-desc, .home-tool-desc > a {
+        color: #4F2170;
+        font-weight: bold;
+        font-size: 15px;
+    }
+.home-tool-desc {
+    padding: 0px;
+    margin-left: -30px;
+    margin-top: 5px;
 }
-
 .home-tool-desc > a {
     text-decoration: underline;
 }
+
+.req-type-title li {
+    color: #2D6EAA;
+}
+
+    .req-type-title li span {
+        color: #E18719;
+    }
+
+    .req-type-title li a {
+        color: #A52323;
+        font-size: 14px;
+    }
 
 .card {
     margin: 20px;
@@ -815,6 +832,9 @@ body {
         }
 
     .card img {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
     }
 
     .card .card-pullout, .card .card-pullout-text {
@@ -829,6 +849,7 @@ body {
         transition-timing-function: ease-out;
         padding: 10px 20px;
         overflow: hidden;
+        text-align: center;
     }
 
     .card .card-pullout {
@@ -845,6 +866,10 @@ body {
     margin: 0 auto;
 }
 
+.row.with-teams > a {
+    width: 253px;
+}
+
 .card-pullout-text > b {
     display: block;
     padding: 20px 0;
@@ -856,11 +881,16 @@ body {
 }
 
 .fa-tile {
-    font-size: 12em;
+    font-size: 10em;
     text-align: center;
-    color: #32145a;
+    color: #4F2170;
     width: 100%;
 }
+
+.mdlz-purple-txt {
+    color: #4F2170;
+}
+
 
 .c-addnew-pnl i {
     font-size: 5em;
@@ -894,7 +924,7 @@ body {
 }
 
 .my-req .panel-heading {
-    background: #32145a;
+    background: #4F2170;
     color: white;
 }
 .my-req .teams-no-url {
@@ -1077,7 +1107,7 @@ li.suggestion-item *, .tag-item *, .form-control {
 .wm-logo {
     font-size: 8em;
     padding: 15px;
-    color: #32145a;
+    color: #4F2170;
 }
 
 .modal-pnp .btn-image[disabled=disabled], .modal-pnp .btn-image[disabled=disabled]:hover {
@@ -1093,14 +1123,14 @@ li.suggestion-item *, .tag-item *, .form-control {
 
 .btn-image i {
     font-size: 3em;
-    color: #32145a;
+    color: #4F2170;
 }
 /*.modal-pnp .modal-left a {
-    color: #32145a;
+    color: #4F2170;
 }
 .modal-pnp .nav-pills > li.active > a {
     color: #FFF;
-    background-color: #32145a;
+    background-color: #4F2170;
 }*/
 /*Modal - Ends*/
 /*Confirmation - Starts*/
@@ -1112,6 +1142,12 @@ li.suggestion-item *, .tag-item *, .form-control {
     .vw-confim .row p {
         margin: 10px 0;
     }
+.vw-confirm-sub-header {
+    background: #32145a;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
 /*Confirmation - Ends*/
 /*ngIf animate - Starts*/
 
@@ -1163,3 +1199,4 @@ li.suggestion-item *, .tag-item *, .form-control {
 .modal-pnp .step::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.52);
 }
+

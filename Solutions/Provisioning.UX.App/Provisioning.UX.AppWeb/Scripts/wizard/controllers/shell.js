@@ -21,7 +21,7 @@
             trail: 100,
             color: '#DC3C00'
         };
-
+        vm.isBetaInterface = initialData.User.IsBetaUser;
         
         vm.translations ={};
         $translate(['SOLUTION_LOADED']).then(function (translations) {

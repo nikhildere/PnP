@@ -38,11 +38,7 @@ namespace Provisioning.UX.AppWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // The following code gets the client context and Title property by using TokenHelper.
-            // To access other properties, the app may need to request permissions on the host web.
-            
             ltlInitialData.Text = new InitialData().GetData(Context);
-
 
             if (this.Request.Cookies[WebAPIHelper.SERVICES_TOKEN] == null)
             {

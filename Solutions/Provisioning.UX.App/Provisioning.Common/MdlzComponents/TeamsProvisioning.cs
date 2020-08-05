@@ -18,12 +18,15 @@ using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Provisioning.Common.MdlzComponents
 {
     public class TeamsProvisioning
     {
+        const double minutesToWaitAfterTeamCreation = 3;
+
         AppOnlyAuthenticationSite authentication;
         AppSettings settings;
 
@@ -57,6 +60,7 @@ namespace Provisioning.Common.MdlzComponents
 
             var prov = new OfficeDevPnP.Core.Framework.Provisioning.Model.Configuration.ApplyConfiguration { };
             ProvisioningTemplateApplyingInformation _pta = new ProvisioningTemplateApplyingInformation();
+            
             prov.ProgressDelegate = (message, step, total) =>
                 Utilities.Log.Info("SiteProvisioningManager.ApplyProvisioningTemplate", "Applying Provisioning template - Step {0}/{1} : {2} ", step, total, message);
 
@@ -68,6 +72,9 @@ namespace Provisioning.Common.MdlzComponents
                     var tenant = new Tenant(clientContext);
                     tenant.ApplyTenantTemplate(hierarchyToApply, "SAMPLE-SEQUENCE", prov);
                     Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Applying teams template - completed");
+
+                    Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", $"Waiting for {minutesToWaitAfterTeamCreation} minutes to let all dependent teams resources be provisioned");
+                    Thread.Sleep(TimeSpan.FromMinutes(minutesToWaitAfterTeamCreation).Milliseconds);
 
                     Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Checking if the team was created");
                     isGroupExist = DoesGroupWithNameExists(request.Title, token, out groupID);
@@ -92,6 +99,9 @@ namespace Provisioning.Common.MdlzComponents
                         tenant.Context.Load(siteProps);
                         tenant.Context.ExecuteQueryRetry();
                         Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Completed setting external sharing configuration for associated SharePoint site to ExistingExternalUserSharingOnly");
+
+                        
+
                     }
                     else
                     {
@@ -198,6 +208,14 @@ namespace Provisioning.Common.MdlzComponents
             //var alreadyExistingGroupId = !string.IsNullOrEmpty(groupID) ?
             //    ItemAlreadyExists($"https://graph.microsoft.com/v1.0/groups", filterFieldsAndValues, accessToken) :
             //    null;
+
+            int counter = 1;
+            CreatedTeam team = null;
+
+            //while (counter < )
+            //{
+
+            //}
 
             if (!string.IsNullOrEmpty(alreadyExistingGroupId))
             {

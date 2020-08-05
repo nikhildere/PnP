@@ -66,7 +66,7 @@ namespace Provisioning.Job
                 Log.Info("Provisioning.Job.SiteProvisioningJob.ProcessSiteRequests", "There are no site requests pending in the repository");
             }
 
-            SendPendingAndRejectedEmail(_siteManager);
+            //SendPendingAndRejectedEmail(_siteManager);
 
             // End processing of approved requests
             #endregion
@@ -170,7 +170,7 @@ namespace Provisioning.Job
                         Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Sending Success Email for Site Url {0}.", siteRequest.Url);
 
 
-                        this.SendSuccessEmail(siteRequest);
+                        //this.SendSuccessEmail(siteRequest);
 
                         // ****************************************************
                         // Step 8 - Set status to complete                    
@@ -193,11 +193,11 @@ namespace Provisioning.Job
                 catch (Exception _ex)
                 {
                     Log.Error("Provisioning.Job.SiteProvisioningJob.ProvisionSites", _ex.ToString());
-                    _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Exception, _ex.Message);
+                    _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Exception, _ex.ToString());
                     var siteOwner = (siteRequest.SiteOwner ?? (siteRequest.SiteOwner = new SiteUser()));
                     siteOwner.Name = siteOwnerEmail;
                     siteOwner.Email = siteOwnerEmail;
-                    this.SendFailureEmail(siteRequest, _ex.Message, false);
+                    //this.SendFailureEmail(siteRequest, _ex.Message, false);
                 }
             }
         }

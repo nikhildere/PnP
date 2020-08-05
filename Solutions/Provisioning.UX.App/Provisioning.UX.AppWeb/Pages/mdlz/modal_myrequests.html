@@ -10,13 +10,13 @@
                     <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
                 </div>
                 <div class="panel-body requests-pnl" ng-model="vm.existingRequests">
-                    <spinner name="completedRequestsSpinner" img-src="" group="requests" show="loading">
+                    <!--<spinner name="completedRequestsSpinner" img-src="" group="requests" show="loading">
                         <div class="spinner">
                             <div class="bounce1"></div>
                             <div class="bounce2"></div>
                             <div class="bounce3"></div>
                         </div>
-                    </spinner>
+                    </spinner>-->
                     <table class="table table-bordered table-striped" ng-show="!loading">
                         <thead>
                             <tr>
@@ -37,7 +37,8 @@
                                 <td>{{ request.title }}</td>
                                 <td>
                                     <a href="{{ request.url }}" target="_blank" ng-if="request.baseTemplate != 'TEAMS'">{{ request.url }}</a>
-                                    <span class="teams-no-url" ng-if="request.baseTemplate == 'TEAMS'" title="This is a teams template">-</span>
+                                    <a class="teams-no-url" ng-if="request.baseTemplate == 'TEAMS'" title="Open Team" target="_blank" href="{{getTeamsUrl(request)}}">Open team</a>
+                                    <!--<span class="teams-no-url" ng-if="request.baseTemplate == 'TEAMS'" title="This is a teams template">-</span>-->
                                 </td>
                                 <td>{{ request.template }}</td>
                                 <td>{{ request.submitDate | date:"shortDate" }}</td>
@@ -53,13 +54,13 @@
                     <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
                 </div>
                 <div class="panel-body requests-pnl-pending" ng-model="vm.existingRequests">
-                    <spinner name="pendingRequestsSpinner" img-src="" group="requests" show="loading">
+                    <!--<spinner name="pendingRequestsSpinner" img-src="" group="requests" show="loading">
                         <div class="spinner">
                             <div class="bounce1"></div>
                             <div class="bounce2"></div>
                             <div class="bounce3"></div>
                         </div>
-                    </spinner>
+                    </spinner>-->
                     <table class="table table-bordered table-striped" ng-show="!loading">
                         <thead>
                             <tr>

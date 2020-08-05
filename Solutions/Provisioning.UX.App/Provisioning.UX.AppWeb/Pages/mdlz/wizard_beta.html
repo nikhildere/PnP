@@ -1,0 +1,129 @@
+﻿<section id="dashboard-view" data-ng-controller="WizardController as vm">
+    <div class="progBar" ng-style="{width:ProgressBar + '%'}" ng-hide="ProgressBar==100"></div>
+    <section class="matter" data-ng-show="!isDataLoading()">
+        <!-- Layout Here is purely for deveopment purposes -->
+        <div class="">
+            <div class="center">
+                <div class="row">
+                    <div>
+                        <img src="/images/mdlz/banner.png" />
+                    </div>
+                </div>
+                <div class="row content-section">
+                    <!--<div class="row">
+                        <div class="col-sm-3">
+
+                            <a href="https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/SLK.aspx">SharePoint Learner's Kit</a> |
+                            <a href="https://collaboration.mdlz.com/sites/productivityhub/sharepoint/Pages/TrainingVideos.aspx">Training Videos</a>
+                        </div>
+                        <div class="btn-holder">
+                            <button class="btn btn-danger" data-ng-click="open()">{{ 'REQUEST_A_SITE' | translate }}</button>
+                            <button class="btn btn-success" data-ng-click="OpenMyRequestsModal()">View Existing Requests</button>
+                            <button id="cancel_button" class="btn btn-default" data-ng-click="cancel()">{{ 'SITE_EDIT_CANCEL' | translate }}</button>
+                        </div>
+                    </div>-->
+                    <div class="row template-catalog">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="/images/mdlz/mdlz-Picture2.jpg" alt="" style="width:200px">
+                            </div>
+                            <div class="col-sm-9 home-tool-desc">
+                                Welcome to MDLZ’s online tool for creating new Teams or SharePoint sites<br><br>
+
+                                <ul class="req-type-title">
+                                    <li>
+                                        SharePoint sites - <span>For information about the templates available <a target="_blank" href="https://mdlz.service-now.com/sys_attachment.do?sysparm_referring_url=tear_off&amp;view=true&amp;sys_id=c78d4f49db5d14941a8adbc7489619a7">click here</a></span>
+                                    </li>
+                                    <li>
+                                        Teams - <span>For the Teams Getting Started Guide, <a target="_blank" href="https://teams.mdlz.com/sites/msteams/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fmsteams%2FShared%20Documents%2FGetting%20Started%20Toolkits%2FTeams%20Collaboration%20Toolkit%2Epdf&amp;parent=%2Fsites%2Fmsteams%2FShared%20Documents%2FGetting%20Started%20Toolkits">click here</a></span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row with-teams">
+                            <a href="javascript:;" class="card" data-ng-click="open(0)">
+                                <div>
+                                    <!--<i class="fa fa-globe fa-tile"></i>-->
+                                    <i class="ms-Icon ms-Icon--TeamsLogo16 fa-tile"></i>
+                                </div>
+                                <div class="card-pullout">
+
+                                </div>
+                                <div class="card-pullout-text">
+                                    <b class="ng-binding">New Teams Request</b>
+                                    <div>You will be asked a series of questions as you navigate through a wizard</div>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="card" data-ng-click="open(1)">
+                                <div>
+                                    <i class="ms-Icon ms-Icon--SharepointAppIcon16 fa-tile"></i>
+                                </div>
+                                <div class="card-pullout">
+
+                                </div>
+                                <div class="card-pullout-text">
+                                    <b class="ng-binding">New SharePoint Request</b>
+                                    <div>You will be asked a series of questions as you navigate through a wizard</div>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="card" data-ng-click="OpenMyRequestsModal()">
+                                <div>
+                                    <i class="ms-Icon ms-Icon--CheckList fa-tile"></i>
+                                </div>
+                                <div class="card-pullout">
+
+                                </div>
+                                <div class="card-pullout-text">
+                                    <b>Recent Requests</b>
+                                    <div>View site creation requests you made previously, both completed and pending</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="https://teams.mdlz.com/sites/msteams" class="card" target="_blank">
+                                <div>
+                                    <!--<i class="fa fa-graduation-cap fa-5 fa-tile"></i>-->
+                                    <img src="/images/mdlz/teams-central-purple.png">
+                                </div>
+                                <div class="card-pullout">
+
+                                </div>
+                                <div class="card-pullout-text">
+                                    <b>Teams Central</b>
+                                    <div>
+                                        Your one destination for all things Teams!
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://support.microsoft.com/en-us/office/sites-in-sharepoint-545b9394-5641-4576-a10b-e25e5b6eb837?ui=en-US&amp;rs=en-US&amp;ad=US" class="card" target="_blank">
+                                <div>
+                                    <img src="/images/mdlz/learn-more.png">
+                                    <!--<i class="fa fa-cloud fa-5 fa-tile"></i>-->
+                                </div>
+                                <div class="card-pullout">
+
+                                </div>
+                                <div class="card-pullout-text">
+                                    <b>Learn More - Modern SharePoint</b>
+                                    <div>
+                                        Learn more on how to use the new modern templates for SharePoint from Microsoft
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="display:none" ng-cloak>
+            <img ng-repeat="t in templates" ng-if="t.Enabled" ng-src="{{t.imageUrl}}" />
+        </div>
+    </section>
+
+</section>
+
+<style>
+    
+</style>

@@ -15,18 +15,23 @@
                 <i class="fa fa-cogs wm-logo"></i>
 
                 <ul class="nav nav-pills nav-stacked">
-                    <li ng-class="{'active': getCurrentStep() == 1}" 
-                        ng-click="setCurrentStep(1)">
-                        <a href="#" class="leftnav">{{ 'TEMPLATE_SELECTION' | translate }}</a>
+                    <li ng-class="{'active': getCurrentStep() == 1}"
+                        ng-click="setCurrentStep(1)"
+                        ng-show="WillRenderIntro">
+                        <a href="#" class="leftnav">{{ SelectedMdlzSiteCategory.IntroLeftNavTitle }}</a>
                     </li>
                     <li ng-class="{'active': getCurrentStep() == 2}"
-                        ng-click="(!IsCurrentStepValid(1) && getCurrentStep() < 2) || setCurrentStep(2)" 
-                        ng-disabled="(!IsCurrentStepValid(1) && getCurrentStep() < 2)">
+                        ng-click="setCurrentStep(2)">
+                        <a href="#" class="leftnav">{{ 'TEMPLATE_SELECTION' | translate }}</a>
+                    </li>
+                    <li ng-class="{'active': getCurrentStep() == 3}"
+                        ng-click="(!IsCurrentStepValid(2) && getCurrentStep() < 3) || setCurrentStep(3)"
+                        ng-disabled="(!IsCurrentStepValid(2) && getCurrentStep() < 3)">
                         <a href="#" class="leftnav">{{ 'THE_DETAILS' | translate }}</a>
                     </li>
-                    <li ng-class="{'active': getCurrentStep() == 3}" 
-                        ng-click="(!IsCurrentStepValid(1) || !IsCurrentStepValid(2)) || setCurrentStep(3)"
-                        ng-disabled="(!IsCurrentStepValid(1) || !IsCurrentStepValid(2))">
+                    <li ng-class="{'active': getCurrentStep() == 4}"
+                        ng-click="(!IsCurrentStepValid(2) || !IsCurrentStepValid(3)) || setCurrentStep(4)"
+                        ng-disabled="(!IsCurrentStepValid(2) || !IsCurrentStepValid(3))">
                         <a href="#" class="leftnav">{{ 'CONFIRMATION' | translate }}</a>
                     </li>
                 </ul>
@@ -42,15 +47,19 @@
                 <div class="modal-right" ng-switch="getCurrentStep()">
                     <!-- Step 1 - Site Templates -->
                     <div class="step" ng-switch-when="1">
+                        <div data-ng-include="'mdlz/'+ SelectedMdlzSiteCategory.ViewFolder + SelectedMdlzSiteCategory.IntroTemplatePath"></div>
+                    </div>
+                    <!-- Step 1 - Site Templates -->
+                    <div class="step" ng-switch-when="2">
                         <div data-ng-include="'mdlz/view_sitetemplates.html'"></div>
                     </div>
                     <!-- Step 2 - Site Details  -->
-                    <div class="step" ng-switch-when="2">
+                    <div class="step" ng-switch-when="3">
                         <!--<div>Category: {{SelectedMdlzSiteCategory.Title}}</div>-->
                         <div data-ng-include="'mdlz/'+ SelectedMdlzSiteCategory.ViewFolder + 'view_sitedetails.html'"></div>
                     </div>
                     <!-- Step 3 - Confirmation -->
-                    <div class="step" ng-switch-when="3">
+                    <div class="step" ng-switch-when="4">
                         <div data-ng-include="'mdlz/'+ SelectedMdlzSiteCategory.ViewFolder + 'view_confirmation.html'"></div>
                     </div>
                     <div class="modal-right-footer">

@@ -4,7 +4,7 @@
 
 <div class="modal-right-body site-temp">
     <!--| filter: {rootTemplate: !+'BLOG' && rootTemplate: !+'ENTERWIKI'}-->
-    <div class="tabs">
+    <div class="tabs" ng-show="IsTabbedInterface">
         <ul>
             <li ng-repeat="category in MdlzSiteCategories" ng-click="SetSelectedMdlzSiteCategory(category)" ng-class="{'categorySelected':(SelectedMdlzSiteCategory.Title == category.Title), 'new-categ': category.IsNew}">{{category.Title}}</li>
         </ul>

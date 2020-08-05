@@ -10,8 +10,9 @@
     <title>Create It - Site Provisioning</title>
     <script type="text/javascript" src="../assets/scripts/bundle.js?v=2.2"></script>    
     <link type="text/css" rel="stylesheet" href="../assets/styles/bundle.css?v=2.2"/>
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
 </head>
-<body>    
+<body class="ms-Fabric">    
     <%--<div class="navBar">
         <div class="ms-fontWeight-semilight" style="padding: 8px 0px 0px 15px; color: white; font-size: 22px;">Office 365</div>
         <div class="NavLine"></div><div class="appTitle ms-fontWeight-semilight">Site Provisioning</div>
@@ -20,7 +21,6 @@
         
     <!-- Include the Wizard View -->
     <div data-ng-include="'shell.html'"></div>
-
     <script type="text/javascript">
         $(document).on('click', '.panel-heading span.clickable', function (e) {
             var $this = $(this);

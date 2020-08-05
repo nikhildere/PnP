@@ -7,9 +7,9 @@
         .controller('WizardModalInstanceController', WizardModalInstanceController);
     //.value('urlparams', null);
 
-    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService', '$q', '$http', '$filter', '$SharePointJSOMService'];
+    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService', '$q', '$http', '$filter', '$SharePointJSOMService', 'tabParameters'];
 
-    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter, $SharePointJSOMService) {
+    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter, $SharePointJSOMService, tabParameters) {
         $scope.title = 'WizardModalInstanceController';
 
         //$scope.siteConfiguration = {};
@@ -102,13 +102,13 @@
         //Watching the forms of the specific views
         $scope.$watch('formWizard.$valid', function () {
             switch ($scope.getCurrentStep()) {
-                case 3:
+                case 4:
                     $scope.allFormsValid.siteResponsibilities = $scope.formWizard.siteResponsibilitiesform == null ? false : $scope.formWizard.siteResponsibilitiesform.$valid;
                     break;
                 //case 3:
                 //    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
                 //    break;
-                case 2:
+                case 3:
                     $scope.allFormsValid.siteDetails = $scope.formWizard.sitedetailsform == null ? false : $scope.formWizard.sitedetailsform.$valid;
                     break;
                 //case 7:
@@ -250,6 +250,12 @@
             $scope.siteConfiguration.properties = {};
             $scope.siteConfiguration.privacy = {};
 
+            if (tabParameters == 0 || tabParameters) {
+                $scope.SelectedMdlzSiteCategory = $scope.MdlzSiteCategories[tabParameters];
+                $scope.IsTabbedInterface = false;
+            }
+            adjustSteps(true);
+
             // Initialize modal dialog box information
             initModal();
             //getTemplates();
@@ -260,13 +266,20 @@
                 .then(function () {
                     logSuccess('Wizard Activated');
                 });
+            
+            
+        }
 
+        function adjustSteps(resetToFirstStep) {
+            $scope.WillRenderIntro = (!$scope.IsTabbedInterface && $scope.SelectedMdlzSiteCategory.IntroTemplatePath != null)
+            $scope.steps = $scope.WillRenderIntro ? [1, 2, 3, 4] : [2, 3, 4];
+            $scope.FirstStep = $scope.WillRenderIntro ? 1 : 2;
+            if (resetToFirstStep)
+                $scope.step = $scope.FirstStep;
         }
 
         function initModal() {
-
-            $scope.steps = [1, 2, 3];
-            $scope.step = 0;
+            
             $scope.wizard = { tacos: 2 };
 
             $scope.isCurrentStep = function (step) {
@@ -274,19 +287,19 @@
             };
 
             $scope.setCurrentStep = function (step) {
-                $scope.step = step -= 1;
+                $scope.step = step;
             };
 
             $scope.getCurrentStep = function () {
-                return $scope.steps[$scope.step];
+                return $scope.step;
             };
 
             $scope.isFirstStep = function () {
-                return $scope.step === 0;
+                return $scope.step === $scope.FirstStep;
             };
 
             $scope.isLastStep = function () {
-                return $scope.step === ($scope.steps.length - 1);
+                return $scope.step === $scope.steps[($scope.steps.length - 1)];
             };
 
             $scope.handlePrevious = function () {
@@ -411,32 +424,6 @@
             console.log(request);
         }
 
-        //$scope.getCurrentUser = function () {
-        //    var isSPOD = (typeof O365 === "undefined");
-        //    var odataType = isSPOD ? "verbose" : "nometadata";
-        //    var executor = new SP.RequestExecutor($utilservice.spAppWebUrl());
-        //    executor.executeAsync(
-        //           {
-        //               url: $utilservice.spAppWebUrl() + "/_api/web/currentuser",
-        //               method: "GET",
-        //               headers:
-        //               {
-        //                   "Accept": "application/json;odata=" + odataType
-
-        //               },
-        //               success: function (data) {
-        //                   var jsonResults = JSON.parse(data.body);
-        //                   jsonResults = isSPOD ? jsonResults.d : jsonResults;
-        //                   $scope.siteConfiguration.primaryOwner = jsonResults.Email;
-
-        //               },
-        //               error: function () { alert("We are having problems retrieving specific information from the server. Please try again later") }
-        //           }
-        //       );
-        //}
-
-        //$scope.getCurrentUser();
-
         $scope.siteConfiguration.primaryOwner = $scope.spUser;
 
         $scope.GetPeoplePickerSearchEntities = function (query, loadingProp) {
@@ -498,6 +485,7 @@
 
         $scope.SetSelectedMdlzSiteCategory = function (sel) {
             $scope.SelectedMdlzSiteCategory = sel;
+            adjustSteps(false);
         }
 
         $scope.GetSelectedValueForKey = function (collection, value) {
@@ -514,9 +502,12 @@
 
             switch (step) {
                 case 1:
-                    isValid = ($scope.siteConfiguration.template != null);
+                    isValid = true;
                     break;
                 case 2:
+                    isValid = ($scope.siteConfiguration.template != null);
+                    break;
+                case 3:
                     if (!$scope.formsTempStore_SiteDetails || $scope.formWizard.sitedetailsform != null) {
                         if ($scope.formsTempStore_SiteDetails) {
                             $scope.formWizard.sitedetailsform.$dirty = $scope.formsTempStore_SiteDetails.$dirty;
@@ -525,7 +516,7 @@
                     }
                     isValid = $scope.formsTempStore_SiteDetails && $scope.formsTempStore_SiteDetails.$dirty && $scope.formsTempStore_SiteDetails.$valid;
                     break;
-                case 3:
+                case 4:
                     isValid = $scope.siteConfiguration.properties && $scope.siteConfiguration.properties.termsaccepted;
                     break;
             }

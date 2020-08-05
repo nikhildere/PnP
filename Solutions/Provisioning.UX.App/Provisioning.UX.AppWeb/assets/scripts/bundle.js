@@ -2236,7 +2236,7 @@ function getQueryStringParameter(paramToRetrieve) {
             trail: 100,
             color: '#DC3C00'
         };
-
+        vm.isBetaInterface = initialData.User.IsBetaUser;
         
         vm.translations ={};
         $translate(['SOLUTION_LOADED']).then(function (translations) {
@@ -2463,7 +2463,7 @@ function getQueryStringParameter(paramToRetrieve) {
 
         $rootScope.userContext = [];
         $scope.user;
-        $scope.spinnerService = spinnerService;
+        //$scope.spinnerService = spinnerService;
         $scope.loading = false;
         $scope.siteConfiguration = {};
         var completedLoadRequests = 0, totalRequests = 7;
@@ -2520,30 +2520,36 @@ function getQueryStringParameter(paramToRetrieve) {
         };
 
         function loadSpinners() {
-            $scope.spinnerService.showGroup('requests');
+            //$scope.spinnerService.showGroup('requests');
         }
 
         function initModal() {
 
             // Set event handler to open the modal dialog window
-            $scope.open = function () {
+            $scope.open = function (tab) {
 
                 // Set modal configuration options
                 var modalInstance = $modal.open({
                     scope: $scope,
+                    //templateUrl: $scope.isBetaInterface ? '/Pages/mdlz/Wizard.modal_beta.html' : '/Pages/mdlz/Wizard.modal.html',
                     templateUrl: '/Pages/mdlz/Wizard.modal.html',
                     controller: 'WizardModalInstanceController',
                     size: 'lg',
                     windowClass: 'modal-pnp',
                     keyboard: false,
-                    backdrop: 'static'
+                    backdrop: 'static',
+                    resolve: {
+                        tabParameters: function () {
+                            return tab;
+                        }
+                    }
                 });
 
                 // Process the data returned from the modal after it is successfuly completed
                 modalInstance.result.then(function (configuration) {
                     $scope.completedConfiguration = configuration;
                     //getRequestsByOwner(user);
-                    logSuccess("Request Saved!! <br>You will receive an email notification once we have created your site.", null, true);
+                    logSuccess("Request Saved!! <br>You will receive an email notification once we have processed your request.", null, true);
                 }, function () {
                     $log.info('Modal dismissed at: ' + new Date());
                     //getRequestsByOwner(user);
@@ -2560,9 +2566,9 @@ function getQueryStringParameter(paramToRetrieve) {
                     url: $scope.spAppWebUrl + "/_api/SP.AppContextSite(@t)/web/currentUser?$select=email,loginname,title&@t='" + $scope.spHostWebUrl + "'",
                     method: "GET",
                     headers:
-                    {
-                        "Accept": "application/json;odata=" + odataType
-                    },
+                        {
+                            "Accept": "application/json;odata=" + odataType
+                        },
                     success: function (data) {
                         var jsonResults = JSON.parse(data.body);
                         jsonResults = isSPOD ? jsonResults.d : jsonResults;
@@ -2588,7 +2594,7 @@ function getQueryStringParameter(paramToRetrieve) {
                 $.when($SharePointProvisioningService.getSiteRequestsByOwners(request)).done(function (data) {
                     if (data != null) {
                         vm.existingRequests = data;
-                        $scope.spinnerService.hideGroup('requests');
+                        //$scope.spinnerService.hideGroup('requests');
                         logSuccess('Retrieved user request history');
                         $scope.loading = false;
                     }
@@ -2639,9 +2645,13 @@ function getQueryStringParameter(paramToRetrieve) {
             });
         }
 
+        $scope.getTeamsUrl = function (request) {
+            return JSON.parse(request.siteMetaData)._site_props_team_url;
+        }
+
         $scope.cancelExistingRequests = function () {
             $scope.miExistingRequests.dismiss('cancel');
-            $scope.spinnerService._unregisterAll();
+            //$scope.spinnerService._unregisterAll();
         };
 
         $scope.fnFilterPendingRequests = function (item) {
@@ -2738,16 +2748,16 @@ function getQueryStringParameter(paramToRetrieve) {
                 var setting = $scope.appSettings[i]
                 switch (setting.Key) {
                     case 'MdlzSiteCategories':
-                        $scope.MdlzSiteCategories = JSON.parse(setting.Value).filter(x => !x.IsBetaOnly || initialData.User.IsBetaUser);
+                        $scope.MdlzSiteCategories = JSON.parse(setting.Value).filter(function (x) { return !x.IsBetaOnly || initialData.User.IsBetaUser });
                         $scope.SelectedMdlzSiteCategory = $scope.MdlzSiteCategories[0];
                         break;
                 }
-
             }
 
             completedLoadRequests = totalRequests;
             $scope.ProgressBar = 100;
             $scope.loading = false;
+            $scope.IsTabbedInterface = true;
         }
 
     }
@@ -3004,9 +3014,9 @@ function getQueryStringParameter(paramToRetrieve) {
         .controller('WizardModalInstanceController', WizardModalInstanceController);
     //.value('urlparams', null);
 
-    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService', '$q', '$http', '$filter', '$SharePointJSOMService'];
+    WizardModalInstanceController.$inject = ['$rootScope', 'common', 'config', '$scope', '$log', '$modalInstance', 'Templates', 'BusinessMetadata', 'utilservice', '$SharePointProvisioningService', '$q', '$http', '$filter', '$SharePointJSOMService', 'tabParameters'];
 
-    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter, $SharePointJSOMService) {
+    function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter, $SharePointJSOMService, tabParameters) {
         $scope.title = 'WizardModalInstanceController';
 
         //$scope.siteConfiguration = {};
@@ -3099,13 +3109,13 @@ function getQueryStringParameter(paramToRetrieve) {
         //Watching the forms of the specific views
         $scope.$watch('formWizard.$valid', function () {
             switch ($scope.getCurrentStep()) {
-                case 3:
+                case 4:
                     $scope.allFormsValid.siteResponsibilities = $scope.formWizard.siteResponsibilitiesform == null ? false : $scope.formWizard.siteResponsibilitiesform.$valid;
                     break;
                 //case 3:
                 //    $scope.allFormsValid.siteIntendedUse = $scope.formWizard.siteintendeduseform == null ? false : $scope.formWizard.siteintendeduseform.$valid;
                 //    break;
-                case 2:
+                case 3:
                     $scope.allFormsValid.siteDetails = $scope.formWizard.sitedetailsform == null ? false : $scope.formWizard.sitedetailsform.$valid;
                     break;
                 //case 7:
@@ -3247,6 +3257,12 @@ function getQueryStringParameter(paramToRetrieve) {
             $scope.siteConfiguration.properties = {};
             $scope.siteConfiguration.privacy = {};
 
+            if (tabParameters == 0 || tabParameters) {
+                $scope.SelectedMdlzSiteCategory = $scope.MdlzSiteCategories[tabParameters];
+                $scope.IsTabbedInterface = false;
+            }
+            adjustSteps(true);
+
             // Initialize modal dialog box information
             initModal();
             //getTemplates();
@@ -3257,13 +3273,20 @@ function getQueryStringParameter(paramToRetrieve) {
                 .then(function () {
                     logSuccess('Wizard Activated');
                 });
+            
+            
+        }
 
+        function adjustSteps(resetToFirstStep) {
+            $scope.WillRenderIntro = (!$scope.IsTabbedInterface && $scope.SelectedMdlzSiteCategory.IntroTemplatePath != null)
+            $scope.steps = $scope.WillRenderIntro ? [1, 2, 3, 4] : [2, 3, 4];
+            $scope.FirstStep = $scope.WillRenderIntro ? 1 : 2;
+            if (resetToFirstStep)
+                $scope.step = $scope.FirstStep;
         }
 
         function initModal() {
-
-            $scope.steps = [1, 2, 3];
-            $scope.step = 0;
+            
             $scope.wizard = { tacos: 2 };
 
             $scope.isCurrentStep = function (step) {
@@ -3271,19 +3294,19 @@ function getQueryStringParameter(paramToRetrieve) {
             };
 
             $scope.setCurrentStep = function (step) {
-                $scope.step = step -= 1;
+                $scope.step = step;
             };
 
             $scope.getCurrentStep = function () {
-                return $scope.steps[$scope.step];
+                return $scope.step;
             };
 
             $scope.isFirstStep = function () {
-                return $scope.step === 0;
+                return $scope.step === $scope.FirstStep;
             };
 
             $scope.isLastStep = function () {
-                return $scope.step === ($scope.steps.length - 1);
+                return $scope.step === $scope.steps[($scope.steps.length - 1)];
             };
 
             $scope.handlePrevious = function () {
@@ -3408,32 +3431,6 @@ function getQueryStringParameter(paramToRetrieve) {
             console.log(request);
         }
 
-        //$scope.getCurrentUser = function () {
-        //    var isSPOD = (typeof O365 === "undefined");
-        //    var odataType = isSPOD ? "verbose" : "nometadata";
-        //    var executor = new SP.RequestExecutor($utilservice.spAppWebUrl());
-        //    executor.executeAsync(
-        //           {
-        //               url: $utilservice.spAppWebUrl() + "/_api/web/currentuser",
-        //               method: "GET",
-        //               headers:
-        //               {
-        //                   "Accept": "application/json;odata=" + odataType
-
-        //               },
-        //               success: function (data) {
-        //                   var jsonResults = JSON.parse(data.body);
-        //                   jsonResults = isSPOD ? jsonResults.d : jsonResults;
-        //                   $scope.siteConfiguration.primaryOwner = jsonResults.Email;
-
-        //               },
-        //               error: function () { alert("We are having problems retrieving specific information from the server. Please try again later") }
-        //           }
-        //       );
-        //}
-
-        //$scope.getCurrentUser();
-
         $scope.siteConfiguration.primaryOwner = $scope.spUser;
 
         $scope.GetPeoplePickerSearchEntities = function (query, loadingProp) {
@@ -3495,6 +3492,7 @@ function getQueryStringParameter(paramToRetrieve) {
 
         $scope.SetSelectedMdlzSiteCategory = function (sel) {
             $scope.SelectedMdlzSiteCategory = sel;
+            adjustSteps(false);
         }
 
         $scope.GetSelectedValueForKey = function (collection, value) {
@@ -3511,9 +3509,12 @@ function getQueryStringParameter(paramToRetrieve) {
 
             switch (step) {
                 case 1:
-                    isValid = ($scope.siteConfiguration.template != null);
+                    isValid = true;
                     break;
                 case 2:
+                    isValid = ($scope.siteConfiguration.template != null);
+                    break;
+                case 3:
                     if (!$scope.formsTempStore_SiteDetails || $scope.formWizard.sitedetailsform != null) {
                         if ($scope.formsTempStore_SiteDetails) {
                             $scope.formWizard.sitedetailsform.$dirty = $scope.formsTempStore_SiteDetails.$dirty;
@@ -3522,7 +3523,7 @@ function getQueryStringParameter(paramToRetrieve) {
                     }
                     isValid = $scope.formsTempStore_SiteDetails && $scope.formsTempStore_SiteDetails.$dirty && $scope.formsTempStore_SiteDetails.$valid;
                     break;
-                case 3:
+                case 4:
                     isValid = $scope.siteConfiguration.properties && $scope.siteConfiguration.properties.termsaccepted;
                     break;
             }
