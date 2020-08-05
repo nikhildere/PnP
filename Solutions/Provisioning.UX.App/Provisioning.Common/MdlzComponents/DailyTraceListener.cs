@@ -40,7 +40,7 @@ namespace Provisioning.Common.MdlzComponents
         {
             WriteInternal($"\r\n{DateTime.Now}##{Process.GetCurrentProcess().Id}##{Thread.CurrentThread.ManagedThreadId}##{category}##{message}");
         }
-        
+
         public override void Flush()
         {
             lock (this) if (_TraceWriter != null) _TraceWriter.Flush();
@@ -64,7 +64,13 @@ namespace Provisioning.Common.MdlzComponents
         private string GenerateFileName()
         {
             _CurrentDate = DateTime.Today;
-            string fn = Path.Combine(Path.GetDirectoryName(_LogFileLocation), _CurrentDate.ToString("yyyy"), _CurrentDate.ToString("MMMM"), Path.GetFileNameWithoutExtension(_LogFileLocation) + "_" + _CurrentDate.ToString("yyyyMMdd") + Path.GetExtension(_LogFileLocation));
+            string fn = null;
+
+            if (string.IsNullOrEmpty(_LogFileLocation))
+                fn = Path.Combine(Environment.GetEnvironmentVariable("HOME"), "\\LogFiles\\AppLogs", _CurrentDate.ToString("yyyy"), _CurrentDate.ToString("MMMM"), $"pnprovisioningjob_{_CurrentDate.ToString("yyyyMMdd")}.log");
+            else
+                fn = Path.Combine(Path.GetDirectoryName(_LogFileLocation), _CurrentDate.ToString("yyyy"), _CurrentDate.ToString("MMMM"), Path.GetFileNameWithoutExtension(_LogFileLocation) + "_" + _CurrentDate.ToString("yyyyMMdd") + Path.GetExtension(_LogFileLocation));
+
             var d = Directory.CreateDirectory(Path.GetDirectoryName(fn));
             return fn;
         }
