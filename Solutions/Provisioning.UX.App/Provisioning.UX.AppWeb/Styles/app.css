@@ -947,7 +947,7 @@ body {
         text-decoration: underline;
     }
 
-tags-input[max-tags='1'].ng-valid-required .tags .input {
+tags-input[max-tags='1'].ng-valid-required .tags .input, .hideInput .tags .input {
     display: none;
 }
 
@@ -998,6 +998,10 @@ tags-input[name="tiFunction"] ul.suggestion-list, tags-input[name="tiRegion"] ul
 
 tags-input[name="ppPrimaryOwner"] ul.suggestion-list, tags-input[name="ppSecondaryOwners"] ul.suggestion-list {
     max-height: 200px;
+}
+
+tags-input[name="ppPrimaryOwner"] .tags .input, tags-input[name="ppSecondaryOwners"] .tags .input {
+    width:230px;
 }
 
 tags-input input[type=text]::-webkit-input-placeholder {
@@ -1200,3 +1204,6 @@ li.suggestion-item *, .tag-item *, .form-control {
     background-color: rgba(0, 0, 0, 0.52);
 }
 
+#toast-container > div {
+    opacity:1 !important;
+}
