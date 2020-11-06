@@ -25,7 +25,7 @@ namespace Provisioning.Common.MdlzComponents
 {
     public class TeamsProvisioning
     {
-        const double minutesToWaitAfterTeamCreation = 3;
+        const int secondsToWaitBetweenEachAttempt = 30;
 
         AppOnlyAuthenticationSite authentication;
         AppSettings settings;
@@ -40,6 +40,8 @@ namespace Provisioning.Common.MdlzComponents
         public CreatedTeam CreateTeam(SiteInformation request, Template template)
         {
             CreatedTeam team = null;
+            string groupID = null;
+            bool isGroupExist = false;
             Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Acquring Graph API token");
             string token = AcquireToken();
             Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Graph API token acquired successfuly");
@@ -52,15 +54,23 @@ namespace Provisioning.Common.MdlzComponents
             TemplateRequestMapping(hierarchyToApply, request);
             Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Mapped teams template with request infromation successfully");
 
-            Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Checking if group already exists");
-            bool isGroupExist = DoesGroupWithNameExists(request.Title, token, out string groupID);
+            if (request.RequestStatusMessage != "Retry")
+            {
+                Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Checking if group already exists");
+                isGroupExist = DoesGroupWithNameExists(request.Title, token, out groupID);
 
-            if (isGroupExist)
-                throw new Exception("Team with same name already exists.");
+                if (isGroupExist)
+                    throw new Exception("Team with same name already exists.");
+            }
+            else
+            {
+                Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Request is candidate for retry");
+            }
+
 
             var prov = new OfficeDevPnP.Core.Framework.Provisioning.Model.Configuration.ApplyConfiguration { };
             ProvisioningTemplateApplyingInformation _pta = new ProvisioningTemplateApplyingInformation();
-            
+
             prov.ProgressDelegate = (message, step, total) =>
                 Utilities.Log.Info("SiteProvisioningManager.ApplyProvisioningTemplate", "Applying Provisioning template - Step {0}/{1} : {2} ", step, total, message);
 
@@ -70,24 +80,59 @@ namespace Provisioning.Common.MdlzComponents
                 {
                     Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Applying teams template - started");
                     var tenant = new Tenant(clientContext);
-                    tenant.ApplyTenantTemplate(hierarchyToApply, "SAMPLE-SEQUENCE", prov);
-                    Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Applying teams template - completed");
 
-                    Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", $"Waiting for {minutesToWaitAfterTeamCreation} minutes to let all dependent teams resources be provisioned");
-                    Thread.Sleep(TimeSpan.FromMinutes(minutesToWaitAfterTeamCreation).Milliseconds);
+                    //var owners = hierarchyToApply.Teams.Teams[0].Security.Owners.Where(x => 1 == 1).ToList();
+                    //if (owners.Count > 10)
+                    //{
+                    //    hierarchyToApply.Teams.Teams[0].Security.Owners.Clear();
+                    //    hierarchyToApply.Teams.Teams[0].Security.Owners.AddRange(owners.Select(x => new TeamSecurityUser { UserPrincipalName = x.UserPrincipalName }));
+                    //}
 
-                    Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Checking if the team was created");
-                    isGroupExist = DoesGroupWithNameExists(request.Title, token, out groupID);
-                    
-
-                    //Utilities.Log.Info(nameof(TeamsProvisioning), "Successfully applied template to {}");
-
-                    if (isGroupExist)
+                    MdlzUtilities.PerformActionRetry((ex) =>
                     {
+                        if (string.IsNullOrEmpty(ex) || ex?.ToLower().Contains("no team found with group id") == true)
+                        {
+                            Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Setting the Group ID to blank");
+                            hierarchyToApply.Teams.Teams[0].GroupId = string.Empty;
+                            tenant.ApplyTenantTemplate(hierarchyToApply, "SAMPLE-SEQUENCE", prov);
+                            Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Applying teams template - completed");
+                            Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Checking if the team was created");
+                            groupID = hierarchyToApply.Teams?.Teams?.FirstOrDefault()?.GroupId;
+                            isGroupExist = !string.IsNullOrEmpty(groupID);
+                        }
+                        //isGroupExist = DoesGroupWithNameExists(request.Title, token, out groupID);
                         Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Retrieving newly created team");
-                        team = GetTeamDetailsByGroupID(groupID, token).Result;
-                        Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Newly created team retrieved successfully");
+                        team = GetTeamDetailsByGroupID(groupID, token);
+                        Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Newly created team retrieved successfully: {0}", JsonConvert.SerializeObject(team));
+                    },
 
+
+
+                    secondsToWaitBetweenEachAttempt: secondsToWaitBetweenEachAttempt, retryAttempts: 30);
+
+                    //if (owners.Count > 10)
+                    //{
+                    //    for (int i = 10; i < owners.Count; i++)
+                    //    {
+                    //        if()
+                    //    }
+
+                    //    int skip = 10;
+                    //    var ownersToAdd = owners.Skip(skip + 10).Take(10).Select(x => new TeamSecurityUser { UserPrincipalName = x.UserPrincipalName });
+
+                    //    if (owners.Count() > 0)
+                    //    {
+                    //        HttpHelper.MakePostRequestForString($"{GraphHelper.MicrosoftGraphBaseURI}v1.0/groups/{groupID}/owners/$ref", groupCreationRequest, HttpHelper.JsonContentType, accessToken);
+                    //    }
+
+                    //    MdlzUtilities.PerformActionRetry((ex) =>
+                    //    {
+
+                    //    });
+                    //}
+
+                    if (team != null)
+                    {
                         Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Setting external sharing configuration for associated SharePoint site to ExistingExternalUserSharingOnly");
                         SharingCapabilities sharing = SharingCapabilities.ExistingExternalUserSharingOnly;
                         if (hierarchyToApply.Parameters.ContainsKey("ExternalSharingMode"))
@@ -99,12 +144,11 @@ namespace Provisioning.Common.MdlzComponents
                         tenant.Context.Load(siteProps);
                         tenant.Context.ExecuteQueryRetry();
                         Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Completed setting external sharing configuration for associated SharePoint site to ExistingExternalUserSharingOnly");
-
-                        
-
+                        Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Completed creating team. Team Name: {0}. Group ID: {1}", request.Title, team.GroupID);
                     }
                     else
                     {
+                        Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Team creation failed. Team Name: {0}", request.Title);
                         throw new Exception("Team could not be created");
                     }
                 }
@@ -170,12 +214,11 @@ namespace Provisioning.Common.MdlzComponents
             if (spProps.ContainsKey("_site_props_externalsharing"))
                 template.Security.AllowToAddGuests = spProps["_site_props_externalsharing"].ToBoolean();
 
-
             List<string> owners = new List<string>();
-            owners.AddRange(request.AdditionalAdministrators.Select(x => x.Email.ToLower()));
-            owners.AddRange(new[] { request.SiteOwner.Email.ToLower() });
+            owners.AddRange(new[] { request.SiteOwner.Name.Split(new[] { '|' }, StringSplitOptions.None).Last().ToLower() });
+            owners.AddRange(request.AdditionalAdministrators.Select(x => x.Name.Split(new[] { '|' }, StringSplitOptions.None).Last().ToLower()));
             //owners.AddRange(new[] { settings.DefaultScAdminLoginName.ToLower(), request.SiteOwner.Email.ToLower() });
-            template.Security.Owners.AddRange(owners.Distinct().Select(x => new TeamSecurityUser { UserPrincipalName = x }));
+            template.Security.Owners.AddRange(owners.Distinct().Select(x => new TeamSecurityUser { UserPrincipalName = x }).Take(10));
         }
 
 
@@ -198,42 +241,27 @@ namespace Provisioning.Common.MdlzComponents
             return (!string.IsNullOrEmpty(groupID));
         }
 
-        public static async Task<CreatedTeam> GetTeamDetailsByGroupID(string alreadyExistingGroupId, string accessToken)
+        public static CreatedTeam GetTeamDetailsByGroupID(string alreadyExistingGroupId, string accessToken)
         {
-            //List<KeyValuePair<string, string>> filterFieldsAndValues = new List<KeyValuePair<string, string>>
-            //{
-            //    new KeyValuePair<string, string>("id", alreadyExistingGroupId)
-            //};
-
-            //var alreadyExistingGroupId = !string.IsNullOrEmpty(groupID) ?
-            //    ItemAlreadyExists($"https://graph.microsoft.com/v1.0/groups", filterFieldsAndValues, accessToken) :
-            //    null;
-
-            int counter = 1;
-            CreatedTeam team = null;
-
-            //while (counter < )
-            //{
-
-            //}
-
             if (!string.IsNullOrEmpty(alreadyExistingGroupId))
             {
-                var jsonGroup = Task.Run(() => JsonConvert.DeserializeAnonymousType(HttpHelper.MakeGetRequestForString($"https://graph.microsoft.com/v1.0/groups/{alreadyExistingGroupId}?$select=mail", accessToken), new { mail = "" }));
-                var jsonGroupSpo = Task.Run(() => JsonConvert.DeserializeAnonymousType(HttpHelper.MakeGetRequestForString($"https://graph.microsoft.com/v1.0/groups/{alreadyExistingGroupId}/sites/root/weburl", accessToken), new { value = "" }));
-                var jsonTeam = Task.Run(() => JsonConvert.DeserializeAnonymousType(HttpHelper.MakeGetRequestForString($"https://graph.microsoft.com/v1.0/teams/{alreadyExistingGroupId}?$select=webUrl", accessToken), new { webUrl = "" }));
+                var jsonGroupSpo = JsonConvert.DeserializeAnonymousType(HttpHelper.MakeGetRequestForString($"https://graph.microsoft.com/v1.0/groups/{alreadyExistingGroupId}/sites/root/weburl", accessToken), new { value = "" });
+                var jsonGroup = JsonConvert.DeserializeAnonymousType(HttpHelper.MakeGetRequestForString($"https://graph.microsoft.com/v1.0/groups/{alreadyExistingGroupId}?$select=mail", accessToken), new { mail = "" });
+                var jsonTeam = JsonConvert.DeserializeAnonymousType(HttpHelper.MakeGetRequestForString($"https://graph.microsoft.com/v1.0/teams/{alreadyExistingGroupId}?$select=webUrl", accessToken), new { webUrl = "" });
 
-                return new CreatedTeam { GroupID = alreadyExistingGroupId, Mail = (await jsonGroup).mail, SharePointSiteUrl = (await jsonGroupSpo).value, TeamUrl = (await jsonTeam).webUrl };
+                return new CreatedTeam { GroupID = alreadyExistingGroupId, Mail = (jsonGroup).mail, SharePointSiteUrl = (jsonGroupSpo).value, TeamUrl = (jsonTeam).webUrl };
+                //return new CreatedTeam { GroupID = alreadyExistingGroupId, Mail = (await jsonGroup).mail, SharePointSiteUrl = (await jsonGroupSpo).value };
             }
-            return null;
+            else
+                throw new Exception("GetTeamDetailsByGroupID: Group ID cannot be blank");
         }
 
         public class CreatedTeam
         {
-            public string GroupID { get; set; }
-            public string SharePointSiteUrl { get; set; }
-            public string TeamUrl { get; set; }
-            public string Mail { get; set; }
+            public string GroupID { get; set; } = string.Empty;
+            public string SharePointSiteUrl { get; set; } = string.Empty;
+            public string TeamUrl { get; set; } = string.Empty;
+            public string Mail { get; set; } = string.Empty;
 
         }
 
@@ -309,6 +337,11 @@ namespace Provisioning.Common.MdlzComponents
             str = regex.Replace(str, "d");
 
             return str;
+        }
+
+        public static string GetUserLicenseDetails(string userUpn, string accessToken)
+        {
+            return HttpHelper.MakeGetRequestForString($"https://graph.microsoft.com/v1.0/users/{userUpn}/licenseDetails", accessToken);
         }
         #endregion
     }

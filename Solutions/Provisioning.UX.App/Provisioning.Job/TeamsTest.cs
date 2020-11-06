@@ -1,8 +1,12 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Microsoft.Online.SharePoint.TenantAdministration;
+using Microsoft.Online.SharePoint.TenantManagement;
+using Microsoft.SharePoint.Client;
+using Newtonsoft.Json.Linq;
 using OfficeDevPnP.Core.Diagnostics;
 using OfficeDevPnP.Core.Utilities;
 using Provisioning.Common;
 using Provisioning.Common.Authentication;
+using Provisioning.Common.Data.SiteRequests;
 using Provisioning.Common.Data.Templates;
 using Provisioning.Common.MdlzComponents;
 using System;
@@ -29,7 +33,7 @@ namespace Provisioning.Job
         {
             string token = AcquireTokenAsync("https://graph.microsoft.com/", null);
             bool doesGrpExists = TeamsProvisioning.DoesGroupWithNameExists("O365 Service Operations", token, out string groupID);
-            var team = TeamsProvisioning.GetTeamDetailsByGroupID(groupID, token).Result;
+            var team = TeamsProvisioning.GetTeamDetailsByGroupID(groupID, token);
         }
         private string AcquireTokenAsync(string resource, string scope = null)
         {
@@ -168,6 +172,90 @@ namespace Provisioning.Job
             req.SiteMetadataJson = "{'_site_props_externalsharing':'true'}";
             t = new TeamsProvisioning();
             t.CreateTeam(req, temp);
+        }
+
+        public void PatchTeamSPOException(params string[] groupIDs)
+        {
+            string token = AcquireTokenAsync("https://graph.microsoft.com/", null);
+            AppOnlyAuthenticationSite authentication = new AppOnlyAuthenticationSite();
+            authentication.SiteUrl = authentication.TenantAdminUrl;
+
+            foreach (var groupID in groupIDs)
+            {
+                try
+                {
+                    string gID = groupID;
+                    //TeamsProvisioning.DoesGroupWithNameExists("Planejamento VSA", token, out gID);
+                    var team = TeamsProvisioning.GetTeamDetailsByGroupID(gID, token);
+
+                    //using (ClientContext clientContext = authentication.GetAuthenticatedContext())
+                    //{
+                    //    var tenant = new Tenant(clientContext);
+                    //    var siteProps = tenant.GetSitePropertiesByUrl(team.SharePointSiteUrl, false);
+                    //    siteProps.SharingCapability = SharingCapabilities.ExistingExternalUserSharingOnly;
+                    //    siteProps.Update();
+                    //    tenant.Context.Load(siteProps);
+                    //    tenant.Context.ExecuteQueryRetry();
+
+
+                    //}
+
+
+
+                    Console.WriteLine(gID);
+                    Console.WriteLine($"SPO Url: {team.SharePointSiteUrl}");
+                    Console.WriteLine($"\"_site_props_team_url\":\"{team.TeamUrl}\",\"_site_props_group_id\":\"{team.GroupID}\",\"_site_props_mail_nickname\":\"{team.Mail}\"");
+                    Console.WriteLine();
+                    Console.WriteLine();
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+            Console.Read();
+        }
+
+        public void PatchTeamTeamsException(params string[] groupIDs)
+        {
+            string token = AcquireTokenAsync("https://graph.microsoft.com/", null);
+            AppOnlyAuthenticationSite authentication = new AppOnlyAuthenticationSite();
+            authentication.SiteUrl = authentication.TenantAdminUrl;
+
+            foreach (var groupID in groupIDs)
+            {
+                try
+                {
+                    string gID = groupID;
+                    //TeamsProvisioning.DoesGroupWithNameExists("Planejamento VSA", token, out gID);
+                    var team = TeamsProvisioning.GetTeamDetailsByGroupID(gID, token);
+
+                    //using (ClientContext clientContext = authentication.GetAuthenticatedContext())
+                    //{
+                    //    var tenant = new Tenant(clientContext);
+                    //    var siteProps = tenant.GetSitePropertiesByUrl(team.SharePointSiteUrl, false);
+                    //    siteProps.SharingCapability = SharingCapabilities.ExistingExternalUserSharingOnly;
+                    //    siteProps.Update();
+                    //    tenant.Context.Load(siteProps);
+                    //    tenant.Context.ExecuteQueryRetry();
+
+
+                    //}
+
+
+
+                    Console.WriteLine(gID);
+                    Console.WriteLine($"SPO Url: {team.SharePointSiteUrl}");
+                    Console.WriteLine($"\"_site_props_team_url\":\"{team.TeamUrl}\",\"_site_props_group_id\":\"{team.GroupID}\",\"_site_props_mail_nickname\":\"{team.Mail}\"");
+                    Console.WriteLine();
+                    Console.WriteLine();
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+            Console.Read();
         }
     }
 }

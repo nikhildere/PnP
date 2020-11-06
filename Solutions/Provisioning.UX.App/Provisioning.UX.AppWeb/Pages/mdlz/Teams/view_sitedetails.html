@@ -49,7 +49,7 @@
                         display-property="DisplayText"
                         add-from-autocomplete-only="true"
                         allow-leftover-text="false"
-                        placeholder="select user"
+                        placeholder="select user - enter last name, first name"
                         replace-spaces-with-dashes="false"
                         key-property="Key"
                         name="ppPrimaryOwner"
@@ -80,12 +80,14 @@
                         display-property="DisplayText"
                         add-from-autocomplete-only="true"
                         allow-leftover-text="false"
-                        placeholder="select user(s)"
+                        placeholder="select user(s) - enter last name, first name"
                         replace-spaces-with-dashes="false"
                         key-property="Key"
                         name="ppSecondaryOwners"
                         min-tags="0"
-                        ng-required="siteConfiguration.isOnBehalfOf==0">
+                        max-tags="2"
+                        ng-required="siteConfiguration.isOnBehalfOf==0"
+                        ng-class="{'hideInput': siteConfiguration.secondaryOwners && siteConfiguration.secondaryOwners.length == 2}">
                 <auto-complete source="GetPeoplePickerSearchEntities($query, 'secondaryOwnersLoading')"
                                min-length="3"
                                load-on-down-arrow="true"
@@ -98,7 +100,7 @@
             </div>
             <script type="text/ng-template" id="picker-template-SecondaryOwners">
                 <div class="left-panel">
-                    <!--<img ng-src="{{}}" />-->
+                    <!--<img ng-src="{{'hostnamee'+'/_layouts/15/userphoto.aspx?size=S&accountname=' + data.EntityData.Email}}" />-->
                 </div>
                 <div class="right-panel" title="{{data.Key}}">
                     <span class="pp-ac-name" ng-bind-html="$highlight($getDisplayText())"></span>
@@ -115,7 +117,7 @@
             <div class="form-group" ng-hide="regions.length == 1"
                  ng-class="{ 'has-error' : sitedetailsform.tiRegion.$invalid && (!sitedetailsform.tiRegion.$pristine || submitDenied), 'has-success' : sitedetailsform.tiRegion.$valid && !sitedetailsform.tiRegion.$pristine }">
                 <label class="control-label" for="detailsRegion">{{ 'DETAILS_TEAMS_REGION' | translate }}</label><em class="req"></em>
-                <span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Region%20not%20listed&Body=Missing%20region%20name:">not listed?</a>)</span>
+                <!--<span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Region%20not%20listed&Body=Missing%20region%20name:">not listed?</a>)</span>-->
                 <!--<select class="form-control" name="detailsRegion" id="detailsRegion"
                         ng-model="siteConfiguration.properties.region"
                         required
@@ -133,7 +135,8 @@
                     <auto-complete source="GetFilteredMetadataObjects($query, regions)"
                                    load-on-down-arrow="true"
                                    min-length="0"
-                                   max-results-to-show="10"></auto-complete>
+                                   max-results-to-show="10"
+                                   load-on-focus="true"></auto-complete>
                     <div class="error-messages" ng-if="!sitedetailsform.tiRegion.$pristine || submitDenied" ng-messages="sitedetailsform.tiRegion.$error">
                         <div ng-message="required">{{ 'You did not select a region this site belongs to' }}</div>
                     </div>
@@ -144,7 +147,7 @@
             <div class="form-group" ng-hide="functions.length == 1"
                  ng-class="{ 'has-error' : sitedetailsform.tiFunction.$invalid && (!sitedetailsform.tiFunction.$pristine || submitDenied), 'has-success' : sitedetailsform.tiFunction.$valid && !sitedetailsform.tiFunction.$pristine }">
                 <label class="control-label" for="detailsFunction">{{ 'DETAILS_TEAMS_FUNCTION' | translate }}</label><em class="req"></em>
-                <span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Function%20not%20listed&Body=Missing%20function%20name:">not listed?</a>)</span>
+                <!--<span>(<a tabindex="-1" href="mailto:DLKNAMSSharePointSupport@mdlz.com?subject=Create%20It%20-%20Function%20not%20listed&Body=Missing%20function%20name:">not listed?</a>)</span>-->
                 <!--<select class="form-control" name="detailsFunction" id="detailsFunction"
                         ng-model="siteConfiguration.properties.function"
                         required
@@ -163,7 +166,8 @@
                     <auto-complete source="GetFilteredMetadataObjects($query, functions)"
                                    load-on-down-arrow="true"
                                    min-length="0"
-                                   max-results-to-show="50"></auto-complete>
+                                   max-results-to-show="50"
+                                   load-on-focus="true"></auto-complete>
                     <div class="error-messages" ng-if="!sitedetailsform.tiFunction.$pristine || submitDenied" ng-messages="sitedetailsform.tiFunction.$error">
                         <div ng-message="required">{{ 'You did not select a function that owns this site' }}</div>
                     </div>

@@ -93,21 +93,27 @@
         </table>
         <br><br>Your request for a new team named <b>@{triggerBody()?['Title']}</b> is being reviewed.<br>
         We will notify you once the request has been approved and your team is created.<br>
+        <br>
+        <b>Note:</b> A new team can take up to 3 days to be approved and created. <br><br>
         Here are some important details about your new team:<br>
         <br><br>
         <ul>
             <li><b>Name:</b> @{triggerBody()?['Title']}</li>
             <li><b>Description:</b> @{triggerBody()?['SP_Description']}</li>
             <li><b>Template:</b> @{triggerBody()?['SP_Template']}</li>
-            <li><b>Owner:</b> @{triggerBody()?['SP_Owner']?['Email']}</li>
-            <li><b>Additional Administrators:</b> @{variables('strAdditionalAdminEmailCsv')}</li>
+            <li><b>Primary Owner:</b> @{triggerBody()?['SP_Owner']?['Email']}</li>
+            <li><b>Secondary Owners:</b> @{variables('strAdditionalAdminEmailCsv')}</li>
             <li><b>External Sharing Requested:</b> @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_externalsharing']}</li>
             <li><b>Region:</b> @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_region']}</li>
             <li><b>Function:</b> @{body('Parse_JSON_-_to_derive_external_sharing_setting_for_-_teams_only')?['_site_props_function']}</li>
         </ul>
-        <br>            Find out more about Teams at <a href="https://teams.mdlz.com/sites/msteams">Teams Central</a>
-
+        <br><br>Teams Guidance and Support<br><br>
+        <ul>
+            <li>Get started with Teams the MDLZ way. Get familiar with our <a href="https://teams.mdlz.com/sites/msteams/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fmsteams%2FShared%20Documents%2FGetting%20Started%20Toolkits%2FTeams%20Collaboration%20Toolkit%2Epdf&parent=%2Fsites%2Fmsteams%2FShared%20Documents%2FGetting%20Started%20Toolkits">getting started guide</a> to learn about setting up a Team</li>
+            <li>Find out more about Teams at <a href="https://teams.mdlz.com/sites/msteams">Teams Central</a></li>
+        </ul>
         <br><br><br>
+
         Thank you,<br>
         Mondelez IBS Digital Workplace Team
 

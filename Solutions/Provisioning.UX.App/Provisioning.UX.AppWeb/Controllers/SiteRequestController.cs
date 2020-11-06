@@ -1,8 +1,10 @@
 ﻿using Microsoft.SharePoint.ApplicationPages.ClientPickerQuery;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using OfficeDevPnP.Core.WebAPI;
 using Provisioning.Common;
 using Provisioning.Common.Data.SiteRequests;
+using Provisioning.Common.MdlzComponents;
 using Provisioning.Common.Utilities;
 using Provisioning.UX.AppWeb.Models;
 using System;
@@ -41,22 +43,24 @@ namespace Provisioning.UX.AppWeb.Controllers
                 ISiteRequestFactory _srf = SiteRequestFactory.GetInstance();
                 var _manager = _srf.GetSiteRequestManager();
                 var _siteRequest = _manager.GetSiteRequestByUrl(_data.Url);
-                if(_siteRequest == null) {
+                if (_siteRequest == null)
+                {
                     var _message = string.Format("The site request url {0} does not exist", _requestToCheck.Url);
                     HttpResponseMessage _response = Request.CreateResponse(HttpStatusCode.NotFound, _message);
                     throw new HttpResponseException(_response);
-                
+
                 }
-                else{
+                else
+                {
                     return Request.CreateResponse<SiteInformation>(HttpStatusCode.OK, _siteRequest);
                 }
-               
+
             }
-            catch(HttpResponseException)
+            catch (HttpResponseException)
             {
                 throw;
             }
-            catch(JsonException _ex)
+            catch (JsonException _ex)
             {
                 var _message = string.Format("There was an error with the data. Exception {0}", _ex.Message);
                 Log.Error("SiteRequestController.GetSiteRequest",
@@ -64,7 +68,7 @@ namespace Provisioning.UX.AppWeb.Controllers
                      _ex.Message,
                      _ex);
                 HttpResponseMessage _response = Request.CreateResponse(HttpStatusCode.BadRequest, _message);
-                throw new HttpResponseException(_response); 
+                throw new HttpResponseException(_response);
             }
             catch (Exception _ex)
             {
@@ -74,7 +78,7 @@ namespace Provisioning.UX.AppWeb.Controllers
                     _ex.Message,
                     _ex);
                 HttpResponseMessage _response = Request.CreateResponse(HttpStatusCode.InternalServerError, _message);
-                throw new HttpResponseException(_response); 
+                throw new HttpResponseException(_response);
             }
         }
 
@@ -94,6 +98,7 @@ namespace Provisioning.UX.AppWeb.Controllers
             {
                 _data = JsonConvert.DeserializeObject<SiteRequest>(value);
                 var _newRequest = ObjectMapper.ToSiteRequestInformation(_data);
+                _newRequest.BaseTemplate = JToken.Parse(value)["baseTemplate"].ToString();
 
                 // Handle the case when the URL is null - ie, were going to generate the URL later 
                 if (_newRequest.Url == null)
@@ -101,27 +106,57 @@ namespace Provisioning.UX.AppWeb.Controllers
                     _newRequest.Url = "uri://autogenerate/" + Guid.NewGuid().ToString("N");
                 }
 
+                if (_newRequest.BaseTemplate == "TEAMS")
+                {
+                    string token = TeamsProvisioning.AcquireToken();
+                    List<string> owners = new List<string>();
+                    owners.AddRange(_newRequest.AdditionalAdministrators.Select(x => x.Name.ToLower()));
+                    owners.AddRange(new[] { _newRequest.SiteOwner.Name.ToLower() });
+                    List<string> usersWithoutTeamsLicense = new List<string>();
+
+                    foreach (var item in owners)
+                    {
+                        bool hasTeamsLicense = false;
+                        string upn = item;
+                        try
+                        {
+                            upn = upn.Split(new[] { '|' }, StringSplitOptions.RemoveEmptyEntries).Last();
+                            string licenseJson = TeamsProvisioning.GetUserLicenseDetails(upn, token);
+                            var json = JToken.Parse(licenseJson);
+                            hasTeamsLicense = json["value"].Any(x => x["servicePlans"].Any(y => y["servicePlanId"].ToString() == "57ff2da0-773e-42df-b2af-ffb7a2317929" && y["provisioningStatus"].ToString() == "Success"));
+                        }
+                        catch { }
+
+                        if (!hasTeamsLicense)
+                            usersWithoutTeamsLicense.Add(upn);
+                    }
+
+                    if (usersWithoutTeamsLicense.Count > 0)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.BadRequest, $"Could not complete your request as following users don't have a Microsoft Teams license and hence cannot be added as owners:{Environment.NewLine + Environment.NewLine + string.Join(Environment.NewLine, usersWithoutTeamsLicense)}");
+                    }
+                }
                 ///Save the Site Request
                 ISiteRequestFactory _srf = SiteRequestFactory.GetInstance();
                 var _manager = _srf.GetSiteRequestManager();
-                
-                _manager.CreateNewSiteRequest(_newRequest);
-                
 
-                 return Request.CreateResponse<SiteRequest>(HttpStatusCode.Created, _data);
+                _manager.CreateNewSiteRequest(_newRequest);
+
+
+                return Request.CreateResponse<SiteRequest>(HttpStatusCode.Created, _data);
 
             }
             catch (JsonSerializationException _ex)
             {
                 var _message = string.Format("There was an error with the data. Exception {0}", _ex.Message);
-               
+
                 Log.Error("SiteRequestController.CreateSiteRequest",
                      "There was an error creating the new site request. Error Message {0} Error Stack {1}",
                      _ex.Message,
                      _ex);
 
                 HttpResponseMessage _response = Request.CreateResponse(HttpStatusCode.BadRequest, _message);
-                throw new HttpResponseException(_response); 
+                throw new HttpResponseException(_response);
             }
 
             catch (Exception _ex)
@@ -133,7 +168,7 @@ namespace Provisioning.UX.AppWeb.Controllers
                     "There was an error creating the new site request. Error Message {0} Error Stack {1}",
                     _ex.Message,
                     _ex);
-                throw new HttpResponseException(_response); 
+                throw new HttpResponseException(_response);
             }
         }
 
@@ -166,17 +201,17 @@ namespace Provisioning.UX.AppWeb.Controllers
                      _ex);
 
                 HttpResponseMessage _response = Request.CreateResponse(HttpStatusCode.BadRequest, _message);
-                throw new HttpResponseException(_response); 
+                throw new HttpResponseException(_response);
             }
-            catch(Exception _ex)
+            catch (Exception _ex)
             {
                 var _message = string.Format("There was an error processing the request. {0}", _ex.Message);
                 Log.Error("SiteRequestController.GetOwnerRequestsByEmail", "There was an error processing the request. Exception: {0}", _ex);
                 HttpResponseMessage _response = Request.CreateResponse(HttpStatusCode.InternalServerError, _message);
-                throw new HttpResponseException(_response); 
+                throw new HttpResponseException(_response);
             }
         }
 
-        
+
     }
 }

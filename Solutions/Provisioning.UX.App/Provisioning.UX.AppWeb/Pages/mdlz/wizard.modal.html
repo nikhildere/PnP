@@ -63,16 +63,16 @@
                         <div data-ng-include="'mdlz/'+ SelectedMdlzSiteCategory.ViewFolder + 'view_confirmation.html'"></div>
                     </div>
                     <div class="modal-right-footer">
-                        <span class="btn-image" ng-if="!isFirstStep()" ng-click="handlePrevious()">
+                        <span class="btn-image" ng-if="!isFirstStep()" ng-click="handlePrevious()" ng-disabled="requestSubmissionInProgress">
                             <i class="fa fa-arrow-circle-left"></i>
                         </span>
                         <span class="btn-image" ng-if="!isLastStep()" ng-click="!IsCurrentStepValid() || handleNext()" ng-disabled="!IsCurrentStepValid()">
                             <i class="fa fa-arrow-circle-right"></i>
                         </span>
-                        <span class="btn-image" ng-if="isLastStep()" ng-click="!IsCurrentStepValid() || finished()" ng-disabled="!IsCurrentStepValid()">
+                        <span class="btn-image" ng-if="isLastStep()" ng-click="!IsCurrentStepValid() || finished()" ng-disabled="!IsCurrentStepValid() || requestSubmissionInProgress">
                             <i class="fa fa-check-circle"></i>
                         </span>
-                        <span class="btn-image" ng-click="cancel()">
+                        <span class="btn-image" ng-click="cancel()" ng-disabled="requestSubmissionInProgress">
                             <i class="fa fa-times-circle"></i>
                         </span>
                         <!--<button ng-click="testClick()">Test</button>-->

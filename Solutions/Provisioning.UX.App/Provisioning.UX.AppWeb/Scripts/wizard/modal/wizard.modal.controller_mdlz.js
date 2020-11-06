@@ -11,6 +11,7 @@
 
     function WizardModalInstanceController($rootScope, common, config, $scope, $log, $modalInstance, Templates, BusinessMetadata, $utilservice, $SharePointProvisioningService, $q, $http, $filter, $SharePointJSOMService, tabParameters) {
         $scope.title = 'WizardModalInstanceController';
+        $scope.requestSubmissionInProgress = false;
 
         //$scope.siteConfiguration = {};
         $scope.siteConfiguration.properties = {};
@@ -127,6 +128,8 @@
 
         $scope.finished = function () {
 
+            $scope.requestSubmissionInProgress = true;
+
             $scope.siteConfiguration.properties.sponprem = $scope.siteConfiguration.spOnPrem;
 
             //checks if all mandatory forms are valid before submit
@@ -166,6 +169,7 @@
 
                 siteRequest.sharePointOnPremises = $scope.siteConfiguration.spOnPrem;
                 siteRequest.template = $scope.siteConfiguration.template.title;
+                siteRequest.baseTemplate = $scope.siteConfiguration.template.rootTemplate;
                 siteRequest.autoApprove = $scope.siteConfiguration.template.autoApprove;
                 //siteRequest.sitePolicy = $scope.siteConfiguration.privacy.classification;
                 //siteRequest.businessCase = $scope.siteConfiguration.purpose.description;
@@ -199,6 +203,13 @@
 
                 //add properties to javaScript object
                 siteRequest.properties = props;
+
+                if (siteRequest.additionalAdministrators == 1 && siteRequest.additionalAdministrators.filter(function (x) { return x.toLowerCase() == siteRequest.primaryOwner.toLowerCase() }).length > 0) {
+                    $scope.requestSubmissionInProgress = false;
+                    logError("Additional owner cannot be the same as the primary owner. Please update the form and resubmit.", null, true);
+                    return;
+                }
+
 
                 //process the siterequest
                 if ($scope.siteConfiguration.allowCustomUrl) {
@@ -266,8 +277,8 @@
                 .then(function () {
                     logSuccess('Wizard Activated');
                 });
-            
-            
+
+
         }
 
         function adjustSteps(resetToFirstStep) {
@@ -279,7 +290,7 @@
         }
 
         function initModal() {
-            
+
             $scope.wizard = { tacos: 2 };
 
             $scope.isCurrentStep = function (step) {
@@ -403,10 +414,11 @@
                                 logSuccess("Success!! You will receive an email notification once we have created your site.");
                                 $modalInstance.close($scope.siteConfiguration);
                             }
+                            $scope.requestSubmissionInProgress = false;
                         }, function (data, status) {
                             console.log(data);
                             logError(data, null, true);
-                            
+                            $scope.requestSubmissionInProgress = false;
                         });
 
                         //$.when($SharePointProvisioningService.createNewSiteRequest(request)).done(function (data, status) {

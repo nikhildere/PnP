@@ -100,6 +100,8 @@ namespace Provisioning.Job
 
             foreach (var siteRequest in siteRequests)
             {
+                Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+
                 string siteOwnerEmail = siteRequest.SiteOwner.Email, siteOwnerName = siteRequest.SiteOwner.Name;
                 try
                 {
@@ -126,7 +128,7 @@ namespace Provisioning.Job
                         Log.Warning("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Template {0} was not found for Site Url {1}.", siteRequest.Template, siteRequest.Url);
                     }
 
-                    //_requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Processing);
+                    _requestManager.UpdateRequestStatus(siteRequest.Url, SiteRequestStatus.Processing);
 
                     if (_template.RootTemplate != "TEAMS")
                     {
@@ -140,7 +142,9 @@ namespace Provisioning.Job
                             // Step 3 - Create the site                    
                             // ****************************************************
                             Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Provisioning Site Request for Site Url {0}.", siteRequest.Url);
-                            _siteProvisioningManager.CreateSiteCollection(siteRequest, _template);
+                            MdlzUtilities.PerformActionRetry((ex) => { 
+                                _siteProvisioningManager.CreateSiteCollection(siteRequest, _template);
+                            }, secondsToWaitBetweenEachAttempt:60);
                         },
                         () =>
                         {
@@ -148,7 +152,9 @@ namespace Provisioning.Job
                             // Step 4 - Apply provisioning template                    
                             // ****************************************************
                             Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites", "Applying Provisioning Template for Site Url {0}.", siteRequest.Url);
-                            _siteProvisioningManager.ApplyProvisioningTemplate(_provisioningTemplate, siteRequest, _template);
+                            MdlzUtilities.PerformActionRetry((ex) => {
+                                _siteProvisioningManager.ApplyProvisioningTemplate(_provisioningTemplate, siteRequest, _template);
+                            });
                         });
 
 

@@ -211,6 +211,7 @@
     <Compile Include="MdlzComponents\ExtensibilityProviders\MdlzWikiSiteExtensibilityProvider.cs" />
     <Compile Include="MdlzComponents\InitialData.cs" />
     <Compile Include="MdlzComponents\TeamsProvisioning.cs" />
+    <Compile Include="MdlzComponents\Utilities.cs" />
     <Compile Include="Metadata\SiteFunction.cs" />
     <Compile Include="MdlzComponents\MdlzCommonCustomizations.cs" />
     <Compile Include="Office365SiteProvisioningService.cs" />

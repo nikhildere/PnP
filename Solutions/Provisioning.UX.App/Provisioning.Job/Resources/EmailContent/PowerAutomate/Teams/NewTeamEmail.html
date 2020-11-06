@@ -5,6 +5,7 @@
     <style type="text/css">
 
 
+
         body {
             font-size: 90%;
             font-family: "Segoe UI";
@@ -92,21 +93,21 @@
                 </td>
             </tr>
         </table>
-        <br><br>Congratulations! Your new team named <a href="@{body('Parse_JSON_-_For_External_Sharing,_Region_and_Function_values')?['_site_props_team_url']}">@{triggerBody()?['Title']}</a> is ready and should be visible within Teams        
+        <br><br>Congratulations! Your new team named <a href="@{body('Parse_JSON_-_For_External_Sharing,_Region_and_Function_values')?['_site_props_team_url']}">@{triggerBody()?['Title']}</a> is ready and should be visible within Teams
         <br><br>Here are some important details of your team:<br><br>
         <ul>
             <li><b>Name:</b> @{triggerBody()?['Title']}</li>
             <li><b>Description:</b> @{triggerBody()?['SP_Description']}</li>
             <li><b>Template:</b> @{triggerBody()?['SP_Template']}</li>
-            <li><b>Owner:</b> @{triggerBody()?['SP_Owner']?['Email']}</li>
-            <li><b>Additional Administrators:</b> @{variables('strAdditionalAdminEmailCsv')}</li>
+            <li><b>Primary Owner:</b> @{triggerBody()?['SP_Owner']?['Email']}</li>
+            <li><b>Secondary Owners:</b> @{variables('strAdditionalAdminEmailCsv')}</li>
             <li><b>External Sharing Requested:</b> @{body('Parse_JSON_-_For_External_Sharing,_Region_and_Function_values')?['_site_props_externalsharing']}</li>
             <li><b>Region:</b> @{body('Parse_JSON_-_For_External_Sharing,_Region_and_Function_values')?['_site_props_region']}</li>
             <li><b>Function:</b> @{body('Parse_JSON_-_For_External_Sharing,_Region_and_Function_values')?['_site_props_function']}</li>
         </ul>
         <br><br>Teams Guidance and Support<br><br>
         <ul>
-            <li>Get started with Teams the MDLZ way. Get familiar with our <a href="#">getting started guide</a> to learn about setting up a Team</li>
+            <li>Get started with Teams the MDLZ way. Get familiar with our <a href="https://teams.mdlz.com/sites/msteams/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fmsteams%2FShared%20Documents%2FGetting%20Started%20Toolkits%2FTeams%20Collaboration%20Toolkit%2Epdf&parent=%2Fsites%2Fmsteams%2FShared%20Documents%2FGetting%20Started%20Toolkits">getting started guide</a> to learn about setting up a Team</li>
             <li>Find out more about Teams at <a href="https://teams.mdlz.com/sites/msteams">Teams Central</a></li>
         </ul>
         <br><br><br>

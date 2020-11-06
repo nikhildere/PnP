@@ -3,6 +3,7 @@ using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Framework.Provisioning.Connectors;
 using OfficeDevPnP.Core.Framework.Provisioning.Model;
 using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
+using Provisioning.Common.MdlzComponents;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +19,8 @@ namespace Provisioning.Job
         {
             new SiteProvisioningJob().ProcessSiteRequests();
             //GetTempBackup();
-            //new TeamsTest().GetTeam();
+            //new TeamsTest().PatchTeamSPOException("");
             //TeamsTest.CreateTeamsInProd();
-
-            string s = "";
-
         }
 
 
@@ -52,6 +50,5 @@ namespace Provisioning.Job
 
         }
 
-        
     }
 }
