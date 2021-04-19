@@ -1,0 +1,58 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Author="Storm" Generator="Manual" Version="1.0">
+  <pnp:Preferences Author="Storm" Version="1.0" Generator="Manual">
+    <pnp:Parameters>
+      <pnp:Parameter Key="ExternalSharingMode">ExistingExternalUserSharingOnly</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Templates ID="SAMPLE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="TgmTemplateForProjects" Version="1.0">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Documents" TemplateType="101" Url="Shared Documents">
+          <pnp:Folders>
+            <pnp:Folder Name="Tollgate Methodology">
+              <pnp:Folder Name="TG1 - Scope"/>
+              <pnp:Folder Name="TG2 - Design"/>
+              <pnp:Folder Name="TG3 - Prepare"/>
+              <pnp:Folder Name="TG4 -  Launch"/>
+              <pnp:Folder Name="TG5 -  Deploy"/>
+              <pnp:Folder Name="TG6 -  Hypercare"/>
+              <pnp:Folder Name="TG7 -  Confirmation &amp; Closure"/>
+            </pnp:Folder>
+            <pnp:Folder Name="PMO">
+              <pnp:Folder Name="Project Artefacts"/>
+              <pnp:Folder Name="PMO"/>
+              <pnp:Folder Name="Project Documentation"/>
+              <pnp:Folder Name="Governance"/>
+            </pnp:Folder>
+          </pnp:Folders>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+  
+  <pnp:Teams>
+    <pnp:Team DisplayName="" Description="" Visibility="Private">
+      <pnp:FunSettings AllowGiphy="true" GiphyContentRating="Moderate"
+                       AllowStickersAndMemes="true" AllowCustomMemes="true"/>
+      <pnp:GuestSettings AllowCreateUpdateChannels="true" AllowDeleteChannels="false"/>
+      <pnp:MembersSettings AllowCreateUpdateChannels="true" AllowDeleteChannels="false"
+                           AllowAddRemoveApps="true"
+                           AllowCreateUpdateRemoveConnectors="true"
+                           AllowCreateUpdateRemoveTabs="false" />
+      <pnp:MessagingSettings AllowUserEditMessages="true" AllowUserDeleteMessages="true"
+                             AllowOwnerDeleteMessages="false"
+                             AllowTeamMentions="true"
+                             AllowChannelMentions="true"/>
+      <pnp:Channels>
+        <pnp:Channel DisplayName="Tollgate Methodology"
+                     Description="Tollgate Methodology"
+                     IsFavoriteByDefault="true"  />
+        <pnp:Channel DisplayName="PMO"
+                     Description="PMO"
+                     IsFavoriteByDefault="true"/>
+      </pnp:Channels>
+    </pnp:Team>
+
+  </pnp:Teams>
+
+</pnp:Provisioning>

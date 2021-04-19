@@ -191,6 +191,8 @@ namespace Provisioning.UX.AppWeb.Pages.SubSite
                 information.Title = title;
                 information.Url = txtUrl;
                 information.Language = ddlLanguages.SelectedValue.ToInt32();
+                information.UseSamePermissionsAsParentSite = true;
+                
 
                 Web newWeb = null;
                 newWeb = hostWeb.Webs.Add(information);

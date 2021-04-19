@@ -144,6 +144,32 @@ namespace Provisioning.Common.MdlzComponents
                         tenant.Context.Load(siteProps);
                         tenant.Context.ExecuteQueryRetry();
                         Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Completed setting external sharing configuration for associated SharePoint site to ExistingExternalUserSharingOnly");
+
+
+                        if (hierarchyToApply.Templates?.Count > 0)
+                        {
+                            Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Attempting to apply {0} SharePoint Templates", hierarchyToApply.Templates.Count);
+                            var auth = new AppOnlyAuthenticationSite() { SiteUrl = team.SharePointSiteUrl };
+
+                            using (var ctx = auth.GetAuthenticatedContext())
+                            {
+                                foreach (var item in hierarchyToApply.Templates)
+                                {
+                                    try
+                                    {
+                                        Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Attempting to apply SharePoint Template named - {0}", item.Id);
+                                        ctx.Web.ApplyProvisioningTemplate(item);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Utilities.Log.Error("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Failed to apply SharePoint Template named - {0}", item.Id);
+                                        Utilities.Log.Error("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", ex.ToString());
+                                    }
+                                }
+                            }
+                        }
+
+
                         Utilities.Log.Info("Provisioning.Job.SiteProvisioningJob.ProvisionSites.CreateTeam", "Completed creating team. Team Name: {0}. Group ID: {1}", request.Title, team.GroupID);
                     }
                     else
