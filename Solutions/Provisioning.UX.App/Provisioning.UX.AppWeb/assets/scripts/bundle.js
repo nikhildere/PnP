@@ -2549,7 +2549,7 @@ function getQueryStringParameter(paramToRetrieve) {
                 modalInstance.result.then(function (configuration) {
                     $scope.completedConfiguration = configuration;
                     //getRequestsByOwner(user);
-                    logSuccess("Request Saved!! <br>You will receive an email notification once we have processed your request.", null, true);
+                    logSuccess("Request Submitted!! <br>You will receive a notification in your Microsoft Teams <br>Activity Feed when this request has been completed.", null, true);
                 }, function () {
                     $log.info('Modal dismissed at: ' + new Date());
                     //getRequestsByOwner(user);
